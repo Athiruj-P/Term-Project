@@ -1,3 +1,7 @@
+# Object size measurement from video
+# Description : โปรแกรมการวัดขนาดวัตถุจากภาพเคลื่อนไหว
+# Create date : 07-July-2020 
+# Auther : Athiruj Poositaporn
 import cv2
 import matplotlib.pyplot as plt
 import cvlib as _cvlib
