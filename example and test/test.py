@@ -1,30 +1,57 @@
-import sys
-print(sys.version)
-
+from scipy.spatial import distance as dist
+from imutils import perspective
+from imutils import contours
 import numpy as np
-import cv2 as cv
-import matplotlib.pyplot as plt
-img1 = cv.imread('5B_coin.jpg',cv.IMREAD_GRAYSCALE)          # queryImage
-img2 = cv.imread('test03.png',cv.IMREAD_GRAYSCALE) # trainImage
+import argparse
+import imutils
+import cv2
 
-#-- Step 1: Detect the keypoints using SURF Detector, compute the descriptors
-minHessian = 400
-detector = cv.xfeatures2d_SURF.create(hessianThreshold=minHessian)
-keypoints1, descriptors1 = detector.detectAndCompute(img1, None)
-keypoints2, descriptors2 = detector.detectAndCompute(img2, None)
-#-- Step 2: Matching descriptor vectors with a FLANN based matcher
-# Since SURF is a floating-point descriptor NORM_L2 is used
-matcher = cv.DescriptorMatcher_create(cv.DescriptorMatcher_FLANNBASED)
-knn_matches = matcher.knnMatch(descriptors1, descriptors2, 2)
-#-- Filter matches using the Lowe's ratio test
-ratio_thresh = 0.7
-good_matches = []
-for m,n in knn_matches:
-    if m.distance < ratio_thresh * n.distance:
-        good_matches.append(m)
-#-- Draw matches
-img_matches = np.empty((max(img1.shape[0], img2.shape[0]), img1.shape[1]+img2.shape[1], 3), dtype=np.uint8)
-cv.drawMatches(img1, keypoints1, img2, keypoints2, good_matches, img_matches, flags=cv.DrawMatchesFlags_NOT_DRAW_SINGLE_POINTS)
-#-- Show detected matches
-cv.imshow('Good Matches', img_matches)
-cv.waitKey()
+
+def nothing(x):
+    pass
+
+
+cv2.namedWindow("Track")
+cv2.createTrackbar("LH", "Track", 0, 255, nothing)
+cv2.createTrackbar("LS", "Track", 0, 255, nothing)
+cv2.createTrackbar("LV", "Track", 0, 255, nothing)
+cv2.createTrackbar("UH", "Track", 255, 255, nothing)
+cv2.createTrackbar("US", "Track", 255, 255, nothing)
+cv2.createTrackbar("UV", "Track", 255, 255, nothing)
+
+while True:
+    bg_green = cv2.imread('bg_green.jpg')  # queryImage
+    # bg_blue = cv2.imread('bg_blue.jpg')  # queryImage
+    # bg_red = cv2.imread('bg_red.jpg')  # queryImage
+    hsv = cv2.cvtColor(bg_green, cv2.COLOR_BGR2HSV)
+    hsv = cv2.GaussianBlur(hsv, (7, 7), 0)
+    lh = cv2.getTrackbarPos("LH", "Track")
+    ls = cv2.getTrackbarPos("LS", "Track")
+    lv = cv2.getTrackbarPos("LV", "Track")
+
+    uh = cv2.getTrackbarPos("UH", "Track")
+    us = cv2.getTrackbarPos("US", "Track")
+    uv = cv2.getTrackbarPos("UV", "Track")
+
+    l_green = np.array([lh, ls, lv])
+    u_green = np.array([uh, us, uv])
+
+    mask = cv2.inRange(hsv, l_green, u_green)
+    res = cv2.bitwise_and(bg_green, bg_green, mask=mask)
+
+    cv2.imshow('bg_green', bg_green)
+    cv2.imshow('mask', mask)
+    cv2.imshow('res', res)
+
+    if cv2.waitKey(1) == 27:
+        break
+cv2.destroyAllWindow()
+# cv2.imshow("bg_green_mask", mask)
+
+# lower_blue = np.array([0, 0, 100])
+# upper_blue = np.array([120, 100, 255])
+
+# cv2.waitKey(0)
+
+# gray = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
+# gray = cv2.GaussianBlur(gray, (7, 7), 0)
