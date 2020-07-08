@@ -84,7 +84,8 @@ pixelsPerMetric = None
 for c in cnts:
 	# cv2.contourArea => คืนค่าพื้นที่ของรูปทรงที่ c มีหน่วยคือ pixel
     # ถ้าพื้นที่มีขนาดที่เล็กเกินไป จะข้ามไปยังรูปทรงถัดไป
-	if cv2.contourArea(c) < 100:
+	# (cv2.contourArea(c)/args["width"]*args["width"]) คือการแปลงหน่วยจาก pixel^2 เป็น MM^2
+	if (cv2.contourArea(c)/args["width"]*args["width"]) < 300:
 		continue
 
     # คำนวณหาเส้นรอบรูปรางของวัตถุที่มีความเอียง
