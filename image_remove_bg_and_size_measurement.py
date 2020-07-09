@@ -1,6 +1,6 @@
-# Object size measurement
+# Object size measurement from image with color screen
 # Description : โปรแกรมการวัดขนาดวัตถุจากภาพ
-# Create date : 01-July-2020 
+# Update date : 09-July-2020 
 # Auther : Athiruj Poositaporn 
 
 # import the necessary packages
@@ -38,36 +38,53 @@ def ResizeWithAspectRatio(image, width=None, height=None, inter=cv2.INTER_AREA):
 
     return cv2.resize(image, dim, interpolation=inter)
 
+def get_hsv_value_array(color):
+	hsv_list = dict(lower = [], upper = [])
+	if color == "red": 
+		hsv_list["lower"] = [0, 49, 19] 
+		hsv_list["upper"] = [5, 255, 255]
+	elif color == "green": 
+		hsv_list["lower"] = [39,23,111] 
+		hsv_list["upper"] = [102,255,255]
+	elif color == "blue": 
+		hsv_list["lower"] = [94, 80, 2] 
+		hsv_list["upper"] = [126, 255, 255]
+	else:
+		return False
+	return hsv_list
+
 # LOC : 24 - 29  =>รับพารามิเตอร์ 2 ค่าคือ
 # 1. Path ไปของไฟล์รูป
 # 2. ขนาดของวัถุที่ใช้อ้างอิง
 ap = argparse.ArgumentParser()
 ap.add_argument("-i", "--image", required=True,
                 help="path to the input image")
+ap.add_argument("-c", "--color", required=True,
+                help="color of background (red green or blue)")
 ap.add_argument("-w", "--width", type=float, required=True,
                 help="width of the left-most object in the image (in millimeter)")
 args = vars(ap.parse_args())
 
 # นำเข้ารูปภาพจาก Path ที่ใส่มา
 image = cv2.imread(args["image"])
+image = ResizeWithAspectRatio(image, width=1080)
 hsv = cv2.cvtColor(image, cv2.COLOR_BGR2HSV)
 
-lower_hsv_val = [39,23,111]
-upper_hsv_val = [102,255,255]
-lower_hsv_green = np.array(lower_hsv_val)
-upper_hsv_green = np.array(upper_hsv_val)
+hsv_val = get_hsv_value_array(args["color"])
+lower_hsv = np.array(hsv_val["lower"])
+upper_hsv = np.array(hsv_val["upper"])
 
-mask = cv2.inRange(hsv, lower_hsv_green, upper_hsv_green)
+mask = cv2.inRange(hsv, lower_hsv, upper_hsv)
 
 # cv2.Canny => การตีกรอบให้กับภาพ
 edged = cv2.Canny(mask, 50, 100)
-cv2.imshow("edged", edged)
 # dilate => ขยายเส้นขอบให้ใหญ่ขึ้น
 edged = cv2.dilate(edged, None, iterations=1)
 # dilate => ลบ Noise สีขาวออกจากรูปภาพ
 edged = cv2.erode(edged, None, iterations=1)
 
 cv2.imshow("edged", edged)
+# writeImage(edged,"bg_green","eraser")
 
 
 # ค้นหารูปร่างของวัตถุ
@@ -90,6 +107,9 @@ for c in cnts:
     # ถ้าพื้นที่มีขนาดที่เล็กเกินไป จะข้ามไปยังรูปทรงถัดไป
 	# (cv2.contourArea(c)/args["width"]*args["width"]) คือการแปลงหน่วยจาก pixel^2 เป็น MM^2
 	if (cv2.contourArea(c)/args["width"]*args["width"]) < 300:
+		# print("cv2.contourArea(c) => " + str(cv2.contourArea(c)))
+		# print("cv2.contourArea(c)/args['width']*args['width'] => " + str(cv2.contourArea(c)/args["width"]*args["width"]))
+		# print("###################################")
 		continue
 
     # คำนวณหาเส้นรอบรูปรางของวัตถุที่มีความเอียง
@@ -142,14 +162,14 @@ for c in cnts:
 	dimB = dB / pixelsPerMetric
 
     # แสดงตัวเลขจากการคำนวณ
-	cv2.putText(origin, "{:.1f}mm".format(dimA),
+	cv2.putText(origin, "{:.4f}mm".format(dimA),
 		(int(tltrX - 15), int(tltrY - 10)), cv2.FONT_HERSHEY_SIMPLEX,
 		0.65, (255, 255, 255), 2)
-	cv2.putText(origin, "{:.1f}mm".format(dimB),
+	cv2.putText(origin, "{:.4f}mm".format(dimB),
 		(int(trbrX  + 10), int(trbrY)), cv2.FONT_HERSHEY_SIMPLEX,
 		0.65, (255, 255, 255), 2)
 
-	origin = ResizeWithAspectRatio(origin, width=1080)
+	# origin = ResizeWithAspectRatio(origin, width=1080)
 	
 	# show the output image
 	cv2.imshow("Image", origin)
