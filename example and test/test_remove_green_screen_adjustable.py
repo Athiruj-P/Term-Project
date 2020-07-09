@@ -18,7 +18,7 @@ cv2.createTrackbar("UV", "Track", 255, 255, nothing)
 while True:
     ret, frame = video.read()
     frame = cv2.resize(frame, (640, 480))
-    image = cv2.resize(image, (640, 480))
+    # image = cv2.resize(image, (640, 480))
     
     hsv = cv2.cvtColor(frame, cv2.COLOR_BGR2HSV)
 
