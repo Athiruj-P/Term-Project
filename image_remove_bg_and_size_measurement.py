@@ -39,10 +39,13 @@ def ResizeWithAspectRatio(image, width=None, height=None, inter=cv2.INTER_AREA):
     return cv2.resize(image, dim, interpolation=inter)
 
 def get_hsv_value_array(color):
-	hsv_list = dict(lower = [], upper = [])
+	hsv_list = dict(lower = [], upper = [] , lower_red = [] , upper_red = [])
 	if color == "red": 
+		# คาบของสีแดงมี 2 ช่วง จึงจะครอบคลุม
 		hsv_list["lower"] = [0, 49, 19] 
 		hsv_list["upper"] = [5, 255, 255]
+		hsv_list["lower_red"] = [175,50,20]
+		hsv_list["upper_red"] = [180,255,255]
 	elif color == "green": 
 		hsv_list["lower"] = [39,23,111] 
 		hsv_list["upper"] = [102,255,255]
@@ -71,10 +74,20 @@ image = ResizeWithAspectRatio(image, width=1080)
 hsv = cv2.cvtColor(image, cv2.COLOR_BGR2HSV)
 
 hsv_val = get_hsv_value_array(args["color"])
-lower_hsv = np.array(hsv_val["lower"])
-upper_hsv = np.array(hsv_val["upper"])
 
-mask = cv2.inRange(hsv, lower_hsv, upper_hsv)
+
+if args["color"] == "red":
+	lower_hsv_01 = np.array(hsv_val["lower"])
+	upper_hsv_01 = np.array(hsv_val["upper"])
+	lower_hsv_02 = np.array(hsv_val["lower_red"])
+	upper_hsv_02 = np.array(hsv_val["upper_red"])
+	mask01 = cv2.inRange(hsv, lower_hsv_01, upper_hsv_01)
+	mask02 = cv2.inRange(hsv, lower_hsv_02, upper_hsv_02)
+	mask = cv2.bitwise_or(mask01, mask02)
+else:
+	lower_hsv = np.array(hsv_val["lower"])
+	upper_hsv = np.array(hsv_val["upper"])	
+	mask = cv2.inRange(hsv, lower_hsv, upper_hsv)
 
 # cv2.Canny => การตีกรอบให้กับภาพ
 edged = cv2.Canny(mask, 50, 100)
@@ -101,6 +114,8 @@ cnts = imutils.grab_contours(cnts)
 # เพื่อใช้ค้นหาความยาวด้านของวัตถุเป้าหมาย
 pixelsPerMetric = None
 
+origin = image.copy() # ลบลบบรรทัดนี้ออกถ้าต้องการให้แสดงผลลัพธ์ต่อ 1 obj
+
 # loop เพื่อคำนวณความยาวด้านของแต่ละรูปทรงที่ค้นหาได้จากรูปภาพ
 for c in cnts:
 	# cv2.contourArea => คืนค่าพื้นที่ของรูปทรงที่ c มีหน่วยคือ pixel^2 
@@ -113,7 +128,7 @@ for c in cnts:
 		continue
 
     # คำนวณหาเส้นรอบรูปรางของวัตถุที่มีความเอียง
-	origin = image.copy()
+	# origin = image.copy() # นำ comment ออกถ้าต้องการให้แสดงผลลัพธ์ต่อ 1 obj
 	box = cv2.minAreaRect(c)
 	box = cv2.cv.BoxPoints(box) if imutils.is_cv2() else cv2.boxPoints(box)
 	box = np.array(box, dtype="int")
