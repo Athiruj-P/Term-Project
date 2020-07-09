@@ -38,6 +38,24 @@ def ResizeWithAspectRatio(image, width=None, height=None, inter=cv2.INTER_AREA):
 
     return cv2.resize(image, dim, interpolation=inter)
 
+def writeImage(image,method,img_name):
+	font = cv2.FONT_HERSHEY_SIMPLEX
+	text = method + " - " + img_name
+
+	textsize = cv2.getTextSize(text, font, 1, 2)[0]
+	textX = int((image.shape[1] - textsize[0]) / 2)
+
+	position = (textX, 50)
+	cv2.putText(
+		image,  # numpy array on which text is written
+		text,  # text
+		position,  # position at which writing has to start
+		cv2.FONT_HERSHEY_SIMPLEX,  # font family
+		1,  # font size
+		(255, 255, 255, 255),  # font color
+		3)  # font stroke
+	cv2.imwrite("res2/"+ text + ".jpg",image)
+
 # LOC : 24 - 29  =>รับพารามิเตอร์ 2 ค่าคือ
 # 1. Path ไปของไฟล์รูป
 # 2. ขนาดของวัถุที่ใช้อ้างอิง
@@ -50,6 +68,7 @@ args = vars(ap.parse_args())
 
 # นำเข้ารูปภาพจาก Path ที่ใส่มา
 image = cv2.imread(args["image"])
+image = ResizeWithAspectRatio(image, width=1080)
 # เปลี่ยนสีของรูปภาพให้เป็นสีเทา (grayscale)
 gray = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
 # เบลอรูปภาพเพื่่อให้ภาพ Smooth ขึ้นเล็กน้อย
@@ -57,13 +76,14 @@ gray = cv2.GaussianBlur(gray, (7, 7), 0)
 
 # cv2.Canny => การตีกรอบให้กับภาพ
 edged = cv2.Canny(gray, 50, 100)
-cv2.imshow("edged", edged)
 # dilate => ขยายเส้นขอบให้ใหญ่ขึ้น
 edged = cv2.dilate(edged, None, iterations=1)
 # dilate => ลบ Noise สีขาวออกจากรูปภาพ
 edged = cv2.erode(edged, None, iterations=1)
 
-cv2.imshow("gray", gray)
+cv2.imshow("edged", edged)
+writeImage(edged,"grayscale","eraser")
+# cv2.imshow("gray", gray)
 
 
 # ค้นหารูปร่างของวัตถุ
@@ -145,7 +165,7 @@ for c in cnts:
 		(int(trbrX  + 10), int(trbrY)), cv2.FONT_HERSHEY_SIMPLEX,
 		0.65, (255, 255, 255), 2)
 
-	origin = ResizeWithAspectRatio(origin, width=1080)
+	# origin = ResizeWithAspectRatio(origin, width=1080)
 	
 	# show the output image
 	cv2.imshow("Image", origin)
