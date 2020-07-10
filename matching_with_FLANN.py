@@ -22,7 +22,22 @@ def ResizeWithAspectRatio(image, width=None, height=None, inter=cv.INTER_AREA):
 
     return cv.resize(image, dim, interpolation=inter)
 
-origin_image01 = cv.imread('Photo/cocoa_puffs_brownie_crunch.jpg')
+def write_text_on_image(image,text):
+	font = cv.FONT_HERSHEY_SIMPLEX
+	textsize = cv.getTextSize(text, font, 1, 2)[0]
+	textX = int((image.shape[1] - textsize[0]) / 2)
+
+	position = (textX, 50)
+	return cv.putText(
+		image,  # numpy array on which text is written
+		text,  # text
+		position,  # position at which writing has to start
+		cv.FONT_HERSHEY_SIMPLEX,  # font family
+		1,  # font size
+		(0, 0, 0, 255),  # font color
+		3)  # font stroke
+
+origin_image01 = cv.imread('Photo/golden_grahams.png')
 origin_image02 = cv.imread('Photo/products.png')
 
 if origin_image01.shape[1] > 400:
@@ -51,16 +66,21 @@ matches = flann.knnMatch(des1,des2,k=2)
 
 # Need to draw only good matches, so create a mask
 matchesMask = [[0,0] for i in range(len(matches))]
-
+good_matchs = []
 # ratio test as per Lowe's paper
 for i,(m,n) in enumerate(matches):
     if m.distance < 0.7*n.distance:
         matchesMask[i]=[1,0]
+        good_matchs.append(m)
 draw_params = dict(matchColor = (0,255,0),
                    singlePointColor = (0,0,255),
                    matchesMask = matchesMask,
                    flags = cv.DrawMatchesFlags_DEFAULT)
 img3 = cv.drawMatchesKnn(origin_image01,kp1,origin_image02,kp2,matches,None,**draw_params)
-cv.imshow("Image", img3)
+
+res_text = "Good match : {} matchs".format(len(good_matchs))
+cv.imshow("Image", write_text_on_image(img3,res_text))
+
+print(res_text)
 cv.waitKey(0)    
 # plt.imshow(img3,),plt.show()
