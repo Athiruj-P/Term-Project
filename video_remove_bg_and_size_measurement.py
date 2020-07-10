@@ -11,29 +11,47 @@ import argparse
 import numpy as np
 import cv2
 
+# midpoint
+# ฟังก์ชันหาจุดกึ่งกลางระหว่างจุดสองจุด
+# Input : point A and point B
+# Output : Middle point of point A and point B
+# Create date : 08-July-2020
+# Auther : Athiruj Poositaporn
 def midpoint(ptA, ptB):
     return ((ptA[0] + ptB[0]) * 0.5, (ptA[1] + ptB[1]) * 0.5)
 
+# get_background_mask
+# ฟังก์ชัน mask สีพื้นหลังตามภาพและสีที่กำหนด
+# Input : Image , background color
+# Output : Mask
+# Create date : 07-July-2020
+# Auther : Athiruj Poositaporn
+def get_background_mask(image, color):
+    if color == "red":
+        # คาบของสีแดงมี 2 ช่วง จึงจะครอบคลุม
+        mask01 = cv2.inRange( image, np.array([0, 49, 19]), np.array([5, 255, 255]) )
+        mask02 = cv2.inRange( image, np.array([175, 50, 20]), np.array([180, 255, 255]) )
+        return cv2.bitwise_or(mask01, mask02)
+    elif color == "green":
+        return cv2.inRange( image, np.array([39, 23, 111]), np.array([102, 255, 255]) )
+    elif color == "blue":
+        return cv2.inRange( image, np.array([94, 80, 2]), np.array([126, 255, 255]) )
+    else:
+        return False
+
 ap = argparse.ArgumentParser()
-ap.add_argument("-w", "--width", type=float, required=True,
-                help="width of the left-most object in the image (in millimeter)")
+ap.add_argument("-c", "--color", required=True, help="color of background (red green or blue)")
+ap.add_argument("-w", "--width", type=float, required=True, help="width of the left-most object in the image (in millimeter)")
 args = vars(ap.parse_args())
 
 video = cv2.VideoCapture(0)
-
-show_live_video = True
 
 while True:
     ret, frame = video.read()
     # frame = cv2.resize(frame, (640, 480))
     hsv = cv2.cvtColor(frame, cv2.COLOR_BGR2HSV)
+    mask=get_background_mask(hsv, args["color"])
 
-    lower_hsv_val = [39,23,111]
-    upper_hsv_val = [102,255,255]
-    lower_hsv_green = np.array(lower_hsv_val)
-    upper_hsv_green = np.array(upper_hsv_val)
-
-    mask = cv2.inRange(hsv, lower_hsv_green, upper_hsv_green)
     cv2.imshow('mask', mask)
     edged = cv2.Canny(mask, 50, 100)
     cv2.imshow("Obj-edged", edged)
