@@ -18,12 +18,14 @@ import argparse
 import imutils
 import cv2
 
-# ฟังก์ชันสำหรับหาจุดกึงกลางจากจุด 2 จุด
-
-
+# midpoint
+# ฟังก์ชันหาจุดกึ่งกลางระหว่างจุดสองจุด
+# Input : point A and point B
+# Output : Middle point of point A and point B
+# Create date : 08-July-2020
+# Auther : Athiruj Poositaporn
 def midpoint(ptA, ptB):
     return ((ptA[0] + ptB[0]) * 0.5, (ptA[1] + ptB[1]) * 0.5)
-
 
 # ResizeWithAspectRatio
 # ฟังก์ชันปรับขนาดของภาพตามที่กำหนด (Pixel) ตามอัตราส่วนของภาพ
