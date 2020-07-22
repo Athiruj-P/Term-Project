@@ -99,17 +99,17 @@ cnts = imutils.grab_contours(cnts)
 # กำหนดให้ pixelsPerMetric เป็น None ซึ่งใช้ในการคำนวณอัตราส่วนของรูปภาพอ้างอิง
 # เพื่อใช้ค้นหาความยาวด้านของวัตถุเป้าหมาย
 pixelsPerMetric = None
-
+origin = image.copy()
 # loop เพื่อคำนวณความยาวด้านของแต่ละรูปทรงที่ค้นหาได้จากรูปภาพ
 for c in cnts:
 	# cv2.contourArea => คืนค่าพื้นที่ของรูปทรงที่ c มีหน่วยคือ pixel
     # ถ้าพื้นที่มีขนาดที่เล็กเกินไป จะข้ามไปยังรูปทรงถัดไป
 	# (cv2.contourArea(c)/args["width"]*args["width"]) คือการแปลงหน่วยจาก pixel^2 เป็น MM^2
-	if (cv2.contourArea(c)/args["width"]*args["width"]) < 300:
+	if cv2.contourArea(c) < 900:
 		continue
-
+	print (cv2.contourArea(c))
     # คำนวณหาเส้นรอบรูปรางของวัตถุที่มีความเอียง
-	origin = image.copy()
+	# origin = image.copy()
 	box = cv2.minAreaRect(c)
 	box = cv2.cv.BoxPoints(box) if imutils.is_cv2() else cv2.boxPoints(box)
 	box = np.array(box, dtype="int")
@@ -168,6 +168,8 @@ for c in cnts:
 	# origin = ResizeWithAspectRatio(origin, width=1080)
 	
 	# show the output image
-	cv2.imshow("Image", origin)
-	if (cv2.waitKey(0) & 0xFF) == 27:  
-		break
+cv2.imshow("Image", origin)
+cv2.imwrite("result_img.jpg",origin)
+cv2.waitKey(0)
+# if (cv2.waitKey(0) & 0xFF) == 27:  
+# 	break
