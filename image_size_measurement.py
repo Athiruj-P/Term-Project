@@ -68,11 +68,15 @@ args = vars(ap.parse_args())
 
 # นำเข้ารูปภาพจาก Path ที่ใส่มา
 image = cv2.imread(args["image"])
-image = ResizeWithAspectRatio(image, width=1080)
+# image = ResizeWithAspectRatio(image, width=1500)
+height, width = image.shape[:2]
+print(width)
+print(height)
+print("#####")
 # เปลี่ยนสีของรูปภาพให้เป็นสีเทา (grayscale)
 gray = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
 # เบลอรูปภาพเพื่่อให้ภาพ Smooth ขึ้นเล็กน้อย
-gray = cv2.GaussianBlur(gray, (7, 7), 0)
+gray = cv2.GaussianBlur(gray, (5, 7), 0)
 
 # cv2.Canny => การตีกรอบให้กับภาพ
 edged = cv2.Canny(gray, 50, 100)
@@ -105,7 +109,7 @@ for c in cnts:
 	# cv2.contourArea => คืนค่าพื้นที่ของรูปทรงที่ c มีหน่วยคือ pixel
     # ถ้าพื้นที่มีขนาดที่เล็กเกินไป จะข้ามไปยังรูปทรงถัดไป
 	# (cv2.contourArea(c)/args["width"]*args["width"]) คือการแปลงหน่วยจาก pixel^2 เป็น MM^2
-	if cv2.contourArea(c) < 900:
+	if cv2.contourArea(c) < 10000:
 		continue
 	print (cv2.contourArea(c))
     # คำนวณหาเส้นรอบรูปรางของวัตถุที่มีความเอียง
@@ -157,11 +161,13 @@ for c in cnts:
 	dimA = dA / pixelsPerMetric
 	dimB = dB / pixelsPerMetric
 
+	print("da : "+ str(dA))
+	print("db : "+ str(dB))
     # แสดงตัวเลขจากการคำนวณ
-	cv2.putText(origin, "{:.1f}mm".format(dimA),
+	cv2.putText(origin, "{:.1f}mm".format(dA),
 		(int(tltrX - 15), int(tltrY - 10)), cv2.FONT_HERSHEY_SIMPLEX,
 		0.65, (255, 255, 255), 2)
-	cv2.putText(origin, "{:.1f}mm".format(dimB),
+	cv2.putText(origin, "{:.1f}mm".format(dB),
 		(int(trbrX  + 10), int(trbrY)), cv2.FONT_HERSHEY_SIMPLEX,
 		0.65, (255, 255, 255), 2)
 
