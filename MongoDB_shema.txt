@@ -1,0 +1,37 @@
+==DPML_DB==
+|--MLModelFile : {
+|  		{
+|    		ml_id : 1,
+|    		ml_name : "model name",
+|    		ml_status: 2,
+|    		ml_file : "model_file_name.weight",
+|    		ml_config : <config file>
+|		},
+|	}
+|
+|--RefModelFile : {
+| 		{
+|    		ref_id : 1,
+|    		ref_name : "ref name",
+|    		ref_status: 2,
+|    		ref_file : "ref_file_name.weight",
+|    		ref_config : <config file>
+|		},
+|	}
+|
+|--Log : {
+| 		{
+|    		datetime : "datetime",
+|    		username : "someone",
+|    		ref_status: 2,
+|    		action : "do something"
+|		},
+|	}
+|
+|--User : {
+| 		{
+|    		username: "username"
+|    		password: "password in sha-256",
+|    		role: 0
+|		},
+|	}
