@@ -1,0 +1,12 @@
+version: "3"
+
+services:
+  dpml:
+    image: dpml-react-ui
+    container_name: "dpmlui"
+    # volumes:
+    # Example
+    #   - ./init-mongo.js:/docker-entry-point-initdb.d/init-mongo.js:ro
+    ports:
+      - "80:80"
+    restart: always
