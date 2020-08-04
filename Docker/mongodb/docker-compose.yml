@@ -1,28 +1,43 @@
-version: '3'
+version: "3"
 
 services:
-    mongo:
-        image: mongo
-        environment:
-            - MONGO_INITDB_ROOT_USERNAME=${MONGO_ROOT_USER}
-            - MONGO_INITDB_ROOT_PASSWORD=${MONGO_ROOT_PASSWORD}
-            - MONGO_INITDB_DATABASE=DPML
-        restart: always
-    mongo-express:
-        image: mongo-express
-        environment:
-            - ME_CONFIG_MONGODB_SERVER=mongo
-            - ME_CONFIG_MONGODB_PORT=27017
-            - ME_CONFIG_MONGODB_ADMINUSERNAME=${MONGO_ROOT_USER}
-            - ME_CONFIG_MONGODB_ADMINPASSWORD=${MONGO_ROOT_PASSWORD}
-            - ME_CONFIG_MONGODB_ENABLE_ADMIN=true
-            - ME_CONFIG_MONGODB_AUTH_DATABASE=admin
-            - ME_CONFIG_MONGODB_AUTH_USERNAME=${MONGO_ROOT_USER}
-            - ME_CONFIG_MONGODB_AUTH_PASSWORD=${MONGO_ROOT_PASSWORD}
-            - ME_CONFIG_BASICAUTH_USERNAME=${MONGOEXPRESS_LOGIN}
-            - ME_CONFIG_BASICAUTH_PASSWORD=${MONGOEXPRESS_PASSWORD}
-        depends_on:
-            - mongo
-        ports:
-          - "8081:8081"
-        restart: always
+  database:
+    image: mongo
+    container_name: "DPML_db_mongo"
+    environment:
+      - MONGO_INITDB_DATABASE=DPML
+      - MONGO_INITDB_ROOT_USERNAME=${MONGO_ROOT_USER}
+      - MONGO_INITDB_ROOT_PASSWORD=${MONGO_ROOT_PASSWORD}
+    volumes:
+      # copy init-mongo.js to /docker-entrypoint-initdb.d/ as a read only file
+      # /docker-entrypoint-initdb.d is a folder that already created inside the mongo container
+      # used for initiating database
+      - ./init-mongo.js:/docker-entry-point-initdb.d/init-mongo.js:ro
+
+      # map folder to save data in local folder "mongo-volumn"
+      # /data/db is a mongodbb container folder
+      - mongo-volumn:/data/db
+    ports:
+      - "27017:27017"
+    restart: always
+
+  mongo-express:
+    image: mongo-express
+    environment:
+      - ME_CONFIG_MONGODB_SERVER=DPML_db_mongo
+      - ME_CONFIG_MONGODB_PORT=27017
+      - ME_CONFIG_MONGODB_ADMINUSERNAME=${MONGO_ROOT_USER}
+      - ME_CONFIG_MONGODB_ADMINPASSWORD=${MONGO_ROOT_PASSWORD}
+      - ME_CONFIG_MONGODB_ENABLE_ADMIN=true
+      - ME_CONFIG_MONGODB_AUTH_DATABASE=admin
+      - ME_CONFIG_MONGODB_AUTH_USERNAME=${MONGO_ROOT_USER}
+      - ME_CONFIG_MONGODB_AUTH_PASSWORD=${MONGO_ROOT_PASSWORD}
+      - ME_CONFIG_BASICAUTH_USERNAME=${MONGOEXPRESS_LOGIN}
+      - ME_CONFIG_BASICAUTH_PASSWORD=${MONGOEXPRESS_PASSWORD}
+    depends_on:
+      - database
+    ports:
+      - "8081:8081"
+    restart: always
+volumes:
+  mongo-volumn:
