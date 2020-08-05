@@ -5,7 +5,7 @@ services:
     image: mongo
     container_name: "DPML_db_mongo"
     environment:
-      - MONGO_INITDB_DATABASE=DPML
+      - MONGO_INITDB_DATABASE=DPML_db
       - MONGO_INITDB_ROOT_USERNAME=${MONGO_ROOT_USER}
       - MONGO_INITDB_ROOT_PASSWORD=${MONGO_ROOT_PASSWORD}
     volumes:
