@@ -11,7 +11,6 @@ user_collection = db_config.item["db_col_user"]
 
 app = Flask(__name__)
 
-
 @app.route("/")
 def hello():
     return "Hello"
@@ -24,7 +23,8 @@ def get_all_user():
         i.pop('_id')
         users.append(i)
     db_connect.close()
-    return jsonify(users)
+    result = jsonify(users)
+    return result
 
 # Get by username
 @app.route('/get_user', methods=['post'])
@@ -74,6 +74,13 @@ def remove_user():
     db_connect.close()
     return jsonify({"result" : "A document has been deleted."})
 
+@app.after_request
+def after_request(response):
+  response.headers.add('Access-Control-Allow-Origin', '*')
+  response.headers.add('Access-Control-Allow-Headers', 'Content-Type,Authorization')
+  response.headers.add('Access-Control-Allow-Methods', 'GET,PUT,POST,DELETE,OPTIONS')
+  response.headers.add('Access-Control-Allow-Credentials', 'true')
+  return response
 
 if __name__ == "__main__":
     # Only for debugging while developing
