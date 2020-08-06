@@ -5,9 +5,9 @@ FROM node:12.18.3 as builder
 COPY package.json package-lock.json ./
 
 # Install the dependencies and make the folder
-RUN npm install && mkdir /dpml-react-ui && mv ./node_modules ./dpml-react-ui
+RUN npm install && mkdir /react-ui && mv ./node_modules ./react-ui
 
-WORKDIR /dpml-react-ui
+WORKDIR /react-ui
 
 COPY . .
 
@@ -25,8 +25,8 @@ COPY ./.nginx/nginx.conf /etc/nginx/nginx.conf
 RUN rm -rf /usr/share/nginx/html/*
 
 # Copy from the stage 1
-COPY --from=builder /dpml-react-ui/build /usr/share/nginx/html
+COPY --from=builder /react-ui/build /usr/share/nginx/html
 
-EXPOSE 3000 80
+EXPOSE 80 80
 
 ENTRYPOINT ["nginx", "-g", "daemon off;"]
