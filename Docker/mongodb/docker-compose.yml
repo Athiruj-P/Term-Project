@@ -3,7 +3,7 @@ version: "3"
 services:
   database:
     image: mongo
-    container_name: "DPML_db_mongo"
+    container_name: "db_mongo"
     environment:
       - MONGO_INITDB_DATABASE=DPML_db
       - MONGO_INITDB_ROOT_USERNAME=${MONGO_ROOT_USER}
@@ -19,12 +19,15 @@ services:
       - mongo-volumn:/data/db
     ports:
       - "27017:27017"
+    networks:
+      - my_network
     restart: always
 
   mongo-express:
     image: mongo-express
+    container_name: "mongo-exp"
     environment:
-      - ME_CONFIG_MONGODB_SERVER=DPML_db_mongo
+      - ME_CONFIG_MONGODB_SERVER=db_mongo
       - ME_CONFIG_MONGODB_PORT=27017
       - ME_CONFIG_MONGODB_ADMINUSERNAME=${MONGO_ROOT_USER}
       - ME_CONFIG_MONGODB_ADMINPASSWORD=${MONGO_ROOT_PASSWORD}
@@ -38,6 +41,12 @@ services:
       - database
     ports:
       - "8081:8081"
+    networks:
+      - my_network
     restart: always
 volumes:
   mongo-volumn:
+
+networks:
+  my_network:
+    external: true
