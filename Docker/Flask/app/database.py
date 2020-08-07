@@ -11,9 +11,11 @@ user_collection = db_config.item["db_col_user"]
 
 app = Flask(__name__)
 
+username = "Athiruj"
+
 @app.route("/")
 def hello():
-    return "Hello"
+    return "Hello" + username
 
 # Get all user
 @app.route('/get_all_user', methods=['get'])
