@@ -8,6 +8,10 @@ URI = "mongodb://"+db_config.item["db_username"]+":" + \
 db_connect = MongoClient(URI)
 DPML_db = db_connect["DPML_db"]
 user_collection = db_config.item["db_col_user"]
+role_collection = db_config.item["db_col_role"]
+mlmo_collection = db_config.item["db_col_mlmo"]
+remo_collection = db_config.item["db_col_remo"]
+unit_collection = db_config.item["db_col_unit"]
 
 app = Flask(__name__)
 
