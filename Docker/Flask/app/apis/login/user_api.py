@@ -1,7 +1,7 @@
 from flask import Flask, request, jsonify ,Blueprint
 from pymongo import MongoClient
 from bson.json_util import dumps
-import ..db_config
+from .. import db_config
 
 user_api = Blueprint('user_api', __name__)
 

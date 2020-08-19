@@ -1,8 +1,10 @@
 from flask import Flask, request, jsonify
-from apis.user_api import user_api
+from apis.login.user_api import user_api
+from apis.image_processing.image_processing_api import image_progessing_api
 
 app = Flask(__name__)
 app.register_blueprint(user_api)
+app.register_blueprint(image_progessing_api)
 
 @app.route("/")
 def hello():
