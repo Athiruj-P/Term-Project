@@ -1,3 +1,8 @@
+# ml_management_api
+# Description : ไฟล์สำหรับการพัฒนา API ของการจัดการเพิ่ม แก้ไข และลบ
+# ข้อมูลต้นอบบของวัตถุ
+# Author : Athiruj Poositaporn
+
 from flask import Flask, request, jsonify ,Blueprint ,make_response
 from pymongo import MongoClient
 from bson.json_util import dumps
@@ -15,9 +20,11 @@ mlmo_collection = db_config.item["db_col_mlmo"]
 # Set const variable (path)
 parent = os.path.dirname(os.path.dirname(os.path.dirname(__file__))) 
 ml_path = os.path.join(parent, db_config.item["db_file_path"], db_config.item["ml_path"])
-
 ml_management_api = Blueprint('ml_management_api', __name__)
 
+# add_ml_model
+# Description : เพิ่มข้อมูลของชื่อและไฟล์ .weights ของข้อมูลต้นแบบของวัตถุ 
+# Author : Athiruj Poositaporn
 @ml_management_api.route("/add_ml_model", methods=['post' , 'get'])
 def add_ml_model():
     try:
@@ -52,10 +59,11 @@ def add_ml_model():
         else:
             db_connect.close()
             return jsonify("duplicate_name")
-        
 
-    
     except Exception as identifier:
         db_connect.close()
-        return dumps(str(identifier))
+        error = {
+            "mes" : str(identifier)
+        }
+        return jsonify(error)
     
