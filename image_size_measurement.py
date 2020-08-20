@@ -68,7 +68,7 @@ args = vars(ap.parse_args())
 
 # นำเข้ารูปภาพจาก Path ที่ใส่มา
 image = cv2.imread(args["image"])
-# image = ResizeWithAspectRatio(image, width=1500)
+image = ResizeWithAspectRatio(image, width=1500)
 height, width = image.shape[:2]
 print(width)
 print(height)
@@ -85,8 +85,8 @@ edged = cv2.dilate(edged, None, iterations=1)
 # dilate => ลบ Noise สีขาวออกจากรูปภาพ
 edged = cv2.erode(edged, None, iterations=1)
 
-cv2.imshow("edged", edged)
-writeImage(edged,"grayscale","eraser")
+# cv2.imshow("edged", edged)
+# writeImage(edged,"grayscale","eraser")
 # cv2.imshow("gray", gray)
 
 
@@ -109,8 +109,12 @@ for c in cnts:
 	# cv2.contourArea => คืนค่าพื้นที่ของรูปทรงที่ c มีหน่วยคือ pixel
     # ถ้าพื้นที่มีขนาดที่เล็กเกินไป จะข้ามไปยังรูปทรงถัดไป
 	# (cv2.contourArea(c)/args["width"]*args["width"]) คือการแปลงหน่วยจาก pixel^2 เป็น MM^2
-	if cv2.contourArea(c) < 10000:
+	if cv2.contourArea(c) < 1000:
 		continue
+
+	print ("========================")
+	print ("========================")
+	print ("contourArea")
 	print (cv2.contourArea(c))
     # คำนวณหาเส้นรอบรูปรางของวัตถุที่มีความเอียง
 	# origin = image.copy()
@@ -160,22 +164,27 @@ for c in cnts:
     # คำนวณหาความยาวด้านของวัตถุ
 	dimA = dA / pixelsPerMetric
 	dimB = dB / pixelsPerMetric
-
+	
 	print("da : "+ str(dA))
 	print("db : "+ str(dB))
+
+	print("dimA : "+ str(dimA))
+	print("dimB : "+ str(dimB))
+
     # แสดงตัวเลขจากการคำนวณ
-	cv2.putText(origin, "{:.1f}mm".format(dA),
+
+	cv2.putText(origin, "{:.1f}mm".format(dimA),
 		(int(tltrX - 15), int(tltrY - 10)), cv2.FONT_HERSHEY_SIMPLEX,
 		0.65, (255, 255, 255), 2)
-	cv2.putText(origin, "{:.1f}mm".format(dB),
+	cv2.putText(origin, "{:.1f}mm".format(dimB),
 		(int(trbrX  + 10), int(trbrY)), cv2.FONT_HERSHEY_SIMPLEX,
 		0.65, (255, 255, 255), 2)
 
 	# origin = ResizeWithAspectRatio(origin, width=1080)
 	
 	# show the output image
-cv2.imshow("Image", origin)
-cv2.imwrite("result_img.jpg",origin)
-cv2.waitKey(0)
+	cv2.imshow("Image", origin)
+	cv2.waitKey(0)
+# cv2.imwrite("result_img.jpg",origin)
 # if (cv2.waitKey(0) & 0xFF) == 27:  
 # 	break
