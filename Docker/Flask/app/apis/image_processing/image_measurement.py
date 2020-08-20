@@ -62,7 +62,8 @@ class ImageMeasurement:
         cv2.imwrite("res2/"+ text + ".jpg",image)
 
     def measure_obj_size(self,image):
-        input_image = image.image
+        # input_image = image.image
+        input_image = self.resize_with_aspect_ratio(image.image,width=1080)
         height, width = input_image.shape[:2]
 
         # เปลี่ยนสีของรูปภาพให้เป็นสีเทา (grayscale)
@@ -97,7 +98,7 @@ class ImageMeasurement:
             # cv2.contourArea => คืนค่าพื้นที่ของรูปทรงที่ c มีหน่วยคือ pixel
             # ถ้าพื้นที่มีขนาดที่เล็กเกินไป จะข้ามไปยังรูปทรงถัดไป
             # (cv2.contourArea(c)/args["width"]*args["width"]) คือการแปลงหน่วยจาก pixel^2 เป็น MM^2
-            if cv2.contourArea(c) < 1000:
+            if cv2.contourArea(c) < 2000:
                 continue
             # คำนวณหาเส้นรอบรูปรางของวัตถุที่มีความเอียง
             # origin = image.copy()
@@ -142,7 +143,7 @@ class ImageMeasurement:
 
             # กรณีที่ไม่มีการกำหนดค่า pixelsPerMetric จะนำค่าที่ได้จากพารามิเตอร์มาคำนวณหาอัตราส่วน
             if pixelsPerMetric is None:
-                pixelsPerMetric = dB / 1
+                pixelsPerMetric = dB / 20
                 # pixelsPerMetric = dB / args["width"]
 
             # คำนวณหาความยาวด้านของวัตถุ
@@ -150,12 +151,11 @@ class ImageMeasurement:
             dimB = dB / pixelsPerMetric
 
             # แสดงตัวเลขจากการคำนวณ
-            cv2.putText(origin, "{:.1f}mm".format(dA),
+            cv2.putText(origin, "{:.1f}mm".format(dimA),
                 (int(tltrX - 15), int(tltrY - 10)), cv2.FONT_HERSHEY_SIMPLEX,
                 0.65, (255, 255, 255), 2)
-            cv2.putText(origin, "{:.1f}mm".format(dB),
+            cv2.putText(origin, "{:.1f}mm".format(dimB),
                 (int(trbrX  + 10), int(trbrY)), cv2.FONT_HERSHEY_SIMPLEX,
                 0.65, (255, 255, 255), 2)
         
-        # cv2.imwrite("result_img.jpg",origin)
         return origin

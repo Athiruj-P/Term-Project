@@ -8,9 +8,9 @@ from . import image_measurement
 from . import image
 from .. import db_config
 
-image_progessing_api = Blueprint('image_progessing_api', __name__)
+image_processing_api = Blueprint('image_processing_api', __name__)
 
-@image_progessing_api.route("/upload_image", methods=['post'])
+@image_processing_api.route("/upload_image", methods=['post'])
 def upload_image():
     try:
         r = request
@@ -31,11 +31,3 @@ def upload_image():
         result = dumps(str(identifier))
         return result
         pass
-
-# @image_progessing_api.after_request
-# def after_request(response):
-#   response.headers.add('Access-Control-Allow-Origin', '*')
-#   response.headers.add('Access-Control-Allow-Headers', 'Content-Type,Authorization')
-#   response.headers.add('Access-Control-Allow-Methods', 'GET,PUT,POST,DELETE,OPTIONS')
-#   response.headers.add('Access-Control-Allow-Credentials', 'true')
-#   return response
