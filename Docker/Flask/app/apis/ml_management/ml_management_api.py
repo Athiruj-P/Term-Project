@@ -4,12 +4,15 @@
 # Author : Athiruj Poositaporn
 
 from flask import Flask, request, Blueprint ,make_response
+from pymongo import MongoClient
+from bson.json_util import dumps
 from .. import db_config
-# from pymongo import MongoClient
-# from bson.json_util import dumps
 
 from ..model_management.model import Model
 from ..model_management.model_manager import MLManagement, RefManagement
+
+ml_management_api = Blueprint('ml_management_api', __name__)
+
 
 # add_ml_model
 # Description : เพิ่มข้อมูลของชื่อและไฟล์ .weights ของข้อมูลต้นแบบของวัตถุ 
