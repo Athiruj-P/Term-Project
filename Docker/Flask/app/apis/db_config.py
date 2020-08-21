@@ -19,11 +19,16 @@ item = {
     "fld_mlmo_status_disable" : 2,
     
     # dpml_ref_model fields
-    # "fld_remo_id" : "remo_id",
-    # "fld_remo_name" : "remo_name",
-    # "fld_remo_path" : "remo_path",
-    # "fld_remo_status" : "remo_status",
-    # "fld_remo_status_default" : 0,
+    "fld_remo_id" : "remo_id",
+    "fld_remo_name" : "remo_name",
+    "fld_remo_width" : "remo_width",
+    "fld_remo_height" : "remo_height",
+    "fld_remo_path" : "remo_path",
+    "fld_remo_unit" : "remo_un_id",
+    "fld_remo_status" : "remo_status",
+    "fld_remo_status_delete" : 0,
+    "fld_remo_status_active" : 1,
+    "fld_remo_status_disable" : 2,
 
     "db_file_path" : "db_file",
     "ml_path" : "ml_model",
