@@ -30,6 +30,11 @@ item = {
     "fld_remo_status_active" : 1,
     "fld_remo_status_disable" : 2,
 
+    # dpml_unit fields
+    "fld_un_id" : "un_id",
+    "fld_un_name" : "un_name",
+    "fld_un_abb_name" : "un_abb_name",
+
     "db_file_path" : "db_file",
     "ml_path" : "ml_model",
     "ref_path" : "ref_model",
