@@ -2,7 +2,6 @@
 # Description : ไฟล์สำหรับการพัฒนา API ของการจัดการเพิ่ม แก้ไข และลบ
 # ข้อมูลต้นอบบของวัตถุ
 # Author : Athiruj Poositaporn
-
 from flask import Flask, request, Blueprint ,make_response
 from pymongo import MongoClient
 from bson.json_util import dumps
@@ -13,7 +12,6 @@ from ..model_management.model_manager import MLManagement, RefManagement
 
 ml_management_api = Blueprint('ml_management_api', __name__)
 
-
 # add_ml_model
 # Description : เพิ่มข้อมูลของชื่อและไฟล์ .weights ของข้อมูลต้นแบบของวัตถุ 
 # Author : Athiruj Poositaporn
@@ -22,23 +20,29 @@ def add_model():
     model_type = request.form.get('type')
     if(model_type == "ml"):
         file = request.files['file']
-        name = request.form.get('mlmo_name')
+        name = request.form.get('name')
         data = Model(name = name , file=file)
         ml_manager = MLManagement().create_manager()
         result = ml_manager.add_model(data=data)
         del ml_manager
         return result
+
     elif(model_type == "ref"):
         file = request.files['file']
-        name = request.form.get('remo_name')
+        name = request.form.get('name')
         width = request.form.get('width')
         height = request.form.get('height')
         unit = request.form.get('unit')
-
+        # isinstance(c, int) or isinstance(c, float)
         data = Model(name=name, file=file, width=width, height=height, un_id=unit)
         ref_manager = RefManagement().create_manager()
         result = ref_manager.add_model(data=data)
         del ref_manager
+        return result
+    else:
+        result = {
+            'mes' : "wrong_type"
+        }
         return result
 
 # edit_model
@@ -47,7 +51,7 @@ def add_model():
 @ml_management_api.route("/edit_model", methods=['post'])
 def edit_model():
     model_type = request.form.get('type')
-    model_id = int(request.form.get('model_id'))
+    model_id = request.form.get('model_id')
     file = request.files['file']
     name = request.form.get('name')
     if(model_type == "ml"):
@@ -72,7 +76,7 @@ def edit_model():
 @ml_management_api.route("/change_active_model", methods=['post'])
 def change_active_model():
     model_type = request.form.get('type')
-    model_id = int(request.form.get('model_id'))
+    model_id = request.form.get('model_id')
     data = Model(id=model_id)
     if(model_type == "ml"):
         ml_manager = MLManagement().create_manager()
