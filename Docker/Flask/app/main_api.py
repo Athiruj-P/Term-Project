@@ -1,7 +1,12 @@
 from flask import Flask, request, jsonify
+import logging
 from apis.login.user_api import user_api
 from apis.image_processing.image_processing_api import image_processing_api
 from apis.model_management.model_management_api import model_management_api
+
+logger = logging.getLogger(__name__)
+logging.basicConfig(level=logging.DEBUG)
+logging.getLogger(__name__).setLevel(logging.INFO)
 
 app = Flask(__name__)
 app.register_blueprint(user_api)
@@ -10,6 +15,7 @@ app.register_blueprint(model_management_api)
 
 @app.route("/")
 def hello():
+    app.logger.info('Processing default request')
     return "Hello World!"
 
 @app.after_request

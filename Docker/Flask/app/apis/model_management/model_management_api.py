@@ -3,6 +3,7 @@
 # ข้อมูลต้นอบบของวัตถุ
 # Author : Athiruj Poositaporn
 from flask import Flask, request, Blueprint ,make_response
+import logging
 from pymongo import MongoClient
 from bson.json_util import dumps
 from .. import db_config
@@ -11,6 +12,8 @@ from .model import Model
 from .model_manager import MLManagement, RefManagement
 
 model_management_api = Blueprint('model_management_api', __name__)
+logger = logging.getLogger("model_management")
+
 
 # add_ml_model
 # Description : เพิ่มข้อมูลของชื่อและไฟล์ .weights ของข้อมูลต้นแบบของวัตถุ 
@@ -19,6 +22,7 @@ model_management_api = Blueprint('model_management_api', __name__)
 def add_model():
     model_type = request.form.get('type')
     if(model_type == "ml"):
+        logger.debug("add ml")
         file = request.files['file']
         name = request.form.get('name')
         data = Model(name = name , file=file)
@@ -96,7 +100,7 @@ def change_active_model():
 @model_management_api.route("/delete_model", methods=['post'])
 def delete_model():
     model_type = request.form.get('type')
-    model_id = int(request.form.get('model_id'))
+    model_id = request.form.get('model_id')
     data = Model(id=model_id)
     if(model_type == "ml"):
         ml_manager = MLManagement().create_manager()

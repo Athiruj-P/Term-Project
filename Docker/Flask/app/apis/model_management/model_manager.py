@@ -3,6 +3,7 @@
 # โดยใช้ Design pattern "Factory Method"
 # Author : Athiruj Poositaporn
 from __future__ import annotations
+import logging
 from flask import jsonify
 from bson.json_util import dumps
 from abc import ABC, abstractmethod
@@ -118,11 +119,24 @@ class MLManager(Manager):
             return jsonify(error)
 
     def get_model_by_id(self , data = Model()):
-        query_result = self.DPML_db[self.collection].find_one({
-            db_config.item['fld_mlmo_id']: data.id
-        })
-        query_result.pop('_id')
-        return jsonify(query_result)
+        try:
+            if(self.is_int(data.id)):
+                data.id = int(data.id)
+                query_model = self.DPML_db[self.collection].find_one({
+                    db_config.item['fld_mlmo_id']: data.id
+                })
+            else: 
+                raise TypeError("wrong_mlmo_id")
+
+            query_model.pop('_id')
+            result = {
+                'mes' : "ok",
+                'result': query_model
+            }
+            return jsonify(result)
+        except Exception as identifier:
+            error = { 'mes' : str(identifier) }
+            return jsonify(error)
 
     def add_model(self , data = Model()):
         try:
@@ -242,27 +256,42 @@ class MLManager(Manager):
                 new_value = {"$set": {db_config.item['fld_mlmo_status'] : db_config.item['fld_mlmo_status_active']}}
                 query_result = self.DPML_db[self.collection].update(query,new_value)
 
-                result = { 'mes' : query_result }  
+                result = { 'mes' : "changed_active_model" }  
             return jsonify(result)
         except Exception as identifier:
             error = { 'mes' : str(identifier) }
             return jsonify(error)
 
     def delete_model(self , data = Model()):
-        query_result = self.DPML_db[self.collection].update(
-            {
-                db_config.item['fld_mlmo_id']:data.id
-            },
-            {   
-                "$set":{
-                    db_config.item['fld_mlmo_status']:db_config.item['fld_mlmo_status_delete']
-                }
-            }
-        )
-        result = {
-            'mes' : query_result
-        }
-        return jsonify(result)
+        try:
+            if(self.is_int(data.id)):
+                data.id = int(data.id)
+                query_model = self.DPML_db[self.collection].find_one({
+                    db_config.item['fld_mlmo_id']: data.id,
+                    db_config.item['fld_mlmo_status']: {"$ne": db_config.item['fld_mlmo_status_active']}
+                })
+            else: 
+                raise TypeError("wrong_mlmo_id")
+
+            if(not query_model):
+                raise TypeError("wrong_mlmo_id")
+            else:
+                query_result = self.DPML_db[self.collection].update(
+                    {
+                        db_config.item['fld_mlmo_id']:data.id
+                    },
+                    {   
+                        "$set":{
+                            db_config.item['fld_mlmo_status']:db_config.item['fld_mlmo_status_delete']
+                        }
+                    }
+                )
+                result = { 'mes' : "deleted_model" }
+                return jsonify(result)
+
+        except Exception as identifier:
+            error = { 'mes' : str(identifier) }
+            return jsonify(error)
 
     def __del__(self): 
         self.db_connect.close()
@@ -336,11 +365,24 @@ class RefManager(Manager):
             return jsonify(error)
 
     def get_model_by_id(self , data = Model()):
-        query_result = self.DPML_db[self.collection].find_one({
-            db_config.item["fld_remo_id"]: data.id
-        })
-        query_result.pop('_id')
-        return jsonify(query_result)
+        try:
+            if(self.is_int(data.id)):
+                data.id = int(data.id)
+                query_model = self.DPML_db[self.collection].find_one({
+                    db_config.item['fld_remo_id']: data.id
+                })
+            else: 
+                raise TypeError("wrong_remo_id")
+            
+            query_model.pop('_id')
+            result = {
+                'mes' : "ok",
+                'result': query_model
+            }
+            return jsonify(result)
+        except Exception as identifier:
+            error = { 'mes' : str(identifier) }
+            return jsonify(error)
 
     def add_model(self , data = Model()):
         try:
@@ -506,27 +548,42 @@ class RefManager(Manager):
                 new_value = {"$set": {db_config.item['fld_remo_status'] : db_config.item['fld_remo_status_active']}}
                 query_result = self.DPML_db[self.collection].update(query,new_value)
 
-                result = { 'mes' : query_result }  
+                result = { 'mes' : "changed_active_model" }  
             return jsonify(result)
         except Exception as identifier:
             error = { 'mes' : str(identifier) }
             return jsonify(error)
 
     def delete_model(self , data = Model()):
-        query_result = self.DPML_db[self.collection].update(
-            {
-                db_config.item['fld_remo_id']:data.id
-            },
-            {   
-                "$set":{
-                    db_config.item['fld_remo_status']:db_config.item['fld_remo_status_delete']
-                }
-            }
-        )
-        result = {
-            'mes' : query_result
-        }
-        return jsonify(result)
+        try:
+            if(self.is_int(data.id)):
+                data.id = int(data.id)
+                query_model = self.DPML_db[self.collection].find_one({
+                    db_config.item['fld_remo_id']: data.id,
+                    db_config.item['fld_remo_status']: {"$ne": db_config.item['fld_remo_status_active']}
+                })
+            else: 
+                raise TypeError("wrong_remo_id")
+
+            if(not query_model):
+                raise TypeError("wrong_remo_id")
+            else:
+                query_result = self.DPML_db[self.collection].update(
+                    {
+                        db_config.item['fld_remo_id']:data.id
+                    },
+                    {   
+                        "$set":{
+                            db_config.item['fld_remo_status']:db_config.item['fld_remo_status_delete']
+                        }
+                    }
+                )
+                result = { 'mes' : "deleted_model" }
+                return jsonify(result)
+
+        except Exception as identifier:
+            error = { 'mes' : str(identifier) }
+            return jsonify(error)
 
     def __del__(self): 
         self.db_connect.close()
