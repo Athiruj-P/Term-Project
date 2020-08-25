@@ -1,0 +1,14 @@
+2020-08-25 11:01:30,740 [INFO] {add_model:26} - Use add ML model API.
+2020-08-25 11:01:30,741 [INFO] {add_model:30} - Create MLManagement object.
+2020-08-25 11:01:30,741 [INFO] {__init__:77} - Connecting to database
+2020-08-25 11:01:30,757 [INFO] {__init__:79} - Connected to database
+2020-08-25 11:01:30,758 [INFO] {add_model:32} - Call add_model function.
+2020-08-25 11:01:30,759 [INFO] {add_model:148} - Prepair ML model data to be save.
+2020-08-25 11:01:30,850 [WARNING] {add_model:165} - Duplicate ML name. Please re-enter ML name.
+2020-08-25 11:04:25,031 [INFO:model_management_api] {add_model:26} - Use add ML model API.
+2020-08-25 11:04:25,036 [INFO:model_management_api] {add_model:30} - Create MLManagement object.
+2020-08-25 11:04:25,037 [INFO:MLManager_object] {__init__:77} - Connecting to database
+2020-08-25 11:04:25,077 [INFO:MLManager_object] {__init__:79} - Connected to database
+2020-08-25 11:04:25,083 [INFO:model_management_api] {add_model:32} - Call add_model function.
+2020-08-25 11:04:25,086 [INFO:MLManager_object] {add_model:148} - Prepair ML model data to be save.
+2020-08-25 11:04:25,175 [WARNING:MLManager_object] {add_model:165} - Duplicate ML name. Please re-enter ML name.

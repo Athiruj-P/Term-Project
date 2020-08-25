@@ -1,0 +1,739 @@
+2020-08-25 11:51:53,931 [INFO:model_management_api] {add_model:27} - Use add ML model API.
+2020-08-25 11:51:53,931 [INFO:model_management_api] {add_model:27} - Use add ML model API.
+2020-08-25 11:51:53,932 [INFO:model_management_api] {add_model:31} - Create MLManagement object.
+2020-08-25 11:51:53,932 [INFO:model_management_api] {add_model:31} - Create MLManagement object.
+2020-08-25 11:51:53,932 [INFO:MLManager_obj] {__init__:75} - Connecting to database
+2020-08-25 11:51:53,951 [INFO:MLManager_obj] {__init__:77} - Connected to database
+2020-08-25 11:51:53,952 [INFO:model_management_api] {add_model:33} - Call add_model function.
+2020-08-25 11:51:53,952 [INFO:model_management_api] {add_model:33} - Call add_model function.
+2020-08-25 11:51:53,963 [INFO:MLManager_obj] {add_model:146} - Prepair ML model data to be save.
+2020-08-25 11:51:54,042 [WARNING:MLManager_obj] {add_model:163} - Duplicate ML name. Please re-enter ML name.
+2020-08-25 11:51:54,050 [INFO:werkzeug] {_log:113} - 127.0.0.1 - - [25/Aug/2020 11:51:54] "[37mPOST /add_model HTTP/1.1[0m" 200 -
+2020-08-25 11:52:31,612 [INFO:model_management_api] {add_model:27} - Use add ML model API.
+2020-08-25 11:52:31,612 [INFO:model_management_api] {add_model:27} - Use add ML model API.
+2020-08-25 11:52:31,617 [INFO:model_management_api] {add_model:31} - Create MLManagement object.
+2020-08-25 11:52:31,617 [INFO:model_management_api] {add_model:31} - Create MLManagement object.
+2020-08-25 11:52:31,620 [INFO:MLManager_obj] {__init__:75} - Connecting to database
+2020-08-25 11:52:31,626 [INFO:MLManager_obj] {__init__:77} - Connected to database
+2020-08-25 11:52:31,627 [INFO:model_management_api] {add_model:33} - Call add_model function.
+2020-08-25 11:52:31,627 [INFO:model_management_api] {add_model:33} - Call add_model function.
+2020-08-25 11:52:31,637 [INFO:MLManager_obj] {add_model:146} - Prepair ML model data to be save.
+2020-08-25 11:52:31,702 [INFO:MLManager_obj] {add_model:168} - Saved a ML model file to storage.
+2020-08-25 11:52:31,717 [INFO:MLManager_obj] {add_model:182} - Added a ML model details to database.
+2020-08-25 11:52:31,723 [INFO:werkzeug] {_log:113} - 127.0.0.1 - - [25/Aug/2020 11:52:31] "[37mPOST /add_model HTTP/1.1[0m" 200 -
+2020-08-25 11:56:30,857 [INFO:werkzeug] {_log:113} -  * Detected change in 'C:\\Users\\athiruj\\Desktop\\img-processing\\Docker\\Flask\\app\\logging_config.py', reloading
+2020-08-25 11:56:31,000 [INFO:werkzeug] {_log:113} -  * Restarting with stat
+2020-08-25 11:56:32,373 [INFO:main] {<module>:12} - Created flask app.
+2020-08-25 11:56:32,373 [INFO:main] {<module>:12} - Created flask app.
+2020-08-25 11:56:32,376 [INFO:main] {<module>:14} - Registered image_processing_api blueprint 
+2020-08-25 11:56:32,376 [INFO:main] {<module>:14} - Registered image_processing_api blueprint 
+2020-08-25 11:56:32,378 [INFO:main] {<module>:16} - Registered user_api blueprint 
+2020-08-25 11:56:32,378 [INFO:main] {<module>:16} - Registered user_api blueprint 
+2020-08-25 11:56:32,386 [INFO:main] {<module>:18} - Registered model_management_api blueprint 
+2020-08-25 11:56:32,386 [INFO:main] {<module>:18} - Registered model_management_api blueprint 
+2020-08-25 11:56:32,405 [WARNING:werkzeug] {_log:113} -  * Debugger is active!
+2020-08-25 11:56:32,425 [INFO:werkzeug] {_log:113} -  * Debugger PIN: 147-092-856
+2020-08-25 11:56:32,475 [INFO:werkzeug] {_log:113} -  * Running on http://0.0.0.0:5001/ (Press CTRL+C to quit)
+2020-08-25 11:56:37,262 [INFO:werkzeug] {_log:113} -  * Detected change in 'C:\\Users\\athiruj\\Desktop\\img-processing\\Docker\\Flask\\app\\logging_config.py', reloading
+2020-08-25 11:56:37,404 [INFO:werkzeug] {_log:113} -  * Restarting with stat
+2020-08-25 11:57:58,898 [INFO:main] {<module>:12} [SYSTEM]: Created flask app.
+2020-08-25 11:57:58,898 [INFO:main] {<module>:12} [SYSTEM]: Created flask app.
+2020-08-25 11:57:58,901 [INFO:main] {<module>:14} [SYSTEM]: Registered image_processing_api blueprint 
+2020-08-25 11:57:58,901 [INFO:main] {<module>:14} [SYSTEM]: Registered image_processing_api blueprint 
+2020-08-25 11:57:58,902 [INFO:main] {<module>:16} [SYSTEM]: Registered user_api blueprint 
+2020-08-25 11:57:58,902 [INFO:main] {<module>:16} [SYSTEM]: Registered user_api blueprint 
+2020-08-25 11:57:58,907 [INFO:main] {<module>:18} [SYSTEM]: Registered model_management_api blueprint 
+2020-08-25 11:57:58,907 [INFO:main] {<module>:18} [SYSTEM]: Registered model_management_api blueprint 
+2020-08-25 11:57:58,939 [INFO:werkzeug] {_log:113} [SYSTEM]:  * Restarting with stat
+2020-08-25 11:58:00,442 [INFO:main] {<module>:12} [SYSTEM]: Created flask app.
+2020-08-25 11:58:00,442 [INFO:main] {<module>:12} [SYSTEM]: Created flask app.
+2020-08-25 11:58:00,444 [INFO:main] {<module>:14} [SYSTEM]: Registered image_processing_api blueprint 
+2020-08-25 11:58:00,444 [INFO:main] {<module>:14} [SYSTEM]: Registered image_processing_api blueprint 
+2020-08-25 11:58:00,446 [INFO:main] {<module>:16} [SYSTEM]: Registered user_api blueprint 
+2020-08-25 11:58:00,446 [INFO:main] {<module>:16} [SYSTEM]: Registered user_api blueprint 
+2020-08-25 11:58:00,450 [INFO:main] {<module>:18} [SYSTEM]: Registered model_management_api blueprint 
+2020-08-25 11:58:00,450 [INFO:main] {<module>:18} [SYSTEM]: Registered model_management_api blueprint 
+2020-08-25 11:58:00,472 [WARNING:werkzeug] {_log:113} [SYSTEM]:  * Debugger is active!
+2020-08-25 11:58:00,495 [INFO:werkzeug] {_log:113} [SYSTEM]:  * Debugger PIN: 147-092-856
+2020-08-25 11:58:00,530 [INFO:werkzeug] {_log:113} [SYSTEM]:  * Running on http://0.0.0.0:5001/ (Press CTRL+C to quit)
+2020-08-25 12:00:51,844 [INFO:werkzeug] {_log:113} [SYSTEM]:  * Detected change in 'C:\\Users\\athiruj\\Desktop\\img-processing\\Docker\\Flask\\app\\logging_config.py', reloading
+2020-08-25 12:00:52,078 [INFO:werkzeug] {_log:113} [SYSTEM]:  * Restarting with stat
+2020-08-25 12:00:54,386 [INFO:main] {<module>:12} [SYSTEM]: Created flask app.
+2020-08-25 12:00:54,386 [INFO:main] {<module>:12} [SYSTEM]: Created flask app.
+2020-08-25 12:00:54,387 [INFO:main] {<module>:14} [SYSTEM]: Registered image_processing_api blueprint 
+2020-08-25 12:00:54,387 [INFO:main] {<module>:14} [SYSTEM]: Registered image_processing_api blueprint 
+2020-08-25 12:00:54,390 [INFO:main] {<module>:16} [SYSTEM]: Registered user_api blueprint 
+2020-08-25 12:00:54,390 [INFO:main] {<module>:16} [SYSTEM]: Registered user_api blueprint 
+2020-08-25 12:00:54,395 [INFO:main] {<module>:18} [SYSTEM]: Registered model_management_api blueprint 
+2020-08-25 12:00:54,395 [INFO:main] {<module>:18} [SYSTEM]: Registered model_management_api blueprint 
+2020-08-25 12:00:54,414 [WARNING:werkzeug] {_log:113} [SYSTEM]:  * Debugger is active!
+2020-08-25 12:00:54,427 [INFO:werkzeug] {_log:113} [SYSTEM]:  * Debugger PIN: 147-092-856
+2020-08-25 12:00:54,452 [INFO:werkzeug] {_log:113} [SYSTEM]:  * Running on http://0.0.0.0:5001/ (Press CTRL+C to quit)
+2020-08-25 12:02:32,557 [INFO:werkzeug] {_log:113} [SYSTEM]:  * Detected change in 'C:\\Users\\athiruj\\Desktop\\img-processing\\Docker\\Flask\\app\\apis\\model_management\\model_management_api.py', reloading
+2020-08-25 12:02:32,694 [INFO:werkzeug] {_log:113} [SYSTEM]:  * Restarting with stat
+2020-08-25 12:02:34,225 [INFO:main] {<module>:12} [SYSTEM]: Created flask app.
+2020-08-25 12:02:34,225 [INFO:main] {<module>:12} [SYSTEM]: Created flask app.
+2020-08-25 12:02:34,226 [INFO:main] {<module>:14} [SYSTEM]: Registered image_processing_api blueprint 
+2020-08-25 12:02:34,226 [INFO:main] {<module>:14} [SYSTEM]: Registered image_processing_api blueprint 
+2020-08-25 12:02:34,228 [INFO:main] {<module>:16} [SYSTEM]: Registered user_api blueprint 
+2020-08-25 12:02:34,228 [INFO:main] {<module>:16} [SYSTEM]: Registered user_api blueprint 
+2020-08-25 12:02:34,232 [INFO:main] {<module>:18} [SYSTEM]: Registered model_management_api blueprint 
+2020-08-25 12:02:34,232 [INFO:main] {<module>:18} [SYSTEM]: Registered model_management_api blueprint 
+2020-08-25 12:02:34,247 [WARNING:werkzeug] {_log:113} [SYSTEM]:  * Debugger is active!
+2020-08-25 12:02:34,260 [INFO:werkzeug] {_log:113} [SYSTEM]:  * Debugger PIN: 147-092-856
+2020-08-25 12:02:34,280 [INFO:werkzeug] {_log:113} [SYSTEM]:  * Running on http://0.0.0.0:5001/ (Press CTRL+C to quit)
+2020-08-25 12:02:35,565 [INFO:werkzeug] {_log:113} [SYSTEM]:  * Detected change in 'C:\\Users\\athiruj\\Desktop\\img-processing\\Docker\\Flask\\app\\apis\\model_management\\model_management_api.py', reloading
+2020-08-25 12:02:35,658 [INFO:werkzeug] {_log:113} [SYSTEM]:  * Restarting with stat
+2020-08-25 12:02:37,000 [INFO:main] {<module>:12} [SYSTEM]: Created flask app.
+2020-08-25 12:02:37,000 [INFO:main] {<module>:12} [SYSTEM]: Created flask app.
+2020-08-25 12:02:37,003 [INFO:main] {<module>:14} [SYSTEM]: Registered image_processing_api blueprint 
+2020-08-25 12:02:37,003 [INFO:main] {<module>:14} [SYSTEM]: Registered image_processing_api blueprint 
+2020-08-25 12:02:37,004 [INFO:main] {<module>:16} [SYSTEM]: Registered user_api blueprint 
+2020-08-25 12:02:37,004 [INFO:main] {<module>:16} [SYSTEM]: Registered user_api blueprint 
+2020-08-25 12:02:37,008 [INFO:main] {<module>:18} [SYSTEM]: Registered model_management_api blueprint 
+2020-08-25 12:02:37,008 [INFO:main] {<module>:18} [SYSTEM]: Registered model_management_api blueprint 
+2020-08-25 12:02:37,023 [WARNING:werkzeug] {_log:113} [SYSTEM]:  * Debugger is active!
+2020-08-25 12:02:37,033 [INFO:werkzeug] {_log:113} [SYSTEM]:  * Debugger PIN: 147-092-856
+2020-08-25 12:02:37,059 [INFO:werkzeug] {_log:113} [SYSTEM]:  * Running on http://0.0.0.0:5001/ (Press CTRL+C to quit)
+2020-08-25 12:02:45,651 [INFO:werkzeug] {_log:113} [SYSTEM]:  * Detected change in 'C:\\Users\\athiruj\\Desktop\\img-processing\\Docker\\Flask\\app\\apis\\model_management\\model_management_api.py', reloading
+2020-08-25 12:02:45,736 [INFO:werkzeug] {_log:113} [SYSTEM]:  * Restarting with stat
+2020-08-25 12:02:47,206 [INFO:main] {<module>:12} [SYSTEM]: Created flask app.
+2020-08-25 12:02:47,206 [INFO:main] {<module>:12} [SYSTEM]: Created flask app.
+2020-08-25 12:02:47,209 [INFO:main] {<module>:14} [SYSTEM]: Registered image_processing_api blueprint 
+2020-08-25 12:02:47,209 [INFO:main] {<module>:14} [SYSTEM]: Registered image_processing_api blueprint 
+2020-08-25 12:02:47,211 [INFO:main] {<module>:16} [SYSTEM]: Registered user_api blueprint 
+2020-08-25 12:02:47,211 [INFO:main] {<module>:16} [SYSTEM]: Registered user_api blueprint 
+2020-08-25 12:02:47,222 [INFO:main] {<module>:18} [SYSTEM]: Registered model_management_api blueprint 
+2020-08-25 12:02:47,222 [INFO:main] {<module>:18} [SYSTEM]: Registered model_management_api blueprint 
+2020-08-25 12:02:47,243 [WARNING:werkzeug] {_log:113} [SYSTEM]:  * Debugger is active!
+2020-08-25 12:02:47,261 [INFO:werkzeug] {_log:113} [SYSTEM]:  * Debugger PIN: 147-092-856
+2020-08-25 12:02:47,295 [INFO:werkzeug] {_log:113} [SYSTEM]:  * Running on http://0.0.0.0:5001/ (Press CTRL+C to quit)
+2020-08-25 12:02:55,636 [INFO:werkzeug] {_log:113} [SYSTEM]:  * Detected change in 'C:\\Users\\athiruj\\Desktop\\img-processing\\Docker\\Flask\\app\\apis\\model_management\\model_management_api.py', reloading
+2020-08-25 12:02:55,725 [INFO:werkzeug] {_log:113} [SYSTEM]:  * Restarting with stat
+2020-08-25 12:02:57,087 [INFO:main] {<module>:12} [SYSTEM]: Created flask app.
+2020-08-25 12:02:57,087 [INFO:main] {<module>:12} [SYSTEM]: Created flask app.
+2020-08-25 12:02:57,090 [INFO:main] {<module>:14} [SYSTEM]: Registered image_processing_api blueprint 
+2020-08-25 12:02:57,090 [INFO:main] {<module>:14} [SYSTEM]: Registered image_processing_api blueprint 
+2020-08-25 12:02:57,092 [INFO:main] {<module>:16} [SYSTEM]: Registered user_api blueprint 
+2020-08-25 12:02:57,092 [INFO:main] {<module>:16} [SYSTEM]: Registered user_api blueprint 
+2020-08-25 12:02:57,096 [INFO:main] {<module>:18} [SYSTEM]: Registered model_management_api blueprint 
+2020-08-25 12:02:57,096 [INFO:main] {<module>:18} [SYSTEM]: Registered model_management_api blueprint 
+2020-08-25 12:02:57,111 [WARNING:werkzeug] {_log:113} [SYSTEM]:  * Debugger is active!
+2020-08-25 12:02:57,125 [INFO:werkzeug] {_log:113} [SYSTEM]:  * Debugger PIN: 147-092-856
+2020-08-25 12:02:57,145 [INFO:werkzeug] {_log:113} [SYSTEM]:  * Running on http://0.0.0.0:5001/ (Press CTRL+C to quit)
+2020-08-25 12:02:59,613 [INFO:werkzeug] {_log:113} [SYSTEM]:  * Detected change in 'C:\\Users\\athiruj\\Desktop\\img-processing\\Docker\\Flask\\app\\apis\\model_management\\model_management_api.py', reloading
+2020-08-25 12:02:59,815 [INFO:werkzeug] {_log:113} [SYSTEM]:  * Restarting with stat
+2020-08-25 12:03:01,206 [INFO:main] {<module>:12} [SYSTEM]: Created flask app.
+2020-08-25 12:03:01,206 [INFO:main] {<module>:12} [SYSTEM]: Created flask app.
+2020-08-25 12:03:01,207 [INFO:main] {<module>:14} [SYSTEM]: Registered image_processing_api blueprint 
+2020-08-25 12:03:01,207 [INFO:main] {<module>:14} [SYSTEM]: Registered image_processing_api blueprint 
+2020-08-25 12:03:01,209 [INFO:main] {<module>:16} [SYSTEM]: Registered user_api blueprint 
+2020-08-25 12:03:01,209 [INFO:main] {<module>:16} [SYSTEM]: Registered user_api blueprint 
+2020-08-25 12:03:01,213 [INFO:main] {<module>:18} [SYSTEM]: Registered model_management_api blueprint 
+2020-08-25 12:03:01,213 [INFO:main] {<module>:18} [SYSTEM]: Registered model_management_api blueprint 
+2020-08-25 12:03:01,227 [WARNING:werkzeug] {_log:113} [SYSTEM]:  * Debugger is active!
+2020-08-25 12:03:01,239 [INFO:werkzeug] {_log:113} [SYSTEM]:  * Debugger PIN: 147-092-856
+2020-08-25 12:03:01,257 [INFO:werkzeug] {_log:113} [SYSTEM]:  * Running on http://0.0.0.0:5001/ (Press CTRL+C to quit)
+2020-08-25 12:03:02,553 [INFO:werkzeug] {_log:113} [SYSTEM]:  * Detected change in 'C:\\Users\\athiruj\\Desktop\\img-processing\\Docker\\Flask\\app\\apis\\model_management\\model_management_api.py', reloading
+2020-08-25 12:03:02,645 [INFO:werkzeug] {_log:113} [SYSTEM]:  * Restarting with stat
+2020-08-25 12:03:03,781 [INFO:main] {<module>:12} [SYSTEM]: Created flask app.
+2020-08-25 12:03:03,781 [INFO:main] {<module>:12} [SYSTEM]: Created flask app.
+2020-08-25 12:03:03,783 [INFO:main] {<module>:14} [SYSTEM]: Registered image_processing_api blueprint 
+2020-08-25 12:03:03,783 [INFO:main] {<module>:14} [SYSTEM]: Registered image_processing_api blueprint 
+2020-08-25 12:03:03,784 [INFO:main] {<module>:16} [SYSTEM]: Registered user_api blueprint 
+2020-08-25 12:03:03,784 [INFO:main] {<module>:16} [SYSTEM]: Registered user_api blueprint 
+2020-08-25 12:03:03,788 [INFO:main] {<module>:18} [SYSTEM]: Registered model_management_api blueprint 
+2020-08-25 12:03:03,788 [INFO:main] {<module>:18} [SYSTEM]: Registered model_management_api blueprint 
+2020-08-25 12:03:03,805 [WARNING:werkzeug] {_log:113} [SYSTEM]:  * Debugger is active!
+2020-08-25 12:03:03,818 [INFO:werkzeug] {_log:113} [SYSTEM]:  * Debugger PIN: 147-092-856
+2020-08-25 12:03:03,837 [INFO:werkzeug] {_log:113} [SYSTEM]:  * Running on http://0.0.0.0:5001/ (Press CTRL+C to quit)
+2020-08-25 12:03:09,747 [INFO:werkzeug] {_log:113} [SYSTEM]:  * Detected change in 'C:\\Users\\athiruj\\Desktop\\img-processing\\Docker\\Flask\\app\\apis\\model_management\\model_management_api.py', reloading
+2020-08-25 12:03:09,871 [INFO:werkzeug] {_log:113} [SYSTEM]:  * Restarting with stat
+2020-08-25 12:03:11,163 [INFO:main] {<module>:12} [SYSTEM]: Created flask app.
+2020-08-25 12:03:11,163 [INFO:main] {<module>:12} [SYSTEM]: Created flask app.
+2020-08-25 12:03:11,167 [INFO:main] {<module>:14} [SYSTEM]: Registered image_processing_api blueprint 
+2020-08-25 12:03:11,167 [INFO:main] {<module>:14} [SYSTEM]: Registered image_processing_api blueprint 
+2020-08-25 12:03:11,169 [INFO:main] {<module>:16} [SYSTEM]: Registered user_api blueprint 
+2020-08-25 12:03:11,169 [INFO:main] {<module>:16} [SYSTEM]: Registered user_api blueprint 
+2020-08-25 12:03:11,176 [INFO:main] {<module>:18} [SYSTEM]: Registered model_management_api blueprint 
+2020-08-25 12:03:11,176 [INFO:main] {<module>:18} [SYSTEM]: Registered model_management_api blueprint 
+2020-08-25 12:03:11,200 [WARNING:werkzeug] {_log:113} [SYSTEM]:  * Debugger is active!
+2020-08-25 12:03:11,221 [INFO:werkzeug] {_log:113} [SYSTEM]:  * Debugger PIN: 147-092-856
+2020-08-25 12:03:11,253 [INFO:werkzeug] {_log:113} [SYSTEM]:  * Running on http://0.0.0.0:5001/ (Press CTRL+C to quit)
+2020-08-25 12:03:14,904 [INFO:werkzeug] {_log:113} [SYSTEM]:  * Detected change in 'C:\\Users\\athiruj\\Desktop\\img-processing\\Docker\\Flask\\app\\apis\\model_management\\model_management_api.py', reloading
+2020-08-25 12:03:15,004 [INFO:werkzeug] {_log:113} [SYSTEM]:  * Restarting with stat
+2020-08-25 12:03:16,274 [INFO:main] {<module>:12} [SYSTEM]: Created flask app.
+2020-08-25 12:03:16,274 [INFO:main] {<module>:12} [SYSTEM]: Created flask app.
+2020-08-25 12:03:16,276 [INFO:main] {<module>:14} [SYSTEM]: Registered image_processing_api blueprint 
+2020-08-25 12:03:16,276 [INFO:main] {<module>:14} [SYSTEM]: Registered image_processing_api blueprint 
+2020-08-25 12:03:16,278 [INFO:main] {<module>:16} [SYSTEM]: Registered user_api blueprint 
+2020-08-25 12:03:16,278 [INFO:main] {<module>:16} [SYSTEM]: Registered user_api blueprint 
+2020-08-25 12:03:16,281 [INFO:main] {<module>:18} [SYSTEM]: Registered model_management_api blueprint 
+2020-08-25 12:03:16,281 [INFO:main] {<module>:18} [SYSTEM]: Registered model_management_api blueprint 
+2020-08-25 12:03:16,298 [WARNING:werkzeug] {_log:113} [SYSTEM]:  * Debugger is active!
+2020-08-25 12:03:16,313 [INFO:werkzeug] {_log:113} [SYSTEM]:  * Debugger PIN: 147-092-856
+2020-08-25 12:03:16,331 [INFO:werkzeug] {_log:113} [SYSTEM]:  * Running on http://0.0.0.0:5001/ (Press CTRL+C to quit)
+2020-08-25 12:03:57,543 [INFO:werkzeug] {_log:113} [SYSTEM]:  * Detected change in 'C:\\Users\\athiruj\\Desktop\\img-processing\\Docker\\Flask\\app\\apis\\model_management\\model_manager.py', reloading
+2020-08-25 12:03:57,671 [INFO:werkzeug] {_log:113} [SYSTEM]:  * Restarting with stat
+2020-08-25 12:03:59,336 [INFO:main] {<module>:12} [SYSTEM]: Created flask app.
+2020-08-25 12:03:59,336 [INFO:main] {<module>:12} [SYSTEM]: Created flask app.
+2020-08-25 12:03:59,340 [INFO:main] {<module>:14} [SYSTEM]: Registered image_processing_api blueprint 
+2020-08-25 12:03:59,340 [INFO:main] {<module>:14} [SYSTEM]: Registered image_processing_api blueprint 
+2020-08-25 12:03:59,343 [INFO:main] {<module>:16} [SYSTEM]: Registered user_api blueprint 
+2020-08-25 12:03:59,343 [INFO:main] {<module>:16} [SYSTEM]: Registered user_api blueprint 
+2020-08-25 12:03:59,349 [INFO:main] {<module>:18} [SYSTEM]: Registered model_management_api blueprint 
+2020-08-25 12:03:59,349 [INFO:main] {<module>:18} [SYSTEM]: Registered model_management_api blueprint 
+2020-08-25 12:03:59,377 [WARNING:werkzeug] {_log:113} [SYSTEM]:  * Debugger is active!
+2020-08-25 12:03:59,397 [INFO:werkzeug] {_log:113} [SYSTEM]:  * Debugger PIN: 147-092-856
+2020-08-25 12:03:59,421 [INFO:werkzeug] {_log:113} [SYSTEM]:  * Running on http://0.0.0.0:5001/ (Press CTRL+C to quit)
+2020-08-25 12:04:00,776 [INFO:werkzeug] {_log:113} [SYSTEM]:  * Detected change in 'C:\\Users\\athiruj\\Desktop\\img-processing\\Docker\\Flask\\app\\apis\\model_management\\model_manager.py', reloading
+2020-08-25 12:04:01,504 [INFO:werkzeug] {_log:113} [SYSTEM]:  * Restarting with stat
+2020-08-25 12:04:03,070 [INFO:main] {<module>:12} [SYSTEM]: Created flask app.
+2020-08-25 12:04:03,070 [INFO:main] {<module>:12} [SYSTEM]: Created flask app.
+2020-08-25 12:04:03,072 [INFO:main] {<module>:14} [SYSTEM]: Registered image_processing_api blueprint 
+2020-08-25 12:04:03,072 [INFO:main] {<module>:14} [SYSTEM]: Registered image_processing_api blueprint 
+2020-08-25 12:04:03,073 [INFO:main] {<module>:16} [SYSTEM]: Registered user_api blueprint 
+2020-08-25 12:04:03,073 [INFO:main] {<module>:16} [SYSTEM]: Registered user_api blueprint 
+2020-08-25 12:04:03,077 [INFO:main] {<module>:18} [SYSTEM]: Registered model_management_api blueprint 
+2020-08-25 12:04:03,077 [INFO:main] {<module>:18} [SYSTEM]: Registered model_management_api blueprint 
+2020-08-25 12:04:03,093 [WARNING:werkzeug] {_log:113} [SYSTEM]:  * Debugger is active!
+2020-08-25 12:04:03,107 [INFO:werkzeug] {_log:113} [SYSTEM]:  * Debugger PIN: 147-092-856
+2020-08-25 12:04:03,133 [INFO:werkzeug] {_log:113} [SYSTEM]:  * Running on http://0.0.0.0:5001/ (Press CTRL+C to quit)
+2020-08-25 12:04:09,176 [INFO:werkzeug] {_log:113} [SYSTEM]:  * Detected change in 'C:\\Users\\athiruj\\Desktop\\img-processing\\Docker\\Flask\\app\\apis\\model_management\\model_manager.py', reloading
+2020-08-25 12:04:09,411 [INFO:werkzeug] {_log:113} [SYSTEM]:  * Restarting with stat
+2020-08-25 12:04:10,887 [INFO:main] {<module>:12} [SYSTEM]: Created flask app.
+2020-08-25 12:04:10,887 [INFO:main] {<module>:12} [SYSTEM]: Created flask app.
+2020-08-25 12:04:10,893 [INFO:main] {<module>:14} [SYSTEM]: Registered image_processing_api blueprint 
+2020-08-25 12:04:10,893 [INFO:main] {<module>:14} [SYSTEM]: Registered image_processing_api blueprint 
+2020-08-25 12:04:10,895 [INFO:main] {<module>:16} [SYSTEM]: Registered user_api blueprint 
+2020-08-25 12:04:10,895 [INFO:main] {<module>:16} [SYSTEM]: Registered user_api blueprint 
+2020-08-25 12:04:10,903 [INFO:main] {<module>:18} [SYSTEM]: Registered model_management_api blueprint 
+2020-08-25 12:04:10,903 [INFO:main] {<module>:18} [SYSTEM]: Registered model_management_api blueprint 
+2020-08-25 12:04:10,927 [WARNING:werkzeug] {_log:113} [SYSTEM]:  * Debugger is active!
+2020-08-25 12:04:10,959 [INFO:werkzeug] {_log:113} [SYSTEM]:  * Debugger PIN: 147-092-856
+2020-08-25 12:04:11,001 [INFO:werkzeug] {_log:113} [SYSTEM]:  * Running on http://0.0.0.0:5001/ (Press CTRL+C to quit)
+2020-08-25 12:04:17,729 [INFO:werkzeug] {_log:113} [SYSTEM]:  * Detected change in 'C:\\Users\\athiruj\\Desktop\\img-processing\\Docker\\Flask\\app\\apis\\model_management\\model_manager.py', reloading
+2020-08-25 12:04:17,884 [INFO:werkzeug] {_log:113} [SYSTEM]:  * Restarting with stat
+2020-08-25 12:04:19,644 [INFO:main] {<module>:12} [SYSTEM]: Created flask app.
+2020-08-25 12:04:19,644 [INFO:main] {<module>:12} [SYSTEM]: Created flask app.
+2020-08-25 12:04:19,645 [INFO:main] {<module>:14} [SYSTEM]: Registered image_processing_api blueprint 
+2020-08-25 12:04:19,645 [INFO:main] {<module>:14} [SYSTEM]: Registered image_processing_api blueprint 
+2020-08-25 12:04:19,648 [INFO:main] {<module>:16} [SYSTEM]: Registered user_api blueprint 
+2020-08-25 12:04:19,648 [INFO:main] {<module>:16} [SYSTEM]: Registered user_api blueprint 
+2020-08-25 12:04:19,654 [INFO:main] {<module>:18} [SYSTEM]: Registered model_management_api blueprint 
+2020-08-25 12:04:19,654 [INFO:main] {<module>:18} [SYSTEM]: Registered model_management_api blueprint 
+2020-08-25 12:04:19,671 [WARNING:werkzeug] {_log:113} [SYSTEM]:  * Debugger is active!
+2020-08-25 12:04:19,685 [INFO:werkzeug] {_log:113} [SYSTEM]:  * Debugger PIN: 147-092-856
+2020-08-25 12:04:19,712 [INFO:werkzeug] {_log:113} [SYSTEM]:  * Running on http://0.0.0.0:5001/ (Press CTRL+C to quit)
+2020-08-25 12:04:49,187 [INFO:werkzeug] {_log:113} [SYSTEM]:  * Detected change in 'C:\\Users\\athiruj\\Desktop\\img-processing\\Docker\\Flask\\app\\apis\\model_management\\model_manager.py', reloading
+2020-08-25 12:04:49,299 [INFO:werkzeug] {_log:113} [SYSTEM]:  * Restarting with stat
+2020-08-25 12:04:50,832 [INFO:main] {<module>:12} [SYSTEM]: Created flask app.
+2020-08-25 12:04:50,832 [INFO:main] {<module>:12} [SYSTEM]: Created flask app.
+2020-08-25 12:04:50,834 [INFO:main] {<module>:14} [SYSTEM]: Registered image_processing_api blueprint 
+2020-08-25 12:04:50,834 [INFO:main] {<module>:14} [SYSTEM]: Registered image_processing_api blueprint 
+2020-08-25 12:04:50,836 [INFO:main] {<module>:16} [SYSTEM]: Registered user_api blueprint 
+2020-08-25 12:04:50,836 [INFO:main] {<module>:16} [SYSTEM]: Registered user_api blueprint 
+2020-08-25 12:04:50,839 [INFO:main] {<module>:18} [SYSTEM]: Registered model_management_api blueprint 
+2020-08-25 12:04:50,839 [INFO:main] {<module>:18} [SYSTEM]: Registered model_management_api blueprint 
+2020-08-25 12:04:50,854 [WARNING:werkzeug] {_log:113} [SYSTEM]:  * Debugger is active!
+2020-08-25 12:04:50,867 [INFO:werkzeug] {_log:113} [SYSTEM]:  * Debugger PIN: 147-092-856
+2020-08-25 12:04:50,893 [INFO:werkzeug] {_log:113} [SYSTEM]:  * Running on http://0.0.0.0:5001/ (Press CTRL+C to quit)
+2020-08-25 12:04:53,400 [INFO:werkzeug] {_log:113} [SYSTEM]:  * Detected change in 'C:\\Users\\athiruj\\Desktop\\img-processing\\Docker\\Flask\\app\\apis\\model_management\\model_manager.py', reloading
+2020-08-25 12:04:53,500 [INFO:werkzeug] {_log:113} [SYSTEM]:  * Restarting with stat
+2020-08-25 12:04:54,859 [INFO:main] {<module>:12} [SYSTEM]: Created flask app.
+2020-08-25 12:04:54,859 [INFO:main] {<module>:12} [SYSTEM]: Created flask app.
+2020-08-25 12:04:54,861 [INFO:main] {<module>:14} [SYSTEM]: Registered image_processing_api blueprint 
+2020-08-25 12:04:54,861 [INFO:main] {<module>:14} [SYSTEM]: Registered image_processing_api blueprint 
+2020-08-25 12:04:54,864 [INFO:main] {<module>:16} [SYSTEM]: Registered user_api blueprint 
+2020-08-25 12:04:54,864 [INFO:main] {<module>:16} [SYSTEM]: Registered user_api blueprint 
+2020-08-25 12:04:54,867 [INFO:main] {<module>:18} [SYSTEM]: Registered model_management_api blueprint 
+2020-08-25 12:04:54,867 [INFO:main] {<module>:18} [SYSTEM]: Registered model_management_api blueprint 
+2020-08-25 12:04:54,883 [WARNING:werkzeug] {_log:113} [SYSTEM]:  * Debugger is active!
+2020-08-25 12:04:54,897 [INFO:werkzeug] {_log:113} [SYSTEM]:  * Debugger PIN: 147-092-856
+2020-08-25 12:04:54,924 [INFO:werkzeug] {_log:113} [SYSTEM]:  * Running on http://0.0.0.0:5001/ (Press CTRL+C to quit)
+2020-08-25 12:05:09,146 [INFO:werkzeug] {_log:113} [SYSTEM]:  * Detected change in 'C:\\Users\\athiruj\\Desktop\\img-processing\\Docker\\Flask\\app\\apis\\model_management\\model_manager.py', reloading
+2020-08-25 12:05:09,238 [INFO:werkzeug] {_log:113} [SYSTEM]:  * Restarting with stat
+2020-08-25 12:05:11,149 [INFO:main] {<module>:12} [SYSTEM]: Created flask app.
+2020-08-25 12:05:11,149 [INFO:main] {<module>:12} [SYSTEM]: Created flask app.
+2020-08-25 12:05:11,152 [INFO:main] {<module>:14} [SYSTEM]: Registered image_processing_api blueprint 
+2020-08-25 12:05:11,152 [INFO:main] {<module>:14} [SYSTEM]: Registered image_processing_api blueprint 
+2020-08-25 12:05:11,154 [INFO:main] {<module>:16} [SYSTEM]: Registered user_api blueprint 
+2020-08-25 12:05:11,154 [INFO:main] {<module>:16} [SYSTEM]: Registered user_api blueprint 
+2020-08-25 12:05:11,161 [INFO:main] {<module>:18} [SYSTEM]: Registered model_management_api blueprint 
+2020-08-25 12:05:11,161 [INFO:main] {<module>:18} [SYSTEM]: Registered model_management_api blueprint 
+2020-08-25 12:05:11,181 [WARNING:werkzeug] {_log:113} [SYSTEM]:  * Debugger is active!
+2020-08-25 12:05:11,198 [INFO:werkzeug] {_log:113} [SYSTEM]:  * Debugger PIN: 147-092-856
+2020-08-25 12:05:11,247 [INFO:werkzeug] {_log:113} [SYSTEM]:  * Running on http://0.0.0.0:5001/ (Press CTRL+C to quit)
+2020-08-25 12:05:19,790 [INFO:werkzeug] {_log:113} [SYSTEM]:  * Detected change in 'C:\\Users\\athiruj\\Desktop\\img-processing\\Docker\\Flask\\app\\apis\\model_management\\model_manager.py', reloading
+2020-08-25 12:05:19,935 [INFO:werkzeug] {_log:113} [SYSTEM]:  * Restarting with stat
+2020-08-25 12:05:21,293 [INFO:main] {<module>:12} [SYSTEM]: Created flask app.
+2020-08-25 12:05:21,293 [INFO:main] {<module>:12} [SYSTEM]: Created flask app.
+2020-08-25 12:05:21,294 [INFO:main] {<module>:14} [SYSTEM]: Registered image_processing_api blueprint 
+2020-08-25 12:05:21,294 [INFO:main] {<module>:14} [SYSTEM]: Registered image_processing_api blueprint 
+2020-08-25 12:05:21,296 [INFO:main] {<module>:16} [SYSTEM]: Registered user_api blueprint 
+2020-08-25 12:05:21,296 [INFO:main] {<module>:16} [SYSTEM]: Registered user_api blueprint 
+2020-08-25 12:05:21,309 [INFO:main] {<module>:18} [SYSTEM]: Registered model_management_api blueprint 
+2020-08-25 12:05:21,309 [INFO:main] {<module>:18} [SYSTEM]: Registered model_management_api blueprint 
+2020-08-25 12:05:21,330 [WARNING:werkzeug] {_log:113} [SYSTEM]:  * Debugger is active!
+2020-08-25 12:05:21,344 [INFO:werkzeug] {_log:113} [SYSTEM]:  * Debugger PIN: 147-092-856
+2020-08-25 12:05:21,364 [INFO:werkzeug] {_log:113} [SYSTEM]:  * Running on http://0.0.0.0:5001/ (Press CTRL+C to quit)
+2020-08-25 12:05:37,804 [INFO:werkzeug] {_log:113} [SYSTEM]:  * Detected change in 'C:\\Users\\athiruj\\Desktop\\img-processing\\Docker\\Flask\\app\\apis\\model_management\\model_manager.py', reloading
+2020-08-25 12:05:37,888 [INFO:werkzeug] {_log:113} [SYSTEM]:  * Restarting with stat
+2020-08-25 12:05:39,412 [INFO:main] {<module>:12} [SYSTEM]: Created flask app.
+2020-08-25 12:05:39,412 [INFO:main] {<module>:12} [SYSTEM]: Created flask app.
+2020-08-25 12:05:39,418 [INFO:main] {<module>:14} [SYSTEM]: Registered image_processing_api blueprint 
+2020-08-25 12:05:39,418 [INFO:main] {<module>:14} [SYSTEM]: Registered image_processing_api blueprint 
+2020-08-25 12:05:39,420 [INFO:main] {<module>:16} [SYSTEM]: Registered user_api blueprint 
+2020-08-25 12:05:39,420 [INFO:main] {<module>:16} [SYSTEM]: Registered user_api blueprint 
+2020-08-25 12:05:39,424 [INFO:main] {<module>:18} [SYSTEM]: Registered model_management_api blueprint 
+2020-08-25 12:05:39,424 [INFO:main] {<module>:18} [SYSTEM]: Registered model_management_api blueprint 
+2020-08-25 12:05:39,453 [WARNING:werkzeug] {_log:113} [SYSTEM]:  * Debugger is active!
+2020-08-25 12:05:39,475 [INFO:werkzeug] {_log:113} [SYSTEM]:  * Debugger PIN: 147-092-856
+2020-08-25 12:05:39,506 [INFO:werkzeug] {_log:113} [SYSTEM]:  * Running on http://0.0.0.0:5001/ (Press CTRL+C to quit)
+2020-08-25 12:05:43,489 [INFO:werkzeug] {_log:113} [SYSTEM]:  * Detected change in 'C:\\Users\\athiruj\\Desktop\\img-processing\\Docker\\Flask\\app\\apis\\model_management\\model_manager.py', reloading
+2020-08-25 12:05:43,702 [INFO:werkzeug] {_log:113} [SYSTEM]:  * Restarting with stat
+2020-08-25 12:05:45,192 [INFO:main] {<module>:12} [SYSTEM]: Created flask app.
+2020-08-25 12:05:45,192 [INFO:main] {<module>:12} [SYSTEM]: Created flask app.
+2020-08-25 12:05:45,195 [INFO:main] {<module>:14} [SYSTEM]: Registered image_processing_api blueprint 
+2020-08-25 12:05:45,195 [INFO:main] {<module>:14} [SYSTEM]: Registered image_processing_api blueprint 
+2020-08-25 12:05:45,197 [INFO:main] {<module>:16} [SYSTEM]: Registered user_api blueprint 
+2020-08-25 12:05:45,197 [INFO:main] {<module>:16} [SYSTEM]: Registered user_api blueprint 
+2020-08-25 12:05:45,206 [INFO:main] {<module>:18} [SYSTEM]: Registered model_management_api blueprint 
+2020-08-25 12:05:45,206 [INFO:main] {<module>:18} [SYSTEM]: Registered model_management_api blueprint 
+2020-08-25 12:05:45,226 [WARNING:werkzeug] {_log:113} [SYSTEM]:  * Debugger is active!
+2020-08-25 12:05:45,248 [INFO:werkzeug] {_log:113} [SYSTEM]:  * Debugger PIN: 147-092-856
+2020-08-25 12:05:45,292 [INFO:werkzeug] {_log:113} [SYSTEM]:  * Running on http://0.0.0.0:5001/ (Press CTRL+C to quit)
+2020-08-25 12:05:46,642 [INFO:werkzeug] {_log:113} [SYSTEM]:  * Detected change in 'C:\\Users\\athiruj\\Desktop\\img-processing\\Docker\\Flask\\app\\apis\\model_management\\model_manager.py', reloading
+2020-08-25 12:05:46,731 [INFO:werkzeug] {_log:113} [SYSTEM]:  * Restarting with stat
+2020-08-25 12:05:48,114 [INFO:main] {<module>:12} [SYSTEM]: Created flask app.
+2020-08-25 12:05:48,114 [INFO:main] {<module>:12} [SYSTEM]: Created flask app.
+2020-08-25 12:05:48,116 [INFO:main] {<module>:14} [SYSTEM]: Registered image_processing_api blueprint 
+2020-08-25 12:05:48,116 [INFO:main] {<module>:14} [SYSTEM]: Registered image_processing_api blueprint 
+2020-08-25 12:05:48,117 [INFO:main] {<module>:16} [SYSTEM]: Registered user_api blueprint 
+2020-08-25 12:05:48,117 [INFO:main] {<module>:16} [SYSTEM]: Registered user_api blueprint 
+2020-08-25 12:05:48,121 [INFO:main] {<module>:18} [SYSTEM]: Registered model_management_api blueprint 
+2020-08-25 12:05:48,121 [INFO:main] {<module>:18} [SYSTEM]: Registered model_management_api blueprint 
+2020-08-25 12:05:48,137 [WARNING:werkzeug] {_log:113} [SYSTEM]:  * Debugger is active!
+2020-08-25 12:05:48,150 [INFO:werkzeug] {_log:113} [SYSTEM]:  * Debugger PIN: 147-092-856
+2020-08-25 12:05:48,170 [INFO:werkzeug] {_log:113} [SYSTEM]:  * Running on http://0.0.0.0:5001/ (Press CTRL+C to quit)
+2020-08-25 12:05:59,213 [INFO:werkzeug] {_log:113} [SYSTEM]:  * Detected change in 'C:\\Users\\athiruj\\Desktop\\img-processing\\Docker\\Flask\\app\\apis\\model_management\\model_manager.py', reloading
+2020-08-25 12:05:59,366 [INFO:werkzeug] {_log:113} [SYSTEM]:  * Restarting with stat
+2020-08-25 12:06:00,983 [INFO:main] {<module>:12} [SYSTEM]: Created flask app.
+2020-08-25 12:06:00,983 [INFO:main] {<module>:12} [SYSTEM]: Created flask app.
+2020-08-25 12:06:00,986 [INFO:main] {<module>:14} [SYSTEM]: Registered image_processing_api blueprint 
+2020-08-25 12:06:00,986 [INFO:main] {<module>:14} [SYSTEM]: Registered image_processing_api blueprint 
+2020-08-25 12:06:00,988 [INFO:main] {<module>:16} [SYSTEM]: Registered user_api blueprint 
+2020-08-25 12:06:00,988 [INFO:main] {<module>:16} [SYSTEM]: Registered user_api blueprint 
+2020-08-25 12:06:00,994 [INFO:main] {<module>:18} [SYSTEM]: Registered model_management_api blueprint 
+2020-08-25 12:06:00,994 [INFO:main] {<module>:18} [SYSTEM]: Registered model_management_api blueprint 
+2020-08-25 12:06:01,019 [WARNING:werkzeug] {_log:113} [SYSTEM]:  * Debugger is active!
+2020-08-25 12:06:01,034 [INFO:werkzeug] {_log:113} [SYSTEM]:  * Debugger PIN: 147-092-856
+2020-08-25 12:06:01,072 [INFO:werkzeug] {_log:113} [SYSTEM]:  * Running on http://0.0.0.0:5001/ (Press CTRL+C to quit)
+2020-08-25 12:06:02,489 [INFO:werkzeug] {_log:113} [SYSTEM]:  * Detected change in 'C:\\Users\\athiruj\\Desktop\\img-processing\\Docker\\Flask\\app\\apis\\model_management\\model_manager.py', reloading
+2020-08-25 12:06:02,624 [INFO:werkzeug] {_log:113} [SYSTEM]:  * Restarting with stat
+2020-08-25 12:06:04,065 [INFO:main] {<module>:12} [SYSTEM]: Created flask app.
+2020-08-25 12:06:04,065 [INFO:main] {<module>:12} [SYSTEM]: Created flask app.
+2020-08-25 12:06:04,067 [INFO:main] {<module>:14} [SYSTEM]: Registered image_processing_api blueprint 
+2020-08-25 12:06:04,067 [INFO:main] {<module>:14} [SYSTEM]: Registered image_processing_api blueprint 
+2020-08-25 12:06:04,070 [INFO:main] {<module>:16} [SYSTEM]: Registered user_api blueprint 
+2020-08-25 12:06:04,070 [INFO:main] {<module>:16} [SYSTEM]: Registered user_api blueprint 
+2020-08-25 12:06:04,073 [INFO:main] {<module>:18} [SYSTEM]: Registered model_management_api blueprint 
+2020-08-25 12:06:04,073 [INFO:main] {<module>:18} [SYSTEM]: Registered model_management_api blueprint 
+2020-08-25 12:06:04,092 [WARNING:werkzeug] {_log:113} [SYSTEM]:  * Debugger is active!
+2020-08-25 12:06:04,106 [INFO:werkzeug] {_log:113} [SYSTEM]:  * Debugger PIN: 147-092-856
+2020-08-25 12:06:04,135 [INFO:werkzeug] {_log:113} [SYSTEM]:  * Running on http://0.0.0.0:5001/ (Press CTRL+C to quit)
+2020-08-25 12:06:12,419 [INFO:werkzeug] {_log:113} [SYSTEM]:  * Detected change in 'C:\\Users\\athiruj\\Desktop\\img-processing\\Docker\\Flask\\app\\apis\\model_management\\model_manager.py', reloading
+2020-08-25 12:06:12,542 [INFO:werkzeug] {_log:113} [SYSTEM]:  * Restarting with stat
+2020-08-25 12:06:14,088 [INFO:main] {<module>:12} [SYSTEM]: Created flask app.
+2020-08-25 12:06:14,088 [INFO:main] {<module>:12} [SYSTEM]: Created flask app.
+2020-08-25 12:06:14,100 [INFO:main] {<module>:14} [SYSTEM]: Registered image_processing_api blueprint 
+2020-08-25 12:06:14,100 [INFO:main] {<module>:14} [SYSTEM]: Registered image_processing_api blueprint 
+2020-08-25 12:06:14,102 [INFO:main] {<module>:16} [SYSTEM]: Registered user_api blueprint 
+2020-08-25 12:06:14,102 [INFO:main] {<module>:16} [SYSTEM]: Registered user_api blueprint 
+2020-08-25 12:06:14,112 [INFO:main] {<module>:18} [SYSTEM]: Registered model_management_api blueprint 
+2020-08-25 12:06:14,112 [INFO:main] {<module>:18} [SYSTEM]: Registered model_management_api blueprint 
+2020-08-25 12:06:14,134 [WARNING:werkzeug] {_log:113} [SYSTEM]:  * Debugger is active!
+2020-08-25 12:06:14,151 [INFO:werkzeug] {_log:113} [SYSTEM]:  * Debugger PIN: 147-092-856
+2020-08-25 12:06:14,189 [INFO:werkzeug] {_log:113} [SYSTEM]:  * Running on http://0.0.0.0:5001/ (Press CTRL+C to quit)
+2020-08-25 12:06:28,449 [INFO:werkzeug] {_log:113} [SYSTEM]:  * Detected change in 'C:\\Users\\athiruj\\Desktop\\img-processing\\Docker\\Flask\\app\\apis\\model_management\\model_manager.py', reloading
+2020-08-25 12:06:28,600 [INFO:werkzeug] {_log:113} [SYSTEM]:  * Restarting with stat
+2020-08-25 12:06:29,929 [INFO:main] {<module>:12} [SYSTEM]: Created flask app.
+2020-08-25 12:06:29,929 [INFO:main] {<module>:12} [SYSTEM]: Created flask app.
+2020-08-25 12:06:29,932 [INFO:main] {<module>:14} [SYSTEM]: Registered image_processing_api blueprint 
+2020-08-25 12:06:29,932 [INFO:main] {<module>:14} [SYSTEM]: Registered image_processing_api blueprint 
+2020-08-25 12:06:29,933 [INFO:main] {<module>:16} [SYSTEM]: Registered user_api blueprint 
+2020-08-25 12:06:29,933 [INFO:main] {<module>:16} [SYSTEM]: Registered user_api blueprint 
+2020-08-25 12:06:29,938 [INFO:main] {<module>:18} [SYSTEM]: Registered model_management_api blueprint 
+2020-08-25 12:06:29,938 [INFO:main] {<module>:18} [SYSTEM]: Registered model_management_api blueprint 
+2020-08-25 12:06:29,964 [WARNING:werkzeug] {_log:113} [SYSTEM]:  * Debugger is active!
+2020-08-25 12:06:29,981 [INFO:werkzeug] {_log:113} [SYSTEM]:  * Debugger PIN: 147-092-856
+2020-08-25 12:06:30,024 [INFO:werkzeug] {_log:113} [SYSTEM]:  * Running on http://0.0.0.0:5001/ (Press CTRL+C to quit)
+2020-08-25 12:06:51,015 [INFO:werkzeug] {_log:113} [SYSTEM]:  * Detected change in 'C:\\Users\\athiruj\\Desktop\\img-processing\\Docker\\Flask\\app\\apis\\model_management\\model_manager.py', reloading
+2020-08-25 12:06:51,151 [INFO:werkzeug] {_log:113} [SYSTEM]:  * Restarting with stat
+2020-08-25 12:06:52,619 [INFO:main] {<module>:12} [SYSTEM]: Created flask app.
+2020-08-25 12:06:52,619 [INFO:main] {<module>:12} [SYSTEM]: Created flask app.
+2020-08-25 12:06:52,621 [INFO:main] {<module>:14} [SYSTEM]: Registered image_processing_api blueprint 
+2020-08-25 12:06:52,621 [INFO:main] {<module>:14} [SYSTEM]: Registered image_processing_api blueprint 
+2020-08-25 12:06:52,623 [INFO:main] {<module>:16} [SYSTEM]: Registered user_api blueprint 
+2020-08-25 12:06:52,623 [INFO:main] {<module>:16} [SYSTEM]: Registered user_api blueprint 
+2020-08-25 12:06:52,626 [INFO:main] {<module>:18} [SYSTEM]: Registered model_management_api blueprint 
+2020-08-25 12:06:52,626 [INFO:main] {<module>:18} [SYSTEM]: Registered model_management_api blueprint 
+2020-08-25 12:06:52,641 [WARNING:werkzeug] {_log:113} [SYSTEM]:  * Debugger is active!
+2020-08-25 12:06:52,653 [INFO:werkzeug] {_log:113} [SYSTEM]:  * Debugger PIN: 147-092-856
+2020-08-25 12:06:52,678 [INFO:werkzeug] {_log:113} [SYSTEM]:  * Running on http://0.0.0.0:5001/ (Press CTRL+C to quit)
+2020-08-25 12:07:22,057 [INFO:werkzeug] {_log:113} [SYSTEM]:  * Detected change in 'C:\\Users\\athiruj\\Desktop\\img-processing\\Docker\\Flask\\app\\apis\\model_management\\model_manager.py', reloading
+2020-08-25 12:07:22,231 [INFO:werkzeug] {_log:113} [SYSTEM]:  * Restarting with stat
+2020-08-25 12:07:23,806 [INFO:main] {<module>:12} [SYSTEM]: Created flask app.
+2020-08-25 12:07:23,806 [INFO:main] {<module>:12} [SYSTEM]: Created flask app.
+2020-08-25 12:07:23,809 [INFO:main] {<module>:14} [SYSTEM]: Registered image_processing_api blueprint 
+2020-08-25 12:07:23,809 [INFO:main] {<module>:14} [SYSTEM]: Registered image_processing_api blueprint 
+2020-08-25 12:07:23,812 [INFO:main] {<module>:16} [SYSTEM]: Registered user_api blueprint 
+2020-08-25 12:07:23,812 [INFO:main] {<module>:16} [SYSTEM]: Registered user_api blueprint 
+2020-08-25 12:07:23,821 [INFO:main] {<module>:18} [SYSTEM]: Registered model_management_api blueprint 
+2020-08-25 12:07:23,821 [INFO:main] {<module>:18} [SYSTEM]: Registered model_management_api blueprint 
+2020-08-25 12:07:23,847 [WARNING:werkzeug] {_log:113} [SYSTEM]:  * Debugger is active!
+2020-08-25 12:07:23,870 [INFO:werkzeug] {_log:113} [SYSTEM]:  * Debugger PIN: 147-092-856
+2020-08-25 12:07:23,931 [INFO:werkzeug] {_log:113} [SYSTEM]:  * Running on http://0.0.0.0:5001/ (Press CTRL+C to quit)
+2020-08-25 12:07:31,141 [INFO:werkzeug] {_log:113} [SYSTEM]:  * Detected change in 'C:\\Users\\athiruj\\Desktop\\img-processing\\Docker\\Flask\\app\\apis\\model_management\\model_manager.py', reloading
+2020-08-25 12:07:31,294 [INFO:werkzeug] {_log:113} [SYSTEM]:  * Restarting with stat
+2020-08-25 12:07:32,705 [INFO:main] {<module>:12} [SYSTEM]: Created flask app.
+2020-08-25 12:07:32,705 [INFO:main] {<module>:12} [SYSTEM]: Created flask app.
+2020-08-25 12:07:32,709 [INFO:main] {<module>:14} [SYSTEM]: Registered image_processing_api blueprint 
+2020-08-25 12:07:32,709 [INFO:main] {<module>:14} [SYSTEM]: Registered image_processing_api blueprint 
+2020-08-25 12:07:32,710 [INFO:main] {<module>:16} [SYSTEM]: Registered user_api blueprint 
+2020-08-25 12:07:32,710 [INFO:main] {<module>:16} [SYSTEM]: Registered user_api blueprint 
+2020-08-25 12:07:32,714 [INFO:main] {<module>:18} [SYSTEM]: Registered model_management_api blueprint 
+2020-08-25 12:07:32,714 [INFO:main] {<module>:18} [SYSTEM]: Registered model_management_api blueprint 
+2020-08-25 12:07:32,733 [WARNING:werkzeug] {_log:113} [SYSTEM]:  * Debugger is active!
+2020-08-25 12:07:32,750 [INFO:werkzeug] {_log:113} [SYSTEM]:  * Debugger PIN: 147-092-856
+2020-08-25 12:07:32,779 [INFO:werkzeug] {_log:113} [SYSTEM]:  * Running on http://0.0.0.0:5001/ (Press CTRL+C to quit)
+2020-08-25 12:07:34,131 [INFO:werkzeug] {_log:113} [SYSTEM]:  * Detected change in 'C:\\Users\\athiruj\\Desktop\\img-processing\\Docker\\Flask\\app\\apis\\model_management\\model_manager.py', reloading
+2020-08-25 12:07:34,277 [INFO:werkzeug] {_log:113} [SYSTEM]:  * Restarting with stat
+2020-08-25 12:07:36,024 [INFO:main] {<module>:12} [SYSTEM]: Created flask app.
+2020-08-25 12:07:36,024 [INFO:main] {<module>:12} [SYSTEM]: Created flask app.
+2020-08-25 12:07:36,026 [INFO:main] {<module>:14} [SYSTEM]: Registered image_processing_api blueprint 
+2020-08-25 12:07:36,026 [INFO:main] {<module>:14} [SYSTEM]: Registered image_processing_api blueprint 
+2020-08-25 12:07:36,027 [INFO:main] {<module>:16} [SYSTEM]: Registered user_api blueprint 
+2020-08-25 12:07:36,027 [INFO:main] {<module>:16} [SYSTEM]: Registered user_api blueprint 
+2020-08-25 12:07:36,031 [INFO:main] {<module>:18} [SYSTEM]: Registered model_management_api blueprint 
+2020-08-25 12:07:36,031 [INFO:main] {<module>:18} [SYSTEM]: Registered model_management_api blueprint 
+2020-08-25 12:07:36,047 [WARNING:werkzeug] {_log:113} [SYSTEM]:  * Debugger is active!
+2020-08-25 12:07:36,059 [INFO:werkzeug] {_log:113} [SYSTEM]:  * Debugger PIN: 147-092-856
+2020-08-25 12:07:36,088 [INFO:werkzeug] {_log:113} [SYSTEM]:  * Running on http://0.0.0.0:5001/ (Press CTRL+C to quit)
+2020-08-25 12:07:51,449 [INFO:werkzeug] {_log:113} [SYSTEM]:  * Detected change in 'C:\\Users\\athiruj\\Desktop\\img-processing\\Docker\\Flask\\app\\apis\\model_management\\model_manager.py', reloading
+2020-08-25 12:07:51,686 [INFO:werkzeug] {_log:113} [SYSTEM]:  * Restarting with stat
+2020-08-25 12:07:53,714 [INFO:main] {<module>:12} [SYSTEM]: Created flask app.
+2020-08-25 12:07:53,714 [INFO:main] {<module>:12} [SYSTEM]: Created flask app.
+2020-08-25 12:07:53,717 [INFO:main] {<module>:14} [SYSTEM]: Registered image_processing_api blueprint 
+2020-08-25 12:07:53,717 [INFO:main] {<module>:14} [SYSTEM]: Registered image_processing_api blueprint 
+2020-08-25 12:07:53,719 [INFO:main] {<module>:16} [SYSTEM]: Registered user_api blueprint 
+2020-08-25 12:07:53,719 [INFO:main] {<module>:16} [SYSTEM]: Registered user_api blueprint 
+2020-08-25 12:07:53,725 [INFO:main] {<module>:18} [SYSTEM]: Registered model_management_api blueprint 
+2020-08-25 12:07:53,725 [INFO:main] {<module>:18} [SYSTEM]: Registered model_management_api blueprint 
+2020-08-25 12:07:53,743 [WARNING:werkzeug] {_log:113} [SYSTEM]:  * Debugger is active!
+2020-08-25 12:07:53,756 [INFO:werkzeug] {_log:113} [SYSTEM]:  * Debugger PIN: 147-092-856
+2020-08-25 12:07:53,779 [INFO:werkzeug] {_log:113} [SYSTEM]:  * Running on http://0.0.0.0:5001/ (Press CTRL+C to quit)
+2020-08-25 12:07:57,521 [INFO:werkzeug] {_log:113} [SYSTEM]:  * Detected change in 'C:\\Users\\athiruj\\Desktop\\img-processing\\Docker\\Flask\\app\\apis\\model_management\\model_manager.py', reloading
+2020-08-25 12:07:57,706 [INFO:werkzeug] {_log:113} [SYSTEM]:  * Restarting with stat
+2020-08-25 12:08:00,037 [INFO:main] {<module>:12} [SYSTEM]: Created flask app.
+2020-08-25 12:08:00,037 [INFO:main] {<module>:12} [SYSTEM]: Created flask app.
+2020-08-25 12:08:00,041 [INFO:main] {<module>:14} [SYSTEM]: Registered image_processing_api blueprint 
+2020-08-25 12:08:00,041 [INFO:main] {<module>:14} [SYSTEM]: Registered image_processing_api blueprint 
+2020-08-25 12:08:00,044 [INFO:main] {<module>:16} [SYSTEM]: Registered user_api blueprint 
+2020-08-25 12:08:00,044 [INFO:main] {<module>:16} [SYSTEM]: Registered user_api blueprint 
+2020-08-25 12:08:00,051 [INFO:main] {<module>:18} [SYSTEM]: Registered model_management_api blueprint 
+2020-08-25 12:08:00,051 [INFO:main] {<module>:18} [SYSTEM]: Registered model_management_api blueprint 
+2020-08-25 12:08:00,076 [WARNING:werkzeug] {_log:113} [SYSTEM]:  * Debugger is active!
+2020-08-25 12:08:00,093 [INFO:werkzeug] {_log:113} [SYSTEM]:  * Debugger PIN: 147-092-856
+2020-08-25 12:08:00,116 [INFO:werkzeug] {_log:113} [SYSTEM]:  * Running on http://0.0.0.0:5001/ (Press CTRL+C to quit)
+2020-08-25 12:08:01,561 [INFO:werkzeug] {_log:113} [SYSTEM]:  * Detected change in 'C:\\Users\\athiruj\\Desktop\\img-processing\\Docker\\Flask\\app\\apis\\model_management\\model_manager.py', reloading
+2020-08-25 12:08:01,747 [INFO:werkzeug] {_log:113} [SYSTEM]:  * Restarting with stat
+2020-08-25 12:08:03,653 [INFO:main] {<module>:12} [SYSTEM]: Created flask app.
+2020-08-25 12:08:03,653 [INFO:main] {<module>:12} [SYSTEM]: Created flask app.
+2020-08-25 12:08:03,656 [INFO:main] {<module>:14} [SYSTEM]: Registered image_processing_api blueprint 
+2020-08-25 12:08:03,656 [INFO:main] {<module>:14} [SYSTEM]: Registered image_processing_api blueprint 
+2020-08-25 12:08:03,658 [INFO:main] {<module>:16} [SYSTEM]: Registered user_api blueprint 
+2020-08-25 12:08:03,658 [INFO:main] {<module>:16} [SYSTEM]: Registered user_api blueprint 
+2020-08-25 12:08:03,665 [INFO:main] {<module>:18} [SYSTEM]: Registered model_management_api blueprint 
+2020-08-25 12:08:03,665 [INFO:main] {<module>:18} [SYSTEM]: Registered model_management_api blueprint 
+2020-08-25 12:08:03,686 [WARNING:werkzeug] {_log:113} [SYSTEM]:  * Debugger is active!
+2020-08-25 12:08:03,700 [INFO:werkzeug] {_log:113} [SYSTEM]:  * Debugger PIN: 147-092-856
+2020-08-25 12:08:03,723 [INFO:werkzeug] {_log:113} [SYSTEM]:  * Running on http://0.0.0.0:5001/ (Press CTRL+C to quit)
+2020-08-25 12:08:08,982 [INFO:werkzeug] {_log:113} [SYSTEM]:  * Detected change in 'C:\\Users\\athiruj\\Desktop\\img-processing\\Docker\\Flask\\app\\apis\\model_management\\model_manager.py', reloading
+2020-08-25 12:08:09,161 [INFO:werkzeug] {_log:113} [SYSTEM]:  * Restarting with stat
+2020-08-25 12:08:10,758 [INFO:main] {<module>:12} [SYSTEM]: Created flask app.
+2020-08-25 12:08:10,758 [INFO:main] {<module>:12} [SYSTEM]: Created flask app.
+2020-08-25 12:08:10,761 [INFO:main] {<module>:14} [SYSTEM]: Registered image_processing_api blueprint 
+2020-08-25 12:08:10,761 [INFO:main] {<module>:14} [SYSTEM]: Registered image_processing_api blueprint 
+2020-08-25 12:08:10,762 [INFO:main] {<module>:16} [SYSTEM]: Registered user_api blueprint 
+2020-08-25 12:08:10,762 [INFO:main] {<module>:16} [SYSTEM]: Registered user_api blueprint 
+2020-08-25 12:08:10,766 [INFO:main] {<module>:18} [SYSTEM]: Registered model_management_api blueprint 
+2020-08-25 12:08:10,766 [INFO:main] {<module>:18} [SYSTEM]: Registered model_management_api blueprint 
+2020-08-25 12:08:10,786 [WARNING:werkzeug] {_log:113} [SYSTEM]:  * Debugger is active!
+2020-08-25 12:08:10,802 [INFO:werkzeug] {_log:113} [SYSTEM]:  * Debugger PIN: 147-092-856
+2020-08-25 12:08:10,833 [INFO:werkzeug] {_log:113} [SYSTEM]:  * Running on http://0.0.0.0:5001/ (Press CTRL+C to quit)
+2020-08-25 12:08:12,217 [INFO:werkzeug] {_log:113} [SYSTEM]:  * Detected change in 'C:\\Users\\athiruj\\Desktop\\img-processing\\Docker\\Flask\\app\\apis\\model_management\\model_manager.py', reloading
+2020-08-25 12:08:12,353 [INFO:werkzeug] {_log:113} [SYSTEM]:  * Restarting with stat
+2020-08-25 12:08:13,857 [INFO:main] {<module>:12} [SYSTEM]: Created flask app.
+2020-08-25 12:08:13,857 [INFO:main] {<module>:12} [SYSTEM]: Created flask app.
+2020-08-25 12:08:13,860 [INFO:main] {<module>:14} [SYSTEM]: Registered image_processing_api blueprint 
+2020-08-25 12:08:13,860 [INFO:main] {<module>:14} [SYSTEM]: Registered image_processing_api blueprint 
+2020-08-25 12:08:13,862 [INFO:main] {<module>:16} [SYSTEM]: Registered user_api blueprint 
+2020-08-25 12:08:13,862 [INFO:main] {<module>:16} [SYSTEM]: Registered user_api blueprint 
+2020-08-25 12:08:13,874 [INFO:main] {<module>:18} [SYSTEM]: Registered model_management_api blueprint 
+2020-08-25 12:08:13,874 [INFO:main] {<module>:18} [SYSTEM]: Registered model_management_api blueprint 
+2020-08-25 12:08:13,891 [WARNING:werkzeug] {_log:113} [SYSTEM]:  * Debugger is active!
+2020-08-25 12:08:13,911 [INFO:werkzeug] {_log:113} [SYSTEM]:  * Debugger PIN: 147-092-856
+2020-08-25 12:08:13,945 [INFO:werkzeug] {_log:113} [SYSTEM]:  * Running on http://0.0.0.0:5001/ (Press CTRL+C to quit)
+2020-08-25 12:08:15,311 [INFO:werkzeug] {_log:113} [SYSTEM]:  * Detected change in 'C:\\Users\\athiruj\\Desktop\\img-processing\\Docker\\Flask\\app\\apis\\model_management\\model_manager.py', reloading
+2020-08-25 12:08:15,434 [INFO:werkzeug] {_log:113} [SYSTEM]:  * Restarting with stat
+2020-08-25 12:08:16,718 [INFO:main] {<module>:12} [SYSTEM]: Created flask app.
+2020-08-25 12:08:16,718 [INFO:main] {<module>:12} [SYSTEM]: Created flask app.
+2020-08-25 12:08:16,721 [INFO:main] {<module>:14} [SYSTEM]: Registered image_processing_api blueprint 
+2020-08-25 12:08:16,721 [INFO:main] {<module>:14} [SYSTEM]: Registered image_processing_api blueprint 
+2020-08-25 12:08:16,723 [INFO:main] {<module>:16} [SYSTEM]: Registered user_api blueprint 
+2020-08-25 12:08:16,723 [INFO:main] {<module>:16} [SYSTEM]: Registered user_api blueprint 
+2020-08-25 12:08:16,727 [INFO:main] {<module>:18} [SYSTEM]: Registered model_management_api blueprint 
+2020-08-25 12:08:16,727 [INFO:main] {<module>:18} [SYSTEM]: Registered model_management_api blueprint 
+2020-08-25 12:08:16,745 [WARNING:werkzeug] {_log:113} [SYSTEM]:  * Debugger is active!
+2020-08-25 12:08:16,757 [INFO:werkzeug] {_log:113} [SYSTEM]:  * Debugger PIN: 147-092-856
+2020-08-25 12:08:16,777 [INFO:werkzeug] {_log:113} [SYSTEM]:  * Running on http://0.0.0.0:5001/ (Press CTRL+C to quit)
+2020-08-25 12:08:34,491 [INFO:werkzeug] {_log:113} [SYSTEM]:  * Detected change in 'C:\\Users\\athiruj\\Desktop\\img-processing\\Docker\\Flask\\app\\apis\\model_management\\model_manager.py', reloading
+2020-08-25 12:08:34,627 [INFO:werkzeug] {_log:113} [SYSTEM]:  * Restarting with stat
+2020-08-25 12:08:35,911 [INFO:main] {<module>:12} [SYSTEM]: Created flask app.
+2020-08-25 12:08:35,911 [INFO:main] {<module>:12} [SYSTEM]: Created flask app.
+2020-08-25 12:08:35,916 [INFO:main] {<module>:14} [SYSTEM]: Registered image_processing_api blueprint 
+2020-08-25 12:08:35,916 [INFO:main] {<module>:14} [SYSTEM]: Registered image_processing_api blueprint 
+2020-08-25 12:08:35,924 [INFO:main] {<module>:16} [SYSTEM]: Registered user_api blueprint 
+2020-08-25 12:08:35,924 [INFO:main] {<module>:16} [SYSTEM]: Registered user_api blueprint 
+2020-08-25 12:08:35,934 [INFO:main] {<module>:18} [SYSTEM]: Registered model_management_api blueprint 
+2020-08-25 12:08:35,934 [INFO:main] {<module>:18} [SYSTEM]: Registered model_management_api blueprint 
+2020-08-25 12:08:35,957 [WARNING:werkzeug] {_log:113} [SYSTEM]:  * Debugger is active!
+2020-08-25 12:08:35,973 [INFO:werkzeug] {_log:113} [SYSTEM]:  * Debugger PIN: 147-092-856
+2020-08-25 12:08:36,003 [INFO:werkzeug] {_log:113} [SYSTEM]:  * Running on http://0.0.0.0:5001/ (Press CTRL+C to quit)
+2020-08-25 12:08:40,821 [INFO:werkzeug] {_log:113} [SYSTEM]:  * Detected change in 'C:\\Users\\athiruj\\Desktop\\img-processing\\Docker\\Flask\\app\\apis\\model_management\\model_manager.py', reloading
+2020-08-25 12:08:40,938 [INFO:werkzeug] {_log:113} [SYSTEM]:  * Restarting with stat
+2020-08-25 12:08:43,002 [INFO:main] {<module>:12} [SYSTEM]: Created flask app.
+2020-08-25 12:08:43,002 [INFO:main] {<module>:12} [SYSTEM]: Created flask app.
+2020-08-25 12:08:43,007 [INFO:main] {<module>:14} [SYSTEM]: Registered image_processing_api blueprint 
+2020-08-25 12:08:43,007 [INFO:main] {<module>:14} [SYSTEM]: Registered image_processing_api blueprint 
+2020-08-25 12:08:43,010 [INFO:main] {<module>:16} [SYSTEM]: Registered user_api blueprint 
+2020-08-25 12:08:43,010 [INFO:main] {<module>:16} [SYSTEM]: Registered user_api blueprint 
+2020-08-25 12:08:43,021 [INFO:main] {<module>:18} [SYSTEM]: Registered model_management_api blueprint 
+2020-08-25 12:08:43,021 [INFO:main] {<module>:18} [SYSTEM]: Registered model_management_api blueprint 
+2020-08-25 12:08:43,039 [WARNING:werkzeug] {_log:113} [SYSTEM]:  * Debugger is active!
+2020-08-25 12:08:43,052 [INFO:werkzeug] {_log:113} [SYSTEM]:  * Debugger PIN: 147-092-856
+2020-08-25 12:08:43,077 [INFO:werkzeug] {_log:113} [SYSTEM]:  * Running on http://0.0.0.0:5001/ (Press CTRL+C to quit)
+2020-08-25 12:08:45,537 [INFO:werkzeug] {_log:113} [SYSTEM]:  * Detected change in 'C:\\Users\\athiruj\\Desktop\\img-processing\\Docker\\Flask\\app\\apis\\model_management\\model_manager.py', reloading
+2020-08-25 12:08:45,623 [INFO:werkzeug] {_log:113} [SYSTEM]:  * Restarting with stat
+2020-08-25 12:08:46,958 [INFO:main] {<module>:12} [SYSTEM]: Created flask app.
+2020-08-25 12:08:46,958 [INFO:main] {<module>:12} [SYSTEM]: Created flask app.
+2020-08-25 12:08:46,959 [INFO:main] {<module>:14} [SYSTEM]: Registered image_processing_api blueprint 
+2020-08-25 12:08:46,959 [INFO:main] {<module>:14} [SYSTEM]: Registered image_processing_api blueprint 
+2020-08-25 12:08:46,962 [INFO:main] {<module>:16} [SYSTEM]: Registered user_api blueprint 
+2020-08-25 12:08:46,962 [INFO:main] {<module>:16} [SYSTEM]: Registered user_api blueprint 
+2020-08-25 12:08:46,965 [INFO:main] {<module>:18} [SYSTEM]: Registered model_management_api blueprint 
+2020-08-25 12:08:46,965 [INFO:main] {<module>:18} [SYSTEM]: Registered model_management_api blueprint 
+2020-08-25 12:08:46,981 [WARNING:werkzeug] {_log:113} [SYSTEM]:  * Debugger is active!
+2020-08-25 12:08:46,995 [INFO:werkzeug] {_log:113} [SYSTEM]:  * Debugger PIN: 147-092-856
+2020-08-25 12:08:47,022 [INFO:werkzeug] {_log:113} [SYSTEM]:  * Running on http://0.0.0.0:5001/ (Press CTRL+C to quit)
+2020-08-25 12:08:50,335 [INFO:werkzeug] {_log:113} [SYSTEM]:  * Detected change in 'C:\\Users\\athiruj\\Desktop\\img-processing\\Docker\\Flask\\app\\apis\\model_management\\model_manager.py', reloading
+2020-08-25 12:08:50,420 [INFO:werkzeug] {_log:113} [SYSTEM]:  * Restarting with stat
+2020-08-25 12:08:52,097 [INFO:main] {<module>:12} [SYSTEM]: Created flask app.
+2020-08-25 12:08:52,097 [INFO:main] {<module>:12} [SYSTEM]: Created flask app.
+2020-08-25 12:08:52,098 [INFO:main] {<module>:14} [SYSTEM]: Registered image_processing_api blueprint 
+2020-08-25 12:08:52,098 [INFO:main] {<module>:14} [SYSTEM]: Registered image_processing_api blueprint 
+2020-08-25 12:08:52,100 [INFO:main] {<module>:16} [SYSTEM]: Registered user_api blueprint 
+2020-08-25 12:08:52,100 [INFO:main] {<module>:16} [SYSTEM]: Registered user_api blueprint 
+2020-08-25 12:08:52,104 [INFO:main] {<module>:18} [SYSTEM]: Registered model_management_api blueprint 
+2020-08-25 12:08:52,104 [INFO:main] {<module>:18} [SYSTEM]: Registered model_management_api blueprint 
+2020-08-25 12:08:52,118 [WARNING:werkzeug] {_log:113} [SYSTEM]:  * Debugger is active!
+2020-08-25 12:08:52,129 [INFO:werkzeug] {_log:113} [SYSTEM]:  * Debugger PIN: 147-092-856
+2020-08-25 12:08:52,150 [INFO:werkzeug] {_log:113} [SYSTEM]:  * Running on http://0.0.0.0:5001/ (Press CTRL+C to quit)
+2020-08-25 12:08:54,671 [INFO:werkzeug] {_log:113} [SYSTEM]:  * Detected change in 'C:\\Users\\athiruj\\Desktop\\img-processing\\Docker\\Flask\\app\\apis\\model_management\\model_manager.py', reloading
+2020-08-25 12:08:54,799 [INFO:werkzeug] {_log:113} [SYSTEM]:  * Restarting with stat
+2020-08-25 12:08:56,276 [INFO:main] {<module>:12} [SYSTEM]: Created flask app.
+2020-08-25 12:08:56,276 [INFO:main] {<module>:12} [SYSTEM]: Created flask app.
+2020-08-25 12:08:56,277 [INFO:main] {<module>:14} [SYSTEM]: Registered image_processing_api blueprint 
+2020-08-25 12:08:56,277 [INFO:main] {<module>:14} [SYSTEM]: Registered image_processing_api blueprint 
+2020-08-25 12:08:56,280 [INFO:main] {<module>:16} [SYSTEM]: Registered user_api blueprint 
+2020-08-25 12:08:56,280 [INFO:main] {<module>:16} [SYSTEM]: Registered user_api blueprint 
+2020-08-25 12:08:56,283 [INFO:main] {<module>:18} [SYSTEM]: Registered model_management_api blueprint 
+2020-08-25 12:08:56,283 [INFO:main] {<module>:18} [SYSTEM]: Registered model_management_api blueprint 
+2020-08-25 12:08:56,297 [WARNING:werkzeug] {_log:113} [SYSTEM]:  * Debugger is active!
+2020-08-25 12:08:56,311 [INFO:werkzeug] {_log:113} [SYSTEM]:  * Debugger PIN: 147-092-856
+2020-08-25 12:08:56,330 [INFO:werkzeug] {_log:113} [SYSTEM]:  * Running on http://0.0.0.0:5001/ (Press CTRL+C to quit)
+2020-08-25 12:08:57,755 [INFO:werkzeug] {_log:113} [SYSTEM]:  * Detected change in 'C:\\Users\\athiruj\\Desktop\\img-processing\\Docker\\Flask\\app\\apis\\model_management\\model_manager.py', reloading
+2020-08-25 12:08:57,899 [INFO:werkzeug] {_log:113} [SYSTEM]:  * Restarting with stat
+2020-08-25 12:08:59,704 [INFO:main] {<module>:12} [SYSTEM]: Created flask app.
+2020-08-25 12:08:59,704 [INFO:main] {<module>:12} [SYSTEM]: Created flask app.
+2020-08-25 12:08:59,709 [INFO:main] {<module>:14} [SYSTEM]: Registered image_processing_api blueprint 
+2020-08-25 12:08:59,709 [INFO:main] {<module>:14} [SYSTEM]: Registered image_processing_api blueprint 
+2020-08-25 12:08:59,711 [INFO:main] {<module>:16} [SYSTEM]: Registered user_api blueprint 
+2020-08-25 12:08:59,711 [INFO:main] {<module>:16} [SYSTEM]: Registered user_api blueprint 
+2020-08-25 12:08:59,719 [INFO:main] {<module>:18} [SYSTEM]: Registered model_management_api blueprint 
+2020-08-25 12:08:59,719 [INFO:main] {<module>:18} [SYSTEM]: Registered model_management_api blueprint 
+2020-08-25 12:08:59,766 [WARNING:werkzeug] {_log:113} [SYSTEM]:  * Debugger is active!
+2020-08-25 12:08:59,784 [INFO:werkzeug] {_log:113} [SYSTEM]:  * Debugger PIN: 147-092-856
+2020-08-25 12:08:59,820 [INFO:werkzeug] {_log:113} [SYSTEM]:  * Running on http://0.0.0.0:5001/ (Press CTRL+C to quit)
+2020-08-25 12:09:01,628 [INFO:werkzeug] {_log:113} [SYSTEM]:  * Detected change in 'C:\\Users\\athiruj\\Desktop\\img-processing\\Docker\\Flask\\app\\apis\\model_management\\model_manager.py', reloading
+2020-08-25 12:09:01,712 [INFO:werkzeug] {_log:113} [SYSTEM]:  * Restarting with stat
+2020-08-25 12:09:03,211 [INFO:main] {<module>:12} [SYSTEM]: Created flask app.
+2020-08-25 12:09:03,211 [INFO:main] {<module>:12} [SYSTEM]: Created flask app.
+2020-08-25 12:09:03,215 [INFO:main] {<module>:14} [SYSTEM]: Registered image_processing_api blueprint 
+2020-08-25 12:09:03,215 [INFO:main] {<module>:14} [SYSTEM]: Registered image_processing_api blueprint 
+2020-08-25 12:09:03,217 [INFO:main] {<module>:16} [SYSTEM]: Registered user_api blueprint 
+2020-08-25 12:09:03,217 [INFO:main] {<module>:16} [SYSTEM]: Registered user_api blueprint 
+2020-08-25 12:09:03,226 [INFO:main] {<module>:18} [SYSTEM]: Registered model_management_api blueprint 
+2020-08-25 12:09:03,226 [INFO:main] {<module>:18} [SYSTEM]: Registered model_management_api blueprint 
+2020-08-25 12:09:03,248 [WARNING:werkzeug] {_log:113} [SYSTEM]:  * Debugger is active!
+2020-08-25 12:09:03,280 [INFO:werkzeug] {_log:113} [SYSTEM]:  * Debugger PIN: 147-092-856
+2020-08-25 12:09:03,328 [INFO:werkzeug] {_log:113} [SYSTEM]:  * Running on http://0.0.0.0:5001/ (Press CTRL+C to quit)
+2020-08-25 12:09:08,335 [INFO:werkzeug] {_log:113} [SYSTEM]:  * Detected change in 'C:\\Users\\athiruj\\Desktop\\img-processing\\Docker\\Flask\\app\\apis\\model_management\\model_manager.py', reloading
+2020-08-25 12:09:08,448 [INFO:werkzeug] {_log:113} [SYSTEM]:  * Restarting with stat
+2020-08-25 12:09:09,918 [INFO:main] {<module>:12} [SYSTEM]: Created flask app.
+2020-08-25 12:09:09,918 [INFO:main] {<module>:12} [SYSTEM]: Created flask app.
+2020-08-25 12:09:09,919 [INFO:main] {<module>:14} [SYSTEM]: Registered image_processing_api blueprint 
+2020-08-25 12:09:09,919 [INFO:main] {<module>:14} [SYSTEM]: Registered image_processing_api blueprint 
+2020-08-25 12:09:09,923 [INFO:main] {<module>:16} [SYSTEM]: Registered user_api blueprint 
+2020-08-25 12:09:09,923 [INFO:main] {<module>:16} [SYSTEM]: Registered user_api blueprint 
+2020-08-25 12:09:09,927 [INFO:main] {<module>:18} [SYSTEM]: Registered model_management_api blueprint 
+2020-08-25 12:09:09,927 [INFO:main] {<module>:18} [SYSTEM]: Registered model_management_api blueprint 
+2020-08-25 12:09:09,944 [WARNING:werkzeug] {_log:113} [SYSTEM]:  * Debugger is active!
+2020-08-25 12:09:09,961 [INFO:werkzeug] {_log:113} [SYSTEM]:  * Debugger PIN: 147-092-856
+2020-08-25 12:09:09,992 [INFO:werkzeug] {_log:113} [SYSTEM]:  * Running on http://0.0.0.0:5001/ (Press CTRL+C to quit)
+2020-08-25 12:09:11,304 [INFO:werkzeug] {_log:113} [SYSTEM]:  * Detected change in 'C:\\Users\\athiruj\\Desktop\\img-processing\\Docker\\Flask\\app\\apis\\model_management\\model_manager.py', reloading
+2020-08-25 12:09:11,454 [INFO:werkzeug] {_log:113} [SYSTEM]:  * Restarting with stat
+2020-08-25 12:09:12,926 [INFO:main] {<module>:12} [SYSTEM]: Created flask app.
+2020-08-25 12:09:12,926 [INFO:main] {<module>:12} [SYSTEM]: Created flask app.
+2020-08-25 12:09:12,927 [INFO:main] {<module>:14} [SYSTEM]: Registered image_processing_api blueprint 
+2020-08-25 12:09:12,927 [INFO:main] {<module>:14} [SYSTEM]: Registered image_processing_api blueprint 
+2020-08-25 12:09:12,930 [INFO:main] {<module>:16} [SYSTEM]: Registered user_api blueprint 
+2020-08-25 12:09:12,930 [INFO:main] {<module>:16} [SYSTEM]: Registered user_api blueprint 
+2020-08-25 12:09:12,933 [INFO:main] {<module>:18} [SYSTEM]: Registered model_management_api blueprint 
+2020-08-25 12:09:12,933 [INFO:main] {<module>:18} [SYSTEM]: Registered model_management_api blueprint 
+2020-08-25 12:09:12,956 [WARNING:werkzeug] {_log:113} [SYSTEM]:  * Debugger is active!
+2020-08-25 12:09:12,979 [INFO:werkzeug] {_log:113} [SYSTEM]:  * Debugger PIN: 147-092-856
+2020-08-25 12:09:13,006 [INFO:werkzeug] {_log:113} [SYSTEM]:  * Running on http://0.0.0.0:5001/ (Press CTRL+C to quit)
+2020-08-25 12:10:38,931 [INFO:werkzeug] {_log:113} [SYSTEM]:  * Detected change in 'C:\\Users\\athiruj\\Desktop\\img-processing\\Docker\\Flask\\app\\apis\\model_management\\model_manager.py', reloading
+2020-08-25 12:10:39,094 [INFO:werkzeug] {_log:113} [SYSTEM]:  * Restarting with stat
+2020-08-25 12:10:40,936 [INFO:main] {<module>:12} [SYSTEM]: Created flask app.
+2020-08-25 12:10:40,936 [INFO:main] {<module>:12} [SYSTEM]: Created flask app.
+2020-08-25 12:10:40,940 [INFO:main] {<module>:14} [SYSTEM]: Registered image_processing_api blueprint 
+2020-08-25 12:10:40,940 [INFO:main] {<module>:14} [SYSTEM]: Registered image_processing_api blueprint 
+2020-08-25 12:10:40,941 [INFO:main] {<module>:16} [SYSTEM]: Registered user_api blueprint 
+2020-08-25 12:10:40,941 [INFO:main] {<module>:16} [SYSTEM]: Registered user_api blueprint 
+2020-08-25 12:10:40,945 [INFO:main] {<module>:18} [SYSTEM]: Registered model_management_api blueprint 
+2020-08-25 12:10:40,945 [INFO:main] {<module>:18} [SYSTEM]: Registered model_management_api blueprint 
+2020-08-25 12:10:40,965 [WARNING:werkzeug] {_log:113} [SYSTEM]:  * Debugger is active!
+2020-08-25 12:10:40,981 [INFO:werkzeug] {_log:113} [SYSTEM]:  * Debugger PIN: 147-092-856
+2020-08-25 12:10:41,018 [INFO:werkzeug] {_log:113} [SYSTEM]:  * Running on http://0.0.0.0:5001/ (Press CTRL+C to quit)
+2020-08-25 12:11:30,781 [INFO:werkzeug] {_log:113} [SYSTEM]:  * Detected change in 'C:\\Users\\athiruj\\Desktop\\img-processing\\Docker\\Flask\\app\\apis\\model_management\\model_manager.py', reloading
+2020-08-25 12:11:30,917 [INFO:werkzeug] {_log:113} [SYSTEM]:  * Restarting with stat
+2020-08-25 12:11:32,528 [INFO:main] {<module>:12} [SYSTEM]: Created flask app.
+2020-08-25 12:11:32,528 [INFO:main] {<module>:12} [SYSTEM]: Created flask app.
+2020-08-25 12:11:32,530 [INFO:main] {<module>:14} [SYSTEM]: Registered image_processing_api blueprint 
+2020-08-25 12:11:32,530 [INFO:main] {<module>:14} [SYSTEM]: Registered image_processing_api blueprint 
+2020-08-25 12:11:32,532 [INFO:main] {<module>:16} [SYSTEM]: Registered user_api blueprint 
+2020-08-25 12:11:32,532 [INFO:main] {<module>:16} [SYSTEM]: Registered user_api blueprint 
+2020-08-25 12:11:32,536 [INFO:main] {<module>:18} [SYSTEM]: Registered model_management_api blueprint 
+2020-08-25 12:11:32,536 [INFO:main] {<module>:18} [SYSTEM]: Registered model_management_api blueprint 
+2020-08-25 12:11:32,552 [WARNING:werkzeug] {_log:113} [SYSTEM]:  * Debugger is active!
+2020-08-25 12:11:32,571 [INFO:werkzeug] {_log:113} [SYSTEM]:  * Debugger PIN: 147-092-856
+2020-08-25 12:11:32,600 [INFO:werkzeug] {_log:113} [SYSTEM]:  * Running on http://0.0.0.0:5001/ (Press CTRL+C to quit)
+2020-08-25 12:20:04,199 [INFO:werkzeug] {_log:113} [SYSTEM]:  * Detected change in 'C:\\Users\\athiruj\\Desktop\\img-processing\\Docker\\Flask\\app\\apis\\model_management\\model_management_api.py', reloading
+2020-08-25 12:20:04,308 [INFO:werkzeug] {_log:113} [SYSTEM]:  * Restarting with stat
+2020-08-25 13:42:52,615 [INFO:main] {<module>:12} [SYSTEM]: Created flask app.
+2020-08-25 13:42:52,615 [INFO:main] {<module>:12} [SYSTEM]: Created flask app.
+2020-08-25 13:42:52,633 [INFO:main] {<module>:14} [SYSTEM]: Registered image_processing_api blueprint 
+2020-08-25 13:42:52,633 [INFO:main] {<module>:14} [SYSTEM]: Registered image_processing_api blueprint 
+2020-08-25 13:42:52,634 [INFO:main] {<module>:16} [SYSTEM]: Registered user_api blueprint 
+2020-08-25 13:42:52,634 [INFO:main] {<module>:16} [SYSTEM]: Registered user_api blueprint 
+2020-08-25 13:42:52,643 [INFO:main] {<module>:18} [SYSTEM]: Registered model_management_api blueprint 
+2020-08-25 13:42:52,643 [INFO:main] {<module>:18} [SYSTEM]: Registered model_management_api blueprint 
+2020-08-25 13:42:52,701 [INFO:werkzeug] {_log:113} [SYSTEM]:  * Restarting with stat
+2020-08-25 13:42:54,286 [INFO:main] {<module>:12} [SYSTEM]: Created flask app.
+2020-08-25 13:42:54,286 [INFO:main] {<module>:12} [SYSTEM]: Created flask app.
+2020-08-25 13:42:54,289 [INFO:main] {<module>:14} [SYSTEM]: Registered image_processing_api blueprint 
+2020-08-25 13:42:54,289 [INFO:main] {<module>:14} [SYSTEM]: Registered image_processing_api blueprint 
+2020-08-25 13:42:54,292 [INFO:main] {<module>:16} [SYSTEM]: Registered user_api blueprint 
+2020-08-25 13:42:54,292 [INFO:main] {<module>:16} [SYSTEM]: Registered user_api blueprint 
+2020-08-25 13:42:54,300 [INFO:main] {<module>:18} [SYSTEM]: Registered model_management_api blueprint 
+2020-08-25 13:42:54,300 [INFO:main] {<module>:18} [SYSTEM]: Registered model_management_api blueprint 
+2020-08-25 13:42:54,319 [WARNING:werkzeug] {_log:113} [SYSTEM]:  * Debugger is active!
+2020-08-25 13:42:54,423 [INFO:werkzeug] {_log:113} [SYSTEM]:  * Debugger PIN: 147-092-856
+2020-08-25 13:42:54,450 [INFO:werkzeug] {_log:113} [SYSTEM]:  * Running on http://0.0.0.0:5001/ (Press CTRL+C to quit)
+2020-08-25 13:43:31,315 [INFO:model_management_api] {add_model:28} [SYSTEM]: [test_user01] Use add ML model API.
+2020-08-25 13:43:31,315 [INFO:model_management_api] {add_model:28} [SYSTEM]: [test_user01] Use add ML model API.
+2020-08-25 13:43:31,316 [INFO:MLManager_obj] {__init__:75} [SYSTEM]: Connecting to database
+2020-08-25 13:43:31,425 [INFO:MLManager_obj] {__init__:77} [SYSTEM]: Connected to database
+2020-08-25 13:43:31,425 [INFO:model_management_api] {add_model:33} [SYSTEM]: [test_user01] Created MLManagement object.
+2020-08-25 13:43:31,425 [INFO:model_management_api] {add_model:33} [SYSTEM]: [test_user01] Created MLManagement object.
+2020-08-25 13:43:31,476 [INFO:model_management_api] {add_model:34} [SYSTEM]: [test_user01] Call add_model function.
+2020-08-25 13:43:31,476 [INFO:model_management_api] {add_model:34} [SYSTEM]: [test_user01] Call add_model function.
+2020-08-25 13:43:31,477 [INFO:MLManager_obj] {add_model:146} [SYSTEM]: Prepair ML model data to be save.
+2020-08-25 13:43:31,618 [WARNING:MLManager_obj] {add_model:163} [SYSTEM]: Duplicate ML name. Please re-enter ML name.
+2020-08-25 13:43:31,619 [ERROR:MLManager_obj] {add_model:187} [SYSTEM]: Error duplicate_name
+2020-08-25 13:43:31,626 [INFO:werkzeug] {_log:113} [SYSTEM]: 127.0.0.1 - - [25/Aug/2020 13:43:31] "[37mPOST /add_model HTTP/1.1[0m" 200 -
+2020-08-25 13:44:07,823 [INFO:werkzeug] {_log:113} [SYSTEM]:  * Detected change in 'C:\\Users\\athiruj\\Desktop\\img-processing\\Docker\\Flask\\app\\logging_config.py', reloading
+2020-08-25 13:44:08,537 [INFO:werkzeug] {_log:113} [SYSTEM]:  * Restarting with stat
+2020-08-25 13:44:10,104 [INFO:main] {<module>:12} [SYSTEM]:Created flask app.
+2020-08-25 13:44:10,104 [INFO:main] {<module>:12} [SYSTEM]:Created flask app.
+2020-08-25 13:44:10,106 [INFO:main] {<module>:14} [SYSTEM]:Registered image_processing_api blueprint 
+2020-08-25 13:44:10,106 [INFO:main] {<module>:14} [SYSTEM]:Registered image_processing_api blueprint 
+2020-08-25 13:44:10,108 [INFO:main] {<module>:16} [SYSTEM]:Registered user_api blueprint 
+2020-08-25 13:44:10,108 [INFO:main] {<module>:16} [SYSTEM]:Registered user_api blueprint 
+2020-08-25 13:44:10,112 [INFO:main] {<module>:18} [SYSTEM]:Registered model_management_api blueprint 
+2020-08-25 13:44:10,112 [INFO:main] {<module>:18} [SYSTEM]:Registered model_management_api blueprint 
+2020-08-25 13:44:10,127 [WARNING:werkzeug] {_log:113} [SYSTEM]: * Debugger is active!
+2020-08-25 13:44:10,138 [INFO:werkzeug] {_log:113} [SYSTEM]: * Debugger PIN: 147-092-856
+2020-08-25 13:44:10,165 [INFO:werkzeug] {_log:113} [SYSTEM]: * Running on http://0.0.0.0:5001/ (Press CTRL+C to quit)
+2020-08-25 13:44:20,982 [INFO:model_management_api] {add_model:28} [SYSTEM]:[test_user01] Use add ML model API.
+2020-08-25 13:44:20,982 [INFO:model_management_api] {add_model:28} [SYSTEM]:[test_user01] Use add ML model API.
+2020-08-25 13:44:20,983 [INFO:MLManager_obj] {__init__:75} [SYSTEM]:Connecting to database
+2020-08-25 13:44:20,998 [INFO:MLManager_obj] {__init__:77} [SYSTEM]:Connected to database
+2020-08-25 13:44:20,998 [INFO:model_management_api] {add_model:33} [SYSTEM]:[test_user01] Created MLManagement object.
+2020-08-25 13:44:20,998 [INFO:model_management_api] {add_model:33} [SYSTEM]:[test_user01] Created MLManagement object.
+2020-08-25 13:44:20,999 [INFO:model_management_api] {add_model:34} [SYSTEM]:[test_user01] Call add_model function.
+2020-08-25 13:44:20,999 [INFO:model_management_api] {add_model:34} [SYSTEM]:[test_user01] Call add_model function.
+2020-08-25 13:44:21,000 [INFO:MLManager_obj] {add_model:146} [SYSTEM]:Prepair ML model data to be save.
+2020-08-25 13:44:21,861 [WARNING:MLManager_obj] {add_model:163} [SYSTEM]:Duplicate ML name. Please re-enter ML name.
+2020-08-25 13:44:21,880 [ERROR:MLManager_obj] {add_model:187} [SYSTEM]:Error duplicate_name
+2020-08-25 13:44:21,961 [INFO:werkzeug] {_log:113} [SYSTEM]:127.0.0.1 - - [25/Aug/2020 13:44:21] "[37mPOST /add_model HTTP/1.1[0m" 200 -
+2020-08-25 13:45:54,696 [INFO:werkzeug] {_log:113} [SYSTEM]: * Detected change in 'C:\\Users\\athiruj\\Desktop\\img-processing\\Docker\\Flask\\app\\apis\\model_management\\model_manager.py', reloading
+2020-08-25 13:45:54,827 [INFO:werkzeug] {_log:113} [SYSTEM]:  * Restarting with stat
+2020-08-25 13:45:57,066 [INFO:main] {<module>:12} [SYSTEM]:Created flask app.
+2020-08-25 13:45:57,066 [INFO:main] {<module>:12} [SYSTEM]:Created flask app.
+2020-08-25 13:45:57,078 [INFO:main] {<module>:14} [SYSTEM]:Registered image_processing_api blueprint 
+2020-08-25 13:45:57,078 [INFO:main] {<module>:14} [SYSTEM]:Registered image_processing_api blueprint 
+2020-08-25 13:45:57,081 [INFO:main] {<module>:16} [SYSTEM]:Registered user_api blueprint 
+2020-08-25 13:45:57,081 [INFO:main] {<module>:16} [SYSTEM]:Registered user_api blueprint 
+2020-08-25 13:45:57,099 [INFO:main] {<module>:18} [SYSTEM]:Registered model_management_api blueprint 
+2020-08-25 13:45:57,099 [INFO:main] {<module>:18} [SYSTEM]:Registered model_management_api blueprint 
+2020-08-25 13:45:57,184 [WARNING:werkzeug] {_log:113} [SYSTEM]: * Debugger is active!
+2020-08-25 13:45:57,283 [INFO:werkzeug] {_log:113} [SYSTEM]: * Debugger PIN: 147-092-856
+2020-08-25 13:45:57,453 [INFO:werkzeug] {_log:113} [SYSTEM]: * Running on http://0.0.0.0:5001/ (Press CTRL+C to quit)
+2020-08-25 13:45:58,898 [INFO:werkzeug] {_log:113} [SYSTEM]: * Detected change in 'C:\\Users\\athiruj\\Desktop\\img-processing\\Docker\\Flask\\app\\apis\\model_management\\model_manager.py', reloading
+2020-08-25 13:45:59,128 [INFO:werkzeug] {_log:113} [SYSTEM]:  * Restarting with stat
+2020-08-25 14:16:20,542 [INFO:main] {<module>:12} [SYSTEM]:Created flask app.
+2020-08-25 14:16:20,542 [INFO:main] {<module>:12} [SYSTEM]:Created flask app.
+2020-08-25 14:16:20,543 [INFO:main] {<module>:14} [SYSTEM]:Registered image_processing_api blueprint 
+2020-08-25 14:16:20,543 [INFO:main] {<module>:14} [SYSTEM]:Registered image_processing_api blueprint 
+2020-08-25 14:16:20,546 [INFO:main] {<module>:16} [SYSTEM]:Registered user_api blueprint 
+2020-08-25 14:16:20,546 [INFO:main] {<module>:16} [SYSTEM]:Registered user_api blueprint 
+2020-08-25 14:16:20,550 [INFO:main] {<module>:18} [SYSTEM]:Registered model_management_api blueprint 
+2020-08-25 14:16:20,550 [INFO:main] {<module>:18} [SYSTEM]:Registered model_management_api blueprint 
+2020-08-25 14:16:20,573 [INFO:werkzeug] {_log:113} [SYSTEM]: * Restarting with stat
+2020-08-25 14:16:21,709 [INFO:main] {<module>:12} [SYSTEM]:Created flask app.
+2020-08-25 14:16:21,709 [INFO:main] {<module>:12} [SYSTEM]:Created flask app.
+2020-08-25 14:16:21,711 [INFO:main] {<module>:14} [SYSTEM]:Registered image_processing_api blueprint 
+2020-08-25 14:16:21,711 [INFO:main] {<module>:14} [SYSTEM]:Registered image_processing_api blueprint 
+2020-08-25 14:16:21,712 [INFO:main] {<module>:16} [SYSTEM]:Registered user_api blueprint 
+2020-08-25 14:16:21,712 [INFO:main] {<module>:16} [SYSTEM]:Registered user_api blueprint 
+2020-08-25 14:16:21,716 [INFO:main] {<module>:18} [SYSTEM]:Registered model_management_api blueprint 
+2020-08-25 14:16:21,716 [INFO:main] {<module>:18} [SYSTEM]:Registered model_management_api blueprint 
+2020-08-25 14:16:21,734 [WARNING:werkzeug] {_log:113} [SYSTEM]: * Debugger is active!
+2020-08-25 14:16:21,748 [INFO:werkzeug] {_log:113} [SYSTEM]: * Debugger PIN: 147-092-856
+2020-08-25 14:16:21,772 [INFO:werkzeug] {_log:113} [SYSTEM]: * Running on http://0.0.0.0:5001/ (Press CTRL+C to quit)
+2020-08-25 14:22:34,387 [INFO:werkzeug] {_log:113} [SYSTEM]: * Detected change in 'C:\\Users\\athiruj\\Desktop\\img-processing\\Docker\\Flask\\app\\logging_config.py', reloading
+2020-08-25 14:22:34,518 [INFO:werkzeug] {_log:113} [SYSTEM]: * Restarting with stat
