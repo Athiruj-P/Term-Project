@@ -1,5 +1,5 @@
 class Model:
-    def __init__(self, id=0 , name=0 ,path='',width=0,height=0,status=0,un_id=0 ,file = None):
+    def __init__(self, id=0 , name='' ,path='',width=0,height=0,status=0,un_id=0 ,file = None , username=''):
         self.id = id
         self.name = name
         self.path = path
@@ -8,3 +8,4 @@ class Model:
         self.status = status
         self.un_id = un_id
         self.file = file
+        self.username = username
