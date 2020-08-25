@@ -53,10 +53,17 @@ class LogManager():
     def get_log_by_date(self):
         try:
             self.logger.info("[{}] Prepair date data to query.".format(self.username))
-            for file in os.listdir("/mydir"):
-                if file.endswith(".txt"):
-                    print(os.path.join("/mydir", file))
+            start_date = datetime.strptime(self.start_date, '%Y-%m-%d').date()
+            end_date = datetime.strptime(self.end_date, '%Y-%m-%d').date()
+            result_date = []
+            file_list = []
+            for file in os.listdir(self.log_path):
+                file_name = datetime.strptime(file[:10], '%Y-%m-%d').date()
+                self.logger.debug("file_name : {} - {}".format(start_date >= file_name , end_date <= file_name))
+                if (file.endswith(".log") and start_date >= file_name and end_date <= file_name ):
+                    file_list.append(file)
             
+            return jsonify(file_list)
         except Exception as identifier:
             self.logger.error("[{}] Error {}".format(self.username,identifier))
             error = { 'mes' : str(identifier) }
