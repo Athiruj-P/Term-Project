@@ -1,6 +1,6 @@
 from flask import Flask, request, jsonify
 import logging.config
-from apis.login.user_api import user_api
+from apis.login.user_api import user_api , jwt
 from apis.image_processing.image_processing_api import image_processing_api
 from apis.model_management.model_management_api import model_management_api
 from apis.log_management.log_management_api import log_management_api
@@ -10,6 +10,9 @@ logger = logging.getLogger("main")
 logging.config.dictConfig(dict_config)
 
 app = Flask(__name__)
+app.config['SECRET_KEY'] = '5LWh0JgxhT4TFSUxvORK7Ivy7jL88u98nsDurbq1iOTROox9vdfUONo7fBUj'
+jwt.init_app(app)
+
 logger.info("Created flask app.")
 app.register_blueprint(user_api)
 logger.info('Registered image_processing_api blueprint ')
