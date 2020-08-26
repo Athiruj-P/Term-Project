@@ -147,6 +147,9 @@ class MLManager(Manager):
     def add_model(self , data = Model()):
         try:
             self.logger.info("[{}] Prepair ML model data to be save.".format(data.username))
+            if(not data.file):
+                self.logger.warning("[{}] File is empty.".format(data.username))
+                raise TypeError("file_empty")
             file_extension = data.file.filename.split('.')[-1]
             result_regex = re.search(self.name_regex, data.name)
             query_result = self.DPML_db[self.collection].find_one({
@@ -427,6 +430,9 @@ class RefManager(Manager):
     def add_model(self , data = Model()):
         try:
             self.logger.info("[{}] Prepair Ref model data to be save.".format(data.username))
+            if(not data.file):
+                self.logger.warning("[{}] File is empty.".format(data.username))
+                raise TypeError("file_empty")
             file_extension = data.file.filename.split('.')[-1]
             result_regex = re.search(self.name_regex, data.name)
 

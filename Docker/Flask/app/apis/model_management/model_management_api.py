@@ -23,13 +23,14 @@ logger_user = logging.getLogger("user_management")
 @model_management_api.route("/add_model", methods=['post'])
 def add_model():
     try:
-        model_type = request.form.get('type')
-        username = request.form.get('username')
+        model_type = request.form.get('type',None)
+        username = request.form.get('username',None)
         # logger_user.info("[{}] This is user".format(username))
         if(model_type == "ml"):
             logger.info("[{}] Use add ML model API.".format(username))
-            file = request.files['file']
-            name = request.form.get('name')
+            file = request.files.get('file' , None)
+            # file = request.files['file']
+            name = request.form.get('name',None)
             data = Model(name = name , file=file,username=username)
             ml_manager = MLManagement().create_manager()
             logger.info("[{}] Created MLManagement object.".format(username))
@@ -40,11 +41,11 @@ def add_model():
 
         elif(model_type == "ref"):
             logger.info("[{}] Use add Ref model API.".format(username))
-            file = request.files['file']
-            name = request.form.get('name')
-            width = request.form.get('width')
-            height = request.form.get('height')
-            unit = request.form.get('unit')
+            file = request.files.get('file' , None)
+            name = request.form.get('name',None)
+            width = request.form.get('width',None)
+            height = request.form.get('height',None)
+            unit = request.form.get('unit',None)
             data = Model(name=name, file=file, width=width, height=height, un_id=unit,username=username)
             ref_manager = RefManagement().create_manager()
             logger.info("[{}] Created MLManagement object.".format(username))
@@ -65,11 +66,11 @@ def add_model():
 # Author : Athiruj Poositaporn
 @model_management_api.route("/edit_model", methods=['post'])
 def edit_model():
-    model_type = request.form.get('type')
-    model_id = request.form.get('model_id')
-    file = request.files['file']
-    name = request.form.get('name')
-    username = request.form.get('username')
+    model_type = request.form.get('type',None)
+    model_id = request.form.get('model_id',None)
+    file = request.files.get('file',None)
+    name = request.form.get('name',None)
+    username = request.form.get('username',None)
     if(model_type == "ml"):
         logger.info("[{}] Use edit ML model API.".format(username))
         data = Model(id=model_id,name=name,file=file,username=username)
@@ -81,9 +82,9 @@ def edit_model():
         logger.info("[{}] Deleted MLManagement object.".format(username))
     elif(model_type == "ref"):
         logger.info("[{}] Use edit Ref model API.".format(username))
-        width = request.form.get('width')
-        height = request.form.get('height')
-        unit = request.form.get('unit')
+        width = request.form.get('width',None)
+        height = request.form.get('height',None)
+        unit = request.form.get('unit',None)
         data = Model(id=model_id,name=name,file=file,width=width,height=height,un_id=unit,username=username)
         ref_manager = RefManagement().create_manager()
         logger.info("[{}] Created RefManagement object.".format(username))
@@ -99,9 +100,9 @@ def edit_model():
 # Author : Athiruj Poositaporn
 @model_management_api.route("/change_active_model", methods=['post'])
 def change_active_model():
-    model_type = request.form.get('type')
-    model_id = request.form.get('model_id')
-    username = request.form.get('username')
+    model_type = request.form.get('type',None)
+    model_id = request.form.get('model_id',None)
+    username = request.form.get('username',None)
     data = Model(id=model_id,username=username)
     if(model_type == "ml"):
         logger.info("[{}] Use change active ML model API.".format(username))
@@ -129,9 +130,9 @@ def change_active_model():
 # Author : Athiruj Poositaporn
 @model_management_api.route("/delete_model", methods=['post'])
 def delete_model():
-    model_type = request.form.get('type')
-    model_id = request.form.get('model_id')
-    username = request.form.get('username')
+    model_type = request.form.get('type',None)
+    model_id = request.form.get('model_id',None)
+    username = request.form.get('username',None)
     data = Model(id=model_id,username=username)
     if(model_type == "ml"):
         logger.info("[{}] Use delete ML model API.".format(username))
@@ -157,8 +158,8 @@ def delete_model():
 # Author : Athiruj Poositaporn
 @model_management_api.route("/get_all_model", methods=['post'])
 def get_all_model():
-    model_type = request.form.get('type')
-    username = request.form.get('username')
+    model_type = request.form.get('type',None)
+    username = request.form.get('username',None)
     if(model_type == "ml"):
         logger.info("[{}] Use get all ML model API.".format(username))
         ml_manager = MLManagement().create_manager()
