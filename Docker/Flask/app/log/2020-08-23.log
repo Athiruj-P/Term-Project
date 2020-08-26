@@ -1,609 +1,609 @@
-2020-08-25 14:44:35,381 [INFO:main] {<module>:12} [SYSTEM]:Created flask app.
-2020-08-25 14:44:35,386 [INFO:main] {<module>:14} [SYSTEM]:Registered image_processing_api blueprint 
-2020-08-25 14:44:35,398 [INFO:main] {<module>:16} [SYSTEM]:Registered user_api blueprint 
-2020-08-25 14:44:35,411 [INFO:main] {<module>:18} [SYSTEM]:Registered model_management_api blueprint 
-2020-08-25 14:47:43,987 [INFO:main] {<module>:12} [SYSTEM]:Created flask app.
-2020-08-25 14:47:43,990 [INFO:main] {<module>:14} [SYSTEM]:Registered image_processing_api blueprint 
-2020-08-25 14:47:43,991 [INFO:main] {<module>:16} [SYSTEM]:Registered user_api blueprint 
-2020-08-25 14:47:43,996 [INFO:main] {<module>:18} [SYSTEM]:Registered model_management_api blueprint 
-2020-08-25 14:52:44,217 [INFO:main] {<module>:12} [SYSTEM]:Created flask app.
-2020-08-25 14:52:44,218 [INFO:main] {<module>:14} [SYSTEM]:Registered image_processing_api blueprint 
-2020-08-25 14:52:44,221 [INFO:main] {<module>:16} [SYSTEM]:Registered user_api blueprint 
-2020-08-25 14:52:44,224 [INFO:main] {<module>:18} [SYSTEM]:Registered model_management_api blueprint 
-2020-08-25 14:52:45,795 [INFO:main] {<module>:12} [SYSTEM]:Created flask app.
-2020-08-25 14:52:45,798 [INFO:main] {<module>:14} [SYSTEM]:Registered image_processing_api blueprint 
-2020-08-25 14:52:45,802 [INFO:main] {<module>:16} [SYSTEM]:Registered user_api blueprint 
-2020-08-25 14:52:45,818 [INFO:main] {<module>:18} [SYSTEM]:Registered model_management_api blueprint 
-2020-08-25 14:52:50,761 [INFO:user_management] {add_model:27} : [test_user01] This is user
-2020-08-25 14:52:50,762 [INFO:model_management_api] {add_model:30} [SYSTEM]:[test_user01] Use add ML model API.
-2020-08-25 14:52:50,762 [ERROR:model_management_api] {add_model:59} [SYSTEM]:[test_user01] Error name 'data' is not defined
-2020-08-25 14:55:39,486 [INFO:main] {<module>:12} [SYSTEM]:Created flask app.
-2020-08-25 14:55:39,487 [INFO:main] {<module>:14} [SYSTEM]:Registered image_processing_api blueprint 
-2020-08-25 14:55:39,490 [INFO:main] {<module>:16} [SYSTEM]:Registered user_api blueprint 
-2020-08-25 14:55:39,493 [INFO:main] {<module>:18} [SYSTEM]:Registered model_management_api blueprint 
-2020-08-25 14:55:56,850 [INFO:user_management] {add_model:27} : [test_user01] This is user
-2020-08-25 14:55:56,851 [INFO:model_management_api] {add_model:30} [SYSTEM]:[test_user01] Use add ML model API.
-2020-08-25 14:55:56,851 [ERROR:model_management_api] {add_model:59} [SYSTEM]:[test_user01] Error name 'data' is not defined
-2020-08-25 14:58:10,746 [INFO:main] {<module>:12} [SYSTEM]:Created flask app.
-2020-08-25 14:58:10,748 [INFO:main] {<module>:14} [SYSTEM]:Registered image_processing_api blueprint 
-2020-08-25 14:58:10,749 [INFO:main] {<module>:16} [SYSTEM]:Registered user_api blueprint 
-2020-08-25 14:58:10,754 [INFO:main] {<module>:18} [SYSTEM]:Registered model_management_api blueprint 
-2020-08-25 14:58:48,937 [INFO:user_management] {add_model:27} : [test_user01] This is user
-2020-08-25 14:58:48,938 [INFO:model_management_api] {add_model:30} [SYSTEM]:[test_user01] Use add ML model API.
-2020-08-25 14:58:48,938 [ERROR:model_management_api] {add_model:59} [SYSTEM]:[test_user01] Error name 'data' is not defined
-2020-08-25 14:58:53,308 [INFO:user_management] {add_model:27} : [test_user01] This is user
-2020-08-25 14:58:53,309 [INFO:model_management_api] {add_model:42} [SYSTEM]:[test_user01] Use add Ref model API.
-2020-08-25 14:58:53,309 [ERROR:model_management_api] {add_model:59} [SYSTEM]:[test_user01] Error name 'data' is not defined
-2020-08-25 15:00:28,246 [INFO:model_management_api] {edit_model:74} [SYSTEM]:[test_user02] Use edit ML model API.
-2020-08-25 15:01:46,817 [INFO:main] {<module>:12} [SYSTEM]:Created flask app.
-2020-08-25 15:01:46,818 [INFO:main] {<module>:14} [SYSTEM]:Registered image_processing_api blueprint 
-2020-08-25 15:01:46,821 [INFO:main] {<module>:16} [SYSTEM]:Registered user_api blueprint 
-2020-08-25 15:01:46,824 [INFO:main] {<module>:18} [SYSTEM]:Registered model_management_api blueprint 
-2020-08-25 15:02:07,745 [INFO:model_management_api] {edit_model:74} [SYSTEM]:[test_user02] Use edit ML model API.
-2020-08-25 15:03:03,488 [INFO:main] {<module>:12} [SYSTEM]:Created flask app.
-2020-08-25 15:03:03,491 [INFO:main] {<module>:14} [SYSTEM]:Registered image_processing_api blueprint 
-2020-08-25 15:03:03,492 [INFO:main] {<module>:16} [SYSTEM]:Registered user_api blueprint 
-2020-08-25 15:03:03,496 [INFO:main] {<module>:18} [SYSTEM]:Registered model_management_api blueprint 
-2020-08-25 15:03:09,177 [INFO:main] {<module>:12} [SYSTEM]:Created flask app.
-2020-08-25 15:03:09,179 [INFO:main] {<module>:14} [SYSTEM]:Registered image_processing_api blueprint 
-2020-08-25 15:03:09,180 [INFO:main] {<module>:16} [SYSTEM]:Registered user_api blueprint 
-2020-08-25 15:03:09,184 [INFO:main] {<module>:18} [SYSTEM]:Registered model_management_api blueprint 
-2020-08-25 15:03:12,964 [INFO:main] {<module>:12} [SYSTEM]:Created flask app.
-2020-08-25 15:03:12,966 [INFO:main] {<module>:14} [SYSTEM]:Registered image_processing_api blueprint 
-2020-08-25 15:03:12,967 [INFO:main] {<module>:16} [SYSTEM]:Registered user_api blueprint 
-2020-08-25 15:03:12,971 [INFO:main] {<module>:18} [SYSTEM]:Registered model_management_api blueprint 
-2020-08-25 15:03:19,619 [INFO:main] {<module>:12} [SYSTEM]:Created flask app.
-2020-08-25 15:03:19,620 [INFO:main] {<module>:14} [SYSTEM]:Registered image_processing_api blueprint 
-2020-08-25 15:03:19,622 [INFO:main] {<module>:16} [SYSTEM]:Registered user_api blueprint 
-2020-08-25 15:03:19,628 [INFO:main] {<module>:18} [SYSTEM]:Registered model_management_api blueprint 
-2020-08-25 15:03:29,621 [INFO:main] {<module>:12} [SYSTEM]:Created flask app.
-2020-08-25 15:03:29,622 [INFO:main] {<module>:14} [SYSTEM]:Registered image_processing_api blueprint 
-2020-08-25 15:03:29,625 [INFO:main] {<module>:16} [SYSTEM]:Registered user_api blueprint 
-2020-08-25 15:03:29,628 [INFO:main] {<module>:18} [SYSTEM]:Registered model_management_api blueprint 
-2020-08-25 15:03:36,031 [INFO:main] {<module>:12} [SYSTEM]:Created flask app.
-2020-08-25 15:03:36,038 [INFO:main] {<module>:14} [SYSTEM]:Registered image_processing_api blueprint 
-2020-08-25 15:03:36,041 [INFO:main] {<module>:16} [SYSTEM]:Registered user_api blueprint 
-2020-08-25 15:03:36,055 [INFO:main] {<module>:18} [SYSTEM]:Registered model_management_api blueprint 
-2020-08-25 15:03:50,746 [INFO:model_management_api] {edit_model:74} [SYSTEM]:[test_user02] Use edit ML model API.
-2020-08-25 15:03:50,747 [INFO:MLManager_obj] {__init__:75} [SYSTEM]:Connecting to database
-2020-08-25 15:03:51,144 [INFO:MLManager_obj] {__init__:77} [SYSTEM]:Connected to database
-2020-08-25 15:03:51,144 [INFO:model_management_api] {edit_model:77} [SYSTEM]:[test_user02] Created MLManagement object.
-2020-08-25 15:03:51,149 [INFO:model_management_api] {edit_model:78} [SYSTEM]:[test_user02] Call edit_model function.
-2020-08-25 15:03:51,150 [INFO:MLManager_obj] {edit_model:196} [SYSTEM]:[test_user02] Prepair ML model data to be edit.
-2020-08-25 15:03:51,218 [INFO:MLManager_obj] {edit_model:248} [SYSTEM]:[test_user02] Edited a ML model details.
-2020-08-25 15:03:51,223 [INFO:model_management_api] {edit_model:81} [SYSTEM]:[test_user02] Deleted MLManagement object.
-2020-08-25 15:03:51,223 [INFO:model_management_api] {edit_model:94} [SYSTEM]:[test_user02] Response data from change_active_model API
-2020-08-25 15:06:20,155 [INFO:user_management] {add_model:28} : [test_user02] This is user
-2020-08-25 15:06:20,155 [INFO:model_management_api] {add_model:30} [SYSTEM]:[test_user02] Use add ML model API.
-2020-08-25 15:06:20,156 [INFO:MLManager_obj] {__init__:75} [SYSTEM]:Connecting to database
-2020-08-25 15:06:20,160 [INFO:MLManager_obj] {__init__:77} [SYSTEM]:Connected to database
-2020-08-25 15:06:20,161 [INFO:model_management_api] {add_model:35} [SYSTEM]:[test_user02] Created MLManagement object.
-2020-08-25 15:06:20,161 [INFO:model_management_api] {add_model:36} [SYSTEM]:[test_user02] Call add_model function.
-2020-08-25 15:06:20,162 [INFO:MLManager_obj] {add_model:149} [SYSTEM]:[] Prepair ML model data to be save.
-2020-08-25 15:06:20,201 [INFO:MLManager_obj] {add_model:171} [SYSTEM]:[] Saved a ML model file to storage.
-2020-08-25 15:06:20,210 [INFO:MLManager_obj] {add_model:185} [SYSTEM]:[] Added a ML model details to database.
-2020-08-25 15:06:56,110 [INFO:main] {<module>:12} [SYSTEM]:Created flask app.
-2020-08-25 15:06:56,114 [INFO:main] {<module>:14} [SYSTEM]:Registered image_processing_api blueprint 
-2020-08-25 15:06:56,117 [INFO:main] {<module>:16} [SYSTEM]:Registered user_api blueprint 
-2020-08-25 15:06:56,126 [INFO:main] {<module>:18} [SYSTEM]:Registered model_management_api blueprint 
-2020-08-25 15:07:00,480 [INFO:main] {<module>:12} [SYSTEM]:Created flask app.
-2020-08-25 15:07:00,481 [INFO:main] {<module>:14} [SYSTEM]:Registered image_processing_api blueprint 
-2020-08-25 15:07:00,484 [INFO:main] {<module>:16} [SYSTEM]:Registered user_api blueprint 
-2020-08-25 15:07:00,487 [INFO:main] {<module>:18} [SYSTEM]:Registered model_management_api blueprint 
-2020-08-25 15:07:03,473 [INFO:main] {<module>:12} [SYSTEM]:Created flask app.
-2020-08-25 15:07:03,475 [INFO:main] {<module>:14} [SYSTEM]:Registered image_processing_api blueprint 
-2020-08-25 15:07:03,477 [INFO:main] {<module>:16} [SYSTEM]:Registered user_api blueprint 
-2020-08-25 15:07:03,481 [INFO:main] {<module>:18} [SYSTEM]:Registered model_management_api blueprint 
-2020-08-25 15:07:55,205 [INFO:user_management] {add_model:28} [USER]:[test_user02] This is user
-2020-08-25 15:07:55,206 [INFO:model_management_api] {add_model:30} [SYSTEM]:[test_user02] Use add ML model API.
-2020-08-25 15:07:55,206 [INFO:MLManager_obj] {__init__:75} [SYSTEM]:Connecting to database
-2020-08-25 15:07:55,221 [INFO:MLManager_obj] {__init__:77} [SYSTEM]:Connected to database
-2020-08-25 15:07:55,222 [INFO:model_management_api] {add_model:35} [SYSTEM]:[test_user02] Created MLManagement object.
-2020-08-25 15:07:55,223 [INFO:model_management_api] {add_model:36} [SYSTEM]:[test_user02] Call add_model function.
-2020-08-25 15:07:55,224 [INFO:MLManager_obj] {add_model:149} [SYSTEM]:[] Prepair ML model data to be save.
-2020-08-25 15:07:55,265 [WARNING:MLManager_obj] {add_model:166} [SYSTEM]:[] Duplicate ML name. Please re-enter ML name.
-2020-08-25 15:09:33,710 [INFO:main] {<module>:12} [SYSTEM]:Created flask app.
-2020-08-25 15:09:33,713 [INFO:main] {<module>:14} [SYSTEM]:Registered image_processing_api blueprint 
-2020-08-25 15:09:33,714 [INFO:main] {<module>:16} [SYSTEM]:Registered user_api blueprint 
-2020-08-25 15:09:33,719 [INFO:main] {<module>:18} [SYSTEM]:Registered model_management_api blueprint 
-2020-08-25 15:10:03,443 [INFO:main] {<module>:12} [SYSTEM]:Created flask app.
-2020-08-25 15:10:03,444 [INFO:main] {<module>:14} [SYSTEM]:Registered image_processing_api blueprint 
-2020-08-25 15:10:03,447 [INFO:main] {<module>:16} [SYSTEM]:Registered user_api blueprint 
-2020-08-25 15:10:03,451 [INFO:main] {<module>:18} [SYSTEM]:Registered model_management_api blueprint 
-2020-08-25 15:10:17,025 [INFO:main] {<module>:12} [SYSTEM]:Created flask app.
-2020-08-25 15:10:17,027 [INFO:main] {<module>:14} [SYSTEM]:Registered image_processing_api blueprint 
-2020-08-25 15:10:17,029 [INFO:main] {<module>:16} [SYSTEM]:Registered user_api blueprint 
-2020-08-25 15:10:17,033 [INFO:main] {<module>:18} [SYSTEM]:Registered model_management_api blueprint 
-2020-08-25 15:10:27,940 [INFO:main] {<module>:12} [SYSTEM]:Created flask app.
-2020-08-25 15:10:27,942 [INFO:main] {<module>:14} [SYSTEM]:Registered image_processing_api blueprint 
-2020-08-25 15:10:27,943 [INFO:main] {<module>:16} [SYSTEM]:Registered user_api blueprint 
-2020-08-25 15:10:27,947 [INFO:main] {<module>:18} [SYSTEM]:Registered model_management_api blueprint 
-2020-08-25 15:14:18,365 [INFO:user_management] {add_model:28} [USER]:[test_user02] This is user
-2020-08-25 15:14:18,366 [INFO:model_management_api] {add_model:30} [SYSTEM]:[test_user02] Use add ML model API.
-2020-08-25 15:14:18,366 [INFO:MLManager_obj] {__init__:75} [SYSTEM]:Connecting to database
-2020-08-25 15:14:18,377 [INFO:MLManager_obj] {__init__:77} [SYSTEM]:Connected to database
-2020-08-25 15:14:18,378 [INFO:model_management_api] {add_model:35} [SYSTEM]:[test_user02] Created MLManagement object.
-2020-08-25 15:14:18,379 [INFO:model_management_api] {add_model:36} [SYSTEM]:[test_user02] Call add_model function.
-2020-08-25 15:14:18,386 [INFO:MLManager_obj] {add_model:149} [SYSTEM]:[test_user02] Prepair ML model data to be save.
-2020-08-25 15:14:18,420 [WARNING:MLManager_obj] {add_model:166} [SYSTEM]:[test_user02] Duplicate ML name. Please re-enter ML name.
-2020-08-25 15:14:53,401 [INFO:main] {<module>:12} [SYSTEM]:Created flask app.
-2020-08-25 15:14:53,405 [INFO:main] {<module>:14} [SYSTEM]:Registered image_processing_api blueprint 
-2020-08-25 15:14:53,407 [INFO:main] {<module>:16} [SYSTEM]:Registered user_api blueprint 
-2020-08-25 15:14:53,419 [INFO:main] {<module>:18} [SYSTEM]:Registered model_management_api blueprint 
-2020-08-25 15:16:52,183 [INFO:main] {<module>:12} [SYSTEM]:Created flask app.
-2020-08-25 15:16:52,186 [INFO:main] {<module>:14} [SYSTEM]:Registered image_processing_api blueprint 
-2020-08-25 15:16:52,188 [INFO:main] {<module>:16} [SYSTEM]:Registered user_api blueprint 
-2020-08-25 15:16:52,195 [INFO:main] {<module>:18} [SYSTEM]:Registered model_management_api blueprint 
-2020-08-25 15:17:01,042 [INFO:main] {<module>:12} [SYSTEM]:Created flask app.
-2020-08-25 15:17:01,045 [INFO:main] {<module>:14} [SYSTEM]:Registered image_processing_api blueprint 
-2020-08-25 15:17:01,046 [INFO:main] {<module>:16} [SYSTEM]:Registered user_api blueprint 
-2020-08-25 15:17:01,050 [INFO:main] {<module>:18} [SYSTEM]:Registered model_management_api blueprint 
-2020-08-25 15:19:26,519 [INFO:main] {<module>:12} [SYSTEM]:Created flask app.
-2020-08-25 15:19:26,522 [INFO:main] {<module>:14} [SYSTEM]:Registered image_processing_api blueprint 
-2020-08-25 15:19:26,523 [INFO:main] {<module>:16} [SYSTEM]:Registered user_api blueprint 
-2020-08-25 15:19:26,531 [INFO:main] {<module>:18} [SYSTEM]:Registered model_management_api blueprint 
-2020-08-25 15:20:49,605 [INFO:main] {<module>:13} [SYSTEM]:Created flask app.
-2020-08-25 15:20:49,607 [INFO:main] {<module>:15} [SYSTEM]:Registered image_processing_api blueprint 
-2020-08-25 15:20:49,609 [INFO:main] {<module>:17} [SYSTEM]:Registered user_api blueprint 
-2020-08-25 15:20:49,615 [INFO:main] {<module>:19} [SYSTEM]:Registered model_management_api blueprint 
-2020-08-25 15:21:25,381 [INFO:main] {<module>:13} [SYSTEM]:Created flask app.
-2020-08-25 15:21:25,382 [INFO:main] {<module>:15} [SYSTEM]:Registered image_processing_api blueprint 
-2020-08-25 15:21:25,384 [INFO:main] {<module>:17} [SYSTEM]:Registered user_api blueprint 
-2020-08-25 15:21:25,389 [INFO:main] {<module>:19} [SYSTEM]:Registered model_management_api blueprint 
-2020-08-25 15:21:25,391 [INFO:main] {<module>:21} [SYSTEM]:Registered log_management_api blueprint 
-2020-08-25 15:21:26,671 [INFO:main] {<module>:13} [SYSTEM]:Created flask app.
-2020-08-25 15:21:26,674 [INFO:main] {<module>:15} [SYSTEM]:Registered image_processing_api blueprint 
-2020-08-25 15:21:26,675 [INFO:main] {<module>:17} [SYSTEM]:Registered user_api blueprint 
-2020-08-25 15:21:26,683 [INFO:main] {<module>:19} [SYSTEM]:Registered model_management_api blueprint 
-2020-08-25 15:21:26,686 [INFO:main] {<module>:21} [SYSTEM]:Registered log_management_api blueprint 
-2020-08-25 15:21:42,481 [INFO:main] {<module>:13} [SYSTEM]:Created flask app.
-2020-08-25 15:21:42,482 [INFO:main] {<module>:15} [SYSTEM]:Registered image_processing_api blueprint 
-2020-08-25 15:21:42,485 [INFO:main] {<module>:17} [SYSTEM]:Registered user_api blueprint 
-2020-08-25 15:21:42,488 [INFO:main] {<module>:19} [SYSTEM]:Registered model_management_api blueprint 
-2020-08-25 15:21:42,491 [INFO:main] {<module>:21} [SYSTEM]:Registered log_management_api blueprint 
-2020-08-25 15:21:43,674 [INFO:main] {<module>:13} [SYSTEM]:Created flask app.
-2020-08-25 15:21:43,675 [INFO:main] {<module>:15} [SYSTEM]:Registered image_processing_api blueprint 
-2020-08-25 15:21:43,678 [INFO:main] {<module>:17} [SYSTEM]:Registered user_api blueprint 
-2020-08-25 15:21:43,681 [INFO:main] {<module>:19} [SYSTEM]:Registered model_management_api blueprint 
-2020-08-25 15:21:43,682 [INFO:main] {<module>:21} [SYSTEM]:Registered log_management_api blueprint 
-2020-08-25 16:42:26,552 [INFO:main] {<module>:13} [SYSTEM]:Created flask app.
-2020-08-25 16:42:26,553 [INFO:main] {<module>:15} [SYSTEM]:Registered image_processing_api blueprint 
-2020-08-25 16:42:26,555 [INFO:main] {<module>:17} [SYSTEM]:Registered user_api blueprint 
-2020-08-25 16:42:26,560 [INFO:main] {<module>:19} [SYSTEM]:Registered model_management_api blueprint 
-2020-08-25 16:42:26,561 [INFO:main] {<module>:21} [SYSTEM]:Registered log_management_api blueprint 
-2020-08-25 16:42:28,367 [INFO:main] {<module>:13} [SYSTEM]:Created flask app.
-2020-08-25 16:42:28,369 [INFO:main] {<module>:15} [SYSTEM]:Registered image_processing_api blueprint 
-2020-08-25 16:42:28,370 [INFO:main] {<module>:17} [SYSTEM]:Registered user_api blueprint 
-2020-08-25 16:42:28,375 [INFO:main] {<module>:19} [SYSTEM]:Registered model_management_api blueprint 
-2020-08-25 16:42:28,377 [INFO:main] {<module>:21} [SYSTEM]:Registered log_management_api blueprint 
-2020-08-25 16:43:18,170 [INFO:main] {<module>:13} [SYSTEM]:Created flask app.
-2020-08-25 16:43:18,288 [INFO:main] {<module>:15} [SYSTEM]:Registered image_processing_api blueprint 
-2020-08-25 16:43:18,321 [INFO:main] {<module>:17} [SYSTEM]:Registered user_api blueprint 
-2020-08-25 16:43:18,370 [INFO:main] {<module>:19} [SYSTEM]:Registered model_management_api blueprint 
-2020-08-25 16:43:18,390 [INFO:main] {<module>:21} [SYSTEM]:Registered log_management_api blueprint 
-2020-08-25 16:43:37,656 [ERROR:log_management_api] {get_log:47} [SYSTEM]:[test_get_log] Error local variable 'date' referenced before assignment
-2020-08-25 16:44:56,631 [INFO:main] {<module>:13} [SYSTEM]:Created flask app.
-2020-08-25 16:44:56,634 [INFO:main] {<module>:15} [SYSTEM]:Registered image_processing_api blueprint 
-2020-08-25 16:44:56,636 [INFO:main] {<module>:17} [SYSTEM]:Registered user_api blueprint 
-2020-08-25 16:44:56,648 [INFO:main] {<module>:19} [SYSTEM]:Registered model_management_api blueprint 
-2020-08-25 16:44:56,650 [INFO:main] {<module>:21} [SYSTEM]:Registered log_management_api blueprint 
-2020-08-25 16:47:09,455 [INFO:main] {<module>:13} [SYSTEM]:Created flask app.
-2020-08-25 16:47:09,459 [INFO:main] {<module>:15} [SYSTEM]:Registered image_processing_api blueprint 
-2020-08-25 16:47:09,461 [INFO:main] {<module>:17} [SYSTEM]:Registered user_api blueprint 
-2020-08-25 16:47:09,474 [INFO:main] {<module>:19} [SYSTEM]:Registered model_management_api blueprint 
-2020-08-25 16:47:09,476 [INFO:main] {<module>:21} [SYSTEM]:Registered log_management_api blueprint 
-2020-08-25 16:47:10,981 [INFO:main] {<module>:13} [SYSTEM]:Created flask app.
-2020-08-25 16:47:10,983 [INFO:main] {<module>:15} [SYSTEM]:Registered image_processing_api blueprint 
-2020-08-25 16:47:10,984 [INFO:main] {<module>:17} [SYSTEM]:Registered user_api blueprint 
-2020-08-25 16:47:10,987 [INFO:main] {<module>:19} [SYSTEM]:Registered model_management_api blueprint 
-2020-08-25 16:47:10,989 [INFO:main] {<module>:21} [SYSTEM]:Registered log_management_api blueprint 
-2020-08-25 16:47:28,114 [INFO:LogManager] {__init__:9} [SYSTEM]:Set log variable
-2020-08-25 16:47:56,669 [INFO:main] {<module>:13} [SYSTEM]:Created flask app.
-2020-08-25 16:47:56,676 [INFO:main] {<module>:15} [SYSTEM]:Registered image_processing_api blueprint 
-2020-08-25 16:47:56,678 [INFO:main] {<module>:17} [SYSTEM]:Registered user_api blueprint 
-2020-08-25 16:47:56,710 [INFO:main] {<module>:19} [SYSTEM]:Registered model_management_api blueprint 
-2020-08-25 16:47:56,733 [INFO:main] {<module>:21} [SYSTEM]:Registered log_management_api blueprint 
-2020-08-25 16:48:02,269 [INFO:LogManager] {__init__:9} [SYSTEM]:Set log variable
-2020-08-25 16:50:15,933 [INFO:main] {<module>:13} [SYSTEM]:Created flask app.
-2020-08-25 16:50:15,936 [INFO:main] {<module>:15} [SYSTEM]:Registered image_processing_api blueprint 
-2020-08-25 16:50:15,938 [INFO:main] {<module>:17} [SYSTEM]:Registered user_api blueprint 
-2020-08-25 16:50:15,950 [INFO:main] {<module>:19} [SYSTEM]:Registered model_management_api blueprint 
-2020-08-25 16:50:15,951 [INFO:main] {<module>:21} [SYSTEM]:Registered log_management_api blueprint 
-2020-08-25 16:50:19,090 [INFO:main] {<module>:13} [SYSTEM]:Created flask app.
-2020-08-25 16:50:19,091 [INFO:main] {<module>:15} [SYSTEM]:Registered image_processing_api blueprint 
-2020-08-25 16:50:19,093 [INFO:main] {<module>:17} [SYSTEM]:Registered user_api blueprint 
-2020-08-25 16:50:19,097 [INFO:main] {<module>:19} [SYSTEM]:Registered model_management_api blueprint 
-2020-08-25 16:50:19,098 [INFO:main] {<module>:21} [SYSTEM]:Registered log_management_api blueprint 
-2020-08-25 16:50:23,035 [INFO:main] {<module>:13} [SYSTEM]:Created flask app.
-2020-08-25 16:50:23,038 [INFO:main] {<module>:15} [SYSTEM]:Registered image_processing_api blueprint 
-2020-08-25 16:50:23,041 [INFO:main] {<module>:17} [SYSTEM]:Registered user_api blueprint 
-2020-08-25 16:50:23,055 [INFO:main] {<module>:19} [SYSTEM]:Registered model_management_api blueprint 
-2020-08-25 16:50:23,060 [INFO:main] {<module>:21} [SYSTEM]:Registered log_management_api blueprint 
-2020-08-25 16:50:29,515 [INFO:main] {<module>:13} [SYSTEM]:Created flask app.
-2020-08-25 16:50:29,516 [INFO:main] {<module>:15} [SYSTEM]:Registered image_processing_api blueprint 
-2020-08-25 16:50:29,518 [INFO:main] {<module>:17} [SYSTEM]:Registered user_api blueprint 
-2020-08-25 16:50:29,523 [INFO:main] {<module>:19} [SYSTEM]:Registered model_management_api blueprint 
-2020-08-25 16:50:29,524 [INFO:main] {<module>:21} [SYSTEM]:Registered log_management_api blueprint 
-2020-08-25 16:50:33,761 [INFO:main] {<module>:13} [SYSTEM]:Created flask app.
-2020-08-25 16:50:33,763 [INFO:main] {<module>:15} [SYSTEM]:Registered image_processing_api blueprint 
-2020-08-25 16:50:33,764 [INFO:main] {<module>:17} [SYSTEM]:Registered user_api blueprint 
-2020-08-25 16:50:33,768 [INFO:main] {<module>:19} [SYSTEM]:Registered model_management_api blueprint 
-2020-08-25 16:50:33,769 [INFO:main] {<module>:21} [SYSTEM]:Registered log_management_api blueprint 
-2020-08-25 16:50:39,556 [INFO:main] {<module>:13} [SYSTEM]:Created flask app.
-2020-08-25 16:50:39,561 [INFO:main] {<module>:15} [SYSTEM]:Registered image_processing_api blueprint 
-2020-08-25 16:50:39,563 [INFO:main] {<module>:17} [SYSTEM]:Registered user_api blueprint 
-2020-08-25 16:50:39,576 [INFO:main] {<module>:19} [SYSTEM]:Registered model_management_api blueprint 
-2020-08-25 16:50:39,578 [INFO:main] {<module>:21} [SYSTEM]:Registered log_management_api blueprint 
-2020-08-25 16:50:43,118 [INFO:main] {<module>:13} [SYSTEM]:Created flask app.
-2020-08-25 16:50:43,119 [INFO:main] {<module>:15} [SYSTEM]:Registered image_processing_api blueprint 
-2020-08-25 16:50:43,122 [INFO:main] {<module>:17} [SYSTEM]:Registered user_api blueprint 
-2020-08-25 16:50:43,126 [INFO:main] {<module>:19} [SYSTEM]:Registered model_management_api blueprint 
-2020-08-25 16:50:43,127 [INFO:main] {<module>:21} [SYSTEM]:Registered log_management_api blueprint 
-2020-08-25 16:50:49,354 [INFO:main] {<module>:13} [SYSTEM]:Created flask app.
-2020-08-25 16:50:49,359 [INFO:main] {<module>:15} [SYSTEM]:Registered image_processing_api blueprint 
-2020-08-25 16:50:49,362 [INFO:main] {<module>:17} [SYSTEM]:Registered user_api blueprint 
-2020-08-25 16:50:49,374 [INFO:main] {<module>:19} [SYSTEM]:Registered model_management_api blueprint 
-2020-08-25 16:50:49,376 [INFO:main] {<module>:21} [SYSTEM]:Registered log_management_api blueprint 
-2020-08-25 16:50:52,634 [INFO:main] {<module>:13} [SYSTEM]:Created flask app.
-2020-08-25 16:50:52,636 [INFO:main] {<module>:15} [SYSTEM]:Registered image_processing_api blueprint 
-2020-08-25 16:50:52,638 [INFO:main] {<module>:17} [SYSTEM]:Registered user_api blueprint 
-2020-08-25 16:50:52,643 [INFO:main] {<module>:19} [SYSTEM]:Registered model_management_api blueprint 
-2020-08-25 16:50:52,644 [INFO:main] {<module>:21} [SYSTEM]:Registered log_management_api blueprint 
-2020-08-25 16:50:55,414 [INFO:main] {<module>:13} [SYSTEM]:Created flask app.
-2020-08-25 16:50:55,415 [INFO:main] {<module>:15} [SYSTEM]:Registered image_processing_api blueprint 
-2020-08-25 16:50:55,418 [INFO:main] {<module>:17} [SYSTEM]:Registered user_api blueprint 
-2020-08-25 16:50:55,423 [INFO:main] {<module>:19} [SYSTEM]:Registered model_management_api blueprint 
-2020-08-25 16:50:55,424 [INFO:main] {<module>:21} [SYSTEM]:Registered log_management_api blueprint 
-2020-08-25 16:50:58,981 [INFO:LogManager] {__init__:9} [SYSTEM]:Set log variable
-2020-08-25 16:50:58,981 [ERROR:log_management_api] {get_log:46} [SYSTEM]:[test_get_log] Error name 'os' is not defined
-2020-08-25 16:51:15,444 [INFO:main] {<module>:13} [SYSTEM]:Created flask app.
-2020-08-25 16:51:15,445 [INFO:main] {<module>:15} [SYSTEM]:Registered image_processing_api blueprint 
-2020-08-25 16:51:15,449 [INFO:main] {<module>:17} [SYSTEM]:Registered user_api blueprint 
-2020-08-25 16:51:15,456 [INFO:main] {<module>:19} [SYSTEM]:Registered model_management_api blueprint 
-2020-08-25 16:51:15,457 [INFO:main] {<module>:21} [SYSTEM]:Registered log_management_api blueprint 
-2020-08-25 16:51:15,737 [INFO:LogManager] {__init__:10} [SYSTEM]:Set log variable
-2020-08-25 16:51:59,735 [INFO:main] {<module>:13} [SYSTEM]:Created flask app.
-2020-08-25 16:51:59,736 [INFO:main] {<module>:15} [SYSTEM]:Registered image_processing_api blueprint 
-2020-08-25 16:51:59,737 [INFO:main] {<module>:17} [SYSTEM]:Registered user_api blueprint 
-2020-08-25 16:51:59,741 [INFO:main] {<module>:19} [SYSTEM]:Registered model_management_api blueprint 
-2020-08-25 16:51:59,742 [INFO:main] {<module>:21} [SYSTEM]:Registered log_management_api blueprint 
-2020-08-25 16:52:04,668 [INFO:main] {<module>:13} [SYSTEM]:Created flask app.
-2020-08-25 16:52:04,670 [INFO:main] {<module>:15} [SYSTEM]:Registered image_processing_api blueprint 
-2020-08-25 16:52:04,672 [INFO:main] {<module>:17} [SYSTEM]:Registered user_api blueprint 
-2020-08-25 16:52:04,678 [INFO:main] {<module>:19} [SYSTEM]:Registered model_management_api blueprint 
-2020-08-25 16:52:04,680 [INFO:main] {<module>:21} [SYSTEM]:Registered log_management_api blueprint 
-2020-08-25 16:52:08,091 [INFO:main] {<module>:13} [SYSTEM]:Created flask app.
-2020-08-25 16:52:08,093 [INFO:main] {<module>:15} [SYSTEM]:Registered image_processing_api blueprint 
-2020-08-25 16:52:08,095 [INFO:main] {<module>:17} [SYSTEM]:Registered user_api blueprint 
-2020-08-25 16:52:08,103 [INFO:main] {<module>:19} [SYSTEM]:Registered model_management_api blueprint 
-2020-08-25 16:52:08,106 [INFO:main] {<module>:21} [SYSTEM]:Registered log_management_api blueprint 
-2020-08-25 16:52:08,542 [INFO:LogManager] {__init__:10} [SYSTEM]:Set log variable
-2020-08-25 16:52:08,543 [INFO:LogManager] {__init__:21} [SYSTEM]:parent : C:\Users\athiruj\Desktop\img-processing\Docker\Flask\app
-2020-08-25 16:52:35,252 [INFO:main] {<module>:13} [SYSTEM]:Created flask app.
-2020-08-25 16:52:35,256 [INFO:main] {<module>:15} [SYSTEM]:Registered image_processing_api blueprint 
-2020-08-25 16:52:35,259 [INFO:main] {<module>:17} [SYSTEM]:Registered user_api blueprint 
-2020-08-25 16:52:35,269 [INFO:main] {<module>:19} [SYSTEM]:Registered model_management_api blueprint 
-2020-08-25 16:52:35,273 [INFO:main] {<module>:21} [SYSTEM]:Registered log_management_api blueprint 
-2020-08-25 16:52:53,945 [INFO:main] {<module>:13} [SYSTEM]:Created flask app.
-2020-08-25 16:52:53,948 [INFO:main] {<module>:15} [SYSTEM]:Registered image_processing_api blueprint 
-2020-08-25 16:52:53,949 [INFO:main] {<module>:17} [SYSTEM]:Registered user_api blueprint 
-2020-08-25 16:52:53,953 [INFO:main] {<module>:19} [SYSTEM]:Registered model_management_api blueprint 
-2020-08-25 16:52:53,955 [INFO:main] {<module>:21} [SYSTEM]:Registered log_management_api blueprint 
-2020-08-25 16:53:06,409 [INFO:main] {<module>:13} [SYSTEM]:Created flask app.
-2020-08-25 16:53:06,411 [INFO:main] {<module>:15} [SYSTEM]:Registered image_processing_api blueprint 
-2020-08-25 16:53:06,412 [INFO:main] {<module>:17} [SYSTEM]:Registered user_api blueprint 
-2020-08-25 16:53:06,416 [INFO:main] {<module>:19} [SYSTEM]:Registered model_management_api blueprint 
-2020-08-25 16:53:06,417 [INFO:main] {<module>:21} [SYSTEM]:Registered log_management_api blueprint 
-2020-08-25 16:53:10,819 [INFO:main] {<module>:13} [SYSTEM]:Created flask app.
-2020-08-25 16:53:10,821 [INFO:main] {<module>:15} [SYSTEM]:Registered image_processing_api blueprint 
-2020-08-25 16:53:10,822 [INFO:main] {<module>:17} [SYSTEM]:Registered user_api blueprint 
-2020-08-25 16:53:10,829 [INFO:main] {<module>:19} [SYSTEM]:Registered model_management_api blueprint 
-2020-08-25 16:53:10,830 [INFO:main] {<module>:21} [SYSTEM]:Registered log_management_api blueprint 
-2020-08-25 16:53:17,616 [INFO:main] {<module>:13} [SYSTEM]:Created flask app.
-2020-08-25 16:53:17,617 [INFO:main] {<module>:15} [SYSTEM]:Registered image_processing_api blueprint 
-2020-08-25 16:53:17,620 [INFO:main] {<module>:17} [SYSTEM]:Registered user_api blueprint 
-2020-08-25 16:53:17,627 [INFO:main] {<module>:19} [SYSTEM]:Registered model_management_api blueprint 
-2020-08-25 16:53:17,629 [INFO:main] {<module>:21} [SYSTEM]:Registered log_management_api blueprint 
-2020-08-25 16:54:17,402 [INFO:main] {<module>:13} [SYSTEM]:Created flask app.
-2020-08-25 16:54:17,403 [INFO:main] {<module>:15} [SYSTEM]:Registered image_processing_api blueprint 
-2020-08-25 16:54:17,404 [INFO:main] {<module>:17} [SYSTEM]:Registered user_api blueprint 
-2020-08-25 16:54:17,408 [INFO:main] {<module>:19} [SYSTEM]:Registered model_management_api blueprint 
-2020-08-25 16:54:17,410 [INFO:main] {<module>:21} [SYSTEM]:Registered log_management_api blueprint 
-2020-08-25 16:54:18,699 [INFO:main] {<module>:13} [SYSTEM]:Created flask app.
-2020-08-25 16:54:18,702 [INFO:main] {<module>:15} [SYSTEM]:Registered image_processing_api blueprint 
-2020-08-25 16:54:18,703 [INFO:main] {<module>:17} [SYSTEM]:Registered user_api blueprint 
-2020-08-25 16:54:18,707 [INFO:main] {<module>:19} [SYSTEM]:Registered model_management_api blueprint 
-2020-08-25 16:54:18,711 [INFO:main] {<module>:21} [SYSTEM]:Registered log_management_api blueprint 
-2020-08-25 16:54:22,455 [INFO:LogManager] {__init__:10} [SYSTEM]:Set log variable
-2020-08-25 16:54:22,455 [INFO:LogManager] {__init__:21} [SYSTEM]:parent : C:\Users\athiruj\Desktop\img-processing\Docker\Flask\app
-2020-08-25 16:56:34,963 [INFO:main] {<module>:13} [SYSTEM]:Created flask app.
-2020-08-25 16:56:34,964 [INFO:main] {<module>:15} [SYSTEM]:Registered image_processing_api blueprint 
-2020-08-25 16:56:34,967 [INFO:main] {<module>:17} [SYSTEM]:Registered user_api blueprint 
-2020-08-25 16:56:34,970 [INFO:main] {<module>:19} [SYSTEM]:Registered model_management_api blueprint 
-2020-08-25 16:56:34,972 [INFO:main] {<module>:21} [SYSTEM]:Registered log_management_api blueprint 
-2020-08-25 16:56:36,312 [INFO:main] {<module>:13} [SYSTEM]:Created flask app.
-2020-08-25 16:56:36,313 [INFO:main] {<module>:15} [SYSTEM]:Registered image_processing_api blueprint 
-2020-08-25 16:56:36,318 [INFO:main] {<module>:17} [SYSTEM]:Registered user_api blueprint 
-2020-08-25 16:56:36,322 [INFO:main] {<module>:19} [SYSTEM]:Registered model_management_api blueprint 
-2020-08-25 16:56:36,323 [INFO:main] {<module>:21} [SYSTEM]:Registered log_management_api blueprint 
-2020-08-25 17:07:52,336 [INFO:main] {<module>:13} [SYSTEM]:Created flask app.
-2020-08-25 17:07:52,338 [INFO:main] {<module>:15} [SYSTEM]:Registered image_processing_api blueprint 
-2020-08-25 17:07:52,341 [INFO:main] {<module>:17} [SYSTEM]:Registered user_api blueprint 
-2020-08-25 17:07:52,348 [INFO:main] {<module>:19} [SYSTEM]:Registered model_management_api blueprint 
-2020-08-25 17:07:52,350 [INFO:main] {<module>:21} [SYSTEM]:Registered log_management_api blueprint 
-2020-08-25 17:07:53,812 [INFO:main] {<module>:13} [SYSTEM]:Created flask app.
-2020-08-25 17:07:53,815 [INFO:main] {<module>:15} [SYSTEM]:Registered image_processing_api blueprint 
-2020-08-25 17:07:53,815 [INFO:main] {<module>:17} [SYSTEM]:Registered user_api blueprint 
-2020-08-25 17:07:53,819 [INFO:main] {<module>:19} [SYSTEM]:Registered model_management_api blueprint 
-2020-08-25 17:07:53,822 [INFO:main] {<module>:21} [SYSTEM]:Registered log_management_api blueprint 
-2020-08-25 17:08:02,029 [INFO:LogManager] {__init__:10} [SYSTEM]:Set log variable
-2020-08-25 17:08:02,029 [INFO:LogManager] {__init__:21} [SYSTEM]:parent : C:\Users\athiruj\Desktop\img-processing\Docker\Flask\app
-2020-08-25 17:08:41,760 [INFO:main] {<module>:13} [SYSTEM]:Created flask app.
-2020-08-25 17:08:41,762 [INFO:main] {<module>:15} [SYSTEM]:Registered image_processing_api blueprint 
-2020-08-25 17:08:41,764 [INFO:main] {<module>:17} [SYSTEM]:Registered user_api blueprint 
-2020-08-25 17:08:41,768 [INFO:main] {<module>:19} [SYSTEM]:Registered model_management_api blueprint 
-2020-08-25 17:08:41,770 [INFO:main] {<module>:21} [SYSTEM]:Registered log_management_api blueprint 
-2020-08-25 17:08:43,110 [INFO:LogManager] {__init__:11} [SYSTEM]:Set log variable
-2020-08-25 17:08:43,111 [INFO:LogManager] {__init__:22} [SYSTEM]:parent : C:\Users\athiruj\Desktop\img-processing\Docker\Flask\app
-2020-08-25 17:10:04,575 [INFO:main] {<module>:13} [SYSTEM]:Created flask app.
-2020-08-25 17:10:04,577 [INFO:main] {<module>:15} [SYSTEM]:Registered image_processing_api blueprint 
-2020-08-25 17:10:04,578 [INFO:main] {<module>:17} [SYSTEM]:Registered user_api blueprint 
-2020-08-25 17:10:04,584 [INFO:main] {<module>:19} [SYSTEM]:Registered model_management_api blueprint 
-2020-08-25 17:10:04,585 [INFO:main] {<module>:21} [SYSTEM]:Registered log_management_api blueprint 
-2020-08-25 17:10:16,130 [INFO:main] {<module>:13} [SYSTEM]:Created flask app.
-2020-08-25 17:10:16,133 [INFO:main] {<module>:15} [SYSTEM]:Registered image_processing_api blueprint 
-2020-08-25 17:10:16,135 [INFO:main] {<module>:17} [SYSTEM]:Registered user_api blueprint 
-2020-08-25 17:10:16,142 [INFO:main] {<module>:19} [SYSTEM]:Registered model_management_api blueprint 
-2020-08-25 17:10:16,143 [INFO:main] {<module>:21} [SYSTEM]:Registered log_management_api blueprint 
-2020-08-25 17:10:19,348 [INFO:main] {<module>:13} [SYSTEM]:Created flask app.
-2020-08-25 17:10:19,349 [INFO:main] {<module>:15} [SYSTEM]:Registered image_processing_api blueprint 
-2020-08-25 17:10:19,352 [INFO:main] {<module>:17} [SYSTEM]:Registered user_api blueprint 
-2020-08-25 17:10:19,356 [INFO:main] {<module>:19} [SYSTEM]:Registered model_management_api blueprint 
-2020-08-25 17:10:19,357 [INFO:main] {<module>:21} [SYSTEM]:Registered log_management_api blueprint 
-2020-08-25 17:10:22,288 [INFO:main] {<module>:13} [SYSTEM]:Created flask app.
-2020-08-25 17:10:22,289 [INFO:main] {<module>:15} [SYSTEM]:Registered image_processing_api blueprint 
-2020-08-25 17:10:22,291 [INFO:main] {<module>:17} [SYSTEM]:Registered user_api blueprint 
-2020-08-25 17:10:22,296 [INFO:main] {<module>:19} [SYSTEM]:Registered model_management_api blueprint 
-2020-08-25 17:10:22,297 [INFO:main] {<module>:21} [SYSTEM]:Registered log_management_api blueprint 
-2020-08-25 17:10:26,136 [INFO:main] {<module>:13} [SYSTEM]:Created flask app.
-2020-08-25 17:10:26,138 [INFO:main] {<module>:15} [SYSTEM]:Registered image_processing_api blueprint 
-2020-08-25 17:10:26,139 [INFO:main] {<module>:17} [SYSTEM]:Registered user_api blueprint 
-2020-08-25 17:10:26,146 [INFO:main] {<module>:19} [SYSTEM]:Registered model_management_api blueprint 
-2020-08-25 17:10:26,149 [INFO:main] {<module>:21} [SYSTEM]:Registered log_management_api blueprint 
-2020-08-25 17:10:30,541 [INFO:main] {<module>:13} [SYSTEM]:Created flask app.
-2020-08-25 17:10:30,543 [INFO:main] {<module>:15} [SYSTEM]:Registered image_processing_api blueprint 
-2020-08-25 17:10:30,545 [INFO:main] {<module>:17} [SYSTEM]:Registered user_api blueprint 
-2020-08-25 17:10:30,551 [INFO:main] {<module>:19} [SYSTEM]:Registered model_management_api blueprint 
-2020-08-25 17:10:30,553 [INFO:main] {<module>:21} [SYSTEM]:Registered log_management_api blueprint 
-2020-08-25 17:10:36,797 [INFO:main] {<module>:13} [SYSTEM]:Created flask app.
-2020-08-25 17:10:36,799 [INFO:main] {<module>:15} [SYSTEM]:Registered image_processing_api blueprint 
-2020-08-25 17:10:36,801 [INFO:main] {<module>:17} [SYSTEM]:Registered user_api blueprint 
-2020-08-25 17:10:36,806 [INFO:main] {<module>:19} [SYSTEM]:Registered model_management_api blueprint 
-2020-08-25 17:10:36,809 [INFO:main] {<module>:21} [SYSTEM]:Registered log_management_api blueprint 
-2020-08-25 17:10:39,731 [INFO:main] {<module>:13} [SYSTEM]:Created flask app.
-2020-08-25 17:10:39,737 [INFO:main] {<module>:15} [SYSTEM]:Registered image_processing_api blueprint 
-2020-08-25 17:10:39,742 [INFO:main] {<module>:17} [SYSTEM]:Registered user_api blueprint 
-2020-08-25 17:10:39,751 [INFO:main] {<module>:19} [SYSTEM]:Registered model_management_api blueprint 
-2020-08-25 17:10:39,753 [INFO:main] {<module>:21} [SYSTEM]:Registered log_management_api blueprint 
-2020-08-25 17:10:46,976 [INFO:main] {<module>:13} [SYSTEM]:Created flask app.
-2020-08-25 17:10:46,979 [INFO:main] {<module>:15} [SYSTEM]:Registered image_processing_api blueprint 
-2020-08-25 17:10:46,980 [INFO:main] {<module>:17} [SYSTEM]:Registered user_api blueprint 
-2020-08-25 17:10:46,991 [INFO:main] {<module>:19} [SYSTEM]:Registered model_management_api blueprint 
-2020-08-25 17:10:46,992 [INFO:main] {<module>:21} [SYSTEM]:Registered log_management_api blueprint 
-2020-08-25 17:10:52,202 [INFO:main] {<module>:13} [SYSTEM]:Created flask app.
-2020-08-25 17:10:52,203 [INFO:main] {<module>:15} [SYSTEM]:Registered image_processing_api blueprint 
-2020-08-25 17:10:52,206 [INFO:main] {<module>:17} [SYSTEM]:Registered user_api blueprint 
-2020-08-25 17:10:52,211 [INFO:main] {<module>:19} [SYSTEM]:Registered model_management_api blueprint 
-2020-08-25 17:10:52,212 [INFO:main] {<module>:21} [SYSTEM]:Registered log_management_api blueprint 
-2020-08-25 17:10:57,369 [INFO:main] {<module>:13} [SYSTEM]:Created flask app.
-2020-08-25 17:10:57,371 [INFO:main] {<module>:15} [SYSTEM]:Registered image_processing_api blueprint 
-2020-08-25 17:10:57,373 [INFO:main] {<module>:17} [SYSTEM]:Registered user_api blueprint 
-2020-08-25 17:10:57,377 [INFO:main] {<module>:19} [SYSTEM]:Registered model_management_api blueprint 
-2020-08-25 17:10:57,378 [INFO:main] {<module>:21} [SYSTEM]:Registered log_management_api blueprint 
-2020-08-25 17:11:06,204 [INFO:main] {<module>:13} [SYSTEM]:Created flask app.
-2020-08-25 17:11:06,208 [INFO:main] {<module>:15} [SYSTEM]:Registered image_processing_api blueprint 
-2020-08-25 17:11:06,210 [INFO:main] {<module>:17} [SYSTEM]:Registered user_api blueprint 
-2020-08-25 17:11:06,225 [INFO:main] {<module>:19} [SYSTEM]:Registered model_management_api blueprint 
-2020-08-25 17:11:06,227 [INFO:main] {<module>:21} [SYSTEM]:Registered log_management_api blueprint 
-2020-08-25 17:11:16,858 [INFO:main] {<module>:13} [SYSTEM]:Created flask app.
-2020-08-25 17:11:16,861 [INFO:main] {<module>:15} [SYSTEM]:Registered image_processing_api blueprint 
-2020-08-25 17:11:16,862 [INFO:main] {<module>:17} [SYSTEM]:Registered user_api blueprint 
-2020-08-25 17:11:16,872 [INFO:main] {<module>:19} [SYSTEM]:Registered model_management_api blueprint 
-2020-08-25 17:11:16,876 [INFO:main] {<module>:21} [SYSTEM]:Registered log_management_api blueprint 
-2020-08-25 17:11:26,637 [INFO:main] {<module>:13} [SYSTEM]:Created flask app.
-2020-08-25 17:11:26,638 [INFO:main] {<module>:15} [SYSTEM]:Registered image_processing_api blueprint 
-2020-08-25 17:11:26,640 [INFO:main] {<module>:17} [SYSTEM]:Registered user_api blueprint 
-2020-08-25 17:11:26,645 [INFO:main] {<module>:19} [SYSTEM]:Registered model_management_api blueprint 
-2020-08-25 17:11:26,646 [INFO:main] {<module>:21} [SYSTEM]:Registered log_management_api blueprint 
-2020-08-25 17:11:30,724 [INFO:main] {<module>:13} [SYSTEM]:Created flask app.
-2020-08-25 17:11:30,727 [INFO:main] {<module>:15} [SYSTEM]:Registered image_processing_api blueprint 
-2020-08-25 17:11:30,729 [INFO:main] {<module>:17} [SYSTEM]:Registered user_api blueprint 
-2020-08-25 17:11:30,734 [INFO:main] {<module>:19} [SYSTEM]:Registered model_management_api blueprint 
-2020-08-25 17:11:30,736 [INFO:main] {<module>:21} [SYSTEM]:Registered log_management_api blueprint 
-2020-08-25 17:16:42,100 [INFO:main] {<module>:13} [SYSTEM]:Created flask app.
-2020-08-25 17:16:42,102 [INFO:main] {<module>:15} [SYSTEM]:Registered image_processing_api blueprint 
-2020-08-25 17:16:42,104 [INFO:main] {<module>:17} [SYSTEM]:Registered user_api blueprint 
-2020-08-25 17:16:42,110 [INFO:main] {<module>:19} [SYSTEM]:Registered model_management_api blueprint 
-2020-08-25 17:16:42,111 [INFO:main] {<module>:21} [SYSTEM]:Registered log_management_api blueprint 
-2020-08-25 17:16:44,678 [INFO:main] {<module>:13} [SYSTEM]:Created flask app.
-2020-08-25 17:16:44,694 [INFO:main] {<module>:15} [SYSTEM]:Registered image_processing_api blueprint 
-2020-08-25 17:16:44,713 [INFO:main] {<module>:17} [SYSTEM]:Registered user_api blueprint 
-2020-08-25 17:16:44,738 [INFO:main] {<module>:19} [SYSTEM]:Registered model_management_api blueprint 
-2020-08-25 17:16:44,745 [INFO:main] {<module>:21} [SYSTEM]:Registered log_management_api blueprint 
-2020-08-25 17:16:44,890 [INFO:LogManager] {__init__:11} [SYSTEM]:Set log variable
-2020-08-25 17:16:44,891 [INFO:LogManager] {__init__:22} [SYSTEM]:parent : C:\Users\athiruj\Desktop\img-processing\Docker\Flask\app
-2020-08-25 17:16:44,893 [ERROR:log_management_api] {get_log:46} [SYSTEM]:[test_get_log] Error name 'data' is not defined
-2020-08-25 17:18:50,747 [INFO:main] {<module>:13} [SYSTEM]:Created flask app.
-2020-08-25 17:18:50,751 [INFO:main] {<module>:15} [SYSTEM]:Registered image_processing_api blueprint 
-2020-08-25 17:18:50,753 [INFO:main] {<module>:17} [SYSTEM]:Registered user_api blueprint 
-2020-08-25 17:18:50,776 [INFO:main] {<module>:19} [SYSTEM]:Registered model_management_api blueprint 
-2020-08-25 17:18:50,779 [INFO:main] {<module>:21} [SYSTEM]:Registered log_management_api blueprint 
-2020-08-25 17:18:59,959 [INFO:main] {<module>:13} [SYSTEM]:Created flask app.
-2020-08-25 17:18:59,963 [INFO:main] {<module>:15} [SYSTEM]:Registered image_processing_api blueprint 
-2020-08-25 17:18:59,964 [INFO:main] {<module>:17} [SYSTEM]:Registered user_api blueprint 
-2020-08-25 17:18:59,979 [INFO:main] {<module>:19} [SYSTEM]:Registered model_management_api blueprint 
-2020-08-25 17:18:59,981 [INFO:main] {<module>:21} [SYSTEM]:Registered log_management_api blueprint 
-2020-08-25 17:19:01,063 [INFO:LogManager] {__init__:11} [SYSTEM]:Set log variable
-2020-08-25 17:19:01,064 [INFO:LogManager] {__init__:22} [SYSTEM]:parent : C:\Users\athiruj\Desktop\img-processing\Docker\Flask\app
-2020-08-25 17:19:01,064 [INFO:LogManager] {get_today_log:26} [SYSTEM]:[test_get_log] Prepair date data to query.
-2020-08-25 17:19:01,069 [ERROR:LogManager] {get_today_log:44} [SYSTEM]:[test_get_log] Error name 'data' is not defined
-2020-08-25 17:19:07,021 [INFO:LogManager] {__init__:11} [SYSTEM]:Set log variable
-2020-08-25 17:19:07,022 [INFO:LogManager] {__init__:22} [SYSTEM]:parent : C:\Users\athiruj\Desktop\img-processing\Docker\Flask\app
-2020-08-25 17:19:07,023 [INFO:LogManager] {get_today_log:26} [SYSTEM]:[test_get_log] Prepair date data to query.
-2020-08-25 17:19:07,027 [ERROR:LogManager] {get_today_log:44} [SYSTEM]:[test_get_log] Error name 'data' is not defined
-2020-08-25 17:19:31,212 [INFO:main] {<module>:13} [SYSTEM]:Created flask app.
-2020-08-25 17:19:31,213 [INFO:main] {<module>:15} [SYSTEM]:Registered image_processing_api blueprint 
-2020-08-25 17:19:31,217 [INFO:main] {<module>:17} [SYSTEM]:Registered user_api blueprint 
-2020-08-25 17:19:31,222 [INFO:main] {<module>:19} [SYSTEM]:Registered model_management_api blueprint 
-2020-08-25 17:19:31,223 [INFO:main] {<module>:21} [SYSTEM]:Registered log_management_api blueprint 
-2020-08-25 17:19:31,577 [INFO:LogManager] {__init__:11} [SYSTEM]:Set log variable
-2020-08-25 17:19:31,578 [INFO:LogManager] {__init__:22} [SYSTEM]:parent : C:\Users\athiruj\Desktop\img-processing\Docker\Flask\app
-2020-08-25 17:19:31,578 [INFO:LogManager] {get_today_log:26} [SYSTEM]:[test_get_log] Prepair date data to query.
-2020-08-25 17:19:31,584 [INFO:LogManager] {get_today_log:30} [SYSTEM]:[test_get_log] Read log file.
-2020-08-25 17:19:31,595 [INFO:LogManager] {get_today_log:41} [SYSTEM]:[test_get_log] Got all today logs.
-2020-08-25 17:20:31,262 [INFO:main] {<module>:13} [SYSTEM]:Created flask app.
-2020-08-25 17:20:31,265 [INFO:main] {<module>:15} [SYSTEM]:Registered image_processing_api blueprint 
-2020-08-25 17:20:31,266 [INFO:main] {<module>:17} [SYSTEM]:Registered user_api blueprint 
-2020-08-25 17:20:31,272 [INFO:main] {<module>:19} [SYSTEM]:Registered model_management_api blueprint 
-2020-08-25 17:20:31,277 [INFO:main] {<module>:21} [SYSTEM]:Registered log_management_api blueprint 
-2020-08-25 17:20:35,392 [INFO:main] {<module>:13} [SYSTEM]:Created flask app.
-2020-08-25 17:20:35,394 [INFO:main] {<module>:15} [SYSTEM]:Registered image_processing_api blueprint 
-2020-08-25 17:20:35,395 [INFO:main] {<module>:17} [SYSTEM]:Registered user_api blueprint 
-2020-08-25 17:20:35,399 [INFO:main] {<module>:19} [SYSTEM]:Registered model_management_api blueprint 
-2020-08-25 17:20:35,401 [INFO:main] {<module>:21} [SYSTEM]:Registered log_management_api blueprint 
-2020-08-25 17:20:38,072 [INFO:main] {<module>:13} [SYSTEM]:Created flask app.
-2020-08-25 17:20:38,074 [INFO:main] {<module>:15} [SYSTEM]:Registered image_processing_api blueprint 
-2020-08-25 17:20:38,075 [INFO:main] {<module>:17} [SYSTEM]:Registered user_api blueprint 
-2020-08-25 17:20:38,079 [INFO:main] {<module>:19} [SYSTEM]:Registered model_management_api blueprint 
-2020-08-25 17:20:38,080 [INFO:main] {<module>:21} [SYSTEM]:Registered log_management_api blueprint 
-2020-08-25 17:20:41,090 [INFO:main] {<module>:13} [SYSTEM]:Created flask app.
-2020-08-25 17:20:41,092 [INFO:main] {<module>:15} [SYSTEM]:Registered image_processing_api blueprint 
-2020-08-25 17:20:41,094 [INFO:main] {<module>:17} [SYSTEM]:Registered user_api blueprint 
-2020-08-25 17:20:41,098 [INFO:main] {<module>:19} [SYSTEM]:Registered model_management_api blueprint 
-2020-08-25 17:20:41,099 [INFO:main] {<module>:21} [SYSTEM]:Registered log_management_api blueprint 
-2020-08-25 17:20:45,070 [INFO:main] {<module>:13} [SYSTEM]:Created flask app.
-2020-08-25 17:20:45,072 [INFO:main] {<module>:15} [SYSTEM]:Registered image_processing_api blueprint 
-2020-08-25 17:20:45,073 [INFO:main] {<module>:17} [SYSTEM]:Registered user_api blueprint 
-2020-08-25 17:20:45,078 [INFO:main] {<module>:19} [SYSTEM]:Registered model_management_api blueprint 
-2020-08-25 17:20:45,079 [INFO:main] {<module>:21} [SYSTEM]:Registered log_management_api blueprint 
-2020-08-25 17:26:43,393 [INFO:main] {<module>:13} [SYSTEM]:Created flask app.
-2020-08-25 17:26:43,394 [INFO:main] {<module>:15} [SYSTEM]:Registered image_processing_api blueprint 
-2020-08-25 17:26:43,396 [INFO:main] {<module>:17} [SYSTEM]:Registered user_api blueprint 
-2020-08-25 17:26:43,400 [INFO:main] {<module>:19} [SYSTEM]:Registered model_management_api blueprint 
-2020-08-25 17:26:43,401 [INFO:main] {<module>:21} [SYSTEM]:Registered log_management_api blueprint 
-2020-08-25 17:26:44,802 [INFO:main] {<module>:13} [SYSTEM]:Created flask app.
-2020-08-25 17:26:44,805 [INFO:main] {<module>:15} [SYSTEM]:Registered image_processing_api blueprint 
-2020-08-25 17:26:44,808 [INFO:main] {<module>:17} [SYSTEM]:Registered user_api blueprint 
-2020-08-25 17:26:44,816 [INFO:main] {<module>:19} [SYSTEM]:Registered model_management_api blueprint 
-2020-08-25 17:26:44,819 [INFO:main] {<module>:21} [SYSTEM]:Registered log_management_api blueprint 
-2020-08-25 17:26:58,256 [INFO:LogManager] {__init__:11} [SYSTEM]:Set log variable
-2020-08-25 17:26:58,258 [INFO:LogManager] {__init__:22} [SYSTEM]:parent : C:\Users\athiruj\Desktop\img-processing\Docker\Flask\app
-2020-08-25 17:26:58,259 [INFO:LogManager] {get_today_log:26} [SYSTEM]:[test_get_log] Prepair date data to query.
-2020-08-25 17:26:58,263 [INFO:LogManager] {get_today_log:30} [SYSTEM]:[test_get_log] Read log file.
-2020-08-25 17:26:58,277 [INFO:LogManager] {get_today_log:45} [SYSTEM]:[test_get_log] Got all today logs.
-2020-08-25 17:27:45,941 [INFO:main] {<module>:13} [SYSTEM]:Created flask app.
-2020-08-25 17:27:45,945 [INFO:main] {<module>:15} [SYSTEM]:Registered image_processing_api blueprint 
-2020-08-25 17:27:45,948 [INFO:main] {<module>:17} [SYSTEM]:Registered user_api blueprint 
-2020-08-25 17:27:45,958 [INFO:main] {<module>:19} [SYSTEM]:Registered model_management_api blueprint 
-2020-08-25 17:27:45,959 [INFO:main] {<module>:21} [SYSTEM]:Registered log_management_api blueprint 
-2020-08-25 17:27:46,367 [INFO:LogManager] {__init__:11} [SYSTEM]:Set log variable
-2020-08-25 17:27:46,368 [INFO:LogManager] {__init__:22} [SYSTEM]:parent : C:\Users\athiruj\Desktop\img-processing\Docker\Flask\app
-2020-08-25 17:27:46,368 [INFO:LogManager] {get_today_log:26} [SYSTEM]:[test_get_log] Prepair date data to query.
-2020-08-25 17:27:46,371 [INFO:LogManager] {get_today_log:30} [SYSTEM]:[test_get_log] Read log file.
-2020-08-25 17:27:46,392 [INFO:LogManager] {get_today_log:45} [SYSTEM]:[test_get_log] Got all today logs.
-2020-08-25 17:28:08,277 [INFO:main] {<module>:13} [SYSTEM]:Created flask app.
-2020-08-25 17:28:08,278 [INFO:main] {<module>:15} [SYSTEM]:Registered image_processing_api blueprint 
-2020-08-25 17:28:08,280 [INFO:main] {<module>:17} [SYSTEM]:Registered user_api blueprint 
-2020-08-25 17:28:08,287 [INFO:main] {<module>:19} [SYSTEM]:Registered model_management_api blueprint 
-2020-08-25 17:28:08,288 [INFO:main] {<module>:21} [SYSTEM]:Registered log_management_api blueprint 
-2020-08-25 17:28:24,335 [INFO:main] {<module>:13} [SYSTEM]:Created flask app.
-2020-08-25 17:28:24,338 [INFO:main] {<module>:15} [SYSTEM]:Registered image_processing_api blueprint 
-2020-08-25 17:28:24,340 [INFO:main] {<module>:17} [SYSTEM]:Registered user_api blueprint 
-2020-08-25 17:28:24,346 [INFO:main] {<module>:19} [SYSTEM]:Registered model_management_api blueprint 
-2020-08-25 17:28:24,348 [INFO:main] {<module>:21} [SYSTEM]:Registered log_management_api blueprint 
-2020-08-25 17:28:28,370 [INFO:main] {<module>:13} [SYSTEM]:Created flask app.
-2020-08-25 17:28:28,373 [INFO:main] {<module>:15} [SYSTEM]:Registered image_processing_api blueprint 
-2020-08-25 17:28:28,375 [INFO:main] {<module>:17} [SYSTEM]:Registered user_api blueprint 
-2020-08-25 17:28:28,383 [INFO:main] {<module>:19} [SYSTEM]:Registered model_management_api blueprint 
-2020-08-25 17:28:28,384 [INFO:main] {<module>:21} [SYSTEM]:Registered log_management_api blueprint 
-2020-08-25 17:28:34,421 [INFO:LogManager] {__init__:11} [SYSTEM]:Set log variable
-2020-08-25 17:28:34,426 [INFO:LogManager] {__init__:22} [SYSTEM]:parent : C:\Users\athiruj\Desktop\img-processing\Docker\Flask\app
-2020-08-25 17:28:34,428 [INFO:LogManager] {get_today_log:26} [SYSTEM]:[test_get_log] Prepair date data to query.
-2020-08-25 17:28:34,443 [INFO:LogManager] {get_today_log:30} [SYSTEM]:[test_get_log] Read log file.
-2020-08-25 17:28:34,470 [INFO:LogManager] {get_today_log:45} [SYSTEM]:[test_get_log] Got all today logs.
-2020-08-25 17:29:23,317 [INFO:LogManager] {__init__:11} [SYSTEM]:Set log variable
-2020-08-25 17:29:23,318 [INFO:LogManager] {__init__:22} [SYSTEM]:parent : C:\Users\athiruj\Desktop\img-processing\Docker\Flask\app
-2020-08-25 17:29:23,318 [INFO:LogManager] {get_today_log:26} [SYSTEM]:[test_get_log] Prepair date data to query.
-2020-08-25 17:29:23,323 [INFO:LogManager] {get_today_log:30} [SYSTEM]:[test_get_log] Read log file.
-2020-08-25 17:29:23,336 [INFO:LogManager] {get_today_log:45} [SYSTEM]:[test_get_log] Got all today logs.
-2020-08-25 17:30:01,016 [INFO:LogManager] {__init__:11} [SYSTEM]:Set log variable
-2020-08-25 17:30:01,018 [INFO:LogManager] {__init__:22} [SYSTEM]:parent : C:\Users\athiruj\Desktop\img-processing\Docker\Flask\app
-2020-08-25 17:30:01,019 [INFO:LogManager] {get_today_log:26} [SYSTEM]:[test_get_log] Prepair date data to query.
-2020-08-25 17:30:01,024 [INFO:LogManager] {get_today_log:30} [SYSTEM]:[test_get_log] Read log file.
-2020-08-25 17:30:01,036 [INFO:LogManager] {get_today_log:45} [SYSTEM]:[test_get_log] Got all today logs.
-2020-08-25 17:36:16,200 [INFO:main] {<module>:13} [SYSTEM]:Created flask app.
-2020-08-25 17:36:16,202 [INFO:main] {<module>:15} [SYSTEM]:Registered image_processing_api blueprint 
-2020-08-25 17:36:16,203 [INFO:main] {<module>:17} [SYSTEM]:Registered user_api blueprint 
-2020-08-25 17:36:16,209 [INFO:main] {<module>:19} [SYSTEM]:Registered model_management_api blueprint 
-2020-08-25 17:36:16,210 [INFO:main] {<module>:21} [SYSTEM]:Registered log_management_api blueprint 
-2020-08-25 17:38:01,759 [INFO:main] {<module>:13} [SYSTEM]:Created flask app.
-2020-08-25 17:38:01,770 [INFO:main] {<module>:15} [SYSTEM]:Registered image_processing_api blueprint 
-2020-08-25 17:38:01,793 [INFO:main] {<module>:17} [SYSTEM]:Registered user_api blueprint 
-2020-08-25 17:38:01,807 [INFO:main] {<module>:19} [SYSTEM]:Registered model_management_api blueprint 
-2020-08-25 17:38:01,822 [INFO:main] {<module>:21} [SYSTEM]:Registered log_management_api blueprint 
-2020-08-25 17:38:34,535 [INFO:main] {<module>:13} [SYSTEM]:Created flask app.
-2020-08-25 17:38:34,539 [INFO:main] {<module>:15} [SYSTEM]:Registered image_processing_api blueprint 
-2020-08-25 17:38:34,545 [INFO:main] {<module>:17} [SYSTEM]:Registered user_api blueprint 
-2020-08-25 17:38:34,569 [INFO:main] {<module>:19} [SYSTEM]:Registered model_management_api blueprint 
-2020-08-25 17:38:34,571 [INFO:main] {<module>:21} [SYSTEM]:Registered log_management_api blueprint 
-2020-08-25 17:38:40,221 [INFO:main] {<module>:13} [SYSTEM]:Created flask app.
-2020-08-25 17:38:40,223 [INFO:main] {<module>:15} [SYSTEM]:Registered image_processing_api blueprint 
-2020-08-25 17:38:40,226 [INFO:main] {<module>:17} [SYSTEM]:Registered user_api blueprint 
-2020-08-25 17:38:40,233 [INFO:main] {<module>:19} [SYSTEM]:Registered model_management_api blueprint 
-2020-08-25 17:38:40,235 [INFO:main] {<module>:21} [SYSTEM]:Registered log_management_api blueprint 
-2020-08-25 17:48:00,718 [INFO:main] {<module>:13} [SYSTEM]:Created flask app.
-2020-08-25 17:48:00,720 [INFO:main] {<module>:15} [SYSTEM]:Registered image_processing_api blueprint 
-2020-08-25 17:48:00,735 [INFO:main] {<module>:17} [SYSTEM]:Registered user_api blueprint 
-2020-08-25 17:48:00,746 [INFO:main] {<module>:19} [SYSTEM]:Registered model_management_api blueprint 
-2020-08-25 17:48:00,747 [INFO:main] {<module>:21} [SYSTEM]:Registered log_management_api blueprint 
-2020-08-25 17:48:02,383 [INFO:main] {<module>:13} [SYSTEM]:Created flask app.
-2020-08-25 17:48:02,385 [INFO:main] {<module>:15} [SYSTEM]:Registered image_processing_api blueprint 
-2020-08-25 17:48:02,387 [INFO:main] {<module>:17} [SYSTEM]:Registered user_api blueprint 
-2020-08-25 17:48:02,397 [INFO:main] {<module>:19} [SYSTEM]:Registered model_management_api blueprint 
-2020-08-25 17:48:02,400 [INFO:main] {<module>:21} [SYSTEM]:Registered log_management_api blueprint 
-2020-08-25 17:48:15,430 [INFO:LogManager] {__init__:11} [SYSTEM]:Set log variable
-2020-08-25 17:48:15,445 [INFO:LogManager] {__init__:22} [SYSTEM]:parent : C:\Users\athiruj\Desktop\img-processing\Docker\Flask\app
-2020-08-25 17:48:15,465 [INFO:LogManager] {get_log_by_date:55} [SYSTEM]:[test_get_log] Prepair date data to query.
-2020-08-25 17:48:57,470 [INFO:LogManager] {__init__:11} [SYSTEM]:Set log variable
-2020-08-25 17:48:57,470 [INFO:LogManager] {__init__:22} [SYSTEM]:parent : C:\Users\athiruj\Desktop\img-processing\Docker\Flask\app
-2020-08-25 17:48:57,471 [INFO:LogManager] {get_log_by_date:55} [SYSTEM]:[test_get_log] Prepair date data to query.
-2020-08-25 17:49:54,624 [INFO:main] {<module>:13} [SYSTEM]:Created flask app.
-2020-08-25 17:49:54,627 [INFO:main] {<module>:15} [SYSTEM]:Registered image_processing_api blueprint 
-2020-08-25 17:49:54,628 [INFO:main] {<module>:17} [SYSTEM]:Registered user_api blueprint 
-2020-08-25 17:49:54,632 [INFO:main] {<module>:19} [SYSTEM]:Registered model_management_api blueprint 
-2020-08-25 17:49:54,633 [INFO:main] {<module>:21} [SYSTEM]:Registered log_management_api blueprint 
-2020-08-25 17:49:57,599 [INFO:main] {<module>:13} [SYSTEM]:Created flask app.
-2020-08-25 17:49:57,602 [INFO:main] {<module>:15} [SYSTEM]:Registered image_processing_api blueprint 
-2020-08-25 17:49:57,604 [INFO:main] {<module>:17} [SYSTEM]:Registered user_api blueprint 
-2020-08-25 17:49:57,609 [INFO:main] {<module>:19} [SYSTEM]:Registered model_management_api blueprint 
-2020-08-25 17:49:57,610 [INFO:main] {<module>:21} [SYSTEM]:Registered log_management_api blueprint 
-2020-08-25 17:50:03,404 [INFO:main] {<module>:13} [SYSTEM]:Created flask app.
-2020-08-25 17:50:03,407 [INFO:main] {<module>:15} [SYSTEM]:Registered image_processing_api blueprint 
-2020-08-25 17:50:03,408 [INFO:main] {<module>:17} [SYSTEM]:Registered user_api blueprint 
-2020-08-25 17:50:03,413 [INFO:main] {<module>:19} [SYSTEM]:Registered model_management_api blueprint 
-2020-08-25 17:50:03,414 [INFO:main] {<module>:21} [SYSTEM]:Registered log_management_api blueprint 
-2020-08-25 17:50:06,437 [INFO:main] {<module>:13} [SYSTEM]:Created flask app.
-2020-08-25 17:50:06,438 [INFO:main] {<module>:15} [SYSTEM]:Registered image_processing_api blueprint 
-2020-08-25 17:50:06,441 [INFO:main] {<module>:17} [SYSTEM]:Registered user_api blueprint 
-2020-08-25 17:50:06,445 [INFO:main] {<module>:19} [SYSTEM]:Registered model_management_api blueprint 
-2020-08-25 17:50:06,446 [INFO:main] {<module>:21} [SYSTEM]:Registered log_management_api blueprint 
-2020-08-25 17:50:12,042 [INFO:main] {<module>:13} [SYSTEM]:Created flask app.
-2020-08-25 17:50:12,043 [INFO:main] {<module>:15} [SYSTEM]:Registered image_processing_api blueprint 
-2020-08-25 17:50:12,046 [INFO:main] {<module>:17} [SYSTEM]:Registered user_api blueprint 
-2020-08-25 17:50:12,050 [INFO:main] {<module>:19} [SYSTEM]:Registered model_management_api blueprint 
-2020-08-25 17:50:12,051 [INFO:main] {<module>:21} [SYSTEM]:Registered log_management_api blueprint 
-2020-08-25 17:50:33,690 [INFO:main] {<module>:13} [SYSTEM]:Created flask app.
-2020-08-25 17:50:33,693 [INFO:main] {<module>:15} [SYSTEM]:Registered image_processing_api blueprint 
-2020-08-25 17:50:33,695 [INFO:main] {<module>:17} [SYSTEM]:Registered user_api blueprint 
-2020-08-25 17:50:33,703 [INFO:main] {<module>:19} [SYSTEM]:Registered model_management_api blueprint 
-2020-08-25 17:50:33,704 [INFO:main] {<module>:21} [SYSTEM]:Registered log_management_api blueprint 
+2020-08-23 14:44:35,381 [INFO:main] {<module>:12} [SYSTEM]:Created flask app.
+2020-08-23 14:44:35,386 [INFO:main] {<module>:14} [SYSTEM]:Registered image_processing_api blueprint 
+2020-08-23 14:44:35,398 [INFO:main] {<module>:16} [SYSTEM]:Registered user_api blueprint 
+2020-08-23 14:44:35,411 [INFO:main] {<module>:18} [SYSTEM]:Registered model_management_api blueprint 
+2020-08-23 14:47:43,987 [INFO:main] {<module>:12} [SYSTEM]:Created flask app.
+2020-08-23 14:47:43,990 [INFO:main] {<module>:14} [SYSTEM]:Registered image_processing_api blueprint 
+2020-08-23 14:47:43,991 [INFO:main] {<module>:16} [SYSTEM]:Registered user_api blueprint 
+2020-08-23 14:47:43,996 [INFO:main] {<module>:18} [SYSTEM]:Registered model_management_api blueprint 
+2020-08-23 14:52:44,217 [INFO:main] {<module>:12} [SYSTEM]:Created flask app.
+2020-08-23 14:52:44,218 [INFO:main] {<module>:14} [SYSTEM]:Registered image_processing_api blueprint 
+2020-08-23 14:52:44,221 [INFO:main] {<module>:16} [SYSTEM]:Registered user_api blueprint 
+2020-08-23 14:52:44,224 [INFO:main] {<module>:18} [SYSTEM]:Registered model_management_api blueprint 
+2020-08-23 14:52:45,795 [INFO:main] {<module>:12} [SYSTEM]:Created flask app.
+2020-08-23 14:52:45,798 [INFO:main] {<module>:14} [SYSTEM]:Registered image_processing_api blueprint 
+2020-08-23 14:52:45,802 [INFO:main] {<module>:16} [SYSTEM]:Registered user_api blueprint 
+2020-08-23 14:52:45,818 [INFO:main] {<module>:18} [SYSTEM]:Registered model_management_api blueprint 
+2020-08-23 14:52:50,761 [INFO:user_management] {add_model:27} : [test_user01] This is user
+2020-08-23 14:52:50,762 [INFO:model_management_api] {add_model:30} [SYSTEM]:[test_user01] Use add ML model API.
+2020-08-23 14:52:50,762 [ERROR:model_management_api] {add_model:59} [SYSTEM]:[test_user01] Error name 'data' is not defined
+2020-08-23 14:55:39,486 [INFO:main] {<module>:12} [SYSTEM]:Created flask app.
+2020-08-23 14:55:39,487 [INFO:main] {<module>:14} [SYSTEM]:Registered image_processing_api blueprint 
+2020-08-23 14:55:39,490 [INFO:main] {<module>:16} [SYSTEM]:Registered user_api blueprint 
+2020-08-23 14:55:39,493 [INFO:main] {<module>:18} [SYSTEM]:Registered model_management_api blueprint 
+2020-08-23 14:55:56,850 [INFO:user_management] {add_model:27} : [test_user01] This is user
+2020-08-23 14:55:56,851 [INFO:model_management_api] {add_model:30} [SYSTEM]:[test_user01] Use add ML model API.
+2020-08-23 14:55:56,851 [ERROR:model_management_api] {add_model:59} [SYSTEM]:[test_user01] Error name 'data' is not defined
+2020-08-23 14:58:10,746 [INFO:main] {<module>:12} [SYSTEM]:Created flask app.
+2020-08-23 14:58:10,748 [INFO:main] {<module>:14} [SYSTEM]:Registered image_processing_api blueprint 
+2020-08-23 14:58:10,749 [INFO:main] {<module>:16} [SYSTEM]:Registered user_api blueprint 
+2020-08-23 14:58:10,754 [INFO:main] {<module>:18} [SYSTEM]:Registered model_management_api blueprint 
+2020-08-23 14:58:48,937 [INFO:user_management] {add_model:27} : [test_user01] This is user
+2020-08-23 14:58:48,938 [INFO:model_management_api] {add_model:30} [SYSTEM]:[test_user01] Use add ML model API.
+2020-08-23 14:58:48,938 [ERROR:model_management_api] {add_model:59} [SYSTEM]:[test_user01] Error name 'data' is not defined
+2020-08-23 14:58:53,308 [INFO:user_management] {add_model:27} : [test_user01] This is user
+2020-08-23 14:58:53,309 [INFO:model_management_api] {add_model:42} [SYSTEM]:[test_user01] Use add Ref model API.
+2020-08-23 14:58:53,309 [ERROR:model_management_api] {add_model:59} [SYSTEM]:[test_user01] Error name 'data' is not defined
+2020-08-23 15:00:28,246 [INFO:model_management_api] {edit_model:74} [SYSTEM]:[test_user02] Use edit ML model API.
+2020-08-23 15:01:46,817 [INFO:main] {<module>:12} [SYSTEM]:Created flask app.
+2020-08-23 15:01:46,818 [INFO:main] {<module>:14} [SYSTEM]:Registered image_processing_api blueprint 
+2020-08-23 15:01:46,821 [INFO:main] {<module>:16} [SYSTEM]:Registered user_api blueprint 
+2020-08-23 15:01:46,824 [INFO:main] {<module>:18} [SYSTEM]:Registered model_management_api blueprint 
+2020-08-23 15:02:07,745 [INFO:model_management_api] {edit_model:74} [SYSTEM]:[test_user02] Use edit ML model API.
+2020-08-23 15:03:03,488 [INFO:main] {<module>:12} [SYSTEM]:Created flask app.
+2020-08-23 15:03:03,491 [INFO:main] {<module>:14} [SYSTEM]:Registered image_processing_api blueprint 
+2020-08-23 15:03:03,492 [INFO:main] {<module>:16} [SYSTEM]:Registered user_api blueprint 
+2020-08-23 15:03:03,496 [INFO:main] {<module>:18} [SYSTEM]:Registered model_management_api blueprint 
+2020-08-23 15:03:09,177 [INFO:main] {<module>:12} [SYSTEM]:Created flask app.
+2020-08-23 15:03:09,179 [INFO:main] {<module>:14} [SYSTEM]:Registered image_processing_api blueprint 
+2020-08-23 15:03:09,180 [INFO:main] {<module>:16} [SYSTEM]:Registered user_api blueprint 
+2020-08-23 15:03:09,184 [INFO:main] {<module>:18} [SYSTEM]:Registered model_management_api blueprint 
+2020-08-23 15:03:12,964 [INFO:main] {<module>:12} [SYSTEM]:Created flask app.
+2020-08-23 15:03:12,966 [INFO:main] {<module>:14} [SYSTEM]:Registered image_processing_api blueprint 
+2020-08-23 15:03:12,967 [INFO:main] {<module>:16} [SYSTEM]:Registered user_api blueprint 
+2020-08-23 15:03:12,971 [INFO:main] {<module>:18} [SYSTEM]:Registered model_management_api blueprint 
+2020-08-23 15:03:19,619 [INFO:main] {<module>:12} [SYSTEM]:Created flask app.
+2020-08-23 15:03:19,620 [INFO:main] {<module>:14} [SYSTEM]:Registered image_processing_api blueprint 
+2020-08-23 15:03:19,622 [INFO:main] {<module>:16} [SYSTEM]:Registered user_api blueprint 
+2020-08-23 15:03:19,628 [INFO:main] {<module>:18} [SYSTEM]:Registered model_management_api blueprint 
+2020-08-23 15:03:29,621 [INFO:main] {<module>:12} [SYSTEM]:Created flask app.
+2020-08-23 15:03:29,622 [INFO:main] {<module>:14} [SYSTEM]:Registered image_processing_api blueprint 
+2020-08-23 15:03:29,625 [INFO:main] {<module>:16} [SYSTEM]:Registered user_api blueprint 
+2020-08-23 15:03:29,628 [INFO:main] {<module>:18} [SYSTEM]:Registered model_management_api blueprint 
+2020-08-23 15:03:36,031 [INFO:main] {<module>:12} [SYSTEM]:Created flask app.
+2020-08-23 15:03:36,038 [INFO:main] {<module>:14} [SYSTEM]:Registered image_processing_api blueprint 
+2020-08-23 15:03:36,041 [INFO:main] {<module>:16} [SYSTEM]:Registered user_api blueprint 
+2020-08-23 15:03:36,055 [INFO:main] {<module>:18} [SYSTEM]:Registered model_management_api blueprint 
+2020-08-23 15:03:50,746 [INFO:model_management_api] {edit_model:74} [SYSTEM]:[test_user02] Use edit ML model API.
+2020-08-23 15:03:50,747 [INFO:MLManager_obj] {__init__:75} [SYSTEM]:Connecting to database
+2020-08-23 15:03:51,144 [INFO:MLManager_obj] {__init__:77} [SYSTEM]:Connected to database
+2020-08-23 15:03:51,144 [INFO:model_management_api] {edit_model:77} [SYSTEM]:[test_user02] Created MLManagement object.
+2020-08-23 15:03:51,149 [INFO:model_management_api] {edit_model:78} [SYSTEM]:[test_user02] Call edit_model function.
+2020-08-23 15:03:51,150 [INFO:MLManager_obj] {edit_model:196} [SYSTEM]:[test_user02] Prepair ML model data to be edit.
+2020-08-23 15:03:51,218 [INFO:MLManager_obj] {edit_model:248} [SYSTEM]:[test_user02] Edited a ML model details.
+2020-08-23 15:03:51,223 [INFO:model_management_api] {edit_model:81} [SYSTEM]:[test_user02] Deleted MLManagement object.
+2020-08-23 15:03:51,223 [INFO:model_management_api] {edit_model:94} [SYSTEM]:[test_user02] Response data from change_active_model API
+2020-08-23 15:06:20,155 [INFO:user_management] {add_model:28} : [test_user02] This is user
+2020-08-23 15:06:20,155 [INFO:model_management_api] {add_model:30} [SYSTEM]:[test_user02] Use add ML model API.
+2020-08-23 15:06:20,156 [INFO:MLManager_obj] {__init__:75} [SYSTEM]:Connecting to database
+2020-08-23 15:06:20,160 [INFO:MLManager_obj] {__init__:77} [SYSTEM]:Connected to database
+2020-08-23 15:06:20,161 [INFO:model_management_api] {add_model:35} [SYSTEM]:[test_user02] Created MLManagement object.
+2020-08-23 15:06:20,161 [INFO:model_management_api] {add_model:36} [SYSTEM]:[test_user02] Call add_model function.
+2020-08-23 15:06:20,162 [INFO:MLManager_obj] {add_model:149} [SYSTEM]:[] Prepair ML model data to be save.
+2020-08-23 15:06:20,201 [INFO:MLManager_obj] {add_model:171} [SYSTEM]:[] Saved a ML model file to storage.
+2020-08-23 15:06:20,210 [INFO:MLManager_obj] {add_model:185} [SYSTEM]:[] Added a ML model details to database.
+2020-08-23 15:06:56,110 [INFO:main] {<module>:12} [SYSTEM]:Created flask app.
+2020-08-23 15:06:56,114 [INFO:main] {<module>:14} [SYSTEM]:Registered image_processing_api blueprint 
+2020-08-23 15:06:56,117 [INFO:main] {<module>:16} [SYSTEM]:Registered user_api blueprint 
+2020-08-23 15:06:56,126 [INFO:main] {<module>:18} [SYSTEM]:Registered model_management_api blueprint 
+2020-08-23 15:07:00,480 [INFO:main] {<module>:12} [SYSTEM]:Created flask app.
+2020-08-23 15:07:00,481 [INFO:main] {<module>:14} [SYSTEM]:Registered image_processing_api blueprint 
+2020-08-23 15:07:00,484 [INFO:main] {<module>:16} [SYSTEM]:Registered user_api blueprint 
+2020-08-23 15:07:00,487 [INFO:main] {<module>:18} [SYSTEM]:Registered model_management_api blueprint 
+2020-08-23 15:07:03,473 [INFO:main] {<module>:12} [SYSTEM]:Created flask app.
+2020-08-23 15:07:03,475 [INFO:main] {<module>:14} [SYSTEM]:Registered image_processing_api blueprint 
+2020-08-23 15:07:03,477 [INFO:main] {<module>:16} [SYSTEM]:Registered user_api blueprint 
+2020-08-23 15:07:03,481 [INFO:main] {<module>:18} [SYSTEM]:Registered model_management_api blueprint 
+2020-08-23 15:07:55,205 [INFO:user_management] {add_model:28} [USER]:[test_user02] This is user
+2020-08-23 15:07:55,206 [INFO:model_management_api] {add_model:30} [SYSTEM]:[test_user02] Use add ML model API.
+2020-08-23 15:07:55,206 [INFO:MLManager_obj] {__init__:75} [SYSTEM]:Connecting to database
+2020-08-23 15:07:55,221 [INFO:MLManager_obj] {__init__:77} [SYSTEM]:Connected to database
+2020-08-23 15:07:55,222 [INFO:model_management_api] {add_model:35} [SYSTEM]:[test_user02] Created MLManagement object.
+2020-08-23 15:07:55,223 [INFO:model_management_api] {add_model:36} [SYSTEM]:[test_user02] Call add_model function.
+2020-08-23 15:07:55,224 [INFO:MLManager_obj] {add_model:149} [SYSTEM]:[] Prepair ML model data to be save.
+2020-08-23 15:07:55,265 [WARNING:MLManager_obj] {add_model:166} [SYSTEM]:[] Duplicate ML name. Please re-enter ML name.
+2020-08-23 15:09:33,710 [INFO:main] {<module>:12} [SYSTEM]:Created flask app.
+2020-08-23 15:09:33,713 [INFO:main] {<module>:14} [SYSTEM]:Registered image_processing_api blueprint 
+2020-08-23 15:09:33,714 [INFO:main] {<module>:16} [SYSTEM]:Registered user_api blueprint 
+2020-08-23 15:09:33,719 [INFO:main] {<module>:18} [SYSTEM]:Registered model_management_api blueprint 
+2020-08-23 15:10:03,443 [INFO:main] {<module>:12} [SYSTEM]:Created flask app.
+2020-08-23 15:10:03,444 [INFO:main] {<module>:14} [SYSTEM]:Registered image_processing_api blueprint 
+2020-08-23 15:10:03,447 [INFO:main] {<module>:16} [SYSTEM]:Registered user_api blueprint 
+2020-08-23 15:10:03,451 [INFO:main] {<module>:18} [SYSTEM]:Registered model_management_api blueprint 
+2020-08-23 15:10:17,025 [INFO:main] {<module>:12} [SYSTEM]:Created flask app.
+2020-08-23 15:10:17,027 [INFO:main] {<module>:14} [SYSTEM]:Registered image_processing_api blueprint 
+2020-08-23 15:10:17,029 [INFO:main] {<module>:16} [SYSTEM]:Registered user_api blueprint 
+2020-08-23 15:10:17,033 [INFO:main] {<module>:18} [SYSTEM]:Registered model_management_api blueprint 
+2020-08-23 15:10:27,940 [INFO:main] {<module>:12} [SYSTEM]:Created flask app.
+2020-08-23 15:10:27,942 [INFO:main] {<module>:14} [SYSTEM]:Registered image_processing_api blueprint 
+2020-08-23 15:10:27,943 [INFO:main] {<module>:16} [SYSTEM]:Registered user_api blueprint 
+2020-08-23 15:10:27,947 [INFO:main] {<module>:18} [SYSTEM]:Registered model_management_api blueprint 
+2020-08-23 15:14:18,365 [INFO:user_management] {add_model:28} [USER]:[test_user02] This is user
+2020-08-23 15:14:18,366 [INFO:model_management_api] {add_model:30} [SYSTEM]:[test_user02] Use add ML model API.
+2020-08-23 15:14:18,366 [INFO:MLManager_obj] {__init__:75} [SYSTEM]:Connecting to database
+2020-08-23 15:14:18,377 [INFO:MLManager_obj] {__init__:77} [SYSTEM]:Connected to database
+2020-08-23 15:14:18,378 [INFO:model_management_api] {add_model:35} [SYSTEM]:[test_user02] Created MLManagement object.
+2020-08-23 15:14:18,379 [INFO:model_management_api] {add_model:36} [SYSTEM]:[test_user02] Call add_model function.
+2020-08-23 15:14:18,386 [INFO:MLManager_obj] {add_model:149} [SYSTEM]:[test_user02] Prepair ML model data to be save.
+2020-08-23 15:14:18,420 [WARNING:MLManager_obj] {add_model:166} [SYSTEM]:[test_user02] Duplicate ML name. Please re-enter ML name.
+2020-08-23 15:14:53,401 [INFO:main] {<module>:12} [SYSTEM]:Created flask app.
+2020-08-23 15:14:53,405 [INFO:main] {<module>:14} [SYSTEM]:Registered image_processing_api blueprint 
+2020-08-23 15:14:53,407 [INFO:main] {<module>:16} [SYSTEM]:Registered user_api blueprint 
+2020-08-23 15:14:53,419 [INFO:main] {<module>:18} [SYSTEM]:Registered model_management_api blueprint 
+2020-08-23 15:16:52,183 [INFO:main] {<module>:12} [SYSTEM]:Created flask app.
+2020-08-23 15:16:52,186 [INFO:main] {<module>:14} [SYSTEM]:Registered image_processing_api blueprint 
+2020-08-23 15:16:52,188 [INFO:main] {<module>:16} [SYSTEM]:Registered user_api blueprint 
+2020-08-23 15:16:52,195 [INFO:main] {<module>:18} [SYSTEM]:Registered model_management_api blueprint 
+2020-08-23 15:17:01,042 [INFO:main] {<module>:12} [SYSTEM]:Created flask app.
+2020-08-23 15:17:01,045 [INFO:main] {<module>:14} [SYSTEM]:Registered image_processing_api blueprint 
+2020-08-23 15:17:01,046 [INFO:main] {<module>:16} [SYSTEM]:Registered user_api blueprint 
+2020-08-23 15:17:01,050 [INFO:main] {<module>:18} [SYSTEM]:Registered model_management_api blueprint 
+2020-08-23 15:19:26,519 [INFO:main] {<module>:12} [SYSTEM]:Created flask app.
+2020-08-23 15:19:26,522 [INFO:main] {<module>:14} [SYSTEM]:Registered image_processing_api blueprint 
+2020-08-23 15:19:26,523 [INFO:main] {<module>:16} [SYSTEM]:Registered user_api blueprint 
+2020-08-23 15:19:26,531 [INFO:main] {<module>:18} [SYSTEM]:Registered model_management_api blueprint 
+2020-08-23 15:20:49,605 [INFO:main] {<module>:13} [SYSTEM]:Created flask app.
+2020-08-23 15:20:49,607 [INFO:main] {<module>:15} [SYSTEM]:Registered image_processing_api blueprint 
+2020-08-23 15:20:49,609 [INFO:main] {<module>:17} [SYSTEM]:Registered user_api blueprint 
+2020-08-23 15:20:49,615 [INFO:main] {<module>:19} [SYSTEM]:Registered model_management_api blueprint 
+2020-08-23 15:21:25,381 [INFO:main] {<module>:13} [SYSTEM]:Created flask app.
+2020-08-23 15:21:25,382 [INFO:main] {<module>:15} [SYSTEM]:Registered image_processing_api blueprint 
+2020-08-23 15:21:25,384 [INFO:main] {<module>:17} [SYSTEM]:Registered user_api blueprint 
+2020-08-23 15:21:25,389 [INFO:main] {<module>:19} [SYSTEM]:Registered model_management_api blueprint 
+2020-08-23 15:21:25,391 [INFO:main] {<module>:21} [SYSTEM]:Registered log_management_api blueprint 
+2020-08-23 15:21:26,671 [INFO:main] {<module>:13} [SYSTEM]:Created flask app.
+2020-08-23 15:21:26,674 [INFO:main] {<module>:15} [SYSTEM]:Registered image_processing_api blueprint 
+2020-08-23 15:21:26,675 [INFO:main] {<module>:17} [SYSTEM]:Registered user_api blueprint 
+2020-08-23 15:21:26,683 [INFO:main] {<module>:19} [SYSTEM]:Registered model_management_api blueprint 
+2020-08-23 15:21:26,686 [INFO:main] {<module>:21} [SYSTEM]:Registered log_management_api blueprint 
+2020-08-23 15:21:42,481 [INFO:main] {<module>:13} [SYSTEM]:Created flask app.
+2020-08-23 15:21:42,482 [INFO:main] {<module>:15} [SYSTEM]:Registered image_processing_api blueprint 
+2020-08-23 15:21:42,485 [INFO:main] {<module>:17} [SYSTEM]:Registered user_api blueprint 
+2020-08-23 15:21:42,488 [INFO:main] {<module>:19} [SYSTEM]:Registered model_management_api blueprint 
+2020-08-23 15:21:42,491 [INFO:main] {<module>:21} [SYSTEM]:Registered log_management_api blueprint 
+2020-08-23 15:21:43,674 [INFO:main] {<module>:13} [SYSTEM]:Created flask app.
+2020-08-23 15:21:43,675 [INFO:main] {<module>:15} [SYSTEM]:Registered image_processing_api blueprint 
+2020-08-23 15:21:43,678 [INFO:main] {<module>:17} [SYSTEM]:Registered user_api blueprint 
+2020-08-23 15:21:43,681 [INFO:main] {<module>:19} [SYSTEM]:Registered model_management_api blueprint 
+2020-08-23 15:21:43,682 [INFO:main] {<module>:21} [SYSTEM]:Registered log_management_api blueprint 
+2020-08-23 16:42:26,552 [INFO:main] {<module>:13} [SYSTEM]:Created flask app.
+2020-08-23 16:42:26,553 [INFO:main] {<module>:15} [SYSTEM]:Registered image_processing_api blueprint 
+2020-08-23 16:42:26,555 [INFO:main] {<module>:17} [SYSTEM]:Registered user_api blueprint 
+2020-08-23 16:42:26,560 [INFO:main] {<module>:19} [SYSTEM]:Registered model_management_api blueprint 
+2020-08-23 16:42:26,561 [INFO:main] {<module>:21} [SYSTEM]:Registered log_management_api blueprint 
+2020-08-23 16:42:28,367 [INFO:main] {<module>:13} [SYSTEM]:Created flask app.
+2020-08-23 16:42:28,369 [INFO:main] {<module>:15} [SYSTEM]:Registered image_processing_api blueprint 
+2020-08-23 16:42:28,370 [INFO:main] {<module>:17} [SYSTEM]:Registered user_api blueprint 
+2020-08-23 16:42:28,375 [INFO:main] {<module>:19} [SYSTEM]:Registered model_management_api blueprint 
+2020-08-23 16:42:28,377 [INFO:main] {<module>:21} [SYSTEM]:Registered log_management_api blueprint 
+2020-08-23 16:43:18,170 [INFO:main] {<module>:13} [SYSTEM]:Created flask app.
+2020-08-23 16:43:18,288 [INFO:main] {<module>:15} [SYSTEM]:Registered image_processing_api blueprint 
+2020-08-23 16:43:18,321 [INFO:main] {<module>:17} [SYSTEM]:Registered user_api blueprint 
+2020-08-23 16:43:18,370 [INFO:main] {<module>:19} [SYSTEM]:Registered model_management_api blueprint 
+2020-08-23 16:43:18,390 [INFO:main] {<module>:21} [SYSTEM]:Registered log_management_api blueprint 
+2020-08-23 16:43:37,656 [ERROR:log_management_api] {get_log:47} [SYSTEM]:[test_get_log] Error local variable 'date' referenced before assignment
+2020-08-23 16:44:56,631 [INFO:main] {<module>:13} [SYSTEM]:Created flask app.
+2020-08-23 16:44:56,634 [INFO:main] {<module>:15} [SYSTEM]:Registered image_processing_api blueprint 
+2020-08-23 16:44:56,636 [INFO:main] {<module>:17} [SYSTEM]:Registered user_api blueprint 
+2020-08-23 16:44:56,648 [INFO:main] {<module>:19} [SYSTEM]:Registered model_management_api blueprint 
+2020-08-23 16:44:56,650 [INFO:main] {<module>:21} [SYSTEM]:Registered log_management_api blueprint 
+2020-08-23 16:47:09,455 [INFO:main] {<module>:13} [SYSTEM]:Created flask app.
+2020-08-23 16:47:09,459 [INFO:main] {<module>:15} [SYSTEM]:Registered image_processing_api blueprint 
+2020-08-23 16:47:09,461 [INFO:main] {<module>:17} [SYSTEM]:Registered user_api blueprint 
+2020-08-23 16:47:09,474 [INFO:main] {<module>:19} [SYSTEM]:Registered model_management_api blueprint 
+2020-08-23 16:47:09,476 [INFO:main] {<module>:21} [SYSTEM]:Registered log_management_api blueprint 
+2020-08-23 16:47:10,981 [INFO:main] {<module>:13} [SYSTEM]:Created flask app.
+2020-08-23 16:47:10,983 [INFO:main] {<module>:15} [SYSTEM]:Registered image_processing_api blueprint 
+2020-08-23 16:47:10,984 [INFO:main] {<module>:17} [SYSTEM]:Registered user_api blueprint 
+2020-08-23 16:47:10,987 [INFO:main] {<module>:19} [SYSTEM]:Registered model_management_api blueprint 
+2020-08-23 16:47:10,989 [INFO:main] {<module>:21} [SYSTEM]:Registered log_management_api blueprint 
+2020-08-23 16:47:28,114 [INFO:LogManager] {__init__:9} [SYSTEM]:Set log variable
+2020-08-23 16:47:56,669 [INFO:main] {<module>:13} [SYSTEM]:Created flask app.
+2020-08-23 16:47:56,676 [INFO:main] {<module>:15} [SYSTEM]:Registered image_processing_api blueprint 
+2020-08-23 16:47:56,678 [INFO:main] {<module>:17} [SYSTEM]:Registered user_api blueprint 
+2020-08-23 16:47:56,710 [INFO:main] {<module>:19} [SYSTEM]:Registered model_management_api blueprint 
+2020-08-23 16:47:56,733 [INFO:main] {<module>:21} [SYSTEM]:Registered log_management_api blueprint 
+2020-08-23 16:48:02,269 [INFO:LogManager] {__init__:9} [SYSTEM]:Set log variable
+2020-08-23 16:50:15,933 [INFO:main] {<module>:13} [SYSTEM]:Created flask app.
+2020-08-23 16:50:15,936 [INFO:main] {<module>:15} [SYSTEM]:Registered image_processing_api blueprint 
+2020-08-23 16:50:15,938 [INFO:main] {<module>:17} [SYSTEM]:Registered user_api blueprint 
+2020-08-23 16:50:15,950 [INFO:main] {<module>:19} [SYSTEM]:Registered model_management_api blueprint 
+2020-08-23 16:50:15,951 [INFO:main] {<module>:21} [SYSTEM]:Registered log_management_api blueprint 
+2020-08-23 16:50:19,090 [INFO:main] {<module>:13} [SYSTEM]:Created flask app.
+2020-08-23 16:50:19,091 [INFO:main] {<module>:15} [SYSTEM]:Registered image_processing_api blueprint 
+2020-08-23 16:50:19,093 [INFO:main] {<module>:17} [SYSTEM]:Registered user_api blueprint 
+2020-08-23 16:50:19,097 [INFO:main] {<module>:19} [SYSTEM]:Registered model_management_api blueprint 
+2020-08-23 16:50:19,098 [INFO:main] {<module>:21} [SYSTEM]:Registered log_management_api blueprint 
+2020-08-23 16:50:23,035 [INFO:main] {<module>:13} [SYSTEM]:Created flask app.
+2020-08-23 16:50:23,038 [INFO:main] {<module>:15} [SYSTEM]:Registered image_processing_api blueprint 
+2020-08-23 16:50:23,041 [INFO:main] {<module>:17} [SYSTEM]:Registered user_api blueprint 
+2020-08-23 16:50:23,055 [INFO:main] {<module>:19} [SYSTEM]:Registered model_management_api blueprint 
+2020-08-23 16:50:23,060 [INFO:main] {<module>:21} [SYSTEM]:Registered log_management_api blueprint 
+2020-08-23 16:50:29,515 [INFO:main] {<module>:13} [SYSTEM]:Created flask app.
+2020-08-23 16:50:29,516 [INFO:main] {<module>:15} [SYSTEM]:Registered image_processing_api blueprint 
+2020-08-23 16:50:29,518 [INFO:main] {<module>:17} [SYSTEM]:Registered user_api blueprint 
+2020-08-23 16:50:29,523 [INFO:main] {<module>:19} [SYSTEM]:Registered model_management_api blueprint 
+2020-08-23 16:50:29,524 [INFO:main] {<module>:21} [SYSTEM]:Registered log_management_api blueprint 
+2020-08-23 16:50:33,761 [INFO:main] {<module>:13} [SYSTEM]:Created flask app.
+2020-08-23 16:50:33,763 [INFO:main] {<module>:15} [SYSTEM]:Registered image_processing_api blueprint 
+2020-08-23 16:50:33,764 [INFO:main] {<module>:17} [SYSTEM]:Registered user_api blueprint 
+2020-08-23 16:50:33,768 [INFO:main] {<module>:19} [SYSTEM]:Registered model_management_api blueprint 
+2020-08-23 16:50:33,769 [INFO:main] {<module>:21} [SYSTEM]:Registered log_management_api blueprint 
+2020-08-23 16:50:39,556 [INFO:main] {<module>:13} [SYSTEM]:Created flask app.
+2020-08-23 16:50:39,561 [INFO:main] {<module>:15} [SYSTEM]:Registered image_processing_api blueprint 
+2020-08-23 16:50:39,563 [INFO:main] {<module>:17} [SYSTEM]:Registered user_api blueprint 
+2020-08-23 16:50:39,576 [INFO:main] {<module>:19} [SYSTEM]:Registered model_management_api blueprint 
+2020-08-23 16:50:39,578 [INFO:main] {<module>:21} [SYSTEM]:Registered log_management_api blueprint 
+2020-08-23 16:50:43,118 [INFO:main] {<module>:13} [SYSTEM]:Created flask app.
+2020-08-23 16:50:43,119 [INFO:main] {<module>:15} [SYSTEM]:Registered image_processing_api blueprint 
+2020-08-23 16:50:43,122 [INFO:main] {<module>:17} [SYSTEM]:Registered user_api blueprint 
+2020-08-23 16:50:43,126 [INFO:main] {<module>:19} [SYSTEM]:Registered model_management_api blueprint 
+2020-08-23 16:50:43,127 [INFO:main] {<module>:21} [SYSTEM]:Registered log_management_api blueprint 
+2020-08-23 16:50:49,354 [INFO:main] {<module>:13} [SYSTEM]:Created flask app.
+2020-08-23 16:50:49,359 [INFO:main] {<module>:15} [SYSTEM]:Registered image_processing_api blueprint 
+2020-08-23 16:50:49,362 [INFO:main] {<module>:17} [SYSTEM]:Registered user_api blueprint 
+2020-08-23 16:50:49,374 [INFO:main] {<module>:19} [SYSTEM]:Registered model_management_api blueprint 
+2020-08-23 16:50:49,376 [INFO:main] {<module>:21} [SYSTEM]:Registered log_management_api blueprint 
+2020-08-23 16:50:52,634 [INFO:main] {<module>:13} [SYSTEM]:Created flask app.
+2020-08-23 16:50:52,636 [INFO:main] {<module>:15} [SYSTEM]:Registered image_processing_api blueprint 
+2020-08-23 16:50:52,638 [INFO:main] {<module>:17} [SYSTEM]:Registered user_api blueprint 
+2020-08-23 16:50:52,643 [INFO:main] {<module>:19} [SYSTEM]:Registered model_management_api blueprint 
+2020-08-23 16:50:52,644 [INFO:main] {<module>:21} [SYSTEM]:Registered log_management_api blueprint 
+2020-08-23 16:50:55,414 [INFO:main] {<module>:13} [SYSTEM]:Created flask app.
+2020-08-23 16:50:55,415 [INFO:main] {<module>:15} [SYSTEM]:Registered image_processing_api blueprint 
+2020-08-23 16:50:55,418 [INFO:main] {<module>:17} [SYSTEM]:Registered user_api blueprint 
+2020-08-23 16:50:55,423 [INFO:main] {<module>:19} [SYSTEM]:Registered model_management_api blueprint 
+2020-08-23 16:50:55,424 [INFO:main] {<module>:21} [SYSTEM]:Registered log_management_api blueprint 
+2020-08-23 16:50:58,981 [INFO:LogManager] {__init__:9} [SYSTEM]:Set log variable
+2020-08-23 16:50:58,981 [ERROR:log_management_api] {get_log:46} [SYSTEM]:[test_get_log] Error name 'os' is not defined
+2020-08-23 16:51:15,444 [INFO:main] {<module>:13} [SYSTEM]:Created flask app.
+2020-08-23 16:51:15,445 [INFO:main] {<module>:15} [SYSTEM]:Registered image_processing_api blueprint 
+2020-08-23 16:51:15,449 [INFO:main] {<module>:17} [SYSTEM]:Registered user_api blueprint 
+2020-08-23 16:51:15,456 [INFO:main] {<module>:19} [SYSTEM]:Registered model_management_api blueprint 
+2020-08-23 16:51:15,457 [INFO:main] {<module>:21} [SYSTEM]:Registered log_management_api blueprint 
+2020-08-23 16:51:15,737 [INFO:LogManager] {__init__:10} [SYSTEM]:Set log variable
+2020-08-23 16:51:59,735 [INFO:main] {<module>:13} [SYSTEM]:Created flask app.
+2020-08-23 16:51:59,736 [INFO:main] {<module>:15} [SYSTEM]:Registered image_processing_api blueprint 
+2020-08-23 16:51:59,737 [INFO:main] {<module>:17} [SYSTEM]:Registered user_api blueprint 
+2020-08-23 16:51:59,741 [INFO:main] {<module>:19} [SYSTEM]:Registered model_management_api blueprint 
+2020-08-23 16:51:59,742 [INFO:main] {<module>:21} [SYSTEM]:Registered log_management_api blueprint 
+2020-08-23 16:52:04,668 [INFO:main] {<module>:13} [SYSTEM]:Created flask app.
+2020-08-23 16:52:04,670 [INFO:main] {<module>:15} [SYSTEM]:Registered image_processing_api blueprint 
+2020-08-23 16:52:04,672 [INFO:main] {<module>:17} [SYSTEM]:Registered user_api blueprint 
+2020-08-23 16:52:04,678 [INFO:main] {<module>:19} [SYSTEM]:Registered model_management_api blueprint 
+2020-08-23 16:52:04,680 [INFO:main] {<module>:21} [SYSTEM]:Registered log_management_api blueprint 
+2020-08-23 16:52:08,091 [INFO:main] {<module>:13} [SYSTEM]:Created flask app.
+2020-08-23 16:52:08,093 [INFO:main] {<module>:15} [SYSTEM]:Registered image_processing_api blueprint 
+2020-08-23 16:52:08,095 [INFO:main] {<module>:17} [SYSTEM]:Registered user_api blueprint 
+2020-08-23 16:52:08,103 [INFO:main] {<module>:19} [SYSTEM]:Registered model_management_api blueprint 
+2020-08-23 16:52:08,106 [INFO:main] {<module>:21} [SYSTEM]:Registered log_management_api blueprint 
+2020-08-23 16:52:08,542 [INFO:LogManager] {__init__:10} [SYSTEM]:Set log variable
+2020-08-23 16:52:08,543 [INFO:LogManager] {__init__:21} [SYSTEM]:parent : C:\Users\athiruj\Desktop\img-processing\Docker\Flask\app
+2020-08-23 16:52:35,252 [INFO:main] {<module>:13} [SYSTEM]:Created flask app.
+2020-08-23 16:52:35,256 [INFO:main] {<module>:15} [SYSTEM]:Registered image_processing_api blueprint 
+2020-08-23 16:52:35,259 [INFO:main] {<module>:17} [SYSTEM]:Registered user_api blueprint 
+2020-08-23 16:52:35,269 [INFO:main] {<module>:19} [SYSTEM]:Registered model_management_api blueprint 
+2020-08-23 16:52:35,273 [INFO:main] {<module>:21} [SYSTEM]:Registered log_management_api blueprint 
+2020-08-23 16:52:53,945 [INFO:main] {<module>:13} [SYSTEM]:Created flask app.
+2020-08-23 16:52:53,948 [INFO:main] {<module>:15} [SYSTEM]:Registered image_processing_api blueprint 
+2020-08-23 16:52:53,949 [INFO:main] {<module>:17} [SYSTEM]:Registered user_api blueprint 
+2020-08-23 16:52:53,953 [INFO:main] {<module>:19} [SYSTEM]:Registered model_management_api blueprint 
+2020-08-23 16:52:53,955 [INFO:main] {<module>:21} [SYSTEM]:Registered log_management_api blueprint 
+2020-08-23 16:53:06,409 [INFO:main] {<module>:13} [SYSTEM]:Created flask app.
+2020-08-23 16:53:06,411 [INFO:main] {<module>:15} [SYSTEM]:Registered image_processing_api blueprint 
+2020-08-23 16:53:06,412 [INFO:main] {<module>:17} [SYSTEM]:Registered user_api blueprint 
+2020-08-23 16:53:06,416 [INFO:main] {<module>:19} [SYSTEM]:Registered model_management_api blueprint 
+2020-08-23 16:53:06,417 [INFO:main] {<module>:21} [SYSTEM]:Registered log_management_api blueprint 
+2020-08-23 16:53:10,819 [INFO:main] {<module>:13} [SYSTEM]:Created flask app.
+2020-08-23 16:53:10,821 [INFO:main] {<module>:15} [SYSTEM]:Registered image_processing_api blueprint 
+2020-08-23 16:53:10,822 [INFO:main] {<module>:17} [SYSTEM]:Registered user_api blueprint 
+2020-08-23 16:53:10,829 [INFO:main] {<module>:19} [SYSTEM]:Registered model_management_api blueprint 
+2020-08-23 16:53:10,830 [INFO:main] {<module>:21} [SYSTEM]:Registered log_management_api blueprint 
+2020-08-23 16:53:17,616 [INFO:main] {<module>:13} [SYSTEM]:Created flask app.
+2020-08-23 16:53:17,617 [INFO:main] {<module>:15} [SYSTEM]:Registered image_processing_api blueprint 
+2020-08-23 16:53:17,620 [INFO:main] {<module>:17} [SYSTEM]:Registered user_api blueprint 
+2020-08-23 16:53:17,627 [INFO:main] {<module>:19} [SYSTEM]:Registered model_management_api blueprint 
+2020-08-23 16:53:17,629 [INFO:main] {<module>:21} [SYSTEM]:Registered log_management_api blueprint 
+2020-08-23 16:54:17,402 [INFO:main] {<module>:13} [SYSTEM]:Created flask app.
+2020-08-23 16:54:17,403 [INFO:main] {<module>:15} [SYSTEM]:Registered image_processing_api blueprint 
+2020-08-23 16:54:17,404 [INFO:main] {<module>:17} [SYSTEM]:Registered user_api blueprint 
+2020-08-23 16:54:17,408 [INFO:main] {<module>:19} [SYSTEM]:Registered model_management_api blueprint 
+2020-08-23 16:54:17,410 [INFO:main] {<module>:21} [SYSTEM]:Registered log_management_api blueprint 
+2020-08-23 16:54:18,699 [INFO:main] {<module>:13} [SYSTEM]:Created flask app.
+2020-08-23 16:54:18,702 [INFO:main] {<module>:15} [SYSTEM]:Registered image_processing_api blueprint 
+2020-08-23 16:54:18,703 [INFO:main] {<module>:17} [SYSTEM]:Registered user_api blueprint 
+2020-08-23 16:54:18,707 [INFO:main] {<module>:19} [SYSTEM]:Registered model_management_api blueprint 
+2020-08-23 16:54:18,711 [INFO:main] {<module>:21} [SYSTEM]:Registered log_management_api blueprint 
+2020-08-23 16:54:22,455 [INFO:LogManager] {__init__:10} [SYSTEM]:Set log variable
+2020-08-23 16:54:22,455 [INFO:LogManager] {__init__:21} [SYSTEM]:parent : C:\Users\athiruj\Desktop\img-processing\Docker\Flask\app
+2020-08-23 16:56:34,963 [INFO:main] {<module>:13} [SYSTEM]:Created flask app.
+2020-08-23 16:56:34,964 [INFO:main] {<module>:15} [SYSTEM]:Registered image_processing_api blueprint 
+2020-08-23 16:56:34,967 [INFO:main] {<module>:17} [SYSTEM]:Registered user_api blueprint 
+2020-08-23 16:56:34,970 [INFO:main] {<module>:19} [SYSTEM]:Registered model_management_api blueprint 
+2020-08-23 16:56:34,972 [INFO:main] {<module>:21} [SYSTEM]:Registered log_management_api blueprint 
+2020-08-23 16:56:36,312 [INFO:main] {<module>:13} [SYSTEM]:Created flask app.
+2020-08-23 16:56:36,313 [INFO:main] {<module>:15} [SYSTEM]:Registered image_processing_api blueprint 
+2020-08-23 16:56:36,318 [INFO:main] {<module>:17} [SYSTEM]:Registered user_api blueprint 
+2020-08-23 16:56:36,322 [INFO:main] {<module>:19} [SYSTEM]:Registered model_management_api blueprint 
+2020-08-23 16:56:36,323 [INFO:main] {<module>:21} [SYSTEM]:Registered log_management_api blueprint 
+2020-08-23 17:07:52,336 [INFO:main] {<module>:13} [SYSTEM]:Created flask app.
+2020-08-23 17:07:52,338 [INFO:main] {<module>:15} [SYSTEM]:Registered image_processing_api blueprint 
+2020-08-23 17:07:52,341 [INFO:main] {<module>:17} [SYSTEM]:Registered user_api blueprint 
+2020-08-23 17:07:52,348 [INFO:main] {<module>:19} [SYSTEM]:Registered model_management_api blueprint 
+2020-08-23 17:07:52,350 [INFO:main] {<module>:21} [SYSTEM]:Registered log_management_api blueprint 
+2020-08-23 17:07:53,812 [INFO:main] {<module>:13} [SYSTEM]:Created flask app.
+2020-08-23 17:07:53,815 [INFO:main] {<module>:15} [SYSTEM]:Registered image_processing_api blueprint 
+2020-08-23 17:07:53,815 [INFO:main] {<module>:17} [SYSTEM]:Registered user_api blueprint 
+2020-08-23 17:07:53,819 [INFO:main] {<module>:19} [SYSTEM]:Registered model_management_api blueprint 
+2020-08-23 17:07:53,822 [INFO:main] {<module>:21} [SYSTEM]:Registered log_management_api blueprint 
+2020-08-23 17:08:02,029 [INFO:LogManager] {__init__:10} [SYSTEM]:Set log variable
+2020-08-23 17:08:02,029 [INFO:LogManager] {__init__:21} [SYSTEM]:parent : C:\Users\athiruj\Desktop\img-processing\Docker\Flask\app
+2020-08-23 17:08:41,760 [INFO:main] {<module>:13} [SYSTEM]:Created flask app.
+2020-08-23 17:08:41,762 [INFO:main] {<module>:15} [SYSTEM]:Registered image_processing_api blueprint 
+2020-08-23 17:08:41,764 [INFO:main] {<module>:17} [SYSTEM]:Registered user_api blueprint 
+2020-08-23 17:08:41,768 [INFO:main] {<module>:19} [SYSTEM]:Registered model_management_api blueprint 
+2020-08-23 17:08:41,770 [INFO:main] {<module>:21} [SYSTEM]:Registered log_management_api blueprint 
+2020-08-23 17:08:43,110 [INFO:LogManager] {__init__:11} [SYSTEM]:Set log variable
+2020-08-23 17:08:43,111 [INFO:LogManager] {__init__:22} [SYSTEM]:parent : C:\Users\athiruj\Desktop\img-processing\Docker\Flask\app
+2020-08-23 17:10:04,575 [INFO:main] {<module>:13} [SYSTEM]:Created flask app.
+2020-08-23 17:10:04,577 [INFO:main] {<module>:15} [SYSTEM]:Registered image_processing_api blueprint 
+2020-08-23 17:10:04,578 [INFO:main] {<module>:17} [SYSTEM]:Registered user_api blueprint 
+2020-08-23 17:10:04,584 [INFO:main] {<module>:19} [SYSTEM]:Registered model_management_api blueprint 
+2020-08-23 17:10:04,585 [INFO:main] {<module>:21} [SYSTEM]:Registered log_management_api blueprint 
+2020-08-23 17:10:16,130 [INFO:main] {<module>:13} [SYSTEM]:Created flask app.
+2020-08-23 17:10:16,133 [INFO:main] {<module>:15} [SYSTEM]:Registered image_processing_api blueprint 
+2020-08-23 17:10:16,135 [INFO:main] {<module>:17} [SYSTEM]:Registered user_api blueprint 
+2020-08-23 17:10:16,142 [INFO:main] {<module>:19} [SYSTEM]:Registered model_management_api blueprint 
+2020-08-23 17:10:16,143 [INFO:main] {<module>:21} [SYSTEM]:Registered log_management_api blueprint 
+2020-08-23 17:10:19,348 [INFO:main] {<module>:13} [SYSTEM]:Created flask app.
+2020-08-23 17:10:19,349 [INFO:main] {<module>:15} [SYSTEM]:Registered image_processing_api blueprint 
+2020-08-23 17:10:19,352 [INFO:main] {<module>:17} [SYSTEM]:Registered user_api blueprint 
+2020-08-23 17:10:19,356 [INFO:main] {<module>:19} [SYSTEM]:Registered model_management_api blueprint 
+2020-08-23 17:10:19,357 [INFO:main] {<module>:21} [SYSTEM]:Registered log_management_api blueprint 
+2020-08-23 17:10:22,288 [INFO:main] {<module>:13} [SYSTEM]:Created flask app.
+2020-08-23 17:10:22,289 [INFO:main] {<module>:15} [SYSTEM]:Registered image_processing_api blueprint 
+2020-08-23 17:10:22,291 [INFO:main] {<module>:17} [SYSTEM]:Registered user_api blueprint 
+2020-08-23 17:10:22,296 [INFO:main] {<module>:19} [SYSTEM]:Registered model_management_api blueprint 
+2020-08-23 17:10:22,297 [INFO:main] {<module>:21} [SYSTEM]:Registered log_management_api blueprint 
+2020-08-23 17:10:26,136 [INFO:main] {<module>:13} [SYSTEM]:Created flask app.
+2020-08-23 17:10:26,138 [INFO:main] {<module>:15} [SYSTEM]:Registered image_processing_api blueprint 
+2020-08-23 17:10:26,139 [INFO:main] {<module>:17} [SYSTEM]:Registered user_api blueprint 
+2020-08-23 17:10:26,146 [INFO:main] {<module>:19} [SYSTEM]:Registered model_management_api blueprint 
+2020-08-23 17:10:26,149 [INFO:main] {<module>:21} [SYSTEM]:Registered log_management_api blueprint 
+2020-08-23 17:10:30,541 [INFO:main] {<module>:13} [SYSTEM]:Created flask app.
+2020-08-23 17:10:30,543 [INFO:main] {<module>:15} [SYSTEM]:Registered image_processing_api blueprint 
+2020-08-23 17:10:30,545 [INFO:main] {<module>:17} [SYSTEM]:Registered user_api blueprint 
+2020-08-23 17:10:30,551 [INFO:main] {<module>:19} [SYSTEM]:Registered model_management_api blueprint 
+2020-08-23 17:10:30,553 [INFO:main] {<module>:21} [SYSTEM]:Registered log_management_api blueprint 
+2020-08-23 17:10:36,797 [INFO:main] {<module>:13} [SYSTEM]:Created flask app.
+2020-08-23 17:10:36,799 [INFO:main] {<module>:15} [SYSTEM]:Registered image_processing_api blueprint 
+2020-08-23 17:10:36,801 [INFO:main] {<module>:17} [SYSTEM]:Registered user_api blueprint 
+2020-08-23 17:10:36,806 [INFO:main] {<module>:19} [SYSTEM]:Registered model_management_api blueprint 
+2020-08-23 17:10:36,809 [INFO:main] {<module>:21} [SYSTEM]:Registered log_management_api blueprint 
+2020-08-23 17:10:39,731 [INFO:main] {<module>:13} [SYSTEM]:Created flask app.
+2020-08-23 17:10:39,737 [INFO:main] {<module>:15} [SYSTEM]:Registered image_processing_api blueprint 
+2020-08-23 17:10:39,742 [INFO:main] {<module>:17} [SYSTEM]:Registered user_api blueprint 
+2020-08-23 17:10:39,751 [INFO:main] {<module>:19} [SYSTEM]:Registered model_management_api blueprint 
+2020-08-23 17:10:39,753 [INFO:main] {<module>:21} [SYSTEM]:Registered log_management_api blueprint 
+2020-08-23 17:10:46,976 [INFO:main] {<module>:13} [SYSTEM]:Created flask app.
+2020-08-23 17:10:46,979 [INFO:main] {<module>:15} [SYSTEM]:Registered image_processing_api blueprint 
+2020-08-23 17:10:46,980 [INFO:main] {<module>:17} [SYSTEM]:Registered user_api blueprint 
+2020-08-23 17:10:46,991 [INFO:main] {<module>:19} [SYSTEM]:Registered model_management_api blueprint 
+2020-08-23 17:10:46,992 [INFO:main] {<module>:21} [SYSTEM]:Registered log_management_api blueprint 
+2020-08-23 17:10:52,202 [INFO:main] {<module>:13} [SYSTEM]:Created flask app.
+2020-08-23 17:10:52,203 [INFO:main] {<module>:15} [SYSTEM]:Registered image_processing_api blueprint 
+2020-08-23 17:10:52,206 [INFO:main] {<module>:17} [SYSTEM]:Registered user_api blueprint 
+2020-08-23 17:10:52,211 [INFO:main] {<module>:19} [SYSTEM]:Registered model_management_api blueprint 
+2020-08-23 17:10:52,212 [INFO:main] {<module>:21} [SYSTEM]:Registered log_management_api blueprint 
+2020-08-23 17:10:57,369 [INFO:main] {<module>:13} [SYSTEM]:Created flask app.
+2020-08-23 17:10:57,371 [INFO:main] {<module>:15} [SYSTEM]:Registered image_processing_api blueprint 
+2020-08-23 17:10:57,373 [INFO:main] {<module>:17} [SYSTEM]:Registered user_api blueprint 
+2020-08-23 17:10:57,377 [INFO:main] {<module>:19} [SYSTEM]:Registered model_management_api blueprint 
+2020-08-23 17:10:57,378 [INFO:main] {<module>:21} [SYSTEM]:Registered log_management_api blueprint 
+2020-08-23 17:11:06,204 [INFO:main] {<module>:13} [SYSTEM]:Created flask app.
+2020-08-23 17:11:06,208 [INFO:main] {<module>:15} [SYSTEM]:Registered image_processing_api blueprint 
+2020-08-23 17:11:06,210 [INFO:main] {<module>:17} [SYSTEM]:Registered user_api blueprint 
+2020-08-23 17:11:06,225 [INFO:main] {<module>:19} [SYSTEM]:Registered model_management_api blueprint 
+2020-08-23 17:11:06,227 [INFO:main] {<module>:21} [SYSTEM]:Registered log_management_api blueprint 
+2020-08-23 17:11:16,858 [INFO:main] {<module>:13} [SYSTEM]:Created flask app.
+2020-08-23 17:11:16,861 [INFO:main] {<module>:15} [SYSTEM]:Registered image_processing_api blueprint 
+2020-08-23 17:11:16,862 [INFO:main] {<module>:17} [SYSTEM]:Registered user_api blueprint 
+2020-08-23 17:11:16,872 [INFO:main] {<module>:19} [SYSTEM]:Registered model_management_api blueprint 
+2020-08-23 17:11:16,876 [INFO:main] {<module>:21} [SYSTEM]:Registered log_management_api blueprint 
+2020-08-23 17:11:26,637 [INFO:main] {<module>:13} [SYSTEM]:Created flask app.
+2020-08-23 17:11:26,638 [INFO:main] {<module>:15} [SYSTEM]:Registered image_processing_api blueprint 
+2020-08-23 17:11:26,640 [INFO:main] {<module>:17} [SYSTEM]:Registered user_api blueprint 
+2020-08-23 17:11:26,645 [INFO:main] {<module>:19} [SYSTEM]:Registered model_management_api blueprint 
+2020-08-23 17:11:26,646 [INFO:main] {<module>:21} [SYSTEM]:Registered log_management_api blueprint 
+2020-08-23 17:11:30,724 [INFO:main] {<module>:13} [SYSTEM]:Created flask app.
+2020-08-23 17:11:30,727 [INFO:main] {<module>:15} [SYSTEM]:Registered image_processing_api blueprint 
+2020-08-23 17:11:30,729 [INFO:main] {<module>:17} [SYSTEM]:Registered user_api blueprint 
+2020-08-23 17:11:30,734 [INFO:main] {<module>:19} [SYSTEM]:Registered model_management_api blueprint 
+2020-08-23 17:11:30,736 [INFO:main] {<module>:21} [SYSTEM]:Registered log_management_api blueprint 
+2020-08-23 17:16:42,100 [INFO:main] {<module>:13} [SYSTEM]:Created flask app.
+2020-08-23 17:16:42,102 [INFO:main] {<module>:15} [SYSTEM]:Registered image_processing_api blueprint 
+2020-08-23 17:16:42,104 [INFO:main] {<module>:17} [SYSTEM]:Registered user_api blueprint 
+2020-08-23 17:16:42,110 [INFO:main] {<module>:19} [SYSTEM]:Registered model_management_api blueprint 
+2020-08-23 17:16:42,111 [INFO:main] {<module>:21} [SYSTEM]:Registered log_management_api blueprint 
+2020-08-23 17:16:44,678 [INFO:main] {<module>:13} [SYSTEM]:Created flask app.
+2020-08-23 17:16:44,694 [INFO:main] {<module>:15} [SYSTEM]:Registered image_processing_api blueprint 
+2020-08-23 17:16:44,713 [INFO:main] {<module>:17} [SYSTEM]:Registered user_api blueprint 
+2020-08-23 17:16:44,738 [INFO:main] {<module>:19} [SYSTEM]:Registered model_management_api blueprint 
+2020-08-23 17:16:44,745 [INFO:main] {<module>:21} [SYSTEM]:Registered log_management_api blueprint 
+2020-08-23 17:16:44,890 [INFO:LogManager] {__init__:11} [SYSTEM]:Set log variable
+2020-08-23 17:16:44,891 [INFO:LogManager] {__init__:22} [SYSTEM]:parent : C:\Users\athiruj\Desktop\img-processing\Docker\Flask\app
+2020-08-23 17:16:44,893 [ERROR:log_management_api] {get_log:46} [SYSTEM]:[test_get_log] Error name 'data' is not defined
+2020-08-23 17:18:50,747 [INFO:main] {<module>:13} [SYSTEM]:Created flask app.
+2020-08-23 17:18:50,751 [INFO:main] {<module>:15} [SYSTEM]:Registered image_processing_api blueprint 
+2020-08-23 17:18:50,753 [INFO:main] {<module>:17} [SYSTEM]:Registered user_api blueprint 
+2020-08-23 17:18:50,776 [INFO:main] {<module>:19} [SYSTEM]:Registered model_management_api blueprint 
+2020-08-23 17:18:50,779 [INFO:main] {<module>:21} [SYSTEM]:Registered log_management_api blueprint 
+2020-08-23 17:18:59,959 [INFO:main] {<module>:13} [SYSTEM]:Created flask app.
+2020-08-23 17:18:59,963 [INFO:main] {<module>:15} [SYSTEM]:Registered image_processing_api blueprint 
+2020-08-23 17:18:59,964 [INFO:main] {<module>:17} [SYSTEM]:Registered user_api blueprint 
+2020-08-23 17:18:59,979 [INFO:main] {<module>:19} [SYSTEM]:Registered model_management_api blueprint 
+2020-08-23 17:18:59,981 [INFO:main] {<module>:21} [SYSTEM]:Registered log_management_api blueprint 
+2020-08-23 17:19:01,063 [INFO:LogManager] {__init__:11} [SYSTEM]:Set log variable
+2020-08-23 17:19:01,064 [INFO:LogManager] {__init__:22} [SYSTEM]:parent : C:\Users\athiruj\Desktop\img-processing\Docker\Flask\app
+2020-08-23 17:19:01,064 [INFO:LogManager] {get_today_log:26} [SYSTEM]:[test_get_log] Prepair date data to query.
+2020-08-23 17:19:01,069 [ERROR:LogManager] {get_today_log:44} [SYSTEM]:[test_get_log] Error name 'data' is not defined
+2020-08-23 17:19:07,021 [INFO:LogManager] {__init__:11} [SYSTEM]:Set log variable
+2020-08-23 17:19:07,022 [INFO:LogManager] {__init__:22} [SYSTEM]:parent : C:\Users\athiruj\Desktop\img-processing\Docker\Flask\app
+2020-08-23 17:19:07,023 [INFO:LogManager] {get_today_log:26} [SYSTEM]:[test_get_log] Prepair date data to query.
+2020-08-23 17:19:07,027 [ERROR:LogManager] {get_today_log:44} [SYSTEM]:[test_get_log] Error name 'data' is not defined
+2020-08-23 17:19:31,212 [INFO:main] {<module>:13} [SYSTEM]:Created flask app.
+2020-08-23 17:19:31,213 [INFO:main] {<module>:15} [SYSTEM]:Registered image_processing_api blueprint 
+2020-08-23 17:19:31,217 [INFO:main] {<module>:17} [SYSTEM]:Registered user_api blueprint 
+2020-08-23 17:19:31,222 [INFO:main] {<module>:19} [SYSTEM]:Registered model_management_api blueprint 
+2020-08-23 17:19:31,223 [INFO:main] {<module>:21} [SYSTEM]:Registered log_management_api blueprint 
+2020-08-23 17:19:31,577 [INFO:LogManager] {__init__:11} [SYSTEM]:Set log variable
+2020-08-23 17:19:31,578 [INFO:LogManager] {__init__:22} [SYSTEM]:parent : C:\Users\athiruj\Desktop\img-processing\Docker\Flask\app
+2020-08-23 17:19:31,578 [INFO:LogManager] {get_today_log:26} [SYSTEM]:[test_get_log] Prepair date data to query.
+2020-08-23 17:19:31,584 [INFO:LogManager] {get_today_log:30} [SYSTEM]:[test_get_log] Read log file.
+2020-08-23 17:19:31,595 [INFO:LogManager] {get_today_log:41} [SYSTEM]:[test_get_log] Got all today logs.
+2020-08-23 17:20:31,262 [INFO:main] {<module>:13} [SYSTEM]:Created flask app.
+2020-08-23 17:20:31,265 [INFO:main] {<module>:15} [SYSTEM]:Registered image_processing_api blueprint 
+2020-08-23 17:20:31,266 [INFO:main] {<module>:17} [SYSTEM]:Registered user_api blueprint 
+2020-08-23 17:20:31,272 [INFO:main] {<module>:19} [SYSTEM]:Registered model_management_api blueprint 
+2020-08-23 17:20:31,277 [INFO:main] {<module>:21} [SYSTEM]:Registered log_management_api blueprint 
+2020-08-23 17:20:35,392 [INFO:main] {<module>:13} [SYSTEM]:Created flask app.
+2020-08-23 17:20:35,394 [INFO:main] {<module>:15} [SYSTEM]:Registered image_processing_api blueprint 
+2020-08-23 17:20:35,395 [INFO:main] {<module>:17} [SYSTEM]:Registered user_api blueprint 
+2020-08-23 17:20:35,399 [INFO:main] {<module>:19} [SYSTEM]:Registered model_management_api blueprint 
+2020-08-23 17:20:35,401 [INFO:main] {<module>:21} [SYSTEM]:Registered log_management_api blueprint 
+2020-08-23 17:20:38,072 [INFO:main] {<module>:13} [SYSTEM]:Created flask app.
+2020-08-23 17:20:38,074 [INFO:main] {<module>:15} [SYSTEM]:Registered image_processing_api blueprint 
+2020-08-23 17:20:38,075 [INFO:main] {<module>:17} [SYSTEM]:Registered user_api blueprint 
+2020-08-23 17:20:38,079 [INFO:main] {<module>:19} [SYSTEM]:Registered model_management_api blueprint 
+2020-08-23 17:20:38,080 [INFO:main] {<module>:21} [SYSTEM]:Registered log_management_api blueprint 
+2020-08-23 17:20:41,090 [INFO:main] {<module>:13} [SYSTEM]:Created flask app.
+2020-08-23 17:20:41,092 [INFO:main] {<module>:15} [SYSTEM]:Registered image_processing_api blueprint 
+2020-08-23 17:20:41,094 [INFO:main] {<module>:17} [SYSTEM]:Registered user_api blueprint 
+2020-08-23 17:20:41,098 [INFO:main] {<module>:19} [SYSTEM]:Registered model_management_api blueprint 
+2020-08-23 17:20:41,099 [INFO:main] {<module>:21} [SYSTEM]:Registered log_management_api blueprint 
+2020-08-23 17:20:45,070 [INFO:main] {<module>:13} [SYSTEM]:Created flask app.
+2020-08-23 17:20:45,072 [INFO:main] {<module>:15} [SYSTEM]:Registered image_processing_api blueprint 
+2020-08-23 17:20:45,073 [INFO:main] {<module>:17} [SYSTEM]:Registered user_api blueprint 
+2020-08-23 17:20:45,078 [INFO:main] {<module>:19} [SYSTEM]:Registered model_management_api blueprint 
+2020-08-23 17:20:45,079 [INFO:main] {<module>:21} [SYSTEM]:Registered log_management_api blueprint 
+2020-08-23 17:26:43,393 [INFO:main] {<module>:13} [SYSTEM]:Created flask app.
+2020-08-23 17:26:43,394 [INFO:main] {<module>:15} [SYSTEM]:Registered image_processing_api blueprint 
+2020-08-23 17:26:43,396 [INFO:main] {<module>:17} [SYSTEM]:Registered user_api blueprint 
+2020-08-23 17:26:43,400 [INFO:main] {<module>:19} [SYSTEM]:Registered model_management_api blueprint 
+2020-08-23 17:26:43,401 [INFO:main] {<module>:21} [SYSTEM]:Registered log_management_api blueprint 
+2020-08-23 17:26:44,802 [INFO:main] {<module>:13} [SYSTEM]:Created flask app.
+2020-08-23 17:26:44,805 [INFO:main] {<module>:15} [SYSTEM]:Registered image_processing_api blueprint 
+2020-08-23 17:26:44,808 [INFO:main] {<module>:17} [SYSTEM]:Registered user_api blueprint 
+2020-08-23 17:26:44,816 [INFO:main] {<module>:19} [SYSTEM]:Registered model_management_api blueprint 
+2020-08-23 17:26:44,819 [INFO:main] {<module>:21} [SYSTEM]:Registered log_management_api blueprint 
+2020-08-23 17:26:58,256 [INFO:LogManager] {__init__:11} [SYSTEM]:Set log variable
+2020-08-23 17:26:58,258 [INFO:LogManager] {__init__:22} [SYSTEM]:parent : C:\Users\athiruj\Desktop\img-processing\Docker\Flask\app
+2020-08-23 17:26:58,259 [INFO:LogManager] {get_today_log:26} [SYSTEM]:[test_get_log] Prepair date data to query.
+2020-08-23 17:26:58,263 [INFO:LogManager] {get_today_log:30} [SYSTEM]:[test_get_log] Read log file.
+2020-08-23 17:26:58,277 [INFO:LogManager] {get_today_log:45} [SYSTEM]:[test_get_log] Got all today logs.
+2020-08-23 17:27:45,941 [INFO:main] {<module>:13} [SYSTEM]:Created flask app.
+2020-08-23 17:27:45,945 [INFO:main] {<module>:15} [SYSTEM]:Registered image_processing_api blueprint 
+2020-08-23 17:27:45,948 [INFO:main] {<module>:17} [SYSTEM]:Registered user_api blueprint 
+2020-08-23 17:27:45,958 [INFO:main] {<module>:19} [SYSTEM]:Registered model_management_api blueprint 
+2020-08-23 17:27:45,959 [INFO:main] {<module>:21} [SYSTEM]:Registered log_management_api blueprint 
+2020-08-23 17:27:46,367 [INFO:LogManager] {__init__:11} [SYSTEM]:Set log variable
+2020-08-23 17:27:46,368 [INFO:LogManager] {__init__:22} [SYSTEM]:parent : C:\Users\athiruj\Desktop\img-processing\Docker\Flask\app
+2020-08-23 17:27:46,368 [INFO:LogManager] {get_today_log:26} [SYSTEM]:[test_get_log] Prepair date data to query.
+2020-08-23 17:27:46,371 [INFO:LogManager] {get_today_log:30} [SYSTEM]:[test_get_log] Read log file.
+2020-08-23 17:27:46,392 [INFO:LogManager] {get_today_log:45} [SYSTEM]:[test_get_log] Got all today logs.
+2020-08-23 17:28:08,277 [INFO:main] {<module>:13} [SYSTEM]:Created flask app.
+2020-08-23 17:28:08,278 [INFO:main] {<module>:15} [SYSTEM]:Registered image_processing_api blueprint 
+2020-08-23 17:28:08,280 [INFO:main] {<module>:17} [SYSTEM]:Registered user_api blueprint 
+2020-08-23 17:28:08,287 [INFO:main] {<module>:19} [SYSTEM]:Registered model_management_api blueprint 
+2020-08-23 17:28:08,288 [INFO:main] {<module>:21} [SYSTEM]:Registered log_management_api blueprint 
+2020-08-23 17:28:24,335 [INFO:main] {<module>:13} [SYSTEM]:Created flask app.
+2020-08-23 17:28:24,338 [INFO:main] {<module>:15} [SYSTEM]:Registered image_processing_api blueprint 
+2020-08-23 17:28:24,340 [INFO:main] {<module>:17} [SYSTEM]:Registered user_api blueprint 
+2020-08-23 17:28:24,346 [INFO:main] {<module>:19} [SYSTEM]:Registered model_management_api blueprint 
+2020-08-23 17:28:24,348 [INFO:main] {<module>:21} [SYSTEM]:Registered log_management_api blueprint 
+2020-08-23 17:28:28,370 [INFO:main] {<module>:13} [SYSTEM]:Created flask app.
+2020-08-23 17:28:28,373 [INFO:main] {<module>:15} [SYSTEM]:Registered image_processing_api blueprint 
+2020-08-23 17:28:28,375 [INFO:main] {<module>:17} [SYSTEM]:Registered user_api blueprint 
+2020-08-23 17:28:28,383 [INFO:main] {<module>:19} [SYSTEM]:Registered model_management_api blueprint 
+2020-08-23 17:28:28,384 [INFO:main] {<module>:21} [SYSTEM]:Registered log_management_api blueprint 
+2020-08-23 17:28:34,421 [INFO:LogManager] {__init__:11} [SYSTEM]:Set log variable
+2020-08-23 17:28:34,426 [INFO:LogManager] {__init__:22} [SYSTEM]:parent : C:\Users\athiruj\Desktop\img-processing\Docker\Flask\app
+2020-08-23 17:28:34,428 [INFO:LogManager] {get_today_log:26} [SYSTEM]:[test_get_log] Prepair date data to query.
+2020-08-23 17:28:34,443 [INFO:LogManager] {get_today_log:30} [SYSTEM]:[test_get_log] Read log file.
+2020-08-23 17:28:34,470 [INFO:LogManager] {get_today_log:45} [SYSTEM]:[test_get_log] Got all today logs.
+2020-08-23 17:29:23,317 [INFO:LogManager] {__init__:11} [SYSTEM]:Set log variable
+2020-08-23 17:29:23,318 [INFO:LogManager] {__init__:22} [SYSTEM]:parent : C:\Users\athiruj\Desktop\img-processing\Docker\Flask\app
+2020-08-23 17:29:23,318 [INFO:LogManager] {get_today_log:26} [SYSTEM]:[test_get_log] Prepair date data to query.
+2020-08-23 17:29:23,323 [INFO:LogManager] {get_today_log:30} [SYSTEM]:[test_get_log] Read log file.
+2020-08-23 17:29:23,336 [INFO:LogManager] {get_today_log:45} [SYSTEM]:[test_get_log] Got all today logs.
+2020-08-23 17:30:01,016 [INFO:LogManager] {__init__:11} [SYSTEM]:Set log variable
+2020-08-23 17:30:01,018 [INFO:LogManager] {__init__:22} [SYSTEM]:parent : C:\Users\athiruj\Desktop\img-processing\Docker\Flask\app
+2020-08-23 17:30:01,019 [INFO:LogManager] {get_today_log:26} [SYSTEM]:[test_get_log] Prepair date data to query.
+2020-08-23 17:30:01,024 [INFO:LogManager] {get_today_log:30} [SYSTEM]:[test_get_log] Read log file.
+2020-08-23 17:30:01,036 [INFO:LogManager] {get_today_log:45} [SYSTEM]:[test_get_log] Got all today logs.
+2020-08-23 17:36:16,200 [INFO:main] {<module>:13} [SYSTEM]:Created flask app.
+2020-08-23 17:36:16,202 [INFO:main] {<module>:15} [SYSTEM]:Registered image_processing_api blueprint 
+2020-08-23 17:36:16,203 [INFO:main] {<module>:17} [SYSTEM]:Registered user_api blueprint 
+2020-08-23 17:36:16,209 [INFO:main] {<module>:19} [SYSTEM]:Registered model_management_api blueprint 
+2020-08-23 17:36:16,210 [INFO:main] {<module>:21} [SYSTEM]:Registered log_management_api blueprint 
+2020-08-23 17:38:01,759 [INFO:main] {<module>:13} [SYSTEM]:Created flask app.
+2020-08-23 17:38:01,770 [INFO:main] {<module>:15} [SYSTEM]:Registered image_processing_api blueprint 
+2020-08-23 17:38:01,793 [INFO:main] {<module>:17} [SYSTEM]:Registered user_api blueprint 
+2020-08-23 17:38:01,807 [INFO:main] {<module>:19} [SYSTEM]:Registered model_management_api blueprint 
+2020-08-23 17:38:01,822 [INFO:main] {<module>:21} [SYSTEM]:Registered log_management_api blueprint 
+2020-08-23 17:38:34,535 [INFO:main] {<module>:13} [SYSTEM]:Created flask app.
+2020-08-23 17:38:34,539 [INFO:main] {<module>:15} [SYSTEM]:Registered image_processing_api blueprint 
+2020-08-23 17:38:34,545 [INFO:main] {<module>:17} [SYSTEM]:Registered user_api blueprint 
+2020-08-23 17:38:34,569 [INFO:main] {<module>:19} [SYSTEM]:Registered model_management_api blueprint 
+2020-08-23 17:38:34,571 [INFO:main] {<module>:21} [SYSTEM]:Registered log_management_api blueprint 
+2020-08-23 17:38:40,221 [INFO:main] {<module>:13} [SYSTEM]:Created flask app.
+2020-08-23 17:38:40,223 [INFO:main] {<module>:15} [SYSTEM]:Registered image_processing_api blueprint 
+2020-08-23 17:38:40,226 [INFO:main] {<module>:17} [SYSTEM]:Registered user_api blueprint 
+2020-08-23 17:38:40,233 [INFO:main] {<module>:19} [SYSTEM]:Registered model_management_api blueprint 
+2020-08-23 17:38:40,235 [INFO:main] {<module>:21} [SYSTEM]:Registered log_management_api blueprint 
+2020-08-23 17:48:00,718 [INFO:main] {<module>:13} [SYSTEM]:Created flask app.
+2020-08-23 17:48:00,720 [INFO:main] {<module>:15} [SYSTEM]:Registered image_processing_api blueprint 
+2020-08-23 17:48:00,735 [INFO:main] {<module>:17} [SYSTEM]:Registered user_api blueprint 
+2020-08-23 17:48:00,746 [INFO:main] {<module>:19} [SYSTEM]:Registered model_management_api blueprint 
+2020-08-23 17:48:00,747 [INFO:main] {<module>:21} [SYSTEM]:Registered log_management_api blueprint 
+2020-08-23 17:48:02,383 [INFO:main] {<module>:13} [SYSTEM]:Created flask app.
+2020-08-23 17:48:02,385 [INFO:main] {<module>:15} [SYSTEM]:Registered image_processing_api blueprint 
+2020-08-23 17:48:02,387 [INFO:main] {<module>:17} [SYSTEM]:Registered user_api blueprint 
+2020-08-23 17:48:02,397 [INFO:main] {<module>:19} [SYSTEM]:Registered model_management_api blueprint 
+2020-08-23 17:48:02,400 [INFO:main] {<module>:21} [SYSTEM]:Registered log_management_api blueprint 
+2020-08-23 17:48:15,430 [INFO:LogManager] {__init__:11} [SYSTEM]:Set log variable
+2020-08-23 17:48:15,445 [INFO:LogManager] {__init__:22} [SYSTEM]:parent : C:\Users\athiruj\Desktop\img-processing\Docker\Flask\app
+2020-08-23 17:48:15,465 [INFO:LogManager] {get_log_by_date:55} [SYSTEM]:[test_get_log] Prepair date data to query.
+2020-08-23 17:48:57,470 [INFO:LogManager] {__init__:11} [SYSTEM]:Set log variable
+2020-08-23 17:48:57,470 [INFO:LogManager] {__init__:22} [SYSTEM]:parent : C:\Users\athiruj\Desktop\img-processing\Docker\Flask\app
+2020-08-23 17:48:57,471 [INFO:LogManager] {get_log_by_date:55} [SYSTEM]:[test_get_log] Prepair date data to query.
+2020-08-23 17:49:54,624 [INFO:main] {<module>:13} [SYSTEM]:Created flask app.
+2020-08-23 17:49:54,627 [INFO:main] {<module>:15} [SYSTEM]:Registered image_processing_api blueprint 
+2020-08-23 17:49:54,628 [INFO:main] {<module>:17} [SYSTEM]:Registered user_api blueprint 
+2020-08-23 17:49:54,632 [INFO:main] {<module>:19} [SYSTEM]:Registered model_management_api blueprint 
+2020-08-23 17:49:54,633 [INFO:main] {<module>:21} [SYSTEM]:Registered log_management_api blueprint 
+2020-08-23 17:49:57,599 [INFO:main] {<module>:13} [SYSTEM]:Created flask app.
+2020-08-23 17:49:57,602 [INFO:main] {<module>:15} [SYSTEM]:Registered image_processing_api blueprint 
+2020-08-23 17:49:57,604 [INFO:main] {<module>:17} [SYSTEM]:Registered user_api blueprint 
+2020-08-23 17:49:57,609 [INFO:main] {<module>:19} [SYSTEM]:Registered model_management_api blueprint 
+2020-08-23 17:49:57,610 [INFO:main] {<module>:21} [SYSTEM]:Registered log_management_api blueprint 
+2020-08-23 17:50:03,404 [INFO:main] {<module>:13} [SYSTEM]:Created flask app.
+2020-08-23 17:50:03,407 [INFO:main] {<module>:15} [SYSTEM]:Registered image_processing_api blueprint 
+2020-08-23 17:50:03,408 [INFO:main] {<module>:17} [SYSTEM]:Registered user_api blueprint 
+2020-08-23 17:50:03,413 [INFO:main] {<module>:19} [SYSTEM]:Registered model_management_api blueprint 
+2020-08-23 17:50:03,414 [INFO:main] {<module>:21} [SYSTEM]:Registered log_management_api blueprint 
+2020-08-23 17:50:06,437 [INFO:main] {<module>:13} [SYSTEM]:Created flask app.
+2020-08-23 17:50:06,438 [INFO:main] {<module>:15} [SYSTEM]:Registered image_processing_api blueprint 
+2020-08-23 17:50:06,441 [INFO:main] {<module>:17} [SYSTEM]:Registered user_api blueprint 
+2020-08-23 17:50:06,445 [INFO:main] {<module>:19} [SYSTEM]:Registered model_management_api blueprint 
+2020-08-23 17:50:06,446 [INFO:main] {<module>:21} [SYSTEM]:Registered log_management_api blueprint 
+2020-08-23 17:50:12,042 [INFO:main] {<module>:13} [SYSTEM]:Created flask app.
+2020-08-23 17:50:12,043 [INFO:main] {<module>:15} [SYSTEM]:Registered image_processing_api blueprint 
+2020-08-23 17:50:12,046 [INFO:main] {<module>:17} [SYSTEM]:Registered user_api blueprint 
+2020-08-23 17:50:12,050 [INFO:main] {<module>:19} [SYSTEM]:Registered model_management_api blueprint 
+2020-08-23 17:50:12,051 [INFO:main] {<module>:21} [SYSTEM]:Registered log_management_api blueprint 
+2020-08-23 17:50:33,690 [INFO:main] {<module>:13} [SYSTEM]:Created flask app.
+2020-08-23 17:50:33,693 [INFO:main] {<module>:15} [SYSTEM]:Registered image_processing_api blueprint 
+2020-08-23 17:50:33,695 [INFO:main] {<module>:17} [SYSTEM]:Registered user_api blueprint 
+2020-08-23 17:50:33,703 [INFO:main] {<module>:19} [SYSTEM]:Registered model_management_api blueprint 
+2020-08-23 17:50:33,704 [INFO:main] {<module>:21} [SYSTEM]:Registered log_management_api blueprint 
