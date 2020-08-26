@@ -13,8 +13,7 @@ image_processing_api = Blueprint('image_processing_api', __name__)
 @image_processing_api.route("/upload_image", methods=['post'])
 def upload_image():
     try:
-        r = request
-        nparr = np.fromstring(r.files['file'].read(), np.uint8)
+        nparr = np.fromstring(request.files['file'].read(), np.uint8)
         img = cv2.imdecode(nparr, cv2.IMREAD_COLOR) 
 
         image_processor = image_measurement.ImageMeasurement()

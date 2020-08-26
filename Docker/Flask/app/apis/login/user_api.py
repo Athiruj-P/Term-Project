@@ -34,12 +34,12 @@ def login():
     if not password:
         return jsonify({"mes": "Missing password parameter"}), 400
 
-    sha_signature = hashlib.sha256(password.encode()).hexdigest()   
-    logger.info("pass : {}".format(sha_signature))
+    # sha_signature = hashlib.sha256(password.encode()).hexdigest()   
+    # logger.info("pass : {}".format(sha_signature))
 
     query_result = DPML_db[collection].find_one({
         db_config.item['fld_user_name']: username ,
-        db_config.item['fld_user_password']: sha_signature
+        db_config.item['fld_user_password']: password
     })
     db_connect.close()
     logger.info("query_result : {}".format(query_result))
