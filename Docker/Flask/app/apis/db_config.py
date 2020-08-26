@@ -35,6 +35,15 @@ item = {
     "fld_un_name" : "un_name",
     "fld_un_abb_name" : "un_abb_name",
 
+    # dpml_user fields
+    "fld_user_id" : "user_id",
+    "fld_user_name" : "user_name",
+    "fld_user_password" : "user_password",
+    "fld_user_login_status" : "user_login_status",
+    "fld_user_role_id" : "user_role_id",
+    "fld_user_status_login" : 1,
+    "fld_user_status_logout" : 0,
+
     "db_file_path" : "db_file",
     "ml_path" : "ml_model",
     "ref_path" : "ref_model",
