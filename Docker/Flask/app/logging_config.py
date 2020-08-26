@@ -56,6 +56,10 @@ dict_config = {
             'handlers': ["default"],
             'level': 'DEBUG',
         },
+        'Login_api': {
+            'handlers': ["default"],
+            'level': 'DEBUG',
+        },
         'user_management' : {
             'handlers': ["user"],
             'level': 'DEBUG',

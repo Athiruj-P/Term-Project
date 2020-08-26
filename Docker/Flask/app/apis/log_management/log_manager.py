@@ -20,22 +20,62 @@ class LogManager():
         self.username = username
 
         self.logger.info("parent : {}".format(parent))
+        self.group_list = ['all' , 'USER' , 'SYSTEM']
     
+    def is_date_obj(self,str_date):
+        try:
+            datetime.strptime(str_date, '%Y-%m-%d')
+            return True
+        except:
+            return False
+
+    def is_datetime_obj(self,str_date_time):
+        try:
+            datetime.strptime(str_date_time, '%Y-%m-%d %H:%M:%S')
+            return True
+        except:
+            return False
+
+    def is_file_exist(self,str_file_path):
+        try:
+            file_read = open(str_file_path, "r")
+            file_read.close()
+            return True
+        except:
+            file_read.close()
+            return False
+
     def get_today_log(self):
         try:
             self.logger.info("[{}] Prepair date data to query.".format(self.username))
+
+            if not self.is_date_obj(self.today_date):
+                self.logger.warning("[{}] Wrong today date. Please re-enter today date.".format(self.username))
+                raise TypeError("wrong_date")
+            elif self.group not in self.group_list:
+                self.logger.warning("[{}] Wrong group. Please re-enter group.".format(self.username))
+                raise TypeError("wrong_group")
+                
             log_file_name = self.today_date + ".log"
             log_file_path = os.path.join(self.log_path,log_file_name)
+            if not self.is_file_exist(log_file_path):
+                self.logger.warning("[{}] File dose not exist.".format(self.username))
+                raise TypeError("file_not_exist")
+
             log_file = open(log_file_path, "r")
-            self.logger.info("[{}] Read log file.".format(self.username))
+            self.logger.info("[{}] Read log {} .".format(self.username,log_file_name))
             result_date=[]
             filter_condition = False
             if(self.group == 'all'):
                 filter_condition = True
-
+            
             today_date_obj = datetime.strptime(self.today_date, '%Y-%m-%d')
             for line in log_file:
-                line_date_obj = datetime.strptime(line[:10], '%Y-%m-%d')
+                if(self.is_date_obj(line[:10])):
+                    line_date_obj = datetime.strptime(line[:10], '%Y-%m-%d')
+                else:
+                    continue
+
                 if (today_date_obj == line_date_obj and ((re.search(self.group, line), True)[filter_condition]) ):
                     result_date.append(line)
                 elif(today_date_obj < line_date_obj):
@@ -50,20 +90,73 @@ class LogManager():
             self.logger.error("[{}] Error {}".format(self.username,identifier))
             error = { 'mes' : str(identifier) }
             return jsonify(error)
+
     def get_log_by_date(self):
         try:
             self.logger.info("[{}] Prepair date data to query.".format(self.username))
-            start_date = datetime.strptime(self.start_date, '%Y-%m-%d').date()
-            end_date = datetime.strptime(self.end_date, '%Y-%m-%d').date()
             result_date = []
             file_list = []
-            for file in os.listdir(self.log_path):
-                file_name = datetime.strptime(file[:10], '%Y-%m-%d').date()
-                self.logger.debug("file_name : {} - {}".format(start_date >= file_name , end_date <= file_name))
-                if (file.endswith(".log") and start_date >= file_name and end_date <= file_name ):
-                    file_list.append(file)
+            filter_condition = False
+            str_start_datetime = self.start_date + " "+ self.start_time
+            str_end_datetime = self.end_date + " "+ self.end_time
+
+            if(not self.is_date_obj(self.start_date)):
+                self.logger.warning("[{}] Wrong start date. Please re-enter start date.".format(self.username))
+                raise TypeError("wrong_start_date")
+            elif(not self.is_date_obj(self.end_date)):
+                self.logger.warning("[{}] Wrong end date. Please re-enter end date.".format(self.username))
+                raise TypeError("wrong_end_date")
+            elif(not self.is_datetime_obj(str_start_datetime)):
+                self.logger.warning("[{}] Wrong start datetime. Please re-enter start datetime.".format(self.username))
+                raise TypeError("wrong_start_datetime")
+            elif(not self.is_datetime_obj(str_end_datetime)):
+                self.logger.warning("[{}] Wrong end datetime. Please re-enter end datetime.".format(self.username))
+                raise TypeError("wrong_end_datetime")
+            elif self.group not in self.group_list:
+                self.logger.warning("[{}] Wrong group. Please re-enter group.".format(self.username))
+                raise TypeError("wrong_group")
             
-            return jsonify(file_list)
+            start_date_obj = datetime.strptime(self.start_date, '%Y-%m-%d').date()
+            end_date_obj = datetime.strptime(self.end_date, '%Y-%m-%d').date()
+            start_datetime_obj = datetime.strptime(str_start_datetime, '%Y-%m-%d %H:%M:%S')
+            end_datetime_obj = datetime.strptime(str_end_datetime, '%Y-%m-%d %H:%M:%S')
+
+            for file in os.listdir(self.log_path):
+                if not self.is_date_obj(file[:10]):
+                    self.logger.warning("[{}] Wrong file format.".format(self.username))
+                    continue
+                file_name = datetime.strptime(file[:10], '%Y-%m-%d').date()
+                if (file.endswith(".log") and start_date_obj <= file_name and end_date_obj >= file_name ):
+                    log_file_path = os.path.join(self.log_path,file)
+                    if not self.is_file_exist(log_file_path):
+                        self.logger.warning("[{}] File dose not exist.".format(self.username))
+                        continue
+                    file_list.append(log_file_path)
+            
+            if(self.group == 'all'):
+                filter_condition = True
+            
+            for file in file_list:
+                log_file_path = os.path.join(self.log_path,file)
+                log_file = open(log_file_path, "r")
+                self.logger.info("[{}] Read log {} .".format(self.username,file))
+                for line in log_file:
+                    if(self.is_datetime_obj(line[:19])):
+                        line_datetime_obj = datetime.strptime(line[:19], '%Y-%m-%d %H:%M:%S')
+                    else:
+                        continue
+
+                    if (start_datetime_obj <= line_datetime_obj and end_datetime_obj >= line_datetime_obj and ((re.search(self.group, line), True)[filter_condition]) ):
+                        result_date.append(line)
+                    elif(end_datetime_obj < line_datetime_obj):
+                        break
+                    else:
+                        continue
+                log_file.close()
+
+            self.logger.info("[{}] Close log file.".format(self.username))
+            self.logger.info("[{}] Got all log data.".format(self.username))
+            return jsonify(result_date)
         except Exception as identifier:
             self.logger.error("[{}] Error {}".format(self.username,identifier))
             error = { 'mes' : str(identifier) }
