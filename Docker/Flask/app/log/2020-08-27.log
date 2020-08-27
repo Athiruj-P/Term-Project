@@ -1,0 +1,403 @@
+2020-08-27 09:13:21,673 [INFO:main] {<module>:16} [SYSTEM]:Created flask app.
+2020-08-27 09:13:21,680 [INFO:main] {<module>:18} [SYSTEM]:Registered image_processing_api blueprint 
+2020-08-27 09:13:21,681 [INFO:main] {<module>:20} [SYSTEM]:Registered user_api blueprint 
+2020-08-27 09:13:21,684 [INFO:main] {<module>:22} [SYSTEM]:Registered model_management_api blueprint 
+2020-08-27 09:13:21,685 [INFO:main] {<module>:24} [SYSTEM]:Registered log_management_api blueprint 
+2020-08-27 09:13:23,308 [INFO:main] {<module>:16} [SYSTEM]:Created flask app.
+2020-08-27 09:13:23,312 [INFO:main] {<module>:18} [SYSTEM]:Registered image_processing_api blueprint 
+2020-08-27 09:13:23,313 [INFO:main] {<module>:20} [SYSTEM]:Registered user_api blueprint 
+2020-08-27 09:13:23,317 [INFO:main] {<module>:22} [SYSTEM]:Registered model_management_api blueprint 
+2020-08-27 09:13:23,318 [INFO:main] {<module>:24} [SYSTEM]:Registered log_management_api blueprint 
+2020-08-27 10:39:52,146 [INFO:main] {<module>:16} [SYSTEM]:Created flask app.
+2020-08-27 10:39:52,148 [INFO:main] {<module>:18} [SYSTEM]:Registered image_processing_api blueprint 
+2020-08-27 10:39:52,149 [INFO:main] {<module>:20} [SYSTEM]:Registered user_api blueprint 
+2020-08-27 10:39:52,152 [INFO:main] {<module>:22} [SYSTEM]:Registered model_management_api blueprint 
+2020-08-27 10:39:52,153 [INFO:main] {<module>:24} [SYSTEM]:Registered log_management_api blueprint 
+2020-08-27 10:55:06,683 [INFO:main] {<module>:16} [SYSTEM]:Created flask app.
+2020-08-27 10:55:06,687 [INFO:main] {<module>:18} [SYSTEM]:Registered image_processing_api blueprint 
+2020-08-27 10:55:06,689 [INFO:main] {<module>:20} [SYSTEM]:Registered user_api blueprint 
+2020-08-27 10:55:06,692 [INFO:main] {<module>:22} [SYSTEM]:Registered model_management_api blueprint 
+2020-08-27 10:55:06,694 [INFO:main] {<module>:24} [SYSTEM]:Registered log_management_api blueprint 
+2020-08-27 11:01:34,985 [INFO:main] {<module>:16} [SYSTEM]:Created flask app.
+2020-08-27 11:01:34,990 [INFO:main] {<module>:18} [SYSTEM]:Registered image_processing_api blueprint 
+2020-08-27 11:01:34,991 [INFO:main] {<module>:20} [SYSTEM]:Registered user_api blueprint 
+2020-08-27 11:01:34,995 [INFO:main] {<module>:22} [SYSTEM]:Registered model_management_api blueprint 
+2020-08-27 11:01:34,997 [INFO:main] {<module>:24} [SYSTEM]:Registered log_management_api blueprint 
+2020-08-27 11:02:57,103 [INFO:main] {<module>:16} [SYSTEM]:Created flask app.
+2020-08-27 11:02:57,109 [INFO:main] {<module>:18} [SYSTEM]:Registered image_processing_api blueprint 
+2020-08-27 11:02:57,111 [INFO:main] {<module>:20} [SYSTEM]:Registered user_api blueprint 
+2020-08-27 11:02:57,121 [INFO:main] {<module>:22} [SYSTEM]:Registered model_management_api blueprint 
+2020-08-27 11:02:57,123 [INFO:main] {<module>:24} [SYSTEM]:Registered log_management_api blueprint 
+2020-08-27 11:03:06,445 [INFO:main] {<module>:16} [SYSTEM]:Created flask app.
+2020-08-27 11:03:06,450 [INFO:main] {<module>:18} [SYSTEM]:Registered image_processing_api blueprint 
+2020-08-27 11:03:06,451 [INFO:main] {<module>:20} [SYSTEM]:Registered user_api blueprint 
+2020-08-27 11:03:06,456 [INFO:main] {<module>:22} [SYSTEM]:Registered model_management_api blueprint 
+2020-08-27 11:03:06,458 [INFO:main] {<module>:24} [SYSTEM]:Registered log_management_api blueprint 
+2020-08-27 11:03:13,140 [INFO:main] {<module>:16} [SYSTEM]:Created flask app.
+2020-08-27 11:03:13,144 [INFO:main] {<module>:18} [SYSTEM]:Registered image_processing_api blueprint 
+2020-08-27 11:03:13,145 [INFO:main] {<module>:20} [SYSTEM]:Registered user_api blueprint 
+2020-08-27 11:03:13,149 [INFO:main] {<module>:22} [SYSTEM]:Registered model_management_api blueprint 
+2020-08-27 11:03:13,153 [INFO:main] {<module>:24} [SYSTEM]:Registered log_management_api blueprint 
+2020-08-27 11:03:37,357 [INFO:main] {<module>:16} [SYSTEM]:Created flask app.
+2020-08-27 11:03:37,363 [INFO:main] {<module>:18} [SYSTEM]:Registered image_processing_api blueprint 
+2020-08-27 11:03:37,364 [INFO:main] {<module>:20} [SYSTEM]:Registered user_api blueprint 
+2020-08-27 11:03:37,370 [INFO:main] {<module>:22} [SYSTEM]:Registered model_management_api blueprint 
+2020-08-27 11:03:37,373 [INFO:main] {<module>:24} [SYSTEM]:Registered log_management_api blueprint 
+2020-08-27 11:03:47,749 [INFO:main] {<module>:16} [SYSTEM]:Created flask app.
+2020-08-27 11:03:47,754 [INFO:main] {<module>:18} [SYSTEM]:Registered image_processing_api blueprint 
+2020-08-27 11:03:47,755 [INFO:main] {<module>:20} [SYSTEM]:Registered user_api blueprint 
+2020-08-27 11:03:47,759 [INFO:main] {<module>:22} [SYSTEM]:Registered model_management_api blueprint 
+2020-08-27 11:03:47,761 [INFO:main] {<module>:24} [SYSTEM]:Registered log_management_api blueprint 
+2020-08-27 11:03:50,782 [INFO:main] {<module>:16} [SYSTEM]:Created flask app.
+2020-08-27 11:03:50,787 [INFO:main] {<module>:18} [SYSTEM]:Registered image_processing_api blueprint 
+2020-08-27 11:03:50,788 [INFO:main] {<module>:20} [SYSTEM]:Registered user_api blueprint 
+2020-08-27 11:03:50,793 [INFO:main] {<module>:22} [SYSTEM]:Registered model_management_api blueprint 
+2020-08-27 11:03:50,795 [INFO:main] {<module>:24} [SYSTEM]:Registered log_management_api blueprint 
+2020-08-27 11:23:19,821 [INFO:main] {<module>:16} [SYSTEM]:Created flask app.
+2020-08-27 11:23:19,828 [INFO:main] {<module>:18} [SYSTEM]:Registered image_processing_api blueprint 
+2020-08-27 11:23:19,829 [INFO:main] {<module>:20} [SYSTEM]:Registered user_api blueprint 
+2020-08-27 11:23:19,836 [INFO:main] {<module>:22} [SYSTEM]:Registered model_management_api blueprint 
+2020-08-27 11:23:19,838 [INFO:main] {<module>:24} [SYSTEM]:Registered log_management_api blueprint 
+2020-08-27 11:23:21,933 [INFO:main] {<module>:16} [SYSTEM]:Created flask app.
+2020-08-27 11:23:21,938 [INFO:main] {<module>:18} [SYSTEM]:Registered image_processing_api blueprint 
+2020-08-27 11:23:21,939 [INFO:main] {<module>:20} [SYSTEM]:Registered user_api blueprint 
+2020-08-27 11:23:21,947 [INFO:main] {<module>:22} [SYSTEM]:Registered model_management_api blueprint 
+2020-08-27 11:23:21,948 [INFO:main] {<module>:24} [SYSTEM]:Registered log_management_api blueprint 
+2020-08-27 11:23:44,778 [WARNING:image_processing] {upload_image:39} [USER]:[Debug_user] Wrong file extension.
+2020-08-27 11:36:58,820 [WARNING:image_processing] {upload_image:39} [USER]:[Debug_user] Wrong file extension.
+2020-08-27 11:38:04,492 [INFO:main] {<module>:16} [SYSTEM]:Created flask app.
+2020-08-27 11:38:04,496 [INFO:main] {<module>:18} [SYSTEM]:Registered image_processing_api blueprint 
+2020-08-27 11:38:04,498 [INFO:main] {<module>:20} [SYSTEM]:Registered user_api blueprint 
+2020-08-27 11:38:04,501 [INFO:main] {<module>:22} [SYSTEM]:Registered model_management_api blueprint 
+2020-08-27 11:38:04,503 [INFO:main] {<module>:24} [SYSTEM]:Registered log_management_api blueprint 
+2020-08-27 11:38:05,931 [WARNING:image_processing] {upload_image:50} [USER]:[Debug_user] Wrong unit id. This ID dose not match any unit id on dpml_unit
+2020-08-27 11:50:44,252 [WARNING:image_processing] {upload_image:39} [USER]:[Debug_user] Wrong file extension.
+2020-08-27 11:51:37,844 [WARNING:image_processing] {upload_image:39} [USER]:[Debug_user] Wrong file extension.
+2020-08-27 11:52:59,486 [WARNING:image_processing] {upload_image:39} [USER]:[Debug_user] Wrong file extension.
+2020-08-27 11:53:12,509 [WARNING:image_processing] {upload_image:39} [USER]:[Debug_user] Wrong file extension.
+2020-08-27 11:53:43,353 [WARNING:image_processing] {upload_image:33} [USER]:[Debug_user] File is empty.
+2020-08-27 11:54:06,320 [WARNING:image_processing] {upload_image:39} [USER]:[Debug_user] Wrong file extension.
+2020-08-27 11:54:14,620 [WARNING:image_processing] {upload_image:39} [USER]:[Debug_user] Wrong file extension.
+2020-08-27 11:54:16,429 [WARNING:image_processing] {upload_image:39} [USER]:[Debug_user] Wrong file extension.
+2020-08-27 11:54:18,236 [WARNING:image_processing] {upload_image:39} [USER]:[Debug_user] Wrong file extension.
+2020-08-27 11:54:20,399 [WARNING:image_processing] {upload_image:39} [USER]:[Debug_user] Wrong file extension.
+2020-08-27 11:54:48,713 [WARNING:image_processing] {upload_image:39} [USER]:[Debug_user] Wrong file extension.
+2020-08-27 11:54:50,789 [WARNING:image_processing] {upload_image:39} [USER]:[Debug_user] Wrong file extension.
+2020-08-27 11:54:52,655 [WARNING:image_processing] {upload_image:39} [USER]:[Debug_user] Wrong file extension.
+2020-08-27 11:54:54,493 [WARNING:image_processing] {upload_image:39} [USER]:[Debug_user] Wrong file extension.
+2020-08-27 12:03:31,403 [WARNING:image_processing] {upload_image:39} [USER]:[Debug_user] Wrong file extension.
+2020-08-27 12:04:17,384 [WARNING:image_processing] {upload_image:50} [USER]:[Debug_user] Wrong unit id. This ID dose not match any unit id on dpml_unit
+2020-08-27 12:04:44,705 [WARNING:image_processing] {upload_image:50} [USER]:[Debug_user] Wrong unit id. This ID dose not match any unit id on dpml_unit
+2020-08-27 12:05:46,196 [INFO:main] {<module>:16} [SYSTEM]:Created flask app.
+2020-08-27 12:05:46,210 [INFO:main] {<module>:18} [SYSTEM]:Registered image_processing_api blueprint 
+2020-08-27 12:05:46,212 [INFO:main] {<module>:20} [SYSTEM]:Registered user_api blueprint 
+2020-08-27 12:05:46,228 [INFO:main] {<module>:22} [SYSTEM]:Registered model_management_api blueprint 
+2020-08-27 12:05:46,232 [INFO:main] {<module>:24} [SYSTEM]:Registered log_management_api blueprint 
+2020-08-27 12:06:33,787 [WARNING:image_processing] {upload_image:39} [USER]:[Debug_user] Wrong file extension.
+2020-08-27 12:13:27,488 [WARNING:image_processing] {upload_image:33} [USER]:[Debug_user] File is empty.
+2020-08-27 12:14:42,600 [WARNING:image_processing] {upload_image:33} [USER]:[Debug_user] File is empty.
+2020-08-27 12:15:14,342 [WARNING:image_processing] {upload_image:33} [USER]:[Debug_user] File is empty.
+2020-08-27 12:15:39,949 [WARNING:image_processing] {upload_image:33} [USER]:[Debug_user] File is empty.
+2020-08-27 12:16:57,795 [WARNING:image_processing] {upload_image:33} [USER]:[Debug_user] File is empty.
+2020-08-27 12:17:17,614 [WARNING:image_processing] {upload_image:33} [USER]:[Debug_user] File is empty.
+2020-08-27 12:17:36,651 [WARNING:image_processing] {upload_image:33} [USER]:[Debug_user] File is empty.
+2020-08-27 12:17:39,077 [WARNING:image_processing] {upload_image:33} [USER]:[Debug_user] File is empty.
+2020-08-27 12:17:43,523 [WARNING:image_processing] {upload_image:33} [USER]:[Debug_user] File is empty.
+2020-08-27 12:18:09,826 [INFO:main] {<module>:16} [SYSTEM]:Created flask app.
+2020-08-27 12:18:09,832 [INFO:main] {<module>:18} [SYSTEM]:Registered image_processing_api blueprint 
+2020-08-27 12:18:09,834 [INFO:main] {<module>:20} [SYSTEM]:Registered user_api blueprint 
+2020-08-27 12:18:09,844 [INFO:main] {<module>:22} [SYSTEM]:Registered model_management_api blueprint 
+2020-08-27 12:18:09,847 [INFO:main] {<module>:24} [SYSTEM]:Registered log_management_api blueprint 
+2020-08-27 12:18:15,525 [INFO:main] {<module>:16} [SYSTEM]:Created flask app.
+2020-08-27 12:18:15,530 [INFO:main] {<module>:18} [SYSTEM]:Registered image_processing_api blueprint 
+2020-08-27 12:18:15,532 [INFO:main] {<module>:20} [SYSTEM]:Registered user_api blueprint 
+2020-08-27 12:18:15,539 [INFO:main] {<module>:22} [SYSTEM]:Registered model_management_api blueprint 
+2020-08-27 12:18:15,542 [INFO:main] {<module>:24} [SYSTEM]:Registered log_management_api blueprint 
+2020-08-27 12:18:24,285 [INFO:main] {<module>:16} [SYSTEM]:Created flask app.
+2020-08-27 12:18:24,290 [INFO:main] {<module>:18} [SYSTEM]:Registered image_processing_api blueprint 
+2020-08-27 12:18:24,291 [INFO:main] {<module>:20} [SYSTEM]:Registered user_api blueprint 
+2020-08-27 12:18:24,296 [INFO:main] {<module>:22} [SYSTEM]:Registered model_management_api blueprint 
+2020-08-27 12:18:24,298 [INFO:main] {<module>:24} [SYSTEM]:Registered log_management_api blueprint 
+2020-08-27 12:18:29,584 [INFO:main] {<module>:16} [SYSTEM]:Created flask app.
+2020-08-27 12:18:29,596 [INFO:main] {<module>:18} [SYSTEM]:Registered image_processing_api blueprint 
+2020-08-27 12:18:29,598 [INFO:main] {<module>:20} [SYSTEM]:Registered user_api blueprint 
+2020-08-27 12:18:29,610 [INFO:main] {<module>:22} [SYSTEM]:Registered model_management_api blueprint 
+2020-08-27 12:18:29,612 [INFO:main] {<module>:24} [SYSTEM]:Registered log_management_api blueprint 
+2020-08-27 12:18:35,829 [INFO:main] {<module>:16} [SYSTEM]:Created flask app.
+2020-08-27 12:18:35,869 [INFO:main] {<module>:18} [SYSTEM]:Registered image_processing_api blueprint 
+2020-08-27 12:18:35,892 [INFO:main] {<module>:20} [SYSTEM]:Registered user_api blueprint 
+2020-08-27 12:18:35,938 [INFO:main] {<module>:22} [SYSTEM]:Registered model_management_api blueprint 
+2020-08-27 12:18:35,961 [INFO:main] {<module>:24} [SYSTEM]:Registered log_management_api blueprint 
+2020-08-27 12:18:40,454 [WARNING:image_processing] {upload_image:33} [USER]:[Debug_user] File is empty.
+2020-08-27 12:18:46,627 [WARNING:image_processing] {upload_image:33} [USER]:[Debug_user] File is empty.
+2020-08-27 12:18:57,422 [INFO:main] {<module>:16} [SYSTEM]:Created flask app.
+2020-08-27 12:18:57,426 [INFO:main] {<module>:18} [SYSTEM]:Registered image_processing_api blueprint 
+2020-08-27 12:18:57,428 [INFO:main] {<module>:20} [SYSTEM]:Registered user_api blueprint 
+2020-08-27 12:18:57,431 [INFO:main] {<module>:22} [SYSTEM]:Registered model_management_api blueprint 
+2020-08-27 12:18:57,432 [INFO:main] {<module>:24} [SYSTEM]:Registered log_management_api blueprint 
+2020-08-27 12:18:58,470 [WARNING:image_processing] {upload_image:33} [USER]:[Debug_user] File is empty.
+2020-08-27 12:19:22,812 [INFO:main] {<module>:16} [SYSTEM]:Created flask app.
+2020-08-27 12:19:22,815 [INFO:main] {<module>:18} [SYSTEM]:Registered image_processing_api blueprint 
+2020-08-27 12:19:22,816 [INFO:main] {<module>:20} [SYSTEM]:Registered user_api blueprint 
+2020-08-27 12:19:22,820 [INFO:main] {<module>:22} [SYSTEM]:Registered model_management_api blueprint 
+2020-08-27 12:19:22,820 [INFO:main] {<module>:24} [SYSTEM]:Registered log_management_api blueprint 
+2020-08-27 12:19:23,140 [WARNING:image_processing] {upload_image:33} [USER]:[Debug_user] File is empty.
+2020-08-27 12:19:33,414 [INFO:main] {<module>:16} [SYSTEM]:Created flask app.
+2020-08-27 12:19:33,421 [INFO:main] {<module>:18} [SYSTEM]:Registered image_processing_api blueprint 
+2020-08-27 12:19:33,423 [INFO:main] {<module>:20} [SYSTEM]:Registered user_api blueprint 
+2020-08-27 12:19:33,431 [INFO:main] {<module>:22} [SYSTEM]:Registered model_management_api blueprint 
+2020-08-27 12:19:33,434 [INFO:main] {<module>:24} [SYSTEM]:Registered log_management_api blueprint 
+2020-08-27 12:19:36,517 [INFO:main] {<module>:16} [SYSTEM]:Created flask app.
+2020-08-27 12:19:36,521 [INFO:main] {<module>:18} [SYSTEM]:Registered image_processing_api blueprint 
+2020-08-27 12:19:36,522 [INFO:main] {<module>:20} [SYSTEM]:Registered user_api blueprint 
+2020-08-27 12:19:36,526 [INFO:main] {<module>:22} [SYSTEM]:Registered model_management_api blueprint 
+2020-08-27 12:19:36,528 [INFO:main] {<module>:24} [SYSTEM]:Registered log_management_api blueprint 
+2020-08-27 12:19:41,229 [INFO:main] {<module>:16} [SYSTEM]:Created flask app.
+2020-08-27 12:19:41,233 [INFO:main] {<module>:18} [SYSTEM]:Registered image_processing_api blueprint 
+2020-08-27 12:19:41,234 [INFO:main] {<module>:20} [SYSTEM]:Registered user_api blueprint 
+2020-08-27 12:19:41,237 [INFO:main] {<module>:22} [SYSTEM]:Registered model_management_api blueprint 
+2020-08-27 12:19:41,238 [INFO:main] {<module>:24} [SYSTEM]:Registered log_management_api blueprint 
+2020-08-27 12:19:44,374 [WARNING:image_processing] {upload_image:33} [USER]:[Debug_user] File is empty.
+2020-08-27 12:19:53,574 [WARNING:image_processing] {upload_image:39} [USER]:[Debug_user] Wrong file extension.
+2020-08-27 12:20:09,839 [INFO:main] {<module>:16} [SYSTEM]:Created flask app.
+2020-08-27 12:20:09,843 [INFO:main] {<module>:18} [SYSTEM]:Registered image_processing_api blueprint 
+2020-08-27 12:20:09,845 [INFO:main] {<module>:20} [SYSTEM]:Registered user_api blueprint 
+2020-08-27 12:20:09,850 [INFO:main] {<module>:22} [SYSTEM]:Registered model_management_api blueprint 
+2020-08-27 12:20:09,854 [INFO:main] {<module>:24} [SYSTEM]:Registered log_management_api blueprint 
+2020-08-27 12:20:14,067 [INFO:main] {<module>:16} [SYSTEM]:Created flask app.
+2020-08-27 12:20:14,071 [INFO:main] {<module>:18} [SYSTEM]:Registered image_processing_api blueprint 
+2020-08-27 12:20:14,072 [INFO:main] {<module>:20} [SYSTEM]:Registered user_api blueprint 
+2020-08-27 12:20:14,076 [INFO:main] {<module>:22} [SYSTEM]:Registered model_management_api blueprint 
+2020-08-27 12:20:14,077 [INFO:main] {<module>:24} [SYSTEM]:Registered log_management_api blueprint 
+2020-08-27 12:20:17,372 [INFO:main] {<module>:16} [SYSTEM]:Created flask app.
+2020-08-27 12:20:17,376 [INFO:main] {<module>:18} [SYSTEM]:Registered image_processing_api blueprint 
+2020-08-27 12:20:17,377 [INFO:main] {<module>:20} [SYSTEM]:Registered user_api blueprint 
+2020-08-27 12:20:17,380 [INFO:main] {<module>:22} [SYSTEM]:Registered model_management_api blueprint 
+2020-08-27 12:20:17,381 [INFO:main] {<module>:24} [SYSTEM]:Registered log_management_api blueprint 
+2020-08-27 12:20:24,298 [INFO:main] {<module>:16} [SYSTEM]:Created flask app.
+2020-08-27 12:20:24,303 [INFO:main] {<module>:18} [SYSTEM]:Registered image_processing_api blueprint 
+2020-08-27 12:20:24,305 [INFO:main] {<module>:20} [SYSTEM]:Registered user_api blueprint 
+2020-08-27 12:20:24,317 [INFO:main] {<module>:22} [SYSTEM]:Registered model_management_api blueprint 
+2020-08-27 12:20:24,319 [INFO:main] {<module>:24} [SYSTEM]:Registered log_management_api blueprint 
+2020-08-27 12:20:31,138 [INFO:main] {<module>:16} [SYSTEM]:Created flask app.
+2020-08-27 12:20:31,142 [INFO:main] {<module>:18} [SYSTEM]:Registered image_processing_api blueprint 
+2020-08-27 12:20:31,143 [INFO:main] {<module>:20} [SYSTEM]:Registered user_api blueprint 
+2020-08-27 12:20:31,147 [INFO:main] {<module>:22} [SYSTEM]:Registered model_management_api blueprint 
+2020-08-27 12:20:31,148 [INFO:main] {<module>:24} [SYSTEM]:Registered log_management_api blueprint 
+2020-08-27 12:20:41,419 [WARNING:image_processing] {upload_image:39} [USER]:[Debug_user] Wrong file extension.
+2020-08-27 12:20:45,635 [WARNING:image_processing] {upload_image:39} [USER]:[Debug_user] Wrong file extension.
+2020-08-27 12:20:48,867 [WARNING:image_processing] {upload_image:39} [USER]:[Debug_user] Wrong file extension.
+2020-08-27 12:22:37,836 [INFO:main] {<module>:16} [SYSTEM]:Created flask app.
+2020-08-27 12:22:37,840 [INFO:main] {<module>:18} [SYSTEM]:Registered image_processing_api blueprint 
+2020-08-27 12:22:37,841 [INFO:main] {<module>:20} [SYSTEM]:Registered user_api blueprint 
+2020-08-27 12:22:37,845 [INFO:main] {<module>:22} [SYSTEM]:Registered model_management_api blueprint 
+2020-08-27 12:22:37,846 [INFO:main] {<module>:24} [SYSTEM]:Registered log_management_api blueprint 
+2020-08-27 12:24:45,645 [INFO:main] {<module>:16} [SYSTEM]:Created flask app.
+2020-08-27 12:24:45,652 [INFO:main] {<module>:18} [SYSTEM]:Registered image_processing_api blueprint 
+2020-08-27 12:24:45,654 [INFO:main] {<module>:20} [SYSTEM]:Registered user_api blueprint 
+2020-08-27 12:24:45,666 [INFO:main] {<module>:22} [SYSTEM]:Registered model_management_api blueprint 
+2020-08-27 12:24:45,667 [INFO:main] {<module>:24} [SYSTEM]:Registered log_management_api blueprint 
+2020-08-27 12:24:48,476 [INFO:main] {<module>:16} [SYSTEM]:Created flask app.
+2020-08-27 12:24:48,484 [INFO:main] {<module>:18} [SYSTEM]:Registered image_processing_api blueprint 
+2020-08-27 12:24:48,486 [INFO:main] {<module>:20} [SYSTEM]:Registered user_api blueprint 
+2020-08-27 12:24:48,497 [INFO:main] {<module>:22} [SYSTEM]:Registered model_management_api blueprint 
+2020-08-27 12:24:48,499 [INFO:main] {<module>:24} [SYSTEM]:Registered log_management_api blueprint 
+2020-08-27 12:25:12,307 [WARNING:image_processing] {upload_image:42} [USER]:[Debug_user] Wrong unit id. This ID dose not match any unit id on dpml_unit
+2020-08-27 12:26:22,958 [WARNING:image_processing] {upload_image:42} [USER]:[Debug_user] Wrong unit id. This ID dose not match any unit id on dpml_unit
+2020-08-27 12:26:26,635 [WARNING:image_processing] {upload_image:42} [USER]:[Debug_user] Wrong unit id. This ID dose not match any unit id on dpml_unit
+2020-08-27 12:26:28,475 [WARNING:image_processing] {upload_image:42} [USER]:[Debug_user] Wrong unit id. This ID dose not match any unit id on dpml_unit
+2020-08-27 12:26:57,853 [INFO:main] {<module>:16} [SYSTEM]:Created flask app.
+2020-08-27 12:26:57,858 [INFO:main] {<module>:18} [SYSTEM]:Registered image_processing_api blueprint 
+2020-08-27 12:26:57,860 [INFO:main] {<module>:20} [SYSTEM]:Registered user_api blueprint 
+2020-08-27 12:26:57,865 [INFO:main] {<module>:22} [SYSTEM]:Registered model_management_api blueprint 
+2020-08-27 12:26:57,869 [INFO:main] {<module>:24} [SYSTEM]:Registered log_management_api blueprint 
+2020-08-27 12:27:00,798 [INFO:main] {<module>:16} [SYSTEM]:Created flask app.
+2020-08-27 12:27:00,802 [INFO:main] {<module>:18} [SYSTEM]:Registered image_processing_api blueprint 
+2020-08-27 12:27:00,803 [INFO:main] {<module>:20} [SYSTEM]:Registered user_api blueprint 
+2020-08-27 12:27:00,807 [INFO:main] {<module>:22} [SYSTEM]:Registered model_management_api blueprint 
+2020-08-27 12:27:00,809 [INFO:main] {<module>:24} [SYSTEM]:Registered log_management_api blueprint 
+2020-08-27 12:27:07,299 [INFO:main] {<module>:16} [SYSTEM]:Created flask app.
+2020-08-27 12:27:07,303 [INFO:main] {<module>:18} [SYSTEM]:Registered image_processing_api blueprint 
+2020-08-27 12:27:07,304 [INFO:main] {<module>:20} [SYSTEM]:Registered user_api blueprint 
+2020-08-27 12:27:07,307 [INFO:main] {<module>:22} [SYSTEM]:Registered model_management_api blueprint 
+2020-08-27 12:27:07,309 [INFO:main] {<module>:24} [SYSTEM]:Registered log_management_api blueprint 
+2020-08-27 12:27:10,359 [INFO:main] {<module>:16} [SYSTEM]:Created flask app.
+2020-08-27 12:27:10,364 [INFO:main] {<module>:18} [SYSTEM]:Registered image_processing_api blueprint 
+2020-08-27 12:27:10,365 [INFO:main] {<module>:20} [SYSTEM]:Registered user_api blueprint 
+2020-08-27 12:27:10,368 [INFO:main] {<module>:22} [SYSTEM]:Registered model_management_api blueprint 
+2020-08-27 12:27:10,369 [INFO:main] {<module>:24} [SYSTEM]:Registered log_management_api blueprint 
+2020-08-27 12:27:14,506 [INFO:main] {<module>:16} [SYSTEM]:Created flask app.
+2020-08-27 12:27:14,511 [INFO:main] {<module>:18} [SYSTEM]:Registered image_processing_api blueprint 
+2020-08-27 12:27:14,512 [INFO:main] {<module>:20} [SYSTEM]:Registered user_api blueprint 
+2020-08-27 12:27:14,519 [INFO:main] {<module>:22} [SYSTEM]:Registered model_management_api blueprint 
+2020-08-27 12:27:14,521 [INFO:main] {<module>:24} [SYSTEM]:Registered log_management_api blueprint 
+2020-08-27 12:27:18,722 [INFO:main] {<module>:16} [SYSTEM]:Created flask app.
+2020-08-27 12:27:18,725 [INFO:main] {<module>:18} [SYSTEM]:Registered image_processing_api blueprint 
+2020-08-27 12:27:18,726 [INFO:main] {<module>:20} [SYSTEM]:Registered user_api blueprint 
+2020-08-27 12:27:18,730 [INFO:main] {<module>:22} [SYSTEM]:Registered model_management_api blueprint 
+2020-08-27 12:27:18,731 [INFO:main] {<module>:24} [SYSTEM]:Registered log_management_api blueprint 
+2020-08-27 12:27:21,832 [INFO:main] {<module>:16} [SYSTEM]:Created flask app.
+2020-08-27 12:27:21,835 [INFO:main] {<module>:18} [SYSTEM]:Registered image_processing_api blueprint 
+2020-08-27 12:27:21,836 [INFO:main] {<module>:20} [SYSTEM]:Registered user_api blueprint 
+2020-08-27 12:27:21,840 [INFO:main] {<module>:22} [SYSTEM]:Registered model_management_api blueprint 
+2020-08-27 12:27:21,841 [INFO:main] {<module>:24} [SYSTEM]:Registered log_management_api blueprint 
+2020-08-27 12:27:25,048 [WARNING:image_processing] {upload_image:42} [USER]:[Debug_user] Wrong unit id. This ID dose not match any unit id on dpml_unit
+2020-08-27 12:27:34,528 [WARNING:image_processing] {upload_image:42} [USER]:[Debug_user] Wrong unit id. This ID dose not match any unit id on dpml_unit
+2020-08-27 12:27:36,346 [WARNING:image_processing] {upload_image:42} [USER]:[Debug_user] Wrong unit id. This ID dose not match any unit id on dpml_unit
+2020-08-27 12:27:39,240 [WARNING:image_processing] {upload_image:42} [USER]:[Debug_user] Wrong unit id. This ID dose not match any unit id on dpml_unit
+2020-08-27 12:30:47,795 [WARNING:image_processing] {upload_image:42} [USER]:[Debug_user] Wrong unit id. This ID dose not match any unit id on dpml_unit
+2020-08-27 12:30:52,215 [WARNING:image_processing] {upload_image:42} [USER]:[Debug_user] Wrong unit id. This ID dose not match any unit id on dpml_unit
+2020-08-27 12:31:04,645 [WARNING:image_processing] {upload_image:42} [USER]:[Debug_user] Wrong unit id. This ID dose not match any unit id on dpml_unit
+2020-08-27 13:19:33,269 [WARNING:image_processing] {upload_image:39} [USER]:[Debug_user] Wrong file extension.
+2020-08-27 13:20:13,470 [WARNING:image_processing] {upload_image:42} [USER]:[Debug_user] Wrong unit id. This ID dose not match any unit id on dpml_unit
+2020-08-27 13:21:00,898 [INFO:main] {<module>:16} [SYSTEM]:Created flask app.
+2020-08-27 13:21:00,902 [INFO:main] {<module>:18} [SYSTEM]:Registered image_processing_api blueprint 
+2020-08-27 13:21:00,903 [INFO:main] {<module>:20} [SYSTEM]:Registered user_api blueprint 
+2020-08-27 13:21:00,913 [INFO:main] {<module>:22} [SYSTEM]:Registered model_management_api blueprint 
+2020-08-27 13:21:00,914 [INFO:main] {<module>:24} [SYSTEM]:Registered log_management_api blueprint 
+2020-08-27 13:21:08,616 [WARNING:image_processing] {upload_image:42} [USER]:[Debug_user] Wrong unit id. This ID dose not match any unit id on dpml_unit
+2020-08-27 13:21:23,290 [INFO:main] {<module>:16} [SYSTEM]:Created flask app.
+2020-08-27 13:21:23,298 [INFO:main] {<module>:18} [SYSTEM]:Registered image_processing_api blueprint 
+2020-08-27 13:21:23,304 [INFO:main] {<module>:20} [SYSTEM]:Registered user_api blueprint 
+2020-08-27 13:21:23,314 [INFO:main] {<module>:22} [SYSTEM]:Registered model_management_api blueprint 
+2020-08-27 13:21:23,321 [INFO:main] {<module>:24} [SYSTEM]:Registered log_management_api blueprint 
+2020-08-27 13:21:31,076 [INFO:main] {<module>:16} [SYSTEM]:Created flask app.
+2020-08-27 13:21:31,083 [INFO:main] {<module>:18} [SYSTEM]:Registered image_processing_api blueprint 
+2020-08-27 13:21:31,085 [INFO:main] {<module>:20} [SYSTEM]:Registered user_api blueprint 
+2020-08-27 13:21:31,094 [INFO:main] {<module>:22} [SYSTEM]:Registered model_management_api blueprint 
+2020-08-27 13:21:31,096 [INFO:main] {<module>:24} [SYSTEM]:Registered log_management_api blueprint 
+2020-08-27 13:21:34,456 [INFO:main] {<module>:16} [SYSTEM]:Created flask app.
+2020-08-27 13:21:34,463 [INFO:main] {<module>:18} [SYSTEM]:Registered image_processing_api blueprint 
+2020-08-27 13:21:34,465 [INFO:main] {<module>:20} [SYSTEM]:Registered user_api blueprint 
+2020-08-27 13:21:34,473 [INFO:main] {<module>:22} [SYSTEM]:Registered model_management_api blueprint 
+2020-08-27 13:21:34,474 [INFO:main] {<module>:24} [SYSTEM]:Registered log_management_api blueprint 
+2020-08-27 13:21:37,722 [INFO:main] {<module>:16} [SYSTEM]:Created flask app.
+2020-08-27 13:21:37,726 [INFO:main] {<module>:18} [SYSTEM]:Registered image_processing_api blueprint 
+2020-08-27 13:21:37,727 [INFO:main] {<module>:20} [SYSTEM]:Registered user_api blueprint 
+2020-08-27 13:21:37,730 [INFO:main] {<module>:22} [SYSTEM]:Registered model_management_api blueprint 
+2020-08-27 13:21:37,732 [INFO:main] {<module>:24} [SYSTEM]:Registered log_management_api blueprint 
+2020-08-27 13:21:40,379 [WARNING:image_processing] {upload_image:42} [USER]:[Debug_user] Wrong unit id. This ID dose not match any unit id on dpml_unit
+2020-08-27 13:22:07,609 [INFO:main] {<module>:16} [SYSTEM]:Created flask app.
+2020-08-27 13:22:07,613 [INFO:main] {<module>:18} [SYSTEM]:Registered image_processing_api blueprint 
+2020-08-27 13:22:07,614 [INFO:main] {<module>:20} [SYSTEM]:Registered user_api blueprint 
+2020-08-27 13:22:07,618 [INFO:main] {<module>:22} [SYSTEM]:Registered model_management_api blueprint 
+2020-08-27 13:22:07,620 [INFO:main] {<module>:24} [SYSTEM]:Registered log_management_api blueprint 
+2020-08-27 13:23:44,017 [INFO:main] {<module>:16} [SYSTEM]:Created flask app.
+2020-08-27 13:23:44,028 [INFO:main] {<module>:18} [SYSTEM]:Registered image_processing_api blueprint 
+2020-08-27 13:23:44,030 [INFO:main] {<module>:20} [SYSTEM]:Registered user_api blueprint 
+2020-08-27 13:23:44,036 [INFO:main] {<module>:22} [SYSTEM]:Registered model_management_api blueprint 
+2020-08-27 13:23:44,037 [INFO:main] {<module>:24} [SYSTEM]:Registered log_management_api blueprint 
+2020-08-27 13:23:54,606 [INFO:main] {<module>:16} [SYSTEM]:Created flask app.
+2020-08-27 13:23:54,610 [INFO:main] {<module>:18} [SYSTEM]:Registered image_processing_api blueprint 
+2020-08-27 13:23:54,611 [INFO:main] {<module>:20} [SYSTEM]:Registered user_api blueprint 
+2020-08-27 13:23:54,614 [INFO:main] {<module>:22} [SYSTEM]:Registered model_management_api blueprint 
+2020-08-27 13:23:54,615 [INFO:main] {<module>:24} [SYSTEM]:Registered log_management_api blueprint 
+2020-08-27 13:25:59,412 [INFO:main] {<module>:16} [SYSTEM]:Created flask app.
+2020-08-27 13:25:59,416 [INFO:main] {<module>:18} [SYSTEM]:Registered image_processing_api blueprint 
+2020-08-27 13:25:59,417 [INFO:main] {<module>:20} [SYSTEM]:Registered user_api blueprint 
+2020-08-27 13:25:59,421 [INFO:main] {<module>:22} [SYSTEM]:Registered model_management_api blueprint 
+2020-08-27 13:25:59,422 [INFO:main] {<module>:24} [SYSTEM]:Registered log_management_api blueprint 
+2020-08-27 13:26:00,933 [WARNING:image_processing] {upload_image:33} [USER]:[Debug_user] File is empty.
+2020-08-27 13:26:30,172 [INFO:main] {<module>:16} [SYSTEM]:Created flask app.
+2020-08-27 13:26:30,176 [INFO:main] {<module>:18} [SYSTEM]:Registered image_processing_api blueprint 
+2020-08-27 13:26:30,179 [INFO:main] {<module>:20} [SYSTEM]:Registered user_api blueprint 
+2020-08-27 13:26:30,187 [INFO:main] {<module>:22} [SYSTEM]:Registered model_management_api blueprint 
+2020-08-27 13:26:30,188 [INFO:main] {<module>:24} [SYSTEM]:Registered log_management_api blueprint 
+2020-08-27 13:26:46,398 [INFO:main] {<module>:16} [SYSTEM]:Created flask app.
+2020-08-27 13:26:46,401 [INFO:main] {<module>:18} [SYSTEM]:Registered image_processing_api blueprint 
+2020-08-27 13:26:46,403 [INFO:main] {<module>:20} [SYSTEM]:Registered user_api blueprint 
+2020-08-27 13:26:46,412 [INFO:main] {<module>:22} [SYSTEM]:Registered model_management_api blueprint 
+2020-08-27 13:26:46,413 [INFO:main] {<module>:24} [SYSTEM]:Registered log_management_api blueprint 
+2020-08-27 13:26:46,863 [DEBUG:image_processing] {upload_image:32} [USER]:un_id: None
+2020-08-27 13:29:26,910 [DEBUG:image_processing] {upload_image:32} [USER]:un_id: None
+2020-08-27 13:29:29,846 [DEBUG:image_processing] {upload_image:32} [USER]:un_id: None
+2020-08-27 13:29:33,444 [DEBUG:image_processing] {upload_image:32} [USER]:un_id: None
+2020-08-27 13:30:10,945 [DEBUG:image_processing] {upload_image:32} [USER]:un_id: None
+2020-08-27 13:31:04,671 [INFO:main] {<module>:16} [SYSTEM]:Created flask app.
+2020-08-27 13:31:04,678 [INFO:main] {<module>:18} [SYSTEM]:Registered image_processing_api blueprint 
+2020-08-27 13:31:04,680 [INFO:main] {<module>:20} [SYSTEM]:Registered user_api blueprint 
+2020-08-27 13:31:04,691 [INFO:main] {<module>:22} [SYSTEM]:Registered model_management_api blueprint 
+2020-08-27 13:31:04,692 [INFO:main] {<module>:24} [SYSTEM]:Registered log_management_api blueprint 
+2020-08-27 13:31:16,025 [DEBUG:image_processing] {upload_image:32} [USER]:un_id: 1
+2020-08-27 13:31:16,025 [DEBUG:image_processing] {upload_image:43} [USER]:un_id: 1
+2020-08-27 13:31:16,026 [WARNING:image_processing] {upload_image:44} [USER]:[Debug_user] Wrong unit id. This ID dose not match any unit id on dpml_unit
+2020-08-27 13:31:20,201 [DEBUG:image_processing] {upload_image:32} [USER]:un_id: 1
+2020-08-27 13:31:20,204 [DEBUG:image_processing] {upload_image:43} [USER]:un_id: 1
+2020-08-27 13:31:20,228 [WARNING:image_processing] {upload_image:44} [USER]:[Debug_user] Wrong unit id. This ID dose not match any unit id on dpml_unit
+2020-08-27 13:32:12,448 [INFO:main] {<module>:16} [SYSTEM]:Created flask app.
+2020-08-27 13:32:12,452 [INFO:main] {<module>:18} [SYSTEM]:Registered image_processing_api blueprint 
+2020-08-27 13:32:12,453 [INFO:main] {<module>:20} [SYSTEM]:Registered user_api blueprint 
+2020-08-27 13:32:12,456 [INFO:main] {<module>:22} [SYSTEM]:Registered model_management_api blueprint 
+2020-08-27 13:32:12,458 [INFO:main] {<module>:24} [SYSTEM]:Registered log_management_api blueprint 
+2020-08-27 13:32:12,886 [DEBUG:image_processing] {upload_image:32} [USER]:un_id: 1
+2020-08-27 13:32:55,744 [INFO:main] {<module>:16} [SYSTEM]:Created flask app.
+2020-08-27 13:32:55,748 [INFO:main] {<module>:18} [SYSTEM]:Registered image_processing_api blueprint 
+2020-08-27 13:32:55,749 [INFO:main] {<module>:20} [SYSTEM]:Registered user_api blueprint 
+2020-08-27 13:32:55,752 [INFO:main] {<module>:22} [SYSTEM]:Registered model_management_api blueprint 
+2020-08-27 13:32:55,753 [INFO:main] {<module>:24} [SYSTEM]:Registered log_management_api blueprint 
+2020-08-27 13:35:11,600 [INFO:main] {<module>:16} [SYSTEM]:Created flask app.
+2020-08-27 13:35:11,605 [INFO:main] {<module>:18} [SYSTEM]:Registered image_processing_api blueprint 
+2020-08-27 13:35:11,606 [INFO:main] {<module>:20} [SYSTEM]:Registered user_api blueprint 
+2020-08-27 13:35:11,610 [INFO:main] {<module>:22} [SYSTEM]:Registered model_management_api blueprint 
+2020-08-27 13:35:11,611 [INFO:main] {<module>:24} [SYSTEM]:Registered log_management_api blueprint 
+2020-08-27 13:35:12,818 [INFO:main] {<module>:16} [SYSTEM]:Created flask app.
+2020-08-27 13:35:12,822 [INFO:main] {<module>:18} [SYSTEM]:Registered image_processing_api blueprint 
+2020-08-27 13:35:12,823 [INFO:main] {<module>:20} [SYSTEM]:Registered user_api blueprint 
+2020-08-27 13:35:12,826 [INFO:main] {<module>:22} [SYSTEM]:Registered model_management_api blueprint 
+2020-08-27 13:35:12,827 [INFO:main] {<module>:24} [SYSTEM]:Registered log_management_api blueprint 
+2020-08-27 13:35:25,295 [DEBUG:image_processing] {upload_image:40} [USER]:un_id: 0
+2020-08-27 13:35:25,295 [WARNING:image_processing] {upload_image:42} [USER]:[Debug_user] File is empty.
+2020-08-27 13:35:42,795 [DEBUG:image_processing] {upload_image:40} [USER]:un_id: 0
+2020-08-27 13:35:42,796 [DEBUG:image_processing] {upload_image:51} [USER]:un_id: 0
+2020-08-27 13:35:42,796 [WARNING:image_processing] {upload_image:52} [USER]:[Debug_user] Wrong unit id. This ID dose not match any unit id on dpml_unit
+2020-08-27 13:35:46,448 [DEBUG:image_processing] {upload_image:40} [USER]:un_id: 3
+2020-08-27 13:36:00,969 [INFO:main] {<module>:16} [SYSTEM]:Created flask app.
+2020-08-27 13:36:00,974 [INFO:main] {<module>:18} [SYSTEM]:Registered image_processing_api blueprint 
+2020-08-27 13:36:00,976 [INFO:main] {<module>:20} [SYSTEM]:Registered user_api blueprint 
+2020-08-27 13:36:00,990 [INFO:main] {<module>:22} [SYSTEM]:Registered model_management_api blueprint 
+2020-08-27 13:36:00,991 [INFO:main] {<module>:24} [SYSTEM]:Registered log_management_api blueprint 
+2020-08-27 13:36:04,576 [INFO:main] {<module>:16} [SYSTEM]:Created flask app.
+2020-08-27 13:36:04,583 [INFO:main] {<module>:18} [SYSTEM]:Registered image_processing_api blueprint 
+2020-08-27 13:36:04,585 [INFO:main] {<module>:20} [SYSTEM]:Registered user_api blueprint 
+2020-08-27 13:36:04,596 [INFO:main] {<module>:22} [SYSTEM]:Registered model_management_api blueprint 
+2020-08-27 13:36:04,598 [INFO:main] {<module>:24} [SYSTEM]:Registered log_management_api blueprint 
+2020-08-27 13:36:11,647 [INFO:main] {<module>:16} [SYSTEM]:Created flask app.
+2020-08-27 13:36:11,652 [INFO:main] {<module>:18} [SYSTEM]:Registered image_processing_api blueprint 
+2020-08-27 13:36:11,654 [INFO:main] {<module>:20} [SYSTEM]:Registered user_api blueprint 
+2020-08-27 13:36:11,658 [INFO:main] {<module>:22} [SYSTEM]:Registered model_management_api blueprint 
+2020-08-27 13:36:11,660 [INFO:main] {<module>:24} [SYSTEM]:Registered log_management_api blueprint 
+2020-08-27 13:37:42,302 [WARNING:image_processing] {upload_image:42} [USER]:[Debug_user] File is empty.
+2020-08-27 13:41:10,187 [WARNING:image_processing] {upload_image:48} [USER]:[Debug_user] Wrong file extension.
+2020-08-27 13:41:12,622 [WARNING:image_processing] {upload_image:48} [USER]:[Debug_user] Wrong file extension.
+2020-08-27 13:41:33,509 [WARNING:image_processing] {upload_image:42} [USER]:[Debug_user] File is empty.
+2020-08-27 13:41:45,151 [WARNING:image_processing] {upload_image:48} [USER]:[Debug_user] Wrong file extension.
+2020-08-27 13:59:58,204 [WARNING:image_processing] {upload_image:42} [USER]:[Debug_user] File is empty.
+2020-08-27 14:00:03,366 [WARNING:image_processing] {upload_image:42} [USER]:[Debug_user] File is empty.
+2020-08-27 14:00:11,984 [WARNING:image_processing] {upload_image:42} [USER]:[Debug_user] File is empty.
+2020-08-27 14:00:16,036 [WARNING:image_processing] {upload_image:42} [USER]:[Debug_user] File is empty.
+2020-08-27 14:00:56,084 [WARNING:image_processing] {upload_image:42} [USER]:[Debug_user] File is empty.
+2020-08-27 14:00:57,899 [WARNING:image_processing] {upload_image:42} [USER]:[Debug_user] File is empty.
+2020-08-27 14:00:59,996 [WARNING:image_processing] {upload_image:42} [USER]:[Debug_user] File is empty.
+2020-08-27 14:01:00,039 [WARNING:image_processing] {upload_image:42} [USER]:[Debug_user] File is empty.
+2020-08-27 14:01:00,725 [WARNING:image_processing] {upload_image:42} [USER]:[Debug_user] File is empty.
+2020-08-27 14:01:02,804 [WARNING:image_processing] {upload_image:42} [USER]:[Debug_user] File is empty.
+2020-08-27 14:01:12,447 [WARNING:image_processing] {upload_image:42} [USER]:[Debug_user] File is empty.
+2020-08-27 14:01:15,311 [WARNING:image_processing] {upload_image:42} [USER]:[Debug_user] File is empty.
+2020-08-27 14:01:26,150 [WARNING:image_processing] {upload_image:42} [USER]:[Debug_user] File is empty.
+2020-08-27 14:10:30,059 [WARNING:image_processing] {upload_image:42} [USER]:[Debug_user] File is empty.
+2020-08-27 17:31:51,112 [WARNING:image_processing] {upload_image:48} [USER]:[Debug_user] Wrong file extension.
+2020-08-27 17:33:23,947 [INFO:main] {<module>:16} [SYSTEM]:Created flask app.
+2020-08-27 17:33:23,953 [INFO:main] {<module>:18} [SYSTEM]:Registered image_processing_api blueprint 
+2020-08-27 17:33:23,954 [INFO:main] {<module>:20} [SYSTEM]:Registered user_api blueprint 
+2020-08-27 17:33:23,963 [INFO:main] {<module>:22} [SYSTEM]:Registered model_management_api blueprint 
+2020-08-27 17:33:23,965 [INFO:main] {<module>:24} [SYSTEM]:Registered log_management_api blueprint 
+2020-08-27 17:52:51,889 [INFO:main] {<module>:16} [SYSTEM]:Created flask app.
+2020-08-27 17:52:51,893 [INFO:main] {<module>:18} [SYSTEM]:Registered image_processing_api blueprint 
+2020-08-27 17:52:51,894 [INFO:main] {<module>:20} [SYSTEM]:Registered user_api blueprint 
+2020-08-27 17:52:51,900 [INFO:main] {<module>:22} [SYSTEM]:Registered model_management_api blueprint 
+2020-08-27 17:52:51,902 [INFO:main] {<module>:24} [SYSTEM]:Registered log_management_api blueprint 
+2020-08-27 17:52:53,339 [INFO:main] {<module>:16} [SYSTEM]:Created flask app.
+2020-08-27 17:52:53,344 [INFO:main] {<module>:18} [SYSTEM]:Registered image_processing_api blueprint 
+2020-08-27 17:52:53,347 [INFO:main] {<module>:20} [SYSTEM]:Registered user_api blueprint 
+2020-08-27 17:52:53,351 [INFO:main] {<module>:22} [SYSTEM]:Registered model_management_api blueprint 
+2020-08-27 17:52:53,355 [INFO:main] {<module>:24} [SYSTEM]:Registered log_management_api blueprint 
