@@ -63,6 +63,10 @@ dict_config = {
         'user_management' : {
             'handlers': ["user"],
             'level': 'DEBUG',
+        },
+        'image_processing' : {
+            'handlers': ["user"],
+            'level': 'DEBUG',
         }
     },
     'root': {
