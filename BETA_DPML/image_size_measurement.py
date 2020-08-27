@@ -136,16 +136,28 @@ for c in cnts:
 	(tltrX, tltrY) = midpoint(tl, tr)
 	(blbrX, blbrY) = midpoint(bl, br)
 
+	# หาจุดกึ่งกลางของกล่องปิดล้อมวัตถุ
+	(center_x1, center_y1) = midpoint([tltrX, tltrY], [blbrX, blbrY])
+
     # คำนวณจุดกึ่งกลางระหว่าง บนซ้าย ล่างซ้าย 
     # และ บนขวา ล่างขวา 
 	(tlblX, tlblY) = midpoint(tl, bl)
 	(trbrX, trbrY) = midpoint(tr, br)
+	
+	
+	# หาจุดกึ่งกลางของกล่องปิดล้อมวัตถุ (อันนี้มีหรือไม่มีก็ได้ เพราะข้างบนคำนวณไปแล้ว)
+	(center_x2, center_y2) = midpoint([tlblX, tlblY], [trbrX, trbrY])
+
 
     # วาดรูปจุดกึ่งกลาง (middle point) จากที่คำนวณข้างต้น
 	cv2.circle(origin, (int(tltrX), int(tltrY)), 5, (255, 0, 0), -1)
 	cv2.circle(origin, (int(blbrX), int(blbrY)), 5, (255, 0, 0), -1)
 	cv2.circle(origin, (int(tlblX), int(tlblY)), 5, (255, 0, 0), -1)
 	cv2.circle(origin, (int(trbrX), int(trbrY)), 5, (255, 0, 0), -1)
+
+	# วาดจุดวงกลมของจุดกึ่งกลางของกล่องปิดล้อมวัตถุ
+	cv2.circle(origin, (int(center_x1), int(center_y1)), 5, (0, 100, 255), -1)
+	# cv2.circle(origin, (int(center_x2), int(center_y2)), 5, (0, 100, 255), -1)
 
     # ลางเส้นเชื่อมระหว่างจุดกึ่งกลาง
 	cv2.line(origin, (int(tltrX), int(tltrY)), (int(blbrX), int(blbrY)),
@@ -183,8 +195,8 @@ for c in cnts:
 	# origin = ResizeWithAspectRatio(origin, width=1080)
 	
 	# show the output image
-	cv2.imshow("Image", origin)
-	cv2.waitKey(0)
+cv2.imshow("Image", origin)
+cv2.waitKey(0)
 # cv2.imwrite("result_img.jpg",origin)
 # if (cv2.waitKey(0) & 0xFF) == 27:  
 # 	break
