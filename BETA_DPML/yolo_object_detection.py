@@ -11,7 +11,7 @@ net = cv2.dnn.readNet("yolov3_training_last.weights", "yolov3_testing.cfg")
 classes = ["Box"]
 
 # Images path
-images_path = glob.glob(r"C:\Users\First-AP\Desktop\Homework\4th Year\CSI_project\Photo\bg_blue.JPG")
+images_path = glob.glob(r"../Photo/box_green_screen.jpg")
 
 
 

@@ -68,24 +68,24 @@ args = vars(ap.parse_args())
 
 # นำเข้ารูปภาพจาก Path ที่ใส่มา
 image = cv2.imread(args["image"])
-image = ResizeWithAspectRatio(image, width=1500)
+# image = ResizeWithAspectRatio(image, width=1500)
 height, width = image.shape[:2]
 print(width)
 print(height)
 print("#####")
 # เปลี่ยนสีของรูปภาพให้เป็นสีเทา (grayscale)
-gray = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
+gray = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)	
 # เบลอรูปภาพเพื่่อให้ภาพ Smooth ขึ้นเล็กน้อย
-gray = cv2.GaussianBlur(gray, (5, 7), 0)
+gray = cv2.GaussianBlur(gray, (5, 5), 0)
 
 # cv2.Canny => การตีกรอบให้กับภาพ
-edged = cv2.Canny(gray, 50, 100)
+edged = cv2.Canny(gray, 10, 100)
 # dilate => ขยายเส้นขอบให้ใหญ่ขึ้น
 edged = cv2.dilate(edged, None, iterations=1)
 # dilate => ลบ Noise สีขาวออกจากรูปภาพ
 edged = cv2.erode(edged, None, iterations=1)
 
-# cv2.imshow("edged", edged)
+cv2.imshow("edged", edged)
 # writeImage(edged,"grayscale","eraser")
 # cv2.imshow("gray", gray)
 
@@ -109,7 +109,7 @@ for c in cnts:
 	# cv2.contourArea => คืนค่าพื้นที่ของรูปทรงที่ c มีหน่วยคือ pixel
     # ถ้าพื้นที่มีขนาดที่เล็กเกินไป จะข้ามไปยังรูปทรงถัดไป
 	# (cv2.contourArea(c)/args["width"]*args["width"]) คือการแปลงหน่วยจาก pixel^2 เป็น MM^2
-	if cv2.contourArea(c) < 1000:
+	if cv2.contourArea(c) < 3000:
 		continue
 
 	print ("========================")

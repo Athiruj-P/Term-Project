@@ -36,6 +36,7 @@ def midpoint(ptA, ptB):
 def ResizeWithAspectRatio(image, width=None, height=None, inter=cv2.INTER_AREA):
     dim = None
     (h, w) = image.shape[:2]
+
     if width is None and height is None:
         return image
     if width is None:
@@ -43,7 +44,8 @@ def ResizeWithAspectRatio(image, width=None, height=None, inter=cv2.INTER_AREA):
         dim = (int(w * r), height)
     else:
         r = width / float(w)
-        dim = (width, int(h * r)
+        dim = (width, int(h * r))
+
     return cv2.resize(image, dim, interpolation=inter)
 
 # get_background_mask
@@ -59,7 +61,7 @@ def get_background_mask(image, color):
         mask02 = cv2.inRange( image, np.array([175, 50, 20]), np.array([180, 255, 255]) )
         return cv2.bitwise_or(mask01, mask02)
     elif color == "green":
-        return cv2.inRange( image, np.array([39, 23, 111]), np.array([102, 255, 255]) )
+        return cv2.inRange( image, np.array([39, 23, 111]), np.array([104, 255, 255]) )
     elif color == "blue":
         return cv2.inRange( image, np.array([94, 80, 2]), np.array([126, 255, 255]) )
     else:
@@ -72,8 +74,8 @@ def get_background_mask(image, color):
 ap=argparse.ArgumentParser()
 ap.add_argument("-i", "--image", required=True,
                 help="path to the input image")
-ap.add_argument("-c", "--color", required=True,
-                help="color of background (red green or blue)")
+# ap.add_argument("-c", "--color", required=True,
+#                 help="color of background (red green or blue)")
 ap.add_argument("-w", "--width", type=float, required=True,
                 help="width of the left-most object in the image (in millimeter)")
 args=vars(ap.parse_args())
@@ -81,24 +83,55 @@ args=vars(ap.parse_args())
 # นำเข้ารูปภาพจาก Path ที่ใส่มา
 image=cv2.imread(args["image"])
 image=ResizeWithAspectRatio(image, width=1080)
-hsv=cv2.cvtColor(image, cv2.COLOR_BGR2HSV)
+hsv=cv2.cvtColor(cv2.GaussianBlur(image, (7, 7), 0), cv2.COLOR_BGR2HSV)
+# hsv=cv2.cvtColor(image, cv2.COLOR_BGR2HSV)
 
-mask=get_background_mask(hsv, args["color"])
+gray = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)	
+gray = cv2.GaussianBlur(gray, (5, 5), 0)
+edged = cv2.Canny(gray, 10, 200)
+edged = cv2.dilate(edged, None, iterations=1)
+edged = cv2.erode(edged, None, iterations=1)
+
+
+mask_r=get_background_mask(hsv, "red")
+mask_g=get_background_mask(hsv, "green")
+mask_b=get_background_mask(hsv, "blue")
+
+# cv2.imshow("mask_r", mask_r)
+# cv2.imshow("mask_g", mask_g)
+# cv2.imshow("mask_b", mask_b)
 
 # cv2.Canny => การตีกรอบให้กับภาพ
-edged=cv2.Canny(mask, 50, 100)
+edged_r=cv2.Canny(mask_r, 10, 100)
 # dilate => ขยายเส้นขอบให้ใหญ่ขึ้น
-edged=cv2.dilate(edged, None, iterations=1)
+edged_r=cv2.dilate(edged_r, None, iterations=1)
 # dilate => ลบ Noise สีขาวออกจากรูปภาพ
-edged=cv2.erode(edged, None, iterations=1)
+edged_r=cv2.erode(edged_r, None, iterations=1)
 
-cv2.imshow("edged", edged)
-# writeImage(edged,"bg_green","eraser")
+edged_g=cv2.Canny(mask_g, 10, 100)
+edged_g=cv2.dilate(edged_g, None, iterations=1)
+edged_g=cv2.erode(edged_g, None, iterations=1)
+
+edged_b=cv2.Canny(mask_b, 10, 100)
+edged_b=cv2.dilate(edged_b, None, iterations=1)
+edged_b=cv2.erode(edged_b, None, iterations=1)
+
+dst1 = cv2.addWeighted(edged_r, 1, edged_g, 1, 0)
+dst2 = cv2.addWeighted(dst1, 1, edged_b, 1, 0)
+dst3 = cv2.addWeighted(dst2, 1, edged, 1, 0)
+
+# cv2.imshow("dst1", dst1)
+# cv2.imshow("dst2", dst2)
+# cv2.imshow("dst3", dst3)
+# cv2.imshow("edged", edged)
+# cv2.waitKey(0)
+# exit()
+# writeImage(edged,"bg_green","eraser") 
 
 
 # ค้นหารูปร่างของวัตถุ
 # cv2.findContours(รุูปภาพ,ดึงเส้นขอบของวัตถุ,การประมาณการรูปร่างของวัตถุ)
-cnts=cv2.findContours(edged.copy(), cv2.RETR_EXTERNAL,
+cnts=cv2.findContours(dst3.copy(), cv2.RETR_EXTERNAL,
                         cv2.CHAIN_APPROX_SIMPLE)
 cnts=imutils.grab_contours(cnts)
 
@@ -117,7 +150,7 @@ for c in cnts:
     # cv2.contourArea => คืนค่าพื้นที่ของรูปร่างที่ c มีหน่วยคือ pixel^2
     # ถ้าพื้นที่มีขนาดที่เล็กเกินไป จะข้ามไปยังรูปร่างถัดไป
     # (cv2.contourArea(c)/args["width"]*args["width"]) คือการแปลงหน่วยจาก pixel^2 เป็น MM^2
-    if (cv2.contourArea(c)/args["width"]*args["width"]) < 300:
+    if (cv2.contourArea(c) < 300):
         continue
 
     # คำนวณหาเส้นรอบรูปรางของวัตถุที่มีความเอียง
@@ -180,6 +213,7 @@ for c in cnts:
     # origin = ResizeWithAspectRatio(origin, width=1080)
 
     # show the output image
-    cv2.imshow("Image", origin)
-    if (cv2.waitKey(0) & 0xFF) == 27:
-        break
+cv2.imshow("Image", origin)
+cv2.waitKey(0)
+# if (cv2.waitKey(0) & 0xFF) == 27:
+#     break
