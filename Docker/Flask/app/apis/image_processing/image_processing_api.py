@@ -37,7 +37,7 @@ def upload_image():
         un_id = request.form.get('unit',None)
         username = "Debug_user"
         query_unit = None
-        self.logger.info("[{}] Prepair image data to be measure.".format(username))
+        logger.info("[{}] Prepair image data to be measure.".format(username))
         # logger.debug("un_id: {}".format(un_id))
         if(not file):
             logger.warning("[{}] File is empty.".format(username))
@@ -63,21 +63,21 @@ def upload_image():
             logger.warning("[{}] Wrong unit id. This ID dose not match any unit id on dpml_unit".format(username))
             raise TypeError("Wrong unit. Please re-selecte unit.")
 
-        self.logger.info("[{}] Processing image...".format(username))
+        logger.info("[{}] Processing image...".format(username))
         nparr = np.fromstring(request.files['file'].read(), np.uint8)
         img = cv2.imdecode(nparr, cv2.IMREAD_COLOR) 
 
         image_processor = image_measurement.ImageMeasurement()
         input_image = image.Image(image=img)
         
-        self.logger.info("[{}] Got measurement result".format(username))
+        logger.info("[{}] Got measurement result".format(username))
         result_img = image_processor.measure_obj_size(input_image)
 
-        self.logger.info("[{}] Prepair image date to be response.".format(username))
+        logger.info("[{}] Prepair image date to be response.".format(username))
         retval, buffer = cv2.imencode('.png', result_img)
         data = base64.b64encode(buffer)
         response = make_response(data)
-        self.logger.info("[{}] Responsed measurement result.".format(username))
+        logger.info("[{}] Responsed measurement result.".format(username))
         return response , 200
     except Exception  as identifier:
         result = {'mes' : str(identifier)}
