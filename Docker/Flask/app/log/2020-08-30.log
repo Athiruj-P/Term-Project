@@ -2890,3 +2890,1878 @@
 2020-08-30 17:38:58,762 [DEBUG:image_processing] {measure_obj_size:131} [USER]:arr_center_point: []
 2020-08-30 17:38:58,763 [WARNING:image_processing] {measure_obj_size:139} [USER]:Object not detected
 2020-08-30 17:38:58,763 [INFO:image_processing] {upload_image:78} [USER]:[Debug_user] Prepair image date to be response.
+2020-08-30 17:47:01,158 [INFO:image_processing] {upload_image:41} [USER]:[Debug_user] Prepair image data to be measure.
+2020-08-30 17:47:01,159 [INFO:image_processing] {upload_image:68} [USER]:[Debug_user] Processing image...
+2020-08-30 17:47:01,215 [INFO:image_processing] {upload_image:75} [USER]:[Debug_user] Got measurement result
+2020-08-30 17:47:03,327 [DEBUG:image_processing] {measure_obj_size:130} [USER]:ref_center_point: [363, 388]
+2020-08-30 17:47:03,328 [DEBUG:image_processing] {measure_obj_size:131} [USER]:arr_center_point: [[545, 418]]
+2020-08-30 17:47:03,360 [DEBUG:image_processing] {measure_obj_size:261} [USER]:Test at line 258
+2020-08-30 17:47:03,361 [DEBUG:image_processing] {measure_obj_size:283} [USER]:Test at line 280
+2020-08-30 17:47:03,361 [DEBUG:image_processing] {measure_obj_size:287} [USER]:Test at line 284
+2020-08-30 17:47:03,362 [DEBUG:image_processing] {measure_obj_size:293} [USER]:Test at line 287
+2020-08-30 17:47:03,363 [DEBUG:image_processing] {measure_obj_size:329} [USER]:Test at line 303
+2020-08-30 17:47:03,365 [INFO:image_processing] {upload_image:78} [USER]:[Debug_user] Prepair image date to be response.
+2020-08-30 17:47:03,407 [INFO:image_processing] {upload_image:95} [USER]:[Debug_user] Responsed measurement result.
+2020-08-30 18:21:07,989 [INFO:image_processing] {upload_image:41} [USER]:[Debug_user] Prepair image data to be measure.
+2020-08-30 18:21:07,995 [INFO:image_processing] {upload_image:68} [USER]:[Debug_user] Processing image...
+2020-08-30 18:21:08,091 [INFO:image_processing] {upload_image:75} [USER]:[Debug_user] Got measurement result
+2020-08-30 18:21:09,216 [INFO:image_processing] {upload_image:41} [USER]:[Debug_user] Prepair image data to be measure.
+2020-08-30 18:21:09,218 [INFO:image_processing] {upload_image:68} [USER]:[Debug_user] Processing image...
+2020-08-30 18:21:09,483 [INFO:image_processing] {upload_image:75} [USER]:[Debug_user] Got measurement result
+2020-08-30 18:21:10,849 [INFO:image_processing] {upload_image:41} [USER]:[Debug_user] Prepair image data to be measure.
+2020-08-30 18:21:10,853 [INFO:image_processing] {upload_image:68} [USER]:[Debug_user] Processing image...
+2020-08-30 18:21:11,093 [INFO:image_processing] {upload_image:75} [USER]:[Debug_user] Got measurement result
+2020-08-30 18:21:12,214 [INFO:image_processing] {upload_image:41} [USER]:[Debug_user] Prepair image data to be measure.
+2020-08-30 18:21:12,238 [INFO:image_processing] {upload_image:68} [USER]:[Debug_user] Processing image...
+2020-08-30 18:21:12,601 [INFO:image_processing] {upload_image:75} [USER]:[Debug_user] Got measurement result
+2020-08-30 18:21:13,139 [INFO:image_processing] {upload_image:41} [USER]:[Debug_user] Prepair image data to be measure.
+2020-08-30 18:21:13,596 [INFO:image_processing] {upload_image:68} [USER]:[Debug_user] Processing image...
+2020-08-30 18:21:13,822 [DEBUG:image_processing] {measure_obj_size:130} [USER]:ref_center_point: [299, 368]
+2020-08-30 18:21:13,824 [DEBUG:image_processing] {measure_obj_size:131} [USER]:arr_center_point: [[475, 396]]
+2020-08-30 18:21:13,837 [INFO:image_processing] {upload_image:75} [USER]:[Debug_user] Got measurement result
+2020-08-30 18:21:13,935 [DEBUG:image_processing] {measure_obj_size:261} [USER]:Test at line 258
+2020-08-30 18:21:13,939 [DEBUG:image_processing] {measure_obj_size:283} [USER]:Test at line 280
+2020-08-30 18:21:13,941 [DEBUG:image_processing] {measure_obj_size:287} [USER]:Test at line 284
+2020-08-30 18:21:13,942 [DEBUG:image_processing] {measure_obj_size:293} [USER]:Test at line 287
+2020-08-30 18:21:13,946 [DEBUG:image_processing] {measure_obj_size:329} [USER]:Test at line 303
+2020-08-30 18:21:13,952 [INFO:image_processing] {upload_image:78} [USER]:[Debug_user] Prepair image date to be response.
+2020-08-30 18:21:14,052 [INFO:image_processing] {upload_image:95} [USER]:[Debug_user] Responsed measurement result.
+2020-08-30 18:21:20,257 [DEBUG:image_processing] {measure_obj_size:130} [USER]:ref_center_point: [299, 368]
+2020-08-30 18:21:20,276 [DEBUG:image_processing] {measure_obj_size:131} [USER]:arr_center_point: [[475, 396]]
+2020-08-30 18:21:20,990 [DEBUG:image_processing] {measure_obj_size:261} [USER]:Test at line 258
+2020-08-30 18:21:20,994 [DEBUG:image_processing] {measure_obj_size:283} [USER]:Test at line 280
+2020-08-30 18:21:21,006 [DEBUG:image_processing] {measure_obj_size:287} [USER]:Test at line 284
+2020-08-30 18:21:21,006 [DEBUG:image_processing] {measure_obj_size:293} [USER]:Test at line 287
+2020-08-30 18:21:21,009 [DEBUG:image_processing] {measure_obj_size:329} [USER]:Test at line 303
+2020-08-30 18:21:21,028 [INFO:image_processing] {upload_image:78} [USER]:[Debug_user] Prepair image date to be response.
+2020-08-30 18:21:21,174 [INFO:image_processing] {upload_image:95} [USER]:[Debug_user] Responsed measurement result.
+2020-08-30 18:21:21,752 [DEBUG:image_processing] {measure_obj_size:130} [USER]:ref_center_point: [299, 368]
+2020-08-30 18:21:21,754 [DEBUG:image_processing] {measure_obj_size:131} [USER]:arr_center_point: [[475, 396]]
+2020-08-30 18:21:21,802 [DEBUG:image_processing] {measure_obj_size:261} [USER]:Test at line 258
+2020-08-30 18:21:21,825 [DEBUG:image_processing] {measure_obj_size:283} [USER]:Test at line 280
+2020-08-30 18:21:21,827 [DEBUG:image_processing] {measure_obj_size:287} [USER]:Test at line 284
+2020-08-30 18:21:21,828 [DEBUG:image_processing] {measure_obj_size:293} [USER]:Test at line 287
+2020-08-30 18:21:21,829 [DEBUG:image_processing] {measure_obj_size:329} [USER]:Test at line 303
+2020-08-30 18:21:21,834 [INFO:image_processing] {upload_image:78} [USER]:[Debug_user] Prepair image date to be response.
+2020-08-30 18:21:21,983 [INFO:image_processing] {upload_image:95} [USER]:[Debug_user] Responsed measurement result.
+2020-08-30 18:21:22,983 [DEBUG:image_processing] {measure_obj_size:130} [USER]:ref_center_point: [299, 368]
+2020-08-30 18:21:22,999 [DEBUG:image_processing] {measure_obj_size:131} [USER]:arr_center_point: [[475, 396]]
+2020-08-30 18:21:23,477 [DEBUG:image_processing] {measure_obj_size:261} [USER]:Test at line 258
+2020-08-30 18:21:23,487 [DEBUG:image_processing] {measure_obj_size:283} [USER]:Test at line 280
+2020-08-30 18:21:23,489 [DEBUG:image_processing] {measure_obj_size:287} [USER]:Test at line 284
+2020-08-30 18:21:23,492 [DEBUG:image_processing] {measure_obj_size:293} [USER]:Test at line 287
+2020-08-30 18:21:23,495 [DEBUG:image_processing] {measure_obj_size:329} [USER]:Test at line 303
+2020-08-30 18:21:23,502 [INFO:image_processing] {upload_image:78} [USER]:[Debug_user] Prepair image date to be response.
+2020-08-30 18:21:23,578 [INFO:image_processing] {upload_image:95} [USER]:[Debug_user] Responsed measurement result.
+2020-08-30 18:21:23,685 [DEBUG:image_processing] {measure_obj_size:130} [USER]:ref_center_point: [299, 368]
+2020-08-30 18:21:23,686 [DEBUG:image_processing] {measure_obj_size:131} [USER]:arr_center_point: [[475, 396]]
+2020-08-30 18:21:23,730 [DEBUG:image_processing] {measure_obj_size:261} [USER]:Test at line 258
+2020-08-30 18:21:23,732 [DEBUG:image_processing] {measure_obj_size:283} [USER]:Test at line 280
+2020-08-30 18:21:23,733 [DEBUG:image_processing] {measure_obj_size:287} [USER]:Test at line 284
+2020-08-30 18:21:23,735 [DEBUG:image_processing] {measure_obj_size:293} [USER]:Test at line 287
+2020-08-30 18:21:23,737 [DEBUG:image_processing] {measure_obj_size:329} [USER]:Test at line 303
+2020-08-30 18:21:23,741 [INFO:image_processing] {upload_image:78} [USER]:[Debug_user] Prepair image date to be response.
+2020-08-30 18:21:23,830 [INFO:image_processing] {upload_image:95} [USER]:[Debug_user] Responsed measurement result.
+2020-08-30 18:35:09,734 [INFO:image_processing] {upload_image:41} [USER]:[Debug_user] Prepair image data to be measure.
+2020-08-30 18:35:09,735 [INFO:image_processing] {upload_image:68} [USER]:[Debug_user] Processing image...
+2020-08-30 18:35:09,811 [INFO:image_processing] {upload_image:75} [USER]:[Debug_user] Got measurement result
+2020-08-30 18:35:12,717 [DEBUG:image_processing] {measure_obj_size:130} [USER]:ref_center_point: [126, 182]
+2020-08-30 18:35:12,717 [DEBUG:image_processing] {measure_obj_size:131} [USER]:arr_center_point: [[531, 415]]
+2020-08-30 18:35:12,750 [DEBUG:image_processing] {measure_obj_size:261} [USER]:Test at line 258
+2020-08-30 18:35:12,751 [DEBUG:image_processing] {measure_obj_size:283} [USER]:Test at line 280
+2020-08-30 18:35:12,751 [DEBUG:image_processing] {measure_obj_size:287} [USER]:Test at line 284
+2020-08-30 18:35:12,751 [DEBUG:image_processing] {measure_obj_size:293} [USER]:Test at line 287
+2020-08-30 18:35:12,752 [DEBUG:image_processing] {measure_obj_size:329} [USER]:Test at line 303
+2020-08-30 18:35:12,754 [INFO:image_processing] {upload_image:78} [USER]:[Debug_user] Prepair image date to be response.
+2020-08-30 18:35:12,803 [INFO:image_processing] {upload_image:95} [USER]:[Debug_user] Responsed measurement result.
+2020-08-30 18:37:25,824 [INFO:main] {<module>:16} [SYSTEM]:Created flask app.
+2020-08-30 18:37:25,827 [INFO:main] {<module>:18} [SYSTEM]:Registered image_processing_api blueprint 
+2020-08-30 18:37:25,828 [INFO:main] {<module>:20} [SYSTEM]:Registered user_api blueprint 
+2020-08-30 18:37:25,830 [INFO:main] {<module>:22} [SYSTEM]:Registered model_management_api blueprint 
+2020-08-30 18:37:25,831 [INFO:main] {<module>:24} [SYSTEM]:Registered log_management_api blueprint 
+2020-08-30 18:40:26,053 [INFO:main] {<module>:16} [SYSTEM]:Created flask app.
+2020-08-30 18:40:26,055 [INFO:main] {<module>:18} [SYSTEM]:Registered image_processing_api blueprint 
+2020-08-30 18:40:26,056 [INFO:main] {<module>:20} [SYSTEM]:Registered user_api blueprint 
+2020-08-30 18:40:26,059 [INFO:main] {<module>:22} [SYSTEM]:Registered model_management_api blueprint 
+2020-08-30 18:40:26,060 [INFO:main] {<module>:24} [SYSTEM]:Registered log_management_api blueprint 
+2020-08-30 18:40:26,844 [INFO:main] {<module>:16} [SYSTEM]:Created flask app.
+2020-08-30 18:40:26,846 [INFO:main] {<module>:18} [SYSTEM]:Registered image_processing_api blueprint 
+2020-08-30 18:40:26,847 [INFO:main] {<module>:20} [SYSTEM]:Registered user_api blueprint 
+2020-08-30 18:40:26,853 [INFO:main] {<module>:22} [SYSTEM]:Registered model_management_api blueprint 
+2020-08-30 18:40:26,856 [INFO:main] {<module>:24} [SYSTEM]:Registered log_management_api blueprint 
+2020-08-30 18:40:33,472 [INFO:main] {<module>:16} [SYSTEM]:Created flask app.
+2020-08-30 18:40:33,474 [INFO:main] {<module>:18} [SYSTEM]:Registered image_processing_api blueprint 
+2020-08-30 18:40:33,480 [INFO:main] {<module>:20} [SYSTEM]:Registered user_api blueprint 
+2020-08-30 18:40:33,483 [INFO:main] {<module>:22} [SYSTEM]:Registered model_management_api blueprint 
+2020-08-30 18:40:33,486 [INFO:main] {<module>:24} [SYSTEM]:Registered log_management_api blueprint 
+2020-08-30 18:40:43,171 [INFO:main] {<module>:16} [SYSTEM]:Created flask app.
+2020-08-30 18:40:43,173 [INFO:main] {<module>:18} [SYSTEM]:Registered image_processing_api blueprint 
+2020-08-30 18:40:43,174 [INFO:main] {<module>:20} [SYSTEM]:Registered user_api blueprint 
+2020-08-30 18:40:43,176 [INFO:main] {<module>:22} [SYSTEM]:Registered model_management_api blueprint 
+2020-08-30 18:40:43,177 [INFO:main] {<module>:24} [SYSTEM]:Registered log_management_api blueprint 
+2020-08-30 18:40:52,787 [INFO:main] {<module>:16} [SYSTEM]:Created flask app.
+2020-08-30 18:40:52,789 [INFO:main] {<module>:18} [SYSTEM]:Registered image_processing_api blueprint 
+2020-08-30 18:40:52,790 [INFO:main] {<module>:20} [SYSTEM]:Registered user_api blueprint 
+2020-08-30 18:40:52,792 [INFO:main] {<module>:22} [SYSTEM]:Registered model_management_api blueprint 
+2020-08-30 18:40:52,793 [INFO:main] {<module>:24} [SYSTEM]:Registered log_management_api blueprint 
+2020-08-30 18:41:02,374 [INFO:main] {<module>:16} [SYSTEM]:Created flask app.
+2020-08-30 18:41:02,375 [INFO:main] {<module>:18} [SYSTEM]:Registered image_processing_api blueprint 
+2020-08-30 18:41:02,376 [INFO:main] {<module>:20} [SYSTEM]:Registered user_api blueprint 
+2020-08-30 18:41:02,379 [INFO:main] {<module>:22} [SYSTEM]:Registered model_management_api blueprint 
+2020-08-30 18:41:02,385 [INFO:main] {<module>:24} [SYSTEM]:Registered log_management_api blueprint 
+2020-08-30 18:41:13,947 [INFO:main] {<module>:16} [SYSTEM]:Created flask app.
+2020-08-30 18:41:13,950 [INFO:main] {<module>:18} [SYSTEM]:Registered image_processing_api blueprint 
+2020-08-30 18:41:13,950 [INFO:main] {<module>:20} [SYSTEM]:Registered user_api blueprint 
+2020-08-30 18:41:13,953 [INFO:main] {<module>:22} [SYSTEM]:Registered model_management_api blueprint 
+2020-08-30 18:41:13,954 [INFO:main] {<module>:24} [SYSTEM]:Registered log_management_api blueprint 
+2020-08-30 18:42:40,457 [INFO:image_processing] {upload_image:41} [USER]:[Debug_user] Prepair image data to be measure.
+2020-08-30 18:42:40,458 [INFO:image_processing] {upload_image:68} [USER]:[Debug_user] Processing image...
+2020-08-30 18:42:40,529 [INFO:image_processing] {upload_image:75} [USER]:[Debug_user] Got measurement result
+2020-08-30 18:42:44,276 [DEBUG:image_processing] {measure_obj_size:130} [USER]:ref_center_point: [126, 182]
+2020-08-30 18:42:44,277 [DEBUG:image_processing] {measure_obj_size:131} [USER]:arr_center_point: [[531, 415]]
+2020-08-30 18:42:44,307 [DEBUG:image_processing] {measure_obj_size:261} [USER]:Test at line 258
+2020-08-30 18:42:44,307 [DEBUG:image_processing] {measure_obj_size:283} [USER]:Test at line 280
+2020-08-30 18:42:44,308 [DEBUG:image_processing] {measure_obj_size:287} [USER]:Test at line 284
+2020-08-30 18:42:44,308 [DEBUG:image_processing] {measure_obj_size:293} [USER]:Test at line 287
+2020-08-30 18:42:44,309 [DEBUG:image_processing] {measure_obj_size:334} [USER]:Test at line 303
+2020-08-30 18:42:44,311 [INFO:image_processing] {upload_image:78} [USER]:[Debug_user] Prepair image date to be response.
+2020-08-30 18:42:44,355 [INFO:image_processing] {upload_image:95} [USER]:[Debug_user] Responsed measurement result.
+2020-08-30 18:43:06,275 [INFO:main] {<module>:16} [SYSTEM]:Created flask app.
+2020-08-30 18:43:06,278 [INFO:main] {<module>:18} [SYSTEM]:Registered image_processing_api blueprint 
+2020-08-30 18:43:06,278 [INFO:main] {<module>:20} [SYSTEM]:Registered user_api blueprint 
+2020-08-30 18:43:06,285 [INFO:main] {<module>:22} [SYSTEM]:Registered model_management_api blueprint 
+2020-08-30 18:43:06,286 [INFO:main] {<module>:24} [SYSTEM]:Registered log_management_api blueprint 
+2020-08-30 18:43:20,940 [INFO:main] {<module>:16} [SYSTEM]:Created flask app.
+2020-08-30 18:43:20,942 [INFO:main] {<module>:18} [SYSTEM]:Registered image_processing_api blueprint 
+2020-08-30 18:43:20,943 [INFO:main] {<module>:20} [SYSTEM]:Registered user_api blueprint 
+2020-08-30 18:43:20,945 [INFO:main] {<module>:22} [SYSTEM]:Registered model_management_api blueprint 
+2020-08-30 18:43:20,950 [INFO:main] {<module>:24} [SYSTEM]:Registered log_management_api blueprint 
+2020-08-30 18:43:31,076 [INFO:image_processing] {upload_image:41} [USER]:[Debug_user] Prepair image data to be measure.
+2020-08-30 18:43:31,077 [INFO:image_processing] {upload_image:68} [USER]:[Debug_user] Processing image...
+2020-08-30 18:43:31,144 [INFO:image_processing] {upload_image:75} [USER]:[Debug_user] Got measurement result
+2020-08-30 18:43:34,747 [DEBUG:image_processing] {measure_obj_size:130} [USER]:ref_center_point: [126, 182]
+2020-08-30 18:43:34,748 [DEBUG:image_processing] {measure_obj_size:131} [USER]:arr_center_point: [[531, 415]]
+2020-08-30 18:43:34,779 [DEBUG:image_processing] {measure_obj_size:261} [USER]:Test at line 258
+2020-08-30 18:43:34,780 [DEBUG:image_processing] {measure_obj_size:283} [USER]:Test at line 280
+2020-08-30 18:43:34,781 [DEBUG:image_processing] {measure_obj_size:287} [USER]:Test at line 284
+2020-08-30 18:43:34,781 [DEBUG:image_processing] {measure_obj_size:293} [USER]:Test at line 287
+2020-08-30 18:43:34,782 [DEBUG:image_processing] {measure_obj_size:334} [USER]:Test at line 303
+2020-08-30 18:43:34,783 [INFO:image_processing] {upload_image:78} [USER]:[Debug_user] Prepair image date to be response.
+2020-08-30 18:43:34,829 [INFO:image_processing] {upload_image:95} [USER]:[Debug_user] Responsed measurement result.
+2020-08-30 18:44:21,992 [INFO:main] {<module>:16} [SYSTEM]:Created flask app.
+2020-08-30 18:44:21,995 [INFO:main] {<module>:18} [SYSTEM]:Registered image_processing_api blueprint 
+2020-08-30 18:44:22,001 [INFO:main] {<module>:20} [SYSTEM]:Registered user_api blueprint 
+2020-08-30 18:44:22,004 [INFO:main] {<module>:22} [SYSTEM]:Registered model_management_api blueprint 
+2020-08-30 18:44:22,006 [INFO:main] {<module>:24} [SYSTEM]:Registered log_management_api blueprint 
+2020-08-30 18:44:43,850 [INFO:image_processing] {upload_image:41} [USER]:[Debug_user] Prepair image data to be measure.
+2020-08-30 18:44:43,850 [INFO:image_processing] {upload_image:68} [USER]:[Debug_user] Processing image...
+2020-08-30 18:44:43,917 [INFO:image_processing] {upload_image:75} [USER]:[Debug_user] Got measurement result
+2020-08-30 18:44:46,262 [DEBUG:image_processing] {measure_obj_size:130} [USER]:ref_center_point: [126, 182]
+2020-08-30 18:44:46,263 [DEBUG:image_processing] {measure_obj_size:131} [USER]:arr_center_point: [[531, 415]]
+2020-08-30 18:44:46,291 [DEBUG:image_processing] {measure_obj_size:261} [USER]:Test at line 258
+2020-08-30 18:44:46,292 [DEBUG:image_processing] {measure_obj_size:283} [USER]:Test at line 280
+2020-08-30 18:44:46,293 [DEBUG:image_processing] {measure_obj_size:287} [USER]:Test at line 284
+2020-08-30 18:44:46,293 [DEBUG:image_processing] {measure_obj_size:293} [USER]:Test at line 287
+2020-08-30 18:44:46,294 [DEBUG:image_processing] {measure_obj_size:334} [USER]:Test at line 303
+2020-08-30 18:44:46,295 [INFO:image_processing] {upload_image:78} [USER]:[Debug_user] Prepair image date to be response.
+2020-08-30 18:44:46,345 [INFO:image_processing] {upload_image:95} [USER]:[Debug_user] Responsed measurement result.
+2020-08-30 18:45:01,102 [INFO:main] {<module>:16} [SYSTEM]:Created flask app.
+2020-08-30 18:45:01,104 [INFO:main] {<module>:18} [SYSTEM]:Registered image_processing_api blueprint 
+2020-08-30 18:45:01,105 [INFO:main] {<module>:20} [SYSTEM]:Registered user_api blueprint 
+2020-08-30 18:45:01,107 [INFO:main] {<module>:22} [SYSTEM]:Registered model_management_api blueprint 
+2020-08-30 18:45:01,108 [INFO:main] {<module>:24} [SYSTEM]:Registered log_management_api blueprint 
+2020-08-30 18:45:04,338 [INFO:main] {<module>:16} [SYSTEM]:Created flask app.
+2020-08-30 18:45:04,341 [INFO:main] {<module>:18} [SYSTEM]:Registered image_processing_api blueprint 
+2020-08-30 18:45:04,342 [INFO:main] {<module>:20} [SYSTEM]:Registered user_api blueprint 
+2020-08-30 18:45:04,344 [INFO:main] {<module>:22} [SYSTEM]:Registered model_management_api blueprint 
+2020-08-30 18:45:04,345 [INFO:main] {<module>:24} [SYSTEM]:Registered log_management_api blueprint 
+2020-08-30 18:45:06,873 [INFO:main] {<module>:16} [SYSTEM]:Created flask app.
+2020-08-30 18:45:06,875 [INFO:main] {<module>:18} [SYSTEM]:Registered image_processing_api blueprint 
+2020-08-30 18:45:06,880 [INFO:main] {<module>:20} [SYSTEM]:Registered user_api blueprint 
+2020-08-30 18:45:06,883 [INFO:main] {<module>:22} [SYSTEM]:Registered model_management_api blueprint 
+2020-08-30 18:45:06,884 [INFO:main] {<module>:24} [SYSTEM]:Registered log_management_api blueprint 
+2020-08-30 18:45:21,456 [INFO:main] {<module>:16} [SYSTEM]:Created flask app.
+2020-08-30 18:45:21,458 [INFO:main] {<module>:18} [SYSTEM]:Registered image_processing_api blueprint 
+2020-08-30 18:45:21,459 [INFO:main] {<module>:20} [SYSTEM]:Registered user_api blueprint 
+2020-08-30 18:45:21,461 [INFO:main] {<module>:22} [SYSTEM]:Registered model_management_api blueprint 
+2020-08-30 18:45:21,467 [INFO:main] {<module>:24} [SYSTEM]:Registered log_management_api blueprint 
+2020-08-30 18:45:31,067 [INFO:main] {<module>:16} [SYSTEM]:Created flask app.
+2020-08-30 18:45:31,069 [INFO:main] {<module>:18} [SYSTEM]:Registered image_processing_api blueprint 
+2020-08-30 18:45:31,070 [INFO:main] {<module>:20} [SYSTEM]:Registered user_api blueprint 
+2020-08-30 18:45:31,072 [INFO:main] {<module>:22} [SYSTEM]:Registered model_management_api blueprint 
+2020-08-30 18:45:31,073 [INFO:main] {<module>:24} [SYSTEM]:Registered log_management_api blueprint 
+2020-08-30 18:45:33,657 [INFO:main] {<module>:16} [SYSTEM]:Created flask app.
+2020-08-30 18:45:33,659 [INFO:main] {<module>:18} [SYSTEM]:Registered image_processing_api blueprint 
+2020-08-30 18:45:33,660 [INFO:main] {<module>:20} [SYSTEM]:Registered user_api blueprint 
+2020-08-30 18:45:33,667 [INFO:main] {<module>:22} [SYSTEM]:Registered model_management_api blueprint 
+2020-08-30 18:45:33,669 [INFO:main] {<module>:24} [SYSTEM]:Registered log_management_api blueprint 
+2020-08-30 18:45:36,799 [INFO:main] {<module>:16} [SYSTEM]:Created flask app.
+2020-08-30 18:45:36,802 [INFO:main] {<module>:18} [SYSTEM]:Registered image_processing_api blueprint 
+2020-08-30 18:45:36,807 [INFO:main] {<module>:20} [SYSTEM]:Registered user_api blueprint 
+2020-08-30 18:45:36,810 [INFO:main] {<module>:22} [SYSTEM]:Registered model_management_api blueprint 
+2020-08-30 18:45:36,816 [INFO:main] {<module>:24} [SYSTEM]:Registered log_management_api blueprint 
+2020-08-30 18:45:59,167 [INFO:main] {<module>:16} [SYSTEM]:Created flask app.
+2020-08-30 18:45:59,169 [INFO:main] {<module>:18} [SYSTEM]:Registered image_processing_api blueprint 
+2020-08-30 18:45:59,173 [INFO:main] {<module>:20} [SYSTEM]:Registered user_api blueprint 
+2020-08-30 18:45:59,177 [INFO:main] {<module>:22} [SYSTEM]:Registered model_management_api blueprint 
+2020-08-30 18:45:59,178 [INFO:main] {<module>:24} [SYSTEM]:Registered log_management_api blueprint 
+2020-08-30 18:46:05,907 [INFO:image_processing] {upload_image:41} [USER]:[Debug_user] Prepair image data to be measure.
+2020-08-30 18:46:05,908 [INFO:image_processing] {upload_image:68} [USER]:[Debug_user] Processing image...
+2020-08-30 18:46:05,974 [INFO:image_processing] {upload_image:75} [USER]:[Debug_user] Got measurement result
+2020-08-30 18:46:09,743 [DEBUG:image_processing] {measure_obj_size:130} [USER]:ref_center_point: [126, 182]
+2020-08-30 18:46:09,763 [DEBUG:image_processing] {measure_obj_size:131} [USER]:arr_center_point: [[531, 415]]
+2020-08-30 18:46:09,820 [DEBUG:image_processing] {measure_obj_size:261} [USER]:Test at line 258
+2020-08-30 18:46:09,821 [DEBUG:image_processing] {measure_obj_size:283} [USER]:Test at line 280
+2020-08-30 18:46:09,825 [DEBUG:image_processing] {measure_obj_size:287} [USER]:Test at line 284
+2020-08-30 18:46:09,826 [DEBUG:image_processing] {measure_obj_size:293} [USER]:Test at line 287
+2020-08-30 18:46:09,828 [DEBUG:image_processing] {measure_obj_size:330} [USER]:Test at line 303
+2020-08-30 18:46:09,831 [INFO:image_processing] {upload_image:78} [USER]:[Debug_user] Prepair image date to be response.
+2020-08-30 18:46:09,890 [INFO:image_processing] {upload_image:95} [USER]:[Debug_user] Responsed measurement result.
+2020-08-30 18:47:04,315 [INFO:main] {<module>:16} [SYSTEM]:Created flask app.
+2020-08-30 18:47:04,318 [INFO:main] {<module>:18} [SYSTEM]:Registered image_processing_api blueprint 
+2020-08-30 18:47:04,318 [INFO:main] {<module>:20} [SYSTEM]:Registered user_api blueprint 
+2020-08-30 18:47:04,325 [INFO:main] {<module>:22} [SYSTEM]:Registered model_management_api blueprint 
+2020-08-30 18:47:04,327 [INFO:main] {<module>:24} [SYSTEM]:Registered log_management_api blueprint 
+2020-08-30 18:47:11,153 [INFO:main] {<module>:16} [SYSTEM]:Created flask app.
+2020-08-30 18:47:11,156 [INFO:main] {<module>:18} [SYSTEM]:Registered image_processing_api blueprint 
+2020-08-30 18:47:11,157 [INFO:main] {<module>:20} [SYSTEM]:Registered user_api blueprint 
+2020-08-30 18:47:11,159 [INFO:main] {<module>:22} [SYSTEM]:Registered model_management_api blueprint 
+2020-08-30 18:47:11,160 [INFO:main] {<module>:24} [SYSTEM]:Registered log_management_api blueprint 
+2020-08-30 18:47:17,240 [INFO:main] {<module>:16} [SYSTEM]:Created flask app.
+2020-08-30 18:47:17,243 [INFO:main] {<module>:18} [SYSTEM]:Registered image_processing_api blueprint 
+2020-08-30 18:47:17,250 [INFO:main] {<module>:20} [SYSTEM]:Registered user_api blueprint 
+2020-08-30 18:47:17,254 [INFO:main] {<module>:22} [SYSTEM]:Registered model_management_api blueprint 
+2020-08-30 18:47:17,255 [INFO:main] {<module>:24} [SYSTEM]:Registered log_management_api blueprint 
+2020-08-30 18:47:22,382 [INFO:image_processing] {upload_image:41} [USER]:[Debug_user] Prepair image data to be measure.
+2020-08-30 18:47:22,383 [INFO:image_processing] {upload_image:68} [USER]:[Debug_user] Processing image...
+2020-08-30 18:47:22,452 [INFO:image_processing] {upload_image:75} [USER]:[Debug_user] Got measurement result
+2020-08-30 18:47:24,990 [DEBUG:image_processing] {measure_obj_size:130} [USER]:ref_center_point: [126, 182]
+2020-08-30 18:47:24,991 [DEBUG:image_processing] {measure_obj_size:131} [USER]:arr_center_point: [[531, 415]]
+2020-08-30 18:47:25,022 [DEBUG:image_processing] {measure_obj_size:261} [USER]:Test at line 258
+2020-08-30 18:47:25,024 [DEBUG:image_processing] {measure_obj_size:283} [USER]:Test at line 280
+2020-08-30 18:47:25,024 [DEBUG:image_processing] {measure_obj_size:287} [USER]:Test at line 284
+2020-08-30 18:47:25,024 [DEBUG:image_processing] {measure_obj_size:293} [USER]:Test at line 287
+2020-08-30 18:47:25,025 [DEBUG:image_processing] {measure_obj_size:330} [USER]:Test at line 303
+2020-08-30 18:47:25,027 [INFO:image_processing] {upload_image:78} [USER]:[Debug_user] Prepair image date to be response.
+2020-08-30 18:47:25,078 [INFO:image_processing] {upload_image:95} [USER]:[Debug_user] Responsed measurement result.
+2020-08-30 18:47:46,327 [INFO:main] {<module>:16} [SYSTEM]:Created flask app.
+2020-08-30 18:47:46,330 [INFO:main] {<module>:18} [SYSTEM]:Registered image_processing_api blueprint 
+2020-08-30 18:47:46,332 [INFO:main] {<module>:20} [SYSTEM]:Registered user_api blueprint 
+2020-08-30 18:47:46,336 [INFO:main] {<module>:22} [SYSTEM]:Registered model_management_api blueprint 
+2020-08-30 18:47:46,337 [INFO:main] {<module>:24} [SYSTEM]:Registered log_management_api blueprint 
+2020-08-30 18:48:00,354 [INFO:image_processing] {upload_image:41} [USER]:[Debug_user] Prepair image data to be measure.
+2020-08-30 18:48:00,354 [INFO:image_processing] {upload_image:68} [USER]:[Debug_user] Processing image...
+2020-08-30 18:48:00,423 [INFO:image_processing] {upload_image:75} [USER]:[Debug_user] Got measurement result
+2020-08-30 18:48:03,417 [DEBUG:image_processing] {measure_obj_size:130} [USER]:ref_center_point: [126, 182]
+2020-08-30 18:48:03,418 [DEBUG:image_processing] {measure_obj_size:131} [USER]:arr_center_point: [[531, 415]]
+2020-08-30 18:48:03,447 [DEBUG:image_processing] {measure_obj_size:261} [USER]:Test at line 258
+2020-08-30 18:48:03,448 [DEBUG:image_processing] {measure_obj_size:283} [USER]:Test at line 280
+2020-08-30 18:48:03,449 [DEBUG:image_processing] {measure_obj_size:287} [USER]:Test at line 284
+2020-08-30 18:48:03,449 [DEBUG:image_processing] {measure_obj_size:293} [USER]:Test at line 287
+2020-08-30 18:48:03,449 [DEBUG:image_processing] {measure_obj_size:330} [USER]:Test at line 303
+2020-08-30 18:48:03,451 [INFO:image_processing] {upload_image:78} [USER]:[Debug_user] Prepair image date to be response.
+2020-08-30 18:48:03,506 [INFO:image_processing] {upload_image:95} [USER]:[Debug_user] Responsed measurement result.
+2020-08-30 18:48:13,378 [INFO:image_processing] {upload_image:41} [USER]:[Debug_user] Prepair image data to be measure.
+2020-08-30 18:48:13,378 [INFO:image_processing] {upload_image:68} [USER]:[Debug_user] Processing image...
+2020-08-30 18:48:13,390 [INFO:image_processing] {upload_image:75} [USER]:[Debug_user] Got measurement result
+2020-08-30 18:48:16,766 [DEBUG:image_processing] {measure_obj_size:130} [USER]:ref_center_point: [81, 71]
+2020-08-30 18:48:16,767 [DEBUG:image_processing] {measure_obj_size:131} [USER]:arr_center_point: [[265, 99], [553, 286], [792, 439], [451, 457]]
+2020-08-30 18:48:16,788 [DEBUG:image_processing] {measure_obj_size:261} [USER]:Test at line 258
+2020-08-30 18:48:16,789 [DEBUG:image_processing] {measure_obj_size:283} [USER]:Test at line 280
+2020-08-30 18:48:16,790 [DEBUG:image_processing] {measure_obj_size:287} [USER]:Test at line 284
+2020-08-30 18:48:16,790 [DEBUG:image_processing] {measure_obj_size:293} [USER]:Test at line 287
+2020-08-30 18:48:16,790 [DEBUG:image_processing] {measure_obj_size:261} [USER]:Test at line 258
+2020-08-30 18:48:16,791 [DEBUG:image_processing] {measure_obj_size:283} [USER]:Test at line 280
+2020-08-30 18:48:16,791 [DEBUG:image_processing] {measure_obj_size:287} [USER]:Test at line 284
+2020-08-30 18:48:16,791 [DEBUG:image_processing] {measure_obj_size:293} [USER]:Test at line 287
+2020-08-30 18:48:16,792 [DEBUG:image_processing] {measure_obj_size:261} [USER]:Test at line 258
+2020-08-30 18:48:16,792 [DEBUG:image_processing] {measure_obj_size:283} [USER]:Test at line 280
+2020-08-30 18:48:16,792 [DEBUG:image_processing] {measure_obj_size:287} [USER]:Test at line 284
+2020-08-30 18:48:16,793 [DEBUG:image_processing] {measure_obj_size:293} [USER]:Test at line 287
+2020-08-30 18:48:16,793 [DEBUG:image_processing] {measure_obj_size:261} [USER]:Test at line 258
+2020-08-30 18:48:16,793 [DEBUG:image_processing] {measure_obj_size:283} [USER]:Test at line 280
+2020-08-30 18:48:16,793 [DEBUG:image_processing] {measure_obj_size:287} [USER]:Test at line 284
+2020-08-30 18:48:16,794 [DEBUG:image_processing] {measure_obj_size:293} [USER]:Test at line 287
+2020-08-30 18:48:16,794 [DEBUG:image_processing] {measure_obj_size:330} [USER]:Test at line 303
+2020-08-30 18:48:16,796 [INFO:image_processing] {upload_image:78} [USER]:[Debug_user] Prepair image date to be response.
+2020-08-30 18:48:16,815 [INFO:image_processing] {upload_image:95} [USER]:[Debug_user] Responsed measurement result.
+2020-08-30 18:48:44,158 [INFO:main] {<module>:16} [SYSTEM]:Created flask app.
+2020-08-30 18:48:44,160 [INFO:main] {<module>:18} [SYSTEM]:Registered image_processing_api blueprint 
+2020-08-30 18:48:44,161 [INFO:main] {<module>:20} [SYSTEM]:Registered user_api blueprint 
+2020-08-30 18:48:44,163 [INFO:main] {<module>:22} [SYSTEM]:Registered model_management_api blueprint 
+2020-08-30 18:48:44,164 [INFO:main] {<module>:24} [SYSTEM]:Registered log_management_api blueprint 
+2020-08-30 18:48:50,838 [INFO:main] {<module>:16} [SYSTEM]:Created flask app.
+2020-08-30 18:48:50,840 [INFO:main] {<module>:18} [SYSTEM]:Registered image_processing_api blueprint 
+2020-08-30 18:48:50,842 [INFO:main] {<module>:20} [SYSTEM]:Registered user_api blueprint 
+2020-08-30 18:48:50,845 [INFO:main] {<module>:22} [SYSTEM]:Registered model_management_api blueprint 
+2020-08-30 18:48:50,846 [INFO:main] {<module>:24} [SYSTEM]:Registered log_management_api blueprint 
+2020-08-30 18:48:58,448 [INFO:main] {<module>:16} [SYSTEM]:Created flask app.
+2020-08-30 18:48:58,450 [INFO:main] {<module>:18} [SYSTEM]:Registered image_processing_api blueprint 
+2020-08-30 18:48:58,451 [INFO:main] {<module>:20} [SYSTEM]:Registered user_api blueprint 
+2020-08-30 18:48:58,459 [INFO:main] {<module>:22} [SYSTEM]:Registered model_management_api blueprint 
+2020-08-30 18:48:58,461 [INFO:main] {<module>:24} [SYSTEM]:Registered log_management_api blueprint 
+2020-08-30 18:49:07,082 [INFO:main] {<module>:16} [SYSTEM]:Created flask app.
+2020-08-30 18:49:07,085 [INFO:main] {<module>:18} [SYSTEM]:Registered image_processing_api blueprint 
+2020-08-30 18:49:07,089 [INFO:main] {<module>:20} [SYSTEM]:Registered user_api blueprint 
+2020-08-30 18:49:07,093 [INFO:main] {<module>:22} [SYSTEM]:Registered model_management_api blueprint 
+2020-08-30 18:49:07,094 [INFO:main] {<module>:24} [SYSTEM]:Registered log_management_api blueprint 
+2020-08-30 18:49:09,677 [INFO:main] {<module>:16} [SYSTEM]:Created flask app.
+2020-08-30 18:49:09,679 [INFO:main] {<module>:18} [SYSTEM]:Registered image_processing_api blueprint 
+2020-08-30 18:49:09,680 [INFO:main] {<module>:20} [SYSTEM]:Registered user_api blueprint 
+2020-08-30 18:49:09,686 [INFO:main] {<module>:22} [SYSTEM]:Registered model_management_api blueprint 
+2020-08-30 18:49:09,688 [INFO:main] {<module>:24} [SYSTEM]:Registered log_management_api blueprint 
+2020-08-30 18:49:21,347 [INFO:main] {<module>:16} [SYSTEM]:Created flask app.
+2020-08-30 18:49:21,351 [INFO:main] {<module>:18} [SYSTEM]:Registered image_processing_api blueprint 
+2020-08-30 18:49:21,352 [INFO:main] {<module>:20} [SYSTEM]:Registered user_api blueprint 
+2020-08-30 18:49:21,356 [INFO:main] {<module>:22} [SYSTEM]:Registered model_management_api blueprint 
+2020-08-30 18:49:21,356 [INFO:main] {<module>:24} [SYSTEM]:Registered log_management_api blueprint 
+2020-08-30 18:49:34,116 [INFO:image_processing] {upload_image:41} [USER]:[Debug_user] Prepair image data to be measure.
+2020-08-30 18:49:34,117 [INFO:image_processing] {upload_image:68} [USER]:[Debug_user] Processing image...
+2020-08-30 18:49:34,128 [INFO:image_processing] {upload_image:75} [USER]:[Debug_user] Got measurement result
+2020-08-30 18:49:37,776 [DEBUG:image_processing] {measure_obj_size:130} [USER]:ref_center_point: [81, 71]
+2020-08-30 18:49:37,777 [DEBUG:image_processing] {measure_obj_size:131} [USER]:arr_center_point: [[265, 99], [553, 286], [792, 439], [451, 457]]
+2020-08-30 18:49:37,798 [DEBUG:image_processing] {measure_obj_size:261} [USER]:Test at line 258
+2020-08-30 18:49:37,799 [DEBUG:image_processing] {measure_obj_size:283} [USER]:Test at line 280
+2020-08-30 18:49:37,800 [DEBUG:image_processing] {measure_obj_size:287} [USER]:Test at line 284
+2020-08-30 18:49:37,800 [DEBUG:image_processing] {measure_obj_size:293} [USER]:Test at line 287
+2020-08-30 18:49:37,801 [DEBUG:image_processing] {measure_obj_size:261} [USER]:Test at line 258
+2020-08-30 18:49:37,802 [DEBUG:image_processing] {measure_obj_size:283} [USER]:Test at line 280
+2020-08-30 18:49:37,802 [DEBUG:image_processing] {measure_obj_size:287} [USER]:Test at line 284
+2020-08-30 18:49:37,803 [DEBUG:image_processing] {measure_obj_size:293} [USER]:Test at line 287
+2020-08-30 18:49:37,804 [DEBUG:image_processing] {measure_obj_size:261} [USER]:Test at line 258
+2020-08-30 18:49:37,804 [DEBUG:image_processing] {measure_obj_size:283} [USER]:Test at line 280
+2020-08-30 18:49:37,805 [DEBUG:image_processing] {measure_obj_size:287} [USER]:Test at line 284
+2020-08-30 18:49:37,805 [DEBUG:image_processing] {measure_obj_size:293} [USER]:Test at line 287
+2020-08-30 18:49:37,805 [DEBUG:image_processing] {measure_obj_size:261} [USER]:Test at line 258
+2020-08-30 18:49:37,806 [DEBUG:image_processing] {measure_obj_size:283} [USER]:Test at line 280
+2020-08-30 18:49:37,806 [DEBUG:image_processing] {measure_obj_size:287} [USER]:Test at line 284
+2020-08-30 18:49:37,807 [DEBUG:image_processing] {measure_obj_size:293} [USER]:Test at line 287
+2020-08-30 18:49:37,807 [DEBUG:image_processing] {measure_obj_size:331} [USER]:Test at line 303
+2020-08-30 18:49:37,809 [INFO:image_processing] {upload_image:78} [USER]:[Debug_user] Prepair image date to be response.
+2020-08-30 18:49:37,826 [INFO:image_processing] {upload_image:95} [USER]:[Debug_user] Responsed measurement result.
+2020-08-30 18:50:02,184 [INFO:main] {<module>:16} [SYSTEM]:Created flask app.
+2020-08-30 18:50:02,186 [INFO:main] {<module>:18} [SYSTEM]:Registered image_processing_api blueprint 
+2020-08-30 18:50:02,193 [INFO:main] {<module>:20} [SYSTEM]:Registered user_api blueprint 
+2020-08-30 18:50:02,197 [INFO:main] {<module>:22} [SYSTEM]:Registered model_management_api blueprint 
+2020-08-30 18:50:02,198 [INFO:main] {<module>:24} [SYSTEM]:Registered log_management_api blueprint 
+2020-08-30 18:50:31,127 [INFO:main] {<module>:16} [SYSTEM]:Created flask app.
+2020-08-30 18:50:31,129 [INFO:main] {<module>:18} [SYSTEM]:Registered image_processing_api blueprint 
+2020-08-30 18:50:31,132 [INFO:main] {<module>:20} [SYSTEM]:Registered user_api blueprint 
+2020-08-30 18:50:31,135 [INFO:main] {<module>:22} [SYSTEM]:Registered model_management_api blueprint 
+2020-08-30 18:50:31,136 [INFO:main] {<module>:24} [SYSTEM]:Registered log_management_api blueprint 
+2020-08-30 18:50:31,976 [INFO:main] {<module>:16} [SYSTEM]:Created flask app.
+2020-08-30 18:50:31,978 [INFO:main] {<module>:18} [SYSTEM]:Registered image_processing_api blueprint 
+2020-08-30 18:50:31,984 [INFO:main] {<module>:20} [SYSTEM]:Registered user_api blueprint 
+2020-08-30 18:50:31,990 [INFO:main] {<module>:22} [SYSTEM]:Registered model_management_api blueprint 
+2020-08-30 18:50:31,993 [INFO:main] {<module>:24} [SYSTEM]:Registered log_management_api blueprint 
+2020-08-30 18:50:37,120 [INFO:image_processing] {upload_image:41} [USER]:[Debug_user] Prepair image data to be measure.
+2020-08-30 18:50:37,121 [INFO:image_processing] {upload_image:68} [USER]:[Debug_user] Processing image...
+2020-08-30 18:50:37,132 [INFO:image_processing] {upload_image:75} [USER]:[Debug_user] Got measurement result
+2020-08-30 18:50:40,676 [DEBUG:image_processing] {measure_obj_size:130} [USER]:ref_center_point: [81, 71]
+2020-08-30 18:50:40,676 [DEBUG:image_processing] {measure_obj_size:131} [USER]:arr_center_point: [[265, 99], [553, 286], [792, 439], [451, 457]]
+2020-08-30 18:50:40,699 [DEBUG:image_processing] {measure_obj_size:261} [USER]:Test at line 258
+2020-08-30 18:50:40,699 [DEBUG:image_processing] {measure_obj_size:283} [USER]:Test at line 280
+2020-08-30 18:50:40,700 [DEBUG:image_processing] {measure_obj_size:287} [USER]:Test at line 284
+2020-08-30 18:50:40,700 [DEBUG:image_processing] {measure_obj_size:293} [USER]:Test at line 287
+2020-08-30 18:50:40,701 [DEBUG:image_processing] {measure_obj_size:261} [USER]:Test at line 258
+2020-08-30 18:50:40,701 [DEBUG:image_processing] {measure_obj_size:283} [USER]:Test at line 280
+2020-08-30 18:50:40,702 [DEBUG:image_processing] {measure_obj_size:287} [USER]:Test at line 284
+2020-08-30 18:50:40,702 [DEBUG:image_processing] {measure_obj_size:293} [USER]:Test at line 287
+2020-08-30 18:50:40,702 [DEBUG:image_processing] {measure_obj_size:261} [USER]:Test at line 258
+2020-08-30 18:50:40,703 [DEBUG:image_processing] {measure_obj_size:283} [USER]:Test at line 280
+2020-08-30 18:50:40,703 [DEBUG:image_processing] {measure_obj_size:287} [USER]:Test at line 284
+2020-08-30 18:50:40,703 [DEBUG:image_processing] {measure_obj_size:293} [USER]:Test at line 287
+2020-08-30 18:50:40,704 [DEBUG:image_processing] {measure_obj_size:261} [USER]:Test at line 258
+2020-08-30 18:50:40,704 [DEBUG:image_processing] {measure_obj_size:283} [USER]:Test at line 280
+2020-08-30 18:50:40,705 [DEBUG:image_processing] {measure_obj_size:287} [USER]:Test at line 284
+2020-08-30 18:50:40,705 [DEBUG:image_processing] {measure_obj_size:293} [USER]:Test at line 287
+2020-08-30 18:50:40,705 [DEBUG:image_processing] {measure_obj_size:331} [USER]:Test at line 303
+2020-08-30 18:50:40,707 [INFO:image_processing] {upload_image:78} [USER]:[Debug_user] Prepair image date to be response.
+2020-08-30 18:50:40,723 [INFO:image_processing] {upload_image:95} [USER]:[Debug_user] Responsed measurement result.
+2020-08-30 18:51:10,719 [INFO:main] {<module>:16} [SYSTEM]:Created flask app.
+2020-08-30 18:51:10,721 [INFO:main] {<module>:18} [SYSTEM]:Registered image_processing_api blueprint 
+2020-08-30 18:51:10,733 [INFO:main] {<module>:20} [SYSTEM]:Registered user_api blueprint 
+2020-08-30 18:51:10,749 [INFO:main] {<module>:22} [SYSTEM]:Registered model_management_api blueprint 
+2020-08-30 18:51:10,753 [INFO:main] {<module>:24} [SYSTEM]:Registered log_management_api blueprint 
+2020-08-30 18:51:13,372 [INFO:main] {<module>:16} [SYSTEM]:Created flask app.
+2020-08-30 18:51:13,374 [INFO:main] {<module>:18} [SYSTEM]:Registered image_processing_api blueprint 
+2020-08-30 18:51:13,378 [INFO:main] {<module>:20} [SYSTEM]:Registered user_api blueprint 
+2020-08-30 18:51:13,381 [INFO:main] {<module>:22} [SYSTEM]:Registered model_management_api blueprint 
+2020-08-30 18:51:13,383 [INFO:main] {<module>:24} [SYSTEM]:Registered log_management_api blueprint 
+2020-08-30 18:51:16,568 [INFO:image_processing] {upload_image:41} [USER]:[Debug_user] Prepair image data to be measure.
+2020-08-30 18:51:16,568 [INFO:image_processing] {upload_image:68} [USER]:[Debug_user] Processing image...
+2020-08-30 18:51:16,579 [INFO:image_processing] {upload_image:75} [USER]:[Debug_user] Got measurement result
+2020-08-30 18:51:19,554 [DEBUG:image_processing] {measure_obj_size:130} [USER]:ref_center_point: [81, 71]
+2020-08-30 18:51:19,554 [DEBUG:image_processing] {measure_obj_size:131} [USER]:arr_center_point: [[265, 99], [553, 286], [792, 439], [451, 457]]
+2020-08-30 18:51:19,577 [DEBUG:image_processing] {measure_obj_size:261} [USER]:Test at line 258
+2020-08-30 18:51:19,578 [DEBUG:image_processing] {measure_obj_size:283} [USER]:Test at line 280
+2020-08-30 18:51:19,578 [DEBUG:image_processing] {measure_obj_size:287} [USER]:Test at line 284
+2020-08-30 18:51:19,579 [DEBUG:image_processing] {measure_obj_size:293} [USER]:Test at line 287
+2020-08-30 18:51:19,579 [DEBUG:image_processing] {measure_obj_size:261} [USER]:Test at line 258
+2020-08-30 18:51:19,580 [DEBUG:image_processing] {measure_obj_size:283} [USER]:Test at line 280
+2020-08-30 18:51:19,580 [DEBUG:image_processing] {measure_obj_size:287} [USER]:Test at line 284
+2020-08-30 18:51:19,581 [DEBUG:image_processing] {measure_obj_size:293} [USER]:Test at line 287
+2020-08-30 18:51:19,581 [DEBUG:image_processing] {measure_obj_size:261} [USER]:Test at line 258
+2020-08-30 18:51:19,582 [DEBUG:image_processing] {measure_obj_size:283} [USER]:Test at line 280
+2020-08-30 18:51:19,582 [DEBUG:image_processing] {measure_obj_size:287} [USER]:Test at line 284
+2020-08-30 18:51:19,583 [DEBUG:image_processing] {measure_obj_size:293} [USER]:Test at line 287
+2020-08-30 18:51:19,583 [DEBUG:image_processing] {measure_obj_size:261} [USER]:Test at line 258
+2020-08-30 18:51:19,583 [DEBUG:image_processing] {measure_obj_size:283} [USER]:Test at line 280
+2020-08-30 18:51:19,584 [DEBUG:image_processing] {measure_obj_size:287} [USER]:Test at line 284
+2020-08-30 18:51:19,584 [DEBUG:image_processing] {measure_obj_size:293} [USER]:Test at line 287
+2020-08-30 18:51:19,584 [DEBUG:image_processing] {measure_obj_size:331} [USER]:Test at line 303
+2020-08-30 18:51:19,586 [INFO:image_processing] {upload_image:78} [USER]:[Debug_user] Prepair image date to be response.
+2020-08-30 18:51:19,602 [INFO:image_processing] {upload_image:95} [USER]:[Debug_user] Responsed measurement result.
+2020-08-30 18:51:40,008 [INFO:main] {<module>:16} [SYSTEM]:Created flask app.
+2020-08-30 18:51:40,010 [INFO:main] {<module>:18} [SYSTEM]:Registered image_processing_api blueprint 
+2020-08-30 18:51:40,015 [INFO:main] {<module>:20} [SYSTEM]:Registered user_api blueprint 
+2020-08-30 18:51:40,018 [INFO:main] {<module>:22} [SYSTEM]:Registered model_management_api blueprint 
+2020-08-30 18:51:40,019 [INFO:main] {<module>:24} [SYSTEM]:Registered log_management_api blueprint 
+2020-08-30 18:51:54,621 [INFO:main] {<module>:16} [SYSTEM]:Created flask app.
+2020-08-30 18:51:54,623 [INFO:main] {<module>:18} [SYSTEM]:Registered image_processing_api blueprint 
+2020-08-30 18:51:54,624 [INFO:main] {<module>:20} [SYSTEM]:Registered user_api blueprint 
+2020-08-30 18:51:54,630 [INFO:main] {<module>:22} [SYSTEM]:Registered model_management_api blueprint 
+2020-08-30 18:51:54,632 [INFO:main] {<module>:24} [SYSTEM]:Registered log_management_api blueprint 
+2020-08-30 18:52:05,803 [INFO:image_processing] {upload_image:41} [USER]:[Debug_user] Prepair image data to be measure.
+2020-08-30 18:52:05,804 [INFO:image_processing] {upload_image:68} [USER]:[Debug_user] Processing image...
+2020-08-30 18:52:05,815 [INFO:image_processing] {upload_image:75} [USER]:[Debug_user] Got measurement result
+2020-08-30 18:52:08,742 [DEBUG:image_processing] {measure_obj_size:130} [USER]:ref_center_point: [81, 71]
+2020-08-30 18:52:08,743 [DEBUG:image_processing] {measure_obj_size:131} [USER]:arr_center_point: [[265, 99], [553, 286], [792, 439], [451, 457]]
+2020-08-30 18:52:08,764 [DEBUG:image_processing] {measure_obj_size:261} [USER]:Test at line 258
+2020-08-30 18:52:08,765 [DEBUG:image_processing] {measure_obj_size:283} [USER]:Test at line 280
+2020-08-30 18:52:08,766 [DEBUG:image_processing] {measure_obj_size:287} [USER]:Test at line 284
+2020-08-30 18:52:08,766 [DEBUG:image_processing] {measure_obj_size:293} [USER]:Test at line 287
+2020-08-30 18:52:08,767 [DEBUG:image_processing] {measure_obj_size:261} [USER]:Test at line 258
+2020-08-30 18:52:08,767 [DEBUG:image_processing] {measure_obj_size:283} [USER]:Test at line 280
+2020-08-30 18:52:08,767 [DEBUG:image_processing] {measure_obj_size:287} [USER]:Test at line 284
+2020-08-30 18:52:08,768 [DEBUG:image_processing] {measure_obj_size:293} [USER]:Test at line 287
+2020-08-30 18:52:08,768 [DEBUG:image_processing] {measure_obj_size:261} [USER]:Test at line 258
+2020-08-30 18:52:08,768 [DEBUG:image_processing] {measure_obj_size:283} [USER]:Test at line 280
+2020-08-30 18:52:08,769 [DEBUG:image_processing] {measure_obj_size:287} [USER]:Test at line 284
+2020-08-30 18:52:08,769 [DEBUG:image_processing] {measure_obj_size:293} [USER]:Test at line 287
+2020-08-30 18:52:08,769 [DEBUG:image_processing] {measure_obj_size:261} [USER]:Test at line 258
+2020-08-30 18:52:08,770 [DEBUG:image_processing] {measure_obj_size:283} [USER]:Test at line 280
+2020-08-30 18:52:08,770 [DEBUG:image_processing] {measure_obj_size:287} [USER]:Test at line 284
+2020-08-30 18:52:08,770 [DEBUG:image_processing] {measure_obj_size:293} [USER]:Test at line 287
+2020-08-30 18:52:08,771 [DEBUG:image_processing] {measure_obj_size:331} [USER]:Test at line 303
+2020-08-30 18:52:08,772 [INFO:image_processing] {upload_image:78} [USER]:[Debug_user] Prepair image date to be response.
+2020-08-30 18:52:08,789 [INFO:image_processing] {upload_image:95} [USER]:[Debug_user] Responsed measurement result.
+2020-08-30 18:52:21,298 [INFO:main] {<module>:16} [SYSTEM]:Created flask app.
+2020-08-30 18:52:21,300 [INFO:main] {<module>:18} [SYSTEM]:Registered image_processing_api blueprint 
+2020-08-30 18:52:21,305 [INFO:main] {<module>:20} [SYSTEM]:Registered user_api blueprint 
+2020-08-30 18:52:21,312 [INFO:main] {<module>:22} [SYSTEM]:Registered model_management_api blueprint 
+2020-08-30 18:52:21,315 [INFO:main] {<module>:24} [SYSTEM]:Registered log_management_api blueprint 
+2020-08-30 18:52:35,971 [INFO:image_processing] {upload_image:41} [USER]:[Debug_user] Prepair image data to be measure.
+2020-08-30 18:52:35,972 [INFO:image_processing] {upload_image:68} [USER]:[Debug_user] Processing image...
+2020-08-30 18:52:35,984 [INFO:image_processing] {upload_image:75} [USER]:[Debug_user] Got measurement result
+2020-08-30 18:52:38,952 [DEBUG:image_processing] {measure_obj_size:130} [USER]:ref_center_point: [81, 71]
+2020-08-30 18:52:38,953 [DEBUG:image_processing] {measure_obj_size:131} [USER]:arr_center_point: [[265, 99], [553, 286], [792, 439], [451, 457]]
+2020-08-30 18:52:38,979 [DEBUG:image_processing] {measure_obj_size:261} [USER]:Test at line 258
+2020-08-30 18:52:38,981 [DEBUG:image_processing] {measure_obj_size:283} [USER]:Test at line 280
+2020-08-30 18:52:38,981 [DEBUG:image_processing] {measure_obj_size:287} [USER]:Test at line 284
+2020-08-30 18:52:38,982 [DEBUG:image_processing] {measure_obj_size:293} [USER]:Test at line 287
+2020-08-30 18:52:38,983 [DEBUG:image_processing] {measure_obj_size:261} [USER]:Test at line 258
+2020-08-30 18:52:38,983 [DEBUG:image_processing] {measure_obj_size:283} [USER]:Test at line 280
+2020-08-30 18:52:38,984 [DEBUG:image_processing] {measure_obj_size:287} [USER]:Test at line 284
+2020-08-30 18:52:38,985 [DEBUG:image_processing] {measure_obj_size:293} [USER]:Test at line 287
+2020-08-30 18:52:38,985 [DEBUG:image_processing] {measure_obj_size:261} [USER]:Test at line 258
+2020-08-30 18:52:38,986 [DEBUG:image_processing] {measure_obj_size:283} [USER]:Test at line 280
+2020-08-30 18:52:38,986 [DEBUG:image_processing] {measure_obj_size:287} [USER]:Test at line 284
+2020-08-30 18:52:38,987 [DEBUG:image_processing] {measure_obj_size:293} [USER]:Test at line 287
+2020-08-30 18:52:38,987 [DEBUG:image_processing] {measure_obj_size:261} [USER]:Test at line 258
+2020-08-30 18:52:38,988 [DEBUG:image_processing] {measure_obj_size:283} [USER]:Test at line 280
+2020-08-30 18:52:38,988 [DEBUG:image_processing] {measure_obj_size:287} [USER]:Test at line 284
+2020-08-30 18:52:38,989 [DEBUG:image_processing] {measure_obj_size:293} [USER]:Test at line 287
+2020-08-30 18:52:38,995 [DEBUG:image_processing] {measure_obj_size:331} [USER]:Test at line 303
+2020-08-30 18:52:38,997 [INFO:image_processing] {upload_image:78} [USER]:[Debug_user] Prepair image date to be response.
+2020-08-30 18:52:39,016 [INFO:image_processing] {upload_image:95} [USER]:[Debug_user] Responsed measurement result.
+2020-08-30 18:52:57,498 [INFO:main] {<module>:16} [SYSTEM]:Created flask app.
+2020-08-30 18:52:57,501 [INFO:main] {<module>:18} [SYSTEM]:Registered image_processing_api blueprint 
+2020-08-30 18:52:57,506 [INFO:main] {<module>:20} [SYSTEM]:Registered user_api blueprint 
+2020-08-30 18:52:57,509 [INFO:main] {<module>:22} [SYSTEM]:Registered model_management_api blueprint 
+2020-08-30 18:52:57,511 [INFO:main] {<module>:24} [SYSTEM]:Registered log_management_api blueprint 
+2020-08-30 18:53:06,282 [INFO:main] {<module>:16} [SYSTEM]:Created flask app.
+2020-08-30 18:53:06,284 [INFO:main] {<module>:18} [SYSTEM]:Registered image_processing_api blueprint 
+2020-08-30 18:53:06,292 [INFO:main] {<module>:20} [SYSTEM]:Registered user_api blueprint 
+2020-08-30 18:53:06,295 [INFO:main] {<module>:22} [SYSTEM]:Registered model_management_api blueprint 
+2020-08-30 18:53:06,297 [INFO:main] {<module>:24} [SYSTEM]:Registered log_management_api blueprint 
+2020-08-30 18:53:12,416 [INFO:image_processing] {upload_image:41} [USER]:[Debug_user] Prepair image data to be measure.
+2020-08-30 18:53:12,416 [INFO:image_processing] {upload_image:68} [USER]:[Debug_user] Processing image...
+2020-08-30 18:53:12,428 [INFO:image_processing] {upload_image:75} [USER]:[Debug_user] Got measurement result
+2020-08-30 18:53:15,521 [DEBUG:image_processing] {measure_obj_size:130} [USER]:ref_center_point: [81, 71]
+2020-08-30 18:53:15,522 [DEBUG:image_processing] {measure_obj_size:131} [USER]:arr_center_point: [[265, 99], [553, 286], [792, 439], [451, 457]]
+2020-08-30 18:53:15,545 [DEBUG:image_processing] {measure_obj_size:261} [USER]:Test at line 258
+2020-08-30 18:53:15,546 [DEBUG:image_processing] {measure_obj_size:283} [USER]:Test at line 280
+2020-08-30 18:53:15,547 [DEBUG:image_processing] {measure_obj_size:287} [USER]:Test at line 284
+2020-08-30 18:53:15,548 [DEBUG:image_processing] {measure_obj_size:293} [USER]:Test at line 287
+2020-08-30 18:53:15,550 [DEBUG:image_processing] {measure_obj_size:261} [USER]:Test at line 258
+2020-08-30 18:53:15,556 [DEBUG:image_processing] {measure_obj_size:283} [USER]:Test at line 280
+2020-08-30 18:53:15,557 [DEBUG:image_processing] {measure_obj_size:287} [USER]:Test at line 284
+2020-08-30 18:53:15,557 [DEBUG:image_processing] {measure_obj_size:293} [USER]:Test at line 287
+2020-08-30 18:53:15,558 [DEBUG:image_processing] {measure_obj_size:261} [USER]:Test at line 258
+2020-08-30 18:53:15,559 [DEBUG:image_processing] {measure_obj_size:283} [USER]:Test at line 280
+2020-08-30 18:53:15,559 [DEBUG:image_processing] {measure_obj_size:287} [USER]:Test at line 284
+2020-08-30 18:53:15,561 [DEBUG:image_processing] {measure_obj_size:293} [USER]:Test at line 287
+2020-08-30 18:53:15,562 [DEBUG:image_processing] {measure_obj_size:261} [USER]:Test at line 258
+2020-08-30 18:53:15,562 [DEBUG:image_processing] {measure_obj_size:283} [USER]:Test at line 280
+2020-08-30 18:53:15,563 [DEBUG:image_processing] {measure_obj_size:287} [USER]:Test at line 284
+2020-08-30 18:53:15,563 [DEBUG:image_processing] {measure_obj_size:293} [USER]:Test at line 287
+2020-08-30 18:53:15,563 [DEBUG:image_processing] {measure_obj_size:331} [USER]:Test at line 303
+2020-08-30 18:53:15,565 [INFO:image_processing] {upload_image:78} [USER]:[Debug_user] Prepair image date to be response.
+2020-08-30 18:53:15,584 [INFO:image_processing] {upload_image:95} [USER]:[Debug_user] Responsed measurement result.
+2020-08-30 18:53:36,004 [INFO:image_processing] {upload_image:41} [USER]:[Debug_user] Prepair image data to be measure.
+2020-08-30 18:53:36,004 [INFO:image_processing] {upload_image:68} [USER]:[Debug_user] Processing image...
+2020-08-30 18:53:36,065 [INFO:image_processing] {upload_image:75} [USER]:[Debug_user] Got measurement result
+2020-08-30 18:53:39,501 [DEBUG:image_processing] {measure_obj_size:130} [USER]:ref_center_point: [126, 182]
+2020-08-30 18:53:39,502 [DEBUG:image_processing] {measure_obj_size:131} [USER]:arr_center_point: [[531, 415]]
+2020-08-30 18:53:39,534 [DEBUG:image_processing] {measure_obj_size:261} [USER]:Test at line 258
+2020-08-30 18:53:39,535 [DEBUG:image_processing] {measure_obj_size:283} [USER]:Test at line 280
+2020-08-30 18:53:39,535 [DEBUG:image_processing] {measure_obj_size:287} [USER]:Test at line 284
+2020-08-30 18:53:39,536 [DEBUG:image_processing] {measure_obj_size:293} [USER]:Test at line 287
+2020-08-30 18:53:39,537 [DEBUG:image_processing] {measure_obj_size:331} [USER]:Test at line 303
+2020-08-30 18:53:39,538 [INFO:image_processing] {upload_image:78} [USER]:[Debug_user] Prepair image date to be response.
+2020-08-30 18:53:39,581 [INFO:image_processing] {upload_image:95} [USER]:[Debug_user] Responsed measurement result.
+2020-08-30 18:57:38,252 [INFO:main] {<module>:16} [SYSTEM]:Created flask app.
+2020-08-30 18:57:38,263 [INFO:main] {<module>:18} [SYSTEM]:Registered image_processing_api blueprint 
+2020-08-30 18:57:38,264 [INFO:main] {<module>:20} [SYSTEM]:Registered user_api blueprint 
+2020-08-30 18:57:38,269 [INFO:main] {<module>:22} [SYSTEM]:Registered model_management_api blueprint 
+2020-08-30 18:57:38,273 [INFO:main] {<module>:24} [SYSTEM]:Registered log_management_api blueprint 
+2020-08-30 18:58:17,000 [INFO:main] {<module>:16} [SYSTEM]:Created flask app.
+2020-08-30 18:58:17,003 [INFO:main] {<module>:18} [SYSTEM]:Registered image_processing_api blueprint 
+2020-08-30 18:58:17,008 [INFO:main] {<module>:20} [SYSTEM]:Registered user_api blueprint 
+2020-08-30 18:58:17,011 [INFO:main] {<module>:22} [SYSTEM]:Registered model_management_api blueprint 
+2020-08-30 18:58:17,017 [INFO:main] {<module>:24} [SYSTEM]:Registered log_management_api blueprint 
+2020-08-30 18:59:13,294 [INFO:main] {<module>:16} [SYSTEM]:Created flask app.
+2020-08-30 18:59:13,298 [INFO:main] {<module>:18} [SYSTEM]:Registered image_processing_api blueprint 
+2020-08-30 18:59:13,301 [INFO:main] {<module>:20} [SYSTEM]:Registered user_api blueprint 
+2020-08-30 18:59:13,304 [INFO:main] {<module>:22} [SYSTEM]:Registered model_management_api blueprint 
+2020-08-30 18:59:13,311 [INFO:main] {<module>:24} [SYSTEM]:Registered log_management_api blueprint 
+2020-08-30 18:59:21,837 [INFO:main] {<module>:16} [SYSTEM]:Created flask app.
+2020-08-30 18:59:21,839 [INFO:main] {<module>:18} [SYSTEM]:Registered image_processing_api blueprint 
+2020-08-30 18:59:21,839 [INFO:main] {<module>:20} [SYSTEM]:Registered user_api blueprint 
+2020-08-30 18:59:21,846 [INFO:main] {<module>:22} [SYSTEM]:Registered model_management_api blueprint 
+2020-08-30 18:59:21,848 [INFO:main] {<module>:24} [SYSTEM]:Registered log_management_api blueprint 
+2020-08-30 18:59:24,413 [INFO:main] {<module>:16} [SYSTEM]:Created flask app.
+2020-08-30 18:59:24,415 [INFO:main] {<module>:18} [SYSTEM]:Registered image_processing_api blueprint 
+2020-08-30 18:59:24,416 [INFO:main] {<module>:20} [SYSTEM]:Registered user_api blueprint 
+2020-08-30 18:59:24,422 [INFO:main] {<module>:22} [SYSTEM]:Registered model_management_api blueprint 
+2020-08-30 18:59:24,424 [INFO:main] {<module>:24} [SYSTEM]:Registered log_management_api blueprint 
+2020-08-30 18:59:42,612 [INFO:main] {<module>:16} [SYSTEM]:Created flask app.
+2020-08-30 18:59:42,614 [INFO:main] {<module>:18} [SYSTEM]:Registered image_processing_api blueprint 
+2020-08-30 18:59:42,615 [INFO:main] {<module>:20} [SYSTEM]:Registered user_api blueprint 
+2020-08-30 18:59:42,624 [INFO:main] {<module>:22} [SYSTEM]:Registered model_management_api blueprint 
+2020-08-30 18:59:42,626 [INFO:main] {<module>:24} [SYSTEM]:Registered log_management_api blueprint 
+2020-08-30 18:59:50,278 [INFO:main] {<module>:16} [SYSTEM]:Created flask app.
+2020-08-30 18:59:50,281 [INFO:main] {<module>:18} [SYSTEM]:Registered image_processing_api blueprint 
+2020-08-30 18:59:50,283 [INFO:main] {<module>:20} [SYSTEM]:Registered user_api blueprint 
+2020-08-30 18:59:50,294 [INFO:main] {<module>:22} [SYSTEM]:Registered model_management_api blueprint 
+2020-08-30 18:59:50,295 [INFO:main] {<module>:24} [SYSTEM]:Registered log_management_api blueprint 
+2020-08-30 18:59:58,267 [INFO:image_processing] {upload_image:41} [USER]:[Debug_user] Prepair image data to be measure.
+2020-08-30 18:59:58,268 [INFO:image_processing] {upload_image:68} [USER]:[Debug_user] Processing image...
+2020-08-30 18:59:58,330 [INFO:image_processing] {upload_image:75} [USER]:[Debug_user] Got measurement result
+2020-08-30 19:00:01,219 [DEBUG:image_processing] {measure_obj_size:130} [USER]:ref_center_point: [126, 182]
+2020-08-30 19:00:01,220 [DEBUG:image_processing] {measure_obj_size:131} [USER]:arr_center_point: [[531, 415]]
+2020-08-30 19:00:01,251 [DEBUG:image_processing] {measure_obj_size:284} [USER]:Test at line 258
+2020-08-30 19:00:01,252 [DEBUG:image_processing] {measure_obj_size:306} [USER]:Test at line 280
+2020-08-30 19:00:01,252 [DEBUG:image_processing] {measure_obj_size:310} [USER]:Test at line 284
+2020-08-30 19:00:01,253 [DEBUG:image_processing] {measure_obj_size:316} [USER]:Test at line 287
+2020-08-30 19:00:01,253 [DEBUG:image_processing] {measure_obj_size:354} [USER]:Test at line 303
+2020-08-30 19:00:01,255 [INFO:image_processing] {upload_image:78} [USER]:[Debug_user] Prepair image date to be response.
+2020-08-30 19:00:01,298 [INFO:image_processing] {upload_image:95} [USER]:[Debug_user] Responsed measurement result.
+2020-08-30 19:02:20,161 [INFO:main] {<module>:16} [SYSTEM]:Created flask app.
+2020-08-30 19:02:20,164 [INFO:main] {<module>:18} [SYSTEM]:Registered image_processing_api blueprint 
+2020-08-30 19:02:20,169 [INFO:main] {<module>:20} [SYSTEM]:Registered user_api blueprint 
+2020-08-30 19:02:20,173 [INFO:main] {<module>:22} [SYSTEM]:Registered model_management_api blueprint 
+2020-08-30 19:02:20,175 [INFO:main] {<module>:24} [SYSTEM]:Registered log_management_api blueprint 
+2020-08-30 19:02:30,898 [INFO:image_processing] {upload_image:41} [USER]:[Debug_user] Prepair image data to be measure.
+2020-08-30 19:02:30,898 [INFO:image_processing] {upload_image:68} [USER]:[Debug_user] Processing image...
+2020-08-30 19:02:30,952 [INFO:image_processing] {upload_image:75} [USER]:[Debug_user] Got measurement result
+2020-08-30 19:02:33,673 [DEBUG:image_processing] {measure_obj_size:130} [USER]:ref_center_point: [363, 388]
+2020-08-30 19:02:33,674 [DEBUG:image_processing] {measure_obj_size:131} [USER]:arr_center_point: [[545, 418]]
+2020-08-30 19:02:33,701 [DEBUG:image_processing] {measure_obj_size:289} [USER]:Test at line 258
+2020-08-30 19:02:33,702 [DEBUG:image_processing] {measure_obj_size:311} [USER]:Test at line 280
+2020-08-30 19:02:33,702 [DEBUG:image_processing] {measure_obj_size:315} [USER]:Test at line 284
+2020-08-30 19:02:33,703 [DEBUG:image_processing] {measure_obj_size:321} [USER]:Test at line 287
+2020-08-30 19:02:33,703 [DEBUG:image_processing] {measure_obj_size:359} [USER]:Test at line 303
+2020-08-30 19:02:33,705 [INFO:image_processing] {upload_image:78} [USER]:[Debug_user] Prepair image date to be response.
+2020-08-30 19:02:33,751 [INFO:image_processing] {upload_image:95} [USER]:[Debug_user] Responsed measurement result.
+2020-08-30 19:03:30,792 [INFO:image_processing] {upload_image:41} [USER]:[Debug_user] Prepair image data to be measure.
+2020-08-30 19:03:30,792 [INFO:image_processing] {upload_image:68} [USER]:[Debug_user] Processing image...
+2020-08-30 19:03:30,855 [INFO:image_processing] {upload_image:75} [USER]:[Debug_user] Got measurement result
+2020-08-30 19:03:34,125 [DEBUG:image_processing] {measure_obj_size:130} [USER]:ref_center_point: [299, 368]
+2020-08-30 19:03:34,125 [DEBUG:image_processing] {measure_obj_size:131} [USER]:arr_center_point: [[475, 396]]
+2020-08-30 19:03:34,147 [DEBUG:image_processing] {measure_obj_size:289} [USER]:Test at line 258
+2020-08-30 19:03:34,148 [DEBUG:image_processing] {measure_obj_size:311} [USER]:Test at line 280
+2020-08-30 19:03:34,150 [DEBUG:image_processing] {measure_obj_size:315} [USER]:Test at line 284
+2020-08-30 19:03:34,150 [DEBUG:image_processing] {measure_obj_size:321} [USER]:Test at line 287
+2020-08-30 19:03:34,150 [DEBUG:image_processing] {measure_obj_size:359} [USER]:Test at line 303
+2020-08-30 19:03:34,152 [INFO:image_processing] {upload_image:78} [USER]:[Debug_user] Prepair image date to be response.
+2020-08-30 19:03:34,199 [INFO:image_processing] {upload_image:95} [USER]:[Debug_user] Responsed measurement result.
+2020-08-30 19:07:32,367 [INFO:main] {<module>:16} [SYSTEM]:Created flask app.
+2020-08-30 19:07:32,370 [INFO:main] {<module>:18} [SYSTEM]:Registered image_processing_api blueprint 
+2020-08-30 19:07:32,371 [INFO:main] {<module>:20} [SYSTEM]:Registered user_api blueprint 
+2020-08-30 19:07:32,375 [INFO:main] {<module>:22} [SYSTEM]:Registered model_management_api blueprint 
+2020-08-30 19:07:32,381 [INFO:main] {<module>:24} [SYSTEM]:Registered log_management_api blueprint 
+2020-08-30 19:07:40,945 [INFO:main] {<module>:16} [SYSTEM]:Created flask app.
+2020-08-30 19:07:40,947 [INFO:main] {<module>:18} [SYSTEM]:Registered image_processing_api blueprint 
+2020-08-30 19:07:40,952 [INFO:main] {<module>:20} [SYSTEM]:Registered user_api blueprint 
+2020-08-30 19:07:40,956 [INFO:main] {<module>:22} [SYSTEM]:Registered model_management_api blueprint 
+2020-08-30 19:07:40,963 [INFO:main] {<module>:24} [SYSTEM]:Registered log_management_api blueprint 
+2020-08-30 19:07:51,572 [INFO:main] {<module>:16} [SYSTEM]:Created flask app.
+2020-08-30 19:07:51,574 [INFO:main] {<module>:18} [SYSTEM]:Registered image_processing_api blueprint 
+2020-08-30 19:07:51,576 [INFO:main] {<module>:20} [SYSTEM]:Registered user_api blueprint 
+2020-08-30 19:07:51,578 [INFO:main] {<module>:22} [SYSTEM]:Registered model_management_api blueprint 
+2020-08-30 19:07:51,579 [INFO:main] {<module>:24} [SYSTEM]:Registered log_management_api blueprint 
+2020-08-30 19:07:55,173 [INFO:main] {<module>:16} [SYSTEM]:Created flask app.
+2020-08-30 19:07:55,176 [INFO:main] {<module>:18} [SYSTEM]:Registered image_processing_api blueprint 
+2020-08-30 19:07:55,177 [INFO:main] {<module>:20} [SYSTEM]:Registered user_api blueprint 
+2020-08-30 19:07:55,179 [INFO:main] {<module>:22} [SYSTEM]:Registered model_management_api blueprint 
+2020-08-30 19:07:55,180 [INFO:main] {<module>:24} [SYSTEM]:Registered log_management_api blueprint 
+2020-08-30 19:07:59,777 [INFO:main] {<module>:16} [SYSTEM]:Created flask app.
+2020-08-30 19:07:59,779 [INFO:main] {<module>:18} [SYSTEM]:Registered image_processing_api blueprint 
+2020-08-30 19:07:59,784 [INFO:main] {<module>:20} [SYSTEM]:Registered user_api blueprint 
+2020-08-30 19:07:59,790 [INFO:main] {<module>:22} [SYSTEM]:Registered model_management_api blueprint 
+2020-08-30 19:07:59,796 [INFO:main] {<module>:24} [SYSTEM]:Registered log_management_api blueprint 
+2020-08-30 19:08:02,397 [INFO:main] {<module>:16} [SYSTEM]:Created flask app.
+2020-08-30 19:08:02,399 [INFO:main] {<module>:18} [SYSTEM]:Registered image_processing_api blueprint 
+2020-08-30 19:08:02,400 [INFO:main] {<module>:20} [SYSTEM]:Registered user_api blueprint 
+2020-08-30 19:08:02,406 [INFO:main] {<module>:22} [SYSTEM]:Registered model_management_api blueprint 
+2020-08-30 19:08:02,410 [INFO:main] {<module>:24} [SYSTEM]:Registered log_management_api blueprint 
+2020-08-30 19:08:10,029 [INFO:main] {<module>:16} [SYSTEM]:Created flask app.
+2020-08-30 19:08:10,031 [INFO:main] {<module>:18} [SYSTEM]:Registered image_processing_api blueprint 
+2020-08-30 19:08:10,032 [INFO:main] {<module>:20} [SYSTEM]:Registered user_api blueprint 
+2020-08-30 19:08:10,035 [INFO:main] {<module>:22} [SYSTEM]:Registered model_management_api blueprint 
+2020-08-30 19:08:10,036 [INFO:main] {<module>:24} [SYSTEM]:Registered log_management_api blueprint 
+2020-08-30 19:08:20,658 [INFO:main] {<module>:16} [SYSTEM]:Created flask app.
+2020-08-30 19:08:20,661 [INFO:main] {<module>:18} [SYSTEM]:Registered image_processing_api blueprint 
+2020-08-30 19:08:20,667 [INFO:main] {<module>:20} [SYSTEM]:Registered user_api blueprint 
+2020-08-30 19:08:20,677 [INFO:main] {<module>:22} [SYSTEM]:Registered model_management_api blueprint 
+2020-08-30 19:08:20,678 [INFO:main] {<module>:24} [SYSTEM]:Registered log_management_api blueprint 
+2020-08-30 19:08:24,269 [INFO:main] {<module>:16} [SYSTEM]:Created flask app.
+2020-08-30 19:08:24,272 [INFO:main] {<module>:18} [SYSTEM]:Registered image_processing_api blueprint 
+2020-08-30 19:08:24,276 [INFO:main] {<module>:20} [SYSTEM]:Registered user_api blueprint 
+2020-08-30 19:08:24,279 [INFO:main] {<module>:22} [SYSTEM]:Registered model_management_api blueprint 
+2020-08-30 19:08:24,281 [INFO:main] {<module>:24} [SYSTEM]:Registered log_management_api blueprint 
+2020-08-30 19:08:44,892 [INFO:main] {<module>:16} [SYSTEM]:Created flask app.
+2020-08-30 19:08:44,895 [INFO:main] {<module>:18} [SYSTEM]:Registered image_processing_api blueprint 
+2020-08-30 19:08:44,896 [INFO:main] {<module>:20} [SYSTEM]:Registered user_api blueprint 
+2020-08-30 19:08:44,899 [INFO:main] {<module>:22} [SYSTEM]:Registered model_management_api blueprint 
+2020-08-30 19:08:44,901 [INFO:main] {<module>:24} [SYSTEM]:Registered log_management_api blueprint 
+2020-08-30 19:08:45,742 [INFO:main] {<module>:16} [SYSTEM]:Created flask app.
+2020-08-30 19:08:45,744 [INFO:main] {<module>:18} [SYSTEM]:Registered image_processing_api blueprint 
+2020-08-30 19:08:45,746 [INFO:main] {<module>:20} [SYSTEM]:Registered user_api blueprint 
+2020-08-30 19:08:45,752 [INFO:main] {<module>:22} [SYSTEM]:Registered model_management_api blueprint 
+2020-08-30 19:08:45,754 [INFO:main] {<module>:24} [SYSTEM]:Registered log_management_api blueprint 
+2020-08-30 19:08:52,340 [INFO:image_processing] {upload_image:41} [USER]:[Debug_user] Prepair image data to be measure.
+2020-08-30 19:08:52,341 [INFO:image_processing] {upload_image:68} [USER]:[Debug_user] Processing image...
+2020-08-30 19:08:52,406 [INFO:image_processing] {upload_image:75} [USER]:[Debug_user] Got measurement result
+2020-08-30 19:08:55,919 [DEBUG:image_processing] {measure_obj_size:130} [USER]:ref_center_point: [299, 368]
+2020-08-30 19:08:55,919 [DEBUG:image_processing] {measure_obj_size:131} [USER]:arr_center_point: [[475, 396]]
+2020-08-30 19:08:55,947 [DEBUG:image_processing] {measure_obj_size:289} [USER]:Test at line 258
+2020-08-30 19:08:55,948 [DEBUG:image_processing] {measure_obj_size:311} [USER]:Test at line 280
+2020-08-30 19:08:55,949 [DEBUG:image_processing] {measure_obj_size:315} [USER]:Test at line 284
+2020-08-30 19:08:55,949 [DEBUG:image_processing] {measure_obj_size:321} [USER]:Test at line 287
+2020-08-30 19:08:55,950 [DEBUG:image_processing] {measure_obj_size:377} [USER]:Test at line 303
+2020-08-30 19:08:55,952 [INFO:image_processing] {upload_image:78} [USER]:[Debug_user] Prepair image date to be response.
+2020-08-30 19:08:56,003 [INFO:image_processing] {upload_image:95} [USER]:[Debug_user] Responsed measurement result.
+2020-08-30 19:09:29,529 [INFO:main] {<module>:16} [SYSTEM]:Created flask app.
+2020-08-30 19:09:29,532 [INFO:main] {<module>:18} [SYSTEM]:Registered image_processing_api blueprint 
+2020-08-30 19:09:29,533 [INFO:main] {<module>:20} [SYSTEM]:Registered user_api blueprint 
+2020-08-30 19:09:29,536 [INFO:main] {<module>:22} [SYSTEM]:Registered model_management_api blueprint 
+2020-08-30 19:09:29,537 [INFO:main] {<module>:24} [SYSTEM]:Registered log_management_api blueprint 
+2020-08-30 19:09:35,130 [INFO:main] {<module>:16} [SYSTEM]:Created flask app.
+2020-08-30 19:09:35,133 [INFO:main] {<module>:18} [SYSTEM]:Registered image_processing_api blueprint 
+2020-08-30 19:09:35,134 [INFO:main] {<module>:20} [SYSTEM]:Registered user_api blueprint 
+2020-08-30 19:09:35,137 [INFO:main] {<module>:22} [SYSTEM]:Registered model_management_api blueprint 
+2020-08-30 19:09:35,137 [INFO:main] {<module>:24} [SYSTEM]:Registered log_management_api blueprint 
+2020-08-30 19:10:33,560 [INFO:main] {<module>:16} [SYSTEM]:Created flask app.
+2020-08-30 19:10:33,563 [INFO:main] {<module>:18} [SYSTEM]:Registered image_processing_api blueprint 
+2020-08-30 19:10:33,564 [INFO:main] {<module>:20} [SYSTEM]:Registered user_api blueprint 
+2020-08-30 19:10:33,567 [INFO:main] {<module>:22} [SYSTEM]:Registered model_management_api blueprint 
+2020-08-30 19:10:33,572 [INFO:main] {<module>:24} [SYSTEM]:Registered log_management_api blueprint 
+2020-08-30 19:10:48,724 [INFO:main] {<module>:16} [SYSTEM]:Created flask app.
+2020-08-30 19:10:48,726 [INFO:main] {<module>:18} [SYSTEM]:Registered image_processing_api blueprint 
+2020-08-30 19:10:48,727 [INFO:main] {<module>:20} [SYSTEM]:Registered user_api blueprint 
+2020-08-30 19:10:48,729 [INFO:main] {<module>:22} [SYSTEM]:Registered model_management_api blueprint 
+2020-08-30 19:10:48,730 [INFO:main] {<module>:24} [SYSTEM]:Registered log_management_api blueprint 
+2020-08-30 19:10:54,211 [INFO:main] {<module>:16} [SYSTEM]:Created flask app.
+2020-08-30 19:10:54,213 [INFO:main] {<module>:18} [SYSTEM]:Registered image_processing_api blueprint 
+2020-08-30 19:10:54,214 [INFO:main] {<module>:20} [SYSTEM]:Registered user_api blueprint 
+2020-08-30 19:10:54,221 [INFO:main] {<module>:22} [SYSTEM]:Registered model_management_api blueprint 
+2020-08-30 19:10:54,223 [INFO:main] {<module>:24} [SYSTEM]:Registered log_management_api blueprint 
+2020-08-30 19:11:51,724 [INFO:image_processing] {upload_image:41} [USER]:[Debug_user] Prepair image data to be measure.
+2020-08-30 19:11:51,725 [INFO:image_processing] {upload_image:68} [USER]:[Debug_user] Processing image...
+2020-08-30 19:11:51,798 [INFO:image_processing] {upload_image:75} [USER]:[Debug_user] Got measurement result
+2020-08-30 19:11:55,253 [DEBUG:image_processing] {measure_obj_size:130} [USER]:ref_center_point: [242, 404]
+2020-08-30 19:11:55,253 [DEBUG:image_processing] {measure_obj_size:131} [USER]:arr_center_point: [[541, 441]]
+2020-08-30 19:11:55,283 [DEBUG:image_processing] {measure_obj_size:289} [USER]:Test at line 258
+2020-08-30 19:11:55,284 [DEBUG:image_processing] {measure_obj_size:311} [USER]:Test at line 280
+2020-08-30 19:11:55,285 [DEBUG:image_processing] {measure_obj_size:315} [USER]:Test at line 284
+2020-08-30 19:11:55,285 [DEBUG:image_processing] {measure_obj_size:321} [USER]:Test at line 287
+2020-08-30 19:11:55,286 [DEBUG:image_processing] {measure_obj_size:359} [USER]:Test at line 303
+2020-08-30 19:11:55,287 [INFO:image_processing] {upload_image:78} [USER]:[Debug_user] Prepair image date to be response.
+2020-08-30 19:11:55,328 [INFO:image_processing] {upload_image:95} [USER]:[Debug_user] Responsed measurement result.
+2020-08-30 19:12:55,104 [INFO:main] {<module>:16} [SYSTEM]:Created flask app.
+2020-08-30 19:12:55,106 [INFO:main] {<module>:18} [SYSTEM]:Registered image_processing_api blueprint 
+2020-08-30 19:12:55,107 [INFO:main] {<module>:20} [SYSTEM]:Registered user_api blueprint 
+2020-08-30 19:12:55,114 [INFO:main] {<module>:22} [SYSTEM]:Registered model_management_api blueprint 
+2020-08-30 19:12:55,117 [INFO:main] {<module>:24} [SYSTEM]:Registered log_management_api blueprint 
+2020-08-30 19:12:57,742 [INFO:main] {<module>:16} [SYSTEM]:Created flask app.
+2020-08-30 19:12:57,744 [INFO:main] {<module>:18} [SYSTEM]:Registered image_processing_api blueprint 
+2020-08-30 19:12:57,745 [INFO:main] {<module>:20} [SYSTEM]:Registered user_api blueprint 
+2020-08-30 19:12:57,751 [INFO:main] {<module>:22} [SYSTEM]:Registered model_management_api blueprint 
+2020-08-30 19:12:57,752 [INFO:main] {<module>:24} [SYSTEM]:Registered log_management_api blueprint 
+2020-08-30 19:13:01,239 [INFO:main] {<module>:16} [SYSTEM]:Created flask app.
+2020-08-30 19:13:01,241 [INFO:main] {<module>:18} [SYSTEM]:Registered image_processing_api blueprint 
+2020-08-30 19:13:01,245 [INFO:main] {<module>:20} [SYSTEM]:Registered user_api blueprint 
+2020-08-30 19:13:01,248 [INFO:main] {<module>:22} [SYSTEM]:Registered model_management_api blueprint 
+2020-08-30 19:13:01,253 [INFO:main] {<module>:24} [SYSTEM]:Registered log_management_api blueprint 
+2020-08-30 19:13:11,856 [INFO:main] {<module>:16} [SYSTEM]:Created flask app.
+2020-08-30 19:13:11,858 [INFO:main] {<module>:18} [SYSTEM]:Registered image_processing_api blueprint 
+2020-08-30 19:13:11,859 [INFO:main] {<module>:20} [SYSTEM]:Registered user_api blueprint 
+2020-08-30 19:13:11,862 [INFO:main] {<module>:22} [SYSTEM]:Registered model_management_api blueprint 
+2020-08-30 19:13:11,884 [INFO:main] {<module>:24} [SYSTEM]:Registered log_management_api blueprint 
+2020-08-30 19:13:18,513 [INFO:main] {<module>:16} [SYSTEM]:Created flask app.
+2020-08-30 19:13:18,515 [INFO:main] {<module>:18} [SYSTEM]:Registered image_processing_api blueprint 
+2020-08-30 19:13:18,521 [INFO:main] {<module>:20} [SYSTEM]:Registered user_api blueprint 
+2020-08-30 19:13:18,525 [INFO:main] {<module>:22} [SYSTEM]:Registered model_management_api blueprint 
+2020-08-30 19:13:18,526 [INFO:main] {<module>:24} [SYSTEM]:Registered log_management_api blueprint 
+2020-08-30 19:13:22,005 [INFO:main] {<module>:16} [SYSTEM]:Created flask app.
+2020-08-30 19:13:22,008 [INFO:main] {<module>:18} [SYSTEM]:Registered image_processing_api blueprint 
+2020-08-30 19:13:22,009 [INFO:main] {<module>:20} [SYSTEM]:Registered user_api blueprint 
+2020-08-30 19:13:22,015 [INFO:main] {<module>:22} [SYSTEM]:Registered model_management_api blueprint 
+2020-08-30 19:13:22,016 [INFO:main] {<module>:24} [SYSTEM]:Registered log_management_api blueprint 
+2020-08-30 19:13:26,607 [INFO:main] {<module>:16} [SYSTEM]:Created flask app.
+2020-08-30 19:13:26,609 [INFO:main] {<module>:18} [SYSTEM]:Registered image_processing_api blueprint 
+2020-08-30 19:13:26,610 [INFO:main] {<module>:20} [SYSTEM]:Registered user_api blueprint 
+2020-08-30 19:13:26,612 [INFO:main] {<module>:22} [SYSTEM]:Registered model_management_api blueprint 
+2020-08-30 19:13:26,616 [INFO:main] {<module>:24} [SYSTEM]:Registered log_management_api blueprint 
+2020-08-30 19:13:34,288 [INFO:main] {<module>:16} [SYSTEM]:Created flask app.
+2020-08-30 19:13:34,290 [INFO:main] {<module>:18} [SYSTEM]:Registered image_processing_api blueprint 
+2020-08-30 19:13:34,296 [INFO:main] {<module>:20} [SYSTEM]:Registered user_api blueprint 
+2020-08-30 19:13:34,302 [INFO:main] {<module>:22} [SYSTEM]:Registered model_management_api blueprint 
+2020-08-30 19:13:34,304 [INFO:main] {<module>:24} [SYSTEM]:Registered log_management_api blueprint 
+2020-08-30 19:13:36,873 [INFO:main] {<module>:16} [SYSTEM]:Created flask app.
+2020-08-30 19:13:36,877 [INFO:main] {<module>:18} [SYSTEM]:Registered image_processing_api blueprint 
+2020-08-30 19:13:36,881 [INFO:main] {<module>:20} [SYSTEM]:Registered user_api blueprint 
+2020-08-30 19:13:36,884 [INFO:main] {<module>:22} [SYSTEM]:Registered model_management_api blueprint 
+2020-08-30 19:13:36,885 [INFO:main] {<module>:24} [SYSTEM]:Registered log_management_api blueprint 
+2020-08-30 19:13:40,030 [INFO:main] {<module>:16} [SYSTEM]:Created flask app.
+2020-08-30 19:13:40,032 [INFO:main] {<module>:18} [SYSTEM]:Registered image_processing_api blueprint 
+2020-08-30 19:13:40,033 [INFO:main] {<module>:20} [SYSTEM]:Registered user_api blueprint 
+2020-08-30 19:13:40,040 [INFO:main] {<module>:22} [SYSTEM]:Registered model_management_api blueprint 
+2020-08-30 19:13:40,041 [INFO:main] {<module>:24} [SYSTEM]:Registered log_management_api blueprint 
+2020-08-30 19:13:46,811 [INFO:main] {<module>:16} [SYSTEM]:Created flask app.
+2020-08-30 19:13:46,815 [INFO:main] {<module>:18} [SYSTEM]:Registered image_processing_api blueprint 
+2020-08-30 19:13:46,816 [INFO:main] {<module>:20} [SYSTEM]:Registered user_api blueprint 
+2020-08-30 19:13:46,820 [INFO:main] {<module>:22} [SYSTEM]:Registered model_management_api blueprint 
+2020-08-30 19:13:46,821 [INFO:main] {<module>:24} [SYSTEM]:Registered log_management_api blueprint 
+2020-08-30 19:13:59,119 [INFO:image_processing] {upload_image:41} [USER]:[Debug_user] Prepair image data to be measure.
+2020-08-30 19:13:59,120 [INFO:image_processing] {upload_image:68} [USER]:[Debug_user] Processing image...
+2020-08-30 19:13:59,188 [INFO:image_processing] {upload_image:75} [USER]:[Debug_user] Got measurement result
+2020-08-30 19:14:02,488 [DEBUG:image_processing] {measure_obj_size:130} [USER]:ref_center_point: [242, 404]
+2020-08-30 19:14:02,489 [DEBUG:image_processing] {measure_obj_size:131} [USER]:arr_center_point: [[541, 441]]
+2020-08-30 19:14:02,520 [DEBUG:image_processing] {measure_obj_size:289} [USER]:Test at line 258
+2020-08-30 19:14:02,521 [DEBUG:image_processing] {measure_obj_size:311} [USER]:Test at line 280
+2020-08-30 19:14:02,522 [DEBUG:image_processing] {measure_obj_size:315} [USER]:Test at line 284
+2020-08-30 19:14:02,522 [DEBUG:image_processing] {measure_obj_size:321} [USER]:Test at line 287
+2020-08-30 19:14:02,523 [DEBUG:image_processing] {measure_obj_size:359} [USER]:Test at line 303
+2020-08-30 19:14:02,525 [INFO:image_processing] {upload_image:78} [USER]:[Debug_user] Prepair image date to be response.
+2020-08-30 19:14:02,568 [INFO:image_processing] {upload_image:95} [USER]:[Debug_user] Responsed measurement result.
+2020-08-30 19:15:05,340 [INFO:image_processing] {upload_image:41} [USER]:[Debug_user] Prepair image data to be measure.
+2020-08-30 19:15:05,340 [INFO:image_processing] {upload_image:68} [USER]:[Debug_user] Processing image...
+2020-08-30 19:15:05,374 [INFO:image_processing] {upload_image:75} [USER]:[Debug_user] Got measurement result
+2020-08-30 19:15:08,764 [DEBUG:image_processing] {measure_obj_size:130} [USER]:ref_center_point: [338, 397]
+2020-08-30 19:15:08,765 [DEBUG:image_processing] {measure_obj_size:131} [USER]:arr_center_point: [[559, 436]]
+2020-08-30 19:15:08,793 [DEBUG:image_processing] {measure_obj_size:289} [USER]:Test at line 258
+2020-08-30 19:15:08,794 [DEBUG:image_processing] {measure_obj_size:311} [USER]:Test at line 280
+2020-08-30 19:15:08,794 [DEBUG:image_processing] {measure_obj_size:315} [USER]:Test at line 284
+2020-08-30 19:15:08,795 [DEBUG:image_processing] {measure_obj_size:321} [USER]:Test at line 287
+2020-08-30 19:15:08,795 [DEBUG:image_processing] {measure_obj_size:359} [USER]:Test at line 303
+2020-08-30 19:15:08,797 [INFO:image_processing] {upload_image:78} [USER]:[Debug_user] Prepair image date to be response.
+2020-08-30 19:15:08,834 [INFO:image_processing] {upload_image:95} [USER]:[Debug_user] Responsed measurement result.
+2020-08-30 19:16:48,891 [INFO:image_processing] {upload_image:41} [USER]:[Debug_user] Prepair image data to be measure.
+2020-08-30 19:16:48,892 [INFO:image_processing] {upload_image:68} [USER]:[Debug_user] Processing image...
+2020-08-30 19:16:48,923 [INFO:image_processing] {upload_image:75} [USER]:[Debug_user] Got measurement result
+2020-08-30 19:16:52,170 [DEBUG:image_processing] {measure_obj_size:130} [USER]:ref_center_point: [295, 381]
+2020-08-30 19:16:52,171 [DEBUG:image_processing] {measure_obj_size:131} [USER]:arr_center_point: [[546, 431]]
+2020-08-30 19:16:52,200 [DEBUG:image_processing] {measure_obj_size:289} [USER]:Test at line 258
+2020-08-30 19:16:52,201 [DEBUG:image_processing] {measure_obj_size:311} [USER]:Test at line 280
+2020-08-30 19:16:52,202 [DEBUG:image_processing] {measure_obj_size:315} [USER]:Test at line 284
+2020-08-30 19:16:52,203 [DEBUG:image_processing] {measure_obj_size:321} [USER]:Test at line 287
+2020-08-30 19:16:52,205 [DEBUG:image_processing] {measure_obj_size:359} [USER]:Test at line 303
+2020-08-30 19:16:52,208 [INFO:image_processing] {upload_image:78} [USER]:[Debug_user] Prepair image date to be response.
+2020-08-30 19:16:52,252 [INFO:image_processing] {upload_image:95} [USER]:[Debug_user] Responsed measurement result.
+2020-08-30 19:31:15,026 [INFO:image_processing] {upload_image:41} [USER]:[Debug_user] Prepair image data to be measure.
+2020-08-30 19:31:15,026 [INFO:image_processing] {upload_image:68} [USER]:[Debug_user] Processing image...
+2020-08-30 19:31:15,086 [INFO:image_processing] {upload_image:75} [USER]:[Debug_user] Got measurement result
+2020-08-30 19:31:18,438 [DEBUG:image_processing] {measure_obj_size:130} [USER]:ref_center_point: [327, 430]
+2020-08-30 19:31:18,439 [DEBUG:image_processing] {measure_obj_size:131} [USER]:arr_center_point: [[534, 468]]
+2020-08-30 19:31:18,473 [DEBUG:image_processing] {measure_obj_size:289} [USER]:Test at line 258
+2020-08-30 19:31:18,474 [DEBUG:image_processing] {measure_obj_size:311} [USER]:Test at line 280
+2020-08-30 19:31:18,476 [DEBUG:image_processing] {measure_obj_size:315} [USER]:Test at line 284
+2020-08-30 19:31:18,476 [DEBUG:image_processing] {measure_obj_size:321} [USER]:Test at line 287
+2020-08-30 19:31:18,477 [DEBUG:image_processing] {measure_obj_size:359} [USER]:Test at line 303
+2020-08-30 19:31:18,479 [INFO:image_processing] {upload_image:78} [USER]:[Debug_user] Prepair image date to be response.
+2020-08-30 19:31:18,527 [INFO:image_processing] {upload_image:95} [USER]:[Debug_user] Responsed measurement result.
+2020-08-30 19:32:14,767 [INFO:image_processing] {upload_image:41} [USER]:[Debug_user] Prepair image data to be measure.
+2020-08-30 19:32:14,767 [INFO:image_processing] {upload_image:68} [USER]:[Debug_user] Processing image...
+2020-08-30 19:32:14,823 [INFO:image_processing] {upload_image:75} [USER]:[Debug_user] Got measurement result
+2020-08-30 19:32:17,704 [DEBUG:image_processing] {measure_obj_size:130} [USER]:ref_center_point: [298, 247]
+2020-08-30 19:32:17,705 [DEBUG:image_processing] {measure_obj_size:131} [USER]:arr_center_point: [[527, 414]]
+2020-08-30 19:32:17,736 [DEBUG:image_processing] {measure_obj_size:289} [USER]:Test at line 258
+2020-08-30 19:32:17,736 [DEBUG:image_processing] {measure_obj_size:311} [USER]:Test at line 280
+2020-08-30 19:32:17,737 [DEBUG:image_processing] {measure_obj_size:315} [USER]:Test at line 284
+2020-08-30 19:32:17,738 [DEBUG:image_processing] {measure_obj_size:321} [USER]:Test at line 287
+2020-08-30 19:32:17,738 [DEBUG:image_processing] {measure_obj_size:359} [USER]:Test at line 303
+2020-08-30 19:32:17,741 [INFO:image_processing] {upload_image:78} [USER]:[Debug_user] Prepair image date to be response.
+2020-08-30 19:32:17,787 [INFO:image_processing] {upload_image:95} [USER]:[Debug_user] Responsed measurement result.
+2020-08-30 19:33:18,134 [INFO:image_processing] {upload_image:41} [USER]:[Debug_user] Prepair image data to be measure.
+2020-08-30 19:33:18,135 [INFO:image_processing] {upload_image:68} [USER]:[Debug_user] Processing image...
+2020-08-30 19:33:18,186 [INFO:image_processing] {upload_image:75} [USER]:[Debug_user] Got measurement result
+2020-08-30 19:33:21,380 [DEBUG:image_processing] {measure_obj_size:130} [USER]:ref_center_point: [312, 271]
+2020-08-30 19:33:21,381 [DEBUG:image_processing] {measure_obj_size:131} [USER]:arr_center_point: [[528, 460]]
+2020-08-30 19:33:21,412 [DEBUG:image_processing] {measure_obj_size:289} [USER]:Test at line 258
+2020-08-30 19:33:21,413 [DEBUG:image_processing] {measure_obj_size:311} [USER]:Test at line 280
+2020-08-30 19:33:21,413 [DEBUG:image_processing] {measure_obj_size:315} [USER]:Test at line 284
+2020-08-30 19:33:21,413 [DEBUG:image_processing] {measure_obj_size:321} [USER]:Test at line 287
+2020-08-30 19:33:21,414 [DEBUG:image_processing] {measure_obj_size:359} [USER]:Test at line 303
+2020-08-30 19:33:21,418 [INFO:image_processing] {upload_image:78} [USER]:[Debug_user] Prepair image date to be response.
+2020-08-30 19:33:21,463 [INFO:image_processing] {upload_image:95} [USER]:[Debug_user] Responsed measurement result.
+2020-08-30 19:35:03,639 [INFO:image_processing] {upload_image:41} [USER]:[Debug_user] Prepair image data to be measure.
+2020-08-30 19:35:03,639 [INFO:image_processing] {upload_image:68} [USER]:[Debug_user] Processing image...
+2020-08-30 19:35:03,694 [INFO:image_processing] {upload_image:75} [USER]:[Debug_user] Got measurement result
+2020-08-30 19:35:06,654 [DEBUG:image_processing] {measure_obj_size:130} [USER]:ref_center_point: [167, 638]
+2020-08-30 19:35:06,654 [DEBUG:image_processing] {measure_obj_size:131} [USER]:arr_center_point: [[555, 425], [867, 423]]
+2020-08-30 19:35:06,684 [DEBUG:image_processing] {measure_obj_size:289} [USER]:Test at line 258
+2020-08-30 19:35:06,684 [DEBUG:image_processing] {measure_obj_size:311} [USER]:Test at line 280
+2020-08-30 19:35:06,684 [DEBUG:image_processing] {measure_obj_size:315} [USER]:Test at line 284
+2020-08-30 19:35:06,685 [DEBUG:image_processing] {measure_obj_size:321} [USER]:Test at line 287
+2020-08-30 19:35:06,685 [DEBUG:image_processing] {measure_obj_size:289} [USER]:Test at line 258
+2020-08-30 19:35:06,685 [DEBUG:image_processing] {measure_obj_size:311} [USER]:Test at line 280
+2020-08-30 19:35:06,686 [DEBUG:image_processing] {measure_obj_size:315} [USER]:Test at line 284
+2020-08-30 19:35:06,686 [DEBUG:image_processing] {measure_obj_size:321} [USER]:Test at line 287
+2020-08-30 19:35:06,687 [DEBUG:image_processing] {measure_obj_size:359} [USER]:Test at line 303
+2020-08-30 19:35:06,688 [INFO:image_processing] {upload_image:78} [USER]:[Debug_user] Prepair image date to be response.
+2020-08-30 19:35:06,726 [INFO:image_processing] {upload_image:95} [USER]:[Debug_user] Responsed measurement result.
+2020-08-30 19:35:22,851 [INFO:image_processing] {upload_image:41} [USER]:[Debug_user] Prepair image data to be measure.
+2020-08-30 19:35:22,851 [INFO:image_processing] {upload_image:68} [USER]:[Debug_user] Processing image...
+2020-08-30 19:35:22,903 [INFO:image_processing] {upload_image:75} [USER]:[Debug_user] Got measurement result
+2020-08-30 19:35:26,185 [DEBUG:image_processing] {measure_obj_size:130} [USER]:ref_center_point: [894, 251]
+2020-08-30 19:35:26,185 [DEBUG:image_processing] {measure_obj_size:131} [USER]:arr_center_point: [[544, 408], [850, 410]]
+2020-08-30 19:35:26,211 [DEBUG:image_processing] {measure_obj_size:289} [USER]:Test at line 258
+2020-08-30 19:35:26,212 [DEBUG:image_processing] {measure_obj_size:311} [USER]:Test at line 280
+2020-08-30 19:35:26,212 [DEBUG:image_processing] {measure_obj_size:315} [USER]:Test at line 284
+2020-08-30 19:35:26,213 [DEBUG:image_processing] {measure_obj_size:321} [USER]:Test at line 287
+2020-08-30 19:35:26,213 [DEBUG:image_processing] {measure_obj_size:289} [USER]:Test at line 258
+2020-08-30 19:35:26,214 [DEBUG:image_processing] {measure_obj_size:311} [USER]:Test at line 280
+2020-08-30 19:35:26,214 [DEBUG:image_processing] {measure_obj_size:315} [USER]:Test at line 284
+2020-08-30 19:35:26,214 [DEBUG:image_processing] {measure_obj_size:321} [USER]:Test at line 287
+2020-08-30 19:35:26,215 [DEBUG:image_processing] {measure_obj_size:359} [USER]:Test at line 303
+2020-08-30 19:35:26,217 [INFO:image_processing] {upload_image:78} [USER]:[Debug_user] Prepair image date to be response.
+2020-08-30 19:35:26,260 [INFO:image_processing] {upload_image:95} [USER]:[Debug_user] Responsed measurement result.
+2020-08-30 19:35:47,237 [INFO:image_processing] {upload_image:41} [USER]:[Debug_user] Prepair image data to be measure.
+2020-08-30 19:35:47,237 [INFO:image_processing] {upload_image:68} [USER]:[Debug_user] Processing image...
+2020-08-30 19:35:47,292 [INFO:image_processing] {upload_image:75} [USER]:[Debug_user] Got measurement result
+2020-08-30 19:35:50,774 [DEBUG:image_processing] {measure_obj_size:130} [USER]:ref_center_point: [148, 191]
+2020-08-30 19:35:50,776 [DEBUG:image_processing] {measure_obj_size:131} [USER]:arr_center_point: [[531, 454]]
+2020-08-30 19:35:50,803 [DEBUG:image_processing] {measure_obj_size:289} [USER]:Test at line 258
+2020-08-30 19:35:50,804 [DEBUG:image_processing] {measure_obj_size:311} [USER]:Test at line 280
+2020-08-30 19:35:50,805 [DEBUG:image_processing] {measure_obj_size:315} [USER]:Test at line 284
+2020-08-30 19:35:50,805 [DEBUG:image_processing] {measure_obj_size:321} [USER]:Test at line 287
+2020-08-30 19:35:50,806 [DEBUG:image_processing] {measure_obj_size:359} [USER]:Test at line 303
+2020-08-30 19:35:50,808 [INFO:image_processing] {upload_image:78} [USER]:[Debug_user] Prepair image date to be response.
+2020-08-30 19:35:50,849 [INFO:image_processing] {upload_image:95} [USER]:[Debug_user] Responsed measurement result.
+2020-08-30 19:36:13,840 [INFO:image_processing] {upload_image:41} [USER]:[Debug_user] Prepair image data to be measure.
+2020-08-30 19:36:13,841 [INFO:image_processing] {upload_image:68} [USER]:[Debug_user] Processing image...
+2020-08-30 19:36:13,891 [INFO:image_processing] {upload_image:75} [USER]:[Debug_user] Got measurement result
+2020-08-30 19:36:17,077 [DEBUG:image_processing] {measure_obj_size:130} [USER]:ref_center_point: [311, 384]
+2020-08-30 19:36:17,077 [DEBUG:image_processing] {measure_obj_size:131} [USER]:arr_center_point: [[576, 429]]
+2020-08-30 19:36:17,108 [DEBUG:image_processing] {measure_obj_size:289} [USER]:Test at line 258
+2020-08-30 19:36:17,108 [DEBUG:image_processing] {measure_obj_size:311} [USER]:Test at line 280
+2020-08-30 19:36:17,109 [DEBUG:image_processing] {measure_obj_size:315} [USER]:Test at line 284
+2020-08-30 19:36:17,109 [DEBUG:image_processing] {measure_obj_size:321} [USER]:Test at line 287
+2020-08-30 19:36:17,110 [DEBUG:image_processing] {measure_obj_size:359} [USER]:Test at line 303
+2020-08-30 19:36:17,111 [INFO:image_processing] {upload_image:78} [USER]:[Debug_user] Prepair image date to be response.
+2020-08-30 19:36:17,154 [INFO:image_processing] {upload_image:95} [USER]:[Debug_user] Responsed measurement result.
+2020-08-30 19:36:38,401 [INFO:image_processing] {upload_image:41} [USER]:[Debug_user] Prepair image data to be measure.
+2020-08-30 19:36:38,402 [INFO:image_processing] {upload_image:68} [USER]:[Debug_user] Processing image...
+2020-08-30 19:36:38,454 [INFO:image_processing] {upload_image:75} [USER]:[Debug_user] Got measurement result
+2020-08-30 19:36:41,412 [DEBUG:image_processing] {measure_obj_size:130} [USER]:ref_center_point: [326, 628]
+2020-08-30 19:36:41,413 [DEBUG:image_processing] {measure_obj_size:131} [USER]:arr_center_point: [[538, 443]]
+2020-08-30 19:36:41,441 [DEBUG:image_processing] {measure_obj_size:289} [USER]:Test at line 258
+2020-08-30 19:36:41,442 [DEBUG:image_processing] {measure_obj_size:311} [USER]:Test at line 280
+2020-08-30 19:36:41,442 [DEBUG:image_processing] {measure_obj_size:315} [USER]:Test at line 284
+2020-08-30 19:36:41,443 [DEBUG:image_processing] {measure_obj_size:321} [USER]:Test at line 287
+2020-08-30 19:36:41,443 [DEBUG:image_processing] {measure_obj_size:359} [USER]:Test at line 303
+2020-08-30 19:36:41,447 [INFO:image_processing] {upload_image:78} [USER]:[Debug_user] Prepair image date to be response.
+2020-08-30 19:36:41,488 [INFO:image_processing] {upload_image:95} [USER]:[Debug_user] Responsed measurement result.
+2020-08-30 19:37:26,530 [INFO:image_processing] {upload_image:41} [USER]:[Debug_user] Prepair image data to be measure.
+2020-08-30 19:37:26,530 [INFO:image_processing] {upload_image:68} [USER]:[Debug_user] Processing image...
+2020-08-30 19:37:26,580 [INFO:image_processing] {upload_image:75} [USER]:[Debug_user] Got measurement result
+2020-08-30 19:37:29,393 [DEBUG:image_processing] {measure_obj_size:130} [USER]:ref_center_point: [749, 421]
+2020-08-30 19:37:29,393 [DEBUG:image_processing] {measure_obj_size:131} [USER]:arr_center_point: [[520, 460]]
+2020-08-30 19:37:29,417 [DEBUG:image_processing] {measure_obj_size:289} [USER]:Test at line 258
+2020-08-30 19:37:29,418 [DEBUG:image_processing] {measure_obj_size:311} [USER]:Test at line 280
+2020-08-30 19:37:29,419 [DEBUG:image_processing] {measure_obj_size:315} [USER]:Test at line 284
+2020-08-30 19:37:29,419 [DEBUG:image_processing] {measure_obj_size:321} [USER]:Test at line 287
+2020-08-30 19:37:29,420 [DEBUG:image_processing] {measure_obj_size:359} [USER]:Test at line 303
+2020-08-30 19:37:29,423 [INFO:image_processing] {upload_image:78} [USER]:[Debug_user] Prepair image date to be response.
+2020-08-30 19:37:29,464 [INFO:image_processing] {upload_image:95} [USER]:[Debug_user] Responsed measurement result.
+2020-08-30 19:37:50,625 [INFO:image_processing] {upload_image:41} [USER]:[Debug_user] Prepair image data to be measure.
+2020-08-30 19:37:50,625 [INFO:image_processing] {upload_image:68} [USER]:[Debug_user] Processing image...
+2020-08-30 19:37:50,677 [INFO:image_processing] {upload_image:75} [USER]:[Debug_user] Got measurement result
+2020-08-30 19:37:53,988 [DEBUG:image_processing] {measure_obj_size:130} [USER]:ref_center_point: [939, 656]
+2020-08-30 19:37:53,989 [DEBUG:image_processing] {measure_obj_size:131} [USER]:arr_center_point: [[575, 458]]
+2020-08-30 19:37:54,020 [DEBUG:image_processing] {measure_obj_size:289} [USER]:Test at line 258
+2020-08-30 19:37:54,021 [DEBUG:image_processing] {measure_obj_size:311} [USER]:Test at line 280
+2020-08-30 19:37:54,021 [DEBUG:image_processing] {measure_obj_size:315} [USER]:Test at line 284
+2020-08-30 19:37:54,021 [DEBUG:image_processing] {measure_obj_size:321} [USER]:Test at line 287
+2020-08-30 19:37:54,022 [DEBUG:image_processing] {measure_obj_size:359} [USER]:Test at line 303
+2020-08-30 19:37:54,025 [INFO:image_processing] {upload_image:78} [USER]:[Debug_user] Prepair image date to be response.
+2020-08-30 19:37:54,067 [INFO:image_processing] {upload_image:95} [USER]:[Debug_user] Responsed measurement result.
+2020-08-30 19:38:18,923 [INFO:image_processing] {upload_image:41} [USER]:[Debug_user] Prepair image data to be measure.
+2020-08-30 19:38:18,924 [INFO:image_processing] {upload_image:68} [USER]:[Debug_user] Processing image...
+2020-08-30 19:38:18,982 [INFO:image_processing] {upload_image:75} [USER]:[Debug_user] Got measurement result
+2020-08-30 19:38:22,425 [DEBUG:image_processing] {measure_obj_size:130} [USER]:ref_center_point: [327, 430]
+2020-08-30 19:38:22,426 [DEBUG:image_processing] {measure_obj_size:131} [USER]:arr_center_point: [[534, 468]]
+2020-08-30 19:38:22,455 [DEBUG:image_processing] {measure_obj_size:289} [USER]:Test at line 258
+2020-08-30 19:38:22,455 [DEBUG:image_processing] {measure_obj_size:311} [USER]:Test at line 280
+2020-08-30 19:38:22,455 [DEBUG:image_processing] {measure_obj_size:315} [USER]:Test at line 284
+2020-08-30 19:38:22,456 [DEBUG:image_processing] {measure_obj_size:321} [USER]:Test at line 287
+2020-08-30 19:38:22,456 [DEBUG:image_processing] {measure_obj_size:359} [USER]:Test at line 303
+2020-08-30 19:38:22,458 [INFO:image_processing] {upload_image:78} [USER]:[Debug_user] Prepair image date to be response.
+2020-08-30 19:38:22,504 [INFO:image_processing] {upload_image:95} [USER]:[Debug_user] Responsed measurement result.
+2020-08-30 19:39:10,535 [INFO:image_processing] {upload_image:41} [USER]:[Debug_user] Prepair image data to be measure.
+2020-08-30 19:39:10,535 [INFO:image_processing] {upload_image:68} [USER]:[Debug_user] Processing image...
+2020-08-30 19:39:10,600 [INFO:image_processing] {upload_image:75} [USER]:[Debug_user] Got measurement result
+2020-08-30 19:39:13,604 [DEBUG:image_processing] {measure_obj_size:130} [USER]:ref_center_point: [327, 430]
+2020-08-30 19:39:13,604 [DEBUG:image_processing] {measure_obj_size:131} [USER]:arr_center_point: [[534, 468]]
+2020-08-30 19:39:13,641 [DEBUG:image_processing] {measure_obj_size:289} [USER]:Test at line 258
+2020-08-30 19:39:13,641 [DEBUG:image_processing] {measure_obj_size:311} [USER]:Test at line 280
+2020-08-30 19:39:13,642 [DEBUG:image_processing] {measure_obj_size:315} [USER]:Test at line 284
+2020-08-30 19:39:13,645 [DEBUG:image_processing] {measure_obj_size:321} [USER]:Test at line 287
+2020-08-30 19:39:13,657 [DEBUG:image_processing] {measure_obj_size:359} [USER]:Test at line 303
+2020-08-30 19:39:13,659 [INFO:image_processing] {upload_image:78} [USER]:[Debug_user] Prepair image date to be response.
+2020-08-30 19:39:13,716 [INFO:image_processing] {upload_image:95} [USER]:[Debug_user] Responsed measurement result.
+2020-08-30 19:41:31,544 [INFO:image_processing] {upload_image:41} [USER]:[Debug_user] Prepair image data to be measure.
+2020-08-30 19:41:31,545 [INFO:image_processing] {upload_image:68} [USER]:[Debug_user] Processing image...
+2020-08-30 19:41:31,632 [INFO:image_processing] {upload_image:75} [USER]:[Debug_user] Got measurement result
+2020-08-30 19:41:35,175 [DEBUG:image_processing] {measure_obj_size:130} [USER]:ref_center_point: [327, 430]
+2020-08-30 19:41:35,176 [DEBUG:image_processing] {measure_obj_size:131} [USER]:arr_center_point: [[534, 468]]
+2020-08-30 19:41:35,238 [DEBUG:image_processing] {measure_obj_size:289} [USER]:Test at line 258
+2020-08-30 19:41:35,239 [DEBUG:image_processing] {measure_obj_size:311} [USER]:Test at line 280
+2020-08-30 19:41:35,239 [DEBUG:image_processing] {measure_obj_size:315} [USER]:Test at line 284
+2020-08-30 19:41:35,240 [DEBUG:image_processing] {measure_obj_size:321} [USER]:Test at line 287
+2020-08-30 19:41:35,241 [DEBUG:image_processing] {measure_obj_size:359} [USER]:Test at line 303
+2020-08-30 19:41:35,243 [INFO:image_processing] {upload_image:78} [USER]:[Debug_user] Prepair image date to be response.
+2020-08-30 19:41:35,335 [INFO:image_processing] {upload_image:95} [USER]:[Debug_user] Responsed measurement result.
+2020-08-30 19:43:03,771 [INFO:image_processing] {upload_image:41} [USER]:[Debug_user] Prepair image data to be measure.
+2020-08-30 19:43:03,772 [INFO:image_processing] {upload_image:68} [USER]:[Debug_user] Processing image...
+2020-08-30 19:43:03,854 [INFO:image_processing] {upload_image:75} [USER]:[Debug_user] Got measurement result
+2020-08-30 19:43:07,280 [DEBUG:image_processing] {measure_obj_size:130} [USER]:ref_center_point: [298, 247]
+2020-08-30 19:43:07,281 [DEBUG:image_processing] {measure_obj_size:131} [USER]:arr_center_point: [[527, 414]]
+2020-08-30 19:43:07,341 [DEBUG:image_processing] {measure_obj_size:289} [USER]:Test at line 258
+2020-08-30 19:43:07,343 [DEBUG:image_processing] {measure_obj_size:311} [USER]:Test at line 280
+2020-08-30 19:43:07,344 [DEBUG:image_processing] {measure_obj_size:315} [USER]:Test at line 284
+2020-08-30 19:43:07,345 [DEBUG:image_processing] {measure_obj_size:321} [USER]:Test at line 287
+2020-08-30 19:43:07,354 [DEBUG:image_processing] {measure_obj_size:359} [USER]:Test at line 303
+2020-08-30 19:43:07,356 [INFO:image_processing] {upload_image:78} [USER]:[Debug_user] Prepair image date to be response.
+2020-08-30 19:43:07,424 [INFO:image_processing] {upload_image:95} [USER]:[Debug_user] Responsed measurement result.
+2020-08-30 19:44:21,570 [INFO:image_processing] {upload_image:41} [USER]:[Debug_user] Prepair image data to be measure.
+2020-08-30 19:44:21,571 [INFO:image_processing] {upload_image:68} [USER]:[Debug_user] Processing image...
+2020-08-30 19:44:21,660 [INFO:image_processing] {upload_image:75} [USER]:[Debug_user] Got measurement result
+2020-08-30 19:44:24,795 [DEBUG:image_processing] {measure_obj_size:130} [USER]:ref_center_point: [312, 271]
+2020-08-30 19:44:24,797 [DEBUG:image_processing] {measure_obj_size:131} [USER]:arr_center_point: [[528, 460]]
+2020-08-30 19:44:24,846 [DEBUG:image_processing] {measure_obj_size:289} [USER]:Test at line 258
+2020-08-30 19:44:24,847 [DEBUG:image_processing] {measure_obj_size:311} [USER]:Test at line 280
+2020-08-30 19:44:24,848 [DEBUG:image_processing] {measure_obj_size:315} [USER]:Test at line 284
+2020-08-30 19:44:24,849 [DEBUG:image_processing] {measure_obj_size:321} [USER]:Test at line 287
+2020-08-30 19:44:24,867 [DEBUG:image_processing] {measure_obj_size:359} [USER]:Test at line 303
+2020-08-30 19:44:24,871 [INFO:image_processing] {upload_image:78} [USER]:[Debug_user] Prepair image date to be response.
+2020-08-30 19:44:24,953 [INFO:image_processing] {upload_image:95} [USER]:[Debug_user] Responsed measurement result.
+2020-08-30 19:45:30,289 [INFO:main] {<module>:16} [SYSTEM]:Created flask app.
+2020-08-30 19:45:30,293 [INFO:main] {<module>:18} [SYSTEM]:Registered image_processing_api blueprint 
+2020-08-30 19:45:30,294 [INFO:main] {<module>:20} [SYSTEM]:Registered user_api blueprint 
+2020-08-30 19:45:30,297 [INFO:main] {<module>:22} [SYSTEM]:Registered model_management_api blueprint 
+2020-08-30 19:45:30,304 [INFO:main] {<module>:24} [SYSTEM]:Registered log_management_api blueprint 
+2020-08-30 19:46:02,474 [INFO:main] {<module>:16} [SYSTEM]:Created flask app.
+2020-08-30 19:46:02,476 [INFO:main] {<module>:18} [SYSTEM]:Registered image_processing_api blueprint 
+2020-08-30 19:46:02,481 [INFO:main] {<module>:20} [SYSTEM]:Registered user_api blueprint 
+2020-08-30 19:46:02,484 [INFO:main] {<module>:22} [SYSTEM]:Registered model_management_api blueprint 
+2020-08-30 19:46:02,485 [INFO:main] {<module>:24} [SYSTEM]:Registered log_management_api blueprint 
+2020-08-30 19:46:22,636 [INFO:image_processing] {upload_image:41} [USER]:[Debug_user] Prepair image data to be measure.
+2020-08-30 19:46:22,637 [INFO:image_processing] {upload_image:68} [USER]:[Debug_user] Processing image...
+2020-08-30 19:46:22,652 [INFO:image_processing] {upload_image:75} [USER]:[Debug_user] Got measurement result
+2020-08-30 19:46:26,402 [DEBUG:image_processing] {measure_obj_size:130} [USER]:ref_center_point: [81, 71]
+2020-08-30 19:46:26,403 [DEBUG:image_processing] {measure_obj_size:131} [USER]:arr_center_point: [[265, 99], [553, 286], [792, 439], [451, 457]]
+2020-08-30 19:46:26,467 [DEBUG:image_processing] {measure_obj_size:289} [USER]:Test at line 258
+2020-08-30 19:46:26,468 [DEBUG:image_processing] {measure_obj_size:311} [USER]:Test at line 280
+2020-08-30 19:46:26,469 [DEBUG:image_processing] {measure_obj_size:315} [USER]:Test at line 284
+2020-08-30 19:46:26,469 [DEBUG:image_processing] {measure_obj_size:321} [USER]:Test at line 287
+2020-08-30 19:46:26,470 [DEBUG:image_processing] {measure_obj_size:289} [USER]:Test at line 258
+2020-08-30 19:46:26,471 [DEBUG:image_processing] {measure_obj_size:311} [USER]:Test at line 280
+2020-08-30 19:46:26,471 [DEBUG:image_processing] {measure_obj_size:315} [USER]:Test at line 284
+2020-08-30 19:46:26,472 [DEBUG:image_processing] {measure_obj_size:321} [USER]:Test at line 287
+2020-08-30 19:46:26,474 [DEBUG:image_processing] {measure_obj_size:289} [USER]:Test at line 258
+2020-08-30 19:46:26,475 [DEBUG:image_processing] {measure_obj_size:311} [USER]:Test at line 280
+2020-08-30 19:46:26,476 [DEBUG:image_processing] {measure_obj_size:315} [USER]:Test at line 284
+2020-08-30 19:46:26,477 [DEBUG:image_processing] {measure_obj_size:321} [USER]:Test at line 287
+2020-08-30 19:46:26,477 [DEBUG:image_processing] {measure_obj_size:289} [USER]:Test at line 258
+2020-08-30 19:46:26,478 [DEBUG:image_processing] {measure_obj_size:311} [USER]:Test at line 280
+2020-08-30 19:46:26,479 [DEBUG:image_processing] {measure_obj_size:315} [USER]:Test at line 284
+2020-08-30 19:46:26,480 [DEBUG:image_processing] {measure_obj_size:321} [USER]:Test at line 287
+2020-08-30 19:46:26,480 [DEBUG:image_processing] {measure_obj_size:359} [USER]:Test at line 303
+2020-08-30 19:46:26,482 [INFO:image_processing] {upload_image:78} [USER]:[Debug_user] Prepair image date to be response.
+2020-08-30 19:46:26,506 [INFO:image_processing] {upload_image:95} [USER]:[Debug_user] Responsed measurement result.
+2020-08-30 19:47:18,635 [INFO:image_processing] {upload_image:41} [USER]:[Debug_user] Prepair image data to be measure.
+2020-08-30 19:47:18,635 [INFO:image_processing] {upload_image:68} [USER]:[Debug_user] Processing image...
+2020-08-30 19:47:18,708 [INFO:image_processing] {upload_image:75} [USER]:[Debug_user] Got measurement result
+2020-08-30 19:47:21,954 [DEBUG:image_processing] {measure_obj_size:130} [USER]:ref_center_point: [894, 251]
+2020-08-30 19:47:21,955 [DEBUG:image_processing] {measure_obj_size:131} [USER]:arr_center_point: [[544, 408], [850, 410]]
+2020-08-30 19:47:21,991 [DEBUG:image_processing] {measure_obj_size:289} [USER]:Test at line 258
+2020-08-30 19:47:21,992 [DEBUG:image_processing] {measure_obj_size:311} [USER]:Test at line 280
+2020-08-30 19:47:21,996 [DEBUG:image_processing] {measure_obj_size:315} [USER]:Test at line 284
+2020-08-30 19:47:21,998 [DEBUG:image_processing] {measure_obj_size:321} [USER]:Test at line 287
+2020-08-30 19:47:22,000 [DEBUG:image_processing] {measure_obj_size:289} [USER]:Test at line 258
+2020-08-30 19:47:22,017 [DEBUG:image_processing] {measure_obj_size:311} [USER]:Test at line 280
+2020-08-30 19:47:22,019 [DEBUG:image_processing] {measure_obj_size:315} [USER]:Test at line 284
+2020-08-30 19:47:22,020 [DEBUG:image_processing] {measure_obj_size:321} [USER]:Test at line 287
+2020-08-30 19:47:22,021 [DEBUG:image_processing] {measure_obj_size:359} [USER]:Test at line 303
+2020-08-30 19:47:22,028 [INFO:image_processing] {upload_image:78} [USER]:[Debug_user] Prepair image date to be response.
+2020-08-30 19:47:22,090 [INFO:image_processing] {upload_image:95} [USER]:[Debug_user] Responsed measurement result.
+2020-08-30 19:48:03,103 [INFO:image_processing] {upload_image:41} [USER]:[Debug_user] Prepair image data to be measure.
+2020-08-30 19:48:03,104 [INFO:image_processing] {upload_image:68} [USER]:[Debug_user] Processing image...
+2020-08-30 19:48:03,182 [INFO:image_processing] {upload_image:75} [USER]:[Debug_user] Got measurement result
+2020-08-30 19:48:06,621 [DEBUG:image_processing] {measure_obj_size:130} [USER]:ref_center_point: [311, 384]
+2020-08-30 19:48:06,621 [DEBUG:image_processing] {measure_obj_size:131} [USER]:arr_center_point: [[576, 429]]
+2020-08-30 19:48:06,671 [DEBUG:image_processing] {measure_obj_size:289} [USER]:Test at line 258
+2020-08-30 19:48:06,673 [DEBUG:image_processing] {measure_obj_size:311} [USER]:Test at line 280
+2020-08-30 19:48:06,674 [DEBUG:image_processing] {measure_obj_size:315} [USER]:Test at line 284
+2020-08-30 19:48:06,674 [DEBUG:image_processing] {measure_obj_size:321} [USER]:Test at line 287
+2020-08-30 19:48:06,687 [DEBUG:image_processing] {measure_obj_size:359} [USER]:Test at line 303
+2020-08-30 19:48:06,695 [INFO:image_processing] {upload_image:78} [USER]:[Debug_user] Prepair image date to be response.
+2020-08-30 19:48:06,773 [INFO:image_processing] {upload_image:95} [USER]:[Debug_user] Responsed measurement result.
+2020-08-30 19:48:40,634 [INFO:image_processing] {upload_image:41} [USER]:[Debug_user] Prepair image data to be measure.
+2020-08-30 19:48:40,635 [INFO:image_processing] {upload_image:68} [USER]:[Debug_user] Processing image...
+2020-08-30 19:48:40,641 [INFO:image_processing] {upload_image:75} [USER]:[Debug_user] Got measurement result
+2020-08-30 19:48:43,973 [DEBUG:image_processing] {measure_obj_size:130} [USER]:ref_center_point: [229, 822]
+2020-08-30 19:48:43,974 [DEBUG:image_processing] {measure_obj_size:131} [USER]:arr_center_point: [[541, 748]]
+2020-08-30 19:48:44,094 [DEBUG:image_processing] {measure_obj_size:289} [USER]:Test at line 258
+2020-08-30 19:48:44,095 [DEBUG:image_processing] {measure_obj_size:311} [USER]:Test at line 280
+2020-08-30 19:48:44,095 [DEBUG:image_processing] {measure_obj_size:315} [USER]:Test at line 284
+2020-08-30 19:48:44,095 [DEBUG:image_processing] {measure_obj_size:321} [USER]:Test at line 287
+2020-08-30 19:48:44,096 [DEBUG:image_processing] {measure_obj_size:359} [USER]:Test at line 303
+2020-08-30 19:48:44,109 [INFO:image_processing] {upload_image:78} [USER]:[Debug_user] Prepair image date to be response.
+2020-08-30 19:48:44,219 [INFO:image_processing] {upload_image:95} [USER]:[Debug_user] Responsed measurement result.
+2020-08-30 19:49:19,277 [INFO:image_processing] {upload_image:41} [USER]:[Debug_user] Prepair image data to be measure.
+2020-08-30 19:49:19,278 [INFO:image_processing] {upload_image:68} [USER]:[Debug_user] Processing image...
+2020-08-30 19:49:19,285 [INFO:image_processing] {upload_image:75} [USER]:[Debug_user] Got measurement result
+2020-08-30 19:49:22,859 [DEBUG:image_processing] {measure_obj_size:130} [USER]:ref_center_point: [851, 66]
+2020-08-30 19:49:22,860 [DEBUG:image_processing] {measure_obj_size:131} [USER]:arr_center_point: []
+2020-08-30 19:49:22,860 [WARNING:image_processing] {measure_obj_size:139} [USER]:Object not detected
+2020-08-30 19:49:22,862 [INFO:image_processing] {upload_image:78} [USER]:[Debug_user] Prepair image date to be response.
+2020-08-30 19:50:00,325 [INFO:image_processing] {upload_image:41} [USER]:[Debug_user] Prepair image data to be measure.
+2020-08-30 19:50:00,326 [INFO:image_processing] {upload_image:68} [USER]:[Debug_user] Processing image...
+2020-08-30 19:50:00,331 [INFO:image_processing] {upload_image:75} [USER]:[Debug_user] Got measurement result
+2020-08-30 19:50:03,865 [DEBUG:image_processing] {measure_obj_size:130} [USER]:ref_center_point: None
+2020-08-30 19:50:03,867 [DEBUG:image_processing] {measure_obj_size:131} [USER]:arr_center_point: []
+2020-08-30 19:50:03,867 [WARNING:image_processing] {measure_obj_size:136} [USER]:Reference object not detected
+2020-08-30 19:50:03,869 [INFO:image_processing] {upload_image:78} [USER]:[Debug_user] Prepair image date to be response.
+2020-08-30 19:50:55,701 [INFO:image_processing] {upload_image:41} [USER]:[Debug_user] Prepair image data to be measure.
+2020-08-30 19:50:55,702 [INFO:image_processing] {upload_image:68} [USER]:[Debug_user] Processing image...
+2020-08-30 19:50:55,780 [INFO:image_processing] {upload_image:75} [USER]:[Debug_user] Got measurement result
+2020-08-30 19:50:59,361 [DEBUG:image_processing] {measure_obj_size:130} [USER]:ref_center_point: [749, 421]
+2020-08-30 19:50:59,362 [DEBUG:image_processing] {measure_obj_size:131} [USER]:arr_center_point: [[520, 460]]
+2020-08-30 19:50:59,424 [DEBUG:image_processing] {measure_obj_size:289} [USER]:Test at line 258
+2020-08-30 19:50:59,425 [DEBUG:image_processing] {measure_obj_size:311} [USER]:Test at line 280
+2020-08-30 19:50:59,426 [DEBUG:image_processing] {measure_obj_size:315} [USER]:Test at line 284
+2020-08-30 19:50:59,426 [DEBUG:image_processing] {measure_obj_size:321} [USER]:Test at line 287
+2020-08-30 19:50:59,427 [DEBUG:image_processing] {measure_obj_size:359} [USER]:Test at line 303
+2020-08-30 19:50:59,430 [INFO:image_processing] {upload_image:78} [USER]:[Debug_user] Prepair image date to be response.
+2020-08-30 19:50:59,490 [INFO:image_processing] {upload_image:95} [USER]:[Debug_user] Responsed measurement result.
+2020-08-30 19:51:57,934 [INFO:main] {<module>:16} [SYSTEM]:Created flask app.
+2020-08-30 19:51:57,939 [INFO:main] {<module>:18} [SYSTEM]:Registered image_processing_api blueprint 
+2020-08-30 19:51:57,950 [INFO:main] {<module>:20} [SYSTEM]:Registered user_api blueprint 
+2020-08-30 19:51:57,959 [INFO:main] {<module>:22} [SYSTEM]:Registered model_management_api blueprint 
+2020-08-30 19:51:57,960 [INFO:main] {<module>:24} [SYSTEM]:Registered log_management_api blueprint 
+2020-08-30 19:52:01,914 [INFO:main] {<module>:16} [SYSTEM]:Created flask app.
+2020-08-30 19:52:01,919 [INFO:main] {<module>:18} [SYSTEM]:Registered image_processing_api blueprint 
+2020-08-30 19:52:01,930 [INFO:main] {<module>:20} [SYSTEM]:Registered user_api blueprint 
+2020-08-30 19:52:01,940 [INFO:main] {<module>:22} [SYSTEM]:Registered model_management_api blueprint 
+2020-08-30 19:52:01,943 [INFO:main] {<module>:24} [SYSTEM]:Registered log_management_api blueprint 
+2020-08-30 19:52:06,507 [INFO:main] {<module>:16} [SYSTEM]:Created flask app.
+2020-08-30 19:52:06,640 [INFO:main] {<module>:18} [SYSTEM]:Registered image_processing_api blueprint 
+2020-08-30 19:52:06,641 [INFO:main] {<module>:20} [SYSTEM]:Registered user_api blueprint 
+2020-08-30 19:52:06,645 [INFO:main] {<module>:22} [SYSTEM]:Registered model_management_api blueprint 
+2020-08-30 19:52:06,659 [INFO:main] {<module>:24} [SYSTEM]:Registered log_management_api blueprint 
+2020-08-30 19:52:38,583 [INFO:main] {<module>:16} [SYSTEM]:Created flask app.
+2020-08-30 19:52:38,589 [INFO:main] {<module>:18} [SYSTEM]:Registered image_processing_api blueprint 
+2020-08-30 19:52:38,596 [INFO:main] {<module>:20} [SYSTEM]:Registered user_api blueprint 
+2020-08-30 19:52:38,603 [INFO:main] {<module>:22} [SYSTEM]:Registered model_management_api blueprint 
+2020-08-30 19:52:38,604 [INFO:main] {<module>:24} [SYSTEM]:Registered log_management_api blueprint 
+2020-08-30 19:53:05,834 [INFO:main] {<module>:16} [SYSTEM]:Created flask app.
+2020-08-30 19:53:05,837 [INFO:main] {<module>:18} [SYSTEM]:Registered image_processing_api blueprint 
+2020-08-30 19:53:05,843 [INFO:main] {<module>:20} [SYSTEM]:Registered user_api blueprint 
+2020-08-30 19:53:05,846 [INFO:main] {<module>:22} [SYSTEM]:Registered model_management_api blueprint 
+2020-08-30 19:53:05,847 [INFO:main] {<module>:24} [SYSTEM]:Registered log_management_api blueprint 
+2020-08-30 19:54:46,727 [INFO:main] {<module>:16} [SYSTEM]:Created flask app.
+2020-08-30 19:54:46,732 [INFO:main] {<module>:18} [SYSTEM]:Registered image_processing_api blueprint 
+2020-08-30 19:54:46,734 [INFO:main] {<module>:20} [SYSTEM]:Registered user_api blueprint 
+2020-08-30 19:54:46,736 [INFO:main] {<module>:22} [SYSTEM]:Registered model_management_api blueprint 
+2020-08-30 19:54:46,737 [INFO:main] {<module>:24} [SYSTEM]:Registered log_management_api blueprint 
+2020-08-30 19:54:50,461 [INFO:main] {<module>:16} [SYSTEM]:Created flask app.
+2020-08-30 19:54:50,463 [INFO:main] {<module>:18} [SYSTEM]:Registered image_processing_api blueprint 
+2020-08-30 19:54:50,464 [INFO:main] {<module>:20} [SYSTEM]:Registered user_api blueprint 
+2020-08-30 19:54:50,471 [INFO:main] {<module>:22} [SYSTEM]:Registered model_management_api blueprint 
+2020-08-30 19:54:50,472 [INFO:main] {<module>:24} [SYSTEM]:Registered log_management_api blueprint 
+2020-08-30 19:54:55,460 [INFO:main] {<module>:16} [SYSTEM]:Created flask app.
+2020-08-30 19:54:55,462 [INFO:main] {<module>:18} [SYSTEM]:Registered image_processing_api blueprint 
+2020-08-30 19:54:55,464 [INFO:main] {<module>:20} [SYSTEM]:Registered user_api blueprint 
+2020-08-30 19:54:55,469 [INFO:main] {<module>:22} [SYSTEM]:Registered model_management_api blueprint 
+2020-08-30 19:54:55,470 [INFO:main] {<module>:24} [SYSTEM]:Registered log_management_api blueprint 
+2020-08-30 19:54:58,321 [INFO:main] {<module>:16} [SYSTEM]:Created flask app.
+2020-08-30 19:54:58,324 [INFO:main] {<module>:18} [SYSTEM]:Registered image_processing_api blueprint 
+2020-08-30 19:54:58,333 [INFO:main] {<module>:20} [SYSTEM]:Registered user_api blueprint 
+2020-08-30 19:54:58,337 [INFO:main] {<module>:22} [SYSTEM]:Registered model_management_api blueprint 
+2020-08-30 19:54:58,339 [INFO:main] {<module>:24} [SYSTEM]:Registered log_management_api blueprint 
+2020-08-30 19:55:02,244 [INFO:main] {<module>:16} [SYSTEM]:Created flask app.
+2020-08-30 19:55:02,251 [INFO:main] {<module>:18} [SYSTEM]:Registered image_processing_api blueprint 
+2020-08-30 19:55:02,257 [INFO:main] {<module>:20} [SYSTEM]:Registered user_api blueprint 
+2020-08-30 19:55:02,263 [INFO:main] {<module>:22} [SYSTEM]:Registered model_management_api blueprint 
+2020-08-30 19:55:02,267 [INFO:main] {<module>:24} [SYSTEM]:Registered log_management_api blueprint 
+2020-08-30 19:55:11,724 [INFO:main] {<module>:16} [SYSTEM]:Created flask app.
+2020-08-30 19:55:11,728 [INFO:main] {<module>:18} [SYSTEM]:Registered image_processing_api blueprint 
+2020-08-30 19:55:11,729 [INFO:main] {<module>:20} [SYSTEM]:Registered user_api blueprint 
+2020-08-30 19:55:11,734 [INFO:main] {<module>:22} [SYSTEM]:Registered model_management_api blueprint 
+2020-08-30 19:55:11,736 [INFO:main] {<module>:24} [SYSTEM]:Registered log_management_api blueprint 
+2020-08-30 19:55:16,848 [INFO:main] {<module>:16} [SYSTEM]:Created flask app.
+2020-08-30 19:55:16,853 [INFO:main] {<module>:18} [SYSTEM]:Registered image_processing_api blueprint 
+2020-08-30 19:55:16,854 [INFO:main] {<module>:20} [SYSTEM]:Registered user_api blueprint 
+2020-08-30 19:55:16,862 [INFO:main] {<module>:22} [SYSTEM]:Registered model_management_api blueprint 
+2020-08-30 19:55:16,881 [INFO:main] {<module>:24} [SYSTEM]:Registered log_management_api blueprint 
+2020-08-30 19:55:24,302 [INFO:main] {<module>:16} [SYSTEM]:Created flask app.
+2020-08-30 19:55:24,304 [INFO:main] {<module>:18} [SYSTEM]:Registered image_processing_api blueprint 
+2020-08-30 19:55:24,314 [INFO:main] {<module>:20} [SYSTEM]:Registered user_api blueprint 
+2020-08-30 19:55:24,320 [INFO:main] {<module>:22} [SYSTEM]:Registered model_management_api blueprint 
+2020-08-30 19:55:24,329 [INFO:main] {<module>:24} [SYSTEM]:Registered log_management_api blueprint 
+2020-08-30 19:55:27,258 [INFO:main] {<module>:16} [SYSTEM]:Created flask app.
+2020-08-30 19:55:27,262 [INFO:main] {<module>:18} [SYSTEM]:Registered image_processing_api blueprint 
+2020-08-30 19:55:27,265 [INFO:main] {<module>:20} [SYSTEM]:Registered user_api blueprint 
+2020-08-30 19:55:27,269 [INFO:main] {<module>:22} [SYSTEM]:Registered model_management_api blueprint 
+2020-08-30 19:55:27,270 [INFO:main] {<module>:24} [SYSTEM]:Registered log_management_api blueprint 
+2020-08-30 19:55:47,003 [INFO:main] {<module>:16} [SYSTEM]:Created flask app.
+2020-08-30 19:55:47,010 [INFO:main] {<module>:18} [SYSTEM]:Registered image_processing_api blueprint 
+2020-08-30 19:55:47,018 [INFO:main] {<module>:20} [SYSTEM]:Registered user_api blueprint 
+2020-08-30 19:55:47,042 [INFO:main] {<module>:22} [SYSTEM]:Registered model_management_api blueprint 
+2020-08-30 19:55:47,058 [INFO:main] {<module>:24} [SYSTEM]:Registered log_management_api blueprint 
+2020-08-30 19:55:58,398 [INFO:main] {<module>:16} [SYSTEM]:Created flask app.
+2020-08-30 19:55:58,401 [INFO:main] {<module>:18} [SYSTEM]:Registered image_processing_api blueprint 
+2020-08-30 19:55:58,407 [INFO:main] {<module>:20} [SYSTEM]:Registered user_api blueprint 
+2020-08-30 19:55:58,414 [INFO:main] {<module>:22} [SYSTEM]:Registered model_management_api blueprint 
+2020-08-30 19:55:58,415 [INFO:main] {<module>:24} [SYSTEM]:Registered log_management_api blueprint 
+2020-08-30 19:56:05,239 [INFO:main] {<module>:16} [SYSTEM]:Created flask app.
+2020-08-30 19:56:05,253 [INFO:main] {<module>:18} [SYSTEM]:Registered image_processing_api blueprint 
+2020-08-30 19:56:05,258 [INFO:main] {<module>:20} [SYSTEM]:Registered user_api blueprint 
+2020-08-30 19:56:05,264 [INFO:main] {<module>:22} [SYSTEM]:Registered model_management_api blueprint 
+2020-08-30 19:56:05,266 [INFO:main] {<module>:24} [SYSTEM]:Registered log_management_api blueprint 
+2020-08-30 19:56:08,999 [INFO:main] {<module>:16} [SYSTEM]:Created flask app.
+2020-08-30 19:56:09,005 [INFO:main] {<module>:18} [SYSTEM]:Registered image_processing_api blueprint 
+2020-08-30 19:56:09,006 [INFO:main] {<module>:20} [SYSTEM]:Registered user_api blueprint 
+2020-08-30 19:56:09,012 [INFO:main] {<module>:22} [SYSTEM]:Registered model_management_api blueprint 
+2020-08-30 19:56:09,013 [INFO:main] {<module>:24} [SYSTEM]:Registered log_management_api blueprint 
+2020-08-30 19:56:18,060 [INFO:main] {<module>:16} [SYSTEM]:Created flask app.
+2020-08-30 19:56:18,064 [INFO:main] {<module>:18} [SYSTEM]:Registered image_processing_api blueprint 
+2020-08-30 19:56:18,072 [INFO:main] {<module>:20} [SYSTEM]:Registered user_api blueprint 
+2020-08-30 19:56:18,085 [INFO:main] {<module>:22} [SYSTEM]:Registered model_management_api blueprint 
+2020-08-30 19:56:18,098 [INFO:main] {<module>:24} [SYSTEM]:Registered log_management_api blueprint 
+2020-08-30 19:56:22,731 [INFO:main] {<module>:16} [SYSTEM]:Created flask app.
+2020-08-30 19:56:22,734 [INFO:main] {<module>:18} [SYSTEM]:Registered image_processing_api blueprint 
+2020-08-30 19:56:22,740 [INFO:main] {<module>:20} [SYSTEM]:Registered user_api blueprint 
+2020-08-30 19:56:22,744 [INFO:main] {<module>:22} [SYSTEM]:Registered model_management_api blueprint 
+2020-08-30 19:56:22,746 [INFO:main] {<module>:24} [SYSTEM]:Registered log_management_api blueprint 
+2020-08-30 19:56:29,691 [INFO:main] {<module>:16} [SYSTEM]:Created flask app.
+2020-08-30 19:56:29,693 [INFO:main] {<module>:18} [SYSTEM]:Registered image_processing_api blueprint 
+2020-08-30 19:56:29,694 [INFO:main] {<module>:20} [SYSTEM]:Registered user_api blueprint 
+2020-08-30 19:56:29,698 [INFO:main] {<module>:22} [SYSTEM]:Registered model_management_api blueprint 
+2020-08-30 19:56:29,707 [INFO:main] {<module>:24} [SYSTEM]:Registered log_management_api blueprint 
+2020-08-30 19:56:32,428 [INFO:main] {<module>:16} [SYSTEM]:Created flask app.
+2020-08-30 19:56:32,430 [INFO:main] {<module>:18} [SYSTEM]:Registered image_processing_api blueprint 
+2020-08-30 19:56:32,431 [INFO:main] {<module>:20} [SYSTEM]:Registered user_api blueprint 
+2020-08-30 19:56:32,439 [INFO:main] {<module>:22} [SYSTEM]:Registered model_management_api blueprint 
+2020-08-30 19:56:32,441 [INFO:main] {<module>:24} [SYSTEM]:Registered log_management_api blueprint 
+2020-08-30 19:56:35,292 [INFO:main] {<module>:16} [SYSTEM]:Created flask app.
+2020-08-30 19:56:35,294 [INFO:main] {<module>:18} [SYSTEM]:Registered image_processing_api blueprint 
+2020-08-30 19:56:35,301 [INFO:main] {<module>:20} [SYSTEM]:Registered user_api blueprint 
+2020-08-30 19:56:35,304 [INFO:main] {<module>:22} [SYSTEM]:Registered model_management_api blueprint 
+2020-08-30 19:56:35,306 [INFO:main] {<module>:24} [SYSTEM]:Registered log_management_api blueprint 
+2020-08-30 19:56:39,999 [INFO:main] {<module>:16} [SYSTEM]:Created flask app.
+2020-08-30 19:56:40,002 [INFO:main] {<module>:18} [SYSTEM]:Registered image_processing_api blueprint 
+2020-08-30 19:56:40,008 [INFO:main] {<module>:20} [SYSTEM]:Registered user_api blueprint 
+2020-08-30 19:56:40,015 [INFO:main] {<module>:22} [SYSTEM]:Registered model_management_api blueprint 
+2020-08-30 19:56:40,024 [INFO:main] {<module>:24} [SYSTEM]:Registered log_management_api blueprint 
+2020-08-30 19:56:45,992 [INFO:main] {<module>:16} [SYSTEM]:Created flask app.
+2020-08-30 19:56:46,004 [INFO:main] {<module>:18} [SYSTEM]:Registered image_processing_api blueprint 
+2020-08-30 19:56:46,006 [INFO:main] {<module>:20} [SYSTEM]:Registered user_api blueprint 
+2020-08-30 19:56:46,009 [INFO:main] {<module>:22} [SYSTEM]:Registered model_management_api blueprint 
+2020-08-30 19:56:46,014 [INFO:main] {<module>:24} [SYSTEM]:Registered log_management_api blueprint 
+2020-08-30 19:56:49,553 [INFO:main] {<module>:16} [SYSTEM]:Created flask app.
+2020-08-30 19:56:49,556 [INFO:main] {<module>:18} [SYSTEM]:Registered image_processing_api blueprint 
+2020-08-30 19:56:49,558 [INFO:main] {<module>:20} [SYSTEM]:Registered user_api blueprint 
+2020-08-30 19:56:49,561 [INFO:main] {<module>:22} [SYSTEM]:Registered model_management_api blueprint 
+2020-08-30 19:56:49,567 [INFO:main] {<module>:24} [SYSTEM]:Registered log_management_api blueprint 
+2020-08-30 19:56:57,550 [INFO:main] {<module>:16} [SYSTEM]:Created flask app.
+2020-08-30 19:56:57,553 [INFO:main] {<module>:18} [SYSTEM]:Registered image_processing_api blueprint 
+2020-08-30 19:56:57,558 [INFO:main] {<module>:20} [SYSTEM]:Registered user_api blueprint 
+2020-08-30 19:56:57,565 [INFO:main] {<module>:22} [SYSTEM]:Registered model_management_api blueprint 
+2020-08-30 19:56:57,566 [INFO:main] {<module>:24} [SYSTEM]:Registered log_management_api blueprint 
+2020-08-30 19:57:04,151 [INFO:main] {<module>:16} [SYSTEM]:Created flask app.
+2020-08-30 19:57:04,154 [INFO:main] {<module>:18} [SYSTEM]:Registered image_processing_api blueprint 
+2020-08-30 19:57:04,168 [INFO:main] {<module>:20} [SYSTEM]:Registered user_api blueprint 
+2020-08-30 19:57:04,172 [INFO:main] {<module>:22} [SYSTEM]:Registered model_management_api blueprint 
+2020-08-30 19:57:04,173 [INFO:main] {<module>:24} [SYSTEM]:Registered log_management_api blueprint 
+2020-08-30 19:57:07,901 [INFO:main] {<module>:16} [SYSTEM]:Created flask app.
+2020-08-30 19:57:07,903 [INFO:main] {<module>:18} [SYSTEM]:Registered image_processing_api blueprint 
+2020-08-30 19:57:07,905 [INFO:main] {<module>:20} [SYSTEM]:Registered user_api blueprint 
+2020-08-30 19:57:07,908 [INFO:main] {<module>:22} [SYSTEM]:Registered model_management_api blueprint 
+2020-08-30 19:57:07,921 [INFO:main] {<module>:24} [SYSTEM]:Registered log_management_api blueprint 
+2020-08-30 19:57:11,825 [INFO:main] {<module>:16} [SYSTEM]:Created flask app.
+2020-08-30 19:57:11,828 [INFO:main] {<module>:18} [SYSTEM]:Registered image_processing_api blueprint 
+2020-08-30 19:57:11,833 [INFO:main] {<module>:20} [SYSTEM]:Registered user_api blueprint 
+2020-08-30 19:57:11,837 [INFO:main] {<module>:22} [SYSTEM]:Registered model_management_api blueprint 
+2020-08-30 19:57:11,838 [INFO:main] {<module>:24} [SYSTEM]:Registered log_management_api blueprint 
+2020-08-30 19:57:15,734 [INFO:main] {<module>:16} [SYSTEM]:Created flask app.
+2020-08-30 19:57:15,736 [INFO:main] {<module>:18} [SYSTEM]:Registered image_processing_api blueprint 
+2020-08-30 19:57:15,737 [INFO:main] {<module>:20} [SYSTEM]:Registered user_api blueprint 
+2020-08-30 19:57:15,745 [INFO:main] {<module>:22} [SYSTEM]:Registered model_management_api blueprint 
+2020-08-30 19:57:15,749 [INFO:main] {<module>:24} [SYSTEM]:Registered log_management_api blueprint 
+2020-08-30 19:57:20,975 [INFO:main] {<module>:16} [SYSTEM]:Created flask app.
+2020-08-30 19:57:20,981 [INFO:main] {<module>:18} [SYSTEM]:Registered image_processing_api blueprint 
+2020-08-30 19:57:20,983 [INFO:main] {<module>:20} [SYSTEM]:Registered user_api blueprint 
+2020-08-30 19:57:20,990 [INFO:main] {<module>:22} [SYSTEM]:Registered model_management_api blueprint 
+2020-08-30 19:57:21,001 [INFO:main] {<module>:24} [SYSTEM]:Registered log_management_api blueprint 
+2020-08-30 19:57:29,501 [INFO:main] {<module>:16} [SYSTEM]:Created flask app.
+2020-08-30 19:57:29,503 [INFO:main] {<module>:18} [SYSTEM]:Registered image_processing_api blueprint 
+2020-08-30 19:57:29,506 [INFO:main] {<module>:20} [SYSTEM]:Registered user_api blueprint 
+2020-08-30 19:57:29,525 [INFO:main] {<module>:22} [SYSTEM]:Registered model_management_api blueprint 
+2020-08-30 19:57:29,535 [INFO:main] {<module>:24} [SYSTEM]:Registered log_management_api blueprint 
+2020-08-30 19:57:38,103 [INFO:main] {<module>:16} [SYSTEM]:Created flask app.
+2020-08-30 19:57:38,108 [INFO:main] {<module>:18} [SYSTEM]:Registered image_processing_api blueprint 
+2020-08-30 19:57:38,111 [INFO:main] {<module>:20} [SYSTEM]:Registered user_api blueprint 
+2020-08-30 19:57:38,123 [INFO:main] {<module>:22} [SYSTEM]:Registered model_management_api blueprint 
+2020-08-30 19:57:38,136 [INFO:main] {<module>:24} [SYSTEM]:Registered log_management_api blueprint 
+2020-08-30 19:57:44,908 [INFO:main] {<module>:16} [SYSTEM]:Created flask app.
+2020-08-30 19:57:44,917 [INFO:main] {<module>:18} [SYSTEM]:Registered image_processing_api blueprint 
+2020-08-30 19:57:44,930 [INFO:main] {<module>:20} [SYSTEM]:Registered user_api blueprint 
+2020-08-30 19:57:44,940 [INFO:main] {<module>:22} [SYSTEM]:Registered model_management_api blueprint 
+2020-08-30 19:57:44,950 [INFO:main] {<module>:24} [SYSTEM]:Registered log_management_api blueprint 
+2020-08-30 19:57:49,434 [INFO:main] {<module>:16} [SYSTEM]:Created flask app.
+2020-08-30 19:57:49,437 [INFO:main] {<module>:18} [SYSTEM]:Registered image_processing_api blueprint 
+2020-08-30 19:57:49,448 [INFO:main] {<module>:20} [SYSTEM]:Registered user_api blueprint 
+2020-08-30 19:57:49,458 [INFO:main] {<module>:22} [SYSTEM]:Registered model_management_api blueprint 
+2020-08-30 19:57:49,466 [INFO:main] {<module>:24} [SYSTEM]:Registered log_management_api blueprint 
+2020-08-30 19:57:54,912 [INFO:main] {<module>:16} [SYSTEM]:Created flask app.
+2020-08-30 19:57:54,915 [INFO:main] {<module>:18} [SYSTEM]:Registered image_processing_api blueprint 
+2020-08-30 19:57:54,924 [INFO:main] {<module>:20} [SYSTEM]:Registered user_api blueprint 
+2020-08-30 19:57:54,929 [INFO:main] {<module>:22} [SYSTEM]:Registered model_management_api blueprint 
+2020-08-30 19:57:54,931 [INFO:main] {<module>:24} [SYSTEM]:Registered log_management_api blueprint 
+2020-08-30 19:58:03,374 [INFO:main] {<module>:16} [SYSTEM]:Created flask app.
+2020-08-30 19:58:03,377 [INFO:main] {<module>:18} [SYSTEM]:Registered image_processing_api blueprint 
+2020-08-30 19:58:03,379 [INFO:main] {<module>:20} [SYSTEM]:Registered user_api blueprint 
+2020-08-30 19:58:03,391 [INFO:main] {<module>:22} [SYSTEM]:Registered model_management_api blueprint 
+2020-08-30 19:58:03,393 [INFO:main] {<module>:24} [SYSTEM]:Registered log_management_api blueprint 
+2020-08-30 19:58:08,580 [INFO:main] {<module>:16} [SYSTEM]:Created flask app.
+2020-08-30 19:58:08,631 [INFO:main] {<module>:18} [SYSTEM]:Registered image_processing_api blueprint 
+2020-08-30 19:58:08,635 [INFO:main] {<module>:20} [SYSTEM]:Registered user_api blueprint 
+2020-08-30 19:58:08,648 [INFO:main] {<module>:22} [SYSTEM]:Registered model_management_api blueprint 
+2020-08-30 19:58:08,649 [INFO:main] {<module>:24} [SYSTEM]:Registered log_management_api blueprint 
+2020-08-30 19:58:16,691 [INFO:main] {<module>:16} [SYSTEM]:Created flask app.
+2020-08-30 19:58:16,693 [INFO:main] {<module>:18} [SYSTEM]:Registered image_processing_api blueprint 
+2020-08-30 19:58:16,695 [INFO:main] {<module>:20} [SYSTEM]:Registered user_api blueprint 
+2020-08-30 19:58:16,702 [INFO:main] {<module>:22} [SYSTEM]:Registered model_management_api blueprint 
+2020-08-30 19:58:16,709 [INFO:main] {<module>:24} [SYSTEM]:Registered log_management_api blueprint 
+2020-08-30 19:58:22,125 [INFO:main] {<module>:16} [SYSTEM]:Created flask app.
+2020-08-30 19:58:22,128 [INFO:main] {<module>:18} [SYSTEM]:Registered image_processing_api blueprint 
+2020-08-30 19:58:22,138 [INFO:main] {<module>:20} [SYSTEM]:Registered user_api blueprint 
+2020-08-30 19:58:22,143 [INFO:main] {<module>:22} [SYSTEM]:Registered model_management_api blueprint 
+2020-08-30 19:58:22,144 [INFO:main] {<module>:24} [SYSTEM]:Registered log_management_api blueprint 
+2020-08-30 19:58:26,727 [INFO:main] {<module>:16} [SYSTEM]:Created flask app.
+2020-08-30 19:58:26,733 [INFO:main] {<module>:18} [SYSTEM]:Registered image_processing_api blueprint 
+2020-08-30 19:58:26,743 [INFO:main] {<module>:20} [SYSTEM]:Registered user_api blueprint 
+2020-08-30 19:58:26,755 [INFO:main] {<module>:22} [SYSTEM]:Registered model_management_api blueprint 
+2020-08-30 19:58:26,758 [INFO:main] {<module>:24} [SYSTEM]:Registered log_management_api blueprint 
+2020-08-30 19:58:36,879 [INFO:main] {<module>:16} [SYSTEM]:Created flask app.
+2020-08-30 19:58:36,884 [INFO:main] {<module>:18} [SYSTEM]:Registered image_processing_api blueprint 
+2020-08-30 19:58:36,886 [INFO:main] {<module>:20} [SYSTEM]:Registered user_api blueprint 
+2020-08-30 19:58:36,898 [INFO:main] {<module>:22} [SYSTEM]:Registered model_management_api blueprint 
+2020-08-30 19:58:36,908 [INFO:main] {<module>:24} [SYSTEM]:Registered log_management_api blueprint 
+2020-08-30 20:00:38,842 [INFO:main] {<module>:16} [SYSTEM]:Created flask app.
+2020-08-30 20:00:38,845 [INFO:main] {<module>:18} [SYSTEM]:Registered image_processing_api blueprint 
+2020-08-30 20:00:38,846 [INFO:main] {<module>:20} [SYSTEM]:Registered user_api blueprint 
+2020-08-30 20:00:38,863 [INFO:main] {<module>:22} [SYSTEM]:Registered model_management_api blueprint 
+2020-08-30 20:00:38,866 [INFO:main] {<module>:24} [SYSTEM]:Registered log_management_api blueprint 
+2020-08-30 20:00:43,982 [INFO:main] {<module>:16} [SYSTEM]:Created flask app.
+2020-08-30 20:00:43,988 [INFO:main] {<module>:18} [SYSTEM]:Registered image_processing_api blueprint 
+2020-08-30 20:00:44,002 [INFO:main] {<module>:20} [SYSTEM]:Registered user_api blueprint 
+2020-08-30 20:00:44,015 [INFO:main] {<module>:22} [SYSTEM]:Registered model_management_api blueprint 
+2020-08-30 20:00:44,026 [INFO:main] {<module>:24} [SYSTEM]:Registered log_management_api blueprint 
+2020-08-30 20:00:47,167 [INFO:main] {<module>:16} [SYSTEM]:Created flask app.
+2020-08-30 20:00:47,172 [INFO:main] {<module>:18} [SYSTEM]:Registered image_processing_api blueprint 
+2020-08-30 20:00:47,184 [INFO:main] {<module>:20} [SYSTEM]:Registered user_api blueprint 
+2020-08-30 20:00:47,189 [INFO:main] {<module>:22} [SYSTEM]:Registered model_management_api blueprint 
+2020-08-30 20:00:47,190 [INFO:main] {<module>:24} [SYSTEM]:Registered log_management_api blueprint 
+2020-08-30 20:00:53,653 [INFO:main] {<module>:16} [SYSTEM]:Created flask app.
+2020-08-30 20:00:53,658 [INFO:main] {<module>:18} [SYSTEM]:Registered image_processing_api blueprint 
+2020-08-30 20:00:53,660 [INFO:main] {<module>:20} [SYSTEM]:Registered user_api blueprint 
+2020-08-30 20:00:53,663 [INFO:main] {<module>:22} [SYSTEM]:Registered model_management_api blueprint 
+2020-08-30 20:00:53,670 [INFO:main] {<module>:24} [SYSTEM]:Registered log_management_api blueprint 
+2020-08-30 20:01:04,101 [INFO:main] {<module>:16} [SYSTEM]:Created flask app.
+2020-08-30 20:01:04,123 [INFO:main] {<module>:18} [SYSTEM]:Registered image_processing_api blueprint 
+2020-08-30 20:01:04,124 [INFO:main] {<module>:20} [SYSTEM]:Registered user_api blueprint 
+2020-08-30 20:01:04,130 [INFO:main] {<module>:22} [SYSTEM]:Registered model_management_api blueprint 
+2020-08-30 20:01:04,136 [INFO:main] {<module>:24} [SYSTEM]:Registered log_management_api blueprint 
+2020-08-30 20:01:08,266 [INFO:main] {<module>:16} [SYSTEM]:Created flask app.
+2020-08-30 20:01:08,268 [INFO:main] {<module>:18} [SYSTEM]:Registered image_processing_api blueprint 
+2020-08-30 20:01:08,274 [INFO:main] {<module>:20} [SYSTEM]:Registered user_api blueprint 
+2020-08-30 20:01:08,282 [INFO:main] {<module>:22} [SYSTEM]:Registered model_management_api blueprint 
+2020-08-30 20:01:08,286 [INFO:main] {<module>:24} [SYSTEM]:Registered log_management_api blueprint 
+2020-08-30 20:01:11,526 [INFO:main] {<module>:16} [SYSTEM]:Created flask app.
+2020-08-30 20:01:11,530 [INFO:main] {<module>:18} [SYSTEM]:Registered image_processing_api blueprint 
+2020-08-30 20:01:11,531 [INFO:main] {<module>:20} [SYSTEM]:Registered user_api blueprint 
+2020-08-30 20:01:11,535 [INFO:main] {<module>:22} [SYSTEM]:Registered model_management_api blueprint 
+2020-08-30 20:01:11,536 [INFO:main] {<module>:24} [SYSTEM]:Registered log_management_api blueprint 
+2020-08-30 20:01:15,880 [INFO:main] {<module>:16} [SYSTEM]:Created flask app.
+2020-08-30 20:01:15,891 [INFO:main] {<module>:18} [SYSTEM]:Registered image_processing_api blueprint 
+2020-08-30 20:01:15,894 [INFO:main] {<module>:20} [SYSTEM]:Registered user_api blueprint 
+2020-08-30 20:01:15,912 [INFO:main] {<module>:22} [SYSTEM]:Registered model_management_api blueprint 
+2020-08-30 20:01:15,922 [INFO:main] {<module>:24} [SYSTEM]:Registered log_management_api blueprint 
+2020-08-30 20:01:23,614 [INFO:main] {<module>:16} [SYSTEM]:Created flask app.
+2020-08-30 20:01:23,617 [INFO:main] {<module>:18} [SYSTEM]:Registered image_processing_api blueprint 
+2020-08-30 20:01:23,620 [INFO:main] {<module>:20} [SYSTEM]:Registered user_api blueprint 
+2020-08-30 20:01:23,630 [INFO:main] {<module>:22} [SYSTEM]:Registered model_management_api blueprint 
+2020-08-30 20:01:23,636 [INFO:main] {<module>:24} [SYSTEM]:Registered log_management_api blueprint 
+2020-08-30 20:01:28,974 [INFO:main] {<module>:16} [SYSTEM]:Created flask app.
+2020-08-30 20:01:28,977 [INFO:main] {<module>:18} [SYSTEM]:Registered image_processing_api blueprint 
+2020-08-30 20:01:28,986 [INFO:main] {<module>:20} [SYSTEM]:Registered user_api blueprint 
+2020-08-30 20:01:28,995 [INFO:main] {<module>:22} [SYSTEM]:Registered model_management_api blueprint 
+2020-08-30 20:01:29,001 [INFO:main] {<module>:24} [SYSTEM]:Registered log_management_api blueprint 
+2020-08-30 20:01:32,255 [INFO:main] {<module>:16} [SYSTEM]:Created flask app.
+2020-08-30 20:01:32,258 [INFO:main] {<module>:18} [SYSTEM]:Registered image_processing_api blueprint 
+2020-08-30 20:01:32,265 [INFO:main] {<module>:20} [SYSTEM]:Registered user_api blueprint 
+2020-08-30 20:01:32,270 [INFO:main] {<module>:22} [SYSTEM]:Registered model_management_api blueprint 
+2020-08-30 20:01:32,273 [INFO:main] {<module>:24} [SYSTEM]:Registered log_management_api blueprint 
+2020-08-30 20:01:35,915 [INFO:main] {<module>:16} [SYSTEM]:Created flask app.
+2020-08-30 20:01:35,919 [INFO:main] {<module>:18} [SYSTEM]:Registered image_processing_api blueprint 
+2020-08-30 20:01:35,921 [INFO:main] {<module>:20} [SYSTEM]:Registered user_api blueprint 
+2020-08-30 20:01:35,925 [INFO:main] {<module>:22} [SYSTEM]:Registered model_management_api blueprint 
+2020-08-30 20:01:35,933 [INFO:main] {<module>:24} [SYSTEM]:Registered log_management_api blueprint 
+2020-08-30 20:01:39,346 [INFO:main] {<module>:16} [SYSTEM]:Created flask app.
+2020-08-30 20:01:39,367 [INFO:main] {<module>:18} [SYSTEM]:Registered image_processing_api blueprint 
+2020-08-30 20:01:39,379 [INFO:main] {<module>:20} [SYSTEM]:Registered user_api blueprint 
+2020-08-30 20:01:39,395 [INFO:main] {<module>:22} [SYSTEM]:Registered model_management_api blueprint 
+2020-08-30 20:01:39,408 [INFO:main] {<module>:24} [SYSTEM]:Registered log_management_api blueprint 
+2020-08-30 20:01:42,564 [INFO:main] {<module>:16} [SYSTEM]:Created flask app.
+2020-08-30 20:01:42,568 [INFO:main] {<module>:18} [SYSTEM]:Registered image_processing_api blueprint 
+2020-08-30 20:01:42,578 [INFO:main] {<module>:20} [SYSTEM]:Registered user_api blueprint 
+2020-08-30 20:01:42,583 [INFO:main] {<module>:22} [SYSTEM]:Registered model_management_api blueprint 
+2020-08-30 20:01:42,584 [INFO:main] {<module>:24} [SYSTEM]:Registered log_management_api blueprint 
+2020-08-30 20:01:46,099 [INFO:main] {<module>:16} [SYSTEM]:Created flask app.
+2020-08-30 20:01:46,155 [INFO:main] {<module>:18} [SYSTEM]:Registered image_processing_api blueprint 
+2020-08-30 20:01:46,259 [INFO:main] {<module>:20} [SYSTEM]:Registered user_api blueprint 
+2020-08-30 20:01:46,273 [INFO:main] {<module>:22} [SYSTEM]:Registered model_management_api blueprint 
+2020-08-30 20:01:46,292 [INFO:main] {<module>:24} [SYSTEM]:Registered log_management_api blueprint 
+2020-08-30 20:01:55,844 [INFO:main] {<module>:16} [SYSTEM]:Created flask app.
+2020-08-30 20:01:55,852 [INFO:main] {<module>:18} [SYSTEM]:Registered image_processing_api blueprint 
+2020-08-30 20:01:55,860 [INFO:main] {<module>:20} [SYSTEM]:Registered user_api blueprint 
+2020-08-30 20:01:55,866 [INFO:main] {<module>:22} [SYSTEM]:Registered model_management_api blueprint 
+2020-08-30 20:01:55,868 [INFO:main] {<module>:24} [SYSTEM]:Registered log_management_api blueprint 
+2020-08-30 20:02:00,281 [INFO:main] {<module>:16} [SYSTEM]:Created flask app.
+2020-08-30 20:02:00,285 [INFO:main] {<module>:18} [SYSTEM]:Registered image_processing_api blueprint 
+2020-08-30 20:02:00,287 [INFO:main] {<module>:20} [SYSTEM]:Registered user_api blueprint 
+2020-08-30 20:02:00,300 [INFO:main] {<module>:22} [SYSTEM]:Registered model_management_api blueprint 
+2020-08-30 20:02:00,302 [INFO:main] {<module>:24} [SYSTEM]:Registered log_management_api blueprint 
+2020-08-30 20:02:06,038 [INFO:main] {<module>:16} [SYSTEM]:Created flask app.
+2020-08-30 20:02:06,041 [INFO:main] {<module>:18} [SYSTEM]:Registered image_processing_api blueprint 
+2020-08-30 20:02:06,044 [INFO:main] {<module>:20} [SYSTEM]:Registered user_api blueprint 
+2020-08-30 20:02:06,052 [INFO:main] {<module>:22} [SYSTEM]:Registered model_management_api blueprint 
+2020-08-30 20:02:06,054 [INFO:main] {<module>:24} [SYSTEM]:Registered log_management_api blueprint 
+2020-08-30 20:02:10,767 [INFO:main] {<module>:16} [SYSTEM]:Created flask app.
+2020-08-30 20:02:10,774 [INFO:main] {<module>:18} [SYSTEM]:Registered image_processing_api blueprint 
+2020-08-30 20:02:10,775 [INFO:main] {<module>:20} [SYSTEM]:Registered user_api blueprint 
+2020-08-30 20:02:10,780 [INFO:main] {<module>:22} [SYSTEM]:Registered model_management_api blueprint 
+2020-08-30 20:02:10,781 [INFO:main] {<module>:24} [SYSTEM]:Registered log_management_api blueprint 
+2020-08-30 20:02:14,436 [INFO:main] {<module>:16} [SYSTEM]:Created flask app.
+2020-08-30 20:02:14,441 [INFO:main] {<module>:18} [SYSTEM]:Registered image_processing_api blueprint 
+2020-08-30 20:02:14,450 [INFO:main] {<module>:20} [SYSTEM]:Registered user_api blueprint 
+2020-08-30 20:02:14,475 [INFO:main] {<module>:22} [SYSTEM]:Registered model_management_api blueprint 
+2020-08-30 20:02:14,480 [INFO:main] {<module>:24} [SYSTEM]:Registered log_management_api blueprint 
+2020-08-30 20:02:31,144 [INFO:main] {<module>:16} [SYSTEM]:Created flask app.
+2020-08-30 20:02:31,147 [INFO:main] {<module>:18} [SYSTEM]:Registered image_processing_api blueprint 
+2020-08-30 20:02:31,148 [INFO:main] {<module>:20} [SYSTEM]:Registered user_api blueprint 
+2020-08-30 20:02:31,158 [INFO:main] {<module>:22} [SYSTEM]:Registered model_management_api blueprint 
+2020-08-30 20:02:31,161 [INFO:main] {<module>:24} [SYSTEM]:Registered log_management_api blueprint 
+2020-08-30 20:02:35,718 [INFO:main] {<module>:16} [SYSTEM]:Created flask app.
+2020-08-30 20:02:35,741 [INFO:main] {<module>:18} [SYSTEM]:Registered image_processing_api blueprint 
+2020-08-30 20:02:35,743 [INFO:main] {<module>:20} [SYSTEM]:Registered user_api blueprint 
+2020-08-30 20:02:35,746 [INFO:main] {<module>:22} [SYSTEM]:Registered model_management_api blueprint 
+2020-08-30 20:02:35,747 [INFO:main] {<module>:24} [SYSTEM]:Registered log_management_api blueprint 
+2020-08-30 20:02:39,163 [INFO:main] {<module>:16} [SYSTEM]:Created flask app.
+2020-08-30 20:02:39,169 [INFO:main] {<module>:18} [SYSTEM]:Registered image_processing_api blueprint 
+2020-08-30 20:02:39,174 [INFO:main] {<module>:20} [SYSTEM]:Registered user_api blueprint 
+2020-08-30 20:02:39,184 [INFO:main] {<module>:22} [SYSTEM]:Registered model_management_api blueprint 
+2020-08-30 20:02:39,193 [INFO:main] {<module>:24} [SYSTEM]:Registered log_management_api blueprint 
+2020-08-30 20:03:00,210 [INFO:main] {<module>:16} [SYSTEM]:Created flask app.
+2020-08-30 20:03:00,215 [INFO:main] {<module>:18} [SYSTEM]:Registered image_processing_api blueprint 
+2020-08-30 20:03:00,235 [INFO:main] {<module>:20} [SYSTEM]:Registered user_api blueprint 
+2020-08-30 20:03:00,250 [INFO:main] {<module>:22} [SYSTEM]:Registered model_management_api blueprint 
+2020-08-30 20:03:00,257 [INFO:main] {<module>:24} [SYSTEM]:Registered log_management_api blueprint 
+2020-08-30 20:03:09,081 [INFO:main] {<module>:16} [SYSTEM]:Created flask app.
+2020-08-30 20:03:09,085 [INFO:main] {<module>:18} [SYSTEM]:Registered image_processing_api blueprint 
+2020-08-30 20:03:09,089 [INFO:main] {<module>:20} [SYSTEM]:Registered user_api blueprint 
+2020-08-30 20:03:09,096 [INFO:main] {<module>:22} [SYSTEM]:Registered model_management_api blueprint 
+2020-08-30 20:03:09,109 [INFO:main] {<module>:24} [SYSTEM]:Registered log_management_api blueprint 
+2020-08-30 20:03:13,336 [INFO:main] {<module>:16} [SYSTEM]:Created flask app.
+2020-08-30 20:03:13,339 [INFO:main] {<module>:18} [SYSTEM]:Registered image_processing_api blueprint 
+2020-08-30 20:03:13,340 [INFO:main] {<module>:20} [SYSTEM]:Registered user_api blueprint 
+2020-08-30 20:03:13,343 [INFO:main] {<module>:22} [SYSTEM]:Registered model_management_api blueprint 
+2020-08-30 20:03:13,345 [INFO:main] {<module>:24} [SYSTEM]:Registered log_management_api blueprint 
+2020-08-30 20:03:21,671 [INFO:main] {<module>:16} [SYSTEM]:Created flask app.
+2020-08-30 20:03:22,012 [INFO:main] {<module>:18} [SYSTEM]:Registered image_processing_api blueprint 
+2020-08-30 20:03:22,079 [INFO:main] {<module>:20} [SYSTEM]:Registered user_api blueprint 
+2020-08-30 20:03:22,230 [INFO:main] {<module>:22} [SYSTEM]:Registered model_management_api blueprint 
+2020-08-30 20:03:22,247 [INFO:main] {<module>:24} [SYSTEM]:Registered log_management_api blueprint 
+2020-08-30 20:05:45,057 [INFO:main] {<module>:16} [SYSTEM]:Created flask app.
+2020-08-30 20:05:45,060 [INFO:main] {<module>:18} [SYSTEM]:Registered image_processing_api blueprint 
+2020-08-30 20:05:45,066 [INFO:main] {<module>:20} [SYSTEM]:Registered user_api blueprint 
+2020-08-30 20:05:45,070 [INFO:main] {<module>:22} [SYSTEM]:Registered model_management_api blueprint 
+2020-08-30 20:05:45,071 [INFO:main] {<module>:24} [SYSTEM]:Registered log_management_api blueprint 
+2020-08-30 20:05:47,583 [INFO:main] {<module>:16} [SYSTEM]:Created flask app.
+2020-08-30 20:05:47,585 [INFO:main] {<module>:18} [SYSTEM]:Registered image_processing_api blueprint 
+2020-08-30 20:05:47,586 [INFO:main] {<module>:20} [SYSTEM]:Registered user_api blueprint 
+2020-08-30 20:05:47,594 [INFO:main] {<module>:22} [SYSTEM]:Registered model_management_api blueprint 
+2020-08-30 20:05:47,596 [INFO:main] {<module>:24} [SYSTEM]:Registered log_management_api blueprint 
+2020-08-30 20:06:22,054 [INFO:main] {<module>:16} [SYSTEM]:Created flask app.
+2020-08-30 20:06:22,069 [INFO:main] {<module>:18} [SYSTEM]:Registered image_processing_api blueprint 
+2020-08-30 20:06:22,070 [INFO:main] {<module>:20} [SYSTEM]:Registered user_api blueprint 
+2020-08-30 20:06:22,087 [INFO:main] {<module>:22} [SYSTEM]:Registered model_management_api blueprint 
+2020-08-30 20:06:22,096 [INFO:main] {<module>:24} [SYSTEM]:Registered log_management_api blueprint 
+2020-08-30 20:06:31,619 [INFO:main] {<module>:16} [SYSTEM]:Created flask app.
+2020-08-30 20:06:31,623 [INFO:main] {<module>:18} [SYSTEM]:Registered image_processing_api blueprint 
+2020-08-30 20:06:31,627 [INFO:main] {<module>:20} [SYSTEM]:Registered user_api blueprint 
+2020-08-30 20:06:31,638 [INFO:main] {<module>:22} [SYSTEM]:Registered model_management_api blueprint 
+2020-08-30 20:06:31,645 [INFO:main] {<module>:24} [SYSTEM]:Registered log_management_api blueprint 
+2020-08-30 20:06:46,684 [INFO:main] {<module>:16} [SYSTEM]:Created flask app.
+2020-08-30 20:06:46,693 [INFO:main] {<module>:18} [SYSTEM]:Registered image_processing_api blueprint 
+2020-08-30 20:06:46,696 [INFO:main] {<module>:20} [SYSTEM]:Registered user_api blueprint 
+2020-08-30 20:06:46,711 [INFO:main] {<module>:22} [SYSTEM]:Registered model_management_api blueprint 
+2020-08-30 20:06:46,725 [INFO:main] {<module>:24} [SYSTEM]:Registered log_management_api blueprint 
+2020-08-30 20:07:10,514 [INFO:main] {<module>:16} [SYSTEM]:Created flask app.
+2020-08-30 20:07:10,518 [INFO:main] {<module>:18} [SYSTEM]:Registered image_processing_api blueprint 
+2020-08-30 20:07:10,520 [INFO:main] {<module>:20} [SYSTEM]:Registered user_api blueprint 
+2020-08-30 20:07:10,538 [INFO:main] {<module>:22} [SYSTEM]:Registered model_management_api blueprint 
+2020-08-30 20:07:10,550 [INFO:main] {<module>:24} [SYSTEM]:Registered log_management_api blueprint 
+2020-08-30 20:07:16,017 [INFO:main] {<module>:16} [SYSTEM]:Created flask app.
+2020-08-30 20:07:16,020 [INFO:main] {<module>:18} [SYSTEM]:Registered image_processing_api blueprint 
+2020-08-30 20:07:16,026 [INFO:main] {<module>:20} [SYSTEM]:Registered user_api blueprint 
+2020-08-30 20:07:16,034 [INFO:main] {<module>:22} [SYSTEM]:Registered model_management_api blueprint 
+2020-08-30 20:07:16,036 [INFO:main] {<module>:24} [SYSTEM]:Registered log_management_api blueprint 
+2020-08-30 20:07:21,367 [INFO:main] {<module>:16} [SYSTEM]:Created flask app.
+2020-08-30 20:07:21,371 [INFO:main] {<module>:18} [SYSTEM]:Registered image_processing_api blueprint 
+2020-08-30 20:07:21,372 [INFO:main] {<module>:20} [SYSTEM]:Registered user_api blueprint 
+2020-08-30 20:07:21,375 [INFO:main] {<module>:22} [SYSTEM]:Registered model_management_api blueprint 
+2020-08-30 20:07:21,376 [INFO:main] {<module>:24} [SYSTEM]:Registered log_management_api blueprint 
+2020-08-30 20:07:32,940 [INFO:main] {<module>:16} [SYSTEM]:Created flask app.
+2020-08-30 20:07:32,958 [INFO:main] {<module>:18} [SYSTEM]:Registered image_processing_api blueprint 
+2020-08-30 20:07:32,960 [INFO:main] {<module>:20} [SYSTEM]:Registered user_api blueprint 
+2020-08-30 20:07:32,970 [INFO:main] {<module>:22} [SYSTEM]:Registered model_management_api blueprint 
+2020-08-30 20:07:32,976 [INFO:main] {<module>:24} [SYSTEM]:Registered log_management_api blueprint 
+2020-08-30 20:07:38,438 [INFO:main] {<module>:16} [SYSTEM]:Created flask app.
+2020-08-30 20:07:38,441 [INFO:main] {<module>:18} [SYSTEM]:Registered image_processing_api blueprint 
+2020-08-30 20:07:38,462 [INFO:main] {<module>:20} [SYSTEM]:Registered user_api blueprint 
+2020-08-30 20:07:38,478 [INFO:main] {<module>:22} [SYSTEM]:Registered model_management_api blueprint 
+2020-08-30 20:07:38,487 [INFO:main] {<module>:24} [SYSTEM]:Registered log_management_api blueprint 
+2020-08-30 20:07:41,312 [INFO:main] {<module>:16} [SYSTEM]:Created flask app.
+2020-08-30 20:07:41,318 [INFO:main] {<module>:18} [SYSTEM]:Registered image_processing_api blueprint 
+2020-08-30 20:07:41,325 [INFO:main] {<module>:20} [SYSTEM]:Registered user_api blueprint 
+2020-08-30 20:07:41,339 [INFO:main] {<module>:22} [SYSTEM]:Registered model_management_api blueprint 
+2020-08-30 20:07:41,345 [INFO:main] {<module>:24} [SYSTEM]:Registered log_management_api blueprint 
+2020-08-30 20:07:45,573 [INFO:main] {<module>:16} [SYSTEM]:Created flask app.
+2020-08-30 20:07:45,578 [INFO:main] {<module>:18} [SYSTEM]:Registered image_processing_api blueprint 
+2020-08-30 20:07:45,584 [INFO:main] {<module>:20} [SYSTEM]:Registered user_api blueprint 
+2020-08-30 20:07:45,593 [INFO:main] {<module>:22} [SYSTEM]:Registered model_management_api blueprint 
+2020-08-30 20:07:45,615 [INFO:main] {<module>:24} [SYSTEM]:Registered log_management_api blueprint 
+2020-08-30 20:07:48,497 [INFO:main] {<module>:16} [SYSTEM]:Created flask app.
+2020-08-30 20:07:48,500 [INFO:main] {<module>:18} [SYSTEM]:Registered image_processing_api blueprint 
+2020-08-30 20:07:48,506 [INFO:main] {<module>:20} [SYSTEM]:Registered user_api blueprint 
+2020-08-30 20:07:48,519 [INFO:main] {<module>:22} [SYSTEM]:Registered model_management_api blueprint 
+2020-08-30 20:07:48,523 [INFO:main] {<module>:24} [SYSTEM]:Registered log_management_api blueprint 
+2020-08-30 20:07:52,447 [INFO:main] {<module>:16} [SYSTEM]:Created flask app.
+2020-08-30 20:07:52,449 [INFO:main] {<module>:18} [SYSTEM]:Registered image_processing_api blueprint 
+2020-08-30 20:07:52,454 [INFO:main] {<module>:20} [SYSTEM]:Registered user_api blueprint 
+2020-08-30 20:07:52,460 [INFO:main] {<module>:22} [SYSTEM]:Registered model_management_api blueprint 
+2020-08-30 20:07:52,464 [INFO:main] {<module>:24} [SYSTEM]:Registered log_management_api blueprint 
+2020-08-30 20:08:02,195 [INFO:main] {<module>:16} [SYSTEM]:Created flask app.
+2020-08-30 20:08:02,199 [INFO:main] {<module>:18} [SYSTEM]:Registered image_processing_api blueprint 
+2020-08-30 20:08:02,206 [INFO:main] {<module>:20} [SYSTEM]:Registered user_api blueprint 
+2020-08-30 20:08:02,230 [INFO:main] {<module>:22} [SYSTEM]:Registered model_management_api blueprint 
+2020-08-30 20:08:02,248 [INFO:main] {<module>:24} [SYSTEM]:Registered log_management_api blueprint 
+2020-08-30 20:08:16,945 [INFO:main] {<module>:16} [SYSTEM]:Created flask app.
+2020-08-30 20:08:16,948 [INFO:main] {<module>:18} [SYSTEM]:Registered image_processing_api blueprint 
+2020-08-30 20:08:16,950 [INFO:main] {<module>:20} [SYSTEM]:Registered user_api blueprint 
+2020-08-30 20:08:16,958 [INFO:main] {<module>:22} [SYSTEM]:Registered model_management_api blueprint 
+2020-08-30 20:08:16,960 [INFO:main] {<module>:24} [SYSTEM]:Registered log_management_api blueprint 
+2020-08-30 20:08:22,231 [INFO:main] {<module>:16} [SYSTEM]:Created flask app.
+2020-08-30 20:08:22,235 [INFO:main] {<module>:18} [SYSTEM]:Registered image_processing_api blueprint 
+2020-08-30 20:08:22,244 [INFO:main] {<module>:20} [SYSTEM]:Registered user_api blueprint 
+2020-08-30 20:08:22,253 [INFO:main] {<module>:22} [SYSTEM]:Registered model_management_api blueprint 
+2020-08-30 20:08:22,263 [INFO:main] {<module>:24} [SYSTEM]:Registered log_management_api blueprint 
+2020-08-30 20:08:28,279 [INFO:main] {<module>:16} [SYSTEM]:Created flask app.
+2020-08-30 20:08:28,282 [INFO:main] {<module>:18} [SYSTEM]:Registered image_processing_api blueprint 
+2020-08-30 20:08:28,283 [INFO:main] {<module>:20} [SYSTEM]:Registered user_api blueprint 
+2020-08-30 20:08:28,287 [INFO:main] {<module>:22} [SYSTEM]:Registered model_management_api blueprint 
+2020-08-30 20:08:28,293 [INFO:main] {<module>:24} [SYSTEM]:Registered log_management_api blueprint 
+2020-08-30 20:08:32,687 [INFO:main] {<module>:16} [SYSTEM]:Created flask app.
+2020-08-30 20:08:32,695 [INFO:main] {<module>:18} [SYSTEM]:Registered image_processing_api blueprint 
+2020-08-30 20:08:32,709 [INFO:main] {<module>:20} [SYSTEM]:Registered user_api blueprint 
+2020-08-30 20:08:32,723 [INFO:main] {<module>:22} [SYSTEM]:Registered model_management_api blueprint 
+2020-08-30 20:08:32,731 [INFO:main] {<module>:24} [SYSTEM]:Registered log_management_api blueprint 
+2020-08-30 20:08:38,372 [INFO:main] {<module>:16} [SYSTEM]:Created flask app.
+2020-08-30 20:08:38,375 [INFO:main] {<module>:18} [SYSTEM]:Registered image_processing_api blueprint 
+2020-08-30 20:08:38,382 [INFO:main] {<module>:20} [SYSTEM]:Registered user_api blueprint 
+2020-08-30 20:08:38,389 [INFO:main] {<module>:22} [SYSTEM]:Registered model_management_api blueprint 
+2020-08-30 20:08:38,395 [INFO:main] {<module>:24} [SYSTEM]:Registered log_management_api blueprint 
+2020-08-30 20:08:44,022 [INFO:main] {<module>:16} [SYSTEM]:Created flask app.
+2020-08-30 20:08:44,025 [INFO:main] {<module>:18} [SYSTEM]:Registered image_processing_api blueprint 
+2020-08-30 20:08:44,035 [INFO:main] {<module>:20} [SYSTEM]:Registered user_api blueprint 
+2020-08-30 20:08:44,048 [INFO:main] {<module>:22} [SYSTEM]:Registered model_management_api blueprint 
+2020-08-30 20:08:44,053 [INFO:main] {<module>:24} [SYSTEM]:Registered log_management_api blueprint 
+2020-08-30 20:08:50,722 [INFO:main] {<module>:16} [SYSTEM]:Created flask app.
+2020-08-30 20:08:50,730 [INFO:main] {<module>:18} [SYSTEM]:Registered image_processing_api blueprint 
+2020-08-30 20:08:50,734 [INFO:main] {<module>:20} [SYSTEM]:Registered user_api blueprint 
+2020-08-30 20:08:50,763 [INFO:main] {<module>:22} [SYSTEM]:Registered model_management_api blueprint 
+2020-08-30 20:08:50,817 [INFO:main] {<module>:24} [SYSTEM]:Registered log_management_api blueprint 
+2020-08-30 20:09:16,573 [INFO:main] {<module>:16} [SYSTEM]:Created flask app.
+2020-08-30 20:09:16,575 [INFO:main] {<module>:18} [SYSTEM]:Registered image_processing_api blueprint 
+2020-08-30 20:09:16,576 [INFO:main] {<module>:20} [SYSTEM]:Registered user_api blueprint 
+2020-08-30 20:09:16,584 [INFO:main] {<module>:22} [SYSTEM]:Registered model_management_api blueprint 
+2020-08-30 20:09:16,589 [INFO:main] {<module>:24} [SYSTEM]:Registered log_management_api blueprint 
+2020-08-30 20:09:21,392 [INFO:main] {<module>:16} [SYSTEM]:Created flask app.
+2020-08-30 20:09:21,395 [INFO:main] {<module>:18} [SYSTEM]:Registered image_processing_api blueprint 
+2020-08-30 20:09:21,395 [INFO:main] {<module>:20} [SYSTEM]:Registered user_api blueprint 
+2020-08-30 20:09:21,403 [INFO:main] {<module>:22} [SYSTEM]:Registered model_management_api blueprint 
+2020-08-30 20:09:21,404 [INFO:main] {<module>:24} [SYSTEM]:Registered log_management_api blueprint 
+2020-08-30 20:09:24,050 [INFO:main] {<module>:16} [SYSTEM]:Created flask app.
+2020-08-30 20:09:24,053 [INFO:main] {<module>:18} [SYSTEM]:Registered image_processing_api blueprint 
+2020-08-30 20:09:24,058 [INFO:main] {<module>:20} [SYSTEM]:Registered user_api blueprint 
+2020-08-30 20:09:24,061 [INFO:main] {<module>:22} [SYSTEM]:Registered model_management_api blueprint 
+2020-08-30 20:09:24,062 [INFO:main] {<module>:24} [SYSTEM]:Registered log_management_api blueprint 
+2020-08-30 20:09:26,865 [INFO:main] {<module>:16} [SYSTEM]:Created flask app.
+2020-08-30 20:09:26,867 [INFO:main] {<module>:18} [SYSTEM]:Registered image_processing_api blueprint 
+2020-08-30 20:09:26,872 [INFO:main] {<module>:20} [SYSTEM]:Registered user_api blueprint 
+2020-08-30 20:09:26,875 [INFO:main] {<module>:22} [SYSTEM]:Registered model_management_api blueprint 
+2020-08-30 20:09:26,877 [INFO:main] {<module>:24} [SYSTEM]:Registered log_management_api blueprint 
+2020-08-30 20:09:30,784 [INFO:main] {<module>:16} [SYSTEM]:Created flask app.
+2020-08-30 20:09:30,787 [INFO:main] {<module>:18} [SYSTEM]:Registered image_processing_api blueprint 
+2020-08-30 20:09:30,787 [INFO:main] {<module>:20} [SYSTEM]:Registered user_api blueprint 
+2020-08-30 20:09:30,790 [INFO:main] {<module>:22} [SYSTEM]:Registered model_management_api blueprint 
+2020-08-30 20:09:30,791 [INFO:main] {<module>:24} [SYSTEM]:Registered log_management_api blueprint 
+2020-08-30 20:09:33,594 [INFO:main] {<module>:16} [SYSTEM]:Created flask app.
+2020-08-30 20:09:33,596 [INFO:main] {<module>:18} [SYSTEM]:Registered image_processing_api blueprint 
+2020-08-30 20:09:33,597 [INFO:main] {<module>:20} [SYSTEM]:Registered user_api blueprint 
+2020-08-30 20:09:33,601 [INFO:main] {<module>:22} [SYSTEM]:Registered model_management_api blueprint 
+2020-08-30 20:09:33,602 [INFO:main] {<module>:24} [SYSTEM]:Registered log_management_api blueprint 
+2020-08-30 20:09:38,343 [INFO:main] {<module>:16} [SYSTEM]:Created flask app.
+2020-08-30 20:09:38,345 [INFO:main] {<module>:18} [SYSTEM]:Registered image_processing_api blueprint 
+2020-08-30 20:09:38,346 [INFO:main] {<module>:20} [SYSTEM]:Registered user_api blueprint 
+2020-08-30 20:09:38,354 [INFO:main] {<module>:22} [SYSTEM]:Registered model_management_api blueprint 
+2020-08-30 20:09:38,356 [INFO:main] {<module>:24} [SYSTEM]:Registered log_management_api blueprint 
+2020-08-30 20:09:41,282 [INFO:main] {<module>:16} [SYSTEM]:Created flask app.
+2020-08-30 20:09:41,284 [INFO:main] {<module>:18} [SYSTEM]:Registered image_processing_api blueprint 
+2020-08-30 20:09:41,285 [INFO:main] {<module>:20} [SYSTEM]:Registered user_api blueprint 
+2020-08-30 20:09:41,291 [INFO:main] {<module>:22} [SYSTEM]:Registered model_management_api blueprint 
+2020-08-30 20:09:41,293 [INFO:main] {<module>:24} [SYSTEM]:Registered log_management_api blueprint 
+2020-08-30 20:09:44,934 [INFO:main] {<module>:16} [SYSTEM]:Created flask app.
+2020-08-30 20:09:44,936 [INFO:main] {<module>:18} [SYSTEM]:Registered image_processing_api blueprint 
+2020-08-30 20:09:44,940 [INFO:main] {<module>:20} [SYSTEM]:Registered user_api blueprint 
+2020-08-30 20:09:44,944 [INFO:main] {<module>:22} [SYSTEM]:Registered model_management_api blueprint 
+2020-08-30 20:09:44,954 [INFO:main] {<module>:24} [SYSTEM]:Registered log_management_api blueprint 
+2020-08-30 20:10:36,428 [INFO:main] {<module>:16} [SYSTEM]:Created flask app.
+2020-08-30 20:10:36,432 [INFO:main] {<module>:18} [SYSTEM]:Registered image_processing_api blueprint 
+2020-08-30 20:10:36,441 [INFO:main] {<module>:20} [SYSTEM]:Registered user_api blueprint 
+2020-08-30 20:10:36,448 [INFO:main] {<module>:22} [SYSTEM]:Registered model_management_api blueprint 
+2020-08-30 20:10:36,451 [INFO:main] {<module>:24} [SYSTEM]:Registered log_management_api blueprint 
+2020-08-30 20:10:42,023 [INFO:main] {<module>:16} [SYSTEM]:Created flask app.
+2020-08-30 20:10:42,028 [INFO:main] {<module>:18} [SYSTEM]:Registered image_processing_api blueprint 
+2020-08-30 20:10:42,029 [INFO:main] {<module>:20} [SYSTEM]:Registered user_api blueprint 
+2020-08-30 20:10:42,032 [INFO:main] {<module>:22} [SYSTEM]:Registered model_management_api blueprint 
+2020-08-30 20:10:42,034 [INFO:main] {<module>:24} [SYSTEM]:Registered log_management_api blueprint 
+2020-08-30 20:11:03,469 [INFO:main] {<module>:16} [SYSTEM]:Created flask app.
+2020-08-30 20:11:03,472 [INFO:main] {<module>:18} [SYSTEM]:Registered image_processing_api blueprint 
+2020-08-30 20:11:03,478 [INFO:main] {<module>:20} [SYSTEM]:Registered user_api blueprint 
+2020-08-30 20:11:03,485 [INFO:main] {<module>:22} [SYSTEM]:Registered model_management_api blueprint 
+2020-08-30 20:11:03,501 [INFO:main] {<module>:24} [SYSTEM]:Registered log_management_api blueprint 
+2020-08-30 20:11:09,920 [INFO:main] {<module>:16} [SYSTEM]:Created flask app.
+2020-08-30 20:11:09,929 [INFO:main] {<module>:18} [SYSTEM]:Registered image_processing_api blueprint 
+2020-08-30 20:11:09,931 [INFO:main] {<module>:20} [SYSTEM]:Registered user_api blueprint 
+2020-08-30 20:11:09,953 [INFO:main] {<module>:22} [SYSTEM]:Registered model_management_api blueprint 
+2020-08-30 20:11:09,967 [INFO:main] {<module>:24} [SYSTEM]:Registered log_management_api blueprint 
+2020-08-30 20:11:18,309 [INFO:main] {<module>:16} [SYSTEM]:Created flask app.
+2020-08-30 20:11:18,314 [INFO:main] {<module>:18} [SYSTEM]:Registered image_processing_api blueprint 
+2020-08-30 20:11:18,319 [INFO:main] {<module>:20} [SYSTEM]:Registered user_api blueprint 
+2020-08-30 20:11:18,323 [INFO:main] {<module>:22} [SYSTEM]:Registered model_management_api blueprint 
+2020-08-30 20:11:18,324 [INFO:main] {<module>:24} [SYSTEM]:Registered log_management_api blueprint 
+2020-08-30 20:11:31,119 [INFO:main] {<module>:16} [SYSTEM]:Created flask app.
+2020-08-30 20:11:31,121 [INFO:main] {<module>:18} [SYSTEM]:Registered image_processing_api blueprint 
+2020-08-30 20:11:31,128 [INFO:main] {<module>:20} [SYSTEM]:Registered user_api blueprint 
+2020-08-30 20:11:31,141 [INFO:main] {<module>:22} [SYSTEM]:Registered model_management_api blueprint 
+2020-08-30 20:11:31,142 [INFO:main] {<module>:24} [SYSTEM]:Registered log_management_api blueprint 
+2020-08-30 20:11:33,881 [INFO:main] {<module>:16} [SYSTEM]:Created flask app.
+2020-08-30 20:11:33,885 [INFO:main] {<module>:18} [SYSTEM]:Registered image_processing_api blueprint 
+2020-08-30 20:11:33,896 [INFO:main] {<module>:20} [SYSTEM]:Registered user_api blueprint 
+2020-08-30 20:11:33,904 [INFO:main] {<module>:22} [SYSTEM]:Registered model_management_api blueprint 
+2020-08-30 20:11:33,911 [INFO:main] {<module>:24} [SYSTEM]:Registered log_management_api blueprint 
+2020-08-30 20:11:36,874 [INFO:main] {<module>:16} [SYSTEM]:Created flask app.
+2020-08-30 20:11:36,877 [INFO:main] {<module>:18} [SYSTEM]:Registered image_processing_api blueprint 
+2020-08-30 20:11:36,878 [INFO:main] {<module>:20} [SYSTEM]:Registered user_api blueprint 
+2020-08-30 20:11:36,883 [INFO:main] {<module>:22} [SYSTEM]:Registered model_management_api blueprint 
+2020-08-30 20:11:36,888 [INFO:main] {<module>:24} [SYSTEM]:Registered log_management_api blueprint 
+2020-08-30 20:11:40,767 [INFO:main] {<module>:16} [SYSTEM]:Created flask app.
+2020-08-30 20:11:40,771 [INFO:main] {<module>:18} [SYSTEM]:Registered image_processing_api blueprint 
+2020-08-30 20:11:40,776 [INFO:main] {<module>:20} [SYSTEM]:Registered user_api blueprint 
+2020-08-30 20:11:40,781 [INFO:main] {<module>:22} [SYSTEM]:Registered model_management_api blueprint 
+2020-08-30 20:11:40,789 [INFO:main] {<module>:24} [SYSTEM]:Registered log_management_api blueprint 
+2020-08-30 20:11:43,777 [INFO:main] {<module>:16} [SYSTEM]:Created flask app.
+2020-08-30 20:11:43,781 [INFO:main] {<module>:18} [SYSTEM]:Registered image_processing_api blueprint 
+2020-08-30 20:11:43,783 [INFO:main] {<module>:20} [SYSTEM]:Registered user_api blueprint 
+2020-08-30 20:11:43,786 [INFO:main] {<module>:22} [SYSTEM]:Registered model_management_api blueprint 
+2020-08-30 20:11:43,787 [INFO:main] {<module>:24} [SYSTEM]:Registered log_management_api blueprint 
+2020-08-30 20:11:48,006 [INFO:main] {<module>:16} [SYSTEM]:Created flask app.
+2020-08-30 20:11:48,008 [INFO:main] {<module>:18} [SYSTEM]:Registered image_processing_api blueprint 
+2020-08-30 20:11:48,015 [INFO:main] {<module>:20} [SYSTEM]:Registered user_api blueprint 
+2020-08-30 20:11:48,024 [INFO:main] {<module>:22} [SYSTEM]:Registered model_management_api blueprint 
+2020-08-30 20:11:48,025 [INFO:main] {<module>:24} [SYSTEM]:Registered log_management_api blueprint 
+2020-08-30 20:11:54,468 [INFO:main] {<module>:16} [SYSTEM]:Created flask app.
+2020-08-30 20:11:54,471 [INFO:main] {<module>:18} [SYSTEM]:Registered image_processing_api blueprint 
+2020-08-30 20:11:54,476 [INFO:main] {<module>:20} [SYSTEM]:Registered user_api blueprint 
+2020-08-30 20:11:54,482 [INFO:main] {<module>:22} [SYSTEM]:Registered model_management_api blueprint 
+2020-08-30 20:11:54,484 [INFO:main] {<module>:24} [SYSTEM]:Registered log_management_api blueprint 
+2020-08-30 20:11:59,002 [INFO:main] {<module>:16} [SYSTEM]:Created flask app.
+2020-08-30 20:11:59,007 [INFO:main] {<module>:18} [SYSTEM]:Registered image_processing_api blueprint 
+2020-08-30 20:11:59,010 [INFO:main] {<module>:20} [SYSTEM]:Registered user_api blueprint 
+2020-08-30 20:11:59,048 [INFO:main] {<module>:22} [SYSTEM]:Registered model_management_api blueprint 
+2020-08-30 20:11:59,072 [INFO:main] {<module>:24} [SYSTEM]:Registered log_management_api blueprint 
+2020-08-30 20:12:02,200 [INFO:main] {<module>:16} [SYSTEM]:Created flask app.
+2020-08-30 20:12:02,205 [INFO:main] {<module>:18} [SYSTEM]:Registered image_processing_api blueprint 
+2020-08-30 20:12:02,211 [INFO:main] {<module>:20} [SYSTEM]:Registered user_api blueprint 
+2020-08-30 20:12:02,215 [INFO:main] {<module>:22} [SYSTEM]:Registered model_management_api blueprint 
+2020-08-30 20:12:02,216 [INFO:main] {<module>:24} [SYSTEM]:Registered log_management_api blueprint 
+2020-08-30 20:12:06,164 [INFO:main] {<module>:16} [SYSTEM]:Created flask app.
+2020-08-30 20:12:06,167 [INFO:main] {<module>:18} [SYSTEM]:Registered image_processing_api blueprint 
+2020-08-30 20:12:06,174 [INFO:main] {<module>:20} [SYSTEM]:Registered user_api blueprint 
+2020-08-30 20:12:06,184 [INFO:main] {<module>:22} [SYSTEM]:Registered model_management_api blueprint 
+2020-08-30 20:12:06,185 [INFO:main] {<module>:24} [SYSTEM]:Registered log_management_api blueprint 
+2020-08-30 20:12:12,470 [INFO:main] {<module>:16} [SYSTEM]:Created flask app.
+2020-08-30 20:12:12,473 [INFO:main] {<module>:18} [SYSTEM]:Registered image_processing_api blueprint 
+2020-08-30 20:12:12,498 [INFO:main] {<module>:20} [SYSTEM]:Registered user_api blueprint 
+2020-08-30 20:12:12,534 [INFO:main] {<module>:22} [SYSTEM]:Registered model_management_api blueprint 
+2020-08-30 20:12:12,539 [INFO:main] {<module>:24} [SYSTEM]:Registered log_management_api blueprint 
+2020-08-30 20:12:16,397 [INFO:main] {<module>:16} [SYSTEM]:Created flask app.
+2020-08-30 20:12:16,399 [INFO:main] {<module>:18} [SYSTEM]:Registered image_processing_api blueprint 
+2020-08-30 20:12:16,404 [INFO:main] {<module>:20} [SYSTEM]:Registered user_api blueprint 
+2020-08-30 20:12:16,409 [INFO:main] {<module>:22} [SYSTEM]:Registered model_management_api blueprint 
+2020-08-30 20:12:16,421 [INFO:main] {<module>:24} [SYSTEM]:Registered log_management_api blueprint 
+2020-08-30 20:12:21,607 [INFO:main] {<module>:16} [SYSTEM]:Created flask app.
+2020-08-30 20:12:21,613 [INFO:main] {<module>:18} [SYSTEM]:Registered image_processing_api blueprint 
+2020-08-30 20:12:21,623 [INFO:main] {<module>:20} [SYSTEM]:Registered user_api blueprint 
+2020-08-30 20:12:21,633 [INFO:main] {<module>:22} [SYSTEM]:Registered model_management_api blueprint 
+2020-08-30 20:12:21,638 [INFO:main] {<module>:24} [SYSTEM]:Registered log_management_api blueprint 
+2020-08-30 20:12:30,940 [INFO:main] {<module>:16} [SYSTEM]:Created flask app.
+2020-08-30 20:12:30,945 [INFO:main] {<module>:18} [SYSTEM]:Registered image_processing_api blueprint 
+2020-08-30 20:12:30,947 [INFO:main] {<module>:20} [SYSTEM]:Registered user_api blueprint 
+2020-08-30 20:12:30,953 [INFO:main] {<module>:22} [SYSTEM]:Registered model_management_api blueprint 
+2020-08-30 20:12:30,954 [INFO:main] {<module>:24} [SYSTEM]:Registered log_management_api blueprint 
+2020-08-30 20:12:34,785 [INFO:main] {<module>:16} [SYSTEM]:Created flask app.
+2020-08-30 20:12:34,790 [INFO:main] {<module>:18} [SYSTEM]:Registered image_processing_api blueprint 
+2020-08-30 20:12:34,797 [INFO:main] {<module>:20} [SYSTEM]:Registered user_api blueprint 
+2020-08-30 20:12:34,804 [INFO:main] {<module>:22} [SYSTEM]:Registered model_management_api blueprint 
+2020-08-30 20:12:34,813 [INFO:main] {<module>:24} [SYSTEM]:Registered log_management_api blueprint 
+2020-08-30 20:12:40,871 [INFO:main] {<module>:16} [SYSTEM]:Created flask app.
+2020-08-30 20:12:40,933 [INFO:main] {<module>:18} [SYSTEM]:Registered image_processing_api blueprint 
+2020-08-30 20:12:41,002 [INFO:main] {<module>:20} [SYSTEM]:Registered user_api blueprint 
+2020-08-30 20:12:41,100 [INFO:main] {<module>:22} [SYSTEM]:Registered model_management_api blueprint 
+2020-08-30 20:12:41,124 [INFO:main] {<module>:24} [SYSTEM]:Registered log_management_api blueprint 
+2020-08-30 20:12:54,199 [INFO:main] {<module>:16} [SYSTEM]:Created flask app.
+2020-08-30 20:12:54,204 [INFO:main] {<module>:18} [SYSTEM]:Registered image_processing_api blueprint 
+2020-08-30 20:12:54,206 [INFO:main] {<module>:20} [SYSTEM]:Registered user_api blueprint 
+2020-08-30 20:12:54,209 [INFO:main] {<module>:22} [SYSTEM]:Registered model_management_api blueprint 
+2020-08-30 20:12:54,210 [INFO:main] {<module>:24} [SYSTEM]:Registered log_management_api blueprint 
+2020-08-30 20:13:06,186 [INFO:main] {<module>:16} [SYSTEM]:Created flask app.
+2020-08-30 20:13:06,188 [INFO:main] {<module>:18} [SYSTEM]:Registered image_processing_api blueprint 
+2020-08-30 20:13:06,193 [INFO:main] {<module>:20} [SYSTEM]:Registered user_api blueprint 
+2020-08-30 20:13:06,198 [INFO:main] {<module>:22} [SYSTEM]:Registered model_management_api blueprint 
+2020-08-30 20:13:06,200 [INFO:main] {<module>:24} [SYSTEM]:Registered log_management_api blueprint 
+2020-08-30 20:13:13,715 [INFO:main] {<module>:16} [SYSTEM]:Created flask app.
+2020-08-30 20:13:13,718 [INFO:main] {<module>:18} [SYSTEM]:Registered image_processing_api blueprint 
+2020-08-30 20:13:13,719 [INFO:main] {<module>:20} [SYSTEM]:Registered user_api blueprint 
+2020-08-30 20:13:13,722 [INFO:main] {<module>:22} [SYSTEM]:Registered model_management_api blueprint 
+2020-08-30 20:13:13,723 [INFO:main] {<module>:24} [SYSTEM]:Registered log_management_api blueprint 
+2020-08-30 20:13:25,728 [INFO:main] {<module>:16} [SYSTEM]:Created flask app.
+2020-08-30 20:13:25,730 [INFO:main] {<module>:18} [SYSTEM]:Registered image_processing_api blueprint 
+2020-08-30 20:13:25,733 [INFO:main] {<module>:20} [SYSTEM]:Registered user_api blueprint 
+2020-08-30 20:13:25,743 [INFO:main] {<module>:22} [SYSTEM]:Registered model_management_api blueprint 
+2020-08-30 20:13:25,745 [INFO:main] {<module>:24} [SYSTEM]:Registered log_management_api blueprint 
+2020-08-30 20:13:47,019 [INFO:main] {<module>:16} [SYSTEM]:Created flask app.
+2020-08-30 20:13:47,027 [INFO:main] {<module>:18} [SYSTEM]:Registered image_processing_api blueprint 
+2020-08-30 20:13:47,037 [INFO:main] {<module>:20} [SYSTEM]:Registered user_api blueprint 
+2020-08-30 20:13:47,043 [INFO:main] {<module>:22} [SYSTEM]:Registered model_management_api blueprint 
+2020-08-30 20:13:47,045 [INFO:main] {<module>:24} [SYSTEM]:Registered log_management_api blueprint 
+2020-08-30 20:13:49,910 [INFO:main] {<module>:16} [SYSTEM]:Created flask app.
+2020-08-30 20:13:49,913 [INFO:main] {<module>:18} [SYSTEM]:Registered image_processing_api blueprint 
+2020-08-30 20:13:49,920 [INFO:main] {<module>:20} [SYSTEM]:Registered user_api blueprint 
+2020-08-30 20:13:49,926 [INFO:main] {<module>:22} [SYSTEM]:Registered model_management_api blueprint 
+2020-08-30 20:13:49,926 [INFO:main] {<module>:24} [SYSTEM]:Registered log_management_api blueprint 
+2020-08-30 20:13:53,138 [INFO:main] {<module>:16} [SYSTEM]:Created flask app.
+2020-08-30 20:13:53,141 [INFO:main] {<module>:18} [SYSTEM]:Registered image_processing_api blueprint 
+2020-08-30 20:13:53,148 [INFO:main] {<module>:20} [SYSTEM]:Registered user_api blueprint 
+2020-08-30 20:13:53,153 [INFO:main] {<module>:22} [SYSTEM]:Registered model_management_api blueprint 
+2020-08-30 20:13:53,155 [INFO:main] {<module>:24} [SYSTEM]:Registered log_management_api blueprint 
+2020-08-30 20:15:05,779 [INFO:main] {<module>:16} [SYSTEM]:Created flask app.
+2020-08-30 20:15:05,781 [INFO:main] {<module>:18} [SYSTEM]:Registered image_processing_api blueprint 
+2020-08-30 20:15:05,782 [INFO:main] {<module>:20} [SYSTEM]:Registered user_api blueprint 
+2020-08-30 20:15:05,788 [INFO:main] {<module>:22} [SYSTEM]:Registered model_management_api blueprint 
+2020-08-30 20:15:05,796 [INFO:main] {<module>:24} [SYSTEM]:Registered log_management_api blueprint 
+2020-08-30 20:15:09,302 [INFO:main] {<module>:16} [SYSTEM]:Created flask app.
+2020-08-30 20:15:09,307 [INFO:main] {<module>:18} [SYSTEM]:Registered image_processing_api blueprint 
+2020-08-30 20:15:09,316 [INFO:main] {<module>:20} [SYSTEM]:Registered user_api blueprint 
+2020-08-30 20:15:09,326 [INFO:main] {<module>:22} [SYSTEM]:Registered model_management_api blueprint 
+2020-08-30 20:15:09,342 [INFO:main] {<module>:24} [SYSTEM]:Registered log_management_api blueprint 
+2020-08-30 20:15:19,829 [INFO:main] {<module>:16} [SYSTEM]:Created flask app.
+2020-08-30 20:15:19,832 [INFO:main] {<module>:18} [SYSTEM]:Registered image_processing_api blueprint 
+2020-08-30 20:15:19,839 [INFO:main] {<module>:20} [SYSTEM]:Registered user_api blueprint 
+2020-08-30 20:15:19,843 [INFO:main] {<module>:22} [SYSTEM]:Registered model_management_api blueprint 
+2020-08-30 20:15:19,844 [INFO:main] {<module>:24} [SYSTEM]:Registered log_management_api blueprint 
+2020-08-30 20:15:26,804 [INFO:main] {<module>:16} [SYSTEM]:Created flask app.
+2020-08-30 20:15:26,806 [INFO:main] {<module>:18} [SYSTEM]:Registered image_processing_api blueprint 
+2020-08-30 20:15:26,813 [INFO:main] {<module>:20} [SYSTEM]:Registered user_api blueprint 
+2020-08-30 20:15:26,818 [INFO:main] {<module>:22} [SYSTEM]:Registered model_management_api blueprint 
+2020-08-30 20:15:26,828 [INFO:main] {<module>:24} [SYSTEM]:Registered log_management_api blueprint 
+2020-08-30 20:15:32,723 [INFO:main] {<module>:16} [SYSTEM]:Created flask app.
+2020-08-30 20:15:32,728 [INFO:main] {<module>:18} [SYSTEM]:Registered image_processing_api blueprint 
+2020-08-30 20:15:32,738 [INFO:main] {<module>:20} [SYSTEM]:Registered user_api blueprint 
+2020-08-30 20:15:32,745 [INFO:main] {<module>:22} [SYSTEM]:Registered model_management_api blueprint 
+2020-08-30 20:15:32,746 [INFO:main] {<module>:24} [SYSTEM]:Registered log_management_api blueprint 
+2020-08-30 20:15:35,515 [INFO:main] {<module>:16} [SYSTEM]:Created flask app.
+2020-08-30 20:15:35,518 [INFO:main] {<module>:18} [SYSTEM]:Registered image_processing_api blueprint 
+2020-08-30 20:15:35,525 [INFO:main] {<module>:20} [SYSTEM]:Registered user_api blueprint 
+2020-08-30 20:15:35,531 [INFO:main] {<module>:22} [SYSTEM]:Registered model_management_api blueprint 
+2020-08-30 20:15:35,539 [INFO:main] {<module>:24} [SYSTEM]:Registered log_management_api blueprint 
+2020-08-30 20:15:43,285 [INFO:main] {<module>:16} [SYSTEM]:Created flask app.
+2020-08-30 20:15:43,291 [INFO:main] {<module>:18} [SYSTEM]:Registered image_processing_api blueprint 
+2020-08-30 20:15:43,299 [INFO:main] {<module>:20} [SYSTEM]:Registered user_api blueprint 
+2020-08-30 20:15:43,306 [INFO:main] {<module>:22} [SYSTEM]:Registered model_management_api blueprint 
+2020-08-30 20:15:43,308 [INFO:main] {<module>:24} [SYSTEM]:Registered log_management_api blueprint 
+2020-08-30 20:15:49,391 [INFO:main] {<module>:16} [SYSTEM]:Created flask app.
+2020-08-30 20:15:49,393 [INFO:main] {<module>:18} [SYSTEM]:Registered image_processing_api blueprint 
+2020-08-30 20:15:49,394 [INFO:main] {<module>:20} [SYSTEM]:Registered user_api blueprint 
+2020-08-30 20:15:49,404 [INFO:main] {<module>:22} [SYSTEM]:Registered model_management_api blueprint 
+2020-08-30 20:15:49,407 [INFO:main] {<module>:24} [SYSTEM]:Registered log_management_api blueprint 
+2020-08-30 20:16:02,446 [INFO:main] {<module>:16} [SYSTEM]:Created flask app.
+2020-08-30 20:16:02,462 [INFO:main] {<module>:18} [SYSTEM]:Registered image_processing_api blueprint 
+2020-08-30 20:16:02,498 [INFO:main] {<module>:20} [SYSTEM]:Registered user_api blueprint 
+2020-08-30 20:16:02,513 [INFO:main] {<module>:22} [SYSTEM]:Registered model_management_api blueprint 
+2020-08-30 20:16:02,527 [INFO:main] {<module>:24} [SYSTEM]:Registered log_management_api blueprint 
+2020-08-30 20:16:08,771 [INFO:main] {<module>:16} [SYSTEM]:Created flask app.
+2020-08-30 20:16:08,774 [INFO:main] {<module>:18} [SYSTEM]:Registered image_processing_api blueprint 
+2020-08-30 20:16:08,777 [INFO:main] {<module>:20} [SYSTEM]:Registered user_api blueprint 
+2020-08-30 20:16:08,790 [INFO:main] {<module>:22} [SYSTEM]:Registered model_management_api blueprint 
+2020-08-30 20:16:08,791 [INFO:main] {<module>:24} [SYSTEM]:Registered log_management_api blueprint 
+2020-08-30 20:16:16,644 [INFO:main] {<module>:16} [SYSTEM]:Created flask app.
+2020-08-30 20:16:16,646 [INFO:main] {<module>:18} [SYSTEM]:Registered image_processing_api blueprint 
+2020-08-30 20:16:16,647 [INFO:main] {<module>:20} [SYSTEM]:Registered user_api blueprint 
+2020-08-30 20:16:16,654 [INFO:main] {<module>:22} [SYSTEM]:Registered model_management_api blueprint 
+2020-08-30 20:16:16,656 [INFO:main] {<module>:24} [SYSTEM]:Registered log_management_api blueprint 
+2020-08-30 20:16:22,374 [INFO:main] {<module>:16} [SYSTEM]:Created flask app.
+2020-08-30 20:16:22,376 [INFO:main] {<module>:18} [SYSTEM]:Registered image_processing_api blueprint 
+2020-08-30 20:16:22,378 [INFO:main] {<module>:20} [SYSTEM]:Registered user_api blueprint 
+2020-08-30 20:16:22,388 [INFO:main] {<module>:22} [SYSTEM]:Registered model_management_api blueprint 
+2020-08-30 20:16:22,391 [INFO:main] {<module>:24} [SYSTEM]:Registered log_management_api blueprint 
+2020-08-30 20:16:28,502 [INFO:main] {<module>:16} [SYSTEM]:Created flask app.
+2020-08-30 20:16:28,505 [INFO:main] {<module>:18} [SYSTEM]:Registered image_processing_api blueprint 
+2020-08-30 20:16:28,515 [INFO:main] {<module>:20} [SYSTEM]:Registered user_api blueprint 
+2020-08-30 20:16:28,519 [INFO:main] {<module>:22} [SYSTEM]:Registered model_management_api blueprint 
+2020-08-30 20:16:28,520 [INFO:main] {<module>:24} [SYSTEM]:Registered log_management_api blueprint 
+2020-08-30 20:16:35,567 [INFO:main] {<module>:16} [SYSTEM]:Created flask app.
+2020-08-30 20:16:35,578 [INFO:main] {<module>:18} [SYSTEM]:Registered image_processing_api blueprint 
+2020-08-30 20:16:35,596 [INFO:main] {<module>:20} [SYSTEM]:Registered user_api blueprint 
+2020-08-30 20:16:35,602 [INFO:main] {<module>:22} [SYSTEM]:Registered model_management_api blueprint 
+2020-08-30 20:16:35,603 [INFO:main] {<module>:24} [SYSTEM]:Registered log_management_api blueprint 
+2020-08-30 20:16:41,887 [INFO:main] {<module>:16} [SYSTEM]:Created flask app.
+2020-08-30 20:16:41,926 [INFO:main] {<module>:18} [SYSTEM]:Registered image_processing_api blueprint 
+2020-08-30 20:16:41,943 [INFO:main] {<module>:20} [SYSTEM]:Registered user_api blueprint 
+2020-08-30 20:16:41,954 [INFO:main] {<module>:22} [SYSTEM]:Registered model_management_api blueprint 
+2020-08-30 20:16:41,955 [INFO:main] {<module>:24} [SYSTEM]:Registered log_management_api blueprint 
+2020-08-30 20:16:45,001 [INFO:main] {<module>:16} [SYSTEM]:Created flask app.
+2020-08-30 20:16:45,004 [INFO:main] {<module>:18} [SYSTEM]:Registered image_processing_api blueprint 
+2020-08-30 20:16:45,011 [INFO:main] {<module>:20} [SYSTEM]:Registered user_api blueprint 
+2020-08-30 20:16:45,021 [INFO:main] {<module>:22} [SYSTEM]:Registered model_management_api blueprint 
+2020-08-30 20:16:45,029 [INFO:main] {<module>:24} [SYSTEM]:Registered log_management_api blueprint 
+2020-08-30 20:16:52,877 [INFO:main] {<module>:16} [SYSTEM]:Created flask app.
+2020-08-30 20:16:52,884 [INFO:main] {<module>:18} [SYSTEM]:Registered image_processing_api blueprint 
+2020-08-30 20:16:52,890 [INFO:main] {<module>:20} [SYSTEM]:Registered user_api blueprint 
+2020-08-30 20:16:52,915 [INFO:main] {<module>:22} [SYSTEM]:Registered model_management_api blueprint 
+2020-08-30 20:16:52,920 [INFO:main] {<module>:24} [SYSTEM]:Registered log_management_api blueprint 
+2020-08-30 20:17:05,994 [INFO:main] {<module>:16} [SYSTEM]:Created flask app.
+2020-08-30 20:17:05,998 [INFO:main] {<module>:18} [SYSTEM]:Registered image_processing_api blueprint 
+2020-08-30 20:17:06,005 [INFO:main] {<module>:20} [SYSTEM]:Registered user_api blueprint 
+2020-08-30 20:17:06,015 [INFO:main] {<module>:22} [SYSTEM]:Registered model_management_api blueprint 
+2020-08-30 20:17:06,022 [INFO:main] {<module>:24} [SYSTEM]:Registered log_management_api blueprint 
+2020-08-30 20:17:14,357 [INFO:main] {<module>:16} [SYSTEM]:Created flask app.
+2020-08-30 20:17:14,375 [INFO:main] {<module>:18} [SYSTEM]:Registered image_processing_api blueprint 
+2020-08-30 20:17:14,404 [INFO:main] {<module>:20} [SYSTEM]:Registered user_api blueprint 
+2020-08-30 20:17:14,423 [INFO:main] {<module>:22} [SYSTEM]:Registered model_management_api blueprint 
+2020-08-30 20:17:14,436 [INFO:main] {<module>:24} [SYSTEM]:Registered log_management_api blueprint 
+2020-08-30 20:17:17,638 [INFO:main] {<module>:16} [SYSTEM]:Created flask app.
+2020-08-30 20:17:17,642 [INFO:main] {<module>:18} [SYSTEM]:Registered image_processing_api blueprint 
+2020-08-30 20:17:17,657 [INFO:main] {<module>:20} [SYSTEM]:Registered user_api blueprint 
+2020-08-30 20:17:17,664 [INFO:main] {<module>:22} [SYSTEM]:Registered model_management_api blueprint 
+2020-08-30 20:17:17,667 [INFO:main] {<module>:24} [SYSTEM]:Registered log_management_api blueprint 
+2020-08-30 20:17:23,683 [INFO:main] {<module>:16} [SYSTEM]:Created flask app.
+2020-08-30 20:17:23,689 [INFO:main] {<module>:18} [SYSTEM]:Registered image_processing_api blueprint 
+2020-08-30 20:17:23,694 [INFO:main] {<module>:20} [SYSTEM]:Registered user_api blueprint 
+2020-08-30 20:17:23,699 [INFO:main] {<module>:22} [SYSTEM]:Registered model_management_api blueprint 
+2020-08-30 20:17:23,707 [INFO:main] {<module>:24} [SYSTEM]:Registered log_management_api blueprint 
+2020-08-30 20:17:27,664 [INFO:main] {<module>:16} [SYSTEM]:Created flask app.
+2020-08-30 20:17:27,667 [INFO:main] {<module>:18} [SYSTEM]:Registered image_processing_api blueprint 
+2020-08-30 20:17:27,669 [INFO:main] {<module>:20} [SYSTEM]:Registered user_api blueprint 
+2020-08-30 20:17:27,674 [INFO:main] {<module>:22} [SYSTEM]:Registered model_management_api blueprint 
+2020-08-30 20:17:27,677 [INFO:main] {<module>:24} [SYSTEM]:Registered log_management_api blueprint 
+2020-08-30 20:17:32,722 [INFO:main] {<module>:16} [SYSTEM]:Created flask app.
+2020-08-30 20:17:32,728 [INFO:main] {<module>:18} [SYSTEM]:Registered image_processing_api blueprint 
+2020-08-30 20:17:32,736 [INFO:main] {<module>:20} [SYSTEM]:Registered user_api blueprint 
+2020-08-30 20:17:32,745 [INFO:main] {<module>:22} [SYSTEM]:Registered model_management_api blueprint 
+2020-08-30 20:17:32,747 [INFO:main] {<module>:24} [SYSTEM]:Registered log_management_api blueprint 
+2020-08-30 20:17:42,055 [INFO:main] {<module>:16} [SYSTEM]:Created flask app.
+2020-08-30 20:17:42,057 [INFO:main] {<module>:18} [SYSTEM]:Registered image_processing_api blueprint 
+2020-08-30 20:17:42,058 [INFO:main] {<module>:20} [SYSTEM]:Registered user_api blueprint 
+2020-08-30 20:17:42,061 [INFO:main] {<module>:22} [SYSTEM]:Registered model_management_api blueprint 
+2020-08-30 20:17:42,062 [INFO:main] {<module>:24} [SYSTEM]:Registered log_management_api blueprint 
+2020-08-30 20:17:58,315 [INFO:main] {<module>:16} [SYSTEM]:Created flask app.
+2020-08-30 20:17:58,318 [INFO:main] {<module>:18} [SYSTEM]:Registered image_processing_api blueprint 
+2020-08-30 20:17:58,327 [INFO:main] {<module>:20} [SYSTEM]:Registered user_api blueprint 
+2020-08-30 20:17:58,332 [INFO:main] {<module>:22} [SYSTEM]:Registered model_management_api blueprint 
+2020-08-30 20:17:58,342 [INFO:main] {<module>:24} [SYSTEM]:Registered log_management_api blueprint 
+2020-08-30 20:18:03,260 [INFO:main] {<module>:16} [SYSTEM]:Created flask app.
+2020-08-30 20:18:03,266 [INFO:main] {<module>:18} [SYSTEM]:Registered image_processing_api blueprint 
+2020-08-30 20:18:03,267 [INFO:main] {<module>:20} [SYSTEM]:Registered user_api blueprint 
+2020-08-30 20:18:03,274 [INFO:main] {<module>:22} [SYSTEM]:Registered model_management_api blueprint 
+2020-08-30 20:18:03,276 [INFO:main] {<module>:24} [SYSTEM]:Registered log_management_api blueprint 
+2020-08-30 20:18:08,120 [INFO:main] {<module>:16} [SYSTEM]:Created flask app.
+2020-08-30 20:18:08,125 [INFO:main] {<module>:18} [SYSTEM]:Registered image_processing_api blueprint 
+2020-08-30 20:18:08,132 [INFO:main] {<module>:20} [SYSTEM]:Registered user_api blueprint 
+2020-08-30 20:18:08,137 [INFO:main] {<module>:22} [SYSTEM]:Registered model_management_api blueprint 
+2020-08-30 20:18:08,139 [INFO:main] {<module>:24} [SYSTEM]:Registered log_management_api blueprint 
+2020-08-30 20:18:14,580 [INFO:main] {<module>:16} [SYSTEM]:Created flask app.
+2020-08-30 20:18:14,586 [INFO:main] {<module>:18} [SYSTEM]:Registered image_processing_api blueprint 
+2020-08-30 20:18:14,595 [INFO:main] {<module>:20} [SYSTEM]:Registered user_api blueprint 
+2020-08-30 20:18:14,617 [INFO:main] {<module>:22} [SYSTEM]:Registered model_management_api blueprint 
+2020-08-30 20:18:14,635 [INFO:main] {<module>:24} [SYSTEM]:Registered log_management_api blueprint 
