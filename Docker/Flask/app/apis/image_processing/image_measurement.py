@@ -21,11 +21,15 @@ class ImageMeasurement:
         self.ml_config_path = os.path.join(parent, db_config.item["db_file_path"], db_config.item["ml_path"],"ml_model_config.cfg")
         self.ref_config_path = os.path.join(parent, db_config.item["db_file_path"], db_config.item["ref_path"],"ref_model_config.cfg")
 
-    # ฟังก์ชันสำหรับหาจุดกึงกลางจากจุด 2 จุด
+    # find_midpoint
+    # Description : ฟังก์ชันสำหรับหาจุดกึงกลางจากจุด 2 จุด
+    # Author : Athiruj Poositaporn
     def find_midpoint(self,ptA, ptB):
         return ((ptA[0] + ptB[0]) * 0.5, (ptA[1] + ptB[1]) * 0.5)
 
-    # ฟังก์ชันปรับขนาดรูปภาพตามพารามิเตอร์ที่ส่งค่ามาเป็น Pixel
+    # resize_with_aspect_ratio
+    # Description : ฟังก์ชันปรับขนาดรูปภาพตามพารามิเตอร์ที่ส่งค่ามาเป็น Pixel
+    # Author : Athiruj Poositaporn
     def resize_with_aspect_ratio(self, image, width=None, height=None, inter=cv2.INTER_AREA):
         dim = None
         (h, w) = image.shape[:2]
@@ -41,11 +45,21 @@ class ImageMeasurement:
 
         return cv2.resize(image, dim, interpolation=inter)
 
+    # detect_object
+    # Description : ฟังก์ชันตรวจจับวัตถุที่ใสใจในการวัดขนาดซึ่งใช้ ML model โดยเป็นการหาตำแหน่งจุดกึ่งกลางของวัตถุ
+    # Author : Athiruj Poositaporn
     def detect_object(self,image):
         height, width = image.shape[:2]
-        net = cv2.dnn.readNet(self.ml_model_path, self.ml_config_path)
+        # @@@@@@@@@@@@@@@@@@@@@@@@@
+        # ต้องแก้ไขให้ดึงข้อมูลจาก DB
+        # @@@@@@@@@@@@@@@@@@@@@@@@@
+        # อ่านไฟล์ weights และ config
+        net = cv2.dnn.readNet(self.ml_model_path, self.ml_config_path) 
+
+        #ค่าที่ได้จากฐานข้อมูลของ ML model เป็นชื่อของวัตถุที่สนใจวัดขนาด
         classes = ["Box"]
-        # images_path = glob.glob(r""+path_img)
+        # @@@@@@@@@@@@@@@@@@@@@@@@@
+
         layer_names = net.getLayerNames()
         output_layers = [layer_names[i[0] - 1] for i in net.getUnconnectedOutLayers()]
         colors = np.random.uniform(0, 255, size=(len(classes), 3))
@@ -72,8 +86,15 @@ class ImageMeasurement:
                     pass
         return arr_center_point
 
+    # detect_ref_object
+    # Description : ฟังก์ชันตรวจจับวัตถุอ้างอิงซึ่งใช้ Ref model โดยเป็นการหาตำแหน่งจุดกึ่งกลางของวัตถุอ้างอิง
+    # Author : Athiruj Poositaporn
     def detect_ref_object(self,image):
         height, width = image.shape[:2]
+        # @@@@@@@@@@@@@@@@@@@@@@@@@
+        # ต้องแก้ไขให้ดึงข้อมูลจาก DB
+        # @@@@@@@@@@@@@@@@@@@@@@@@@
+        # อ่านไฟล์ weights และ config
         net = cv2.dnn.readNet(self.ref_model_path, self.ref_config_path)
         layer_names = net.getLayerNames()
         output_layers = [layer_names[i[0] - 1] for i in net.getUnconnectedOutLayers()]
@@ -99,6 +120,9 @@ class ImageMeasurement:
                     arr_center_point = [center_x,center_y]
         return arr_center_point
 
+    # get_background_mask
+    # Description : ฟังก์ชันมาร์กช่วงของสี 3 สีคือสีแดง น้ำเงิน และสีเขียว เพื่อเป็นการตัดสีพื้นหลังของภาพที่มีสีดังกล่าวออก
+    # Author : Athiruj Poositaporn
     def get_background_mask(self,image, color):
         if color == "red":
             # คาบของสีแดงมี 2 ช่วง จึงจะครอบคลุม
@@ -112,29 +136,41 @@ class ImageMeasurement:
         else:
             return False
 
+    # measure_obj_size
+    # Description : ฟังก์ชันการวัดขนาดของวัตถุ
+    # Author : Athiruj Poositaporn
     def measure_obj_size(self,image):
+        # @@@@@@@@@@@@@@@@@@@@@@@@@
+        # ต้องแก้ไขให้ดึงข้อมูลจาก DB
+        # @@@@@@@@@@@@@@@@@@@@@@@@@
+        # อ่านไฟล์ weights และ config
         # ต้องเปลี่ยนเป็นดึงข้อมูลจาก DB 2 ค่าคือ path ของ ML และ Ref
         parent = os.path.dirname(os.path.dirname(os.path.dirname(__file__)))
         self.ml_model_path = os.path.join(parent, db_config.item["db_file_path"], db_config.item["ml_path"],"box_model.weights")
         self.ref_model_path = os.path.join(parent, db_config.item["db_file_path"], db_config.item["ref_path"],"dpml_logo_model.weights")
         ml_model_name = "Box"
+        # @@@@@@@@@@@@@@@@@@@@@@@@@
 
         input_image = image.image
         input_image = self.resize_with_aspect_ratio(image.image,width=1080)
-        # height, width = input_image.shape[:2]
         hsv=cv2.cvtColor(cv2.GaussianBlur(input_image, (7, 7), 0), cv2.COLOR_BGR2HSV)
-        width_of_ref_obj = 20 #ได้จากข้อมูลความกว้างหรือยาวจาก DB ของ Ref model
+
+        # @@@@@@@@@@@@@@@@@@@@@@@@@
+        # ต้องแก้ไขให้ดึงข้อมูลจาก DB
+        # @@@@@@@@@@@@@@@@@@@@@@@@@
+        #ได้จากข้อมูลความกว้างหรือยาวจาก DB ของ Ref model
+        width_of_ref_obj = 20 
+        # @@@@@@@@@@@@@@@@@@@@@@@@@
 
         arr_center_point = self.detect_object(input_image)
         ref_center_point = self.detect_ref_object(input_image)
-        logger.debug("ref_center_point: {}".format(ref_center_point))
-        logger.debug("arr_center_point: {}".format(arr_center_point))
 
         try:
-
+            # หากไม่พบวัตถุอ้างอิงจะไม่วัดขนาด
             if(not ref_center_point):
                 logger.warning("Reference object not detected")
                 return {'mes' : err_msg.msg['ref_model_not_found'],'img' : input_image , 'status' : "ref_not_found"}
+            # หากไม่พบวัตถุที่สนใจจะไม่วัดขนาด
             elif(not arr_center_point):
                 logger.warning("Object not detected")
                 return {'mes' : err_msg.msg['ml_model_not_found'],'img' : input_image , 'status' : "ml_not_found"}
@@ -155,6 +191,9 @@ class ImageMeasurement:
             # dilate => ลบ Noise สีขาวออกจากรูปภาพ
             edged = cv2.erode(edged, None, iterations=1)
 
+            ##########################################
+            # Mask Red Geen Blue and merge all result
+            ##########################################
             mask_r=self.get_background_mask(hsv, "red")
             edged_r=cv2.Canny(mask_r, 10, 100)
             edged_r=cv2.dilate(edged_r, None, iterations=1)
@@ -173,6 +212,8 @@ class ImageMeasurement:
             merge_rg = cv2.addWeighted(edged_r, 1, edged_g, 1, 0)
             merge_rgb = cv2.addWeighted(merge_rg, 1, edged_b, 1, 0)
             merge_rgb_edged = cv2.addWeighted(merge_rgb, 1, edged, 1, 0)
+            ##########################################
+            ##########################################
 
             # ค้นหารูปร่างของวัตถุ
             # cv2.findContours(รุูปภาพ,ดึงเส้นขอบของวัตถุ,การประมาณการรูปร่างของวัตถุ)
@@ -225,7 +266,9 @@ class ImageMeasurement:
                     })
                 distance_list_of_ml_obj.append(sorted(sub_list, key = lambda i: i['distance'])[0])
 
+            ##########################################
             # หาตำแหน่งของจุดกึ่งกลางของวัตถุอ้างอิงที่ตรวจจับได้
+            ##########################################
             distance_list_of_ref_obj = []
             sub_list = []
             for data in center_contour_list:
@@ -235,7 +278,13 @@ class ImageMeasurement:
                     "distance" : distance
                 })
             distance_list_of_ref_obj.append(sorted(sub_list, key = lambda i: i['distance'])[0])
+            ##########################################
+            ##########################################
 
+            #############################################################
+            # เทียบจุดกึ่งกลางของวัตถุอ้างอิงกับกล่องปิดล้อมวัตถุทั้งหมดเพื่อหาจุดที่ใกล้ที่สุด
+            # แล้วทำการวาดกรอบปิดล้อมวัตถุอ้างอิง พร้อมบอกขนาด
+            #############################################################
             for obj_list in distance_list_of_ref_obj:
                 (tl, tr, br, bl) = obj_list['data']['box']
                 (tltrX, tltrY) = self.find_midpoint(tl,tr)
@@ -243,10 +292,48 @@ class ImageMeasurement:
                 (tlblX, tlblY) = self.find_midpoint(tl,bl)
                 (trbrX, trbrY) = self.find_midpoint(tr,br)
 
+                cv2.line(origin,(int(tl[0]), int(tl[1])) ,(int(tr[0]), int(tr[1])) , (0, 255, 0), 2)
+                cv2.line(origin,(int(bl[0]), int(bl[1])) ,(int(br[0]), int(br[1])) , (0, 255, 0), 2)
+                cv2.line(origin,(int(tl[0]), int(tl[1])) ,(int(bl[0]), int(bl[1])) , (0, 255, 0), 2)
+                cv2.line(origin,(int(tr[0]), int(tr[1])) ,(int(br[0]), int(br[1])) , (0, 255, 0), 2)
+
                 dA = dist.euclidean((tltrX, tltrY), (blbrX, blbrY))
                 dB = dist.euclidean((tlblX, tlblY), (trbrX, trbrY))
                 pixelsPerMetric = dB / width_of_ref_obj
+
+                dimA = dA / pixelsPerMetric
+                dimB = dB / pixelsPerMetric
+
+                cv2.putText(origin, "[Ref_obj]",
+                    (int(tl[0]), int(tl[1] - 30)), cv2.FONT_HERSHEY_SIMPLEX,
+                    0.65, (255, 255, 255), 2)
+
+                cv2.putText(
+                    origin, 
+                    "{:.2f}mm".format(dimB),
+                    (int(tltrX - 15), int(tltrY - 10)), 
+                    cv2.FONT_HERSHEY_SIMPLEX,
+                    1, 
+                    (255, 255, 255), 
+                    2
+                )
+
+                cv2.putText(
+                    origin, 
+                    "{:.2f}mm".format(dimA),
+                    (int(trbrX  + 10), int(trbrY)), 
+                    cv2.FONT_HERSHEY_SIMPLEX,
+                    1, 
+                    (255, 255, 255), 
+                    2
+                )
+            #############################################################
+            #############################################################
             
+            #############################################################
+            # เทียบจุดกึ่งกลางของวัตถุกับกล่องปิดล้อมวัตถุทั้งหมดเพื่อหาจุดที่ใกล้ที่สุด
+            # แล้วทำการวาดกรอบปิดล้อมวัตถุ พร้อมบอกขนาด
+            #############################################################
             object_lable_number = 1
             result_object_list = []
 
@@ -258,43 +345,30 @@ class ImageMeasurement:
                 (tlblX, tlblY) = self.find_midpoint(tl,bl)
                 (trbrX, trbrY) = self.find_midpoint(tr,br)
 
-                logger.debug("Test at line 258")
                 # Draw bounding box
                 cv2.line(origin,(int(tl[0]), int(tl[1])) ,(int(tr[0]), int(tr[1])) , (0, 255, 0), 2)
                 cv2.line(origin,(int(bl[0]), int(bl[1])) ,(int(br[0]), int(br[1])) , (0, 255, 0), 2)
                 cv2.line(origin,(int(tl[0]), int(tl[1])) ,(int(bl[0]), int(bl[1])) , (0, 255, 0), 2)
                 cv2.line(origin,(int(tr[0]), int(tr[1])) ,(int(br[0]), int(br[1])) , (0, 255, 0), 2)
 
-                # cv2.line(origin, (int(tltrX), int(tltrY)), (int(blbrX), int(blbrY)),
-                # (255, 0, 255), 2)
-                # cv2.line(origin, (int(tlblX), int(tlblY)), (int(trbrX), int(trbrY)),
-                # (255, 0, 255), 2)
-
-                # cv2.circle(origin, (int(tltrX), int(tltrY)), 5, (255, 0, 0), -1)
-                # cv2.circle(origin, (int(blbrX), int(blbrY)), 5, (255, 0, 0), -1)
-                # cv2.circle(origin, (int(tlblX), int(tlblY)), 5, (255, 0, 0), -1)
-                # cv2.circle(origin, (int(trbrX), int(trbrY)), 5, (255, 0, 0), -1)
-
+                # Draw coner points
                 cv2.circle(origin, (int(tl[0]), int(tl[1])), 5, (0, 0, 255), -1)
                 cv2.circle(origin, (int(tr[0]), int(tr[1])), 5, (0, 0, 255), -1)
                 cv2.circle(origin, (int(br[0]), int(br[1])), 5, (0, 0, 255), -1)
                 cv2.circle(origin, (int(bl[0]), int(bl[1])), 5, (0, 0, 255), -1)
 
-                logger.debug("Test at line 280")
                 dA = dist.euclidean((tltrX, tltrY), (blbrX, blbrY))
                 dB = dist.euclidean((tlblX, tlblY), (trbrX, trbrY))
 
-                logger.debug("Test at line 284")
                 dimA = dA / pixelsPerMetric
                 dimB = dB / pixelsPerMetric
                 object_lable = "[" + ml_model_name + "_" + str(object_lable_number) + "]"
                 object_lable_number = object_lable_number + 1
                 
-                logger.debug("Test at line 287")
                 result_object_data = {
                     'lable' : object_lable,
-                    'dimA' : dimA,
-                    'dimB' : dimB,
+                    'dimA' : dimB, #สลับค่า A B เพราะต้องการแสดงผลตามความกว้างและยาว
+                    'dimB' : dimA,
                     'unit' : "mm"
                 }
 
@@ -305,28 +379,31 @@ class ImageMeasurement:
                     0.65, (255, 255, 255), 2)
 
                 # Dimension A lable
+                cv2.circle(origin, (int(tltrX - 5), int(tltrY - 20)), 26, (0, 0, 0), -1)
                 cv2.putText(
                     origin, 
                     "A",
                     (int(tltrX - 15), int(tltrY - 10)), 
                     cv2.FONT_HERSHEY_SIMPLEX,
-                    0.85, 
+                    1, 
                     (255, 255, 255), 
                     2
                 )
 
                 # Dimension B lable
+                cv2.circle(origin, (int(trbrX + 20), int(trbrY - 10)), 26, (0, 0, 0), -1)
                 cv2.putText(
                     origin, 
                     "B",
                     (int(trbrX  + 10), int(trbrY)), 
                     cv2.FONT_HERSHEY_SIMPLEX,
-                    0.85, 
+                    1, 
                     (255, 255, 255), 
                     2
                 )
+            #############################################################
+            #############################################################
 
-            logger.debug("Test at line 303")
             result = {'img' : origin ,'img_data' : result_object_list ,'status' : "success"}
             return result
         except Exception as identifier:

@@ -17,10 +17,15 @@ logger = logging.getLogger("image_processing")
 URI = "mongodb://"+db_config.item["db_username"]+":" + \
 db_config.item["db_password"]+"@"+db_config.item["db_host"]
 logger.info("Connecting to database")
+
+# @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+# ต้องแก้ไขให้ดึงข้อมูลจาก DB
+# @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
 # db_connect = MongoClient(URI)
 # logger.info("Connected to database")
 # DPML_db = db_connect[db_config.item["db_name"]]
 # unit_collection = db_config.item['db_col_unit']
+# @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
 
 def is_int(number):
         try:
@@ -31,15 +36,23 @@ def is_int(number):
         except:
             return False
 
+# upload_image
+# Description : Service ของการอัปโหลดรูปภาพและวัดขนาดของวัตถุ
+# Author : Athiruj Poositaporn
 @image_processing_api.route("/upload_image", methods=['put'])
 def upload_image():
     try:
         file = request.files.get('file',None)
         un_id = request.form.get('unit',None)
+
+        # @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+        # ต้องแก้ไขให้ดึงข้อมูลการส่งค่าชื่อผู้ใช้งาน
+        # @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
         username = "Debug_user"
+        # @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+
         query_unit = None
         logger.info("[{}] Prepair image data to be measure.".format(username))
-        # logger.debug("un_id: {}".format(un_id))
         if(not file):
             logger.warning("[{}] File is empty.".format(username))
             raise TypeError(err_msg.msg['file_empty'])
@@ -50,11 +63,12 @@ def upload_image():
             logger.warning("[{}] Wrong file extension.".format(username))
             raise TypeError(err_msg.msg['file_extension'])
         elif(not is_int(un_id)):
-            # logger.debug("un_id: {}".format(un_id))
             logger.warning("[{}] Wrong unit id. This ID dose not match any unit id on dpml_unit".format(username))
             raise TypeError(err_msg.msg['unit_id'])
 
-        
+        # @@@@@@@@@@@@@@@@@@@@@@
+        # ต้องแก้ไขให้ดึงข้อมูลจาก DB
+        # @@@@@@@@@@@@@@@@@@@@@@
         # un_id = int(un_id)
         # query_unit = DPML_db[unit_collection].find_one({
         #     db_config.item['fld_un_id']: un_id
@@ -63,6 +77,7 @@ def upload_image():
         # if(not query_unit):
         #     logger.warning("[{}] Wrong unit id. This ID dose not match any unit id on dpml_unit".format(username))
         # raise TypeError(err_msg.msg['unit_id'])
+        # @@@@@@@@@@@@@@@@@@@@@@
 
 
         logger.info("[{}] Processing image...".format(username))
@@ -80,7 +95,6 @@ def upload_image():
         data = base64.b64encode(buffer)
         data = data.decode('utf-8')
 
-        # logger.debug("result_img: {}".format(result_img))
         if(result_img['status'] == "ml_not_found"):
             result = {'mes' : "Object not detected." ,'img' : data, 'status' : "ml_not_found"}
             return result , 400
@@ -104,6 +118,10 @@ def upload_image():
             # result = {'mes' : err_msg.msg['other_err']}
         return result , 400
     finally:
+        # @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+        # ต้องแก้ไขให้ดึงข้อมูลจาก DB
+        # @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
         # db_connect.close()
         pass
+        # @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
 
