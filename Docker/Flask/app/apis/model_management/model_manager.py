@@ -176,7 +176,10 @@ class MLManager(Manager):
                 last_mlmo = self.DPML_db[self.collection].find_one(
                                 sort=[(db_config.item["fld_mlmo_id"], -1)]
                             )
-                last_id = last_mlmo[db_config.item["fld_mlmo_id"]] + 1
+                if(last_mlmo):
+                    last_id = last_mlmo[db_config.item["fld_mlmo_id"]] + 1
+                else:
+                    last_id = 1
 
                 new_model = {
                     db_config.item["fld_mlmo_id"] : last_id,

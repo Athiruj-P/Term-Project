@@ -33,12 +33,22 @@ class ImageMeasurement:
             db_config.item['fld_mlmo_name']: 1,
             db_config.item['fld_mlmo_path']: 1,
         })
-        query_mlmo.pop('_id')
+
+        if(not query_mlmo):
+            logger.warning(err_msg.msg['no_active_ml_model'])
+            raise TypeError(err_msg.msg['no_active_ml_model'])
+        else:
+            query_mlmo.pop('_id')
 
         query_remo = DPML_db[ref_model_collection].find_one({
             db_config.item['fld_remo_status']: db_config.item['fld_remo_status_active']
         })
-        query_remo.pop('_id')
+
+        if(not query_remo):
+            logger.warning(err_msg.msg['no_active_ref_model'])
+            raise TypeError(err_msg.msg['no_active_ref_model'])
+        else:
+            query_remo.pop('_id')
         
         query_unit = DPML_db[unit_collection].find_one({
             db_config.item['fld_un_id']: query_remo[db_config.item['fld_remo_unit']]
@@ -445,4 +455,4 @@ class ImageMeasurement:
                 # result = {'mes' : err_msg.msg['other_err']}
             return result
     def __del__(self): 
-        self.db_connect.close()
+        db_connect.close()
