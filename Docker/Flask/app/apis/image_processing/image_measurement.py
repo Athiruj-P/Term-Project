@@ -8,16 +8,53 @@ import random
 import numpy as np
 import cv2
 import os
+from pymongo import MongoClient
 import sys
 from .. import err_msg
 from .. import db_config
-logger = logging.getLogger("image_processing")
+logger = logging.getLogger("image_measurement")
+
+URI = "mongodb://"+db_config.item["db_username"]+":" + \
+db_config.item["db_password"]+"@"+db_config.item["db_host"]
+db_connect = MongoClient(URI)
+logger.info("Connected to database")
+DPML_db = db_connect[db_config.item["db_name"]]
+unit_collection = db_config.item['db_col_unit']
+ml_model_collection = db_config.item['db_col_mlmo']
+ref_model_collection = db_config.item['db_col_remo']
 
 class ImageMeasurement:
     def __init__(self):
         parent = os.path.dirname(os.path.dirname(os.path.dirname(__file__)))
-        self.ml_model_path = ""
-        self.ref_model_path = ""
+
+        query_mlmo = DPML_db[ml_model_collection].find_one({
+            db_config.item['fld_mlmo_status']: db_config.item['fld_mlmo_status_active']
+        }, {
+            db_config.item['fld_mlmo_name']: 1,
+            db_config.item['fld_mlmo_path']: 1,
+        })
+        query_mlmo.pop('_id')
+
+        query_remo = DPML_db[ref_model_collection].find_one({
+            db_config.item['fld_remo_status']: db_config.item['fld_remo_status_active']
+        })
+        query_remo.pop('_id')
+        
+        query_unit = DPML_db[unit_collection].find_one({
+            db_config.item['fld_un_id']: query_remo[db_config.item['fld_remo_unit']]
+        })
+        query_unit.pop('_id')
+        # logger.debug("mlmo_name: {}".format(query_mlmo[db_config.item['fld_mlmo_name']]))
+        # logger.debug("mlmo_path: {}".format(query_mlmo[db_config.item['fld_mlmo_path']]))
+
+        self.ml_model_path = query_mlmo[db_config.item['fld_mlmo_path']]
+        self.ml_model_name = query_mlmo[db_config.item['fld_mlmo_name']]
+
+        self.ref_model_path = query_remo[db_config.item['fld_remo_path']]
+        self.ref_model_name = query_remo[db_config.item['fld_remo_name']]
+        self.ref_model_width = query_remo[db_config.item['fld_remo_width']]
+        self.ref_model_unit = query_unit[db_config.item['fld_un_abb_name']]
+
         self.ml_config_path = os.path.join(parent, db_config.item["db_file_path"], db_config.item["ml_path"],"ml_model_config.cfg")
         self.ref_config_path = os.path.join(parent, db_config.item["db_file_path"], db_config.item["ref_path"],"ref_model_config.cfg")
 
@@ -50,15 +87,11 @@ class ImageMeasurement:
     # Author : Athiruj Poositaporn
     def detect_object(self,image):
         height, width = image.shape[:2]
-        # @@@@@@@@@@@@@@@@@@@@@@@@@
-        # ต้องแก้ไขให้ดึงข้อมูลจาก DB
-        # @@@@@@@@@@@@@@@@@@@@@@@@@
         # อ่านไฟล์ weights และ config
         net = cv2.dnn.readNet(self.ml_model_path, self.ml_config_path) 
 
         #ค่าที่ได้จากฐานข้อมูลของ ML model เป็นชื่อของวัตถุที่สนใจวัดขนาด
-        classes = ["Box"]
-        # @@@@@@@@@@@@@@@@@@@@@@@@@
+        classes = [self.ml_model_name]
 
         layer_names = net.getLayerNames()
         output_layers = [layer_names[i[0] - 1] for i in net.getUnconnectedOutLayers()]
@@ -91,10 +124,6 @@ class ImageMeasurement:
     # Author : Athiruj Poositaporn
     def detect_ref_object(self,image):
         height, width = image.shape[:2]
-        # @@@@@@@@@@@@@@@@@@@@@@@@@
-        # ต้องแก้ไขให้ดึงข้อมูลจาก DB
-        # @@@@@@@@@@@@@@@@@@@@@@@@@
-        # อ่านไฟล์ weights และ config
         net = cv2.dnn.readNet(self.ref_model_path, self.ref_config_path)
         layer_names = net.getLayerNames()
         output_layers = [layer_names[i[0] - 1] for i in net.getUnconnectedOutLayers()]
@@ -146,9 +175,8 @@ class ImageMeasurement:
         # อ่านไฟล์ weights และ config
         # ต้องเปลี่ยนเป็นดึงข้อมูลจาก DB 2 ค่าคือ path ของ ML และ Ref
         parent = os.path.dirname(os.path.dirname(os.path.dirname(__file__)))
-        self.ml_model_path = os.path.join(parent, db_config.item["db_file_path"], db_config.item["ml_path"],"box_model.weights")
-        self.ref_model_path = os.path.join(parent, db_config.item["db_file_path"], db_config.item["ref_path"],"dpml_logo_model.weights")
-        ml_model_name = "Box"
+        # self.ml_model_path = os.path.join(parent, db_config.item["db_file_path"], db_config.item["ml_path"],"box_model.weights")
+        # self.ref_model_path = os.path.join(parent, db_config.item["db_file_path"], db_config.item["ref_path"],"dpml_logo_model.weights")
         # @@@@@@@@@@@@@@@@@@@@@@@@@
 
         input_image = image.image
@@ -159,7 +187,7 @@ class ImageMeasurement:
         # ต้องแก้ไขให้ดึงข้อมูลจาก DB
         # @@@@@@@@@@@@@@@@@@@@@@@@@
         #ได้จากข้อมูลความกว้างหรือยาวจาก DB ของ Ref model
-        width_of_ref_obj = 20 
+        width_of_ref_obj = self.ref_model_width
         # @@@@@@@@@@@@@@@@@@@@@@@@@
 
         arr_center_point = self.detect_object(input_image)
@@ -303,30 +331,31 @@ class ImageMeasurement:
 
                 dimA = dA / pixelsPerMetric
                 dimB = dB / pixelsPerMetric
+                # logger.debug("self.ref_model_name : {}".format(self.ref_model_name))
 
-                cv2.putText(origin, "[Ref_obj]",
+                cv2.putText(origin, "[{}]".format(self.ref_model_name),
                     (int(tl[0]), int(tl[1] - 30)), cv2.FONT_HERSHEY_SIMPLEX,
                     0.65, (255, 255, 255), 2)
 
-                cv2.putText(
-                    origin, 
-                    "{:.2f}mm".format(dimB),
-                    (int(tltrX - 15), int(tltrY - 10)), 
-                    cv2.FONT_HERSHEY_SIMPLEX,
-                    1, 
-                    (255, 255, 255), 
-                    2
-                )
+                # cv2.putText(
+                #     origin, 
+                #     "{:.2f}mm".format(dimB),
+                #     (int(tltrX - 15), int(tltrY - 10)), 
+                #     cv2.FONT_HERSHEY_SIMPLEX,
+                #     1, 
+                #     (255, 255, 255), 
+                #     2
+                # )
 
-                cv2.putText(
-                    origin, 
-                    "{:.2f}mm".format(dimA),
-                    (int(trbrX  + 10), int(trbrY)), 
-                    cv2.FONT_HERSHEY_SIMPLEX,
-                    1, 
-                    (255, 255, 255), 
-                    2
-                )
+                # cv2.putText(
+                #     origin, 
+                #     "{:.2f}mm".format(dimA),
+                #     (int(trbrX  + 10), int(trbrY)), 
+                #     cv2.FONT_HERSHEY_SIMPLEX,
+                #     1, 
+                #     (255, 255, 255), 
+                #     2
+                # )
             #############################################################
             #############################################################
             
@@ -362,14 +391,14 @@ class ImageMeasurement:
 
                 dimA = dA / pixelsPerMetric
                 dimB = dB / pixelsPerMetric
-                object_lable = "[" + ml_model_name + "_" + str(object_lable_number) + "]"
+                object_lable = "[" + self.ml_model_name + "_" + str(object_lable_number) + "]"
                 object_lable_number = object_lable_number + 1
                 
                 result_object_data = {
                     'lable' : object_lable,
                     'dimA' : dimB, #สลับค่า A B เพราะต้องการแสดงผลตามความกว้างและยาว
                     'dimB' : dimA,
-                    'unit' : "mm"
+                    'unit' : self.ref_model_unit
                 }
 
                 result_object_list.append(result_object_data)
@@ -415,3 +444,5 @@ class ImageMeasurement:
                 result = {'mes' : str(identifier), 'status' : "system_error"}
                 # result = {'mes' : err_msg.msg['other_err']}
             return result
+    def __del__(self): 
+        self.db_connect.close()

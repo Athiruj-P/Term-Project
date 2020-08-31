@@ -12,19 +12,19 @@ from .. import err_msg
 
 image_processing_api = Blueprint('image_processing_api', __name__)
 extension = ["bmp","pbm","pgm","ppm","sr","ras","jpeg","jpg","jpe","jp2","tiff","tif","png"]
-logger = logging.getLogger("image_processing")
+logger = logging.getLogger("image_processing_api")
 
+
+logger.info("Connecting to database")
+# @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+# ต้องแก้ไขให้ดึงข้อมูลจาก DB /
+# @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
 URI = "mongodb://"+db_config.item["db_username"]+":" + \
 db_config.item["db_password"]+"@"+db_config.item["db_host"]
-logger.info("Connecting to database")
-
-# @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
-# ต้องแก้ไขให้ดึงข้อมูลจาก DB
-# @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
-# db_connect = MongoClient(URI)
-# logger.info("Connected to database")
-# DPML_db = db_connect[db_config.item["db_name"]]
-# unit_collection = db_config.item['db_col_unit']
+db_connect = MongoClient(URI)
+logger.info("Connected to database")
+DPML_db = db_connect[db_config.item["db_name"]]
+unit_collection = db_config.item['db_col_unit']
 # @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
 
 def is_int(number):
@@ -43,8 +43,6 @@ def is_int(number):
 def upload_image():
     try:
         file = request.files.get('file',None)
-        un_id = request.form.get('unit',None)
-
         # @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
         # ต้องแก้ไขให้ดึงข้อมูลการส่งค่าชื่อผู้ใช้งาน
         # @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
@@ -62,23 +60,6 @@ def upload_image():
         if file_extension not in extension:
             logger.warning("[{}] Wrong file extension.".format(username))
             raise TypeError(err_msg.msg['file_extension'])
-        elif(not is_int(un_id)):
-            logger.warning("[{}] Wrong unit id. This ID dose not match any unit id on dpml_unit".format(username))
-            raise TypeError(err_msg.msg['unit_id'])
-
-        # @@@@@@@@@@@@@@@@@@@@@@
-        # ต้องแก้ไขให้ดึงข้อมูลจาก DB
-        # @@@@@@@@@@@@@@@@@@@@@@
-        # un_id = int(un_id)
-        # query_unit = DPML_db[unit_collection].find_one({
-        #     db_config.item['fld_un_id']: un_id
-        # })
-
-        # if(not query_unit):
-        #     logger.warning("[{}] Wrong unit id. This ID dose not match any unit id on dpml_unit".format(username))
-        # raise TypeError(err_msg.msg['unit_id'])
-        # @@@@@@@@@@@@@@@@@@@@@@
-
 
         logger.info("[{}] Processing image...".format(username))
         nparr = np.fromstring(request.files['file'].read(), np.uint8)
@@ -106,6 +87,7 @@ def upload_image():
             'img' : data,
             'img_data' : result_img['img_data'],
         }
+        del image_processor
         logger.info("[{}] Responsed measurement result.".format(username))
         return response , 200
     except Exception  as identifier:
@@ -121,7 +103,22 @@ def upload_image():
         # @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
         # ต้องแก้ไขให้ดึงข้อมูลจาก DB
         # @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
-        # db_connect.close()
-        pass
+        db_connect.close()
+        # pass
         # @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
 
+# get_all_unit
+# Description : Service ของการเรียกข้อมูลหน่วยในการวัดขนาดทั้งหมด
+# Author : Athiruj Poositaporn
+@image_processing_api.route("/get_all_unit", methods=['get'])
+def get_all_unit():
+    try:
+        query_unit = DPML_db[unit_collection].find()
+        arr = []
+        for item in query_unit:
+            item.pop('_id')
+            arr.append(item)
+        return jsonify(arr) , 200
+    except Exception as identifier:
+        result = {'mes' : str(identifier), 'status' : "system_error"}
+        return result , 400

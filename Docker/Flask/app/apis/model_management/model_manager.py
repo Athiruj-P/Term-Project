@@ -159,7 +159,7 @@ class MLManager(Manager):
                 }
             })
 
-            if((not result_regex) or len(data.name) < 5 or len(data.name) > 30):
+            if((not result_regex) or len(data.name) < 3 or len(data.name) > 30):
                 self.logger.warning("[{}] Wrong ML name. The ML name must have minimum 5 characters or maximum 30 characters and written in English or Thai".format(data.username))
                 raise TypeError("wrong_name")
             elif(not re.search("weights",file_extension)):
@@ -219,7 +219,7 @@ class MLManager(Manager):
                 raise TypeError("wrong_name")
             
             file_extension = None
-            if((not result_regex) or len(data.name) < 5 or len(data.name) > 30):
+            if((not result_regex) or len(data.name) < 3 or len(data.name) > 30):
                 self.logger.warning("[{}] Wrong ML name. The ML name must have minimum 5 characters or maximum 30 characters and written in English or Thai".format(data.username))
                 raise TypeError("wrong_name")
             elif(query_name):
@@ -457,7 +457,7 @@ class RefManager(Manager):
                 self.logger.warning("[{}] Wrong unit id. This ID dose not match any unit id on dpml_unit".format(data.username))
                 raise TypeError("wrong_unit_id")
 
-            if((not result_regex) or len(data.name) < 5 or len(data.name) > 30):
+            if((not result_regex) or len(data.name) < 3 or len(data.name) > 30):
                 self.logger.warning("[{}] Wrong Ref name. The Ref name must have minimum 5 characters or maximum 30 characters and written in English or Thai".format(data.username))
                 raise TypeError("wrong_name")
             elif(not self.is_float(data.width) ):
@@ -543,7 +543,7 @@ class RefManager(Manager):
                 raise TypeError("wrong_unit_id")
             
             file_extension = None
-            if((not result_regex) or len(data.name) < 5 or len(data.name) > 30):
+            if((not result_regex) or len(data.name) < 3 or len(data.name) > 30):
                 self.logger.warning("[{}] Wrong Ref name. The Ref name must have minimum 5 characters or maximum 30 characters and written in English or Thai".format(data.username))
                 raise TypeError("wrong_name")
             elif(not self.is_float(data.width) ):

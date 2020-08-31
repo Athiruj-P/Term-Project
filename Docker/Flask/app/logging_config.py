@@ -64,10 +64,14 @@ dict_config = {
             'handlers': ["user"],
             'level': 'DEBUG',
         },
-        'image_processing' : {
+        'image_measurement' : {
             'handlers': ["user"],
             'level': 'DEBUG',
-        }
+        },
+        'image_processing_api' : {
+            'handlers': ["user"],
+            'level': 'DEBUG',
+        },
     },
     'root': {
         'handlers': ["console"],
