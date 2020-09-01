@@ -17,10 +17,34 @@ logger = logging.getLogger("model_management_api")
 logger_user = logging.getLogger("user_management")
 # logging.config.dictConfig(logging_config)
 
+@model_management_api.route("/check_duplicate_name", methods=['post'])
+def check_duplicate_name():
+    try:
+        model_type = request.form.get('type',None)
+        name = request.form.get('name',None)
+        if(model_type == "ml"):
+            ml_manager = MLManagement().create_manager()
+            result = ml_manager.is_duplicate_name(name)
+            result = {'is_duplicate':result}
+            return result
+        elif(model_type == "ref"):
+            ref_manager = RefManagement().create_manager()
+            result = ref_manager.is_duplicate_name(name)
+            result = {'is_duplicate':result}
+            return result
+        else:
+            result = { 'mes' : "wrong_type" , 'status' : "error"}
+            return result , 400
+    except Exception as identifier:
+        logger.error("Error {}".format(identifier))
+        error = { 'mes' : str(identifier) , 'status' : "system_error"}
+        return jsonify(error) , 400
+
+
 # add_ml_model
 # Description : เพิ่มข้อมูลของชื่อและไฟล์ .weights ของข้อมูลต้นแบบของวัตถุ 
 # Author : Athiruj Poositaporn
-@model_management_api.route("/add_model", methods=['post'])
+@model_management_api.route("/add_model", methods=['put'])
 def add_model():
     try:
         model_type = request.form.get('type',None)
@@ -37,7 +61,16 @@ def add_model():
             logger.info("[{}] Call add_model function.".format(username))
             result = ml_manager.add_model(data=data)
             del ml_manager
-            return result
+            logger.debug("[] : {}".format(result))
+
+            logger.debug("Line 41")
+            if(result['status'] == "error"):
+                return result , 400 
+            elif(result['status'] == "system_error"):
+                return result , 400 
+
+            logger.debug("Line 47")
+            return result , 200
 
         elif(model_type == "ref"):
             logger.info("[{}] Use add Ref model API.".format(username))
@@ -52,48 +85,53 @@ def add_model():
             logger.info("[{}] Call add_model function.".format(username))
             result = ref_manager.add_model(data=data)
             del ref_manager
-            return result
+            return result , 200
         else:
             result = { 'mes' : "wrong_type" }
-            return result
+            return result , 400
     except Exception as identifier:
         logger.error("[{}] Error {}".format(username,identifier))
         error = { 'mes' : str(identifier) }
-        return jsonify(error)
+        return jsonify(error) , 400
 
 # edit_model
 # Description : เปลี่ยนข้อมูลของข้อมูลต้นแบบของวัตถุ หรือข้อมูลต้นแบบของวัตถุอ้างอิง
 # Author : Athiruj Poositaporn
-@model_management_api.route("/edit_model", methods=['post'])
+@model_management_api.route("/edit_model", methods=['put'])
 def edit_model():
-    model_type = request.form.get('type',None)
-    model_id = request.form.get('model_id',None)
-    file = request.files.get('file',None)
-    name = request.form.get('name',None)
-    username = request.form.get('username',None)
-    if(model_type == "ml"):
-        logger.info("[{}] Use edit ML model API.".format(username))
-        data = Model(id=model_id,name=name,file=file,username=username)
-        ml_manager = MLManagement().create_manager()
-        logger.info("[{}] Created MLManagement object.".format(username))
-        logger.info("[{}] Call edit_model function.".format(username))
-        result = ml_manager.edit_model(data)
-        del ml_manager
-        logger.info("[{}] Deleted MLManagement object.".format(username))
-    elif(model_type == "ref"):
-        logger.info("[{}] Use edit Ref model API.".format(username))
-        width = request.form.get('width',None)
-        height = request.form.get('height',None)
-        unit = request.form.get('unit',None)
-        data = Model(id=model_id,name=name,file=file,width=width,height=height,un_id=unit,username=username)
-        ref_manager = RefManagement().create_manager()
-        logger.info("[{}] Created RefManagement object.".format(username))
-        logger.info("[{}] Call edit_model function.".format(username))
-        result = ref_manager.edit_model(data)
-        del ref_manager
-        logger.info("[{}] Deleted RefManagement object.".format(username))
-    logger.info("[{}] Response data from change_active_model API".format(username))
-    return result
+    try:
+        model_type = request.form.get('type',None)
+        model_id = request.form.get('model_id',None)
+        file = request.files.get('file',None)
+        name = request.form.get('name',None)
+        username = request.form.get('username',None)
+        if(model_type == "ml"):
+            logger.info("[{}] Use edit ML model API.".format(username))
+            data = Model(id=model_id,name=name,file=file,username=username)
+            ml_manager = MLManagement().create_manager()
+            logger.info("[{}] Created MLManagement object.".format(username))
+            logger.info("[{}] Call edit_model function.".format(username))
+            result = ml_manager.edit_model(data)
+            del ml_manager
+            logger.info("[{}] Edited MLManagement object.".format(username))
+            logger.info("[{}] Response data from change_active_model API".format(username))
+            return result , 200
+        elif(model_type == "ref"):
+            logger.info("[{}] Use edit Ref model API.".format(username))
+            width = request.form.get('width',None)
+            height = request.form.get('height',None)
+            unit = request.form.get('unit',None)
+            data = Model(id=model_id,name=name,file=file,width=width,height=height,un_id=unit,username=username)
+            ref_manager = RefManagement().create_manager()
+            logger.info("[{}] Created RefManagement object.".format(username))
+            logger.info("[{}] Call edit_model function.".format(username))
+            result = ref_manager.edit_model(data)
+            del ref_manager
+            logger.info("[{}] Edited Reference Management object.".format(username))
+            logger.info("[{}] Response data from change_active_model API".format(username))
+            return result , 200
+    except Exception as identifier:
+        pass
 
 # change_active_model
 # Description : เปลี่ยนข้อมูลของข้อมูลต้นแบบของวัตถุ หรือข้อมูลต้นแบบของวัตถุอ้างอิงที่จะเปิดการใช้งานตาม id
@@ -158,27 +196,35 @@ def delete_model():
 # Author : Athiruj Poositaporn
 @model_management_api.route("/get_all_model", methods=['post'])
 def get_all_model():
-    model_type = request.form.get('type',None)
-    username = request.form.get('username',None)
-    if(model_type == "ml"):
-        logger.info("[{}] Use get all ML model API.".format(username))
-        ml_manager = MLManagement().create_manager()
-        logger.info("[{}] Created MLManagement object.".format(username))
-        logger.info("[{}] Call get_all_model function.".format(username))
-        result = ml_manager.get_all_model()
-        del ml_manager
-        logger.info("[{}] Deleted MLManagement object.".format(username))
-    elif(model_type == "ref"):
-        logger.info("[{}] Use get all ML model API.".format(username))
-        ref_manager = RefManagement().create_manager()
-        logger.info("[{}] Created RefManagement object.".format(username))
-        logger.info("[{}] Call get_all_model function.".format(username))
-        result = ref_manager.get_all_model()
-        del ref_manager
-        logger.info("[{}] Deleted RefManagement object.".format(username))
-    
-    logger.info("[{}] Response data from get_all_model API".format(username))
-    return result
+    try:
+        model_type = request.form.get('type',None)
+        username = request.form.get('username',None)
+        if(model_type == "ml"):
+            logger.info("[{}] Use get all ML model API.".format(username))
+            ml_manager = MLManagement().create_manager()
+            logger.info("[{}] Created MLManagement object.".format(username))
+            logger.info("[{}] Call get_all_model function.".format(username))
+            result = ml_manager.get_all_model(username)
+            del ml_manager
+            logger.info("[{}] Deleted MLManagement object.".format(username))
+        elif(model_type == "ref"):
+            logger.info("[{}] Use get all ML model API.".format(username))
+            ref_manager = RefManagement().create_manager()
+            logger.info("[{}] Created RefManagement object.".format(username))
+            logger.info("[{}] Call get_all_model function.".format(username))
+            result = ref_manager.get_all_model(username)
+            del ref_manager
+
+            if(result['status'] == "system_error"):
+                return result , 400
+
+            logger.info("[{}] Deleted RefManagement object.".format(username))
+        
+        logger.info("[{}] Response data from get_all_model API".format(username))
+        return result , 200
+    except Exception as identifier:
+        return result , 400
+
     
 
 # get_model_by_id
