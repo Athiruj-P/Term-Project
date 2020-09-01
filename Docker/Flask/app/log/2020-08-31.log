@@ -949,3 +949,48 @@
 2020-08-31 17:22:17,925 [INFO:image_processing_api] {upload_image:64} [USER]:[Debug_user] Processing image...
 2020-08-31 17:24:44,331 [INFO:image_processing_api] {upload_image:53} [USER]:[Debug_user] Prepair image data to be measure.
 2020-08-31 17:24:44,332 [INFO:image_processing_api] {upload_image:64} [USER]:[Debug_user] Processing image...
+2020-08-31 17:27:22,786 [INFO:image_processing_api] {upload_image:53} [USER]:[Debug_user] Prepair image data to be measure.
+2020-08-31 17:27:22,786 [INFO:image_processing_api] {upload_image:64} [USER]:[Debug_user] Processing image...
+2020-08-31 17:27:40,142 [INFO:image_processing_api] {upload_image:53} [USER]:[Debug_user] Prepair image data to be measure.
+2020-08-31 17:27:40,143 [INFO:image_processing_api] {upload_image:64} [USER]:[Debug_user] Processing image...
+2020-08-31 17:27:40,151 [INFO:image_processing_api] {upload_image:71} [USER]:[Debug_user] Got measurement result
+2020-08-31 17:27:49,071 [WARNING:image_measurement] {measure_obj_size:199} [USER]:Reference object not detected
+2020-08-31 17:27:49,072 [INFO:image_processing_api] {upload_image:74} [USER]:[Debug_user] Prepair image date to be response.
+2020-08-31 17:29:37,610 [INFO:image_processing_api] {upload_image:53} [USER]:[Debug_user] Prepair image data to be measure.
+2020-08-31 17:29:37,611 [INFO:image_processing_api] {upload_image:64} [USER]:[Debug_user] Processing image...
+2020-08-31 17:30:17,060 [INFO:image_processing_api] {upload_image:53} [USER]:[Debug_user] Prepair image data to be measure.
+2020-08-31 17:30:17,060 [INFO:image_processing_api] {upload_image:64} [USER]:[Debug_user] Processing image...
+2020-08-31 17:30:24,547 [INFO:image_processing_api] {upload_image:53} [USER]:[Debug_user] Prepair image data to be measure.
+2020-08-31 17:30:24,547 [INFO:image_processing_api] {upload_image:64} [USER]:[Debug_user] Processing image...
+2020-08-31 17:30:24,557 [INFO:image_processing_api] {upload_image:71} [USER]:[Debug_user] Got measurement result
+2020-08-31 17:30:31,174 [WARNING:image_measurement] {measure_obj_size:199} [USER]:Reference object not detected
+2020-08-31 17:30:31,175 [INFO:image_processing_api] {upload_image:74} [USER]:[Debug_user] Prepair image date to be response.
+2020-08-31 17:31:27,674 [INFO:image_processing_api] {upload_image:53} [USER]:[Debug_user] Prepair image data to be measure.
+2020-08-31 17:31:27,675 [INFO:image_processing_api] {upload_image:64} [USER]:[Debug_user] Processing image...
+2020-08-31 17:31:27,683 [INFO:image_processing_api] {upload_image:71} [USER]:[Debug_user] Got measurement result
+2020-08-31 17:31:33,901 [WARNING:image_measurement] {measure_obj_size:199} [USER]:Reference object not detected
+2020-08-31 17:31:33,903 [INFO:image_processing_api] {upload_image:74} [USER]:[Debug_user] Prepair image date to be response.
+2020-08-31 17:32:05,053 [INFO:image_processing_api] {upload_image:53} [USER]:[Debug_user] Prepair image data to be measure.
+2020-08-31 17:32:05,053 [INFO:image_processing_api] {upload_image:64} [USER]:[Debug_user] Processing image...
+2020-08-31 17:32:05,507 [INFO:image_processing_api] {upload_image:71} [USER]:[Debug_user] Got measurement result
+2020-08-31 17:32:29,411 [WARNING:image_measurement] {measure_obj_size:199} [USER]:Reference object not detected
+2020-08-31 17:32:29,413 [INFO:image_processing_api] {upload_image:74} [USER]:[Debug_user] Prepair image date to be response.
+2020-08-31 17:50:52,624 [INFO:image_processing_api] {upload_image:53} [USER]:[Debug_user] Prepair image data to be measure.
+2020-08-31 17:50:52,624 [INFO:image_processing_api] {upload_image:64} [USER]:[Debug_user] Processing image...
+2020-08-31 17:50:53,152 [INFO:image_processing_api] {upload_image:71} [USER]:[Debug_user] Got measurement result
+2020-08-31 17:50:58,717 [WARNING:image_measurement] {measure_obj_size:199} [USER]:Reference object not detected
+2020-08-31 17:50:58,718 [INFO:image_processing_api] {upload_image:74} [USER]:[Debug_user] Prepair image date to be response.
+2020-08-31 17:51:54,687 [INFO:image_processing_api] {upload_image:53} [USER]:[Debug_user] Prepair image data to be measure.
+2020-08-31 17:51:54,687 [INFO:image_processing_api] {upload_image:64} [USER]:[Debug_user] Processing image...
+2020-08-31 17:51:54,775 [INFO:image_processing_api] {upload_image:71} [USER]:[Debug_user] Got measurement result
+2020-08-31 17:51:59,742 [INFO:image_processing_api] {upload_image:74} [USER]:[Debug_user] Prepair image date to be response.
+2020-08-31 17:51:59,806 [INFO:image_processing_api] {upload_image:91} [USER]:[Debug_user] Responsed measurement result.
+2020-08-31 17:54:04,280 [INFO:image_processing_api] {upload_image:53} [USER]:[Debug_user] Prepair image data to be measure.
+2020-08-31 17:54:04,280 [INFO:image_processing_api] {upload_image:64} [USER]:[Debug_user] Processing image...
+2020-08-31 17:54:04,395 [INFO:image_processing_api] {upload_image:71} [USER]:[Debug_user] Got measurement result
+2020-08-31 17:54:09,493 [INFO:image_processing_api] {upload_image:74} [USER]:[Debug_user] Prepair image date to be response.
+2020-08-31 17:54:09,540 [INFO:image_processing_api] {upload_image:91} [USER]:[Debug_user] Responsed measurement result.
+2020-08-31 17:55:09,937 [INFO:image_processing_api] {upload_image:53} [USER]:[Debug_user] Prepair image data to be measure.
+2020-08-31 17:55:09,938 [INFO:image_processing_api] {upload_image:64} [USER]:[Debug_user] Processing image...
+2020-08-31 17:55:16,718 [INFO:image_processing_api] {upload_image:53} [USER]:[Debug_user] Prepair image data to be measure.
+2020-08-31 17:55:16,719 [INFO:image_processing_api] {upload_image:64} [USER]:[Debug_user] Processing image...

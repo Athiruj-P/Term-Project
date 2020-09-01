@@ -1,0 +1,10 @@
+2020-09-01 08:47:37,515 [INFO:main] {<module>:16} [SYSTEM]:Created flask app.
+2020-09-01 08:47:37,519 [INFO:main] {<module>:18} [SYSTEM]:Registered image_processing_api blueprint 
+2020-09-01 08:47:37,520 [INFO:main] {<module>:20} [SYSTEM]:Registered user_api blueprint 
+2020-09-01 08:47:37,523 [INFO:main] {<module>:22} [SYSTEM]:Registered model_management_api blueprint 
+2020-09-01 08:47:37,524 [INFO:main] {<module>:24} [SYSTEM]:Registered log_management_api blueprint 
+2020-09-01 08:47:39,476 [INFO:main] {<module>:16} [SYSTEM]:Created flask app.
+2020-09-01 08:47:39,479 [INFO:main] {<module>:18} [SYSTEM]:Registered image_processing_api blueprint 
+2020-09-01 08:47:39,482 [INFO:main] {<module>:20} [SYSTEM]:Registered user_api blueprint 
+2020-09-01 08:47:39,485 [INFO:main] {<module>:22} [SYSTEM]:Registered model_management_api blueprint 
+2020-09-01 08:47:39,486 [INFO:main] {<module>:24} [SYSTEM]:Registered log_management_api blueprint 
