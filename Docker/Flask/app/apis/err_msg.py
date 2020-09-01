@@ -6,4 +6,6 @@ msg = {
     'unit_id' : "Wrong unit. Please re-selecte unit.",
     'ml_model_not_found' : "Object not detected, Please try again later.",
     'ref_model_not_found' : "Reference object not detected, Please try again later.",
+    'no_active_ml_model' : "None of ML models have been activated.",
+    'no_active_ref_model' : "None of reference models have been activated.",
 }
