@@ -22,14 +22,17 @@ def check_duplicate_name():
     try:
         model_type = request.form.get('type',None)
         name = request.form.get('name',None)
+        model_id = request.form.get('model_id',None)
+        data = Model(name = name , id=model_id)
+
         if(model_type == "ml"):
             ml_manager = MLManagement().create_manager()
-            result = ml_manager.is_duplicate_name(name)
+            result = ml_manager.is_duplicate_name(data)
             result = {'is_duplicate':result}
             return result
         elif(model_type == "ref"):
             ref_manager = RefManagement().create_manager()
-            result = ref_manager.is_duplicate_name(name)
+            result = ref_manager.is_duplicate_name(data)
             result = {'is_duplicate':result}
             return result
         else:
@@ -61,15 +64,16 @@ def add_model():
             logger.info("[{}] Call add_model function.".format(username))
             result = ml_manager.add_model(data=data)
             del ml_manager
-            logger.debug("[] : {}".format(result))
+            # logger.debug("[] : {}".format(result))
 
-            logger.debug("Line 41")
+            # logger.debug("Line 41")
             if(result['status'] == "error"):
                 return result , 400 
             elif(result['status'] == "system_error"):
                 return result , 400 
 
-            logger.debug("Line 47")
+            # logger.debug("Line 47")
+            logger.info("[{}] Response data from delete_model API".format(username))
             return result , 200
 
         elif(model_type == "ref"):
@@ -78,13 +82,20 @@ def add_model():
             name = request.form.get('name',None)
             width = request.form.get('width',None)
             height = request.form.get('height',None)
-            unit = request.form.get('unit',None)
-            data = Model(name=name, file=file, width=width, height=height, un_id=unit,username=username)
+            un_id = request.form.get('un_id',None)
+            data = Model(name=name, file=file, width=width, height=height, un_id=un_id,username=username)
             ref_manager = RefManagement().create_manager()
             logger.info("[{}] Created MLManagement object.".format(username))
             logger.info("[{}] Call add_model function.".format(username))
             result = ref_manager.add_model(data=data)
             del ref_manager
+
+            if(result['status'] == "error"):
+                return result , 400 
+            elif(result['status'] == "system_error"):
+                return result , 400 
+
+            logger.info("[{}] Response data from delete_model API".format(username))
             return result , 200
         else:
             result = { 'mes' : "wrong_type" }
@@ -105,6 +116,7 @@ def edit_model():
         file = request.files.get('file',None)
         name = request.form.get('name',None)
         username = request.form.get('username',None)
+        # logger.debug("model id (API): {}".format(int(model_id)))
         if(model_type == "ml"):
             logger.info("[{}] Use edit ML model API.".format(username))
             data = Model(id=model_id,name=name,file=file,username=username)
@@ -113,8 +125,15 @@ def edit_model():
             logger.info("[{}] Call edit_model function.".format(username))
             result = ml_manager.edit_model(data)
             del ml_manager
+
+            if(result['status'] == "error"):
+                return result , 400
+            elif(result['status'] == "system_error"):
+                return result , 400
+
+
             logger.info("[{}] Edited MLManagement object.".format(username))
-            logger.info("[{}] Response data from change_active_model API".format(username))
+            logger.info("[{}] Response data from edit_model API".format(username))
             return result , 200
         elif(model_type == "ref"):
             logger.info("[{}] Use edit Ref model API.".format(username))
@@ -128,7 +147,7 @@ def edit_model():
             result = ref_manager.edit_model(data)
             del ref_manager
             logger.info("[{}] Edited Reference Management object.".format(username))
-            logger.info("[{}] Response data from change_active_model API".format(username))
+            logger.info("[{}] Response data from edit_model API".format(username))
             return result , 200
     except Exception as identifier:
         pass
@@ -149,7 +168,13 @@ def change_active_model():
         logger.info("[{}] Call change_active_model function.".format(username))
         result = ml_manager.change_active_model(data)
         del ml_manager
+        if(result['status'] == "error"):
+                    return result , 400
+        elif(result['status'] == "system_error"):
+            return result , 400
         logger.info("[{}] Deleted MLManagement object.".format(username))
+        logger.info("[{}] Response data from change_active_model API".format(username))
+        return result , 200
     elif(model_type == "ref"):
         logger.info("[{}] Use change active Ref model API.".format(username))
         ref_manager = RefManagement().create_manager()
@@ -157,10 +182,14 @@ def change_active_model():
         logger.info("[{}] Call change_active_model function.".format(username))
         result = ref_manager.change_active_model(data)
         del ref_manager
+        if(result['status'] == "error"):
+                    return result , 400
+        elif(result['status'] == "system_error"):
+            return result , 400
         logger.info("[{}] Deleted RefManagement object.".format(username))
+        logger.info("[{}] Response data from change_active_model API".format(username))
+        return result , 200
     
-    logger.info("[{}] Response data from change_active_model API".format(username))
-    return result
 
 
 # delete_model
@@ -179,7 +208,14 @@ def delete_model():
         logger.info("[{}] Call delete_model function.".format(username))
         result = ml_manager.delete_model(data)
         del ml_manager
+        if(result['status'] == "error"):
+                    return result , 400
+        elif(result['status'] == "system_error"):
+            return result , 400
         logger.info("[{}] Deleted MLManagement object.".format(username))
+        logger.info("[{}] Response data from delete_model API".format(username))
+        return result , 200
+
     elif(model_type == "ref"):
         logger.info("[{}] Use delete Ref model API.".format(username))
         ref_manager = RefManagement().create_manager()
@@ -187,10 +223,15 @@ def delete_model():
         logger.info("[{}] Call delete_model function.".format(username))
         result = ref_manager.delete_model(data)
         del ref_manager
+        if(result['status'] == "error"):
+                    return result , 400
+        elif(result['status'] == "system_error"):
+            return result , 400
         logger.info("[{}] Deleted RefManagement object.".format(username))
+        logger.info("[{}] Response data from delete_model API".format(username))
+        return result , 200
 
-    logger.info("[{}] Response data from delete_model API".format(username))
-    return result
+
 # get_all_model
 # Description : เรียกข้อมูลต้นแบบของวัตถุ หรือ ข้อมูลต้นแบบของวัตถุอ้างอิงทั้งหมดที่ไม่มีสถานะถูกลบ
 # Author : Athiruj Poositaporn
@@ -225,7 +266,31 @@ def get_all_model():
     except Exception as identifier:
         return result , 400
 
-    
+# get_all_unit
+# Description : เรียกข้อมูลหน่วยในการวัดขนาดววัตถุทั้งหมด
+# Author : Athiruj Poositaporn
+@model_management_api.route("/get_all_unit", methods=['post'])
+def get_all_unit():
+    try:
+        username = request.form.get('username',None)
+
+        logger.info("[{}] Use get all units API.".format(username))
+        ref_manager = RefManagement().create_manager()
+        logger.info("[{}] Created RefManagement object.".format(username))
+        logger.info("[{}] Call get_all_model function.".format(username))
+        result = ref_manager.get_all_unit(username)
+        del ref_manager
+
+        if(result['status'] == "system_error"):
+            return result , 400
+
+        logger.info("[{}] Deleted RefManagement object.".format(username))
+        
+        logger.info("[{}] Response data from get_all_model API".format(username))
+        return result , 200
+    except Exception as identifier:
+        return result , 400
+
 
 # get_model_by_id
 # Description : เรียกข้อมูลต้นแบบของวัตถุ หรือข้อมูลต้นแบบของวัตถุอ้างอิงที่ไม่มีสถานะถูกลบตาม id

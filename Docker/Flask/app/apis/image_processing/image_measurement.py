@@ -7,6 +7,7 @@ import glob
 import random
 import numpy as np
 import cv2
+from PIL import Image, ImageDraw, ImageFont
 import os
 from pymongo import MongoClient
 import sys
@@ -23,6 +24,8 @@ unit_collection = db_config.item['db_col_unit']
 ml_model_collection = db_config.item['db_col_mlmo']
 ref_model_collection = db_config.item['db_col_remo']
 
+parent = os.path.dirname(os.path.dirname(os.path.dirname(__file__)))
+thai_font_path = os.path.join(parent, db_config.item["db_file_path"], "thai_font","THSarabunNewBold.ttf")
 class ImageMeasurement:
     def __init__(self):
         parent = os.path.dirname(os.path.dirname(os.path.dirname(__file__)))
@@ -342,10 +345,15 @@ class ImageMeasurement:
                 dimA = dA / pixelsPerMetric
                 dimB = dB / pixelsPerMetric
                 # logger.debug("self.ref_model_name : {}".format(self.ref_model_name))
+                font = ImageFont.truetype(thai_font_path, 40)
+                img_pil = Image.fromarray(origin)
+                draw = ImageDraw.Draw(img_pil)
+                draw.text( (int(tl[0]), int(tl[1] - 50)),"[{}]".format(self.ref_model_name), font = font, fill = (255, 255, 255 , 0))
+                origin = np.array(img_pil)
 
-                cv2.putText(origin, "[{}]".format(self.ref_model_name),
-                    (int(tl[0]), int(tl[1] - 30)), cv2.FONT_HERSHEY_SIMPLEX,
-                    0.65, (255, 255, 255), 2)
+                # cv2.putText(origin, "[{}]".format(self.ref_model_name),
+                #     (int(tl[0]), int(tl[1] - 30)), cv2.FONT_HERSHEY_SIMPLEX,
+                #     0.65, (255, 255, 255), 2)
 
                 # cv2.putText(
                 #     origin, 
@@ -412,10 +420,14 @@ class ImageMeasurement:
                 }
 
                 result_object_list.append(result_object_data)
-
-                cv2.putText(origin, object_lable,
-                    (int(tl[0]), int(tl[1] - 30)), cv2.FONT_HERSHEY_SIMPLEX,
-                    0.65, (255, 255, 255), 2)
+                font = ImageFont.truetype(thai_font_path, 40)
+                img_pil = Image.fromarray(origin)
+                draw = ImageDraw.Draw(img_pil)
+                draw.text( (int(tl[0]), int(tl[1] - 50)),object_lable, font = font, fill = (255, 255, 255 , 0))
+                origin = np.array(img_pil)
+                # cv2.putText(origin, object_lable,
+                #     (int(tl[0]), int(tl[1] - 30)), cv2.FONT_HERSHEY_SIMPLEX,
+                #     0.65, (255, 255, 255), 2)
 
                 # Dimension A lable
                 cv2.circle(origin, (int(tltrX - 5), int(tltrY - 20)), 26, (0, 0, 0), -1)

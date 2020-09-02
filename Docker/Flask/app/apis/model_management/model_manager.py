@@ -92,13 +92,26 @@ class MLManager(Manager):
         except:
             return False
 
-    def is_duplicate_name(self,name):
-        query_result = self.DPML_db[self.collection].find_one({
-            db_config.item['fld_mlmo_name']: name,
-            db_config.item['fld_mlmo_status']: {
-                "$not": { "$in": [0] }
-            }
-        })
+    def is_duplicate_name(self,data):
+        if(self.is_int(data.id)):
+            query_result = self.DPML_db[self.collection].find_one({
+                db_config.item['fld_mlmo_name']: data.name,
+                db_config.item['fld_mlmo_status']: {
+                    "$ne": 0
+                },
+                db_config.item['fld_mlmo_id']: {
+                    "$ne": int(data.id)
+                },
+            })
+        else:
+            query_result = self.DPML_db[self.collection].find_one({
+                db_config.item['fld_mlmo_name']: data.name,
+                db_config.item['fld_mlmo_status']: {
+                    "$ne": 0
+                }
+            })
+        # self.logger.debug("query_result : {}".format(query_result))
+        
         if(query_result):
             return True
         else:
@@ -171,7 +184,7 @@ class MLManager(Manager):
             result_regex = re.search(self.name_regex, data.name)
 
             if(data.name):
-                query_result = self.is_duplicate_name(data.name)
+                query_result = self.is_duplicate_name(data)
             else:
                 self.logger.warning("[{}] {}".format(data.username,err_msg.msg['wrong_ml_name']))
                 raise TypeError(err_msg.msg['wrong_ml_name'])
@@ -226,6 +239,9 @@ class MLManager(Manager):
                 query_model = self.DPML_db[self.collection].find_one({
                     db_config.item['fld_mlmo_id']: data.id
                 })
+                if(not query_model):
+                    self.logger.warning("[{}] {}".format(data.username,err_msg.msg['wrong_mlmo_id']))
+                    raise TypeError(err_msg.msg['wrong_mlmo_id'])
             else: 
                 self.logger.warning("[{}] {}".format(data.username,err_msg.msg['wrong_mlmo_id']))
                 raise TypeError(err_msg.msg['wrong_mlmo_id'])
@@ -237,28 +253,30 @@ class MLManager(Manager):
                     db_config.item['fld_mlmo_id']:{ "$ne": data.id },
                     db_config.item['fld_mlmo_status']: { "$ne": 0 }
                 })
+
                 result_regex = re.search(self.name_regex, data.name)
-            else:
-                self.logger.warning("[{}] {}".format(data.username,err_msg.msg['wrong_mlmo_id']))
-                raise TypeError(err_msg.msg['wrong_ml_name'])
+                if((not result_regex) or len(data.name) < 3 or len(data.name) > 30):
+                    self.logger.warning("[{}] {}".format(data.username,err_msg.msg['wrong_ml_name']))
+                    raise TypeError(err_msg.msg['wrong_ml_name'])
+                elif(query_name):
+                    self.logger.warning("[{}] {}".format(data.username,err_msg.msg['duplicate_name']))
+                    raise TypeError(err_msg.msg['duplicate_name'])
+
+                self.DPML_db[self.collection].update(
+                    { db_config.item['fld_mlmo_id']:data.id },
+                    { "$set":{ db_config.item['fld_mlmo_name']:data.name }}
+                )
+            # else:
+            #     self.logger.warning("[{}] {}".format(data.username,err_msg.msg['wrong_ml_name']))
+            #     raise TypeError(err_msg.msg['wrong_ml_name'])
             
             file_extension = None
-            if((not result_regex) or len(data.name) < 3 or len(data.name) > 30):
-                self.logger.warning("[{}] {}".format(data.username,err_msg.msg['wrong_ml_name']))
-                raise TypeError(err_msg.msg['wrong_ml_name'])
-            elif(query_name):
-                self.logger.warning("[{}] {}".format(data.username,err_msg.msg['duplicate_name']))
-                raise TypeError(err_msg.msg['duplicate_name'])
-            elif(not query_model):
-                self.logger.warning("[{}] {}".format(data.username,err_msg.msg['wrong_mlmo_id']))
-                raise TypeError(err_msg.msg['wrong_mlmo_id'])
-            elif(data.file):
+            if(data.file):
                 file_extension = data.file.filename.split('.')[-1]
                 if(not re.search("weights",file_extension)):
                     self.logger.warning("[{}] {}".format(data.username,err_msg.msg['wrong_extension']))
-                raise TypeError(err_msg.msg['wrong_extension'])
+                    raise TypeError(err_msg.msg['wrong_extension'])
 
-            if(data.file):
                 gen_file_name = uuid.uuid4().hex + "." + data.file.filename.split('.')[-1]
                 file_storage_path = os.path.join(self.storage_path,gen_file_name)
                 data.file.save(file_storage_path)
@@ -267,14 +285,10 @@ class MLManager(Manager):
                     { "$set":{ db_config.item['fld_mlmo_path']:file_storage_path }}
                 )
 
-            self.DPML_db[self.collection].update(
-                { db_config.item['fld_mlmo_id']:data.id },
-                { "$set":{ db_config.item['fld_mlmo_name']:data.name }}
-            )
 
             self.logger.info("[{}] Edited a ML model details.".format(data.username))
             result = { 'mes' : "edited_model" , 'status' : 'success'}       
-            return result , 200
+            return result
         except Exception as identifier:
             try:
                 list(err_msg.msg.keys())[list(err_msg.msg.values()).index(identifier)]
@@ -315,11 +329,16 @@ class MLManager(Manager):
                 query_result = self.DPML_db[self.collection].update(query,new_value)
                 self.logger.info("[{}] Activate a selected model.".format(data.username))
 
-                result = { 'mes' : "changed_active_model" }  
-            return jsonify(result)
+                result = { 'mes' : "changed_active_model" , 'status' : 'success'}  
+            return result
         except Exception as identifier:
-            error = { 'mes' : str(identifier) }
-            return jsonify(error)
+            try:
+                list(err_msg.msg.keys())[list(err_msg.msg.values()).index(identifier)]
+                result = {'mes' : str(identifier), 'status' : "error"}
+            except:
+                self.logger.warning("{}.".format(str(identifier)))
+                result = {'mes' : str(identifier), 'status' : "system_error"}
+            return result
 
     def delete_model(self , data = Model()):
         try:
@@ -349,12 +368,17 @@ class MLManager(Manager):
                     }
                 )
                 self.logger.info("[{}] Deleted a selected model.".format(data.username))
-                result = { 'mes' : "deleted_model" }
-                return jsonify(result)
+                result = { 'mes' : "deleted_model"  , 'status' : 'success'}
+                return result
 
         except Exception as identifier:
-            error = { 'mes' : str(identifier) }
-            return jsonify(error)
+            try:
+                list(err_msg.msg.keys())[list(err_msg.msg.values()).index(identifier)]
+                result = {'mes' : str(identifier), 'status' : "error"}
+            except:
+                self.logger.warning("{}.".format(str(identifier)))
+                result = {'mes' : str(identifier), 'status' : "system_error"}
+            return result
 
     def __del__(self): 
         self.db_connect.close()
@@ -372,6 +396,7 @@ class RefManager(Manager):
         self.logger.info("Connected to database")
         self.DPML_db = self.db_connect[db_config.item["db_name"]]
         self.collection = db_config.item["db_col_remo"]
+        self.unit_collection = db_config.item["db_col_unit"]
 
         parent = os.path.dirname(os.path.dirname(os.path.dirname(__file__))) 
         self.storage_path = os.path.join(parent, db_config.item["db_file_path"], db_config.item["ref_path"])
@@ -415,8 +440,47 @@ class RefManager(Manager):
             ).sort(
                 [
                     (db_config.item["fld_remo_status"], 1),
-                    (db_config.item["fld_remo_id"], 1)
+                    (db_config.item["fld_remo_id"], -1)
                 ]
+            )
+            
+            arr = []
+            for item in query_result:
+                item.pop('_id')
+                query_result = self.DPML_db[self.unit_collection].find_one(
+                    {
+                        db_config.item['fld_un_id']: item['remo_un_id']
+                    },
+                    {
+                        db_config.item['fld_un_name']: 1,
+                        db_config.item['fld_un_abb_name']: 1,
+                    }
+                )
+                query_result.pop('_id')
+                item['un_name'] = query_result['un_name']
+                item['un_abb_name'] = query_result['un_abb_name']
+                arr.append(item)
+
+            self.logger.info("[{}] Got all Ref models.".format(username))
+            result = {
+                'data':arr,
+                'status':'success',
+            }
+            return result
+        except Exception as identifier:
+            result = {'mes' : str(identifier) , 'status' : "system_error"}
+            return result
+
+    def get_all_unit(self,username):
+        try:
+            self.logger.info("[{}] Getting all units.".format(username))
+            query_result = self.DPML_db[self.unit_collection].find(
+                {},
+                {
+                    db_config.item["fld_un_id"]: 1,
+                    db_config.item["fld_un_name"]: 1,
+                    db_config.item["fld_un_abb_name"]: 1,
+                }
             )
             
             arr = []
@@ -424,13 +488,15 @@ class RefManager(Manager):
                 item.pop('_id')
                 arr.append(item)
 
-            self.logger.info("[{}] Got all Ref models.".format(username))
-            return jsonify(arr)
-        except Exception as identifier:
-            error = {
-                'mes' : str(identifier)
+            self.logger.info("[{}] Got all units.".format(username))
+            result = {
+                'data':arr,
+                'status':'success',
             }
-            return jsonify(error)
+            return result
+        except Exception as identifier:
+            result = {'mes' : str(identifier) , 'status' : "system_error"}
+            return result
 
     def get_model_by_id(self , data = Model()):
         try:
@@ -532,7 +598,6 @@ class RefManager(Manager):
                 result = { 'mes' : "added_model", 'status' : "success"}
                 return jsonify(result)
         except Exception as identifier:
-            # self.logger.error("[{}] Error {}".format(data.username,identifier))
             try:
                 list(err_msg.msg.keys())[list(err_msg.msg.values()).index(identifier)]
                 result = {'mes' : str(identifier), 'status' : "error"}
