@@ -102,8 +102,8 @@ def add_model():
             return result , 400
     except Exception as identifier:
         logger.error("[{}] Error {}".format(username,identifier))
-        error = { 'mes' : str(identifier) }
-        return jsonify(error) , 400
+        result = { 'mes' : str(identifier) , 'status' : "system_error"}
+        return result , 400
 
 # edit_model
 # Description : เปลี่ยนข้อมูลของข้อมูลต้นแบบของวัตถุ หรือข้อมูลต้นแบบของวัตถุอ้างอิง
@@ -140,17 +140,28 @@ def edit_model():
             width = request.form.get('width',None)
             height = request.form.get('height',None)
             unit = request.form.get('unit',None)
+            logger.debug("width: {}".format(width))
+            logger.debug("height: {}".format(height))
+            logger.debug("unit: {}".format(unit))
             data = Model(id=model_id,name=name,file=file,width=width,height=height,un_id=unit,username=username)
             ref_manager = RefManagement().create_manager()
             logger.info("[{}] Created RefManagement object.".format(username))
             logger.info("[{}] Call edit_model function.".format(username))
             result = ref_manager.edit_model(data)
             del ref_manager
+
+            if(result['status'] == "error"):
+                return result , 400
+            elif(result['status'] == "system_error"):
+                return result , 400
+
             logger.info("[{}] Edited Reference Management object.".format(username))
             logger.info("[{}] Response data from edit_model API".format(username))
             return result , 200
     except Exception as identifier:
-        pass
+        logger.error("[{}] Error {}".format(username,identifier))
+        result = { 'mes' : str(identifier) , 'status' : "system_error"}
+        return result , 400
 
 # change_active_model
 # Description : เปลี่ยนข้อมูลของข้อมูลต้นแบบของวัตถุ หรือข้อมูลต้นแบบของวัตถุอ้างอิงที่จะเปิดการใช้งานตาม id
@@ -168,10 +179,12 @@ def change_active_model():
         logger.info("[{}] Call change_active_model function.".format(username))
         result = ml_manager.change_active_model(data)
         del ml_manager
+
         if(result['status'] == "error"):
                     return result , 400
         elif(result['status'] == "system_error"):
             return result , 400
+
         logger.info("[{}] Deleted MLManagement object.".format(username))
         logger.info("[{}] Response data from change_active_model API".format(username))
         return result , 200
@@ -182,10 +195,12 @@ def change_active_model():
         logger.info("[{}] Call change_active_model function.".format(username))
         result = ref_manager.change_active_model(data)
         del ref_manager
+
         if(result['status'] == "error"):
                     return result , 400
         elif(result['status'] == "system_error"):
             return result , 400
+
         logger.info("[{}] Deleted RefManagement object.".format(username))
         logger.info("[{}] Response data from change_active_model API".format(username))
         return result , 200
@@ -223,10 +238,12 @@ def delete_model():
         logger.info("[{}] Call delete_model function.".format(username))
         result = ref_manager.delete_model(data)
         del ref_manager
+        
         if(result['status'] == "error"):
                     return result , 400
         elif(result['status'] == "system_error"):
             return result , 400
+
         logger.info("[{}] Deleted RefManagement object.".format(username))
         logger.info("[{}] Response data from delete_model API".format(username))
         return result , 200

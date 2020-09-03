@@ -402,6 +402,30 @@ class RefManager(Manager):
         self.storage_path = os.path.join(parent, db_config.item["db_file_path"], db_config.item["ref_path"])
         self.name_regex = "^([\wก-๙]+ )+[\wก-๙]+$|^[\wก-๙]+$"
 
+    def is_duplicate_name(self,data):
+        if(self.is_int(data.id)):
+            query_result = self.DPML_db[self.collection].find_one({
+                db_config.item['fld_remo_name']: data.name,
+                db_config.item['fld_remo_status']: {
+                    "$ne": 0
+                },
+                db_config.item['fld_remo_id']: {
+                    "$ne": int(data.id)
+                },
+            })
+        else:
+            query_result = self.DPML_db[self.collection].find_one({
+                db_config.item['fld_remo_name']: data.name,
+                db_config.item['fld_remo_status']: {
+                    "$ne": 0
+                }
+            })
+        
+        if(query_result):
+            return True
+        else:
+            return False
+
     def is_float(self,number):
         try:
             if(re.search("\s",number)):
@@ -525,7 +549,6 @@ class RefManager(Manager):
         try:
             self.logger.info("[{}] Prepair Ref model data to be save.".format(data.username))
             if(not data.file):
-                self.logger.warning("[{}] File is empty.".format(data.username))
                 self.logger.warning("[{}] {}".format(data.username,err_msg.msg['ref_file_empty']))
                 raise TypeError(err_msg.msg['ref_file_empty'])
             file_extension = data.file.filename.split('.')[-1]
@@ -596,29 +619,35 @@ class RefManager(Manager):
                 self.DPML_db[self.collection].insert_one(new_model)
                 self.logger.info("[{}] Added a Ref model details to database.".format(data.username))
                 result = { 'mes' : "added_model", 'status' : "success"}
-                return jsonify(result)
+                return result
         except Exception as identifier:
             try:
-                list(err_msg.msg.keys())[list(err_msg.msg.values()).index(identifier)]
+                list(err_msg.msg.keys())[list(err_msg.msg.values()).index(str(identifier))]
                 result = {'mes' : str(identifier), 'status' : "error"}
-            except expression as identifier:
+            except:
                 self.logger.warning("{}.".format(str(identifier)))
                 result = {'mes' : str(identifier), 'status' : "system_error"}
-            return jsonify(result)
+            return result
 
     #ตอนเรียกใช้ต้องส่งค่าทุกอย่างกลับมา แต่เว้น file ได้ ถ้าไม่ได้อัปอันใหม่มาให้ 
     def edit_model(self , data = Model()):
         try:
             self.logger.info("[{}] Prepair Ref model data to be edit.".format(data.username))
+            # Set ref model id validation
             if (self.is_int(data.id)): 
                 data.id = int(data.id)
                 query_model = self.DPML_db[self.collection].find_one({
                     db_config.item['fld_remo_id']: data.id
                 })
+                if(not query_model):
+                    self.logger.warning("[{}] {}".format(data.username,err_msg.msg['wrong_mlmo_id']))
+                    raise TypeError(err_msg.msg['wrong_remo_id'])
             else: 
-                self.logger.warning("[{}] Wrong model id. This ID dose not match any unit id on dpml_ref_model".format(data.username))
-                raise TypeError("wrong_mlmo_id")
+                self.logger.warning("[{}] {}".format(data.username,err_msg.msg['wrong_remo_id']))
+                raise TypeError(err_msg.msg['wrong_remo_id'])
+            # Set ref model id validation
             
+            # Set ref model name
             query_name = None
             if(data.name):
                 query_name = self.DPML_db[self.collection].find_one({
@@ -627,43 +656,64 @@ class RefManager(Manager):
                     db_config.item['fld_remo_status']: { "$ne": 0 }
                 })
                 result_regex = re.search(self.name_regex, data.name)
-            else:
-                self.logger.warning("[{}] Wrong Ref name. The Ref name must have minimum 5 characters or maximum 30 characters and written in English or Thai".format(data.username))
-                raise TypeError("wrong_name")
+                if((not result_regex) or len(data.name) < 3 or len(data.name) > 30):
+                    self.logger.warning("[{}] {}".format(data.username,err_msg.msg['wrong_ref_name']))
+                    raise TypeError(err_msg.msg['wrong_ref_name'])
+                elif(query_name):
+                    self.logger.warning("[{}] {}".format(data.username,err_msg.msg['duplicate_name']))
+                    raise TypeError(err_msg.msg['duplicate_name'])
+                self.DPML_db[self.collection].update(
+                    { db_config.item['fld_remo_id']:data.id },
+                    { "$set":{db_config.item['fld_remo_name']:data.name}}
+                )
+            # Set ref model name
 
+            # Set ref model measurement unit
             query_unit = None
             if(self.is_int(data.un_id)):
                 data.un_id = int(data.un_id)
                 query_unit = self.DPML_db[db_config.item['db_col_unit']].find_one({
                     db_config.item['fld_un_id']: data.un_id
                 })
-            else:
-                self.logger.warning("[{}] Wrong unit id. This ID dose not match any unit id on dpml_unit".format(data.username))
-                raise TypeError("wrong_unit_id")
+                if(not query_unit):
+                    self.logger.warning("[{}] {}".format(data.username,err_msg.msg['wrong_unit_id']))
+                    raise TypeError(err_msg.msg['wrong_unit_id'])
+                self.DPML_db[self.collection].update(
+                    { db_config.item['fld_remo_id']:data.id },
+                    { "$set":{db_config.item['fld_remo_unit']:data.un_id}}
+                )
+            # Set ref model measurement unit
             
+            # Set width of ref model
+            if(data.width):
+                if(not self.is_float(data.width) ):
+                    self.logger.warning("[{}] {}".format(data.username,err_msg.msg['wrong_width']))
+                    raise TypeError(err_msg.msg['wrong_width'])
+                self.DPML_db[self.collection].update(
+                    { db_config.item['fld_remo_id']:data.id },
+                    { "$set":{ db_config.item['fld_remo_width']:data.width }}
+                )
+            # Set width of ref model
+
+            # Set height of ref model
+            if(data.height):
+                if(not self.is_float(data.height) ):
+                    self.logger.warning("[{}] {}".format(data.username,err_msg.msg['wrong_height']))
+                    raise TypeError(err_msg.msg['wrong_height'])
+                self.DPML_db[self.collection].update(
+                    { db_config.item['fld_remo_id']:data.id },
+                    { "$set":{ db_config.item['fld_remo_height']:data.height }}
+                )
+            # Set height of ref model
+
+            # Set ref model file
             file_extension = None
-            if((not result_regex) or len(data.name) < 3 or len(data.name) > 30):
-                self.logger.warning("[{}] Wrong Ref name. The Ref name must have minimum 5 characters or maximum 30 characters and written in English or Thai".format(data.username))
-                raise TypeError("wrong_name")
-            elif(not self.is_float(data.width) ):
-                self.logger.warning("[{}] Wrong width. Width must be either int or float.".format(data.username))
-                raise TypeError("wrong_width")
-            elif(not self.is_float(data.height) ):
-                self.logger.warning("[{}] Wrong height. Height must be either int or float.".format(data.username))
-                raise TypeError("wrong_height")
-            elif(query_name):
-                self.logger.warning("[{}] Duplicate Ref name. Please re-enter Ref name.".format(data.username))
-                raise TypeError("duplicate_name")
-            elif(not query_unit):
-                self.logger.warning("[{}] Wrong unit id. This ID dose not match any unit id on dpml_unit".format(data.username))
-                raise TypeError("wrong_unit_id")
-            elif(data.file):
+            if(data.file):
                 file_extension = data.file.filename.split('.')[-1]
                 if(not re.search("weights",file_extension)):
-                    self.logger.warning("[{}] Wrong file extension. The model file must be *.weights".format(data.username))
-                    raise TypeError("wrong_extension")
+                    self.logger.warning("[{}] {}".format(data.username,err_msg.msg['wrong_extension']))
+                    raise TypeError(err_msg.msg['wrong_extension'])
 
-            if(data.file):
                 gen_file_name = uuid.uuid4().hex + "." + data.file.filename.split('.')[-1]
                 file_storage_path = os.path.join(self.storage_path,gen_file_name)
                 data.file.save(file_storage_path)
@@ -672,25 +722,19 @@ class RefManager(Manager):
                     { db_config.item['fld_remo_id']:data.id },
                     { "$set":{ db_config.item['fld_remo_path']:file_storage_path }}
                 )
-
-            self.DPML_db[self.collection].update(
-                { db_config.item['fld_remo_id']:data.id },
-                {   
-                    "$set":{
-                        db_config.item['fld_remo_name']:data.name,
-                        db_config.item['fld_remo_width']:float(data.width),
-                        db_config.item['fld_remo_height']:float(data.height),
-                        db_config.item['fld_remo_unit']:data.un_id
-                    }
-                }
-            )
+            # Set ref model file
 
             self.logger.info("[{}] Edited a Ref model details to database.".format(data.username))
-            result = { 'mes' : "edited_model"}       
-            return jsonify(result)
+            result = { 'mes' : "edited_model" , 'status' : 'success'}       
+            return result
         except Exception as identifier:
-            error = { 'mes' : str(identifier) }
-            return jsonify(error)
+            try:
+                list(err_msg.msg.keys())[list(err_msg.msg.values()).index(str(identifier))]
+                result = {'mes' : str(identifier), 'status' : "error"}
+            except:
+                self.logger.warning("{}.".format(str(identifier)))
+                result = {'mes' : str(identifier), 'status' : "system_error"}
+            return result
 
     def change_active_model(self , data = Model()):
         try:
@@ -701,15 +745,15 @@ class RefManager(Manager):
                     db_config.item['fld_remo_id']: data.id
                 })
             else: 
-                self.logger.warning("[{}] Wrong model id. This ID dose not match any unit id on dpml_ref_model".format(data.username))
-                raise TypeError("wrong_remo_id")
+                self.logger.warning("[{}] {}".format(data.username,err_msg.msg['wrong_remo_id']))
+                raise TypeError(err_msg.msg['wrong_remo_id'])
 
             query = {db_config.item['fld_remo_id']: data.id}
             query_result = self.DPML_db[self.collection].find_one(query)
 
             if(not query_result):
-                self.logger.warning("[{}] Wrong model id. This ID dose not match any unit id on dpml_ref_model".format(data.username))
-                raise TypeError("wrong_remo_id")
+                self.logger.warning("[{}] {}".format(data.username,err_msg.msg['wrong_remo_id']))
+                raise TypeError(err_msg.msg['wrong_remo_id'])
             else:
                 query = {db_config.item['fld_remo_status'] : db_config.item['fld_remo_status_active']}
                 new_value = {"$set": {db_config.item['fld_remo_status'] : db_config.item['fld_remo_status_disable']}}
@@ -722,11 +766,16 @@ class RefManager(Manager):
                 query_result = self.DPML_db[self.collection].update(query,new_value)
                 self.logger.info("[{}] Activate a selected model.".format(data.username))
 
-                result = { 'mes' : "changed_active_model" }  
-            return jsonify(result)
+                result = { 'mes' : "changed_active_model" , 'status' : 'success'}  
+            return result
         except Exception as identifier:
-            error = { 'mes' : str(identifier) }
-            return jsonify(error)
+            try:
+                list(err_msg.msg.keys())[list(err_msg.msg.values()).index(str(identifier))]
+                result = {'mes' : str(identifier), 'status' : "error"}
+            except:
+                self.logger.warning("{}.".format(str(identifier)))
+                result = {'mes' : str(identifier), 'status' : "system_error"}
+            return result
 
     def delete_model(self , data = Model()):
         try:
@@ -738,12 +787,12 @@ class RefManager(Manager):
                     db_config.item['fld_remo_status']: {"$ne": db_config.item['fld_remo_status_active']}
                 })
             else: 
-                self.logger.warning("[{}] Wrong model id. This ID dose not match any unit id on dpml_ref_model".format(data.username))
-                raise TypeError("wrong_remo_id")
+                self.logger.warning("[{}] {}".format(data.username,err_msg.msg['wrong_remo_id']))
+                raise TypeError(err_msg.msg['wrong_remo_id'])
 
             if(not query_model):
-                self.logger.warning("[{}] Wrong model id. This ID dose not match any unit id on dpml_ref_model".format(data.username))
-                raise TypeError("wrong_remo_id")
+                self.logger.warning("[{}] {}".format(data.username,err_msg.msg['wrong_remo_id']))
+                raise TypeError(err_msg.msg['wrong_remo_id'])
             else:
                 query_result = self.DPML_db[self.collection].update(
                     {
@@ -756,12 +805,17 @@ class RefManager(Manager):
                     }
                 )
                 self.logger.info("[{}] Deleted a selected model.".format(data.username))
-                result = { 'mes' : "deleted_model" }
-                return jsonify(result)
+                result = { 'mes' : "deleted_model" , 'status' : 'success'}
+                return result
 
         except Exception as identifier:
-            error = { 'mes' : str(identifier) }
-            return jsonify(error)
+            try:
+                list(err_msg.msg.keys())[list(err_msg.msg.values()).index(str(identifier))]
+                result = {'mes' : str(identifier), 'status' : "error"}
+            except:
+                self.logger.warning("{}.".format(str(identifier)))
+                result = {'mes' : str(identifier), 'status' : "system_error"}
+            return result
 
     def __del__(self): 
         self.db_connect.close()
