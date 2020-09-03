@@ -50,17 +50,17 @@ class LogManager():
             self.logger.info("[{}] Prepair date data to query.".format(self.username))
 
             if not self.is_date_obj(self.today_date):
-                self.logger.warning("[{}] Wrong today date. Please re-enter today date.".format(self.username))
-                raise TypeError("wrong_date")
+                self.logger.warning("[{}] {}".format(self.username,err_msg.msg['wrong_date']))
+                raise TypeError(err_msg.msg['wrong_date'])
             elif self.group not in self.group_list:
-                self.logger.warning("[{}] Wrong group. Please re-enter group.".format(self.username))
-                raise TypeError("wrong_group")
+                self.logger.warning("[{}] {}".format(self.username,err_msg.msg['wrong_group']))
+                raise TypeError(err_msg.msg['wrong_group'])
                 
             log_file_name = self.today_date + ".log"
             log_file_path = os.path.join(self.log_path,log_file_name)
             if not self.is_file_exist(log_file_path):
-                self.logger.warning("[{}] File dose not exist.".format(self.username))
-                raise TypeError("file_not_exist")
+                self.logger.warning("[{}] {}".format(self.username,err_msg.msg['file_not_exist']))
+                raise TypeError(err_msg.msg['file_not_exist'])
 
             log_file = open(log_file_path, "r")
             self.logger.info("[{}] Read log {} .".format(self.username,log_file_name))
@@ -85,11 +85,17 @@ class LogManager():
             log_file.close()
             self.logger.info("[{}] Close log file.".format(self.username))
             self.logger.info("[{}] Got all today logs.".format(self.username))
-            return jsonify(result_date)
+            
+            result = {'log':result_date , 'status':'success'}
+            return result
         except Exception as identifier:
-            self.logger.error("[{}] Error {}".format(self.username,identifier))
-            error = { 'mes' : str(identifier) }
-            return jsonify(error)
+            try:
+                list(err_msg.msg.keys())[list(err_msg.msg.values()).index(str(identifier))]
+                result = {'mes' : str(identifier), 'status' : "error"}
+            except:
+                self.logger.warning("{}.".format(str(identifier)))
+                result = {'mes' : str(identifier), 'status' : "system_error"}
+            return result
 
     def get_log_by_date(self):
         try:
@@ -101,20 +107,20 @@ class LogManager():
             str_end_datetime = self.end_date + " "+ self.end_time
 
             if(not self.is_date_obj(self.start_date)):
-                self.logger.warning("[{}] Wrong start date. Please re-enter start date.".format(self.username))
-                raise TypeError("wrong_start_date")
+                self.logger.warning("[{}] {}".format(self.username,err_msg.msg['wrong_start_date']))
+                raise TypeError(err_msg.msg['wrong_start_date'])
             elif(not self.is_date_obj(self.end_date)):
-                self.logger.warning("[{}] Wrong end date. Please re-enter end date.".format(self.username))
-                raise TypeError("wrong_end_date")
+                self.logger.warning("[{}] {}".format(self.username,err_msg.msg['wrong_end_date']))
+                raise TypeError(err_msg.msg['wrong_end_date'])
             elif(not self.is_datetime_obj(str_start_datetime)):
-                self.logger.warning("[{}] Wrong start datetime. Please re-enter start datetime.".format(self.username))
-                raise TypeError("wrong_start_datetime")
+                self.logger.warning("[{}] {}".format(self.username,err_msg.msg['wrong_start_datetime']))
+                raise TypeError(err_msg.msg['wrong_start_datetime'])
             elif(not self.is_datetime_obj(str_end_datetime)):
-                self.logger.warning("[{}] Wrong end datetime. Please re-enter end datetime.".format(self.username))
-                raise TypeError("wrong_end_datetime")
+                self.logger.warning("[{}] {}".format(self.username,err_msg.msg['wrong_end_datetime']))
+                raise TypeError(err_msg.msg['wrong_end_datetime'])
             elif self.group not in self.group_list:
-                self.logger.warning("[{}] Wrong group. Please re-enter group.".format(self.username))
-                raise TypeError("wrong_group")
+                self.logger.warning("[{}] {}".format(self.username,err_msg.msg['wrong_group']))
+                raise TypeError(err_msg.msg['wrong_group'])
             
             start_date_obj = datetime.strptime(self.start_date, '%Y-%m-%d').date()
             end_date_obj = datetime.strptime(self.end_date, '%Y-%m-%d').date()
@@ -156,10 +162,15 @@ class LogManager():
 
             self.logger.info("[{}] Close log file.".format(self.username))
             self.logger.info("[{}] Got all log data.".format(self.username))
-            return jsonify(result_date)
+            result = {'log':result_date , 'status':'success'}
+            return result
         except Exception as identifier:
-            self.logger.error("[{}] Error {}".format(self.username,identifier))
-            error = { 'mes' : str(identifier) }
-            return jsonify(error)
+            try:
+                list(err_msg.msg.keys())[list(err_msg.msg.values()).index(str(identifier))]
+                result = {'mes' : str(identifier), 'status' : "error"}
+            except:
+                self.logger.warning("{}.".format(str(identifier)))
+                result = {'mes' : str(identifier), 'status' : "system_error"}
+            return result
     def __del__(self):
         pass

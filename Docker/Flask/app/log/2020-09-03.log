@@ -2375,3 +2375,992 @@
 2020-09-03 14:45:04,858 [INFO:main] {<module>:20} [SYSTEM]:Registered user_api blueprint 
 2020-09-03 14:45:04,863 [INFO:main] {<module>:22} [SYSTEM]:Registered model_management_api blueprint 
 2020-09-03 14:45:04,864 [INFO:main] {<module>:24} [SYSTEM]:Registered log_management_api blueprint 
+2020-09-03 14:52:34,388 [INFO:model_management_api] {get_all_model:261} [SYSTEM]:[None] Use get all ML model API.
+2020-09-03 14:52:34,392 [INFO:MLManager_obj] {__init__:76} [SYSTEM]:Connecting to database
+2020-09-03 14:52:34,474 [INFO:MLManager_obj] {__init__:78} [SYSTEM]:Connected to database
+2020-09-03 14:52:34,476 [INFO:model_management_api] {get_all_model:263} [SYSTEM]:[None] Created MLManagement object.
+2020-09-03 14:52:34,477 [INFO:model_management_api] {get_all_model:264} [SYSTEM]:[None] Call get_all_model function.
+2020-09-03 14:52:34,478 [INFO:MLManager_obj] {get_all_model:122} [SYSTEM]:[None] Getting all ML models.
+2020-09-03 14:52:34,576 [INFO:MLManager_obj] {get_all_model:144} [SYSTEM]:[None] Got all ML models.
+2020-09-03 14:52:34,580 [INFO:model_management_api] {get_all_model:267} [SYSTEM]:[None] Deleted MLManagement object.
+2020-09-03 14:52:34,586 [INFO:model_management_api] {get_all_model:281} [SYSTEM]:[None] Response data from get_all_model API
+2020-09-03 14:57:51,923 [INFO:model_management_api] {get_all_model:261} [SYSTEM]:[None] Use get all ML model API.
+2020-09-03 14:57:51,924 [INFO:MLManager_obj] {__init__:76} [SYSTEM]:Connecting to database
+2020-09-03 14:57:51,929 [INFO:MLManager_obj] {__init__:78} [SYSTEM]:Connected to database
+2020-09-03 14:57:51,929 [INFO:model_management_api] {get_all_model:263} [SYSTEM]:[None] Created MLManagement object.
+2020-09-03 14:57:51,930 [INFO:model_management_api] {get_all_model:264} [SYSTEM]:[None] Call get_all_model function.
+2020-09-03 14:57:51,931 [INFO:MLManager_obj] {get_all_model:122} [SYSTEM]:[None] Getting all ML models.
+2020-09-03 14:57:51,987 [INFO:MLManager_obj] {get_all_model:144} [SYSTEM]:[None] Got all ML models.
+2020-09-03 14:57:51,991 [INFO:model_management_api] {get_all_model:267} [SYSTEM]:[None] Deleted MLManagement object.
+2020-09-03 14:57:51,991 [INFO:model_management_api] {get_all_model:281} [SYSTEM]:[None] Response data from get_all_model API
+2020-09-03 14:58:03,602 [INFO:model_management_api] {get_all_model:261} [SYSTEM]:[None] Use get all ML model API.
+2020-09-03 14:58:03,603 [INFO:MLManager_obj] {__init__:76} [SYSTEM]:Connecting to database
+2020-09-03 14:58:03,619 [INFO:MLManager_obj] {__init__:78} [SYSTEM]:Connected to database
+2020-09-03 14:58:03,624 [INFO:model_management_api] {get_all_model:263} [SYSTEM]:[None] Created MLManagement object.
+2020-09-03 14:58:03,625 [INFO:model_management_api] {get_all_model:264} [SYSTEM]:[None] Call get_all_model function.
+2020-09-03 14:58:03,626 [INFO:MLManager_obj] {get_all_model:122} [SYSTEM]:[None] Getting all ML models.
+2020-09-03 14:58:03,672 [INFO:MLManager_obj] {get_all_model:144} [SYSTEM]:[None] Got all ML models.
+2020-09-03 14:58:03,676 [INFO:model_management_api] {get_all_model:267} [SYSTEM]:[None] Deleted MLManagement object.
+2020-09-03 14:58:03,677 [INFO:model_management_api] {get_all_model:281} [SYSTEM]:[None] Response data from get_all_model API
+2020-09-03 14:58:22,537 [INFO:model_management_api] {get_all_model:261} [SYSTEM]:[None] Use get all ML model API.
+2020-09-03 14:58:22,550 [INFO:MLManager_obj] {__init__:76} [SYSTEM]:Connecting to database
+2020-09-03 14:58:22,672 [INFO:MLManager_obj] {__init__:78} [SYSTEM]:Connected to database
+2020-09-03 14:58:22,689 [INFO:model_management_api] {get_all_model:263} [SYSTEM]:[None] Created MLManagement object.
+2020-09-03 14:58:22,710 [INFO:model_management_api] {get_all_model:264} [SYSTEM]:[None] Call get_all_model function.
+2020-09-03 14:58:22,753 [INFO:MLManager_obj] {get_all_model:122} [SYSTEM]:[None] Getting all ML models.
+2020-09-03 14:58:23,631 [INFO:MLManager_obj] {get_all_model:144} [SYSTEM]:[None] Got all ML models.
+2020-09-03 14:58:23,688 [INFO:model_management_api] {get_all_model:267} [SYSTEM]:[None] Deleted MLManagement object.
+2020-09-03 14:58:23,698 [INFO:model_management_api] {get_all_model:281} [SYSTEM]:[None] Response data from get_all_model API
+2020-09-03 14:58:38,870 [INFO:model_management_api] {get_all_model:261} [SYSTEM]:[None] Use get all ML model API.
+2020-09-03 14:58:38,885 [INFO:MLManager_obj] {__init__:76} [SYSTEM]:Connecting to database
+2020-09-03 14:58:38,911 [INFO:MLManager_obj] {__init__:78} [SYSTEM]:Connected to database
+2020-09-03 14:58:38,922 [INFO:model_management_api] {get_all_model:263} [SYSTEM]:[None] Created MLManagement object.
+2020-09-03 14:58:38,925 [INFO:model_management_api] {get_all_model:264} [SYSTEM]:[None] Call get_all_model function.
+2020-09-03 14:58:38,926 [INFO:MLManager_obj] {get_all_model:122} [SYSTEM]:[None] Getting all ML models.
+2020-09-03 14:58:39,196 [INFO:MLManager_obj] {get_all_model:144} [SYSTEM]:[None] Got all ML models.
+2020-09-03 14:58:39,212 [INFO:model_management_api] {get_all_model:267} [SYSTEM]:[None] Deleted MLManagement object.
+2020-09-03 14:58:39,215 [INFO:model_management_api] {get_all_model:281} [SYSTEM]:[None] Response data from get_all_model API
+2020-09-03 14:58:41,156 [INFO:model_management_api] {get_all_model:269} [SYSTEM]:[None] Use get all ML model API.
+2020-09-03 14:58:41,221 [INFO:model_management_api] {get_all_model:271} [SYSTEM]:[None] Created RefManagement object.
+2020-09-03 14:58:41,228 [INFO:model_management_api] {get_all_model:272} [SYSTEM]:[None] Call get_all_model function.
+2020-09-03 14:58:41,534 [INFO:model_management_api] {get_all_unit:294} [SYSTEM]:[Athiruj] Use get all units API.
+2020-09-03 14:58:41,597 [INFO:model_management_api] {get_all_unit:296} [SYSTEM]:[Athiruj] Created RefManagement object.
+2020-09-03 14:58:41,616 [INFO:model_management_api] {get_all_unit:297} [SYSTEM]:[Athiruj] Call get_all_model function.
+2020-09-03 14:58:41,717 [INFO:model_management_api] {get_all_model:279} [SYSTEM]:[None] Deleted RefManagement object.
+2020-09-03 14:58:41,720 [INFO:model_management_api] {get_all_model:281} [SYSTEM]:[None] Response data from get_all_model API
+2020-09-03 14:58:41,867 [INFO:model_management_api] {get_all_unit:304} [SYSTEM]:[Athiruj] Deleted RefManagement object.
+2020-09-03 14:58:41,870 [INFO:model_management_api] {get_all_unit:306} [SYSTEM]:[Athiruj] Response data from get_all_model API
+2020-09-03 14:59:46,387 [INFO:model_management_api] {get_all_model:269} [SYSTEM]:[None] Use get all ML model API.
+2020-09-03 14:59:46,490 [INFO:model_management_api] {get_all_unit:294} [SYSTEM]:[Athiruj] Use get all units API.
+2020-09-03 14:59:46,645 [INFO:model_management_api] {get_all_model:271} [SYSTEM]:[None] Created RefManagement object.
+2020-09-03 14:59:46,681 [INFO:model_management_api] {get_all_unit:296} [SYSTEM]:[Athiruj] Created RefManagement object.
+2020-09-03 14:59:46,700 [INFO:model_management_api] {get_all_model:272} [SYSTEM]:[None] Call get_all_model function.
+2020-09-03 14:59:46,715 [INFO:model_management_api] {get_all_unit:297} [SYSTEM]:[Athiruj] Call get_all_model function.
+2020-09-03 14:59:47,151 [INFO:model_management_api] {get_all_unit:304} [SYSTEM]:[Athiruj] Deleted RefManagement object.
+2020-09-03 14:59:47,153 [INFO:model_management_api] {get_all_unit:306} [SYSTEM]:[Athiruj] Response data from get_all_model API
+2020-09-03 14:59:47,662 [INFO:model_management_api] {get_all_model:279} [SYSTEM]:[None] Deleted RefManagement object.
+2020-09-03 14:59:47,670 [INFO:model_management_api] {get_all_model:281} [SYSTEM]:[None] Response data from get_all_model API
+2020-09-03 15:00:04,885 [INFO:model_management_api] {get_all_unit:294} [SYSTEM]:[Athiruj] Use get all units API.
+2020-09-03 15:00:04,969 [INFO:model_management_api] {get_all_model:269} [SYSTEM]:[None] Use get all ML model API.
+2020-09-03 15:00:05,533 [INFO:model_management_api] {get_all_unit:296} [SYSTEM]:[Athiruj] Created RefManagement object.
+2020-09-03 15:00:05,588 [INFO:model_management_api] {get_all_unit:297} [SYSTEM]:[Athiruj] Call get_all_model function.
+2020-09-03 15:00:05,660 [INFO:model_management_api] {get_all_model:271} [SYSTEM]:[None] Created RefManagement object.
+2020-09-03 15:00:05,789 [INFO:model_management_api] {get_all_model:272} [SYSTEM]:[None] Call get_all_model function.
+2020-09-03 15:00:06,270 [INFO:model_management_api] {get_all_unit:304} [SYSTEM]:[Athiruj] Deleted RefManagement object.
+2020-09-03 15:00:06,277 [INFO:model_management_api] {get_all_unit:306} [SYSTEM]:[Athiruj] Response data from get_all_model API
+2020-09-03 15:00:06,636 [INFO:model_management_api] {get_all_model:279} [SYSTEM]:[None] Deleted RefManagement object.
+2020-09-03 15:00:06,638 [INFO:model_management_api] {get_all_model:281} [SYSTEM]:[None] Response data from get_all_model API
+2020-09-03 15:00:58,622 [INFO:model_management_api] {get_all_model:269} [SYSTEM]:[None] Use get all ML model API.
+2020-09-03 15:00:58,728 [INFO:model_management_api] {get_all_unit:294} [SYSTEM]:[Athiruj] Use get all units API.
+2020-09-03 15:00:58,771 [INFO:model_management_api] {get_all_model:271} [SYSTEM]:[None] Created RefManagement object.
+2020-09-03 15:00:58,776 [INFO:model_management_api] {get_all_model:272} [SYSTEM]:[None] Call get_all_model function.
+2020-09-03 15:00:58,788 [INFO:model_management_api] {get_all_unit:296} [SYSTEM]:[Athiruj] Created RefManagement object.
+2020-09-03 15:00:58,798 [INFO:model_management_api] {get_all_unit:297} [SYSTEM]:[Athiruj] Call get_all_model function.
+2020-09-03 15:00:59,146 [INFO:model_management_api] {get_all_unit:304} [SYSTEM]:[Athiruj] Deleted RefManagement object.
+2020-09-03 15:00:59,153 [INFO:model_management_api] {get_all_unit:306} [SYSTEM]:[Athiruj] Response data from get_all_model API
+2020-09-03 15:00:59,242 [INFO:model_management_api] {get_all_model:279} [SYSTEM]:[None] Deleted RefManagement object.
+2020-09-03 15:00:59,244 [INFO:model_management_api] {get_all_model:281} [SYSTEM]:[None] Response data from get_all_model API
+2020-09-03 15:01:27,745 [INFO:model_management_api] {get_all_model:269} [SYSTEM]:[None] Use get all ML model API.
+2020-09-03 15:01:27,784 [INFO:model_management_api] {get_all_unit:294} [SYSTEM]:[Athiruj] Use get all units API.
+2020-09-03 15:01:27,881 [INFO:model_management_api] {get_all_unit:296} [SYSTEM]:[Athiruj] Created RefManagement object.
+2020-09-03 15:01:27,892 [INFO:model_management_api] {get_all_model:271} [SYSTEM]:[None] Created RefManagement object.
+2020-09-03 15:01:27,895 [INFO:model_management_api] {get_all_unit:297} [SYSTEM]:[Athiruj] Call get_all_model function.
+2020-09-03 15:01:27,898 [INFO:model_management_api] {get_all_model:272} [SYSTEM]:[None] Call get_all_model function.
+2020-09-03 15:01:28,133 [INFO:model_management_api] {get_all_unit:304} [SYSTEM]:[Athiruj] Deleted RefManagement object.
+2020-09-03 15:01:28,134 [INFO:model_management_api] {get_all_unit:306} [SYSTEM]:[Athiruj] Response data from get_all_model API
+2020-09-03 15:01:28,166 [INFO:model_management_api] {get_all_model:279} [SYSTEM]:[None] Deleted RefManagement object.
+2020-09-03 15:01:28,167 [INFO:model_management_api] {get_all_model:281} [SYSTEM]:[None] Response data from get_all_model API
+2020-09-03 15:01:52,213 [INFO:model_management_api] {get_all_unit:294} [SYSTEM]:[Athiruj] Use get all units API.
+2020-09-03 15:01:52,279 [INFO:model_management_api] {get_all_model:269} [SYSTEM]:[None] Use get all ML model API.
+2020-09-03 15:01:52,379 [INFO:model_management_api] {get_all_unit:296} [SYSTEM]:[Athiruj] Created RefManagement object.
+2020-09-03 15:01:52,387 [INFO:model_management_api] {get_all_unit:297} [SYSTEM]:[Athiruj] Call get_all_model function.
+2020-09-03 15:01:52,463 [INFO:model_management_api] {get_all_model:271} [SYSTEM]:[None] Created RefManagement object.
+2020-09-03 15:01:52,496 [INFO:model_management_api] {get_all_model:272} [SYSTEM]:[None] Call get_all_model function.
+2020-09-03 15:01:52,955 [INFO:model_management_api] {get_all_unit:304} [SYSTEM]:[Athiruj] Deleted RefManagement object.
+2020-09-03 15:01:52,965 [INFO:model_management_api] {get_all_unit:306} [SYSTEM]:[Athiruj] Response data from get_all_model API
+2020-09-03 15:01:53,912 [INFO:model_management_api] {get_all_model:279} [SYSTEM]:[None] Deleted RefManagement object.
+2020-09-03 15:01:53,922 [INFO:model_management_api] {get_all_model:281} [SYSTEM]:[None] Response data from get_all_model API
+2020-09-03 15:02:04,993 [INFO:model_management_api] {get_all_model:269} [SYSTEM]:[None] Use get all ML model API.
+2020-09-03 15:02:05,058 [INFO:model_management_api] {get_all_unit:294} [SYSTEM]:[Athiruj] Use get all units API.
+2020-09-03 15:02:05,592 [INFO:model_management_api] {get_all_model:271} [SYSTEM]:[None] Created RefManagement object.
+2020-09-03 15:02:05,819 [INFO:model_management_api] {get_all_unit:296} [SYSTEM]:[Athiruj] Created RefManagement object.
+2020-09-03 15:02:05,928 [INFO:model_management_api] {get_all_model:272} [SYSTEM]:[None] Call get_all_model function.
+2020-09-03 15:02:06,011 [INFO:model_management_api] {get_all_unit:297} [SYSTEM]:[Athiruj] Call get_all_model function.
+2020-09-03 15:02:07,061 [INFO:model_management_api] {get_all_unit:304} [SYSTEM]:[Athiruj] Deleted RefManagement object.
+2020-09-03 15:02:07,064 [INFO:model_management_api] {get_all_unit:306} [SYSTEM]:[Athiruj] Response data from get_all_model API
+2020-09-03 15:02:07,457 [INFO:model_management_api] {get_all_model:279} [SYSTEM]:[None] Deleted RefManagement object.
+2020-09-03 15:02:07,474 [INFO:model_management_api] {get_all_model:281} [SYSTEM]:[None] Response data from get_all_model API
+2020-09-03 15:02:29,269 [INFO:model_management_api] {get_all_model:269} [SYSTEM]:[None] Use get all ML model API.
+2020-09-03 15:02:29,290 [INFO:model_management_api] {get_all_unit:294} [SYSTEM]:[Athiruj] Use get all units API.
+2020-09-03 15:02:29,326 [INFO:model_management_api] {get_all_model:271} [SYSTEM]:[None] Created RefManagement object.
+2020-09-03 15:02:29,326 [INFO:model_management_api] {get_all_unit:296} [SYSTEM]:[Athiruj] Created RefManagement object.
+2020-09-03 15:02:29,326 [INFO:model_management_api] {get_all_model:272} [SYSTEM]:[None] Call get_all_model function.
+2020-09-03 15:02:29,327 [INFO:model_management_api] {get_all_unit:297} [SYSTEM]:[Athiruj] Call get_all_model function.
+2020-09-03 15:02:30,259 [INFO:model_management_api] {get_all_unit:304} [SYSTEM]:[Athiruj] Deleted RefManagement object.
+2020-09-03 15:02:30,275 [INFO:model_management_api] {get_all_unit:306} [SYSTEM]:[Athiruj] Response data from get_all_model API
+2020-09-03 15:02:30,478 [INFO:model_management_api] {get_all_model:279} [SYSTEM]:[None] Deleted RefManagement object.
+2020-09-03 15:02:30,479 [INFO:model_management_api] {get_all_model:281} [SYSTEM]:[None] Response data from get_all_model API
+2020-09-03 15:03:02,269 [INFO:model_management_api] {get_all_model:269} [SYSTEM]:[None] Use get all ML model API.
+2020-09-03 15:03:02,309 [INFO:model_management_api] {get_all_unit:294} [SYSTEM]:[Athiruj] Use get all units API.
+2020-09-03 15:03:02,537 [INFO:model_management_api] {get_all_model:271} [SYSTEM]:[None] Created RefManagement object.
+2020-09-03 15:03:02,598 [INFO:model_management_api] {get_all_model:272} [SYSTEM]:[None] Call get_all_model function.
+2020-09-03 15:03:02,673 [INFO:model_management_api] {get_all_unit:296} [SYSTEM]:[Athiruj] Created RefManagement object.
+2020-09-03 15:03:02,759 [INFO:model_management_api] {get_all_unit:297} [SYSTEM]:[Athiruj] Call get_all_model function.
+2020-09-03 15:03:03,530 [INFO:model_management_api] {get_all_unit:304} [SYSTEM]:[Athiruj] Deleted RefManagement object.
+2020-09-03 15:03:03,566 [INFO:model_management_api] {get_all_unit:306} [SYSTEM]:[Athiruj] Response data from get_all_model API
+2020-09-03 15:03:04,178 [INFO:model_management_api] {get_all_model:279} [SYSTEM]:[None] Deleted RefManagement object.
+2020-09-03 15:03:04,205 [INFO:model_management_api] {get_all_model:281} [SYSTEM]:[None] Response data from get_all_model API
+2020-09-03 15:03:08,955 [INFO:model_management_api] {get_all_unit:294} [SYSTEM]:[Athiruj] Use get all units API.
+2020-09-03 15:03:09,075 [INFO:model_management_api] {get_all_model:269} [SYSTEM]:[None] Use get all ML model API.
+2020-09-03 15:03:09,219 [INFO:model_management_api] {get_all_unit:296} [SYSTEM]:[Athiruj] Created RefManagement object.
+2020-09-03 15:03:09,225 [INFO:model_management_api] {get_all_unit:297} [SYSTEM]:[Athiruj] Call get_all_model function.
+2020-09-03 15:03:09,274 [INFO:model_management_api] {get_all_model:271} [SYSTEM]:[None] Created RefManagement object.
+2020-09-03 15:03:09,279 [INFO:model_management_api] {get_all_model:272} [SYSTEM]:[None] Call get_all_model function.
+2020-09-03 15:03:09,677 [INFO:model_management_api] {get_all_unit:304} [SYSTEM]:[Athiruj] Deleted RefManagement object.
+2020-09-03 15:03:09,691 [INFO:model_management_api] {get_all_unit:306} [SYSTEM]:[Athiruj] Response data from get_all_model API
+2020-09-03 15:03:10,016 [INFO:model_management_api] {get_all_model:279} [SYSTEM]:[None] Deleted RefManagement object.
+2020-09-03 15:03:10,021 [INFO:model_management_api] {get_all_model:281} [SYSTEM]:[None] Response data from get_all_model API
+2020-09-03 15:05:20,440 [INFO:model_management_api] {get_all_model:269} [SYSTEM]:[None] Use get all ML model API.
+2020-09-03 15:05:20,454 [INFO:model_management_api] {get_all_unit:294} [SYSTEM]:[Athiruj] Use get all units API.
+2020-09-03 15:05:20,479 [INFO:model_management_api] {get_all_model:271} [SYSTEM]:[None] Created RefManagement object.
+2020-09-03 15:05:20,483 [INFO:model_management_api] {get_all_unit:296} [SYSTEM]:[Athiruj] Created RefManagement object.
+2020-09-03 15:05:20,486 [INFO:model_management_api] {get_all_model:272} [SYSTEM]:[None] Call get_all_model function.
+2020-09-03 15:05:20,490 [INFO:model_management_api] {get_all_unit:297} [SYSTEM]:[Athiruj] Call get_all_model function.
+2020-09-03 15:05:20,617 [INFO:model_management_api] {get_all_unit:304} [SYSTEM]:[Athiruj] Deleted RefManagement object.
+2020-09-03 15:05:20,618 [INFO:model_management_api] {get_all_unit:306} [SYSTEM]:[Athiruj] Response data from get_all_model API
+2020-09-03 15:05:20,663 [INFO:model_management_api] {get_all_model:279} [SYSTEM]:[None] Deleted RefManagement object.
+2020-09-03 15:05:20,665 [INFO:model_management_api] {get_all_model:281} [SYSTEM]:[None] Response data from get_all_model API
+2020-09-03 15:05:57,339 [INFO:model_management_api] {get_all_model:269} [SYSTEM]:[None] Use get all ML model API.
+2020-09-03 15:05:57,359 [INFO:model_management_api] {get_all_unit:294} [SYSTEM]:[Athiruj] Use get all units API.
+2020-09-03 15:05:57,396 [INFO:model_management_api] {get_all_model:271} [SYSTEM]:[None] Created RefManagement object.
+2020-09-03 15:05:57,401 [INFO:model_management_api] {get_all_unit:296} [SYSTEM]:[Athiruj] Created RefManagement object.
+2020-09-03 15:05:57,402 [INFO:model_management_api] {get_all_model:272} [SYSTEM]:[None] Call get_all_model function.
+2020-09-03 15:05:57,403 [INFO:model_management_api] {get_all_unit:297} [SYSTEM]:[Athiruj] Call get_all_model function.
+2020-09-03 15:05:57,930 [INFO:model_management_api] {get_all_unit:304} [SYSTEM]:[Athiruj] Deleted RefManagement object.
+2020-09-03 15:05:57,933 [INFO:model_management_api] {get_all_unit:306} [SYSTEM]:[Athiruj] Response data from get_all_model API
+2020-09-03 15:05:58,015 [INFO:model_management_api] {get_all_model:279} [SYSTEM]:[None] Deleted RefManagement object.
+2020-09-03 15:05:58,028 [INFO:model_management_api] {get_all_model:281} [SYSTEM]:[None] Response data from get_all_model API
+2020-09-03 15:06:12,228 [INFO:model_management_api] {get_all_model:261} [SYSTEM]:[None] Use get all ML model API.
+2020-09-03 15:06:12,229 [INFO:MLManager_obj] {__init__:76} [SYSTEM]:Connecting to database
+2020-09-03 15:06:12,244 [INFO:MLManager_obj] {__init__:78} [SYSTEM]:Connected to database
+2020-09-03 15:06:12,245 [INFO:model_management_api] {get_all_model:263} [SYSTEM]:[None] Created MLManagement object.
+2020-09-03 15:06:12,246 [INFO:model_management_api] {get_all_model:264} [SYSTEM]:[None] Call get_all_model function.
+2020-09-03 15:06:12,247 [INFO:MLManager_obj] {get_all_model:122} [SYSTEM]:[None] Getting all ML models.
+2020-09-03 15:06:12,306 [INFO:MLManager_obj] {get_all_model:144} [SYSTEM]:[None] Got all ML models.
+2020-09-03 15:06:12,312 [INFO:model_management_api] {get_all_model:267} [SYSTEM]:[None] Deleted MLManagement object.
+2020-09-03 15:06:12,312 [INFO:model_management_api] {get_all_model:281} [SYSTEM]:[None] Response data from get_all_model API
+2020-09-03 15:06:37,082 [INFO:model_management_api] {get_all_model:261} [SYSTEM]:[None] Use get all ML model API.
+2020-09-03 15:06:37,084 [INFO:MLManager_obj] {__init__:76} [SYSTEM]:Connecting to database
+2020-09-03 15:06:37,169 [INFO:MLManager_obj] {__init__:78} [SYSTEM]:Connected to database
+2020-09-03 15:06:37,185 [INFO:model_management_api] {get_all_model:263} [SYSTEM]:[None] Created MLManagement object.
+2020-09-03 15:06:37,202 [INFO:model_management_api] {get_all_model:264} [SYSTEM]:[None] Call get_all_model function.
+2020-09-03 15:06:37,206 [INFO:MLManager_obj] {get_all_model:122} [SYSTEM]:[None] Getting all ML models.
+2020-09-03 15:06:37,358 [INFO:MLManager_obj] {get_all_model:144} [SYSTEM]:[None] Got all ML models.
+2020-09-03 15:06:37,367 [INFO:model_management_api] {get_all_model:267} [SYSTEM]:[None] Deleted MLManagement object.
+2020-09-03 15:06:37,368 [INFO:model_management_api] {get_all_model:281} [SYSTEM]:[None] Response data from get_all_model API
+2020-09-03 15:07:12,554 [INFO:model_management_api] {get_all_model:261} [SYSTEM]:[None] Use get all ML model API.
+2020-09-03 15:07:12,601 [INFO:MLManager_obj] {__init__:76} [SYSTEM]:Connecting to database
+2020-09-03 15:07:12,783 [INFO:MLManager_obj] {__init__:78} [SYSTEM]:Connected to database
+2020-09-03 15:07:12,799 [INFO:model_management_api] {get_all_model:263} [SYSTEM]:[None] Created MLManagement object.
+2020-09-03 15:07:12,807 [INFO:model_management_api] {get_all_model:264} [SYSTEM]:[None] Call get_all_model function.
+2020-09-03 15:07:12,813 [INFO:MLManager_obj] {get_all_model:122} [SYSTEM]:[None] Getting all ML models.
+2020-09-03 15:07:13,275 [INFO:MLManager_obj] {get_all_model:144} [SYSTEM]:[None] Got all ML models.
+2020-09-03 15:07:13,278 [INFO:model_management_api] {get_all_model:267} [SYSTEM]:[None] Deleted MLManagement object.
+2020-09-03 15:07:13,279 [INFO:model_management_api] {get_all_model:281} [SYSTEM]:[None] Response data from get_all_model API
+2020-09-03 15:07:33,465 [INFO:model_management_api] {get_all_model:261} [SYSTEM]:[None] Use get all ML model API.
+2020-09-03 15:07:33,514 [INFO:MLManager_obj] {__init__:76} [SYSTEM]:Connecting to database
+2020-09-03 15:07:33,658 [INFO:MLManager_obj] {__init__:78} [SYSTEM]:Connected to database
+2020-09-03 15:07:33,665 [INFO:model_management_api] {get_all_model:263} [SYSTEM]:[None] Created MLManagement object.
+2020-09-03 15:07:33,681 [INFO:model_management_api] {get_all_model:264} [SYSTEM]:[None] Call get_all_model function.
+2020-09-03 15:07:33,689 [INFO:MLManager_obj] {get_all_model:122} [SYSTEM]:[None] Getting all ML models.
+2020-09-03 15:07:33,911 [INFO:MLManager_obj] {get_all_model:144} [SYSTEM]:[None] Got all ML models.
+2020-09-03 15:07:33,916 [INFO:model_management_api] {get_all_model:267} [SYSTEM]:[None] Deleted MLManagement object.
+2020-09-03 15:07:33,919 [INFO:model_management_api] {get_all_model:281} [SYSTEM]:[None] Response data from get_all_model API
+2020-09-03 15:07:44,518 [INFO:model_management_api] {get_all_model:261} [SYSTEM]:[None] Use get all ML model API.
+2020-09-03 15:07:44,522 [INFO:MLManager_obj] {__init__:76} [SYSTEM]:Connecting to database
+2020-09-03 15:07:44,541 [INFO:MLManager_obj] {__init__:78} [SYSTEM]:Connected to database
+2020-09-03 15:07:44,544 [INFO:model_management_api] {get_all_model:263} [SYSTEM]:[None] Created MLManagement object.
+2020-09-03 15:07:44,545 [INFO:model_management_api] {get_all_model:264} [SYSTEM]:[None] Call get_all_model function.
+2020-09-03 15:07:44,547 [INFO:MLManager_obj] {get_all_model:122} [SYSTEM]:[None] Getting all ML models.
+2020-09-03 15:07:44,794 [INFO:MLManager_obj] {get_all_model:144} [SYSTEM]:[None] Got all ML models.
+2020-09-03 15:07:44,806 [INFO:model_management_api] {get_all_model:267} [SYSTEM]:[None] Deleted MLManagement object.
+2020-09-03 15:07:44,808 [INFO:model_management_api] {get_all_model:281} [SYSTEM]:[None] Response data from get_all_model API
+2020-09-03 15:07:58,011 [INFO:model_management_api] {get_all_model:261} [SYSTEM]:[None] Use get all ML model API.
+2020-09-03 15:07:58,012 [INFO:MLManager_obj] {__init__:76} [SYSTEM]:Connecting to database
+2020-09-03 15:07:58,019 [INFO:MLManager_obj] {__init__:78} [SYSTEM]:Connected to database
+2020-09-03 15:07:58,021 [INFO:model_management_api] {get_all_model:263} [SYSTEM]:[None] Created MLManagement object.
+2020-09-03 15:07:58,021 [INFO:model_management_api] {get_all_model:264} [SYSTEM]:[None] Call get_all_model function.
+2020-09-03 15:07:58,022 [INFO:MLManager_obj] {get_all_model:122} [SYSTEM]:[None] Getting all ML models.
+2020-09-03 15:07:58,093 [INFO:MLManager_obj] {get_all_model:144} [SYSTEM]:[None] Got all ML models.
+2020-09-03 15:07:58,107 [INFO:model_management_api] {get_all_model:267} [SYSTEM]:[None] Deleted MLManagement object.
+2020-09-03 15:07:58,108 [INFO:model_management_api] {get_all_model:281} [SYSTEM]:[None] Response data from get_all_model API
+2020-09-03 15:08:09,656 [INFO:model_management_api] {get_all_model:269} [SYSTEM]:[None] Use get all ML model API.
+2020-09-03 15:08:09,669 [INFO:model_management_api] {get_all_model:271} [SYSTEM]:[None] Created RefManagement object.
+2020-09-03 15:08:09,670 [INFO:model_management_api] {get_all_model:272} [SYSTEM]:[None] Call get_all_model function.
+2020-09-03 15:08:09,787 [INFO:model_management_api] {get_all_model:279} [SYSTEM]:[None] Deleted RefManagement object.
+2020-09-03 15:08:09,788 [INFO:model_management_api] {get_all_model:281} [SYSTEM]:[None] Response data from get_all_model API
+2020-09-03 15:08:09,970 [INFO:model_management_api] {get_all_unit:294} [SYSTEM]:[Athiruj] Use get all units API.
+2020-09-03 15:08:09,984 [INFO:model_management_api] {get_all_unit:296} [SYSTEM]:[Athiruj] Created RefManagement object.
+2020-09-03 15:08:09,986 [INFO:model_management_api] {get_all_unit:297} [SYSTEM]:[Athiruj] Call get_all_model function.
+2020-09-03 15:08:10,077 [INFO:model_management_api] {get_all_unit:304} [SYSTEM]:[Athiruj] Deleted RefManagement object.
+2020-09-03 15:08:10,087 [INFO:model_management_api] {get_all_unit:306} [SYSTEM]:[Athiruj] Response data from get_all_model API
+2020-09-03 15:08:11,796 [INFO:model_management_api] {get_all_model:269} [SYSTEM]:[None] Use get all ML model API.
+2020-09-03 15:08:11,821 [INFO:model_management_api] {get_all_model:271} [SYSTEM]:[None] Created RefManagement object.
+2020-09-03 15:08:11,822 [INFO:model_management_api] {get_all_model:272} [SYSTEM]:[None] Call get_all_model function.
+2020-09-03 15:08:12,074 [INFO:model_management_api] {get_all_model:279} [SYSTEM]:[None] Deleted RefManagement object.
+2020-09-03 15:08:12,083 [INFO:model_management_api] {get_all_model:281} [SYSTEM]:[None] Response data from get_all_model API
+2020-09-03 15:08:12,116 [INFO:model_management_api] {get_all_unit:294} [SYSTEM]:[Athiruj] Use get all units API.
+2020-09-03 15:08:12,166 [INFO:model_management_api] {get_all_unit:296} [SYSTEM]:[Athiruj] Created RefManagement object.
+2020-09-03 15:08:12,170 [INFO:model_management_api] {get_all_unit:297} [SYSTEM]:[Athiruj] Call get_all_model function.
+2020-09-03 15:08:12,249 [INFO:model_management_api] {get_all_unit:304} [SYSTEM]:[Athiruj] Deleted RefManagement object.
+2020-09-03 15:08:12,250 [INFO:model_management_api] {get_all_unit:306} [SYSTEM]:[Athiruj] Response data from get_all_model API
+2020-09-03 15:09:35,290 [INFO:model_management_api] {get_all_model:261} [SYSTEM]:[None] Use get all ML model API.
+2020-09-03 15:09:35,323 [INFO:MLManager_obj] {__init__:76} [SYSTEM]:Connecting to database
+2020-09-03 15:09:35,354 [INFO:MLManager_obj] {__init__:78} [SYSTEM]:Connected to database
+2020-09-03 15:09:35,356 [INFO:model_management_api] {get_all_model:263} [SYSTEM]:[None] Created MLManagement object.
+2020-09-03 15:09:35,365 [INFO:model_management_api] {get_all_model:264} [SYSTEM]:[None] Call get_all_model function.
+2020-09-03 15:09:35,381 [INFO:MLManager_obj] {get_all_model:122} [SYSTEM]:[None] Getting all ML models.
+2020-09-03 15:09:35,481 [INFO:MLManager_obj] {get_all_model:144} [SYSTEM]:[None] Got all ML models.
+2020-09-03 15:09:35,486 [INFO:model_management_api] {get_all_model:267} [SYSTEM]:[None] Deleted MLManagement object.
+2020-09-03 15:09:35,488 [INFO:model_management_api] {get_all_model:281} [SYSTEM]:[None] Response data from get_all_model API
+2020-09-03 15:09:36,886 [INFO:model_management_api] {get_all_model:269} [SYSTEM]:[None] Use get all ML model API.
+2020-09-03 15:09:36,891 [INFO:model_management_api] {get_all_unit:294} [SYSTEM]:[Athiruj] Use get all units API.
+2020-09-03 15:09:36,903 [INFO:model_management_api] {get_all_model:271} [SYSTEM]:[None] Created RefManagement object.
+2020-09-03 15:09:36,907 [INFO:model_management_api] {get_all_model:272} [SYSTEM]:[None] Call get_all_model function.
+2020-09-03 15:09:36,915 [INFO:model_management_api] {get_all_unit:296} [SYSTEM]:[Athiruj] Created RefManagement object.
+2020-09-03 15:09:36,918 [INFO:model_management_api] {get_all_unit:297} [SYSTEM]:[Athiruj] Call get_all_model function.
+2020-09-03 15:09:37,059 [INFO:model_management_api] {get_all_unit:304} [SYSTEM]:[Athiruj] Deleted RefManagement object.
+2020-09-03 15:09:37,065 [INFO:model_management_api] {get_all_unit:306} [SYSTEM]:[Athiruj] Response data from get_all_model API
+2020-09-03 15:09:37,092 [INFO:model_management_api] {get_all_model:279} [SYSTEM]:[None] Deleted RefManagement object.
+2020-09-03 15:09:37,094 [INFO:model_management_api] {get_all_model:281} [SYSTEM]:[None] Response data from get_all_model API
+2020-09-03 15:09:38,686 [INFO:model_management_api] {get_all_model:261} [SYSTEM]:[None] Use get all ML model API.
+2020-09-03 15:09:38,687 [INFO:MLManager_obj] {__init__:76} [SYSTEM]:Connecting to database
+2020-09-03 15:09:38,752 [INFO:MLManager_obj] {__init__:78} [SYSTEM]:Connected to database
+2020-09-03 15:09:38,755 [INFO:model_management_api] {get_all_model:263} [SYSTEM]:[None] Created MLManagement object.
+2020-09-03 15:09:38,765 [INFO:model_management_api] {get_all_model:264} [SYSTEM]:[None] Call get_all_model function.
+2020-09-03 15:09:38,769 [INFO:MLManager_obj] {get_all_model:122} [SYSTEM]:[None] Getting all ML models.
+2020-09-03 15:09:38,890 [INFO:MLManager_obj] {get_all_model:144} [SYSTEM]:[None] Got all ML models.
+2020-09-03 15:09:38,904 [INFO:model_management_api] {get_all_model:267} [SYSTEM]:[None] Deleted MLManagement object.
+2020-09-03 15:09:38,906 [INFO:model_management_api] {get_all_model:281} [SYSTEM]:[None] Response data from get_all_model API
+2020-09-03 15:09:47,803 [INFO:model_management_api] {get_all_model:269} [SYSTEM]:[None] Use get all ML model API.
+2020-09-03 15:09:47,806 [INFO:model_management_api] {get_all_unit:294} [SYSTEM]:[Athiruj] Use get all units API.
+2020-09-03 15:09:47,831 [INFO:model_management_api] {get_all_model:271} [SYSTEM]:[None] Created RefManagement object.
+2020-09-03 15:09:47,837 [INFO:model_management_api] {get_all_model:272} [SYSTEM]:[None] Call get_all_model function.
+2020-09-03 15:09:47,853 [INFO:model_management_api] {get_all_unit:296} [SYSTEM]:[Athiruj] Created RefManagement object.
+2020-09-03 15:09:47,870 [INFO:model_management_api] {get_all_unit:297} [SYSTEM]:[Athiruj] Call get_all_model function.
+2020-09-03 15:09:48,085 [INFO:model_management_api] {get_all_unit:304} [SYSTEM]:[Athiruj] Deleted RefManagement object.
+2020-09-03 15:09:48,086 [INFO:model_management_api] {get_all_unit:306} [SYSTEM]:[Athiruj] Response data from get_all_model API
+2020-09-03 15:09:48,100 [INFO:model_management_api] {get_all_model:279} [SYSTEM]:[None] Deleted RefManagement object.
+2020-09-03 15:09:48,103 [INFO:model_management_api] {get_all_model:281} [SYSTEM]:[None] Response data from get_all_model API
+2020-09-03 15:11:45,590 [INFO:model_management_api] {get_all_model:269} [SYSTEM]:[None] Use get all ML model API.
+2020-09-03 15:11:45,592 [INFO:model_management_api] {get_all_unit:294} [SYSTEM]:[Athiruj] Use get all units API.
+2020-09-03 15:11:45,600 [INFO:model_management_api] {get_all_model:271} [SYSTEM]:[None] Created RefManagement object.
+2020-09-03 15:11:45,601 [INFO:model_management_api] {get_all_model:272} [SYSTEM]:[None] Call get_all_model function.
+2020-09-03 15:11:45,604 [INFO:model_management_api] {get_all_unit:296} [SYSTEM]:[Athiruj] Created RefManagement object.
+2020-09-03 15:11:45,606 [INFO:model_management_api] {get_all_unit:297} [SYSTEM]:[Athiruj] Call get_all_model function.
+2020-09-03 15:11:45,684 [INFO:model_management_api] {get_all_unit:304} [SYSTEM]:[Athiruj] Deleted RefManagement object.
+2020-09-03 15:11:45,688 [INFO:model_management_api] {get_all_unit:306} [SYSTEM]:[Athiruj] Response data from get_all_model API
+2020-09-03 15:11:45,732 [INFO:model_management_api] {get_all_model:279} [SYSTEM]:[None] Deleted RefManagement object.
+2020-09-03 15:11:45,739 [INFO:model_management_api] {get_all_model:281} [SYSTEM]:[None] Response data from get_all_model API
+2020-09-03 15:35:24,278 [INFO:main] {<module>:16} [SYSTEM]:Created flask app.
+2020-09-03 15:35:24,282 [INFO:main] {<module>:18} [SYSTEM]:Registered image_processing_api blueprint 
+2020-09-03 15:35:24,285 [INFO:main] {<module>:20} [SYSTEM]:Registered user_api blueprint 
+2020-09-03 15:35:24,290 [INFO:main] {<module>:22} [SYSTEM]:Registered model_management_api blueprint 
+2020-09-03 15:35:24,292 [INFO:main] {<module>:24} [SYSTEM]:Registered log_management_api blueprint 
+2020-09-03 15:35:28,757 [INFO:main] {<module>:16} [SYSTEM]:Created flask app.
+2020-09-03 15:35:28,760 [INFO:main] {<module>:18} [SYSTEM]:Registered image_processing_api blueprint 
+2020-09-03 15:35:28,761 [INFO:main] {<module>:20} [SYSTEM]:Registered user_api blueprint 
+2020-09-03 15:35:28,765 [INFO:main] {<module>:22} [SYSTEM]:Registered model_management_api blueprint 
+2020-09-03 15:35:28,766 [INFO:main] {<module>:24} [SYSTEM]:Registered log_management_api blueprint 
+2020-09-03 15:35:37,102 [INFO:main] {<module>:16} [SYSTEM]:Created flask app.
+2020-09-03 15:35:37,106 [INFO:main] {<module>:18} [SYSTEM]:Registered image_processing_api blueprint 
+2020-09-03 15:35:37,108 [INFO:main] {<module>:20} [SYSTEM]:Registered user_api blueprint 
+2020-09-03 15:35:37,115 [INFO:main] {<module>:22} [SYSTEM]:Registered model_management_api blueprint 
+2020-09-03 15:35:37,116 [INFO:main] {<module>:24} [SYSTEM]:Registered log_management_api blueprint 
+2020-09-03 15:51:19,176 [INFO:main] {<module>:16} [SYSTEM]:Created flask app.
+2020-09-03 15:51:19,180 [INFO:main] {<module>:18} [SYSTEM]:Registered image_processing_api blueprint 
+2020-09-03 15:51:19,181 [INFO:main] {<module>:20} [SYSTEM]:Registered user_api blueprint 
+2020-09-03 15:51:19,185 [INFO:main] {<module>:22} [SYSTEM]:Registered model_management_api blueprint 
+2020-09-03 15:51:19,186 [INFO:main] {<module>:24} [SYSTEM]:Registered log_management_api blueprint 
+2020-09-03 15:51:20,823 [INFO:main] {<module>:16} [SYSTEM]:Created flask app.
+2020-09-03 15:51:20,827 [INFO:main] {<module>:18} [SYSTEM]:Registered image_processing_api blueprint 
+2020-09-03 15:51:20,829 [INFO:main] {<module>:20} [SYSTEM]:Registered user_api blueprint 
+2020-09-03 15:51:20,834 [INFO:main] {<module>:22} [SYSTEM]:Registered model_management_api blueprint 
+2020-09-03 15:51:20,836 [INFO:main] {<module>:24} [SYSTEM]:Registered log_management_api blueprint 
+2020-09-03 15:54:45,460 [INFO:LogManager] {__init__:11} [SYSTEM]:Set log variable
+2020-09-03 15:54:45,461 [INFO:LogManager] {__init__:22} [SYSTEM]:parent : C:\Users\athiruj\Desktop\img-processing\Docker\Flask\app
+2020-09-03 15:54:45,461 [INFO:LogManager] {get_today_log:50} [SYSTEM]:[test_get_log] Prepair date data to query.
+2020-09-03 15:54:46,351 [INFO:LogManager] {get_today_log:66} [SYSTEM]:[test_get_log] Read log 2020-09-03.log .
+2020-09-03 15:54:46,501 [INFO:LogManager] {get_today_log:86} [SYSTEM]:[test_get_log] Close log file.
+2020-09-03 15:54:46,502 [INFO:LogManager] {get_today_log:87} [SYSTEM]:[test_get_log] Got all today logs.
+2020-09-03 15:55:35,415 [INFO:LogManager] {__init__:11} [SYSTEM]:Set log variable
+2020-09-03 15:55:35,416 [INFO:LogManager] {__init__:22} [SYSTEM]:parent : C:\Users\athiruj\Desktop\img-processing\Docker\Flask\app
+2020-09-03 15:55:35,417 [INFO:LogManager] {get_log_by_date:102} [SYSTEM]:[test_get_log] Prepair date data to query.
+2020-09-03 15:55:35,669 [INFO:LogManager] {get_log_by_date:148} [SYSTEM]:[test_get_log] Read log C:\Users\athiruj\Desktop\img-processing\Docker\Flask\app\log\2020-09-01.log .
+2020-09-03 15:55:35,742 [INFO:LogManager] {get_log_by_date:148} [SYSTEM]:[test_get_log] Read log C:\Users\athiruj\Desktop\img-processing\Docker\Flask\app\log\2020-09-02.log .
+2020-09-03 15:55:36,109 [INFO:LogManager] {get_log_by_date:148} [SYSTEM]:[test_get_log] Read log C:\Users\athiruj\Desktop\img-processing\Docker\Flask\app\log\2020-09-03.log .
+2020-09-03 15:55:36,239 [INFO:LogManager] {get_log_by_date:163} [SYSTEM]:[test_get_log] Close log file.
+2020-09-03 15:55:36,240 [INFO:LogManager] {get_log_by_date:164} [SYSTEM]:[test_get_log] Got all log data.
+2020-09-03 15:57:29,417 [INFO:LogManager] {__init__:11} [SYSTEM]:Set log variable
+2020-09-03 15:57:29,418 [INFO:LogManager] {__init__:22} [SYSTEM]:parent : C:\Users\athiruj\Desktop\img-processing\Docker\Flask\app
+2020-09-03 15:57:29,418 [INFO:LogManager] {get_log_by_date:102} [SYSTEM]:[test_get_log] Prepair date data to query.
+2020-09-03 15:57:29,558 [INFO:LogManager] {get_log_by_date:148} [SYSTEM]:[test_get_log] Read log C:\Users\athiruj\Desktop\img-processing\Docker\Flask\app\log\2020-08-23.log .
+2020-09-03 15:57:29,592 [INFO:LogManager] {get_log_by_date:148} [SYSTEM]:[test_get_log] Read log C:\Users\athiruj\Desktop\img-processing\Docker\Flask\app\log\2020-08-24.log .
+2020-09-03 15:57:29,619 [INFO:LogManager] {get_log_by_date:148} [SYSTEM]:[test_get_log] Read log C:\Users\athiruj\Desktop\img-processing\Docker\Flask\app\log\2020-08-25.log .
+2020-09-03 15:57:29,658 [INFO:LogManager] {get_log_by_date:148} [SYSTEM]:[test_get_log] Read log C:\Users\athiruj\Desktop\img-processing\Docker\Flask\app\log\2020-08-26.log .
+2020-09-03 15:57:29,747 [INFO:LogManager] {get_log_by_date:148} [SYSTEM]:[test_get_log] Read log C:\Users\athiruj\Desktop\img-processing\Docker\Flask\app\log\2020-08-27.log .
+2020-09-03 15:57:29,771 [INFO:LogManager] {get_log_by_date:148} [SYSTEM]:[test_get_log] Read log C:\Users\athiruj\Desktop\img-processing\Docker\Flask\app\log\2020-08-28.log .
+2020-09-03 15:57:29,798 [INFO:LogManager] {get_log_by_date:148} [SYSTEM]:[test_get_log] Read log C:\Users\athiruj\Desktop\img-processing\Docker\Flask\app\log\2020-08-29.log .
+2020-09-03 15:57:29,840 [INFO:LogManager] {get_log_by_date:148} [SYSTEM]:[test_get_log] Read log C:\Users\athiruj\Desktop\img-processing\Docker\Flask\app\log\2020-08-30.log .
+2020-09-03 15:57:30,015 [INFO:LogManager] {get_log_by_date:148} [SYSTEM]:[test_get_log] Read log C:\Users\athiruj\Desktop\img-processing\Docker\Flask\app\log\2020-08-31.log .
+2020-09-03 15:57:30,076 [INFO:LogManager] {get_log_by_date:148} [SYSTEM]:[test_get_log] Read log C:\Users\athiruj\Desktop\img-processing\Docker\Flask\app\log\2020-09-01.log .
+2020-09-03 15:57:30,164 [INFO:LogManager] {get_log_by_date:148} [SYSTEM]:[test_get_log] Read log C:\Users\athiruj\Desktop\img-processing\Docker\Flask\app\log\2020-09-02.log .
+2020-09-03 15:57:30,371 [INFO:LogManager] {get_log_by_date:148} [SYSTEM]:[test_get_log] Read log C:\Users\athiruj\Desktop\img-processing\Docker\Flask\app\log\2020-09-03.log .
+2020-09-03 15:57:30,476 [INFO:LogManager] {get_log_by_date:163} [SYSTEM]:[test_get_log] Close log file.
+2020-09-03 15:57:30,477 [INFO:LogManager] {get_log_by_date:164} [SYSTEM]:[test_get_log] Got all log data.
+2020-09-03 17:11:48,034 [INFO:LogManager] {__init__:11} [SYSTEM]:Set log variable
+2020-09-03 17:11:48,061 [INFO:LogManager] {__init__:22} [SYSTEM]:parent : C:\Users\athiruj\Desktop\img-processing\Docker\Flask\app
+2020-09-03 17:11:48,158 [INFO:LogManager] {get_today_log:50} [SYSTEM]:[Athiruj_admin] Prepair date data to query.
+2020-09-03 17:11:48,261 [INFO:LogManager] {get_today_log:66} [SYSTEM]:[Athiruj_admin] Read log 2020-09-03.log .
+2020-09-03 17:11:48,507 [INFO:LogManager] {get_today_log:86} [SYSTEM]:[Athiruj_admin] Close log file.
+2020-09-03 17:11:48,508 [INFO:LogManager] {get_today_log:87} [SYSTEM]:[Athiruj_admin] Got all today logs.
+2020-09-03 17:15:05,270 [INFO:LogManager] {__init__:11} [SYSTEM]:Set log variable
+2020-09-03 17:15:05,272 [INFO:LogManager] {__init__:22} [SYSTEM]:parent : C:\Users\athiruj\Desktop\img-processing\Docker\Flask\app
+2020-09-03 17:15:05,282 [INFO:LogManager] {get_today_log:50} [SYSTEM]:[Athiruj_admin] Prepair date data to query.
+2020-09-03 17:15:05,335 [INFO:LogManager] {get_today_log:66} [SYSTEM]:[Athiruj_admin] Read log 2020-09-03.log .
+2020-09-03 17:15:05,629 [INFO:LogManager] {get_today_log:86} [SYSTEM]:[Athiruj_admin] Close log file.
+2020-09-03 17:15:05,634 [INFO:LogManager] {get_today_log:87} [SYSTEM]:[Athiruj_admin] Got all today logs.
+2020-09-03 17:15:19,820 [INFO:LogManager] {__init__:11} [SYSTEM]:Set log variable
+2020-09-03 17:15:19,886 [INFO:LogManager] {__init__:22} [SYSTEM]:parent : C:\Users\athiruj\Desktop\img-processing\Docker\Flask\app
+2020-09-03 17:15:19,985 [INFO:LogManager] {get_today_log:50} [SYSTEM]:[Athiruj_admin] Prepair date data to query.
+2020-09-03 17:15:20,019 [INFO:LogManager] {get_today_log:66} [SYSTEM]:[Athiruj_admin] Read log 2020-09-03.log .
+2020-09-03 17:15:20,312 [INFO:LogManager] {get_today_log:86} [SYSTEM]:[Athiruj_admin] Close log file.
+2020-09-03 17:15:20,333 [INFO:LogManager] {get_today_log:87} [SYSTEM]:[Athiruj_admin] Got all today logs.
+2020-09-03 17:15:20,511 [INFO:LogManager] {__init__:11} [SYSTEM]:Set log variable
+2020-09-03 17:15:20,515 [INFO:LogManager] {__init__:22} [SYSTEM]:parent : C:\Users\athiruj\Desktop\img-processing\Docker\Flask\app
+2020-09-03 17:15:20,518 [INFO:LogManager] {get_today_log:50} [SYSTEM]:[Athiruj_admin] Prepair date data to query.
+2020-09-03 17:15:20,583 [INFO:LogManager] {get_today_log:66} [SYSTEM]:[Athiruj_admin] Read log 2020-09-03.log .
+2020-09-03 17:15:21,049 [INFO:LogManager] {get_today_log:86} [SYSTEM]:[Athiruj_admin] Close log file.
+2020-09-03 17:15:21,082 [INFO:LogManager] {get_today_log:87} [SYSTEM]:[Athiruj_admin] Got all today logs.
+2020-09-03 17:15:21,564 [INFO:LogManager] {__init__:11} [SYSTEM]:Set log variable
+2020-09-03 17:15:21,622 [INFO:LogManager] {__init__:22} [SYSTEM]:parent : C:\Users\athiruj\Desktop\img-processing\Docker\Flask\app
+2020-09-03 17:15:21,670 [INFO:LogManager] {get_today_log:50} [SYSTEM]:[Athiruj_admin] Prepair date data to query.
+2020-09-03 17:15:21,764 [INFO:LogManager] {get_today_log:66} [SYSTEM]:[Athiruj_admin] Read log 2020-09-03.log .
+2020-09-03 17:15:22,153 [INFO:LogManager] {get_today_log:86} [SYSTEM]:[Athiruj_admin] Close log file.
+2020-09-03 17:15:22,227 [INFO:LogManager] {get_today_log:87} [SYSTEM]:[Athiruj_admin] Got all today logs.
+2020-09-03 17:15:25,434 [INFO:LogManager] {__init__:11} [SYSTEM]:Set log variable
+2020-09-03 17:15:25,445 [INFO:LogManager] {__init__:22} [SYSTEM]:parent : C:\Users\athiruj\Desktop\img-processing\Docker\Flask\app
+2020-09-03 17:15:25,501 [INFO:LogManager] {get_today_log:50} [SYSTEM]:[Athiruj_admin] Prepair date data to query.
+2020-09-03 17:15:25,596 [INFO:LogManager] {get_today_log:66} [SYSTEM]:[Athiruj_admin] Read log 2020-09-03.log .
+2020-09-03 17:15:25,942 [INFO:LogManager] {get_today_log:86} [SYSTEM]:[Athiruj_admin] Close log file.
+2020-09-03 17:15:25,964 [INFO:LogManager] {get_today_log:87} [SYSTEM]:[Athiruj_admin] Got all today logs.
+2020-09-03 17:15:34,637 [INFO:LogManager] {__init__:11} [SYSTEM]:Set log variable
+2020-09-03 17:15:34,646 [INFO:LogManager] {__init__:22} [SYSTEM]:parent : C:\Users\athiruj\Desktop\img-processing\Docker\Flask\app
+2020-09-03 17:15:34,649 [INFO:LogManager] {get_today_log:50} [SYSTEM]:[Athiruj_admin] Prepair date data to query.
+2020-09-03 17:15:34,744 [INFO:LogManager] {get_today_log:66} [SYSTEM]:[Athiruj_admin] Read log 2020-09-03.log .
+2020-09-03 17:15:35,024 [INFO:LogManager] {get_today_log:86} [SYSTEM]:[Athiruj_admin] Close log file.
+2020-09-03 17:15:35,029 [INFO:LogManager] {get_today_log:87} [SYSTEM]:[Athiruj_admin] Got all today logs.
+2020-09-03 17:15:43,290 [INFO:LogManager] {__init__:11} [SYSTEM]:Set log variable
+2020-09-03 17:15:43,428 [INFO:LogManager] {__init__:22} [SYSTEM]:parent : C:\Users\athiruj\Desktop\img-processing\Docker\Flask\app
+2020-09-03 17:15:43,505 [INFO:LogManager] {get_today_log:50} [SYSTEM]:[Athiruj_admin] Prepair date data to query.
+2020-09-03 17:15:43,612 [INFO:LogManager] {get_today_log:66} [SYSTEM]:[Athiruj_admin] Read log 2020-09-03.log .
+2020-09-03 17:15:43,776 [INFO:LogManager] {get_today_log:86} [SYSTEM]:[Athiruj_admin] Close log file.
+2020-09-03 17:15:43,777 [INFO:LogManager] {get_today_log:87} [SYSTEM]:[Athiruj_admin] Got all today logs.
+2020-09-03 17:15:55,687 [INFO:LogManager] {__init__:11} [SYSTEM]:Set log variable
+2020-09-03 17:15:55,688 [INFO:LogManager] {__init__:22} [SYSTEM]:parent : C:\Users\athiruj\Desktop\img-processing\Docker\Flask\app
+2020-09-03 17:15:55,688 [INFO:LogManager] {get_today_log:50} [SYSTEM]:[Athiruj_admin] Prepair date data to query.
+2020-09-03 17:15:55,692 [INFO:LogManager] {get_today_log:66} [SYSTEM]:[Athiruj_admin] Read log 2020-09-03.log .
+2020-09-03 17:15:55,870 [INFO:LogManager] {get_today_log:86} [SYSTEM]:[Athiruj_admin] Close log file.
+2020-09-03 17:15:55,871 [INFO:LogManager] {get_today_log:87} [SYSTEM]:[Athiruj_admin] Got all today logs.
+2020-09-03 17:16:46,763 [INFO:LogManager] {__init__:11} [SYSTEM]:Set log variable
+2020-09-03 17:16:46,784 [INFO:LogManager] {__init__:22} [SYSTEM]:parent : C:\Users\athiruj\Desktop\img-processing\Docker\Flask\app
+2020-09-03 17:16:46,806 [INFO:LogManager] {get_today_log:50} [SYSTEM]:[Athiruj_admin] Prepair date data to query.
+2020-09-03 17:16:46,824 [INFO:LogManager] {get_today_log:66} [SYSTEM]:[Athiruj_admin] Read log 2020-09-03.log .
+2020-09-03 17:16:46,927 [INFO:LogManager] {get_today_log:86} [SYSTEM]:[Athiruj_admin] Close log file.
+2020-09-03 17:16:46,928 [INFO:LogManager] {get_today_log:87} [SYSTEM]:[Athiruj_admin] Got all today logs.
+2020-09-03 17:16:47,467 [INFO:LogManager] {__init__:11} [SYSTEM]:Set log variable
+2020-09-03 17:16:47,468 [INFO:LogManager] {__init__:22} [SYSTEM]:parent : C:\Users\athiruj\Desktop\img-processing\Docker\Flask\app
+2020-09-03 17:16:47,469 [INFO:LogManager] {get_today_log:50} [SYSTEM]:[Athiruj_admin] Prepair date data to query.
+2020-09-03 17:16:47,475 [INFO:LogManager] {get_today_log:66} [SYSTEM]:[Athiruj_admin] Read log 2020-09-03.log .
+2020-09-03 17:16:47,570 [INFO:LogManager] {get_today_log:86} [SYSTEM]:[Athiruj_admin] Close log file.
+2020-09-03 17:16:47,571 [INFO:LogManager] {get_today_log:87} [SYSTEM]:[Athiruj_admin] Got all today logs.
+2020-09-03 17:16:48,767 [INFO:LogManager] {__init__:11} [SYSTEM]:Set log variable
+2020-09-03 17:16:48,767 [INFO:LogManager] {__init__:22} [SYSTEM]:parent : C:\Users\athiruj\Desktop\img-processing\Docker\Flask\app
+2020-09-03 17:16:48,768 [INFO:LogManager] {get_today_log:50} [SYSTEM]:[Athiruj_admin] Prepair date data to query.
+2020-09-03 17:16:48,774 [INFO:LogManager] {get_today_log:66} [SYSTEM]:[Athiruj_admin] Read log 2020-09-03.log .
+2020-09-03 17:16:48,941 [INFO:LogManager] {get_today_log:86} [SYSTEM]:[Athiruj_admin] Close log file.
+2020-09-03 17:16:48,943 [INFO:LogManager] {get_today_log:87} [SYSTEM]:[Athiruj_admin] Got all today logs.
+2020-09-03 17:16:49,144 [INFO:LogManager] {__init__:11} [SYSTEM]:Set log variable
+2020-09-03 17:16:49,144 [INFO:LogManager] {__init__:22} [SYSTEM]:parent : C:\Users\athiruj\Desktop\img-processing\Docker\Flask\app
+2020-09-03 17:16:49,145 [INFO:LogManager] {get_today_log:50} [SYSTEM]:[Athiruj_admin] Prepair date data to query.
+2020-09-03 17:16:49,149 [INFO:LogManager] {get_today_log:66} [SYSTEM]:[Athiruj_admin] Read log 2020-09-03.log .
+2020-09-03 17:16:49,307 [INFO:LogManager] {get_today_log:86} [SYSTEM]:[Athiruj_admin] Close log file.
+2020-09-03 17:16:49,311 [INFO:LogManager] {get_today_log:87} [SYSTEM]:[Athiruj_admin] Got all today logs.
+2020-09-03 17:16:50,351 [INFO:LogManager] {__init__:11} [SYSTEM]:Set log variable
+2020-09-03 17:16:50,480 [INFO:LogManager] {__init__:22} [SYSTEM]:parent : C:\Users\athiruj\Desktop\img-processing\Docker\Flask\app
+2020-09-03 17:16:50,498 [INFO:LogManager] {get_today_log:50} [SYSTEM]:[Athiruj_admin] Prepair date data to query.
+2020-09-03 17:16:50,518 [INFO:LogManager] {get_today_log:66} [SYSTEM]:[Athiruj_admin] Read log 2020-09-03.log .
+2020-09-03 17:16:50,900 [INFO:LogManager] {get_today_log:86} [SYSTEM]:[Athiruj_admin] Close log file.
+2020-09-03 17:16:50,907 [INFO:LogManager] {get_today_log:87} [SYSTEM]:[Athiruj_admin] Got all today logs.
+2020-09-03 17:16:51,110 [INFO:LogManager] {__init__:11} [SYSTEM]:Set log variable
+2020-09-03 17:16:51,114 [INFO:LogManager] {__init__:22} [SYSTEM]:parent : C:\Users\athiruj\Desktop\img-processing\Docker\Flask\app
+2020-09-03 17:16:51,115 [INFO:LogManager] {get_today_log:50} [SYSTEM]:[Athiruj_admin] Prepair date data to query.
+2020-09-03 17:16:51,121 [INFO:LogManager] {get_today_log:66} [SYSTEM]:[Athiruj_admin] Read log 2020-09-03.log .
+2020-09-03 17:16:51,334 [INFO:LogManager] {get_today_log:86} [SYSTEM]:[Athiruj_admin] Close log file.
+2020-09-03 17:16:51,338 [INFO:LogManager] {get_today_log:87} [SYSTEM]:[Athiruj_admin] Got all today logs.
+2020-09-03 17:16:52,433 [INFO:LogManager] {__init__:11} [SYSTEM]:Set log variable
+2020-09-03 17:16:52,433 [INFO:LogManager] {__init__:22} [SYSTEM]:parent : C:\Users\athiruj\Desktop\img-processing\Docker\Flask\app
+2020-09-03 17:16:52,439 [INFO:LogManager] {get_today_log:50} [SYSTEM]:[Athiruj_admin] Prepair date data to query.
+2020-09-03 17:16:52,449 [INFO:LogManager] {get_today_log:66} [SYSTEM]:[Athiruj_admin] Read log 2020-09-03.log .
+2020-09-03 17:16:52,661 [INFO:LogManager] {get_today_log:86} [SYSTEM]:[Athiruj_admin] Close log file.
+2020-09-03 17:16:52,677 [INFO:LogManager] {get_today_log:87} [SYSTEM]:[Athiruj_admin] Got all today logs.
+2020-09-03 17:16:53,297 [INFO:LogManager] {__init__:11} [SYSTEM]:Set log variable
+2020-09-03 17:16:53,310 [INFO:LogManager] {__init__:22} [SYSTEM]:parent : C:\Users\athiruj\Desktop\img-processing\Docker\Flask\app
+2020-09-03 17:16:53,324 [INFO:LogManager] {get_today_log:50} [SYSTEM]:[Athiruj_admin] Prepair date data to query.
+2020-09-03 17:16:53,377 [INFO:LogManager] {get_today_log:66} [SYSTEM]:[Athiruj_admin] Read log 2020-09-03.log .
+2020-09-03 17:16:53,665 [INFO:LogManager] {get_today_log:86} [SYSTEM]:[Athiruj_admin] Close log file.
+2020-09-03 17:16:53,667 [INFO:LogManager] {get_today_log:87} [SYSTEM]:[Athiruj_admin] Got all today logs.
+2020-09-03 17:21:36,616 [INFO:LogManager] {__init__:11} [SYSTEM]:Set log variable
+2020-09-03 17:21:36,617 [INFO:LogManager] {__init__:22} [SYSTEM]:parent : C:\Users\athiruj\Desktop\img-processing\Docker\Flask\app
+2020-09-03 17:21:36,618 [INFO:LogManager] {get_today_log:50} [SYSTEM]:[Athiruj_admin] Prepair date data to query.
+2020-09-03 17:21:36,623 [INFO:LogManager] {get_today_log:66} [SYSTEM]:[Athiruj_admin] Read log 2020-09-03.log .
+2020-09-03 17:21:36,791 [INFO:LogManager] {get_today_log:86} [SYSTEM]:[Athiruj_admin] Close log file.
+2020-09-03 17:21:36,792 [INFO:LogManager] {get_today_log:87} [SYSTEM]:[Athiruj_admin] Got all today logs.
+2020-09-03 17:21:37,945 [INFO:LogManager] {__init__:11} [SYSTEM]:Set log variable
+2020-09-03 17:21:37,945 [INFO:LogManager] {__init__:22} [SYSTEM]:parent : C:\Users\athiruj\Desktop\img-processing\Docker\Flask\app
+2020-09-03 17:21:37,946 [INFO:LogManager] {get_today_log:50} [SYSTEM]:[Athiruj_admin] Prepair date data to query.
+2020-09-03 17:21:37,951 [INFO:LogManager] {get_today_log:66} [SYSTEM]:[Athiruj_admin] Read log 2020-09-03.log .
+2020-09-03 17:21:38,080 [INFO:LogManager] {get_today_log:86} [SYSTEM]:[Athiruj_admin] Close log file.
+2020-09-03 17:21:38,081 [INFO:LogManager] {get_today_log:87} [SYSTEM]:[Athiruj_admin] Got all today logs.
+2020-09-03 17:21:38,769 [INFO:LogManager] {__init__:11} [SYSTEM]:Set log variable
+2020-09-03 17:21:38,772 [INFO:LogManager] {__init__:22} [SYSTEM]:parent : C:\Users\athiruj\Desktop\img-processing\Docker\Flask\app
+2020-09-03 17:21:38,773 [INFO:LogManager] {get_today_log:50} [SYSTEM]:[Athiruj_admin] Prepair date data to query.
+2020-09-03 17:21:38,784 [INFO:LogManager] {get_today_log:66} [SYSTEM]:[Athiruj_admin] Read log 2020-09-03.log .
+2020-09-03 17:21:39,194 [INFO:LogManager] {get_today_log:86} [SYSTEM]:[Athiruj_admin] Close log file.
+2020-09-03 17:21:39,195 [INFO:LogManager] {get_today_log:87} [SYSTEM]:[Athiruj_admin] Got all today logs.
+2020-09-03 17:21:39,706 [INFO:LogManager] {__init__:11} [SYSTEM]:Set log variable
+2020-09-03 17:21:39,773 [INFO:LogManager] {__init__:22} [SYSTEM]:parent : C:\Users\athiruj\Desktop\img-processing\Docker\Flask\app
+2020-09-03 17:21:39,900 [INFO:LogManager] {get_today_log:50} [SYSTEM]:[Athiruj_admin] Prepair date data to query.
+2020-09-03 17:21:40,108 [INFO:LogManager] {get_today_log:66} [SYSTEM]:[Athiruj_admin] Read log 2020-09-03.log .
+2020-09-03 17:21:40,333 [INFO:LogManager] {get_today_log:86} [SYSTEM]:[Athiruj_admin] Close log file.
+2020-09-03 17:21:40,333 [INFO:LogManager] {get_today_log:87} [SYSTEM]:[Athiruj_admin] Got all today logs.
+2020-09-03 17:21:40,791 [INFO:LogManager] {__init__:11} [SYSTEM]:Set log variable
+2020-09-03 17:21:40,809 [INFO:LogManager] {__init__:22} [SYSTEM]:parent : C:\Users\athiruj\Desktop\img-processing\Docker\Flask\app
+2020-09-03 17:21:40,825 [INFO:LogManager] {get_today_log:50} [SYSTEM]:[Athiruj_admin] Prepair date data to query.
+2020-09-03 17:21:40,877 [INFO:LogManager] {get_today_log:66} [SYSTEM]:[Athiruj_admin] Read log 2020-09-03.log .
+2020-09-03 17:21:40,971 [INFO:LogManager] {get_today_log:86} [SYSTEM]:[Athiruj_admin] Close log file.
+2020-09-03 17:21:40,971 [INFO:LogManager] {get_today_log:87} [SYSTEM]:[Athiruj_admin] Got all today logs.
+2020-09-03 17:21:42,727 [INFO:LogManager] {__init__:11} [SYSTEM]:Set log variable
+2020-09-03 17:21:42,729 [INFO:LogManager] {__init__:22} [SYSTEM]:parent : C:\Users\athiruj\Desktop\img-processing\Docker\Flask\app
+2020-09-03 17:21:42,731 [INFO:LogManager] {get_today_log:50} [SYSTEM]:[Athiruj_admin] Prepair date data to query.
+2020-09-03 17:21:42,736 [INFO:LogManager] {get_today_log:66} [SYSTEM]:[Athiruj_admin] Read log 2020-09-03.log .
+2020-09-03 17:21:42,994 [INFO:LogManager] {get_today_log:86} [SYSTEM]:[Athiruj_admin] Close log file.
+2020-09-03 17:21:42,994 [INFO:LogManager] {get_today_log:87} [SYSTEM]:[Athiruj_admin] Got all today logs.
+2020-09-03 17:21:44,440 [INFO:LogManager] {__init__:11} [SYSTEM]:Set log variable
+2020-09-03 17:21:44,440 [INFO:LogManager] {__init__:22} [SYSTEM]:parent : C:\Users\athiruj\Desktop\img-processing\Docker\Flask\app
+2020-09-03 17:21:44,443 [INFO:LogManager] {get_today_log:50} [SYSTEM]:[Athiruj_admin] Prepair date data to query.
+2020-09-03 17:21:44,482 [INFO:LogManager] {get_today_log:66} [SYSTEM]:[Athiruj_admin] Read log 2020-09-03.log .
+2020-09-03 17:21:44,564 [INFO:LogManager] {get_today_log:86} [SYSTEM]:[Athiruj_admin] Close log file.
+2020-09-03 17:21:44,565 [INFO:LogManager] {get_today_log:87} [SYSTEM]:[Athiruj_admin] Got all today logs.
+2020-09-03 17:23:09,339 [INFO:LogManager] {__init__:11} [SYSTEM]:Set log variable
+2020-09-03 17:23:09,340 [INFO:LogManager] {__init__:22} [SYSTEM]:parent : C:\Users\athiruj\Desktop\img-processing\Docker\Flask\app
+2020-09-03 17:23:09,343 [INFO:LogManager] {get_today_log:50} [SYSTEM]:[Athiruj_admin] Prepair date data to query.
+2020-09-03 17:23:09,353 [INFO:LogManager] {get_today_log:66} [SYSTEM]:[Athiruj_admin] Read log 2020-09-03.log .
+2020-09-03 17:23:09,713 [INFO:LogManager] {get_today_log:86} [SYSTEM]:[Athiruj_admin] Close log file.
+2020-09-03 17:23:09,725 [INFO:LogManager] {get_today_log:87} [SYSTEM]:[Athiruj_admin] Got all today logs.
+2020-09-03 17:23:10,871 [INFO:LogManager] {__init__:11} [SYSTEM]:Set log variable
+2020-09-03 17:23:10,872 [INFO:LogManager] {__init__:22} [SYSTEM]:parent : C:\Users\athiruj\Desktop\img-processing\Docker\Flask\app
+2020-09-03 17:23:10,873 [INFO:LogManager] {get_today_log:50} [SYSTEM]:[Athiruj_admin] Prepair date data to query.
+2020-09-03 17:23:10,887 [INFO:LogManager] {get_today_log:66} [SYSTEM]:[Athiruj_admin] Read log 2020-09-03.log .
+2020-09-03 17:23:11,226 [INFO:LogManager] {get_today_log:86} [SYSTEM]:[Athiruj_admin] Close log file.
+2020-09-03 17:23:11,230 [INFO:LogManager] {get_today_log:87} [SYSTEM]:[Athiruj_admin] Got all today logs.
+2020-09-03 17:23:11,767 [INFO:LogManager] {__init__:11} [SYSTEM]:Set log variable
+2020-09-03 17:23:11,785 [INFO:LogManager] {__init__:22} [SYSTEM]:parent : C:\Users\athiruj\Desktop\img-processing\Docker\Flask\app
+2020-09-03 17:23:11,788 [INFO:LogManager] {get_today_log:50} [SYSTEM]:[Athiruj_admin] Prepair date data to query.
+2020-09-03 17:23:11,819 [INFO:LogManager] {get_today_log:66} [SYSTEM]:[Athiruj_admin] Read log 2020-09-03.log .
+2020-09-03 17:23:12,031 [INFO:LogManager] {get_today_log:86} [SYSTEM]:[Athiruj_admin] Close log file.
+2020-09-03 17:23:12,047 [INFO:LogManager] {get_today_log:87} [SYSTEM]:[Athiruj_admin] Got all today logs.
+2020-09-03 17:23:12,908 [INFO:LogManager] {__init__:11} [SYSTEM]:Set log variable
+2020-09-03 17:23:12,916 [INFO:LogManager] {__init__:22} [SYSTEM]:parent : C:\Users\athiruj\Desktop\img-processing\Docker\Flask\app
+2020-09-03 17:23:12,918 [INFO:LogManager] {get_today_log:50} [SYSTEM]:[Athiruj_admin] Prepair date data to query.
+2020-09-03 17:23:12,936 [INFO:LogManager] {get_today_log:66} [SYSTEM]:[Athiruj_admin] Read log 2020-09-03.log .
+2020-09-03 17:23:13,133 [INFO:LogManager] {get_today_log:86} [SYSTEM]:[Athiruj_admin] Close log file.
+2020-09-03 17:23:13,137 [INFO:LogManager] {get_today_log:87} [SYSTEM]:[Athiruj_admin] Got all today logs.
+2020-09-03 17:23:13,417 [INFO:LogManager] {__init__:11} [SYSTEM]:Set log variable
+2020-09-03 17:23:13,417 [INFO:LogManager] {__init__:22} [SYSTEM]:parent : C:\Users\athiruj\Desktop\img-processing\Docker\Flask\app
+2020-09-03 17:23:13,418 [INFO:LogManager] {get_today_log:50} [SYSTEM]:[Athiruj_admin] Prepair date data to query.
+2020-09-03 17:23:13,422 [INFO:LogManager] {get_today_log:66} [SYSTEM]:[Athiruj_admin] Read log 2020-09-03.log .
+2020-09-03 17:23:13,574 [INFO:LogManager] {get_today_log:86} [SYSTEM]:[Athiruj_admin] Close log file.
+2020-09-03 17:23:13,574 [INFO:LogManager] {get_today_log:87} [SYSTEM]:[Athiruj_admin] Got all today logs.
+2020-09-03 17:23:14,140 [INFO:LogManager] {__init__:11} [SYSTEM]:Set log variable
+2020-09-03 17:23:14,141 [INFO:LogManager] {__init__:22} [SYSTEM]:parent : C:\Users\athiruj\Desktop\img-processing\Docker\Flask\app
+2020-09-03 17:23:14,148 [INFO:LogManager] {get_today_log:50} [SYSTEM]:[Athiruj_admin] Prepair date data to query.
+2020-09-03 17:23:14,166 [INFO:LogManager] {get_today_log:66} [SYSTEM]:[Athiruj_admin] Read log 2020-09-03.log .
+2020-09-03 17:23:14,449 [INFO:LogManager] {get_today_log:86} [SYSTEM]:[Athiruj_admin] Close log file.
+2020-09-03 17:23:14,470 [INFO:LogManager] {get_today_log:87} [SYSTEM]:[Athiruj_admin] Got all today logs.
+2020-09-03 17:23:14,836 [INFO:LogManager] {__init__:11} [SYSTEM]:Set log variable
+2020-09-03 17:23:14,853 [INFO:LogManager] {__init__:22} [SYSTEM]:parent : C:\Users\athiruj\Desktop\img-processing\Docker\Flask\app
+2020-09-03 17:23:14,860 [INFO:LogManager] {get_today_log:50} [SYSTEM]:[Athiruj_admin] Prepair date data to query.
+2020-09-03 17:23:14,870 [INFO:LogManager] {get_today_log:66} [SYSTEM]:[Athiruj_admin] Read log 2020-09-03.log .
+2020-09-03 17:23:15,007 [INFO:LogManager] {get_today_log:86} [SYSTEM]:[Athiruj_admin] Close log file.
+2020-09-03 17:23:15,007 [INFO:LogManager] {get_today_log:87} [SYSTEM]:[Athiruj_admin] Got all today logs.
+2020-09-03 17:23:15,425 [INFO:LogManager] {__init__:11} [SYSTEM]:Set log variable
+2020-09-03 17:23:15,434 [INFO:LogManager] {__init__:22} [SYSTEM]:parent : C:\Users\athiruj\Desktop\img-processing\Docker\Flask\app
+2020-09-03 17:23:15,434 [INFO:LogManager] {get_today_log:50} [SYSTEM]:[Athiruj_admin] Prepair date data to query.
+2020-09-03 17:23:15,440 [INFO:LogManager] {get_today_log:66} [SYSTEM]:[Athiruj_admin] Read log 2020-09-03.log .
+2020-09-03 17:23:15,742 [INFO:LogManager] {get_today_log:86} [SYSTEM]:[Athiruj_admin] Close log file.
+2020-09-03 17:23:15,773 [INFO:LogManager] {get_today_log:87} [SYSTEM]:[Athiruj_admin] Got all today logs.
+2020-09-03 17:23:16,376 [INFO:LogManager] {__init__:11} [SYSTEM]:Set log variable
+2020-09-03 17:23:16,384 [INFO:LogManager] {__init__:22} [SYSTEM]:parent : C:\Users\athiruj\Desktop\img-processing\Docker\Flask\app
+2020-09-03 17:23:16,386 [INFO:LogManager] {get_today_log:50} [SYSTEM]:[Athiruj_admin] Prepair date data to query.
+2020-09-03 17:23:16,446 [INFO:LogManager] {get_today_log:66} [SYSTEM]:[Athiruj_admin] Read log 2020-09-03.log .
+2020-09-03 17:23:16,657 [INFO:LogManager] {get_today_log:86} [SYSTEM]:[Athiruj_admin] Close log file.
+2020-09-03 17:23:16,673 [INFO:LogManager] {get_today_log:87} [SYSTEM]:[Athiruj_admin] Got all today logs.
+2020-09-03 17:24:15,988 [INFO:LogManager] {__init__:11} [SYSTEM]:Set log variable
+2020-09-03 17:24:15,992 [INFO:LogManager] {__init__:22} [SYSTEM]:parent : C:\Users\athiruj\Desktop\img-processing\Docker\Flask\app
+2020-09-03 17:24:15,993 [INFO:LogManager] {get_today_log:50} [SYSTEM]:[Athiruj_admin] Prepair date data to query.
+2020-09-03 17:24:16,004 [INFO:LogManager] {get_today_log:66} [SYSTEM]:[Athiruj_admin] Read log 2020-09-03.log .
+2020-09-03 17:24:16,534 [INFO:LogManager] {get_today_log:86} [SYSTEM]:[Athiruj_admin] Close log file.
+2020-09-03 17:24:16,534 [INFO:LogManager] {get_today_log:87} [SYSTEM]:[Athiruj_admin] Got all today logs.
+2020-09-03 17:24:17,004 [INFO:LogManager] {__init__:11} [SYSTEM]:Set log variable
+2020-09-03 17:24:17,005 [INFO:LogManager] {__init__:22} [SYSTEM]:parent : C:\Users\athiruj\Desktop\img-processing\Docker\Flask\app
+2020-09-03 17:24:17,005 [INFO:LogManager] {get_today_log:50} [SYSTEM]:[Athiruj_admin] Prepair date data to query.
+2020-09-03 17:24:17,010 [INFO:LogManager] {get_today_log:66} [SYSTEM]:[Athiruj_admin] Read log 2020-09-03.log .
+2020-09-03 17:24:17,305 [INFO:LogManager] {get_today_log:86} [SYSTEM]:[Athiruj_admin] Close log file.
+2020-09-03 17:24:17,309 [INFO:LogManager] {get_today_log:87} [SYSTEM]:[Athiruj_admin] Got all today logs.
+2020-09-03 17:24:18,512 [INFO:LogManager] {__init__:11} [SYSTEM]:Set log variable
+2020-09-03 17:24:18,513 [INFO:LogManager] {__init__:22} [SYSTEM]:parent : C:\Users\athiruj\Desktop\img-processing\Docker\Flask\app
+2020-09-03 17:24:18,516 [INFO:LogManager] {get_today_log:50} [SYSTEM]:[Athiruj_admin] Prepair date data to query.
+2020-09-03 17:24:18,539 [INFO:LogManager] {get_today_log:66} [SYSTEM]:[Athiruj_admin] Read log 2020-09-03.log .
+2020-09-03 17:24:18,760 [INFO:LogManager] {get_today_log:86} [SYSTEM]:[Athiruj_admin] Close log file.
+2020-09-03 17:24:18,761 [INFO:LogManager] {get_today_log:87} [SYSTEM]:[Athiruj_admin] Got all today logs.
+2020-09-03 17:24:19,305 [INFO:LogManager] {__init__:11} [SYSTEM]:Set log variable
+2020-09-03 17:24:19,319 [INFO:LogManager] {__init__:22} [SYSTEM]:parent : C:\Users\athiruj\Desktop\img-processing\Docker\Flask\app
+2020-09-03 17:24:19,323 [INFO:LogManager] {get_today_log:50} [SYSTEM]:[Athiruj_admin] Prepair date data to query.
+2020-09-03 17:24:19,331 [INFO:LogManager] {get_today_log:66} [SYSTEM]:[Athiruj_admin] Read log 2020-09-03.log .
+2020-09-03 17:24:19,503 [INFO:LogManager] {get_today_log:86} [SYSTEM]:[Athiruj_admin] Close log file.
+2020-09-03 17:24:19,504 [INFO:LogManager] {get_today_log:87} [SYSTEM]:[Athiruj_admin] Got all today logs.
+2020-09-03 17:24:20,117 [INFO:LogManager] {__init__:11} [SYSTEM]:Set log variable
+2020-09-03 17:24:20,124 [INFO:LogManager] {__init__:22} [SYSTEM]:parent : C:\Users\athiruj\Desktop\img-processing\Docker\Flask\app
+2020-09-03 17:24:20,125 [INFO:LogManager] {get_today_log:50} [SYSTEM]:[Athiruj_admin] Prepair date data to query.
+2020-09-03 17:24:20,144 [INFO:LogManager] {get_today_log:66} [SYSTEM]:[Athiruj_admin] Read log 2020-09-03.log .
+2020-09-03 17:24:20,551 [INFO:LogManager] {get_today_log:86} [SYSTEM]:[Athiruj_admin] Close log file.
+2020-09-03 17:24:20,556 [INFO:LogManager] {get_today_log:87} [SYSTEM]:[Athiruj_admin] Got all today logs.
+2020-09-03 17:24:20,901 [INFO:LogManager] {__init__:11} [SYSTEM]:Set log variable
+2020-09-03 17:24:20,903 [INFO:LogManager] {__init__:22} [SYSTEM]:parent : C:\Users\athiruj\Desktop\img-processing\Docker\Flask\app
+2020-09-03 17:24:20,904 [INFO:LogManager] {get_today_log:50} [SYSTEM]:[Athiruj_admin] Prepair date data to query.
+2020-09-03 17:24:20,909 [INFO:LogManager] {get_today_log:66} [SYSTEM]:[Athiruj_admin] Read log 2020-09-03.log .
+2020-09-03 17:24:21,126 [INFO:LogManager] {get_today_log:86} [SYSTEM]:[Athiruj_admin] Close log file.
+2020-09-03 17:24:21,131 [INFO:LogManager] {get_today_log:87} [SYSTEM]:[Athiruj_admin] Got all today logs.
+2020-09-03 17:24:21,885 [INFO:LogManager] {__init__:11} [SYSTEM]:Set log variable
+2020-09-03 17:24:21,890 [INFO:LogManager] {__init__:22} [SYSTEM]:parent : C:\Users\athiruj\Desktop\img-processing\Docker\Flask\app
+2020-09-03 17:24:21,891 [INFO:LogManager] {get_today_log:50} [SYSTEM]:[Athiruj_admin] Prepair date data to query.
+2020-09-03 17:24:21,899 [INFO:LogManager] {get_today_log:66} [SYSTEM]:[Athiruj_admin] Read log 2020-09-03.log .
+2020-09-03 17:24:22,253 [INFO:LogManager] {get_today_log:86} [SYSTEM]:[Athiruj_admin] Close log file.
+2020-09-03 17:24:22,255 [INFO:LogManager] {get_today_log:87} [SYSTEM]:[Athiruj_admin] Got all today logs.
+2020-09-03 17:24:30,116 [INFO:LogManager] {__init__:11} [SYSTEM]:Set log variable
+2020-09-03 17:24:30,116 [INFO:LogManager] {__init__:22} [SYSTEM]:parent : C:\Users\athiruj\Desktop\img-processing\Docker\Flask\app
+2020-09-03 17:24:30,117 [INFO:LogManager] {get_today_log:50} [SYSTEM]:[Athiruj_admin] Prepair date data to query.
+2020-09-03 17:24:30,122 [INFO:LogManager] {get_today_log:66} [SYSTEM]:[Athiruj_admin] Read log 2020-09-03.log .
+2020-09-03 17:24:30,304 [INFO:LogManager] {get_today_log:86} [SYSTEM]:[Athiruj_admin] Close log file.
+2020-09-03 17:24:30,305 [INFO:LogManager] {get_today_log:87} [SYSTEM]:[Athiruj_admin] Got all today logs.
+2020-09-03 17:24:31,408 [INFO:LogManager] {__init__:11} [SYSTEM]:Set log variable
+2020-09-03 17:24:31,410 [INFO:LogManager] {__init__:22} [SYSTEM]:parent : C:\Users\athiruj\Desktop\img-processing\Docker\Flask\app
+2020-09-03 17:24:31,412 [INFO:LogManager] {get_today_log:50} [SYSTEM]:[Athiruj_admin] Prepair date data to query.
+2020-09-03 17:24:31,417 [INFO:LogManager] {get_today_log:66} [SYSTEM]:[Athiruj_admin] Read log 2020-09-03.log .
+2020-09-03 17:24:31,587 [INFO:LogManager] {get_today_log:86} [SYSTEM]:[Athiruj_admin] Close log file.
+2020-09-03 17:24:31,587 [INFO:LogManager] {get_today_log:87} [SYSTEM]:[Athiruj_admin] Got all today logs.
+2020-09-03 17:24:32,606 [INFO:LogManager] {__init__:11} [SYSTEM]:Set log variable
+2020-09-03 17:24:32,606 [INFO:LogManager] {__init__:22} [SYSTEM]:parent : C:\Users\athiruj\Desktop\img-processing\Docker\Flask\app
+2020-09-03 17:24:32,607 [INFO:LogManager] {get_today_log:50} [SYSTEM]:[Athiruj_admin] Prepair date data to query.
+2020-09-03 17:24:32,617 [INFO:LogManager] {get_today_log:66} [SYSTEM]:[Athiruj_admin] Read log 2020-09-03.log .
+2020-09-03 17:24:32,772 [INFO:LogManager] {get_today_log:86} [SYSTEM]:[Athiruj_admin] Close log file.
+2020-09-03 17:24:32,772 [INFO:LogManager] {get_today_log:87} [SYSTEM]:[Athiruj_admin] Got all today logs.
+2020-09-03 17:24:33,400 [INFO:LogManager] {__init__:11} [SYSTEM]:Set log variable
+2020-09-03 17:24:33,404 [INFO:LogManager] {__init__:22} [SYSTEM]:parent : C:\Users\athiruj\Desktop\img-processing\Docker\Flask\app
+2020-09-03 17:24:33,406 [INFO:LogManager] {get_today_log:50} [SYSTEM]:[Athiruj_admin] Prepair date data to query.
+2020-09-03 17:24:33,419 [INFO:LogManager] {get_today_log:66} [SYSTEM]:[Athiruj_admin] Read log 2020-09-03.log .
+2020-09-03 17:24:33,695 [INFO:LogManager] {get_today_log:86} [SYSTEM]:[Athiruj_admin] Close log file.
+2020-09-03 17:24:33,701 [INFO:LogManager] {get_today_log:87} [SYSTEM]:[Athiruj_admin] Got all today logs.
+2020-09-03 17:24:34,312 [INFO:LogManager] {__init__:11} [SYSTEM]:Set log variable
+2020-09-03 17:24:34,315 [INFO:LogManager] {__init__:22} [SYSTEM]:parent : C:\Users\athiruj\Desktop\img-processing\Docker\Flask\app
+2020-09-03 17:24:34,316 [INFO:LogManager] {get_today_log:50} [SYSTEM]:[Athiruj_admin] Prepair date data to query.
+2020-09-03 17:24:34,330 [INFO:LogManager] {get_today_log:66} [SYSTEM]:[Athiruj_admin] Read log 2020-09-03.log .
+2020-09-03 17:24:34,553 [INFO:LogManager] {get_today_log:86} [SYSTEM]:[Athiruj_admin] Close log file.
+2020-09-03 17:24:34,555 [INFO:LogManager] {get_today_log:87} [SYSTEM]:[Athiruj_admin] Got all today logs.
+2020-09-03 17:24:35,202 [INFO:LogManager] {__init__:11} [SYSTEM]:Set log variable
+2020-09-03 17:24:35,207 [INFO:LogManager] {__init__:22} [SYSTEM]:parent : C:\Users\athiruj\Desktop\img-processing\Docker\Flask\app
+2020-09-03 17:24:35,213 [INFO:LogManager] {get_today_log:50} [SYSTEM]:[Athiruj_admin] Prepair date data to query.
+2020-09-03 17:24:35,242 [INFO:LogManager] {get_today_log:66} [SYSTEM]:[Athiruj_admin] Read log 2020-09-03.log .
+2020-09-03 17:24:35,432 [INFO:LogManager] {get_today_log:86} [SYSTEM]:[Athiruj_admin] Close log file.
+2020-09-03 17:24:35,434 [INFO:LogManager] {get_today_log:87} [SYSTEM]:[Athiruj_admin] Got all today logs.
+2020-09-03 17:24:36,144 [INFO:LogManager] {__init__:11} [SYSTEM]:Set log variable
+2020-09-03 17:24:36,155 [INFO:LogManager] {__init__:22} [SYSTEM]:parent : C:\Users\athiruj\Desktop\img-processing\Docker\Flask\app
+2020-09-03 17:24:36,156 [INFO:LogManager] {get_today_log:50} [SYSTEM]:[Athiruj_admin] Prepair date data to query.
+2020-09-03 17:24:36,185 [INFO:LogManager] {get_today_log:66} [SYSTEM]:[Athiruj_admin] Read log 2020-09-03.log .
+2020-09-03 17:24:36,417 [INFO:LogManager] {get_today_log:86} [SYSTEM]:[Athiruj_admin] Close log file.
+2020-09-03 17:24:36,420 [INFO:LogManager] {get_today_log:87} [SYSTEM]:[Athiruj_admin] Got all today logs.
+2020-09-03 17:24:37,188 [INFO:LogManager] {__init__:11} [SYSTEM]:Set log variable
+2020-09-03 17:24:37,191 [INFO:LogManager] {__init__:22} [SYSTEM]:parent : C:\Users\athiruj\Desktop\img-processing\Docker\Flask\app
+2020-09-03 17:24:37,197 [INFO:LogManager] {get_today_log:50} [SYSTEM]:[Athiruj_admin] Prepair date data to query.
+2020-09-03 17:24:37,207 [INFO:LogManager] {get_today_log:66} [SYSTEM]:[Athiruj_admin] Read log 2020-09-03.log .
+2020-09-03 17:24:37,666 [INFO:LogManager] {get_today_log:86} [SYSTEM]:[Athiruj_admin] Close log file.
+2020-09-03 17:24:37,721 [INFO:LogManager] {get_today_log:87} [SYSTEM]:[Athiruj_admin] Got all today logs.
+2020-09-03 17:24:38,474 [INFO:LogManager] {__init__:11} [SYSTEM]:Set log variable
+2020-09-03 17:24:38,505 [INFO:LogManager] {__init__:22} [SYSTEM]:parent : C:\Users\athiruj\Desktop\img-processing\Docker\Flask\app
+2020-09-03 17:24:38,514 [INFO:LogManager] {get_today_log:50} [SYSTEM]:[Athiruj_admin] Prepair date data to query.
+2020-09-03 17:24:38,536 [INFO:LogManager] {get_today_log:66} [SYSTEM]:[Athiruj_admin] Read log 2020-09-03.log .
+2020-09-03 17:24:38,792 [INFO:LogManager] {get_today_log:86} [SYSTEM]:[Athiruj_admin] Close log file.
+2020-09-03 17:24:38,803 [INFO:LogManager] {get_today_log:87} [SYSTEM]:[Athiruj_admin] Got all today logs.
+2020-09-03 17:24:39,423 [INFO:LogManager] {__init__:11} [SYSTEM]:Set log variable
+2020-09-03 17:24:39,427 [INFO:LogManager] {__init__:22} [SYSTEM]:parent : C:\Users\athiruj\Desktop\img-processing\Docker\Flask\app
+2020-09-03 17:24:39,428 [INFO:LogManager] {get_today_log:50} [SYSTEM]:[Athiruj_admin] Prepair date data to query.
+2020-09-03 17:24:39,434 [INFO:LogManager] {get_today_log:66} [SYSTEM]:[Athiruj_admin] Read log 2020-09-03.log .
+2020-09-03 17:24:39,664 [INFO:LogManager] {get_today_log:86} [SYSTEM]:[Athiruj_admin] Close log file.
+2020-09-03 17:24:39,673 [INFO:LogManager] {get_today_log:87} [SYSTEM]:[Athiruj_admin] Got all today logs.
+2020-09-03 17:24:40,187 [INFO:LogManager] {__init__:11} [SYSTEM]:Set log variable
+2020-09-03 17:24:40,206 [INFO:LogManager] {__init__:22} [SYSTEM]:parent : C:\Users\athiruj\Desktop\img-processing\Docker\Flask\app
+2020-09-03 17:24:40,212 [INFO:LogManager] {get_today_log:50} [SYSTEM]:[Athiruj_admin] Prepair date data to query.
+2020-09-03 17:24:40,291 [INFO:LogManager] {get_today_log:66} [SYSTEM]:[Athiruj_admin] Read log 2020-09-03.log .
+2020-09-03 17:24:40,604 [INFO:LogManager] {get_today_log:86} [SYSTEM]:[Athiruj_admin] Close log file.
+2020-09-03 17:24:40,607 [INFO:LogManager] {get_today_log:87} [SYSTEM]:[Athiruj_admin] Got all today logs.
+2020-09-03 17:24:41,331 [INFO:LogManager] {__init__:11} [SYSTEM]:Set log variable
+2020-09-03 17:24:41,338 [INFO:LogManager] {__init__:22} [SYSTEM]:parent : C:\Users\athiruj\Desktop\img-processing\Docker\Flask\app
+2020-09-03 17:24:41,342 [INFO:LogManager] {get_today_log:50} [SYSTEM]:[Athiruj_admin] Prepair date data to query.
+2020-09-03 17:24:41,353 [INFO:LogManager] {get_today_log:66} [SYSTEM]:[Athiruj_admin] Read log 2020-09-03.log .
+2020-09-03 17:24:41,652 [INFO:LogManager] {get_today_log:86} [SYSTEM]:[Athiruj_admin] Close log file.
+2020-09-03 17:24:41,656 [INFO:LogManager] {get_today_log:87} [SYSTEM]:[Athiruj_admin] Got all today logs.
+2020-09-03 17:24:41,925 [INFO:LogManager] {__init__:11} [SYSTEM]:Set log variable
+2020-09-03 17:24:41,930 [INFO:LogManager] {__init__:22} [SYSTEM]:parent : C:\Users\athiruj\Desktop\img-processing\Docker\Flask\app
+2020-09-03 17:24:41,931 [INFO:LogManager] {get_today_log:50} [SYSTEM]:[Athiruj_admin] Prepair date data to query.
+2020-09-03 17:24:41,936 [INFO:LogManager] {get_today_log:66} [SYSTEM]:[Athiruj_admin] Read log 2020-09-03.log .
+2020-09-03 17:24:42,085 [INFO:LogManager] {get_today_log:86} [SYSTEM]:[Athiruj_admin] Close log file.
+2020-09-03 17:24:42,098 [INFO:LogManager] {get_today_log:87} [SYSTEM]:[Athiruj_admin] Got all today logs.
+2020-09-03 17:24:42,851 [INFO:LogManager] {__init__:11} [SYSTEM]:Set log variable
+2020-09-03 17:24:42,852 [INFO:LogManager] {__init__:22} [SYSTEM]:parent : C:\Users\athiruj\Desktop\img-processing\Docker\Flask\app
+2020-09-03 17:24:42,854 [INFO:LogManager] {get_today_log:50} [SYSTEM]:[Athiruj_admin] Prepair date data to query.
+2020-09-03 17:24:42,868 [INFO:LogManager] {get_today_log:66} [SYSTEM]:[Athiruj_admin] Read log 2020-09-03.log .
+2020-09-03 17:24:43,209 [INFO:LogManager] {get_today_log:86} [SYSTEM]:[Athiruj_admin] Close log file.
+2020-09-03 17:24:43,211 [INFO:LogManager] {get_today_log:87} [SYSTEM]:[Athiruj_admin] Got all today logs.
+2020-09-03 17:24:43,798 [INFO:LogManager] {__init__:11} [SYSTEM]:Set log variable
+2020-09-03 17:24:43,819 [INFO:LogManager] {__init__:22} [SYSTEM]:parent : C:\Users\athiruj\Desktop\img-processing\Docker\Flask\app
+2020-09-03 17:24:43,828 [INFO:LogManager] {get_today_log:50} [SYSTEM]:[Athiruj_admin] Prepair date data to query.
+2020-09-03 17:24:43,879 [INFO:LogManager] {get_today_log:66} [SYSTEM]:[Athiruj_admin] Read log 2020-09-03.log .
+2020-09-03 17:24:44,119 [INFO:LogManager] {get_today_log:86} [SYSTEM]:[Athiruj_admin] Close log file.
+2020-09-03 17:24:44,133 [INFO:LogManager] {get_today_log:87} [SYSTEM]:[Athiruj_admin] Got all today logs.
+2020-09-03 17:24:44,777 [INFO:LogManager] {__init__:11} [SYSTEM]:Set log variable
+2020-09-03 17:24:44,778 [INFO:LogManager] {__init__:22} [SYSTEM]:parent : C:\Users\athiruj\Desktop\img-processing\Docker\Flask\app
+2020-09-03 17:24:44,781 [INFO:LogManager] {get_today_log:50} [SYSTEM]:[Athiruj_admin] Prepair date data to query.
+2020-09-03 17:24:44,786 [INFO:LogManager] {get_today_log:66} [SYSTEM]:[Athiruj_admin] Read log 2020-09-03.log .
+2020-09-03 17:24:44,996 [INFO:LogManager] {get_today_log:86} [SYSTEM]:[Athiruj_admin] Close log file.
+2020-09-03 17:24:44,998 [INFO:LogManager] {get_today_log:87} [SYSTEM]:[Athiruj_admin] Got all today logs.
+2020-09-03 17:26:00,942 [INFO:LogManager] {__init__:11} [SYSTEM]:Set log variable
+2020-09-03 17:26:00,951 [INFO:LogManager] {__init__:22} [SYSTEM]:parent : C:\Users\athiruj\Desktop\img-processing\Docker\Flask\app
+2020-09-03 17:26:00,952 [INFO:LogManager] {get_today_log:50} [SYSTEM]:[Athiruj_admin] Prepair date data to query.
+2020-09-03 17:26:00,989 [INFO:LogManager] {get_today_log:66} [SYSTEM]:[Athiruj_admin] Read log 2020-09-03.log .
+2020-09-03 17:26:01,187 [INFO:LogManager] {get_today_log:86} [SYSTEM]:[Athiruj_admin] Close log file.
+2020-09-03 17:26:01,187 [INFO:LogManager] {get_today_log:87} [SYSTEM]:[Athiruj_admin] Got all today logs.
+2020-09-03 17:26:25,941 [INFO:LogManager] {__init__:11} [SYSTEM]:Set log variable
+2020-09-03 17:26:25,964 [INFO:LogManager] {__init__:22} [SYSTEM]:parent : C:\Users\athiruj\Desktop\img-processing\Docker\Flask\app
+2020-09-03 17:26:25,982 [INFO:LogManager] {get_today_log:50} [SYSTEM]:[Athiruj_admin] Prepair date data to query.
+2020-09-03 17:26:26,218 [INFO:LogManager] {get_today_log:66} [SYSTEM]:[Athiruj_admin] Read log 2020-09-03.log .
+2020-09-03 17:26:26,615 [INFO:LogManager] {get_today_log:86} [SYSTEM]:[Athiruj_admin] Close log file.
+2020-09-03 17:26:26,651 [INFO:LogManager] {get_today_log:87} [SYSTEM]:[Athiruj_admin] Got all today logs.
+2020-09-03 17:27:49,251 [INFO:LogManager] {__init__:11} [SYSTEM]:Set log variable
+2020-09-03 17:27:49,318 [INFO:LogManager] {__init__:22} [SYSTEM]:parent : C:\Users\athiruj\Desktop\img-processing\Docker\Flask\app
+2020-09-03 17:27:49,359 [INFO:LogManager] {get_today_log:50} [SYSTEM]:[Athiruj_admin] Prepair date data to query.
+2020-09-03 17:27:49,395 [INFO:LogManager] {get_today_log:66} [SYSTEM]:[Athiruj_admin] Read log 2020-09-03.log .
+2020-09-03 17:27:49,587 [INFO:LogManager] {get_today_log:86} [SYSTEM]:[Athiruj_admin] Close log file.
+2020-09-03 17:27:49,587 [INFO:LogManager] {get_today_log:87} [SYSTEM]:[Athiruj_admin] Got all today logs.
+2020-09-03 17:28:00,654 [INFO:LogManager] {__init__:11} [SYSTEM]:Set log variable
+2020-09-03 17:28:00,677 [INFO:LogManager] {__init__:22} [SYSTEM]:parent : C:\Users\athiruj\Desktop\img-processing\Docker\Flask\app
+2020-09-03 17:28:00,678 [INFO:LogManager] {get_today_log:50} [SYSTEM]:[Athiruj_admin] Prepair date data to query.
+2020-09-03 17:28:00,722 [INFO:LogManager] {get_today_log:66} [SYSTEM]:[Athiruj_admin] Read log 2020-09-03.log .
+2020-09-03 17:28:01,196 [INFO:LogManager] {get_today_log:86} [SYSTEM]:[Athiruj_admin] Close log file.
+2020-09-03 17:28:01,228 [INFO:LogManager] {get_today_log:87} [SYSTEM]:[Athiruj_admin] Got all today logs.
+2020-09-03 17:28:20,411 [INFO:LogManager] {__init__:11} [SYSTEM]:Set log variable
+2020-09-03 17:28:20,441 [INFO:LogManager] {__init__:22} [SYSTEM]:parent : C:\Users\athiruj\Desktop\img-processing\Docker\Flask\app
+2020-09-03 17:28:20,456 [INFO:LogManager] {get_today_log:50} [SYSTEM]:[Athiruj_admin] Prepair date data to query.
+2020-09-03 17:28:20,510 [INFO:LogManager] {get_today_log:66} [SYSTEM]:[Athiruj_admin] Read log 2020-09-03.log .
+2020-09-03 17:28:20,812 [INFO:LogManager] {get_today_log:86} [SYSTEM]:[Athiruj_admin] Close log file.
+2020-09-03 17:28:20,828 [INFO:LogManager] {get_today_log:87} [SYSTEM]:[Athiruj_admin] Got all today logs.
+2020-09-03 17:28:46,734 [INFO:LogManager] {__init__:11} [SYSTEM]:Set log variable
+2020-09-03 17:28:46,747 [INFO:LogManager] {__init__:22} [SYSTEM]:parent : C:\Users\athiruj\Desktop\img-processing\Docker\Flask\app
+2020-09-03 17:28:46,771 [INFO:LogManager] {get_today_log:50} [SYSTEM]:[Athiruj_admin] Prepair date data to query.
+2020-09-03 17:28:46,800 [INFO:LogManager] {get_today_log:66} [SYSTEM]:[Athiruj_admin] Read log 2020-09-03.log .
+2020-09-03 17:28:47,010 [INFO:LogManager] {get_today_log:86} [SYSTEM]:[Athiruj_admin] Close log file.
+2020-09-03 17:28:47,010 [INFO:LogManager] {get_today_log:87} [SYSTEM]:[Athiruj_admin] Got all today logs.
+2020-09-03 17:28:55,045 [INFO:LogManager] {__init__:11} [SYSTEM]:Set log variable
+2020-09-03 17:28:55,047 [INFO:LogManager] {__init__:22} [SYSTEM]:parent : C:\Users\athiruj\Desktop\img-processing\Docker\Flask\app
+2020-09-03 17:28:55,049 [INFO:LogManager] {get_today_log:50} [SYSTEM]:[Athiruj_admin] Prepair date data to query.
+2020-09-03 17:28:55,054 [INFO:LogManager] {get_today_log:66} [SYSTEM]:[Athiruj_admin] Read log 2020-09-03.log .
+2020-09-03 17:28:55,315 [INFO:LogManager] {get_today_log:86} [SYSTEM]:[Athiruj_admin] Close log file.
+2020-09-03 17:28:55,315 [INFO:LogManager] {get_today_log:87} [SYSTEM]:[Athiruj_admin] Got all today logs.
+2020-09-03 17:29:03,869 [INFO:LogManager] {__init__:11} [SYSTEM]:Set log variable
+2020-09-03 17:29:03,869 [INFO:LogManager] {__init__:22} [SYSTEM]:parent : C:\Users\athiruj\Desktop\img-processing\Docker\Flask\app
+2020-09-03 17:29:03,870 [INFO:LogManager] {get_today_log:50} [SYSTEM]:[Athiruj_admin] Prepair date data to query.
+2020-09-03 17:29:03,874 [INFO:LogManager] {get_today_log:66} [SYSTEM]:[Athiruj_admin] Read log 2020-09-03.log .
+2020-09-03 17:29:03,958 [INFO:LogManager] {get_today_log:86} [SYSTEM]:[Athiruj_admin] Close log file.
+2020-09-03 17:29:03,959 [INFO:LogManager] {get_today_log:87} [SYSTEM]:[Athiruj_admin] Got all today logs.
+2020-09-03 17:29:28,805 [INFO:LogManager] {__init__:11} [SYSTEM]:Set log variable
+2020-09-03 17:29:28,807 [INFO:LogManager] {__init__:22} [SYSTEM]:parent : C:\Users\athiruj\Desktop\img-processing\Docker\Flask\app
+2020-09-03 17:29:28,810 [INFO:LogManager] {get_today_log:50} [SYSTEM]:[Athiruj_admin] Prepair date data to query.
+2020-09-03 17:29:28,816 [INFO:LogManager] {get_today_log:66} [SYSTEM]:[Athiruj_admin] Read log 2020-09-03.log .
+2020-09-03 17:29:28,945 [INFO:LogManager] {get_today_log:86} [SYSTEM]:[Athiruj_admin] Close log file.
+2020-09-03 17:29:28,947 [INFO:LogManager] {get_today_log:87} [SYSTEM]:[Athiruj_admin] Got all today logs.
+2020-09-03 17:29:40,608 [INFO:LogManager] {__init__:11} [SYSTEM]:Set log variable
+2020-09-03 17:29:40,612 [INFO:LogManager] {__init__:22} [SYSTEM]:parent : C:\Users\athiruj\Desktop\img-processing\Docker\Flask\app
+2020-09-03 17:29:40,612 [INFO:LogManager] {get_today_log:50} [SYSTEM]:[Athiruj_admin] Prepair date data to query.
+2020-09-03 17:29:40,626 [INFO:LogManager] {get_today_log:66} [SYSTEM]:[Athiruj_admin] Read log 2020-09-03.log .
+2020-09-03 17:29:40,736 [INFO:LogManager] {get_today_log:86} [SYSTEM]:[Athiruj_admin] Close log file.
+2020-09-03 17:29:40,737 [INFO:LogManager] {get_today_log:87} [SYSTEM]:[Athiruj_admin] Got all today logs.
+2020-09-03 17:29:47,121 [INFO:LogManager] {__init__:11} [SYSTEM]:Set log variable
+2020-09-03 17:29:47,121 [INFO:LogManager] {__init__:22} [SYSTEM]:parent : C:\Users\athiruj\Desktop\img-processing\Docker\Flask\app
+2020-09-03 17:29:47,122 [INFO:LogManager] {get_today_log:50} [SYSTEM]:[Athiruj_admin] Prepair date data to query.
+2020-09-03 17:29:47,126 [INFO:LogManager] {get_today_log:66} [SYSTEM]:[Athiruj_admin] Read log 2020-09-03.log .
+2020-09-03 17:29:47,214 [INFO:LogManager] {get_today_log:86} [SYSTEM]:[Athiruj_admin] Close log file.
+2020-09-03 17:29:47,214 [INFO:LogManager] {get_today_log:87} [SYSTEM]:[Athiruj_admin] Got all today logs.
+2020-09-03 17:29:49,551 [INFO:LogManager] {__init__:11} [SYSTEM]:Set log variable
+2020-09-03 17:29:49,552 [INFO:LogManager] {__init__:22} [SYSTEM]:parent : C:\Users\athiruj\Desktop\img-processing\Docker\Flask\app
+2020-09-03 17:29:49,552 [INFO:LogManager] {get_today_log:50} [SYSTEM]:[Athiruj_admin] Prepair date data to query.
+2020-09-03 17:29:49,557 [INFO:LogManager] {get_today_log:66} [SYSTEM]:[Athiruj_admin] Read log 2020-09-03.log .
+2020-09-03 17:29:49,668 [INFO:LogManager] {get_today_log:86} [SYSTEM]:[Athiruj_admin] Close log file.
+2020-09-03 17:29:49,668 [INFO:LogManager] {get_today_log:87} [SYSTEM]:[Athiruj_admin] Got all today logs.
+2020-09-03 17:30:21,031 [INFO:LogManager] {__init__:11} [SYSTEM]:Set log variable
+2020-09-03 17:30:21,037 [INFO:LogManager] {__init__:22} [SYSTEM]:parent : C:\Users\athiruj\Desktop\img-processing\Docker\Flask\app
+2020-09-03 17:30:21,038 [INFO:LogManager] {get_today_log:50} [SYSTEM]:[Athiruj_admin] Prepair date data to query.
+2020-09-03 17:30:21,048 [INFO:LogManager] {get_today_log:66} [SYSTEM]:[Athiruj_admin] Read log 2020-09-03.log .
+2020-09-03 17:30:21,133 [INFO:LogManager] {get_today_log:86} [SYSTEM]:[Athiruj_admin] Close log file.
+2020-09-03 17:30:21,134 [INFO:LogManager] {get_today_log:87} [SYSTEM]:[Athiruj_admin] Got all today logs.
+2020-09-03 17:30:23,866 [INFO:LogManager] {__init__:11} [SYSTEM]:Set log variable
+2020-09-03 17:30:23,867 [INFO:LogManager] {__init__:22} [SYSTEM]:parent : C:\Users\athiruj\Desktop\img-processing\Docker\Flask\app
+2020-09-03 17:30:23,867 [INFO:LogManager] {get_today_log:50} [SYSTEM]:[Athiruj_admin] Prepair date data to query.
+2020-09-03 17:30:23,870 [INFO:LogManager] {get_today_log:66} [SYSTEM]:[Athiruj_admin] Read log 2020-09-03.log .
+2020-09-03 17:30:23,948 [INFO:LogManager] {get_today_log:86} [SYSTEM]:[Athiruj_admin] Close log file.
+2020-09-03 17:30:23,948 [INFO:LogManager] {get_today_log:87} [SYSTEM]:[Athiruj_admin] Got all today logs.
+2020-09-03 17:30:24,581 [INFO:LogManager] {__init__:11} [SYSTEM]:Set log variable
+2020-09-03 17:30:24,582 [INFO:LogManager] {__init__:22} [SYSTEM]:parent : C:\Users\athiruj\Desktop\img-processing\Docker\Flask\app
+2020-09-03 17:30:24,582 [INFO:LogManager] {get_today_log:50} [SYSTEM]:[Athiruj_admin] Prepair date data to query.
+2020-09-03 17:30:24,585 [INFO:LogManager] {get_today_log:66} [SYSTEM]:[Athiruj_admin] Read log 2020-09-03.log .
+2020-09-03 17:30:24,714 [INFO:LogManager] {get_today_log:86} [SYSTEM]:[Athiruj_admin] Close log file.
+2020-09-03 17:30:24,714 [INFO:LogManager] {get_today_log:87} [SYSTEM]:[Athiruj_admin] Got all today logs.
+2020-09-03 17:30:25,901 [INFO:LogManager] {__init__:11} [SYSTEM]:Set log variable
+2020-09-03 17:30:25,901 [INFO:LogManager] {__init__:22} [SYSTEM]:parent : C:\Users\athiruj\Desktop\img-processing\Docker\Flask\app
+2020-09-03 17:30:25,902 [INFO:LogManager] {get_today_log:50} [SYSTEM]:[Athiruj_admin] Prepair date data to query.
+2020-09-03 17:30:25,911 [INFO:LogManager] {get_today_log:66} [SYSTEM]:[Athiruj_admin] Read log 2020-09-03.log .
+2020-09-03 17:30:26,102 [INFO:LogManager] {get_today_log:86} [SYSTEM]:[Athiruj_admin] Close log file.
+2020-09-03 17:30:26,102 [INFO:LogManager] {get_today_log:87} [SYSTEM]:[Athiruj_admin] Got all today logs.
+2020-09-03 17:30:26,555 [INFO:LogManager] {__init__:11} [SYSTEM]:Set log variable
+2020-09-03 17:30:26,556 [INFO:LogManager] {__init__:22} [SYSTEM]:parent : C:\Users\athiruj\Desktop\img-processing\Docker\Flask\app
+2020-09-03 17:30:26,558 [INFO:LogManager] {get_today_log:50} [SYSTEM]:[Athiruj_admin] Prepair date data to query.
+2020-09-03 17:30:26,598 [INFO:LogManager] {get_today_log:66} [SYSTEM]:[Athiruj_admin] Read log 2020-09-03.log .
+2020-09-03 17:30:26,858 [INFO:LogManager] {get_today_log:86} [SYSTEM]:[Athiruj_admin] Close log file.
+2020-09-03 17:30:26,860 [INFO:LogManager] {get_today_log:87} [SYSTEM]:[Athiruj_admin] Got all today logs.
+2020-09-03 17:30:27,728 [INFO:LogManager] {__init__:11} [SYSTEM]:Set log variable
+2020-09-03 17:30:27,730 [INFO:LogManager] {__init__:22} [SYSTEM]:parent : C:\Users\athiruj\Desktop\img-processing\Docker\Flask\app
+2020-09-03 17:30:27,731 [INFO:LogManager] {get_today_log:50} [SYSTEM]:[Athiruj_admin] Prepair date data to query.
+2020-09-03 17:30:27,741 [INFO:LogManager] {get_today_log:66} [SYSTEM]:[Athiruj_admin] Read log 2020-09-03.log .
+2020-09-03 17:30:28,022 [INFO:LogManager] {get_today_log:86} [SYSTEM]:[Athiruj_admin] Close log file.
+2020-09-03 17:30:28,023 [INFO:LogManager] {get_today_log:87} [SYSTEM]:[Athiruj_admin] Got all today logs.
+2020-09-03 17:30:28,338 [INFO:LogManager] {__init__:11} [SYSTEM]:Set log variable
+2020-09-03 17:30:28,338 [INFO:LogManager] {__init__:22} [SYSTEM]:parent : C:\Users\athiruj\Desktop\img-processing\Docker\Flask\app
+2020-09-03 17:30:28,339 [INFO:LogManager] {get_today_log:50} [SYSTEM]:[Athiruj_admin] Prepair date data to query.
+2020-09-03 17:30:28,363 [INFO:LogManager] {get_today_log:66} [SYSTEM]:[Athiruj_admin] Read log 2020-09-03.log .
+2020-09-03 17:30:28,573 [INFO:LogManager] {get_today_log:86} [SYSTEM]:[Athiruj_admin] Close log file.
+2020-09-03 17:30:28,579 [INFO:LogManager] {get_today_log:87} [SYSTEM]:[Athiruj_admin] Got all today logs.
+2020-09-03 17:30:29,491 [INFO:LogManager] {__init__:11} [SYSTEM]:Set log variable
+2020-09-03 17:30:29,492 [INFO:LogManager] {__init__:22} [SYSTEM]:parent : C:\Users\athiruj\Desktop\img-processing\Docker\Flask\app
+2020-09-03 17:30:29,495 [INFO:LogManager] {get_today_log:50} [SYSTEM]:[Athiruj_admin] Prepair date data to query.
+2020-09-03 17:30:29,501 [INFO:LogManager] {get_today_log:66} [SYSTEM]:[Athiruj_admin] Read log 2020-09-03.log .
+2020-09-03 17:30:29,698 [INFO:LogManager] {get_today_log:86} [SYSTEM]:[Athiruj_admin] Close log file.
+2020-09-03 17:30:29,699 [INFO:LogManager] {get_today_log:87} [SYSTEM]:[Athiruj_admin] Got all today logs.
+2020-09-03 17:30:30,110 [INFO:LogManager] {__init__:11} [SYSTEM]:Set log variable
+2020-09-03 17:30:30,131 [INFO:LogManager] {__init__:22} [SYSTEM]:parent : C:\Users\athiruj\Desktop\img-processing\Docker\Flask\app
+2020-09-03 17:30:30,134 [INFO:LogManager] {get_today_log:50} [SYSTEM]:[Athiruj_admin] Prepair date data to query.
+2020-09-03 17:30:30,152 [INFO:LogManager] {get_today_log:66} [SYSTEM]:[Athiruj_admin] Read log 2020-09-03.log .
+2020-09-03 17:30:30,332 [INFO:LogManager] {get_today_log:86} [SYSTEM]:[Athiruj_admin] Close log file.
+2020-09-03 17:30:30,333 [INFO:LogManager] {get_today_log:87} [SYSTEM]:[Athiruj_admin] Got all today logs.
+2020-09-03 17:30:31,185 [INFO:LogManager] {__init__:11} [SYSTEM]:Set log variable
+2020-09-03 17:30:31,186 [INFO:LogManager] {__init__:22} [SYSTEM]:parent : C:\Users\athiruj\Desktop\img-processing\Docker\Flask\app
+2020-09-03 17:30:31,188 [INFO:LogManager] {get_today_log:50} [SYSTEM]:[Athiruj_admin] Prepair date data to query.
+2020-09-03 17:30:31,194 [INFO:LogManager] {get_today_log:66} [SYSTEM]:[Athiruj_admin] Read log 2020-09-03.log .
+2020-09-03 17:30:31,388 [INFO:LogManager] {get_today_log:86} [SYSTEM]:[Athiruj_admin] Close log file.
+2020-09-03 17:30:31,390 [INFO:LogManager] {get_today_log:87} [SYSTEM]:[Athiruj_admin] Got all today logs.
+2020-09-03 17:30:37,911 [INFO:LogManager] {__init__:11} [SYSTEM]:Set log variable
+2020-09-03 17:30:37,911 [INFO:LogManager] {__init__:22} [SYSTEM]:parent : C:\Users\athiruj\Desktop\img-processing\Docker\Flask\app
+2020-09-03 17:30:37,912 [INFO:LogManager] {get_today_log:50} [SYSTEM]:[Athiruj_admin] Prepair date data to query.
+2020-09-03 17:30:37,914 [INFO:LogManager] {get_today_log:66} [SYSTEM]:[Athiruj_admin] Read log 2020-09-03.log .
+2020-09-03 17:30:38,013 [INFO:LogManager] {get_today_log:86} [SYSTEM]:[Athiruj_admin] Close log file.
+2020-09-03 17:30:38,013 [INFO:LogManager] {get_today_log:87} [SYSTEM]:[Athiruj_admin] Got all today logs.
+2020-09-03 17:30:45,485 [INFO:LogManager] {__init__:11} [SYSTEM]:Set log variable
+2020-09-03 17:30:45,485 [INFO:LogManager] {__init__:22} [SYSTEM]:parent : C:\Users\athiruj\Desktop\img-processing\Docker\Flask\app
+2020-09-03 17:30:45,486 [INFO:LogManager] {get_today_log:50} [SYSTEM]:[Athiruj_admin] Prepair date data to query.
+2020-09-03 17:30:45,489 [INFO:LogManager] {get_today_log:66} [SYSTEM]:[Athiruj_admin] Read log 2020-09-03.log .
+2020-09-03 17:30:45,564 [INFO:LogManager] {get_today_log:86} [SYSTEM]:[Athiruj_admin] Close log file.
+2020-09-03 17:30:45,564 [INFO:LogManager] {get_today_log:87} [SYSTEM]:[Athiruj_admin] Got all today logs.
+2020-09-03 17:31:07,406 [INFO:LogManager] {__init__:11} [SYSTEM]:Set log variable
+2020-09-03 17:31:07,409 [INFO:LogManager] {__init__:22} [SYSTEM]:parent : C:\Users\athiruj\Desktop\img-processing\Docker\Flask\app
+2020-09-03 17:31:07,411 [INFO:LogManager] {get_today_log:50} [SYSTEM]:[Athiruj_admin] Prepair date data to query.
+2020-09-03 17:31:07,425 [INFO:LogManager] {get_today_log:66} [SYSTEM]:[Athiruj_admin] Read log 2020-09-03.log .
+2020-09-03 17:31:07,524 [INFO:LogManager] {get_today_log:86} [SYSTEM]:[Athiruj_admin] Close log file.
+2020-09-03 17:31:07,524 [INFO:LogManager] {get_today_log:87} [SYSTEM]:[Athiruj_admin] Got all today logs.
+2020-09-03 17:31:08,294 [INFO:LogManager] {__init__:11} [SYSTEM]:Set log variable
+2020-09-03 17:31:08,295 [INFO:LogManager] {__init__:22} [SYSTEM]:parent : C:\Users\athiruj\Desktop\img-processing\Docker\Flask\app
+2020-09-03 17:31:08,304 [INFO:LogManager] {get_today_log:50} [SYSTEM]:[Athiruj_admin] Prepair date data to query.
+2020-09-03 17:31:08,311 [INFO:LogManager] {get_today_log:66} [SYSTEM]:[Athiruj_admin] Read log 2020-09-03.log .
+2020-09-03 17:31:08,524 [INFO:LogManager] {get_today_log:86} [SYSTEM]:[Athiruj_admin] Close log file.
+2020-09-03 17:31:08,525 [INFO:LogManager] {get_today_log:87} [SYSTEM]:[Athiruj_admin] Got all today logs.
+2020-09-03 17:31:13,131 [INFO:LogManager] {__init__:11} [SYSTEM]:Set log variable
+2020-09-03 17:31:13,132 [INFO:LogManager] {__init__:22} [SYSTEM]:parent : C:\Users\athiruj\Desktop\img-processing\Docker\Flask\app
+2020-09-03 17:31:13,133 [INFO:LogManager] {get_today_log:50} [SYSTEM]:[Athiruj_admin] Prepair date data to query.
+2020-09-03 17:31:13,154 [INFO:LogManager] {get_today_log:66} [SYSTEM]:[Athiruj_admin] Read log 2020-09-03.log .
+2020-09-03 17:31:13,252 [INFO:LogManager] {get_today_log:86} [SYSTEM]:[Athiruj_admin] Close log file.
+2020-09-03 17:31:13,253 [INFO:LogManager] {get_today_log:87} [SYSTEM]:[Athiruj_admin] Got all today logs.
+2020-09-03 17:31:13,834 [INFO:LogManager] {__init__:11} [SYSTEM]:Set log variable
+2020-09-03 17:31:13,839 [INFO:LogManager] {__init__:22} [SYSTEM]:parent : C:\Users\athiruj\Desktop\img-processing\Docker\Flask\app
+2020-09-03 17:31:13,840 [INFO:LogManager] {get_today_log:50} [SYSTEM]:[Athiruj_admin] Prepair date data to query.
+2020-09-03 17:31:13,844 [INFO:LogManager] {get_today_log:66} [SYSTEM]:[Athiruj_admin] Read log 2020-09-03.log .
+2020-09-03 17:31:14,090 [INFO:LogManager] {get_today_log:86} [SYSTEM]:[Athiruj_admin] Close log file.
+2020-09-03 17:31:14,091 [INFO:LogManager] {get_today_log:87} [SYSTEM]:[Athiruj_admin] Got all today logs.
+2020-09-03 17:31:46,077 [INFO:LogManager] {__init__:11} [SYSTEM]:Set log variable
+2020-09-03 17:31:46,078 [INFO:LogManager] {__init__:22} [SYSTEM]:parent : C:\Users\athiruj\Desktop\img-processing\Docker\Flask\app
+2020-09-03 17:31:46,078 [INFO:LogManager] {get_today_log:50} [SYSTEM]:[Athiruj_admin] Prepair date data to query.
+2020-09-03 17:31:46,082 [INFO:LogManager] {get_today_log:66} [SYSTEM]:[Athiruj_admin] Read log 2020-09-03.log .
+2020-09-03 17:31:46,185 [INFO:LogManager] {get_today_log:86} [SYSTEM]:[Athiruj_admin] Close log file.
+2020-09-03 17:31:46,186 [INFO:LogManager] {get_today_log:87} [SYSTEM]:[Athiruj_admin] Got all today logs.
+2020-09-03 17:31:54,514 [INFO:LogManager] {__init__:11} [SYSTEM]:Set log variable
+2020-09-03 17:31:54,515 [INFO:LogManager] {__init__:22} [SYSTEM]:parent : C:\Users\athiruj\Desktop\img-processing\Docker\Flask\app
+2020-09-03 17:31:54,537 [INFO:LogManager] {get_log_by_date:102} [SYSTEM]:[Athiruj_admin] Prepair date data to query.
+2020-09-03 17:31:54,544 [INFO:LogManager] {get_log_by_date:148} [SYSTEM]:[Athiruj_admin] Read log C:\Users\athiruj\Desktop\img-processing\Docker\Flask\app\log\2020-09-02.log .
+2020-09-03 17:31:54,580 [INFO:LogManager] {get_log_by_date:163} [SYSTEM]:[Athiruj_admin] Close log file.
+2020-09-03 17:31:54,580 [INFO:LogManager] {get_log_by_date:164} [SYSTEM]:[Athiruj_admin] Got all log data.
+2020-09-03 17:31:55,850 [INFO:LogManager] {__init__:11} [SYSTEM]:Set log variable
+2020-09-03 17:31:55,851 [INFO:LogManager] {__init__:22} [SYSTEM]:parent : C:\Users\athiruj\Desktop\img-processing\Docker\Flask\app
+2020-09-03 17:31:55,852 [INFO:LogManager] {get_log_by_date:102} [SYSTEM]:[Athiruj_admin] Prepair date data to query.
+2020-09-03 17:31:55,857 [INFO:LogManager] {get_log_by_date:148} [SYSTEM]:[Athiruj_admin] Read log C:\Users\athiruj\Desktop\img-processing\Docker\Flask\app\log\2020-09-02.log .
+2020-09-03 17:31:55,859 [INFO:LogManager] {get_log_by_date:163} [SYSTEM]:[Athiruj_admin] Close log file.
+2020-09-03 17:31:55,860 [INFO:LogManager] {get_log_by_date:164} [SYSTEM]:[Athiruj_admin] Got all log data.
+2020-09-03 17:31:57,601 [INFO:LogManager] {__init__:11} [SYSTEM]:Set log variable
+2020-09-03 17:31:57,602 [INFO:LogManager] {__init__:22} [SYSTEM]:parent : C:\Users\athiruj\Desktop\img-processing\Docker\Flask\app
+2020-09-03 17:31:57,603 [INFO:LogManager] {get_log_by_date:102} [SYSTEM]:[Athiruj_admin] Prepair date data to query.
+2020-09-03 17:31:57,604 [INFO:LogManager] {get_log_by_date:148} [SYSTEM]:[Athiruj_admin] Read log C:\Users\athiruj\Desktop\img-processing\Docker\Flask\app\log\2020-09-02.log .
+2020-09-03 17:31:57,604 [INFO:LogManager] {get_log_by_date:163} [SYSTEM]:[Athiruj_admin] Close log file.
+2020-09-03 17:31:57,605 [INFO:LogManager] {get_log_by_date:164} [SYSTEM]:[Athiruj_admin] Got all log data.
+2020-09-03 17:31:58,111 [INFO:LogManager] {__init__:11} [SYSTEM]:Set log variable
+2020-09-03 17:31:58,114 [INFO:LogManager] {__init__:22} [SYSTEM]:parent : C:\Users\athiruj\Desktop\img-processing\Docker\Flask\app
+2020-09-03 17:31:58,115 [INFO:LogManager] {get_log_by_date:102} [SYSTEM]:[Athiruj_admin] Prepair date data to query.
+2020-09-03 17:31:58,118 [INFO:LogManager] {get_log_by_date:148} [SYSTEM]:[Athiruj_admin] Read log C:\Users\athiruj\Desktop\img-processing\Docker\Flask\app\log\2020-09-02.log .
+2020-09-03 17:31:58,119 [INFO:LogManager] {get_log_by_date:163} [SYSTEM]:[Athiruj_admin] Close log file.
+2020-09-03 17:31:58,128 [INFO:LogManager] {get_log_by_date:164} [SYSTEM]:[Athiruj_admin] Got all log data.
+2020-09-03 17:32:00,236 [INFO:LogManager] {__init__:11} [SYSTEM]:Set log variable
+2020-09-03 17:32:00,237 [INFO:LogManager] {__init__:22} [SYSTEM]:parent : C:\Users\athiruj\Desktop\img-processing\Docker\Flask\app
+2020-09-03 17:32:00,237 [INFO:LogManager] {get_log_by_date:102} [SYSTEM]:[Athiruj_admin] Prepair date data to query.
+2020-09-03 17:32:00,238 [INFO:LogManager] {get_log_by_date:148} [SYSTEM]:[Athiruj_admin] Read log C:\Users\athiruj\Desktop\img-processing\Docker\Flask\app\log\2020-09-02.log .
+2020-09-03 17:32:00,239 [INFO:LogManager] {get_log_by_date:163} [SYSTEM]:[Athiruj_admin] Close log file.
+2020-09-03 17:32:00,239 [INFO:LogManager] {get_log_by_date:164} [SYSTEM]:[Athiruj_admin] Got all log data.
+2020-09-03 17:32:02,474 [INFO:LogManager] {__init__:11} [SYSTEM]:Set log variable
+2020-09-03 17:32:02,475 [INFO:LogManager] {__init__:22} [SYSTEM]:parent : C:\Users\athiruj\Desktop\img-processing\Docker\Flask\app
+2020-09-03 17:32:02,476 [INFO:LogManager] {get_log_by_date:102} [SYSTEM]:[Athiruj_admin] Prepair date data to query.
+2020-09-03 17:32:02,478 [INFO:LogManager] {get_log_by_date:148} [SYSTEM]:[Athiruj_admin] Read log C:\Users\athiruj\Desktop\img-processing\Docker\Flask\app\log\2020-09-02.log .
+2020-09-03 17:32:02,479 [INFO:LogManager] {get_log_by_date:163} [SYSTEM]:[Athiruj_admin] Close log file.
+2020-09-03 17:32:02,479 [INFO:LogManager] {get_log_by_date:164} [SYSTEM]:[Athiruj_admin] Got all log data.
+2020-09-03 17:32:41,829 [INFO:LogManager] {__init__:11} [SYSTEM]:Set log variable
+2020-09-03 17:32:41,830 [INFO:LogManager] {__init__:22} [SYSTEM]:parent : C:\Users\athiruj\Desktop\img-processing\Docker\Flask\app
+2020-09-03 17:32:41,831 [INFO:LogManager] {get_today_log:50} [SYSTEM]:[Athiruj_admin] Prepair date data to query.
+2020-09-03 17:32:41,838 [INFO:LogManager] {get_today_log:66} [SYSTEM]:[Athiruj_admin] Read log 2020-09-03.log .
+2020-09-03 17:32:41,994 [INFO:LogManager] {get_today_log:86} [SYSTEM]:[Athiruj_admin] Close log file.
+2020-09-03 17:32:41,996 [INFO:LogManager] {get_today_log:87} [SYSTEM]:[Athiruj_admin] Got all today logs.
+2020-09-03 17:34:51,784 [INFO:LogManager] {__init__:11} [SYSTEM]:Set log variable
+2020-09-03 17:34:51,833 [INFO:LogManager] {__init__:22} [SYSTEM]:parent : C:\Users\athiruj\Desktop\img-processing\Docker\Flask\app
+2020-09-03 17:34:51,857 [INFO:LogManager] {get_today_log:50} [SYSTEM]:[Athiruj_admin] Prepair date data to query.
+2020-09-03 17:34:51,959 [INFO:LogManager] {get_today_log:66} [SYSTEM]:[Athiruj_admin] Read log 2020-09-03.log .
+2020-09-03 17:34:52,363 [INFO:LogManager] {get_today_log:86} [SYSTEM]:[Athiruj_admin] Close log file.
+2020-09-03 17:34:52,366 [INFO:LogManager] {get_today_log:87} [SYSTEM]:[Athiruj_admin] Got all today logs.
+2020-09-03 17:35:58,410 [INFO:LogManager] {__init__:11} [SYSTEM]:Set log variable
+2020-09-03 17:35:58,411 [INFO:LogManager] {__init__:22} [SYSTEM]:parent : C:\Users\athiruj\Desktop\img-processing\Docker\Flask\app
+2020-09-03 17:35:58,411 [INFO:LogManager] {get_log_by_date:102} [SYSTEM]:[test_get_log] Prepair date data to query.
+2020-09-03 17:35:58,437 [INFO:LogManager] {get_log_by_date:148} [SYSTEM]:[test_get_log] Read log C:\Users\athiruj\Desktop\img-processing\Docker\Flask\app\log\2020-08-23.log .
+2020-09-03 17:35:58,548 [INFO:LogManager] {get_log_by_date:148} [SYSTEM]:[test_get_log] Read log C:\Users\athiruj\Desktop\img-processing\Docker\Flask\app\log\2020-08-24.log .
+2020-09-03 17:35:58,609 [INFO:LogManager] {get_log_by_date:148} [SYSTEM]:[test_get_log] Read log C:\Users\athiruj\Desktop\img-processing\Docker\Flask\app\log\2020-08-25.log .
+2020-09-03 17:35:58,702 [INFO:LogManager] {get_log_by_date:148} [SYSTEM]:[test_get_log] Read log C:\Users\athiruj\Desktop\img-processing\Docker\Flask\app\log\2020-08-26.log .
+2020-09-03 17:35:58,778 [INFO:LogManager] {get_log_by_date:148} [SYSTEM]:[test_get_log] Read log C:\Users\athiruj\Desktop\img-processing\Docker\Flask\app\log\2020-08-27.log .
+2020-09-03 17:35:58,802 [INFO:LogManager] {get_log_by_date:148} [SYSTEM]:[test_get_log] Read log C:\Users\athiruj\Desktop\img-processing\Docker\Flask\app\log\2020-08-28.log .
+2020-09-03 17:35:58,825 [INFO:LogManager] {get_log_by_date:148} [SYSTEM]:[test_get_log] Read log C:\Users\athiruj\Desktop\img-processing\Docker\Flask\app\log\2020-08-29.log .
+2020-09-03 17:35:58,859 [INFO:LogManager] {get_log_by_date:148} [SYSTEM]:[test_get_log] Read log C:\Users\athiruj\Desktop\img-processing\Docker\Flask\app\log\2020-08-30.log .
+2020-09-03 17:35:59,025 [INFO:LogManager] {get_log_by_date:148} [SYSTEM]:[test_get_log] Read log C:\Users\athiruj\Desktop\img-processing\Docker\Flask\app\log\2020-08-31.log .
+2020-09-03 17:35:59,074 [INFO:LogManager] {get_log_by_date:148} [SYSTEM]:[test_get_log] Read log C:\Users\athiruj\Desktop\img-processing\Docker\Flask\app\log\2020-09-01.log .
+2020-09-03 17:35:59,152 [INFO:LogManager] {get_log_by_date:148} [SYSTEM]:[test_get_log] Read log C:\Users\athiruj\Desktop\img-processing\Docker\Flask\app\log\2020-09-02.log .
+2020-09-03 17:35:59,360 [INFO:LogManager] {get_log_by_date:148} [SYSTEM]:[test_get_log] Read log C:\Users\athiruj\Desktop\img-processing\Docker\Flask\app\log\2020-09-03.log .
+2020-09-03 17:35:59,480 [INFO:LogManager] {get_log_by_date:163} [SYSTEM]:[test_get_log] Close log file.
+2020-09-03 17:35:59,480 [INFO:LogManager] {get_log_by_date:164} [SYSTEM]:[test_get_log] Got all log data.
+2020-09-03 17:36:24,222 [INFO:LogManager] {__init__:11} [SYSTEM]:Set log variable
+2020-09-03 17:36:24,222 [INFO:LogManager] {__init__:22} [SYSTEM]:parent : C:\Users\athiruj\Desktop\img-processing\Docker\Flask\app
+2020-09-03 17:36:24,223 [INFO:LogManager] {get_log_by_date:102} [SYSTEM]:[test_get_log] Prepair date data to query.
+2020-09-03 17:36:24,225 [INFO:LogManager] {get_log_by_date:148} [SYSTEM]:[test_get_log] Read log C:\Users\athiruj\Desktop\img-processing\Docker\Flask\app\log\2020-08-23.log .
+2020-09-03 17:36:24,247 [INFO:LogManager] {get_log_by_date:148} [SYSTEM]:[test_get_log] Read log C:\Users\athiruj\Desktop\img-processing\Docker\Flask\app\log\2020-08-24.log .
+2020-09-03 17:36:24,275 [INFO:LogManager] {get_log_by_date:148} [SYSTEM]:[test_get_log] Read log C:\Users\athiruj\Desktop\img-processing\Docker\Flask\app\log\2020-08-25.log .
+2020-09-03 17:36:24,307 [INFO:LogManager] {get_log_by_date:163} [SYSTEM]:[test_get_log] Close log file.
+2020-09-03 17:36:24,308 [INFO:LogManager] {get_log_by_date:164} [SYSTEM]:[test_get_log] Got all log data.
+2020-09-03 17:36:41,177 [INFO:LogManager] {__init__:11} [SYSTEM]:Set log variable
+2020-09-03 17:36:41,178 [INFO:LogManager] {__init__:22} [SYSTEM]:parent : C:\Users\athiruj\Desktop\img-processing\Docker\Flask\app
+2020-09-03 17:36:41,181 [INFO:LogManager] {get_today_log:50} [SYSTEM]:[Athiruj_admin] Prepair date data to query.
+2020-09-03 17:36:41,188 [INFO:LogManager] {get_today_log:66} [SYSTEM]:[Athiruj_admin] Read log 2020-09-03.log .
+2020-09-03 17:36:41,431 [INFO:LogManager] {get_today_log:86} [SYSTEM]:[Athiruj_admin] Close log file.
+2020-09-03 17:36:41,431 [INFO:LogManager] {get_today_log:87} [SYSTEM]:[Athiruj_admin] Got all today logs.
+2020-09-03 17:36:47,624 [INFO:LogManager] {__init__:11} [SYSTEM]:Set log variable
+2020-09-03 17:36:47,625 [INFO:LogManager] {__init__:22} [SYSTEM]:parent : C:\Users\athiruj\Desktop\img-processing\Docker\Flask\app
+2020-09-03 17:36:47,625 [INFO:LogManager] {get_today_log:50} [SYSTEM]:[Athiruj_admin] Prepair date data to query.
+2020-09-03 17:36:47,636 [INFO:LogManager] {get_today_log:66} [SYSTEM]:[Athiruj_admin] Read log 2020-09-03.log .
+2020-09-03 17:36:47,721 [INFO:LogManager] {get_today_log:86} [SYSTEM]:[Athiruj_admin] Close log file.
+2020-09-03 17:36:47,721 [INFO:LogManager] {get_today_log:87} [SYSTEM]:[Athiruj_admin] Got all today logs.
+2020-09-03 17:38:14,431 [INFO:main] {<module>:16} [SYSTEM]:Created flask app.
+2020-09-03 17:38:14,439 [INFO:main] {<module>:18} [SYSTEM]:Registered image_processing_api blueprint 
+2020-09-03 17:38:14,442 [INFO:main] {<module>:20} [SYSTEM]:Registered user_api blueprint 
+2020-09-03 17:38:14,453 [INFO:main] {<module>:22} [SYSTEM]:Registered model_management_api blueprint 
+2020-09-03 17:38:14,455 [INFO:main] {<module>:24} [SYSTEM]:Registered log_management_api blueprint 
+2020-09-03 17:38:21,056 [DEBUG:log_management_api] {get_log:45} [SYSTEM]:start_date: 2020-09-02
+2020-09-03 17:38:21,060 [DEBUG:log_management_api] {get_log:46} [SYSTEM]:start_time: 17:36:40
+2020-09-03 17:38:21,063 [DEBUG:log_management_api] {get_log:47} [SYSTEM]:end_date: 2020-09-03
+2020-09-03 17:38:21,065 [DEBUG:log_management_api] {get_log:48} [SYSTEM]:end_time: 17:36:40
+2020-09-03 17:38:21,066 [INFO:LogManager] {__init__:11} [SYSTEM]:Set log variable
+2020-09-03 17:38:21,067 [INFO:LogManager] {__init__:22} [SYSTEM]:parent : C:\Users\athiruj\Desktop\img-processing\Docker\Flask\app
+2020-09-03 17:38:21,068 [INFO:LogManager] {get_log_by_date:102} [SYSTEM]:[Athiruj_admin] Prepair date data to query.
+2020-09-03 17:38:21,137 [INFO:LogManager] {get_log_by_date:148} [SYSTEM]:[Athiruj_admin] Read log C:\Users\athiruj\Desktop\img-processing\Docker\Flask\app\log\2020-09-02.log .
+2020-09-03 17:38:21,389 [INFO:LogManager] {get_log_by_date:148} [SYSTEM]:[Athiruj_admin] Read log C:\Users\athiruj\Desktop\img-processing\Docker\Flask\app\log\2020-09-03.log .
+2020-09-03 17:38:21,572 [INFO:LogManager] {get_log_by_date:163} [SYSTEM]:[Athiruj_admin] Close log file.
+2020-09-03 17:38:21,573 [INFO:LogManager] {get_log_by_date:164} [SYSTEM]:[Athiruj_admin] Got all log data.
+2020-09-03 17:38:37,370 [DEBUG:log_management_api] {get_log:45} [SYSTEM]:start_date: 2020-09-02
+2020-09-03 17:38:37,370 [DEBUG:log_management_api] {get_log:46} [SYSTEM]:start_time: 17:36:40
+2020-09-03 17:38:37,371 [DEBUG:log_management_api] {get_log:47} [SYSTEM]:end_date: 2020-09-03
+2020-09-03 17:38:37,371 [DEBUG:log_management_api] {get_log:48} [SYSTEM]:end_time: 17:36:40
+2020-09-03 17:38:37,373 [INFO:LogManager] {__init__:11} [SYSTEM]:Set log variable
+2020-09-03 17:38:37,374 [INFO:LogManager] {__init__:22} [SYSTEM]:parent : C:\Users\athiruj\Desktop\img-processing\Docker\Flask\app
+2020-09-03 17:38:37,374 [INFO:LogManager] {get_log_by_date:102} [SYSTEM]:[Athiruj_admin] Prepair date data to query.
+2020-09-03 17:38:37,378 [INFO:LogManager] {get_log_by_date:148} [SYSTEM]:[Athiruj_admin] Read log C:\Users\athiruj\Desktop\img-processing\Docker\Flask\app\log\2020-09-02.log .
+2020-09-03 17:38:37,530 [INFO:LogManager] {get_log_by_date:148} [SYSTEM]:[Athiruj_admin] Read log C:\Users\athiruj\Desktop\img-processing\Docker\Flask\app\log\2020-09-03.log .
+2020-09-03 17:38:37,668 [INFO:LogManager] {get_log_by_date:163} [SYSTEM]:[Athiruj_admin] Close log file.
+2020-09-03 17:38:37,669 [INFO:LogManager] {get_log_by_date:164} [SYSTEM]:[Athiruj_admin] Got all log data.
+2020-09-03 17:38:59,618 [DEBUG:log_management_api] {get_log:45} [SYSTEM]:start_date: 2020-08-23
+2020-09-03 17:38:59,618 [DEBUG:log_management_api] {get_log:46} [SYSTEM]:start_time: 00:36:40
+2020-09-03 17:38:59,623 [DEBUG:log_management_api] {get_log:47} [SYSTEM]:end_date: 2020-08-25
+2020-09-03 17:38:59,624 [DEBUG:log_management_api] {get_log:48} [SYSTEM]:end_time: 09:36:40
+2020-09-03 17:38:59,625 [INFO:LogManager] {__init__:11} [SYSTEM]:Set log variable
+2020-09-03 17:38:59,625 [INFO:LogManager] {__init__:22} [SYSTEM]:parent : C:\Users\athiruj\Desktop\img-processing\Docker\Flask\app
+2020-09-03 17:38:59,625 [INFO:LogManager] {get_log_by_date:102} [SYSTEM]:[Athiruj_admin] Prepair date data to query.
+2020-09-03 17:38:59,628 [INFO:LogManager] {get_log_by_date:148} [SYSTEM]:[Athiruj_admin] Read log C:\Users\athiruj\Desktop\img-processing\Docker\Flask\app\log\2020-08-23.log .
+2020-09-03 17:38:59,676 [INFO:LogManager] {get_log_by_date:148} [SYSTEM]:[Athiruj_admin] Read log C:\Users\athiruj\Desktop\img-processing\Docker\Flask\app\log\2020-08-24.log .
+2020-09-03 17:38:59,699 [INFO:LogManager] {get_log_by_date:148} [SYSTEM]:[Athiruj_admin] Read log C:\Users\athiruj\Desktop\img-processing\Docker\Flask\app\log\2020-08-25.log .
+2020-09-03 17:38:59,700 [INFO:LogManager] {get_log_by_date:163} [SYSTEM]:[Athiruj_admin] Close log file.
+2020-09-03 17:38:59,700 [INFO:LogManager] {get_log_by_date:164} [SYSTEM]:[Athiruj_admin] Got all log data.
+2020-09-03 17:39:25,686 [DEBUG:log_management_api] {get_log:45} [SYSTEM]:start_date: 2020-08-23
+2020-09-03 17:39:25,686 [DEBUG:log_management_api] {get_log:46} [SYSTEM]:start_time: 00:36:40
+2020-09-03 17:39:25,687 [DEBUG:log_management_api] {get_log:47} [SYSTEM]:end_date: 2020-08-25
+2020-09-03 17:39:25,689 [DEBUG:log_management_api] {get_log:48} [SYSTEM]:end_time: 09:36:40
+2020-09-03 17:39:25,690 [INFO:LogManager] {__init__:11} [SYSTEM]:Set log variable
+2020-09-03 17:39:25,690 [INFO:LogManager] {__init__:22} [SYSTEM]:parent : C:\Users\athiruj\Desktop\img-processing\Docker\Flask\app
+2020-09-03 17:39:25,690 [INFO:LogManager] {get_log_by_date:102} [SYSTEM]:[Athiruj_admin] Prepair date data to query.
+2020-09-03 17:39:25,692 [INFO:LogManager] {get_log_by_date:148} [SYSTEM]:[Athiruj_admin] Read log C:\Users\athiruj\Desktop\img-processing\Docker\Flask\app\log\2020-08-23.log .
+2020-09-03 17:39:25,713 [INFO:LogManager] {get_log_by_date:148} [SYSTEM]:[Athiruj_admin] Read log C:\Users\athiruj\Desktop\img-processing\Docker\Flask\app\log\2020-08-24.log .
+2020-09-03 17:39:25,736 [INFO:LogManager] {get_log_by_date:148} [SYSTEM]:[Athiruj_admin] Read log C:\Users\athiruj\Desktop\img-processing\Docker\Flask\app\log\2020-08-25.log .
+2020-09-03 17:39:25,737 [INFO:LogManager] {get_log_by_date:163} [SYSTEM]:[Athiruj_admin] Close log file.
+2020-09-03 17:39:25,738 [INFO:LogManager] {get_log_by_date:164} [SYSTEM]:[Athiruj_admin] Got all log data.

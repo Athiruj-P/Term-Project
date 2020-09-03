@@ -11,7 +11,7 @@ msg = {
     'no_active_ml_model' : "None of ML models have been activated.",
     'no_active_ref_model' : "None of reference models have been activated.",
 
-
+    # Error message for ML / Ref
     'wrong_extension' : "Wrong file extension. The model file must be *.weights",
     'duplicate_name' : "This name has already taken, Please enter a unique model name.",
 
@@ -26,4 +26,13 @@ msg = {
     'wrong_unit_id' : "Wrong unit id. This ID dose not match any unit id on dpml_unit.",
     'wrong_width' : "Wrong width. Width must be either int or float.",
     'wrong_height' : "Wrong height. Height must be either int or float.",
+
+    # Error message for Log management
+    'wrong_date':"Wrong today date. Please re-enter today date.",
+    'wrong_group':"Wrong group. Please re-enter group.",
+    'file_not_exist':"File dose not exist.",
+    'wrong_start_date':"Wrong start date. Please re-enter start date.",
+    'wrong_end_date':"Wrong end date. Please re-enter end date.",
+    'wrong_start_datetime':"Wrong start datetime. Please re-enter start datetime.",
+    'wrong_end_datetime':"Wrong end datetime. Please re-enter end datetime.",
 }
