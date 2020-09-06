@@ -39,11 +39,12 @@ class LogManager():
     def is_file_exist(self,str_file_path):
         try:
             file_read = open(str_file_path, "r")
-            file_read.close()
             return True
         except:
-            file_read.close()
             return False
+        finally:
+            file_read.close()
+
 
     def get_today_log(self):
         try:

@@ -42,10 +42,6 @@ def get_log():
             end_date = request.form.get('end_date')
             start_time = request.form.get('start_time')
             end_time = request.form.get('end_time')
-            logger.debug("start_date: {}".format(start_date))
-            logger.debug("start_time: {}".format(start_time))
-            logger.debug("end_date: {}".format(end_date))
-            logger.debug("end_time: {}".format(end_time))
             log_manager = LogManager(start_date=start_date,end_date=end_date,start_time=start_time,end_time=end_time,group=group,username=username)
             result = log_manager.get_log_by_date()
             
