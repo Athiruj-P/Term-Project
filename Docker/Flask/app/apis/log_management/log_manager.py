@@ -173,5 +173,37 @@ class LogManager():
                 self.logger.warning("{}.".format(str(identifier)))
                 result = {'mes' : str(identifier), 'status' : "system_error"}
             return result
+    
+    def get_min_max_date(self):
+        try:
+            self.logger.info("[{}] Prepair date data to query.".format(self.username))
+            file_list = []
+            filter_condition = False
+            
+            for file in os.listdir(self.log_path):
+                if not self.is_date_obj(file[:10]):
+                    self.logger.warning("[{}] Wrong file format.".format(self.username))
+                    continue
+                file_name = datetime.strptime(file[:10], '%Y-%m-%d').date()
+                if (file.endswith(".log")):
+                    file_list.append(file[:10])
+
+            result_date = {
+                'minDate' : file_list[0],
+                'maxDate' : file_list[-1],
+            }
+            self.logger.info("[{}] Close log file.".format(self.username))
+            self.logger.info("[{}] Got min and max date.".format(self.username))
+            result = {'min_max_date':result_date , 'status':'success'}
+            return result
+        except Exception as identifier:
+            try:
+                list(err_msg.msg.keys())[list(err_msg.msg.values()).index(str(identifier))]
+                result = {'mes' : str(identifier), 'status' : "error"}
+            except:
+                self.logger.warning("{}.".format(str(identifier)))
+                result = {'mes' : str(identifier), 'status' : "system_error"}
+            return result
+
     def __del__(self):
         pass

@@ -49,11 +49,34 @@ def get_log():
                     return result , 400
             elif(result['status'] == "system_error"):
                 return result , 400
-            return result
+            return result , 200
         else:
             result = { 'mes' : "wrong_type" , 'status' : 'system_error'}
             return result , 400
                     
+    except Exception as identifier:
+        logger.error("[{}] Error {}".format(username,identifier))
+        result = { 'mes' : str(identifier) , 'status' : "system_error"}
+        return result , 400
+
+# log_management_api
+# Description : เรียกข้อมูลประวัติการใช้งานระบบตามช่วงของวันที่และเวลาที่กำหนด
+# Author : Athiruj Poositaporn
+@log_management_api.route("/get_min_max_date", methods=['post','get'])
+def get_min_max_date():
+    try:
+        # logger.info("[{}] .".format(username))
+        username = request.form.get('username' , None)
+        today = date.today().strftime("%Y-%m-%d") # Date in YYYY-MM-DD (2020-01-10)
+        log_manager = LogManager(username=username)
+        result = log_manager.get_min_max_date()
+
+        if(result['status'] == "error"):
+                return result , 400
+        elif(result['status'] == "system_error"):
+            return result , 400
+        
+        return result , 200
     except Exception as identifier:
         logger.error("[{}] Error {}".format(username,identifier))
         result = { 'mes' : str(identifier) , 'status' : "system_error"}
