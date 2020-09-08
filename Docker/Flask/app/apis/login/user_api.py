@@ -21,65 +21,79 @@ db_connect = MongoClient(URI)
 logger.info("Connected to database")
 DPML_db = db_connect[db_config.item["db_name"]]
 collection = db_config.item["db_col_user"]
+role_collection = db_config.item["db_col_role"]
 
 @user_api.route("/login", methods=['POST'])
 def login():
-    if not request.is_json:
-        return jsonify({"mes": "Missing JSON in request"}), 400
+    try:
+            # if not request.is_json:
+        #     return jsonify({"mes": "Missing JSON in request"}), 400
+        username = request.form.get('username', None)
+        password = request.form.get('password', None)
+        if not username:
+            result = {"mes": "Missing username parameter" , 'status' : 'error'}
+            return result, 400
+        if not password:
+            result = {"mes": "Missing password parameter" , 'status' : 'error'}
+            return result, 400
 
-    username = request.json.get('username', None)
-    password = request.json.get('password', None)
-    if not username:
-        return jsonify({"mes": "Missing username parameter"}), 400
-    if not password:
-        return jsonify({"mes": "Missing password parameter"}), 400
+        # sha_signature = hashlib.sha256(password.encode()).hexdigest()   
+        # logger.info("pass : {}".format(sha_signature))
 
-    # sha_signature = hashlib.sha256(password.encode()).hexdigest()   
-    # logger.info("pass : {}".format(sha_signature))
+        query_result = DPML_db[collection].find_one({
+            db_config.item['fld_user_name']: username ,
+            db_config.item['fld_user_password']: password
+        })
+        logger.debug("query_result : {}".format(query_result))
 
-    query_result = DPML_db[collection].find_one({
-        db_config.item['fld_user_name']: username ,
-        db_config.item['fld_user_password']: password
-    })
-    db_connect.close()
-    logger.info("query_result : {}".format(query_result))
+        if not query_result:
+            result = {"mes": "Wrong username or password." , 'status' : 'error'}
+            return result, 401
+        else:
+            DPML_db[collection].update(
+                { db_config.item['fld_user_id']:query_result['user_id'] },
+                { "$set":{ db_config.item['fld_user_login_status']:db_config.item['fld_user_status_login'] }}
+            )
+        
+        query_result = DPML_db[role_collection].find_one({
+            db_config.item['fld_role_id']: int(query_result[db_config.item['fld_user_role_id']])
+        })
 
-    if not query_result:
-        return jsonify({"login" : False}), 401
-    else:
-        DPML_db[collection].update(
-            { db_config.item['fld_user_id']:query_result['user_id'] },
-            { "$set":{ db_config.item['fld_user_login_status']:db_config.item['fld_user_status_login'] }}
-        )
-    
-    access_token = create_access_token(identity=username)
-    tokens = {
-        'access_token': create_access_token(identity=username),
-        'refresh_token': create_refresh_token(identity=username) 
-    }
-    return jsonify(tokens), 200
+        db_connect.close()
+        access_token = create_access_token(identity=username)
+        tokens = {
+            'access_token': create_access_token(identity=username),
+            'refresh_token': create_refresh_token(identity=username) 
+        }
+        result = {'tokens':tokens, 'role':query_result['role_name'], 'status' : 'error'}
+        return result, 200
+    except Exception as identifier:
+        logger.warning("{}.".format(str(identifier)))
+        result = {'mes' : str(identifier), 'status' : "system_error"}
+        return result , 400
 
 @user_api.route('/logout', methods=['POST'])
 def logout():
     username = request.json.get('username', None)
     if not username:
-        return jsonify({"mes": "Missing username parameter"}), 400
+        result = {"mes": "Missing username parameter" , 'status' : 'error'}
+        return result, 400
 
     DPML_db[collection].update(
         { db_config.item['fld_user_name']:username },
         { "$set":{ db_config.item['fld_user_login_status']:db_config.item['fld_user_status_logout'] }}
     )
-
-    return jsonify({"logout" : True}), 200
+    result = {"mes": "Logout success" , 'status' : 'success'}
+    return result , 200
 
 @user_api.route('/refresh', methods=['POST'])
 @jwt_refresh_token_required
 def refresh():
     current_user = get_jwt_identity()
-    ret = {
+    result = {
         'refresh_token': create_access_token(identity=current_user)
     }
-    return jsonify(ret), 200
+    return result, 200
 
 @user_api.route('/protected', methods=['POST'])
 @jwt_required

@@ -227,7 +227,7 @@ class MLManager(Manager):
                 list(err_msg.msg.keys())[list(err_msg.msg.values()).index(identifier)]
                 result = {'mes' : str(identifier), 'status' : "error"}
             except:
-                self.logger.warning("{}.".format(str(identifier)))
+                self.logger.error("{}.".format(str(identifier)))
                 result = {'mes' : str(identifier), 'status' : "system_error"}
             return result
 
@@ -294,7 +294,7 @@ class MLManager(Manager):
                 list(err_msg.msg.keys())[list(err_msg.msg.values()).index(identifier)]
                 result = {'mes' : str(identifier), 'status' : "error"}
             except:
-                self.logger.warning("{}.".format(str(identifier)))
+                self.logger.error("{}.".format(str(identifier)))
                 result = {'mes' : str(identifier), 'status' : "system_error"}
             return result
 
@@ -336,7 +336,7 @@ class MLManager(Manager):
                 list(err_msg.msg.keys())[list(err_msg.msg.values()).index(identifier)]
                 result = {'mes' : str(identifier), 'status' : "error"}
             except:
-                self.logger.warning("{}.".format(str(identifier)))
+                self.logger.error("{}.".format(str(identifier)))
                 result = {'mes' : str(identifier), 'status' : "system_error"}
             return result
 
@@ -376,7 +376,7 @@ class MLManager(Manager):
                 list(err_msg.msg.keys())[list(err_msg.msg.values()).index(identifier)]
                 result = {'mes' : str(identifier), 'status' : "error"}
             except:
-                self.logger.warning("{}.".format(str(identifier)))
+                self.logger.error("{}.".format(str(identifier)))
                 result = {'mes' : str(identifier), 'status' : "system_error"}
             return result
 
@@ -625,7 +625,7 @@ class RefManager(Manager):
                 list(err_msg.msg.keys())[list(err_msg.msg.values()).index(str(identifier))]
                 result = {'mes' : str(identifier), 'status' : "error"}
             except:
-                self.logger.warning("{}.".format(str(identifier)))
+                self.logger.error("{}.".format(str(identifier)))
                 result = {'mes' : str(identifier), 'status' : "system_error"}
             return result
 
@@ -732,7 +732,7 @@ class RefManager(Manager):
                 list(err_msg.msg.keys())[list(err_msg.msg.values()).index(str(identifier))]
                 result = {'mes' : str(identifier), 'status' : "error"}
             except:
-                self.logger.warning("{}.".format(str(identifier)))
+                self.logger.error("{}.".format(str(identifier)))
                 result = {'mes' : str(identifier), 'status' : "system_error"}
             return result
 
@@ -773,7 +773,7 @@ class RefManager(Manager):
                 list(err_msg.msg.keys())[list(err_msg.msg.values()).index(str(identifier))]
                 result = {'mes' : str(identifier), 'status' : "error"}
             except:
-                self.logger.warning("{}.".format(str(identifier)))
+                self.logger.error("{}.".format(str(identifier)))
                 result = {'mes' : str(identifier), 'status' : "system_error"}
             return result
 
@@ -813,7 +813,7 @@ class RefManager(Manager):
                 list(err_msg.msg.keys())[list(err_msg.msg.values()).index(str(identifier))]
                 result = {'mes' : str(identifier), 'status' : "error"}
             except:
-                self.logger.warning("{}.".format(str(identifier)))
+                self.logger.error("{}.".format(str(identifier)))
                 result = {'mes' : str(identifier), 'status' : "system_error"}
             return result
 

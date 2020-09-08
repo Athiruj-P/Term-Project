@@ -44,6 +44,10 @@ item = {
     "fld_user_status_login" : 1,
     "fld_user_status_logout" : 0,
 
+    # dpml_unit fields
+    "fld_role_id" : "role_id",
+    "fld_role_name" : "role_name",
+
     "db_file_path" : "db_file",
     "ml_path" : "ml_model",
     "ref_path" : "ref_model",

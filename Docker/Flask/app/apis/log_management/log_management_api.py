@@ -59,10 +59,10 @@ def get_log():
         result = { 'mes' : str(identifier) , 'status' : "system_error"}
         return result , 400
 
-# log_management_api
-# Description : เรียกข้อมูลประวัติการใช้งานระบบตามช่วงของวันที่และเวลาที่กำหนด
+# get_min_max_date
+# Description : เรียกข้อมูลวันที่แรกและวันที่ล่าสุดของไฟล์ประวัติการใช้งาน
 # Author : Athiruj Poositaporn
-@log_management_api.route("/get_min_max_date", methods=['post','get'])
+@log_management_api.route("/get_min_max_date", methods=['post'])
 def get_min_max_date():
     try:
         # logger.info("[{}] .".format(username))
@@ -76,6 +76,26 @@ def get_min_max_date():
         elif(result['status'] == "system_error"):
             return result , 400
         
+        return result , 200
+    except Exception as identifier:
+        logger.error("[{}] Error {}".format(username,identifier))
+        result = { 'mes' : str(identifier) , 'status' : "system_error"}
+        return result , 400
+
+# add_log
+# Description : บันทึกการกระทำของผู้ใช้งานระบบ
+# Author : Athiruj Poositaporn
+@log_management_api.route("/add_log", methods=['post'])
+def add_log():
+    try:
+        username = request.form.get('username' , None)
+        action = request.form.get('action' , None)
+        today = date.today().strftime("%Y-%m-%d") # Date in YYYY-MM-DD (eg. 2020-01-10)
+        log_manager = LogManager(username=username,action=action)
+        log_manager.add_log()
+        result= {
+            'status':'success'
+        }
         return result , 200
     except Exception as identifier:
         logger.error("[{}] Error {}".format(username,identifier))

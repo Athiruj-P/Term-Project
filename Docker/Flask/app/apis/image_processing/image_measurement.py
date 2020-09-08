@@ -462,7 +462,7 @@ class ImageMeasurement:
                 # ใช้เพื่อค้นหาว่าค่า identifier มีใน err_msg.msg หรือไม่ ถ้าไม่มีการทำงานจะ error และเข้าสู่ except
                 list(err_msg.msg.keys())[list(err_msg.msg.values()).index(identifier)]
             except:
-                logger.warning("{}.".format(str(identifier)))
+                logger.error("{}.".format(str(identifier)))
                 result = {'mes' : str(identifier), 'status' : "system_error"}
                 # result = {'mes' : err_msg.msg['other_err']}
             return result

@@ -6,7 +6,7 @@ import re
 import os
 
 class LogManager():
-    def __init__(self,today_date='',group='',username='',start_date='',end_date='',start_time='',end_time=''):
+    def __init__(self,today_date='',group='',username='' ,action='' ,start_date='',end_date='',start_time='',end_time=''):
         self.logger = logging.getLogger("LogManager")
         self.logger.info("Set log variable")
         parent = os.path.dirname(os.path.dirname(os.path.dirname(__file__))) 
@@ -18,8 +18,8 @@ class LogManager():
         self.end_time = end_time
         self.group = group
         self.username = username
+        self.action = action
 
-        self.logger.info("parent : {}".format(parent))
         self.group_list = ['all' , 'USER' , 'SYSTEM']
     
     def is_date_obj(self,str_date):
@@ -207,3 +207,6 @@ class LogManager():
 
     def __del__(self):
         pass
+    
+    def add_log(self):
+        self.logger.info("[{}] {}".format(self.username,self.action))
