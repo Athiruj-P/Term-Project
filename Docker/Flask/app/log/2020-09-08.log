@@ -3843,3 +3843,9 @@
 2020-09-08 17:45:07,281 [INFO:LogManager] {get_today_log:87} [SYSTEM]:[Athiruj_admin] Close log file.
 2020-09-08 17:45:07,282 [INFO:LogManager] {get_today_log:88} [SYSTEM]:[Athiruj_admin] Got all today logs.
 2020-09-08 17:49:46,672 [DEBUG:Login_api] {login:47} [SYSTEM]:query_result : {'_id': ObjectId('5f2924131fc942000683a5ae'), 'user_id': 1, 'user_name': 'admin', 'user_password': '96cae35ce8a9b0244178bf28e4966c2ce1b8385723a96a6b838858cdd6ca0a1e', 'user_login_status': 1, 'user_role_id': 1}
+2020-09-08 17:53:22,315 [INFO:main] {<module>:16} [SYSTEM]:Created flask app.
+2020-09-08 17:53:22,319 [INFO:main] {<module>:18} [SYSTEM]:Registered image_processing_api blueprint 
+2020-09-08 17:53:22,321 [INFO:main] {<module>:20} [SYSTEM]:Registered user_api blueprint 
+2020-09-08 17:53:22,326 [INFO:main] {<module>:22} [SYSTEM]:Registered model_management_api blueprint 
+2020-09-08 17:53:22,332 [INFO:main] {<module>:24} [SYSTEM]:Registered log_management_api blueprint 
+2020-09-08 17:53:35,310 [DEBUG:Login_api] {login:47} [SYSTEM]:query_result : {'_id': ObjectId('5f2924131fc942000683a5ae'), 'user_id': 1, 'user_name': 'admin', 'user_password': '96cae35ce8a9b0244178bf28e4966c2ce1b8385723a96a6b838858cdd6ca0a1e', 'user_login_status': 1, 'user_role_id': 1}
