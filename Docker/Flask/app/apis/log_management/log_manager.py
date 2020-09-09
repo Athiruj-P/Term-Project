@@ -8,6 +8,8 @@ import os
 class LogManager():
     def __init__(self,today_date='',group='',username='' ,action='' ,start_date='',end_date='',start_time='',end_time=''):
         self.logger = logging.getLogger("LogManager")
+        self.logger_user = logging.getLogger("user_management")
+
         self.logger.info("Set log variable")
         parent = os.path.dirname(os.path.dirname(os.path.dirname(__file__))) 
         self.log_path = os.path.join(parent,"log")
@@ -209,4 +211,4 @@ class LogManager():
         pass
     
     def add_log(self):
-        self.logger.info("[{}] {}".format(self.username,self.action))
+        self.logger_user.info("[{}] {}".format(self.username,self.action))

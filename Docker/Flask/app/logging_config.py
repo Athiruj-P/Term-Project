@@ -65,11 +65,11 @@ dict_config = {
             'level': 'DEBUG',
         },
         'image_measurement' : {
-            'handlers': ["user"],
+            'handlers': ["default"],
             'level': 'DEBUG',
         },
         'image_processing_api' : {
-            'handlers': ["user"],
+            'handlers': ["default"],
             'level': 'DEBUG',
         },
     },

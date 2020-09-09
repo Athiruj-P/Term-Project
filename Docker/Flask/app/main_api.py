@@ -11,6 +11,7 @@ logging.config.dictConfig(dict_config)
 
 app = Flask(__name__)
 app.config['SECRET_KEY'] = '5LWh0JgxhT4TFSUxvORK7Ivy7jL88u98nsDurbq1iOTROox9vdfUONo7fBUj'
+app.config['JWT_ACCESS_TOKEN_EXPIRES'] = False
 jwt.init_app(app)
 
 logger.info("Created flask app.")
