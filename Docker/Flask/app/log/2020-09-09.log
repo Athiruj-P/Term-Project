@@ -4566,3 +4566,55 @@
 2020-09-09 17:30:47,454 [INFO:LogManager] {get_today_log:69} [SYSTEM]:[admin] Read log 2020-09-09.log .
 2020-09-09 17:30:47,571 [INFO:LogManager] {get_today_log:89} [SYSTEM]:[admin] Close log file.
 2020-09-09 17:30:47,571 [INFO:LogManager] {get_today_log:90} [SYSTEM]:[admin] Got all today logs.
+2020-09-09 17:37:32,855 [INFO:LogManager] {__init__:13} [SYSTEM]:Set log variable
+2020-09-09 17:37:32,855 [INFO:user_management] {add_log:214} [USER]:[admin] Enter page /upload
+2020-09-09 17:37:59,067 [INFO:LogManager] {__init__:13} [SYSTEM]:Set log variable
+2020-09-09 17:37:59,068 [INFO:user_management] {add_log:214} [USER]:[admin] Enter page /ml_management
+2020-09-09 17:37:59,131 [INFO:model_management_api] {get_all_model:271} [SYSTEM]:[admin] Use get all ML model API.
+2020-09-09 17:37:59,132 [INFO:MLManager_obj] {__init__:76} [SYSTEM]:Connecting to database
+2020-09-09 17:37:59,195 [INFO:MLManager_obj] {__init__:78} [SYSTEM]:Connected to database
+2020-09-09 17:37:59,197 [INFO:model_management_api] {get_all_model:273} [SYSTEM]:[admin] Created MLManagement object.
+2020-09-09 17:37:59,200 [INFO:model_management_api] {get_all_model:274} [SYSTEM]:[admin] Call get_all_model function.
+2020-09-09 17:37:59,201 [INFO:MLManager_obj] {get_all_model:122} [SYSTEM]:[admin] Getting all ML models.
+2020-09-09 17:37:59,238 [INFO:MLManager_obj] {get_all_model:144} [SYSTEM]:[admin] Got all ML models.
+2020-09-09 17:37:59,244 [INFO:model_management_api] {get_all_model:277} [SYSTEM]:[admin] Deleted MLManagement object.
+2020-09-09 17:37:59,245 [INFO:model_management_api] {get_all_model:291} [SYSTEM]:[admin] Response data from get_all_model API
+2020-09-09 17:38:00,854 [INFO:LogManager] {__init__:13} [SYSTEM]:Set log variable
+2020-09-09 17:38:00,856 [INFO:user_management] {add_log:214} [USER]:[admin] Enter page /ref_management
+2020-09-09 17:38:01,162 [INFO:model_management_api] {get_all_model:279} [SYSTEM]:[admin] Use get all ML model API.
+2020-09-09 17:38:01,173 [INFO:model_management_api] {get_all_model:281} [SYSTEM]:[admin] Created RefManagement object.
+2020-09-09 17:38:01,174 [INFO:model_management_api] {get_all_model:282} [SYSTEM]:[admin] Call get_all_model function.
+2020-09-09 17:38:01,232 [INFO:model_management_api] {get_all_model:289} [SYSTEM]:[admin] Deleted RefManagement object.
+2020-09-09 17:38:01,233 [INFO:model_management_api] {get_all_model:291} [SYSTEM]:[admin] Response data from get_all_model API
+2020-09-09 17:38:01,475 [INFO:model_management_api] {get_all_unit:305} [SYSTEM]:[admin] Use get all units API.
+2020-09-09 17:38:01,482 [INFO:model_management_api] {get_all_unit:307} [SYSTEM]:[admin] Created RefManagement object.
+2020-09-09 17:38:01,482 [INFO:model_management_api] {get_all_unit:308} [SYSTEM]:[admin] Call get_all_model function.
+2020-09-09 17:38:01,738 [INFO:model_management_api] {get_all_unit:315} [SYSTEM]:[admin] Deleted RefManagement object.
+2020-09-09 17:38:01,740 [INFO:model_management_api] {get_all_unit:317} [SYSTEM]:[admin] Response data from get_all_model API
+2020-09-09 17:38:03,383 [INFO:LogManager] {__init__:13} [SYSTEM]:Set log variable
+2020-09-09 17:38:03,388 [INFO:user_management] {add_log:214} [USER]:[admin] Enter page /log
+2020-09-09 17:38:03,630 [INFO:LogManager] {__init__:13} [SYSTEM]:Set log variable
+2020-09-09 17:38:03,631 [INFO:LogManager] {get_min_max_date:181} [SYSTEM]:[admin] Prepair date data to query.
+2020-09-09 17:38:03,633 [INFO:LogManager] {get_min_max_date:197} [SYSTEM]:[admin] Close log file.
+2020-09-09 17:38:03,633 [INFO:LogManager] {get_min_max_date:198} [SYSTEM]:[admin] Got min and max date.
+2020-09-09 17:38:03,707 [INFO:LogManager] {__init__:13} [SYSTEM]:Set log variable
+2020-09-09 17:38:03,709 [INFO:LogManager] {get_today_log:53} [SYSTEM]:[admin] Prepair date data to query.
+2020-09-09 17:38:03,713 [INFO:LogManager] {get_today_log:69} [SYSTEM]:[admin] Read log 2020-09-09.log .
+2020-09-09 17:38:03,835 [INFO:LogManager] {get_today_log:89} [SYSTEM]:[admin] Close log file.
+2020-09-09 17:38:03,835 [INFO:LogManager] {get_today_log:90} [SYSTEM]:[admin] Got all today logs.
+2020-09-09 17:49:48,752 [INFO:Login_api] {logout:84} [SYSTEM]:[admin] Logging out.
+2020-09-09 17:49:48,786 [INFO:Login_api] {logout:94} [SYSTEM]:[admin] Response logout.
+2020-09-09 17:49:48,981 [INFO:LogManager] {__init__:13} [SYSTEM]:Set log variable
+2020-09-09 17:49:48,982 [INFO:user_management] {add_log:214} [USER]:[admin] Enter page /log
+2020-09-09 17:49:57,785 [INFO:Login_api] {login:33} [SYSTEM]:[Test01] is logging in.
+2020-09-09 17:49:57,804 [INFO:Login_api] {login:72} [SYSTEM]:[Test01] Response tokens to login.
+2020-09-09 17:49:59,098 [INFO:LogManager] {__init__:13} [SYSTEM]:Set log variable
+2020-09-09 17:49:59,099 [INFO:user_management] {add_log:214} [USER]:[Test01] Enter page /upload
+2020-09-09 17:50:12,667 [INFO:LogManager] {__init__:13} [SYSTEM]:Set log variable
+2020-09-09 17:50:12,668 [INFO:user_management] {add_log:214} [USER]:[Test01] Enter page /upload
+2020-09-09 17:50:15,807 [INFO:LogManager] {__init__:13} [SYSTEM]:Set log variable
+2020-09-09 17:50:15,809 [INFO:user_management] {add_log:214} [USER]:[Test01] Enter page /ml_management
+2020-09-09 17:50:16,124 [INFO:LogManager] {__init__:13} [SYSTEM]:Set log variable
+2020-09-09 17:50:16,132 [INFO:user_management] {add_log:214} [USER]:[Test01] Enter page /upload
+2020-09-09 17:50:21,398 [INFO:LogManager] {__init__:13} [SYSTEM]:Set log variable
+2020-09-09 17:50:21,398 [INFO:user_management] {add_log:214} [USER]:[Test01] Enter page /upload
