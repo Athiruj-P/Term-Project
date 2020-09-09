@@ -3,6 +3,11 @@
 # ข้อมูลต้นอบบของวัตถุ
 # Author : Athiruj Poositaporn
 from flask import Flask, request, Blueprint ,make_response,jsonify
+from flask_jwt_extended import (
+    JWTManager, jwt_required, create_access_token,
+    get_jwt_identity,jwt_refresh_token_required,
+    create_refresh_token
+)
 import logging.config
 from pymongo import MongoClient
 from bson.json_util import dumps
@@ -48,10 +53,11 @@ def check_duplicate_name():
 # Description : เพิ่มข้อมูลของชื่อและไฟล์ .weights ของข้อมูลต้นแบบของวัตถุ 
 # Author : Athiruj Poositaporn
 @model_management_api.route("/add_model", methods=['put'])
+@jwt_required
 def add_model():
     try:
         model_type = request.form.get('type',None)
-        username = request.form.get('username',None)
+        username = get_jwt_identity()
         # logger_user.info("[{}] This is user".format(username))
         if(model_type == "ml"):
             logger.info("[{}] Use add ML model API.".format(username))
@@ -109,13 +115,14 @@ def add_model():
 # Description : เปลี่ยนข้อมูลของข้อมูลต้นแบบของวัตถุ หรือข้อมูลต้นแบบของวัตถุอ้างอิง
 # Author : Athiruj Poositaporn
 @model_management_api.route("/edit_model", methods=['put'])
+@jwt_required
 def edit_model():
     try:
         model_type = request.form.get('type',None)
         model_id = request.form.get('model_id',None)
         file = request.files.get('file',None)
         name = request.form.get('name',None)
-        username = request.form.get('username',None)
+        username = get_jwt_identity()
         # logger.debug("model id (API): {}".format(int(model_id)))
         if(model_type == "ml"):
             logger.info("[{}] Use edit ML model API.".format(username))
@@ -167,10 +174,11 @@ def edit_model():
 # Description : เปลี่ยนข้อมูลของข้อมูลต้นแบบของวัตถุ หรือข้อมูลต้นแบบของวัตถุอ้างอิงที่จะเปิดการใช้งานตาม id
 # Author : Athiruj Poositaporn
 @model_management_api.route("/change_active_model", methods=['post'])
+@jwt_required
 def change_active_model():
     model_type = request.form.get('type',None)
     model_id = request.form.get('model_id',None)
-    username = request.form.get('username',None)
+    username = get_jwt_identity()
     data = Model(id=model_id,username=username)
     if(model_type == "ml"):
         logger.info("[{}] Use change active ML model API.".format(username))
@@ -211,10 +219,11 @@ def change_active_model():
 # Description : เปลี่ยนสถานะข้อมูลต้นแบบของวัตถุ หรือข้อมูลต้นแบบของวัตถุอ้างอิงเป็นถูกลบ
 # Author : Athiruj Poositaporn
 @model_management_api.route("/delete_model", methods=['post'])
+@jwt_required
 def delete_model():
     model_type = request.form.get('type',None)
     model_id = request.form.get('model_id',None)
-    username = request.form.get('username',None)
+    username = get_jwt_identity()
     data = Model(id=model_id,username=username)
     if(model_type == "ml"):
         logger.info("[{}] Use delete ML model API.".format(username))
@@ -253,10 +262,11 @@ def delete_model():
 # Description : เรียกข้อมูลต้นแบบของวัตถุ หรือ ข้อมูลต้นแบบของวัตถุอ้างอิงทั้งหมดที่ไม่มีสถานะถูกลบ
 # Author : Athiruj Poositaporn
 @model_management_api.route("/get_all_model", methods=['post'])
+@jwt_required
 def get_all_model():
     try:
         model_type = request.form.get('type',None)
-        username = request.form.get('username',None)
+        username = get_jwt_identity()
         if(model_type == "ml"):
             logger.info("[{}] Use get all ML model API.".format(username))
             ml_manager = MLManagement().create_manager()
@@ -287,9 +297,10 @@ def get_all_model():
 # Description : เรียกข้อมูลหน่วยในการวัดขนาดววัตถุทั้งหมด
 # Author : Athiruj Poositaporn
 @model_management_api.route("/get_all_unit", methods=['post'])
+@jwt_required
 def get_all_unit():
     try:
-        username = request.form.get('username',None)
+        username = get_jwt_identity()
 
         logger.info("[{}] Use get all units API.".format(username))
         ref_manager = RefManagement().create_manager()
@@ -313,10 +324,11 @@ def get_all_unit():
 # Description : เรียกข้อมูลต้นแบบของวัตถุ หรือข้อมูลต้นแบบของวัตถุอ้างอิงที่ไม่มีสถานะถูกลบตาม id
 # Author : Athiruj Poositaporn
 @model_management_api.route("/get_model_by_id", methods=['post'])
+@jwt_required
 def get_model_by_id():
     model_type = request.form.get('type')
     model_id = int(request.form.get('model_id'))
-    username = request.form.get('username')
+    username = get_jwt_identity()
     data = Model(id=model_id,username=username)
     if(model_type == "ml"):
         logger.info("[{}] Use get ML model by id API.".format(username))

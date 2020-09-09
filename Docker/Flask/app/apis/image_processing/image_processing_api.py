@@ -1,4 +1,9 @@
 from flask import Flask, request, jsonify ,Blueprint ,make_response
+from flask_jwt_extended import (
+    JWTManager, jwt_required, create_access_token,
+    get_jwt_identity,jwt_refresh_token_required,
+    create_refresh_token
+)
 from pymongo import MongoClient
 import logging.config
 import numpy as np
@@ -40,13 +45,14 @@ def is_int(number):
 # Description : Service ของการอัปโหลดรูปภาพและวัดขนาดของวัตถุ
 # Author : Athiruj Poositaporn
 @image_processing_api.route("/upload_image", methods=['put'])
+@jwt_required
 def upload_image():
     try:
         file = request.files.get('file',None)
         # @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
         # ต้องแก้ไขให้ดึงข้อมูลการส่งค่าชื่อผู้ใช้งาน
         # @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
-        username = "Debug_user"
+        username = get_jwt_identity()
         # @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
 
         query_unit = None
@@ -111,6 +117,7 @@ def upload_image():
 # Description : Service ของการเรียกข้อมูลหน่วยในการวัดขนาดทั้งหมด
 # Author : Athiruj Poositaporn
 @image_processing_api.route("/get_all_unit", methods=['get'])
+@jwt_required
 def get_all_unit():
     try:
         query_unit = DPML_db[unit_collection].find()

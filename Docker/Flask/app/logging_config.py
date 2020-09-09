@@ -18,7 +18,7 @@ dict_config = {
             'formatter': 'default',
             'class': 'logging.handlers.RotatingFileHandler',
             'filename': "log/{}.log".format(date_folder),
-            'maxBytes': 5000000,
+            'maxBytes': 10000000,
             'backupCount': 10
         },
         'user': {
@@ -26,7 +26,7 @@ dict_config = {
             'formatter': 'user',
             'class': 'logging.handlers.RotatingFileHandler',
             'filename': "log/{}.log".format(date_folder),
-            'maxBytes': 5000000,
+            'maxBytes': 10000000,
             'backupCount': 10
         },
         'console': {

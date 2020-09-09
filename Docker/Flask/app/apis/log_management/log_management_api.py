@@ -3,6 +3,11 @@
 # ข้อมูลต้นอบบของวัตถุ
 # Author : Athiruj Poositaporn
 from flask import Flask, request, Blueprint ,make_response,jsonify
+from flask_jwt_extended import (
+    JWTManager, jwt_required, create_access_token,
+    get_jwt_identity,jwt_refresh_token_required,
+    create_refresh_token
+)
 from datetime import date , datetime
 import logging.config
 from pymongo import MongoClient
@@ -18,12 +23,14 @@ logger = logging.getLogger("log_management_api")
 # Description : เรียกข้อมูลประวัติการใช้งานระบบตามช่วงของวันที่และเวลาที่กำหนด
 # Author : Athiruj Poositaporn
 @log_management_api.route("/get_log", methods=['post'])
+@jwt_required
 def get_log():
     try:
         # logger.info("[{}] .".format(username))
         date_type = request.form.get('date_type')
         group = request.form.get('group')
-        username = request.form.get('username')
+        # username = request.form.get('username')
+        username = get_jwt_identity()
         if(date_type == "today"):
             today = date.today().strftime("%Y-%m-%d") # Date in YYYY-MM-DD (2020-01-10)
             log_manager = LogManager(today_date=today,group=group,username=username)
@@ -55,7 +62,7 @@ def get_log():
             return result , 400
                     
     except Exception as identifier:
-        logger.error("[{}] Error {}".format(username,identifier))
+        logger.error("Error {}".format(identifier))
         result = { 'mes' : str(identifier) , 'status' : "system_error"}
         return result , 400
 
@@ -63,10 +70,11 @@ def get_log():
 # Description : เรียกข้อมูลวันที่แรกและวันที่ล่าสุดของไฟล์ประวัติการใช้งาน
 # Author : Athiruj Poositaporn
 @log_management_api.route("/get_min_max_date", methods=['post'])
+@jwt_required
 def get_min_max_date():
     try:
         # logger.info("[{}] .".format(username))
-        username = request.form.get('username' , None)
+        username = get_jwt_identity()
         today = date.today().strftime("%Y-%m-%d") # Date in YYYY-MM-DD (2020-01-10)
         log_manager = LogManager(username=username)
         result = log_manager.get_min_max_date()
@@ -86,9 +94,10 @@ def get_min_max_date():
 # Description : บันทึกการกระทำของผู้ใช้งานระบบ
 # Author : Athiruj Poositaporn
 @log_management_api.route("/add_log", methods=['post'])
+@jwt_required
 def add_log():
     try:
-        username = request.form.get('username' , None)
+        username = get_jwt_identity()
         action = request.form.get('action' , None)
         today = date.today().strftime("%Y-%m-%d") # Date in YYYY-MM-DD (eg. 2020-01-10)
         log_manager = LogManager(username=username,action=action)
