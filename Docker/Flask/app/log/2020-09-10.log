@@ -765,3 +765,5 @@
 2020-09-10 15:50:39,557 [INFO:LogManager] {get_min_max_date:197} [SYSTEM]:[admin] Close log file.
 2020-09-10 15:50:39,557 [INFO:LogManager] {get_min_max_date:198} [SYSTEM]:[admin] Got min and max date.
 2020-09-10 15:50:39,573 [INFO:LogManager] {get_today_log:69} [SYSTEM]:[admin] Read log 2020-09-10.log .
+2020-09-10 15:50:39,605 [INFO:LogManager] {get_today_log:89} [SYSTEM]:[admin] Close log file.
+2020-09-10 15:50:39,605 [INFO:LogManager] {get_today_log:90} [SYSTEM]:[admin] Got all today logs.
