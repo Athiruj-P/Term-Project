@@ -76,18 +76,19 @@ def upload_image():
         
         logger.info("[{}] Got measurement result".format(username))
         result_img = image_processor.measure_obj_size(input_image)
-
-        logger.info("[{}] Prepair image date to be response.".format(username))
-        retval, buffer = cv2.imencode('.png', result_img['img'])
-        data = base64.b64encode(buffer)
-        data = data.decode('utf-8')
-
-        if(result_img['status'] == "ml_not_found"):
+        if(result_img['status'] == "system_error"):
+            return result_img , 400
+        elif(result_img['status'] == "ml_not_found"):
             result = {'mes' : "Object not detected." ,'img' : data, 'status' : "ml_not_found"}
             return result , 400
         elif(result_img['status'] == "ref_not_found"):
             result = {'mes' : "Reference object not detected.",'img' : data, 'status' : "ref_not_found"}
             return result , 400
+
+        logger.info("[{}] Prepair image date to be response.".format(username))
+        retval, buffer = cv2.imencode('.png', result_img['img'])
+        data = base64.b64encode(buffer)
+        data = data.decode('utf-8')
 
         response = {
             'img' : data,
@@ -102,16 +103,12 @@ def upload_image():
             list(err_msg.msg.keys())[list(err_msg.msg.values()).index(identifier)]
             result = {'mes' : str(identifier), 'status' : "error"}
         except:
+            logger.error("{}.".format(str(identifier)))
             result = {'mes' : str(identifier), 'status' : "system_error"}
             # result = {'mes' : err_msg.msg['other_err']}
         return result , 400
     finally:
-        # @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
-        # ต้องแก้ไขให้ดึงข้อมูลจาก DB
-        # @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
         db_connect.close()
-        # pass
-        # @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
 
 # get_all_unit
 # Description : Service ของการเรียกข้อมูลหน่วยในการวัดขนาดทั้งหมด

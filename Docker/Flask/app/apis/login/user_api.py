@@ -73,7 +73,7 @@ def login():
         result = {'tokens':tokens, 'role':query_result['role_name'], 'status' : 'success'}
         return result, 200
     except Exception as identifier:
-        logger.warning("{}.".format(str(identifier)))
+        logger.error("{}.".format(str(identifier)))
         result = {'mes' : str(identifier), 'status' : "system_error"}
         return result , 400
 
@@ -95,6 +95,7 @@ def logout():
         result = {"mes": "Logout success" , 'status' : 'success'}
         return result , 200
     except Exception as identifier:
+        logger.error("{}.".format(str(identifier)))
         result = {"mes": str(identifier) , 'status' : 'system_error'}
         return result , 400
 

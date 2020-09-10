@@ -176,42 +176,47 @@ def edit_model():
 @model_management_api.route("/change_active_model", methods=['post'])
 @jwt_required
 def change_active_model():
-    model_type = request.form.get('type',None)
-    model_id = request.form.get('model_id',None)
-    username = get_jwt_identity()
-    data = Model(id=model_id,username=username)
-    if(model_type == "ml"):
-        logger.info("[{}] Use change active ML model API.".format(username))
-        ml_manager = MLManagement().create_manager()
-        logger.info("[{}] Created MLManagement object.".format(username))
-        logger.info("[{}] Call change_active_model function.".format(username))
-        result = ml_manager.change_active_model(data)
-        del ml_manager
+    try:
+        model_type = request.form.get('type',None)
+        model_id = request.form.get('model_id',None)
+        username = get_jwt_identity()
+        data = Model(id=model_id,username=username)
+        if(model_type == "ml"):
+            logger.info("[{}] Use change active ML model API.".format(username))
+            ml_manager = MLManagement().create_manager()
+            logger.info("[{}] Created MLManagement object.".format(username))
+            logger.info("[{}] Call change_active_model function.".format(username))
+            result = ml_manager.change_active_model(data)
+            del ml_manager
 
-        if(result['status'] == "error"):
-                    return result , 400
-        elif(result['status'] == "system_error"):
-            return result , 400
+            if(result['status'] == "error"):
+                        return result , 400
+            elif(result['status'] == "system_error"):
+                return result , 400
 
-        logger.info("[{}] Deleted MLManagement object.".format(username))
-        logger.info("[{}] Response data from change_active_model API".format(username))
-        return result , 200
-    elif(model_type == "ref"):
-        logger.info("[{}] Use change active Ref model API.".format(username))
-        ref_manager = RefManagement().create_manager()
-        logger.info("[{}] Created RefManagement object.".format(username))
-        logger.info("[{}] Call change_active_model function.".format(username))
-        result = ref_manager.change_active_model(data)
-        del ref_manager
+            logger.info("[{}] Deleted MLManagement object.".format(username))
+            logger.info("[{}] Response data from change_active_model API".format(username))
+            return result , 200
+        elif(model_type == "ref"):
+            logger.info("[{}] Use change active Ref model API.".format(username))
+            ref_manager = RefManagement().create_manager()
+            logger.info("[{}] Created RefManagement object.".format(username))
+            logger.info("[{}] Call change_active_model function.".format(username))
+            result = ref_manager.change_active_model(data)
+            del ref_manager
 
-        if(result['status'] == "error"):
-                    return result , 400
-        elif(result['status'] == "system_error"):
-            return result , 400
+            if(result['status'] == "error"):
+                        return result , 400
+            elif(result['status'] == "system_error"):
+                return result , 400
 
-        logger.info("[{}] Deleted RefManagement object.".format(username))
-        logger.info("[{}] Response data from change_active_model API".format(username))
-        return result , 200
+            logger.info("[{}] Deleted RefManagement object.".format(username))
+            logger.info("[{}] Response data from change_active_model API".format(username))
+            return result , 200
+    except Exception as identifier:
+        logger.error("[{}] Error {}".format(username,identifier))
+        result = { 'mes' : str(identifier) , 'status' : "system_error"}
+        return result , 400
     
 
 
@@ -221,41 +226,46 @@ def change_active_model():
 @model_management_api.route("/delete_model", methods=['post'])
 @jwt_required
 def delete_model():
-    model_type = request.form.get('type',None)
-    model_id = request.form.get('model_id',None)
-    username = get_jwt_identity()
-    data = Model(id=model_id,username=username)
-    if(model_type == "ml"):
-        logger.info("[{}] Use delete ML model API.".format(username))
-        ml_manager = MLManagement().create_manager()
-        logger.info("[{}] Created MLManagement object.".format(username))
-        logger.info("[{}] Call delete_model function.".format(username))
-        result = ml_manager.delete_model(data)
-        del ml_manager
-        if(result['status'] == "error"):
-                    return result , 400
-        elif(result['status'] == "system_error"):
-            return result , 400
-        logger.info("[{}] Deleted MLManagement object.".format(username))
-        logger.info("[{}] Response data from delete_model API".format(username))
-        return result , 200
+    try:
+        model_type = request.form.get('type',None)
+        model_id = request.form.get('model_id',None)
+        username = get_jwt_identity()
+        data = Model(id=model_id,username=username)
+        if(model_type == "ml"):
+            logger.info("[{}] Use delete ML model API.".format(username))
+            ml_manager = MLManagement().create_manager()
+            logger.info("[{}] Created MLManagement object.".format(username))
+            logger.info("[{}] Call delete_model function.".format(username))
+            result = ml_manager.delete_model(data)
+            del ml_manager
+            if(result['status'] == "error"):
+                        return result , 400
+            elif(result['status'] == "system_error"):
+                return result , 400
+            logger.info("[{}] Deleted MLManagement object.".format(username))
+            logger.info("[{}] Response data from delete_model API".format(username))
+            return result , 200
 
-    elif(model_type == "ref"):
-        logger.info("[{}] Use delete Ref model API.".format(username))
-        ref_manager = RefManagement().create_manager()
-        logger.info("[{}] Created RefManagement object.".format(username))
-        logger.info("[{}] Call delete_model function.".format(username))
-        result = ref_manager.delete_model(data)
-        del ref_manager
-        
-        if(result['status'] == "error"):
-                    return result , 400
-        elif(result['status'] == "system_error"):
-            return result , 400
+        elif(model_type == "ref"):
+            logger.info("[{}] Use delete Ref model API.".format(username))
+            ref_manager = RefManagement().create_manager()
+            logger.info("[{}] Created RefManagement object.".format(username))
+            logger.info("[{}] Call delete_model function.".format(username))
+            result = ref_manager.delete_model(data)
+            del ref_manager
+            
+            if(result['status'] == "error"):
+                        return result , 400
+            elif(result['status'] == "system_error"):
+                return result , 400
 
-        logger.info("[{}] Deleted RefManagement object.".format(username))
-        logger.info("[{}] Response data from delete_model API".format(username))
-        return result , 200
+            logger.info("[{}] Deleted RefManagement object.".format(username))
+            logger.info("[{}] Response data from delete_model API".format(username))
+            return result , 200
+    except Exception as identifier:
+        logger.error("[{}] Error {}".format(username,identifier))
+        result = { 'mes' : str(identifier) , 'status' : "system_error"}
+        return result , 400
 
 
 # get_all_model

@@ -182,26 +182,13 @@ class ImageMeasurement:
     # Description : ฟังก์ชันการวัดขนาดของวัตถุ
     # Author : Athiruj Poositaporn
     def measure_obj_size(self,image):
-        # @@@@@@@@@@@@@@@@@@@@@@@@@
-        # ต้องแก้ไขให้ดึงข้อมูลจาก DB
-        # @@@@@@@@@@@@@@@@@@@@@@@@@
-        # อ่านไฟล์ weights และ config
-        # ต้องเปลี่ยนเป็นดึงข้อมูลจาก DB 2 ค่าคือ path ของ ML และ Ref
         parent = os.path.dirname(os.path.dirname(os.path.dirname(__file__)))
-        # self.ml_model_path = os.path.join(parent, db_config.item["db_file_path"], db_config.item["ml_path"],"box_model.weights")
-        # self.ref_model_path = os.path.join(parent, db_config.item["db_file_path"], db_config.item["ref_path"],"dpml_logo_model.weights")
-        # @@@@@@@@@@@@@@@@@@@@@@@@@
 
         input_image = image.image
         input_image = self.resize_with_aspect_ratio(image.image,width=1080)
         hsv=cv2.cvtColor(cv2.GaussianBlur(input_image, (7, 7), 0), cv2.COLOR_BGR2HSV)
 
-        # @@@@@@@@@@@@@@@@@@@@@@@@@
-        # ต้องแก้ไขให้ดึงข้อมูลจาก DB
-        # @@@@@@@@@@@@@@@@@@@@@@@@@
-        #ได้จากข้อมูลความกว้างหรือยาวจาก DB ของ Ref model
         width_of_ref_obj = self.ref_model_width
-        # @@@@@@@@@@@@@@@@@@@@@@@@@
 
         arr_center_point = self.detect_object(input_image)
         ref_center_point = self.detect_ref_object(input_image)
@@ -458,13 +445,16 @@ class ImageMeasurement:
             result = {'img' : origin ,'img_data' : result_object_list ,'status' : "success"}
             return result
         except Exception as identifier:
-            try:
-                # ใช้เพื่อค้นหาว่าค่า identifier มีใน err_msg.msg หรือไม่ ถ้าไม่มีการทำงานจะ error และเข้าสู่ except
-                list(err_msg.msg.keys())[list(err_msg.msg.values()).index(identifier)]
-            except:
-                logger.error("{}.".format(str(identifier)))
-                result = {'mes' : str(identifier), 'status' : "system_error"}
-                # result = {'mes' : err_msg.msg['other_err']}
+            # try:
+            #     # ใช้เพื่อค้นหาว่าค่า identifier มีใน err_msg.msg หรือไม่ ถ้าไม่มีการทำงานจะ error และเข้าสู่ except
+            #     list(err_msg.msg.keys())[list(err_msg.msg.values()).index(identifier)]
+            # except:
+            #     logger.error("{}.".format(str(identifier)))
+            #     result = {'mes' : str(identifier), 'status' : "system_error"}
+            #     # result = {'mes' : err_msg.msg['other_err']}
+            # return result
+            logger.error("{}.".format(str(identifier)))
+            result = {'mes' : str(identifier), 'status' : "system_error"}
             return result
     def __del__(self): 
         db_connect.close()

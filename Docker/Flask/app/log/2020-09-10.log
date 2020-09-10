@@ -146,3 +146,622 @@
 2020-09-10 09:42:49,297 [INFO:LogManager] {__init__:13} [SYSTEM]:Set log variable
 2020-09-10 09:42:49,298 [INFO:user_management] {add_log:214} [USER]:[Test01] Enter page /upload
 2020-09-10 09:42:50,330 [INFO:Login_api] {logout:94} [SYSTEM]:[Test01] Response logout.
+2020-09-10 15:22:16,502 [INFO:main] {<module>:29} [SYSTEM]:Created flask app.
+2020-09-10 15:22:16,518 [INFO:main] {<module>:31} [SYSTEM]:Registered image_processing_api blueprint 
+2020-09-10 15:22:16,519 [INFO:main] {<module>:33} [SYSTEM]:Registered user_api blueprint 
+2020-09-10 15:22:16,523 [INFO:main] {<module>:35} [SYSTEM]:Registered model_management_api blueprint 
+2020-09-10 15:22:16,525 [INFO:main] {<module>:37} [SYSTEM]:Registered log_management_api blueprint 
+2020-09-10 15:22:18,091 [INFO:main] {<module>:29} [SYSTEM]:Created flask app.
+2020-09-10 15:22:18,095 [INFO:main] {<module>:31} [SYSTEM]:Registered image_processing_api blueprint 
+2020-09-10 15:22:18,096 [INFO:main] {<module>:33} [SYSTEM]:Registered user_api blueprint 
+2020-09-10 15:22:18,105 [INFO:main] {<module>:35} [SYSTEM]:Registered model_management_api blueprint 
+2020-09-10 15:22:18,106 [INFO:main] {<module>:37} [SYSTEM]:Registered log_management_api blueprint 
+2020-09-10 15:22:23,284 [INFO:LogManager] {__init__:13} [SYSTEM]:Set log variable
+2020-09-10 15:22:23,286 [INFO:user_management] {add_log:214} [USER]:[admin] Enter page /upload
+2020-09-10 15:22:26,889 [INFO:LogManager] {__init__:13} [SYSTEM]:Set log variable
+2020-09-10 15:22:26,889 [INFO:user_management] {add_log:214} [USER]:[admin] Choosen image file.
+2020-09-10 15:22:36,107 [INFO:LogManager] {__init__:13} [SYSTEM]:Set log variable
+2020-09-10 15:22:36,107 [INFO:user_management] {add_log:214} [USER]:[admin] Enter page /upload
+2020-09-10 15:22:39,245 [INFO:LogManager] {__init__:13} [SYSTEM]:Set log variable
+2020-09-10 15:22:39,247 [INFO:user_management] {add_log:214} [USER]:[admin] Enter page /ml_management
+2020-09-10 15:22:39,558 [INFO:model_management_api] {get_all_model:271} [SYSTEM]:[admin] Use get all ML model API.
+2020-09-10 15:22:39,558 [INFO:MLManager_obj] {__init__:76} [SYSTEM]:Connecting to database
+2020-09-10 15:22:40,056 [INFO:LogManager] {__init__:13} [SYSTEM]:Set log variable
+2020-09-10 15:22:40,056 [INFO:user_management] {add_log:214} [USER]:[admin] Enter page /upload
+2020-09-10 15:22:40,221 [INFO:MLManager_obj] {__init__:78} [SYSTEM]:Connected to database
+2020-09-10 15:22:40,222 [INFO:model_management_api] {get_all_model:273} [SYSTEM]:[admin] Created MLManagement object.
+2020-09-10 15:22:40,223 [INFO:model_management_api] {get_all_model:274} [SYSTEM]:[admin] Call get_all_model function.
+2020-09-10 15:22:40,224 [INFO:MLManager_obj] {get_all_model:122} [SYSTEM]:[admin] Getting all ML models.
+2020-09-10 15:23:10,248 [INFO:model_management_api] {get_all_model:277} [SYSTEM]:[admin] Deleted MLManagement object.
+2020-09-10 15:23:10,261 [INFO:model_management_api] {get_all_model:291} [SYSTEM]:[admin] Response data from get_all_model API
+2020-09-10 15:23:19,934 [INFO:main] {<module>:29} [SYSTEM]:Created flask app.
+2020-09-10 15:23:19,943 [INFO:main] {<module>:31} [SYSTEM]:Registered image_processing_api blueprint 
+2020-09-10 15:23:19,948 [INFO:main] {<module>:33} [SYSTEM]:Registered user_api blueprint 
+2020-09-10 15:23:19,953 [INFO:main] {<module>:35} [SYSTEM]:Registered model_management_api blueprint 
+2020-09-10 15:23:19,956 [INFO:main] {<module>:37} [SYSTEM]:Registered log_management_api blueprint 
+2020-09-10 15:24:31,082 [INFO:LogManager] {__init__:13} [SYSTEM]:Set log variable
+2020-09-10 15:24:31,086 [INFO:user_management] {add_log:214} [USER]:[admin] Enter page /ml_management
+2020-09-10 15:24:31,138 [INFO:model_management_api] {get_all_model:271} [SYSTEM]:[admin] Use get all ML model API.
+2020-09-10 15:24:31,140 [INFO:MLManager_obj] {__init__:76} [SYSTEM]:Connecting to database
+2020-09-10 15:24:31,146 [INFO:LogManager] {__init__:13} [SYSTEM]:Set log variable
+2020-09-10 15:24:31,146 [INFO:user_management] {add_log:214} [USER]:[admin] Enter page /upload
+2020-09-10 15:24:31,166 [INFO:MLManager_obj] {__init__:78} [SYSTEM]:Connected to database
+2020-09-10 15:24:31,167 [INFO:model_management_api] {get_all_model:273} [SYSTEM]:[admin] Created MLManagement object.
+2020-09-10 15:24:31,169 [INFO:model_management_api] {get_all_model:274} [SYSTEM]:[admin] Call get_all_model function.
+2020-09-10 15:24:31,169 [INFO:MLManager_obj] {get_all_model:122} [SYSTEM]:[admin] Getting all ML models.
+2020-09-10 15:24:31,377 [INFO:MLManager_obj] {get_all_model:144} [SYSTEM]:[admin] Got all ML models.
+2020-09-10 15:24:31,383 [INFO:model_management_api] {get_all_model:277} [SYSTEM]:[admin] Deleted MLManagement object.
+2020-09-10 15:24:31,384 [INFO:model_management_api] {get_all_model:291} [SYSTEM]:[admin] Response data from get_all_model API
+2020-09-10 15:24:38,762 [INFO:LogManager] {__init__:13} [SYSTEM]:Set log variable
+2020-09-10 15:24:38,762 [INFO:user_management] {add_log:214} [USER]:[admin] Choosen image file.
+2020-09-10 15:24:39,198 [INFO:LogManager] {__init__:13} [SYSTEM]:Set log variable
+2020-09-10 15:24:39,199 [INFO:user_management] {add_log:214} [USER]:[admin] Selected measurement unit.
+2020-09-10 15:24:39,739 [INFO:LogManager] {__init__:13} [SYSTEM]:Set log variable
+2020-09-10 15:24:39,741 [INFO:user_management] {add_log:214} [USER]:[admin] Click upload image button.
+2020-09-10 15:24:40,011 [INFO:image_processing_api] {upload_image:59} [SYSTEM]:[admin] Prepair image data to be measure.
+2020-09-10 15:24:40,012 [INFO:image_processing_api] {upload_image:70} [SYSTEM]:[admin] Processing image...
+2020-09-10 15:24:40,351 [INFO:image_processing_api] {upload_image:77} [SYSTEM]:[admin] Got measurement result
+2020-09-10 15:24:49,349 [ERROR:image_processing_api] {upload_image:106} [SYSTEM]:OpenCV(4.3.0) C:\projects\opencv-python\opencv\modules\dnn\src\darknet\darknet_importer.cpp:214: error: (-212:Parsing error) Failed to parse NetParameter file: /app/db_file/ref_model/e2e4f50a1fb2408fba3473fbef5761f5.weights in function 'cv::dnn::dnn4_v20200310::readNetFromDarknet'
+.
+2020-09-10 15:24:54,104 [INFO:LogManager] {__init__:13} [SYSTEM]:Set log variable
+2020-09-10 15:24:54,105 [INFO:user_management] {add_log:214} [USER]:[admin] Enter page /log
+2020-09-10 15:24:54,166 [INFO:LogManager] {__init__:13} [SYSTEM]:Set log variable
+2020-09-10 15:24:54,168 [INFO:LogManager] {get_min_max_date:181} [SYSTEM]:[admin] Prepair date data to query.
+2020-09-10 15:24:54,175 [INFO:LogManager] {__init__:13} [SYSTEM]:Set log variable
+2020-09-10 15:24:54,176 [INFO:LogManager] {get_today_log:53} [SYSTEM]:[admin] Prepair date data to query.
+2020-09-10 15:24:54,194 [INFO:LogManager] {get_min_max_date:197} [SYSTEM]:[admin] Close log file.
+2020-09-10 15:24:54,195 [INFO:LogManager] {get_min_max_date:198} [SYSTEM]:[admin] Got min and max date.
+2020-09-10 15:24:54,207 [INFO:LogManager] {get_today_log:69} [SYSTEM]:[admin] Read log 2020-09-10.log .
+2020-09-10 15:24:54,215 [INFO:LogManager] {get_today_log:89} [SYSTEM]:[admin] Close log file.
+2020-09-10 15:24:54,216 [INFO:LogManager] {get_today_log:90} [SYSTEM]:[admin] Got all today logs.
+2020-09-10 15:25:37,443 [INFO:main] {<module>:29} [SYSTEM]:Created flask app.
+2020-09-10 15:25:37,447 [INFO:main] {<module>:31} [SYSTEM]:Registered image_processing_api blueprint 
+2020-09-10 15:25:37,449 [INFO:main] {<module>:33} [SYSTEM]:Registered user_api blueprint 
+2020-09-10 15:25:37,454 [INFO:main] {<module>:35} [SYSTEM]:Registered model_management_api blueprint 
+2020-09-10 15:25:37,456 [INFO:main] {<module>:37} [SYSTEM]:Registered log_management_api blueprint 
+2020-09-10 15:25:45,074 [INFO:main] {<module>:29} [SYSTEM]:Created flask app.
+2020-09-10 15:25:45,078 [INFO:main] {<module>:31} [SYSTEM]:Registered image_processing_api blueprint 
+2020-09-10 15:25:45,080 [INFO:main] {<module>:33} [SYSTEM]:Registered user_api blueprint 
+2020-09-10 15:25:45,084 [INFO:main] {<module>:35} [SYSTEM]:Registered model_management_api blueprint 
+2020-09-10 15:25:45,086 [INFO:main] {<module>:37} [SYSTEM]:Registered log_management_api blueprint 
+2020-09-10 15:30:08,745 [INFO:main] {<module>:29} [SYSTEM]:Created flask app.
+2020-09-10 15:30:08,748 [INFO:main] {<module>:31} [SYSTEM]:Registered image_processing_api blueprint 
+2020-09-10 15:30:08,750 [INFO:main] {<module>:33} [SYSTEM]:Registered user_api blueprint 
+2020-09-10 15:30:08,756 [INFO:main] {<module>:35} [SYSTEM]:Registered model_management_api blueprint 
+2020-09-10 15:30:08,761 [INFO:main] {<module>:37} [SYSTEM]:Registered log_management_api blueprint 
+2020-09-10 15:30:10,269 [INFO:main] {<module>:29} [SYSTEM]:Created flask app.
+2020-09-10 15:30:10,274 [INFO:main] {<module>:31} [SYSTEM]:Registered image_processing_api blueprint 
+2020-09-10 15:30:10,283 [INFO:main] {<module>:33} [SYSTEM]:Registered user_api blueprint 
+2020-09-10 15:30:10,300 [INFO:main] {<module>:35} [SYSTEM]:Registered model_management_api blueprint 
+2020-09-10 15:30:10,314 [INFO:main] {<module>:37} [SYSTEM]:Registered log_management_api blueprint 
+2020-09-10 15:30:33,977 [INFO:LogManager] {__init__:13} [SYSTEM]:Set log variable
+2020-09-10 15:30:33,977 [INFO:user_management] {add_log:214} [USER]:[admin] Enter page /ml_management
+2020-09-10 15:30:44,213 [INFO:LogManager] {__init__:13} [SYSTEM]:Set log variable
+2020-09-10 15:30:44,213 [INFO:user_management] {add_log:214} [USER]:[admin] Enter page /ml_management
+2020-09-10 15:30:44,514 [INFO:model_management_api] {get_all_model:281} [SYSTEM]:[admin] Use get all ML model API.
+2020-09-10 15:30:44,514 [INFO:MLManager_obj] {__init__:76} [SYSTEM]:Connecting to database
+2020-09-10 15:30:45,528 [INFO:MLManager_obj] {__init__:78} [SYSTEM]:Connected to database
+2020-09-10 15:30:45,528 [INFO:model_management_api] {get_all_model:283} [SYSTEM]:[admin] Created MLManagement object.
+2020-09-10 15:30:45,531 [INFO:model_management_api] {get_all_model:284} [SYSTEM]:[admin] Call get_all_model function.
+2020-09-10 15:30:45,533 [INFO:MLManager_obj] {get_all_model:122} [SYSTEM]:[admin] Getting all ML models.
+2020-09-10 15:30:45,574 [INFO:MLManager_obj] {get_all_model:144} [SYSTEM]:[admin] Got all ML models.
+2020-09-10 15:30:46,186 [INFO:model_management_api] {get_all_model:287} [SYSTEM]:[admin] Deleted MLManagement object.
+2020-09-10 15:30:46,190 [INFO:model_management_api] {get_all_model:301} [SYSTEM]:[admin] Response data from get_all_model API
+2020-09-10 15:30:55,324 [INFO:LogManager] {__init__:13} [SYSTEM]:Set log variable
+2020-09-10 15:30:55,325 [INFO:user_management] {add_log:214} [USER]:[admin] Enter page /ref_management
+2020-09-10 15:30:55,394 [INFO:model_management_api] {get_all_model:289} [SYSTEM]:[admin] Use get all ML model API.
+2020-09-10 15:30:55,398 [INFO:model_management_api] {get_all_unit:315} [SYSTEM]:[admin] Use get all units API.
+2020-09-10 15:30:55,404 [INFO:model_management_api] {get_all_model:291} [SYSTEM]:[admin] Created RefManagement object.
+2020-09-10 15:30:55,406 [INFO:model_management_api] {get_all_unit:317} [SYSTEM]:[admin] Created RefManagement object.
+2020-09-10 15:30:55,407 [INFO:model_management_api] {get_all_model:292} [SYSTEM]:[admin] Call get_all_model function.
+2020-09-10 15:30:55,408 [INFO:model_management_api] {get_all_unit:318} [SYSTEM]:[admin] Call get_all_model function.
+2020-09-10 15:30:55,450 [INFO:model_management_api] {get_all_unit:325} [SYSTEM]:[admin] Deleted RefManagement object.
+2020-09-10 15:30:55,450 [INFO:model_management_api] {get_all_unit:327} [SYSTEM]:[admin] Response data from get_all_model API
+2020-09-10 15:30:55,458 [INFO:model_management_api] {get_all_model:299} [SYSTEM]:[admin] Deleted RefManagement object.
+2020-09-10 15:30:55,459 [INFO:model_management_api] {get_all_model:301} [SYSTEM]:[admin] Response data from get_all_model API
+2020-09-10 15:30:59,050 [INFO:LogManager] {__init__:13} [SYSTEM]:Set log variable
+2020-09-10 15:30:59,052 [INFO:user_management] {add_log:214} [USER]:[admin] Enter page /ml_management
+2020-09-10 15:30:59,354 [INFO:model_management_api] {get_all_model:281} [SYSTEM]:[admin] Use get all ML model API.
+2020-09-10 15:30:59,355 [INFO:MLManager_obj] {__init__:76} [SYSTEM]:Connecting to database
+2020-09-10 15:30:59,359 [INFO:MLManager_obj] {__init__:78} [SYSTEM]:Connected to database
+2020-09-10 15:30:59,360 [INFO:model_management_api] {get_all_model:283} [SYSTEM]:[admin] Created MLManagement object.
+2020-09-10 15:30:59,360 [INFO:model_management_api] {get_all_model:284} [SYSTEM]:[admin] Call get_all_model function.
+2020-09-10 15:30:59,362 [INFO:MLManager_obj] {get_all_model:122} [SYSTEM]:[admin] Getting all ML models.
+2020-09-10 15:30:59,392 [INFO:MLManager_obj] {get_all_model:144} [SYSTEM]:[admin] Got all ML models.
+2020-09-10 15:30:59,400 [INFO:model_management_api] {get_all_model:287} [SYSTEM]:[admin] Deleted MLManagement object.
+2020-09-10 15:30:59,401 [INFO:model_management_api] {get_all_model:301} [SYSTEM]:[admin] Response data from get_all_model API
+2020-09-10 15:31:01,430 [INFO:LogManager] {__init__:13} [SYSTEM]:Set log variable
+2020-09-10 15:31:01,430 [INFO:user_management] {add_log:214} [USER]:[admin] Enter page /ref_management
+2020-09-10 15:31:01,497 [INFO:model_management_api] {get_all_model:289} [SYSTEM]:[admin] Use get all ML model API.
+2020-09-10 15:31:01,501 [INFO:model_management_api] {get_all_unit:315} [SYSTEM]:[admin] Use get all units API.
+2020-09-10 15:31:01,507 [INFO:model_management_api] {get_all_model:291} [SYSTEM]:[admin] Created RefManagement object.
+2020-09-10 15:31:01,509 [INFO:model_management_api] {get_all_model:292} [SYSTEM]:[admin] Call get_all_model function.
+2020-09-10 15:31:01,513 [INFO:model_management_api] {get_all_unit:317} [SYSTEM]:[admin] Created RefManagement object.
+2020-09-10 15:31:01,518 [INFO:model_management_api] {get_all_unit:318} [SYSTEM]:[admin] Call get_all_model function.
+2020-09-10 15:31:01,567 [INFO:model_management_api] {get_all_unit:325} [SYSTEM]:[admin] Deleted RefManagement object.
+2020-09-10 15:31:01,567 [INFO:model_management_api] {get_all_model:299} [SYSTEM]:[admin] Deleted RefManagement object.
+2020-09-10 15:31:01,568 [INFO:model_management_api] {get_all_unit:327} [SYSTEM]:[admin] Response data from get_all_model API
+2020-09-10 15:31:01,569 [INFO:model_management_api] {get_all_model:301} [SYSTEM]:[admin] Response data from get_all_model API
+2020-09-10 15:31:03,189 [INFO:LogManager] {__init__:13} [SYSTEM]:Set log variable
+2020-09-10 15:31:03,189 [INFO:user_management] {add_log:214} [USER]:[admin] Enter page /upload
+2020-09-10 15:31:07,503 [INFO:LogManager] {__init__:13} [SYSTEM]:Set log variable
+2020-09-10 15:31:07,504 [INFO:user_management] {add_log:214} [USER]:[admin] Choosen image file.
+2020-09-10 15:31:08,349 [INFO:LogManager] {__init__:13} [SYSTEM]:Set log variable
+2020-09-10 15:31:08,349 [INFO:user_management] {add_log:214} [USER]:[admin] Selected measurement unit.
+2020-09-10 15:31:08,854 [INFO:LogManager] {__init__:13} [SYSTEM]:Set log variable
+2020-09-10 15:31:08,856 [INFO:user_management] {add_log:214} [USER]:[admin] Click upload image button.
+2020-09-10 15:31:09,121 [INFO:image_processing_api] {upload_image:59} [SYSTEM]:[admin] Prepair image data to be measure.
+2020-09-10 15:31:09,122 [INFO:image_processing_api] {upload_image:70} [SYSTEM]:[admin] Processing image...
+2020-09-10 15:31:09,229 [INFO:image_processing_api] {upload_image:77} [SYSTEM]:[admin] Got measurement result
+2020-09-10 15:31:14,360 [INFO:LogManager] {__init__:13} [SYSTEM]:Set log variable
+2020-09-10 15:31:14,361 [INFO:user_management] {add_log:214} [USER]:[admin] Enter page /ref_management
+2020-09-10 15:31:14,664 [INFO:model_management_api] {get_all_model:289} [SYSTEM]:[admin] Use get all ML model API.
+2020-09-10 15:31:14,667 [INFO:model_management_api] {get_all_unit:315} [SYSTEM]:[admin] Use get all units API.
+2020-09-10 15:31:14,673 [INFO:model_management_api] {get_all_model:291} [SYSTEM]:[admin] Created RefManagement object.
+2020-09-10 15:31:14,675 [INFO:model_management_api] {get_all_model:292} [SYSTEM]:[admin] Call get_all_model function.
+2020-09-10 15:31:14,681 [INFO:model_management_api] {get_all_unit:317} [SYSTEM]:[admin] Created RefManagement object.
+2020-09-10 15:31:14,682 [INFO:model_management_api] {get_all_unit:318} [SYSTEM]:[admin] Call get_all_model function.
+2020-09-10 15:31:14,839 [INFO:model_management_api] {get_all_unit:325} [SYSTEM]:[admin] Deleted RefManagement object.
+2020-09-10 15:31:14,840 [INFO:model_management_api] {get_all_unit:327} [SYSTEM]:[admin] Response data from get_all_model API
+2020-09-10 15:31:14,852 [INFO:model_management_api] {get_all_model:299} [SYSTEM]:[admin] Deleted RefManagement object.
+2020-09-10 15:31:14,853 [INFO:model_management_api] {get_all_model:301} [SYSTEM]:[admin] Response data from get_all_model API
+2020-09-10 15:31:23,592 [INFO:LogManager] {__init__:13} [SYSTEM]:Set log variable
+2020-09-10 15:31:23,594 [INFO:user_management] {add_log:214} [USER]:[admin] Enter page /upload
+2020-09-10 15:31:38,597 [INFO:LogManager] {__init__:13} [SYSTEM]:Set log variable
+2020-09-10 15:31:38,597 [INFO:user_management] {add_log:214} [USER]:[admin] Choosen image file.
+2020-09-10 15:31:40,029 [INFO:LogManager] {__init__:13} [SYSTEM]:Set log variable
+2020-09-10 15:31:40,030 [INFO:user_management] {add_log:214} [USER]:[admin] Selected measurement unit.
+2020-09-10 15:31:40,277 [INFO:LogManager] {__init__:13} [SYSTEM]:Set log variable
+2020-09-10 15:31:40,280 [INFO:user_management] {add_log:214} [USER]:[admin] Click upload image button.
+2020-09-10 15:31:40,600 [INFO:image_processing_api] {upload_image:59} [SYSTEM]:[admin] Prepair image data to be measure.
+2020-09-10 15:31:40,601 [INFO:image_processing_api] {upload_image:70} [SYSTEM]:[admin] Processing image...
+2020-09-10 15:31:40,675 [INFO:image_processing_api] {upload_image:77} [SYSTEM]:[admin] Got measurement result
+2020-09-10 15:31:51,045 [INFO:LogManager] {__init__:13} [SYSTEM]:Set log variable
+2020-09-10 15:31:51,048 [INFO:user_management] {add_log:214} [USER]:[admin] Enter page /ref_management
+2020-09-10 15:31:51,055 [INFO:model_management_api] {get_all_model:289} [SYSTEM]:[admin] Use get all ML model API.
+2020-09-10 15:31:51,058 [INFO:model_management_api] {get_all_unit:315} [SYSTEM]:[admin] Use get all units API.
+2020-09-10 15:31:51,071 [INFO:model_management_api] {get_all_model:291} [SYSTEM]:[admin] Created RefManagement object.
+2020-09-10 15:31:51,075 [INFO:model_management_api] {get_all_model:292} [SYSTEM]:[admin] Call get_all_model function.
+2020-09-10 15:31:51,082 [INFO:model_management_api] {get_all_unit:317} [SYSTEM]:[admin] Created RefManagement object.
+2020-09-10 15:31:51,083 [INFO:model_management_api] {get_all_unit:318} [SYSTEM]:[admin] Call get_all_model function.
+2020-09-10 15:31:51,147 [INFO:model_management_api] {get_all_unit:325} [SYSTEM]:[admin] Deleted RefManagement object.
+2020-09-10 15:31:51,148 [INFO:model_management_api] {get_all_unit:327} [SYSTEM]:[admin] Response data from get_all_model API
+2020-09-10 15:31:51,160 [INFO:model_management_api] {get_all_model:299} [SYSTEM]:[admin] Deleted RefManagement object.
+2020-09-10 15:31:51,161 [INFO:model_management_api] {get_all_model:301} [SYSTEM]:[admin] Response data from get_all_model API
+2020-09-10 15:33:40,567 [ERROR:image_processing_api] {upload_image:106} [SYSTEM]:OpenCV(4.3.0) C:\projects\opencv-python\opencv\modules\dnn\src\darknet\darknet_importer.cpp:214: error: (-212:Parsing error) Failed to parse NetParameter file: /app/db_file/ref_model/e2e4f50a1fb2408fba3473fbef5761f5.weights in function 'cv::dnn::dnn4_v20200310::readNetFromDarknet'
+.
+2020-09-10 15:33:40,568 [ERROR:image_processing_api] {upload_image:106} [SYSTEM]:OpenCV(4.3.0) C:\projects\opencv-python\opencv\modules\dnn\src\darknet\darknet_importer.cpp:214: error: (-212:Parsing error) Failed to parse NetParameter file: /app/db_file/ref_model/e2e4f50a1fb2408fba3473fbef5761f5.weights in function 'cv::dnn::dnn4_v20200310::readNetFromDarknet'
+.
+2020-09-10 15:34:04,562 [INFO:LogManager] {__init__:13} [SYSTEM]:Set log variable
+2020-09-10 15:34:04,562 [INFO:user_management] {add_log:214} [USER]:[admin] Enter page /ml_management
+2020-09-10 15:34:04,689 [INFO:model_management_api] {get_all_model:281} [SYSTEM]:[admin] Use get all ML model API.
+2020-09-10 15:34:04,690 [INFO:MLManager_obj] {__init__:76} [SYSTEM]:Connecting to database
+2020-09-10 15:34:04,698 [INFO:MLManager_obj] {__init__:78} [SYSTEM]:Connected to database
+2020-09-10 15:34:04,699 [INFO:model_management_api] {get_all_model:283} [SYSTEM]:[admin] Created MLManagement object.
+2020-09-10 15:34:04,700 [INFO:model_management_api] {get_all_model:284} [SYSTEM]:[admin] Call get_all_model function.
+2020-09-10 15:34:04,701 [INFO:MLManager_obj] {get_all_model:122} [SYSTEM]:[admin] Getting all ML models.
+2020-09-10 15:34:04,765 [INFO:MLManager_obj] {get_all_model:144} [SYSTEM]:[admin] Got all ML models.
+2020-09-10 15:34:04,770 [INFO:model_management_api] {get_all_model:287} [SYSTEM]:[admin] Deleted MLManagement object.
+2020-09-10 15:34:04,770 [INFO:model_management_api] {get_all_model:301} [SYSTEM]:[admin] Response data from get_all_model API
+2020-09-10 15:34:06,260 [INFO:LogManager] {__init__:13} [SYSTEM]:Set log variable
+2020-09-10 15:34:06,263 [INFO:user_management] {add_log:214} [USER]:[admin] Enter page /upload
+2020-09-10 15:34:07,563 [INFO:LogManager] {__init__:13} [SYSTEM]:Set log variable
+2020-09-10 15:34:07,567 [INFO:user_management] {add_log:214} [USER]:[admin] Enter page /ml_management
+2020-09-10 15:34:07,869 [INFO:model_management_api] {get_all_model:281} [SYSTEM]:[admin] Use get all ML model API.
+2020-09-10 15:34:07,870 [INFO:MLManager_obj] {__init__:76} [SYSTEM]:Connecting to database
+2020-09-10 15:34:07,876 [INFO:MLManager_obj] {__init__:78} [SYSTEM]:Connected to database
+2020-09-10 15:34:07,877 [INFO:model_management_api] {get_all_model:283} [SYSTEM]:[admin] Created MLManagement object.
+2020-09-10 15:34:07,878 [INFO:model_management_api] {get_all_model:284} [SYSTEM]:[admin] Call get_all_model function.
+2020-09-10 15:34:07,878 [INFO:MLManager_obj] {get_all_model:122} [SYSTEM]:[admin] Getting all ML models.
+2020-09-10 15:34:07,909 [INFO:MLManager_obj] {get_all_model:144} [SYSTEM]:[admin] Got all ML models.
+2020-09-10 15:34:07,913 [INFO:model_management_api] {get_all_model:287} [SYSTEM]:[admin] Deleted MLManagement object.
+2020-09-10 15:34:07,914 [INFO:model_management_api] {get_all_model:301} [SYSTEM]:[admin] Response data from get_all_model API
+2020-09-10 15:34:08,363 [INFO:LogManager] {__init__:13} [SYSTEM]:Set log variable
+2020-09-10 15:34:08,364 [INFO:user_management] {add_log:214} [USER]:[admin] Enter page /ref_management
+2020-09-10 15:34:08,368 [INFO:model_management_api] {get_all_model:289} [SYSTEM]:[admin] Use get all ML model API.
+2020-09-10 15:34:08,370 [INFO:model_management_api] {get_all_unit:315} [SYSTEM]:[admin] Use get all units API.
+2020-09-10 15:34:08,382 [INFO:model_management_api] {get_all_model:291} [SYSTEM]:[admin] Created RefManagement object.
+2020-09-10 15:34:08,382 [INFO:model_management_api] {get_all_model:292} [SYSTEM]:[admin] Call get_all_model function.
+2020-09-10 15:34:08,388 [INFO:model_management_api] {get_all_unit:317} [SYSTEM]:[admin] Created RefManagement object.
+2020-09-10 15:34:08,388 [INFO:model_management_api] {get_all_unit:318} [SYSTEM]:[admin] Call get_all_model function.
+2020-09-10 15:34:08,568 [INFO:model_management_api] {get_all_unit:325} [SYSTEM]:[admin] Deleted RefManagement object.
+2020-09-10 15:34:08,569 [INFO:model_management_api] {get_all_unit:327} [SYSTEM]:[admin] Response data from get_all_model API
+2020-09-10 15:34:08,578 [INFO:model_management_api] {get_all_model:299} [SYSTEM]:[admin] Deleted RefManagement object.
+2020-09-10 15:34:08,579 [INFO:model_management_api] {get_all_model:301} [SYSTEM]:[admin] Response data from get_all_model API
+2020-09-10 15:34:10,893 [INFO:LogManager] {__init__:13} [SYSTEM]:Set log variable
+2020-09-10 15:34:10,894 [INFO:user_management] {add_log:214} [USER]:[admin] Click switch active reference model button.
+2020-09-10 15:34:11,562 [INFO:model_management_api] {change_active_model:201} [SYSTEM]:[admin] Use change active Ref model API.
+2020-09-10 15:34:11,567 [INFO:model_management_api] {change_active_model:203} [SYSTEM]:[admin] Created RefManagement object.
+2020-09-10 15:34:11,568 [INFO:model_management_api] {change_active_model:204} [SYSTEM]:[admin] Call change_active_model function.
+2020-09-10 15:34:11,646 [INFO:model_management_api] {change_active_model:213} [SYSTEM]:[admin] Deleted RefManagement object.
+2020-09-10 15:34:11,647 [INFO:model_management_api] {change_active_model:214} [SYSTEM]:[admin] Response data from change_active_model API
+2020-09-10 15:34:11,976 [INFO:model_management_api] {get_all_model:289} [SYSTEM]:[admin] Use get all ML model API.
+2020-09-10 15:34:11,982 [INFO:model_management_api] {get_all_model:291} [SYSTEM]:[admin] Created RefManagement object.
+2020-09-10 15:34:11,983 [INFO:model_management_api] {get_all_model:292} [SYSTEM]:[admin] Call get_all_model function.
+2020-09-10 15:34:12,031 [INFO:model_management_api] {get_all_model:299} [SYSTEM]:[admin] Deleted RefManagement object.
+2020-09-10 15:34:12,032 [INFO:model_management_api] {get_all_model:301} [SYSTEM]:[admin] Response data from get_all_model API
+2020-09-10 15:34:13,755 [INFO:LogManager] {__init__:13} [SYSTEM]:Set log variable
+2020-09-10 15:34:13,759 [INFO:user_management] {add_log:214} [USER]:[admin] Enter page /upload
+2020-09-10 15:34:16,604 [INFO:LogManager] {__init__:13} [SYSTEM]:Set log variable
+2020-09-10 15:34:16,605 [INFO:user_management] {add_log:214} [USER]:[admin] Choosen image file.
+2020-09-10 15:34:17,345 [INFO:LogManager] {__init__:13} [SYSTEM]:Set log variable
+2020-09-10 15:34:17,348 [INFO:user_management] {add_log:214} [USER]:[admin] Selected measurement unit.
+2020-09-10 15:34:17,936 [INFO:LogManager] {__init__:13} [SYSTEM]:Set log variable
+2020-09-10 15:34:17,942 [INFO:user_management] {add_log:214} [USER]:[admin] Click upload image button.
+2020-09-10 15:34:18,197 [INFO:image_processing_api] {upload_image:59} [SYSTEM]:[admin] Prepair image data to be measure.
+2020-09-10 15:34:18,198 [INFO:image_processing_api] {upload_image:70} [SYSTEM]:[admin] Processing image...
+2020-09-10 15:34:18,562 [INFO:image_processing_api] {upload_image:77} [SYSTEM]:[admin] Got measurement result
+2020-09-10 15:34:30,300 [INFO:image_processing_api] {upload_image:88} [SYSTEM]:[admin] Prepair image date to be response.
+2020-09-10 15:34:30,371 [INFO:image_processing_api] {upload_image:98} [SYSTEM]:[admin] Responsed measurement result.
+2020-09-10 15:34:38,386 [INFO:LogManager] {__init__:13} [SYSTEM]:Set log variable
+2020-09-10 15:34:38,386 [INFO:user_management] {add_log:214} [USER]:[admin] Change measurement unit to in
+2020-09-10 15:34:39,973 [INFO:LogManager] {__init__:13} [SYSTEM]:Set log variable
+2020-09-10 15:34:39,973 [INFO:user_management] {add_log:214} [USER]:[admin] Change measurement unit to cm
+2020-09-10 15:34:42,993 [INFO:LogManager] {__init__:13} [SYSTEM]:Set log variable
+2020-09-10 15:34:42,994 [INFO:user_management] {add_log:214} [USER]:[admin] Click "Upload another image" button
+2020-09-10 15:34:44,863 [INFO:LogManager] {__init__:13} [SYSTEM]:Set log variable
+2020-09-10 15:34:44,863 [INFO:user_management] {add_log:214} [USER]:[admin] Enter page /ml_management
+2020-09-10 15:34:45,169 [INFO:model_management_api] {get_all_model:281} [SYSTEM]:[admin] Use get all ML model API.
+2020-09-10 15:34:45,170 [INFO:MLManager_obj] {__init__:76} [SYSTEM]:Connecting to database
+2020-09-10 15:34:45,176 [INFO:MLManager_obj] {__init__:78} [SYSTEM]:Connected to database
+2020-09-10 15:34:45,177 [INFO:model_management_api] {get_all_model:283} [SYSTEM]:[admin] Created MLManagement object.
+2020-09-10 15:34:45,178 [INFO:model_management_api] {get_all_model:284} [SYSTEM]:[admin] Call get_all_model function.
+2020-09-10 15:34:45,179 [INFO:MLManager_obj] {get_all_model:122} [SYSTEM]:[admin] Getting all ML models.
+2020-09-10 15:34:45,213 [INFO:MLManager_obj] {get_all_model:144} [SYSTEM]:[admin] Got all ML models.
+2020-09-10 15:34:45,222 [INFO:model_management_api] {get_all_model:287} [SYSTEM]:[admin] Deleted MLManagement object.
+2020-09-10 15:34:45,222 [INFO:model_management_api] {get_all_model:301} [SYSTEM]:[admin] Response data from get_all_model API
+2020-09-10 15:34:46,174 [INFO:LogManager] {__init__:13} [SYSTEM]:Set log variable
+2020-09-10 15:34:46,177 [INFO:user_management] {add_log:214} [USER]:[admin] Enter page /ref_management
+2020-09-10 15:34:46,180 [INFO:model_management_api] {get_all_model:289} [SYSTEM]:[admin] Use get all ML model API.
+2020-09-10 15:34:46,196 [INFO:model_management_api] {get_all_model:291} [SYSTEM]:[admin] Created RefManagement object.
+2020-09-10 15:34:46,196 [INFO:model_management_api] {get_all_model:292} [SYSTEM]:[admin] Call get_all_model function.
+2020-09-10 15:34:46,243 [INFO:model_management_api] {get_all_model:299} [SYSTEM]:[admin] Deleted RefManagement object.
+2020-09-10 15:34:46,244 [INFO:model_management_api] {get_all_model:301} [SYSTEM]:[admin] Response data from get_all_model API
+2020-09-10 15:34:46,422 [INFO:model_management_api] {get_all_unit:315} [SYSTEM]:[admin] Use get all units API.
+2020-09-10 15:34:46,428 [INFO:model_management_api] {get_all_unit:317} [SYSTEM]:[admin] Created RefManagement object.
+2020-09-10 15:34:46,428 [INFO:model_management_api] {get_all_unit:318} [SYSTEM]:[admin] Call get_all_model function.
+2020-09-10 15:34:46,472 [INFO:model_management_api] {get_all_unit:325} [SYSTEM]:[admin] Deleted RefManagement object.
+2020-09-10 15:34:46,473 [INFO:model_management_api] {get_all_unit:327} [SYSTEM]:[admin] Response data from get_all_model API
+2020-09-10 15:34:47,464 [INFO:LogManager] {__init__:13} [SYSTEM]:Set log variable
+2020-09-10 15:34:47,468 [INFO:user_management] {add_log:214} [USER]:[admin] Enter page /log
+2020-09-10 15:34:48,086 [INFO:LogManager] {__init__:13} [SYSTEM]:Set log variable
+2020-09-10 15:34:48,087 [INFO:LogManager] {get_min_max_date:181} [SYSTEM]:[admin] Prepair date data to query.
+2020-09-10 15:34:48,093 [INFO:LogManager] {__init__:13} [SYSTEM]:Set log variable
+2020-09-10 15:34:48,094 [INFO:LogManager] {get_today_log:53} [SYSTEM]:[admin] Prepair date data to query.
+2020-09-10 15:34:48,481 [INFO:LogManager] {get_min_max_date:197} [SYSTEM]:[admin] Close log file.
+2020-09-10 15:34:48,481 [INFO:LogManager] {get_min_max_date:198} [SYSTEM]:[admin] Got min and max date.
+2020-09-10 15:34:48,537 [INFO:LogManager] {get_today_log:69} [SYSTEM]:[admin] Read log 2020-09-10.log .
+2020-09-10 15:34:48,551 [INFO:LogManager] {get_today_log:89} [SYSTEM]:[admin] Close log file.
+2020-09-10 15:34:48,551 [INFO:LogManager] {get_today_log:90} [SYSTEM]:[admin] Got all today logs.
+2020-09-10 15:34:50,071 [INFO:LogManager] {__init__:13} [SYSTEM]:Set log variable
+2020-09-10 15:34:50,072 [INFO:LogManager] {get_today_log:53} [SYSTEM]:[admin] Prepair date data to query.
+2020-09-10 15:34:50,076 [INFO:LogManager] {get_today_log:69} [SYSTEM]:[admin] Read log 2020-09-10.log .
+2020-09-10 15:34:50,091 [INFO:LogManager] {get_today_log:89} [SYSTEM]:[admin] Close log file.
+2020-09-10 15:34:50,091 [INFO:LogManager] {get_today_log:90} [SYSTEM]:[admin] Got all today logs.
+2020-09-10 15:34:50,317 [INFO:LogManager] {__init__:13} [SYSTEM]:Set log variable
+2020-09-10 15:34:50,317 [INFO:user_management] {add_log:214} [USER]:[admin] Click on log type.
+2020-09-10 15:34:54,793 [INFO:LogManager] {__init__:13} [SYSTEM]:Set log variable
+2020-09-10 15:34:54,794 [INFO:user_management] {add_log:214} [USER]:[admin] Click on log type.
+2020-09-10 15:34:55,408 [INFO:LogManager] {__init__:13} [SYSTEM]:Set log variable
+2020-09-10 15:34:55,409 [INFO:LogManager] {get_today_log:53} [SYSTEM]:[admin] Prepair date data to query.
+2020-09-10 15:34:55,413 [INFO:LogManager] {get_today_log:69} [SYSTEM]:[admin] Read log 2020-09-10.log .
+2020-09-10 15:34:55,427 [INFO:LogManager] {get_today_log:89} [SYSTEM]:[admin] Close log file.
+2020-09-10 15:34:55,427 [INFO:LogManager] {get_today_log:90} [SYSTEM]:[admin] Got all today logs.
+2020-09-10 15:36:13,935 [INFO:LogManager] {__init__:13} [SYSTEM]:Set log variable
+2020-09-10 15:36:13,935 [INFO:user_management] {add_log:214} [USER]:[admin] Enter page /ref_management
+2020-09-10 15:36:13,993 [INFO:model_management_api] {get_all_model:289} [SYSTEM]:[admin] Use get all ML model API.
+2020-09-10 15:36:13,997 [INFO:model_management_api] {get_all_unit:315} [SYSTEM]:[admin] Use get all units API.
+2020-09-10 15:36:14,004 [INFO:model_management_api] {get_all_model:291} [SYSTEM]:[admin] Created RefManagement object.
+2020-09-10 15:36:14,006 [INFO:model_management_api] {get_all_model:292} [SYSTEM]:[admin] Call get_all_model function.
+2020-09-10 15:36:14,008 [INFO:model_management_api] {get_all_unit:317} [SYSTEM]:[admin] Created RefManagement object.
+2020-09-10 15:36:14,009 [INFO:model_management_api] {get_all_unit:318} [SYSTEM]:[admin] Call get_all_model function.
+2020-09-10 15:36:14,043 [INFO:model_management_api] {get_all_unit:325} [SYSTEM]:[admin] Deleted RefManagement object.
+2020-09-10 15:36:14,044 [INFO:model_management_api] {get_all_unit:327} [SYSTEM]:[admin] Response data from get_all_model API
+2020-09-10 15:36:14,050 [INFO:model_management_api] {get_all_model:299} [SYSTEM]:[admin] Deleted RefManagement object.
+2020-09-10 15:36:14,053 [INFO:model_management_api] {get_all_model:301} [SYSTEM]:[admin] Response data from get_all_model API
+2020-09-10 15:36:38,303 [INFO:LogManager] {__init__:13} [SYSTEM]:Set log variable
+2020-09-10 15:36:38,304 [INFO:user_management] {add_log:214} [USER]:[admin] Enter page /upload
+2020-09-10 15:36:45,785 [INFO:LogManager] {__init__:13} [SYSTEM]:Set log variable
+2020-09-10 15:36:45,785 [INFO:user_management] {add_log:214} [USER]:[admin] Enter page /ml_management
+2020-09-10 15:36:45,845 [INFO:model_management_api] {get_all_model:281} [SYSTEM]:[admin] Use get all ML model API.
+2020-09-10 15:36:45,845 [INFO:MLManager_obj] {__init__:76} [SYSTEM]:Connecting to database
+2020-09-10 15:36:45,849 [INFO:MLManager_obj] {__init__:78} [SYSTEM]:Connected to database
+2020-09-10 15:36:45,850 [INFO:model_management_api] {get_all_model:283} [SYSTEM]:[admin] Created MLManagement object.
+2020-09-10 15:36:45,850 [INFO:model_management_api] {get_all_model:284} [SYSTEM]:[admin] Call get_all_model function.
+2020-09-10 15:36:45,851 [INFO:MLManager_obj] {get_all_model:122} [SYSTEM]:[admin] Getting all ML models.
+2020-09-10 15:36:45,884 [INFO:MLManager_obj] {get_all_model:144} [SYSTEM]:[admin] Got all ML models.
+2020-09-10 15:36:45,888 [INFO:model_management_api] {get_all_model:287} [SYSTEM]:[admin] Deleted MLManagement object.
+2020-09-10 15:36:45,889 [INFO:model_management_api] {get_all_model:301} [SYSTEM]:[admin] Response data from get_all_model API
+2020-09-10 15:38:49,325 [INFO:LogManager] {__init__:13} [SYSTEM]:Set log variable
+2020-09-10 15:38:49,327 [INFO:user_management] {add_log:214} [USER]:[admin] Enter page /log
+2020-09-10 15:38:49,388 [INFO:LogManager] {__init__:13} [SYSTEM]:Set log variable
+2020-09-10 15:38:49,389 [INFO:LogManager] {get_min_max_date:181} [SYSTEM]:[admin] Prepair date data to query.
+2020-09-10 15:38:49,392 [INFO:LogManager] {get_min_max_date:197} [SYSTEM]:[admin] Close log file.
+2020-09-10 15:38:49,396 [INFO:LogManager] {get_min_max_date:198} [SYSTEM]:[admin] Got min and max date.
+2020-09-10 15:38:49,397 [INFO:LogManager] {__init__:13} [SYSTEM]:Set log variable
+2020-09-10 15:38:49,398 [INFO:LogManager] {get_today_log:53} [SYSTEM]:[admin] Prepair date data to query.
+2020-09-10 15:38:49,409 [INFO:LogManager] {get_today_log:69} [SYSTEM]:[admin] Read log 2020-09-10.log .
+2020-09-10 15:38:49,430 [INFO:LogManager] {get_today_log:89} [SYSTEM]:[admin] Close log file.
+2020-09-10 15:38:49,430 [INFO:LogManager] {get_today_log:90} [SYSTEM]:[admin] Got all today logs.
+2020-09-10 15:39:08,440 [INFO:LogManager] {__init__:13} [SYSTEM]:Set log variable
+2020-09-10 15:39:08,441 [INFO:user_management] {add_log:214} [USER]:[admin] Enter page /ref_management
+2020-09-10 15:39:08,743 [INFO:model_management_api] {get_all_model:289} [SYSTEM]:[admin] Use get all ML model API.
+2020-09-10 15:39:08,747 [INFO:model_management_api] {get_all_unit:315} [SYSTEM]:[admin] Use get all units API.
+2020-09-10 15:39:08,753 [INFO:model_management_api] {get_all_model:291} [SYSTEM]:[admin] Created RefManagement object.
+2020-09-10 15:39:08,754 [INFO:model_management_api] {get_all_unit:317} [SYSTEM]:[admin] Created RefManagement object.
+2020-09-10 15:39:08,756 [INFO:model_management_api] {get_all_model:292} [SYSTEM]:[admin] Call get_all_model function.
+2020-09-10 15:39:08,757 [INFO:model_management_api] {get_all_unit:318} [SYSTEM]:[admin] Call get_all_model function.
+2020-09-10 15:39:08,802 [INFO:model_management_api] {get_all_unit:325} [SYSTEM]:[admin] Deleted RefManagement object.
+2020-09-10 15:39:08,802 [INFO:model_management_api] {get_all_unit:327} [SYSTEM]:[admin] Response data from get_all_model API
+2020-09-10 15:39:08,811 [INFO:model_management_api] {get_all_model:299} [SYSTEM]:[admin] Deleted RefManagement object.
+2020-09-10 15:39:08,812 [INFO:model_management_api] {get_all_model:301} [SYSTEM]:[admin] Response data from get_all_model API
+2020-09-10 15:39:11,000 [INFO:LogManager] {__init__:13} [SYSTEM]:Set log variable
+2020-09-10 15:39:11,006 [INFO:user_management] {add_log:214} [USER]:[admin] Enter page /log
+2020-09-10 15:39:11,245 [INFO:LogManager] {__init__:13} [SYSTEM]:Set log variable
+2020-09-10 15:39:11,246 [INFO:LogManager] {get_min_max_date:181} [SYSTEM]:[admin] Prepair date data to query.
+2020-09-10 15:39:11,251 [INFO:LogManager] {get_min_max_date:197} [SYSTEM]:[admin] Close log file.
+2020-09-10 15:39:11,251 [INFO:LogManager] {get_min_max_date:198} [SYSTEM]:[admin] Got min and max date.
+2020-09-10 15:39:11,321 [INFO:LogManager] {__init__:13} [SYSTEM]:Set log variable
+2020-09-10 15:39:11,322 [INFO:LogManager] {get_today_log:53} [SYSTEM]:[admin] Prepair date data to query.
+2020-09-10 15:39:11,327 [INFO:LogManager] {get_today_log:69} [SYSTEM]:[admin] Read log 2020-09-10.log .
+2020-09-10 15:39:11,344 [INFO:LogManager] {get_today_log:89} [SYSTEM]:[admin] Close log file.
+2020-09-10 15:39:11,344 [INFO:LogManager] {get_today_log:90} [SYSTEM]:[admin] Got all today logs.
+2020-09-10 15:39:12,869 [INFO:LogManager] {__init__:13} [SYSTEM]:Set log variable
+2020-09-10 15:39:12,872 [INFO:user_management] {add_log:214} [USER]:[admin] Enter page /ref_management
+2020-09-10 15:39:13,176 [INFO:model_management_api] {get_all_model:289} [SYSTEM]:[admin] Use get all ML model API.
+2020-09-10 15:39:13,177 [INFO:model_management_api] {get_all_unit:315} [SYSTEM]:[admin] Use get all units API.
+2020-09-10 15:39:13,191 [INFO:model_management_api] {get_all_model:291} [SYSTEM]:[admin] Created RefManagement object.
+2020-09-10 15:39:13,192 [INFO:model_management_api] {get_all_model:292} [SYSTEM]:[admin] Call get_all_model function.
+2020-09-10 15:39:13,193 [INFO:model_management_api] {get_all_unit:317} [SYSTEM]:[admin] Created RefManagement object.
+2020-09-10 15:39:13,195 [INFO:model_management_api] {get_all_unit:318} [SYSTEM]:[admin] Call get_all_model function.
+2020-09-10 15:39:13,252 [INFO:model_management_api] {get_all_unit:325} [SYSTEM]:[admin] Deleted RefManagement object.
+2020-09-10 15:39:13,254 [INFO:model_management_api] {get_all_unit:327} [SYSTEM]:[admin] Response data from get_all_model API
+2020-09-10 15:39:13,260 [INFO:model_management_api] {get_all_model:299} [SYSTEM]:[admin] Deleted RefManagement object.
+2020-09-10 15:39:13,267 [INFO:model_management_api] {get_all_model:301} [SYSTEM]:[admin] Response data from get_all_model API
+2020-09-10 15:39:14,855 [INFO:LogManager] {__init__:13} [SYSTEM]:Set log variable
+2020-09-10 15:39:14,856 [INFO:user_management] {add_log:214} [USER]:[admin] Enter page /ml_management
+2020-09-10 15:39:14,917 [INFO:model_management_api] {get_all_model:281} [SYSTEM]:[admin] Use get all ML model API.
+2020-09-10 15:39:14,918 [INFO:MLManager_obj] {__init__:76} [SYSTEM]:Connecting to database
+2020-09-10 15:39:14,922 [INFO:MLManager_obj] {__init__:78} [SYSTEM]:Connected to database
+2020-09-10 15:39:14,923 [INFO:model_management_api] {get_all_model:283} [SYSTEM]:[admin] Created MLManagement object.
+2020-09-10 15:39:14,924 [INFO:model_management_api] {get_all_model:284} [SYSTEM]:[admin] Call get_all_model function.
+2020-09-10 15:39:14,925 [INFO:MLManager_obj] {get_all_model:122} [SYSTEM]:[admin] Getting all ML models.
+2020-09-10 15:39:14,952 [INFO:MLManager_obj] {get_all_model:144} [SYSTEM]:[admin] Got all ML models.
+2020-09-10 15:39:14,956 [INFO:model_management_api] {get_all_model:287} [SYSTEM]:[admin] Deleted MLManagement object.
+2020-09-10 15:39:14,957 [INFO:model_management_api] {get_all_model:301} [SYSTEM]:[admin] Response data from get_all_model API
+2020-09-10 15:39:15,906 [INFO:LogManager] {__init__:13} [SYSTEM]:Set log variable
+2020-09-10 15:39:15,907 [INFO:user_management] {add_log:214} [USER]:[admin] Enter page /upload
+2020-09-10 15:39:18,430 [INFO:LogManager] {__init__:13} [SYSTEM]:Set log variable
+2020-09-10 15:39:18,437 [INFO:user_management] {add_log:214} [USER]:[admin] Enter page /log
+2020-09-10 15:39:19,053 [INFO:LogManager] {__init__:13} [SYSTEM]:Set log variable
+2020-09-10 15:39:19,057 [INFO:LogManager] {get_min_max_date:181} [SYSTEM]:[admin] Prepair date data to query.
+2020-09-10 15:39:19,058 [INFO:LogManager] {__init__:13} [SYSTEM]:Set log variable
+2020-09-10 15:39:19,060 [INFO:LogManager] {get_today_log:53} [SYSTEM]:[admin] Prepair date data to query.
+2020-09-10 15:39:19,061 [INFO:LogManager] {get_min_max_date:197} [SYSTEM]:[admin] Close log file.
+2020-09-10 15:39:19,062 [INFO:LogManager] {get_min_max_date:198} [SYSTEM]:[admin] Got min and max date.
+2020-09-10 15:39:19,076 [INFO:LogManager] {get_today_log:69} [SYSTEM]:[admin] Read log 2020-09-10.log .
+2020-09-10 15:39:19,096 [INFO:LogManager] {get_today_log:89} [SYSTEM]:[admin] Close log file.
+2020-09-10 15:39:19,097 [INFO:LogManager] {get_today_log:90} [SYSTEM]:[admin] Got all today logs.
+2020-09-10 15:40:03,894 [INFO:LogManager] {__init__:13} [SYSTEM]:Set log variable
+2020-09-10 15:40:03,895 [INFO:user_management] {add_log:214} [USER]:[admin] Enter page /upload
+2020-09-10 15:40:08,684 [INFO:Login_api] {logout:84} [SYSTEM]:[admin] Logging out.
+2020-09-10 15:40:09,005 [INFO:Login_api] {logout:94} [SYSTEM]:[admin] Response logout.
+2020-09-10 15:40:43,229 [INFO:LogManager] {__init__:13} [SYSTEM]:Set log variable
+2020-09-10 15:40:43,231 [INFO:user_management] {add_log:214} [USER]:[admin] Enter page /ml_management
+2020-09-10 15:40:43,534 [INFO:model_management_api] {get_all_model:281} [SYSTEM]:[admin] Use get all ML model API.
+2020-09-10 15:40:43,535 [INFO:MLManager_obj] {__init__:76} [SYSTEM]:Connecting to database
+2020-09-10 15:40:43,540 [INFO:MLManager_obj] {__init__:78} [SYSTEM]:Connected to database
+2020-09-10 15:40:43,541 [INFO:model_management_api] {get_all_model:283} [SYSTEM]:[admin] Created MLManagement object.
+2020-09-10 15:40:43,541 [INFO:model_management_api] {get_all_model:284} [SYSTEM]:[admin] Call get_all_model function.
+2020-09-10 15:40:43,542 [INFO:MLManager_obj] {get_all_model:122} [SYSTEM]:[admin] Getting all ML models.
+2020-09-10 15:40:43,574 [INFO:MLManager_obj] {get_all_model:144} [SYSTEM]:[admin] Got all ML models.
+2020-09-10 15:40:43,579 [INFO:model_management_api] {get_all_model:287} [SYSTEM]:[admin] Deleted MLManagement object.
+2020-09-10 15:40:43,579 [INFO:model_management_api] {get_all_model:301} [SYSTEM]:[admin] Response data from get_all_model API
+2020-09-10 15:41:06,193 [INFO:LogManager] {__init__:13} [SYSTEM]:Set log variable
+2020-09-10 15:41:06,194 [INFO:user_management] {add_log:214} [USER]:[admin] Enter page /upload
+2020-09-10 15:41:06,259 [INFO:LogManager] {__init__:13} [SYSTEM]:Set log variable
+2020-09-10 15:41:06,261 [INFO:user_management] {add_log:214} [USER]:[admin] Enter page /ml_management
+2020-09-10 15:41:06,303 [INFO:model_management_api] {get_all_model:281} [SYSTEM]:[admin] Use get all ML model API.
+2020-09-10 15:41:06,304 [INFO:MLManager_obj] {__init__:76} [SYSTEM]:Connecting to database
+2020-09-10 15:41:06,315 [INFO:MLManager_obj] {__init__:78} [SYSTEM]:Connected to database
+2020-09-10 15:41:06,316 [INFO:model_management_api] {get_all_model:283} [SYSTEM]:[admin] Created MLManagement object.
+2020-09-10 15:41:06,318 [INFO:model_management_api] {get_all_model:284} [SYSTEM]:[admin] Call get_all_model function.
+2020-09-10 15:41:06,319 [INFO:MLManager_obj] {get_all_model:122} [SYSTEM]:[admin] Getting all ML models.
+2020-09-10 15:41:06,355 [INFO:MLManager_obj] {get_all_model:144} [SYSTEM]:[admin] Got all ML models.
+2020-09-10 15:41:06,360 [INFO:model_management_api] {get_all_model:287} [SYSTEM]:[admin] Deleted MLManagement object.
+2020-09-10 15:41:06,361 [INFO:model_management_api] {get_all_model:301} [SYSTEM]:[admin] Response data from get_all_model API
+2020-09-10 15:41:12,944 [INFO:Login_api] {logout:84} [SYSTEM]:[admin] Logging out.
+2020-09-10 15:41:12,950 [INFO:Login_api] {logout:94} [SYSTEM]:[admin] Response logout.
+2020-09-10 15:41:14,932 [INFO:LogManager] {__init__:13} [SYSTEM]:Set log variable
+2020-09-10 15:41:14,933 [INFO:user_management] {add_log:214} [USER]:[admin] Enter page /upload
+2020-09-10 15:41:21,615 [INFO:LogManager] {__init__:13} [SYSTEM]:Set log variable
+2020-09-10 15:41:21,616 [INFO:user_management] {add_log:214} [USER]:[admin] Enter page /upload
+2020-09-10 15:41:33,099 [INFO:LogManager] {__init__:13} [SYSTEM]:Set log variable
+2020-09-10 15:41:33,100 [INFO:user_management] {add_log:214} [USER]:[admin] Enter page /upload
+2020-09-10 15:41:42,273 [INFO:Login_api] {logout:84} [SYSTEM]:[admin] Logging out.
+2020-09-10 15:41:42,290 [INFO:Login_api] {logout:94} [SYSTEM]:[admin] Response logout.
+2020-09-10 15:41:43,975 [INFO:LogManager] {__init__:13} [SYSTEM]:Set log variable
+2020-09-10 15:41:43,976 [INFO:user_management] {add_log:214} [USER]:[admin] Enter page /upload
+2020-09-10 15:41:51,866 [INFO:LogManager] {__init__:13} [SYSTEM]:Set log variable
+2020-09-10 15:41:51,867 [INFO:user_management] {add_log:214} [USER]:[admin] Enter page /upload
+2020-09-10 15:43:17,178 [INFO:LogManager] {__init__:13} [SYSTEM]:Set log variable
+2020-09-10 15:43:17,179 [INFO:user_management] {add_log:214} [USER]:[admin] Enter page /upload
+2020-09-10 15:43:19,318 [INFO:Login_api] {logout:84} [SYSTEM]:[admin] Logging out.
+2020-09-10 15:43:19,328 [INFO:Login_api] {logout:94} [SYSTEM]:[admin] Response logout.
+2020-09-10 15:43:21,960 [INFO:LogManager] {__init__:13} [SYSTEM]:Set log variable
+2020-09-10 15:43:21,961 [INFO:user_management] {add_log:214} [USER]:[admin] Enter page /upload
+2020-09-10 15:43:39,574 [INFO:LogManager] {__init__:13} [SYSTEM]:Set log variable
+2020-09-10 15:43:39,574 [INFO:user_management] {add_log:214} [USER]:[admin] Enter page /upload
+2020-09-10 15:43:51,606 [INFO:LogManager] {__init__:13} [SYSTEM]:Set log variable
+2020-09-10 15:43:51,609 [INFO:user_management] {add_log:214} [USER]:[admin] Enter page /upload
+2020-09-10 15:44:02,533 [INFO:LogManager] {__init__:13} [SYSTEM]:Set log variable
+2020-09-10 15:44:02,533 [INFO:user_management] {add_log:214} [USER]:[admin] Enter page /upload
+2020-09-10 15:44:09,948 [INFO:LogManager] {__init__:13} [SYSTEM]:Set log variable
+2020-09-10 15:44:09,949 [INFO:user_management] {add_log:214} [USER]:[admin] Enter page /upload
+2020-09-10 15:44:35,027 [INFO:LogManager] {__init__:13} [SYSTEM]:Set log variable
+2020-09-10 15:44:35,042 [INFO:user_management] {add_log:214} [USER]:[admin] Enter page /upload
+2020-09-10 15:44:37,349 [INFO:LogManager] {__init__:13} [SYSTEM]:Set log variable
+2020-09-10 15:44:37,353 [INFO:user_management] {add_log:214} [USER]:[admin] Enter page /upload
+2020-09-10 15:44:47,712 [INFO:Login_api] {logout:84} [SYSTEM]:[undefined] Logging out.
+2020-09-10 15:44:47,718 [INFO:Login_api] {logout:94} [SYSTEM]:[undefined] Response logout.
+2020-09-10 15:45:24,964 [INFO:Login_api] {login:33} [SYSTEM]:[test01] is logging in.
+2020-09-10 15:45:24,969 [WARNING:Login_api] {login:53} [SYSTEM]:[test01] Wrong username or password.
+2020-09-10 15:45:30,079 [INFO:Login_api] {login:33} [SYSTEM]:[Test01] is logging in.
+2020-09-10 15:45:30,083 [WARNING:Login_api] {login:53} [SYSTEM]:[Test01] Wrong username or password.
+2020-09-10 15:45:38,893 [INFO:Login_api] {login:33} [SYSTEM]:[debug01] is logging in.
+2020-09-10 15:45:39,204 [INFO:Login_api] {login:72} [SYSTEM]:[debug01] Response tokens to login.
+2020-09-10 15:45:40,674 [INFO:LogManager] {__init__:13} [SYSTEM]:Set log variable
+2020-09-10 15:45:40,675 [INFO:user_management] {add_log:214} [USER]:[debug01] Enter page /upload
+2020-09-10 15:45:49,995 [INFO:LogManager] {__init__:13} [SYSTEM]:Set log variable
+2020-09-10 15:45:49,995 [INFO:user_management] {add_log:214} [USER]:[debug01] Enter page /upload
+2020-09-10 15:45:50,777 [INFO:LogManager] {__init__:13} [SYSTEM]:Set log variable
+2020-09-10 15:45:50,778 [INFO:user_management] {add_log:214} [USER]:[debug01] Enter page /upload
+2020-09-10 15:45:52,759 [INFO:LogManager] {__init__:13} [SYSTEM]:Set log variable
+2020-09-10 15:45:52,759 [INFO:user_management] {add_log:214} [USER]:[debug01] Enter page /upload
+2020-09-10 15:46:01,820 [INFO:LogManager] {__init__:13} [SYSTEM]:Set log variable
+2020-09-10 15:46:01,821 [INFO:user_management] {add_log:214} [USER]:[debug01] Choosen image file.
+2020-09-10 15:46:04,385 [INFO:LogManager] {__init__:13} [SYSTEM]:Set log variable
+2020-09-10 15:46:04,386 [INFO:user_management] {add_log:214} [USER]:[debug01] Selected measurement unit.
+2020-09-10 15:46:05,413 [INFO:LogManager] {__init__:13} [SYSTEM]:Set log variable
+2020-09-10 15:46:05,414 [INFO:user_management] {add_log:214} [USER]:[debug01] Click upload image button.
+2020-09-10 15:46:05,676 [INFO:image_processing_api] {upload_image:59} [SYSTEM]:[debug01] Prepair image data to be measure.
+2020-09-10 15:46:05,677 [INFO:image_processing_api] {upload_image:70} [SYSTEM]:[debug01] Processing image...
+2020-09-10 15:46:05,920 [INFO:image_processing_api] {upload_image:77} [SYSTEM]:[debug01] Got measurement result
+2020-09-10 15:46:12,987 [INFO:image_processing_api] {upload_image:88} [SYSTEM]:[debug01] Prepair image date to be response.
+2020-09-10 15:46:13,043 [INFO:image_processing_api] {upload_image:98} [SYSTEM]:[debug01] Responsed measurement result.
+2020-09-10 15:46:21,210 [INFO:LogManager] {__init__:13} [SYSTEM]:Set log variable
+2020-09-10 15:46:21,210 [INFO:user_management] {add_log:214} [USER]:[debug01] Change measurement unit to in
+2020-09-10 15:46:22,388 [INFO:LogManager] {__init__:13} [SYSTEM]:Set log variable
+2020-09-10 15:46:22,389 [INFO:user_management] {add_log:214} [USER]:[debug01] Change measurement unit to cm
+2020-09-10 15:46:23,929 [INFO:LogManager] {__init__:13} [SYSTEM]:Set log variable
+2020-09-10 15:46:23,930 [INFO:user_management] {add_log:214} [USER]:[debug01] Change measurement unit to mm
+2020-09-10 15:46:25,057 [INFO:LogManager] {__init__:13} [SYSTEM]:Set log variable
+2020-09-10 15:46:25,058 [INFO:user_management] {add_log:214} [USER]:[debug01] Change measurement unit to cm
+2020-09-10 15:46:26,767 [INFO:LogManager] {__init__:13} [SYSTEM]:Set log variable
+2020-09-10 15:46:26,768 [INFO:user_management] {add_log:214} [USER]:[debug01] Change measurement unit to m
+2020-09-10 15:46:27,592 [INFO:LogManager] {__init__:13} [SYSTEM]:Set log variable
+2020-09-10 15:46:27,593 [INFO:user_management] {add_log:214} [USER]:[debug01] Change measurement unit to yd
+2020-09-10 15:46:33,935 [INFO:LogManager] {__init__:13} [SYSTEM]:Set log variable
+2020-09-10 15:46:33,936 [INFO:user_management] {add_log:214} [USER]:[debug01] Change measurement unit to mm
+2020-09-10 15:46:36,864 [INFO:LogManager] {__init__:13} [SYSTEM]:Set log variable
+2020-09-10 15:46:36,867 [INFO:user_management] {add_log:214} [USER]:[debug01] Change measurement unit to cm
+2020-09-10 15:46:40,364 [INFO:LogManager] {__init__:13} [SYSTEM]:Set log variable
+2020-09-10 15:46:40,364 [INFO:user_management] {add_log:214} [USER]:[debug01] Change measurement unit to yd
+2020-09-10 15:46:41,712 [INFO:LogManager] {__init__:13} [SYSTEM]:Set log variable
+2020-09-10 15:46:41,714 [INFO:user_management] {add_log:214} [USER]:[debug01] Change measurement unit to ft
+2020-09-10 15:46:43,235 [INFO:LogManager] {__init__:13} [SYSTEM]:Set log variable
+2020-09-10 15:46:43,236 [INFO:user_management] {add_log:214} [USER]:[debug01] Change measurement unit to in
+2020-09-10 15:46:44,111 [INFO:LogManager] {__init__:13} [SYSTEM]:Set log variable
+2020-09-10 15:46:44,113 [INFO:user_management] {add_log:214} [USER]:[debug01] Change measurement unit to m
+2020-09-10 15:46:45,823 [INFO:LogManager] {__init__:13} [SYSTEM]:Set log variable
+2020-09-10 15:46:45,823 [INFO:user_management] {add_log:214} [USER]:[debug01] Change measurement unit to cm
+2020-09-10 15:46:46,838 [INFO:LogManager] {__init__:13} [SYSTEM]:Set log variable
+2020-09-10 15:46:46,839 [INFO:user_management] {add_log:214} [USER]:[debug01] Change measurement unit to mm
+2020-09-10 15:48:01,091 [INFO:LogManager] {__init__:13} [SYSTEM]:Set log variable
+2020-09-10 15:48:01,092 [INFO:user_management] {add_log:214} [USER]:[debug01] Click "Upload another image" button
+2020-09-10 15:48:04,249 [INFO:LogManager] {__init__:13} [SYSTEM]:Set log variable
+2020-09-10 15:48:04,255 [INFO:user_management] {add_log:214} [USER]:[debug01] Choosen image file.
+2020-09-10 15:48:06,431 [INFO:LogManager] {__init__:13} [SYSTEM]:Set log variable
+2020-09-10 15:48:06,432 [INFO:user_management] {add_log:214} [USER]:[debug01] Selected measurement unit.
+2020-09-10 15:48:06,562 [INFO:LogManager] {__init__:13} [SYSTEM]:Set log variable
+2020-09-10 15:48:06,563 [INFO:user_management] {add_log:214} [USER]:[debug01] Click upload image button.
+2020-09-10 15:48:07,277 [INFO:image_processing_api] {upload_image:59} [SYSTEM]:[debug01] Prepair image data to be measure.
+2020-09-10 15:48:07,281 [INFO:image_processing_api] {upload_image:70} [SYSTEM]:[debug01] Processing image...
+2020-09-10 15:48:07,434 [INFO:image_processing_api] {upload_image:77} [SYSTEM]:[debug01] Got measurement result
+2020-09-10 15:48:11,066 [INFO:image_processing_api] {upload_image:88} [SYSTEM]:[debug01] Prepair image date to be response.
+2020-09-10 15:48:11,143 [INFO:image_processing_api] {upload_image:98} [SYSTEM]:[debug01] Responsed measurement result.
+2020-09-10 15:48:21,282 [INFO:LogManager] {__init__:13} [SYSTEM]:Set log variable
+2020-09-10 15:48:21,283 [INFO:user_management] {add_log:214} [USER]:[debug01] Change measurement unit to mm
+2020-09-10 15:49:13,607 [INFO:LogManager] {__init__:13} [SYSTEM]:Set log variable
+2020-09-10 15:49:13,607 [INFO:user_management] {add_log:214} [USER]:[debug01] Click "Upload another image" button
+2020-09-10 15:49:15,374 [INFO:Login_api] {logout:84} [SYSTEM]:[debug01] Logging out.
+2020-09-10 15:49:15,415 [INFO:Login_api] {logout:94} [SYSTEM]:[debug01] Response logout.
+2020-09-10 15:49:23,144 [INFO:Login_api] {login:33} [SYSTEM]:[admin] is logging in.
+2020-09-10 15:49:23,156 [INFO:Login_api] {login:72} [SYSTEM]:[admin] Response tokens to login.
+2020-09-10 15:49:23,812 [INFO:LogManager] {__init__:13} [SYSTEM]:Set log variable
+2020-09-10 15:49:23,812 [INFO:user_management] {add_log:214} [USER]:[admin] Enter page /upload
+2020-09-10 15:49:26,284 [INFO:LogManager] {__init__:13} [SYSTEM]:Set log variable
+2020-09-10 15:49:26,285 [INFO:user_management] {add_log:214} [USER]:[admin] Enter page /ml_management
+2020-09-10 15:49:26,535 [INFO:model_management_api] {get_all_model:281} [SYSTEM]:[admin] Use get all ML model API.
+2020-09-10 15:49:26,536 [INFO:MLManager_obj] {__init__:76} [SYSTEM]:Connecting to database
+2020-09-10 15:49:26,548 [INFO:MLManager_obj] {__init__:78} [SYSTEM]:Connected to database
+2020-09-10 15:49:26,551 [INFO:model_management_api] {get_all_model:283} [SYSTEM]:[admin] Created MLManagement object.
+2020-09-10 15:49:26,552 [INFO:model_management_api] {get_all_model:284} [SYSTEM]:[admin] Call get_all_model function.
+2020-09-10 15:49:26,553 [INFO:MLManager_obj] {get_all_model:122} [SYSTEM]:[admin] Getting all ML models.
+2020-09-10 15:49:26,601 [INFO:MLManager_obj] {get_all_model:144} [SYSTEM]:[admin] Got all ML models.
+2020-09-10 15:49:26,606 [INFO:model_management_api] {get_all_model:287} [SYSTEM]:[admin] Deleted MLManagement object.
+2020-09-10 15:49:26,612 [INFO:model_management_api] {get_all_model:301} [SYSTEM]:[admin] Response data from get_all_model API
+2020-09-10 15:49:29,438 [INFO:model_management_api] {get_all_model:289} [SYSTEM]:[admin] Use get all ML model API.
+2020-09-10 15:49:29,449 [INFO:LogManager] {__init__:13} [SYSTEM]:Set log variable
+2020-09-10 15:49:29,451 [INFO:user_management] {add_log:214} [USER]:[admin] Enter page /ref_management
+2020-09-10 15:49:29,460 [INFO:model_management_api] {get_all_model:291} [SYSTEM]:[admin] Created RefManagement object.
+2020-09-10 15:49:29,461 [INFO:model_management_api] {get_all_model:292} [SYSTEM]:[admin] Call get_all_model function.
+2020-09-10 15:49:29,512 [INFO:model_management_api] {get_all_model:299} [SYSTEM]:[admin] Deleted RefManagement object.
+2020-09-10 15:49:29,513 [INFO:model_management_api] {get_all_model:301} [SYSTEM]:[admin] Response data from get_all_model API
+2020-09-10 15:49:29,754 [INFO:model_management_api] {get_all_unit:315} [SYSTEM]:[admin] Use get all units API.
+2020-09-10 15:49:29,761 [INFO:model_management_api] {get_all_unit:317} [SYSTEM]:[admin] Created RefManagement object.
+2020-09-10 15:49:29,762 [INFO:model_management_api] {get_all_unit:318} [SYSTEM]:[admin] Call get_all_model function.
+2020-09-10 15:49:29,797 [INFO:model_management_api] {get_all_unit:325} [SYSTEM]:[admin] Deleted RefManagement object.
+2020-09-10 15:49:29,798 [INFO:model_management_api] {get_all_unit:327} [SYSTEM]:[admin] Response data from get_all_model API
+2020-09-10 15:49:30,852 [INFO:LogManager] {__init__:13} [SYSTEM]:Set log variable
+2020-09-10 15:49:30,854 [INFO:user_management] {add_log:214} [USER]:[admin] Enter page /log
+2020-09-10 15:49:31,099 [INFO:LogManager] {__init__:13} [SYSTEM]:Set log variable
+2020-09-10 15:49:31,100 [INFO:LogManager] {get_min_max_date:181} [SYSTEM]:[admin] Prepair date data to query.
+2020-09-10 15:49:31,102 [INFO:LogManager] {get_min_max_date:197} [SYSTEM]:[admin] Close log file.
+2020-09-10 15:49:31,103 [INFO:LogManager] {get_min_max_date:198} [SYSTEM]:[admin] Got min and max date.
+2020-09-10 15:49:31,173 [INFO:LogManager] {__init__:13} [SYSTEM]:Set log variable
+2020-09-10 15:49:31,174 [INFO:LogManager] {get_today_log:53} [SYSTEM]:[admin] Prepair date data to query.
+2020-09-10 15:49:31,180 [INFO:LogManager] {get_today_log:69} [SYSTEM]:[admin] Read log 2020-09-10.log .
+2020-09-10 15:49:31,196 [INFO:LogManager] {get_today_log:89} [SYSTEM]:[admin] Close log file.
+2020-09-10 15:49:31,196 [INFO:LogManager] {get_today_log:90} [SYSTEM]:[admin] Got all today logs.
+2020-09-10 15:49:33,655 [INFO:LogManager] {__init__:13} [SYSTEM]:Set log variable
+2020-09-10 15:49:33,656 [INFO:user_management] {add_log:214} [USER]:[admin] Enter page /ml_management
+2020-09-10 15:49:34,270 [INFO:model_management_api] {get_all_model:281} [SYSTEM]:[admin] Use get all ML model API.
+2020-09-10 15:49:34,271 [INFO:MLManager_obj] {__init__:76} [SYSTEM]:Connecting to database
+2020-09-10 15:49:34,278 [INFO:MLManager_obj] {__init__:78} [SYSTEM]:Connected to database
+2020-09-10 15:49:34,279 [INFO:model_management_api] {get_all_model:283} [SYSTEM]:[admin] Created MLManagement object.
+2020-09-10 15:49:34,280 [INFO:model_management_api] {get_all_model:284} [SYSTEM]:[admin] Call get_all_model function.
+2020-09-10 15:49:34,282 [INFO:MLManager_obj] {get_all_model:122} [SYSTEM]:[admin] Getting all ML models.
+2020-09-10 15:49:34,318 [INFO:MLManager_obj] {get_all_model:144} [SYSTEM]:[admin] Got all ML models.
+2020-09-10 15:49:34,322 [INFO:model_management_api] {get_all_model:287} [SYSTEM]:[admin] Deleted MLManagement object.
+2020-09-10 15:49:34,324 [INFO:model_management_api] {get_all_model:301} [SYSTEM]:[admin] Response data from get_all_model API
+2020-09-10 15:50:05,250 [INFO:LogManager] {__init__:13} [SYSTEM]:Set log variable
+2020-09-10 15:50:05,250 [INFO:user_management] {add_log:214} [USER]:[admin] Enter page /ml_management
+2020-09-10 15:50:05,571 [INFO:model_management_api] {get_all_model:281} [SYSTEM]:[admin] Use get all ML model API.
+2020-09-10 15:50:05,573 [INFO:MLManager_obj] {__init__:76} [SYSTEM]:Connecting to database
+2020-09-10 15:50:05,581 [INFO:MLManager_obj] {__init__:78} [SYSTEM]:Connected to database
+2020-09-10 15:50:05,590 [INFO:model_management_api] {get_all_model:283} [SYSTEM]:[admin] Created MLManagement object.
+2020-09-10 15:50:05,591 [INFO:model_management_api] {get_all_model:284} [SYSTEM]:[admin] Call get_all_model function.
+2020-09-10 15:50:05,592 [INFO:MLManager_obj] {get_all_model:122} [SYSTEM]:[admin] Getting all ML models.
+2020-09-10 15:50:05,625 [INFO:MLManager_obj] {get_all_model:144} [SYSTEM]:[admin] Got all ML models.
+2020-09-10 15:50:05,629 [INFO:model_management_api] {get_all_model:287} [SYSTEM]:[admin] Deleted MLManagement object.
+2020-09-10 15:50:05,631 [INFO:model_management_api] {get_all_model:301} [SYSTEM]:[admin] Response data from get_all_model API
+2020-09-10 15:50:09,993 [INFO:LogManager] {__init__:13} [SYSTEM]:Set log variable
+2020-09-10 15:50:09,994 [INFO:user_management] {add_log:214} [USER]:[admin] Open add reference modal.
+2020-09-10 15:50:19,644 [INFO:LogManager] {__init__:13} [SYSTEM]:Set log variable
+2020-09-10 15:50:19,645 [INFO:user_management] {add_log:214} [USER]:[admin] Close add machine learning modal.
+2020-09-10 15:50:20,975 [INFO:LogManager] {__init__:13} [SYSTEM]:Set log variable
+2020-09-10 15:50:20,976 [INFO:user_management] {add_log:214} [USER]:[admin] Enter page /ref_management
+2020-09-10 15:50:21,595 [INFO:model_management_api] {get_all_model:289} [SYSTEM]:[admin] Use get all ML model API.
+2020-09-10 15:50:21,598 [INFO:model_management_api] {get_all_unit:315} [SYSTEM]:[admin] Use get all units API.
+2020-09-10 15:50:21,608 [INFO:model_management_api] {get_all_model:291} [SYSTEM]:[admin] Created RefManagement object.
+2020-09-10 15:50:21,610 [INFO:model_management_api] {get_all_model:292} [SYSTEM]:[admin] Call get_all_model function.
+2020-09-10 15:50:21,611 [INFO:model_management_api] {get_all_unit:317} [SYSTEM]:[admin] Created RefManagement object.
+2020-09-10 15:50:21,617 [INFO:model_management_api] {get_all_unit:318} [SYSTEM]:[admin] Call get_all_model function.
+2020-09-10 15:50:21,685 [INFO:model_management_api] {get_all_unit:325} [SYSTEM]:[admin] Deleted RefManagement object.
+2020-09-10 15:50:21,685 [INFO:model_management_api] {get_all_model:299} [SYSTEM]:[admin] Deleted RefManagement object.
+2020-09-10 15:50:21,686 [INFO:model_management_api] {get_all_unit:327} [SYSTEM]:[admin] Response data from get_all_model API
+2020-09-10 15:50:21,688 [INFO:model_management_api] {get_all_model:301} [SYSTEM]:[admin] Response data from get_all_model API
+2020-09-10 15:50:24,338 [INFO:LogManager] {__init__:13} [SYSTEM]:Set log variable
+2020-09-10 15:50:24,339 [INFO:user_management] {add_log:214} [USER]:[admin] Open add reference modal.
+2020-09-10 15:50:37,917 [INFO:LogManager] {__init__:13} [SYSTEM]:Set log variable
+2020-09-10 15:50:37,918 [INFO:user_management] {add_log:214} [USER]:[admin] Close add reference modal.
+2020-09-10 15:50:38,932 [INFO:LogManager] {__init__:13} [SYSTEM]:Set log variable
+2020-09-10 15:50:38,934 [INFO:user_management] {add_log:214} [USER]:[admin] Enter page /log
+2020-09-10 15:50:39,549 [INFO:LogManager] {__init__:13} [SYSTEM]:Set log variable
+2020-09-10 15:50:39,550 [INFO:LogManager] {get_min_max_date:181} [SYSTEM]:[admin] Prepair date data to query.
+2020-09-10 15:50:39,554 [INFO:LogManager] {__init__:13} [SYSTEM]:Set log variable
+2020-09-10 15:50:39,555 [INFO:LogManager] {get_today_log:53} [SYSTEM]:[admin] Prepair date data to query.
+2020-09-10 15:50:39,557 [INFO:LogManager] {get_min_max_date:197} [SYSTEM]:[admin] Close log file.
+2020-09-10 15:50:39,557 [INFO:LogManager] {get_min_max_date:198} [SYSTEM]:[admin] Got min and max date.
+2020-09-10 15:50:39,573 [INFO:LogManager] {get_today_log:69} [SYSTEM]:[admin] Read log 2020-09-10.log .
