@@ -2,6 +2,8 @@ from datetime import date , datetime
 today = date.today()
 date_folder = today.strftime("%Y-%m-%d")
 
+time_zone = "Asia/Bangkok"
+
 dict_config = {
     'version': 1,
     'formatters': {

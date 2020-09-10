@@ -1,10 +1,22 @@
 from flask import Flask, request, jsonify
+
+from datetime import datetime
+from pytz import timezone
+import logging
+
 import logging.config
 from apis.login.user_api import user_api , jwt
 from apis.image_processing.image_processing_api import image_processing_api
 from apis.model_management.model_management_api import model_management_api
 from apis.log_management.log_management_api import log_management_api
-from logging_config import dict_config
+from logging_config import dict_config , time_zone
+
+def timetz(*args):
+    return datetime.now(tz).timetuple()
+
+tz = timezone(time_zone)
+
+logging.Formatter.converter = timetz
 
 logger = logging.getLogger("main")
 logging.config.dictConfig(dict_config)
