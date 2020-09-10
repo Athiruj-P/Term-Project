@@ -767,3 +767,39 @@
 2020-09-10 15:50:39,573 [INFO:LogManager] {get_today_log:69} [SYSTEM]:[admin] Read log 2020-09-10.log .
 2020-09-10 15:50:39,605 [INFO:LogManager] {get_today_log:89} [SYSTEM]:[admin] Close log file.
 2020-09-10 15:50:39,605 [INFO:LogManager] {get_today_log:90} [SYSTEM]:[admin] Got all today logs.
+2020-09-10 16:01:34,747 [INFO:LogManager] {__init__:13} [SYSTEM]:Set log variable
+2020-09-10 16:01:34,747 [INFO:user_management] {add_log:214} [USER]:[admin] Enter page /log
+2020-09-10 16:01:34,812 [INFO:LogManager] {__init__:13} [SYSTEM]:Set log variable
+2020-09-10 16:01:34,813 [INFO:LogManager] {get_min_max_date:181} [SYSTEM]:[admin] Prepair date data to query.
+2020-09-10 16:01:34,818 [INFO:LogManager] {__init__:13} [SYSTEM]:Set log variable
+2020-09-10 16:01:34,818 [INFO:LogManager] {get_today_log:53} [SYSTEM]:[admin] Prepair date data to query.
+2020-09-10 16:01:34,819 [INFO:LogManager] {get_min_max_date:197} [SYSTEM]:[admin] Close log file.
+2020-09-10 16:01:34,820 [INFO:LogManager] {get_min_max_date:198} [SYSTEM]:[admin] Got min and max date.
+2020-09-10 16:01:34,828 [INFO:LogManager] {get_today_log:69} [SYSTEM]:[admin] Read log 2020-09-10.log .
+2020-09-10 16:01:34,854 [INFO:LogManager] {get_today_log:89} [SYSTEM]:[admin] Close log file.
+2020-09-10 16:01:34,855 [INFO:LogManager] {get_today_log:90} [SYSTEM]:[admin] Got all today logs.
+2020-09-10 16:01:36,397 [INFO:LogManager] {__init__:13} [SYSTEM]:Set log variable
+2020-09-10 16:01:36,399 [INFO:user_management] {add_log:214} [USER]:[admin] Enter page /ref_management
+2020-09-10 16:01:37,021 [INFO:model_management_api] {get_all_model:289} [SYSTEM]:[admin] Use get all ML model API.
+2020-09-10 16:01:37,024 [INFO:model_management_api] {get_all_unit:315} [SYSTEM]:[admin] Use get all units API.
+2020-09-10 16:01:37,033 [INFO:model_management_api] {get_all_model:291} [SYSTEM]:[admin] Created RefManagement object.
+2020-09-10 16:01:37,034 [INFO:model_management_api] {get_all_model:292} [SYSTEM]:[admin] Call get_all_model function.
+2020-09-10 16:01:37,036 [INFO:model_management_api] {get_all_unit:317} [SYSTEM]:[admin] Created RefManagement object.
+2020-09-10 16:01:37,039 [INFO:model_management_api] {get_all_unit:318} [SYSTEM]:[admin] Call get_all_model function.
+2020-09-10 16:01:37,108 [INFO:model_management_api] {get_all_model:299} [SYSTEM]:[admin] Deleted RefManagement object.
+2020-09-10 16:01:37,109 [INFO:model_management_api] {get_all_unit:325} [SYSTEM]:[admin] Deleted RefManagement object.
+2020-09-10 16:01:37,110 [INFO:model_management_api] {get_all_model:301} [SYSTEM]:[admin] Response data from get_all_model API
+2020-09-10 16:01:37,112 [INFO:model_management_api] {get_all_unit:327} [SYSTEM]:[admin] Response data from get_all_model API
+2020-09-10 16:01:37,271 [INFO:LogManager] {__init__:13} [SYSTEM]:Set log variable
+2020-09-10 16:01:37,271 [INFO:user_management] {add_log:214} [USER]:[admin] Enter page /upload
+2020-09-10 16:01:38,308 [INFO:LogManager] {__init__:13} [SYSTEM]:Set log variable
+2020-09-10 16:01:38,309 [INFO:user_management] {add_log:214} [USER]:[admin] Enter page /ml_management
+2020-09-10 16:01:38,600 [INFO:model_management_api] {get_all_model:281} [SYSTEM]:[admin] Use get all ML model API.
+2020-09-10 16:01:38,601 [INFO:MLManager_obj] {__init__:76} [SYSTEM]:Connecting to database
+2020-09-10 16:01:38,605 [INFO:MLManager_obj] {__init__:78} [SYSTEM]:Connected to database
+2020-09-10 16:01:38,606 [INFO:model_management_api] {get_all_model:283} [SYSTEM]:[admin] Created MLManagement object.
+2020-09-10 16:01:38,607 [INFO:model_management_api] {get_all_model:284} [SYSTEM]:[admin] Call get_all_model function.
+2020-09-10 16:01:38,608 [INFO:MLManager_obj] {get_all_model:122} [SYSTEM]:[admin] Getting all ML models.
+2020-09-10 16:01:38,635 [INFO:MLManager_obj] {get_all_model:144} [SYSTEM]:[admin] Got all ML models.
+2020-09-10 16:01:38,640 [INFO:model_management_api] {get_all_model:287} [SYSTEM]:[admin] Deleted MLManagement object.
+2020-09-10 16:01:38,641 [INFO:model_management_api] {get_all_model:301} [SYSTEM]:[admin] Response data from get_all_model API
