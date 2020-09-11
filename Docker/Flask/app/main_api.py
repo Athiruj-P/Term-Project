@@ -36,6 +36,20 @@ logger.info('Registered model_management_api blueprint ')
 app.register_blueprint(log_management_api)
 logger.info('Registered log_management_api blueprint ')
 
+@jwt.unauthorized_loader
+def unauthorized_callback(message):
+    return jsonify({
+        'status': 'system_error',
+        'msg': message
+    }), 400
+
+@jwt.invalid_token_loader
+def invalid_token_loader(message):
+    return jsonify({
+        'status': 'system_error',
+        'msg': message
+    }), 400
+
 @app.route("/")
 def hello():
     app.logger.info('Processing default request')
