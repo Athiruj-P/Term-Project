@@ -107,7 +107,7 @@ def add_model():
             result = { 'mes' : "wrong_type" }
             return result , 400
     except Exception as identifier:
-        logger.error("[{}] Error {}".format(username,identifier))
+        logger.error("[{}] Error {}".format(username,str(identifier)))
         result = { 'mes' : str(identifier) , 'status' : "system_error"}
         return result , 400
 
@@ -147,9 +147,9 @@ def edit_model():
             width = request.form.get('width',None)
             height = request.form.get('height',None)
             unit = request.form.get('unit',None)
-            logger.debug("width: {}".format(width))
-            logger.debug("height: {}".format(height))
-            logger.debug("unit: {}".format(unit))
+            # logger.debug("width: {}".format(width))
+            # logger.debug("height: {}".format(height))
+            # logger.debug("unit: {}".format(unit))
             data = Model(id=model_id,name=name,file=file,width=width,height=height,un_id=unit,username=username)
             ref_manager = RefManagement().create_manager()
             logger.info("[{}] Created RefManagement object.".format(username))
@@ -166,7 +166,7 @@ def edit_model():
             logger.info("[{}] Response data from edit_model API".format(username))
             return result , 200
     except Exception as identifier:
-        logger.error("[{}] Error {}".format(username,identifier))
+        logger.error("[{}] Error {}".format(username,str(identifier)))
         result = { 'mes' : str(identifier) , 'status' : "system_error"}
         return result , 400
 
@@ -214,7 +214,7 @@ def change_active_model():
             logger.info("[{}] Response data from change_active_model API".format(username))
             return result , 200
     except Exception as identifier:
-        logger.error("[{}] Error {}".format(username,identifier))
+        logger.error("[{}] Error {}".format(username,str(identifier)))
         result = { 'mes' : str(identifier) , 'status' : "system_error"}
         return result , 400
     
@@ -263,7 +263,7 @@ def delete_model():
             logger.info("[{}] Response data from delete_model API".format(username))
             return result , 200
     except Exception as identifier:
-        logger.error("[{}] Error {}".format(username,identifier))
+        logger.error("[{}] Error {}".format(username,str(identifier)))
         result = { 'mes' : str(identifier) , 'status' : "system_error"}
         return result , 400
 
@@ -301,6 +301,7 @@ def get_all_model():
         logger.info("[{}] Response data from get_all_model API".format(username))
         return result , 200
     except Exception as identifier:
+        logger.error("[{}] Error {}".format(username,str(identifier)))
         return result , 400
 
 # get_all_unit
@@ -327,6 +328,7 @@ def get_all_unit():
         logger.info("[{}] Response data from get_all_model API".format(username))
         return result , 200
     except Exception as identifier:
+        logger.error("[{}] Error {}".format(username,str(identifier)))
         return result , 400
 
 

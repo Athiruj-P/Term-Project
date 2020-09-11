@@ -183,7 +183,7 @@ class LogManager():
             filter_condition = False
             
             for file in sorted(os.listdir(self.log_path)):
-                self.logger.debug("file name : [{}]".format(file))
+                # self.logger.debug("file name : [{}]".format(file))
                 if not self.is_date_obj(file[:10]):
                     self.logger.warning("[{}] Wrong file format.".format(self.username))
                     continue
