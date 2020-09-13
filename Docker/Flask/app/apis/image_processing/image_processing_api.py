@@ -76,6 +76,12 @@ def upload_image():
         
         logger.info("[{}] Got measurement result".format(username))
         result_img = image_processor.measure_obj_size(input_image)
+
+        logger.info("[{}] Prepair image date to be response.".format(username))
+        retval, buffer = cv2.imencode('.png', result_img['img'])
+        data = base64.b64encode(buffer)
+        data = data.decode('utf-8')
+
         if(result_img['status'] == "system_error"):
             return result_img , 400
         elif(result_img['status'] == "ml_not_found"):
@@ -84,12 +90,6 @@ def upload_image():
         elif(result_img['status'] == "ref_not_found"):
             result = {'mes' : "Reference object not detected.",'img' : data, 'status' : "ref_not_found"}
             return result , 400
-
-        logger.info("[{}] Prepair image date to be response.".format(username))
-        retval, buffer = cv2.imencode('.png', result_img['img'])
-        data = base64.b64encode(buffer)
-        data = data.decode('utf-8')
-
         response = {
             'img' : data,
             'img_data' : result_img['img_data'],

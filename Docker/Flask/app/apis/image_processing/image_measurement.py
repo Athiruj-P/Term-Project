@@ -145,9 +145,11 @@ class ImageMeasurement:
 
         height, width, channels = image.shape
         # Detecting objects
-        blob = cv2.dnn.blobFromImage(image, 0.00392, (416, 416), (0, 0, 0), True, crop=False)
+        blob = cv2.dnn.blobFromImage(image, 1/255, (416, 416), (0, 0, 0), True, crop=False)
         net.setInput(blob)
         outs = net.forward(output_layers)
+        # store top-left pos width and height
+        box = None
         # loop over each of the layer outputs
         for out in outs:
             # loop over each of the detections
@@ -159,8 +161,49 @@ class ImageMeasurement:
                 if confidence > 0.3:
                     center_x = int(detection[0] * width)
                     center_y = int(detection[1] * height)
+                    w = int(detection[2] * width)
+                    h = int(detection[3] * height)
+
+                    # Top left (x,y)
+                    x = int(center_x - w / 2)
+                    y = int(center_y - h / 2)
+                    box = [x, y, w, h]
                     arr_center_point = [center_x,center_y]
-        return arr_center_point
+
+        # Extend area by percent
+        ext_percent = 0.1
+        x, y, w, h = box
+        crop_img = image[y-int(h*ext_percent):y+h+int(h*ext_percent), x-int(w*ext_percent):x+w+int(w*ext_percent)]
+        gray = cv2.cvtColor(crop_img, cv2.COLOR_BGR2GRAY)	
+        gray = cv2.GaussianBlur(gray, (7, 7), 0)
+        edged = cv2.Canny(gray, 50, 200)
+        _, binary = cv2.threshold(edged, 225, 255, cv2.THRESH_BINARY)
+        cnts = cv2.findContours(binary, cv2.RETR_EXTERNAL, cv2.CHAIN_APPROX_SIMPLE)
+        cnts = imutils.grab_contours(cnts)  
+        max_cnt_area = self.max_area(cnts)
+        return max_cnt_area
+
+    def max_area(self,cnts = None):
+        max_cnt_area = -1.0
+        max_cnt = None
+        dimA = 0
+        dimB = 0
+        for c in cnts:
+            box = cv2.minAreaRect(c)
+            box = cv2.cv.BoxPoints(box) if imutils.is_cv2() else cv2.boxPoints(box)
+            box = np.array(box, dtype="int")
+            box = perspective.order_points(box)
+            (tl, tr, br, bl) = box
+            dA = dist.euclidean((tl[0],tl[1]), (bl[0],bl[1]))
+            dB = dist.euclidean((tr[0],tr[1]), (br[0],br[1]))
+            area = dA * dB
+            if(max_cnt_area < area):
+                dimA = dA
+                dimB = dB
+                max_cnt = c
+                max_cnt_area = area
+        max_cnt = [max_cnt , dimA , dimB]
+        return max_cnt
 
     # get_background_mask
     # Description : ฟังก์ชันมาร์กช่วงของสี 3 สีคือสีแดง น้ำเงิน และสีเขียว เพื่อเป็นการตัดสีพื้นหลังของภาพที่มีสีดังกล่าวออก
@@ -183,19 +226,21 @@ class ImageMeasurement:
     # Author : Athiruj Poositaporn
     def measure_obj_size(self,image):
         parent = os.path.dirname(os.path.dirname(os.path.dirname(__file__)))
-
+        # กำหนดให้ pixelsPerMetric เป็น None ซึ่งใช้ในการคำนวณอัตราส่วนของรูปภาพอ้างอิง
+        # เพื่อใช้ค้นหาความยาวด้านของวัตถุเป้าหมาย
+        pixelsPerMetric = None
         input_image = image.image
-        input_image = self.resize_with_aspect_ratio(image.image,width=1080)
+        input_image = self.resize_with_aspect_ratio(image.image,width=1500)
         hsv=cv2.cvtColor(cv2.GaussianBlur(input_image, (7, 7), 0), cv2.COLOR_BGR2HSV)
 
         width_of_ref_obj = self.ref_model_width
 
         arr_center_point = self.detect_object(input_image)
-        ref_center_point = self.detect_ref_object(input_image)
+        ref_cnt_box = self.detect_ref_object(input_image)
 
         try:
             # หากไม่พบวัตถุอ้างอิงจะไม่วัดขนาด
-            if(not ref_center_point):
+            if(not ref_cnt_box):
                 logger.warning("Reference object not detected")
                 return {'mes' : err_msg.msg['ref_model_not_found'],'img' : input_image , 'status' : "ref_not_found"}
             # หากไม่พบวัตถุที่สนใจจะไม่วัดขนาด
@@ -203,6 +248,8 @@ class ImageMeasurement:
                 logger.warning("Object not detected")
                 return {'mes' : err_msg.msg['ml_model_not_found'],'img' : input_image , 'status' : "ml_not_found"}
             
+            _ , dimA , dimB = ref_cnt_box
+            pixelsPerMetric = dimB / width_of_ref_obj
             ##############################
             # Image size measure section #
             ##############################
@@ -253,9 +300,7 @@ class ImageMeasurement:
             # หาค่าของ pixelsPerMetric จากวัตถุอ้างอิงดังกล่าว
             (cnts, _) = contours.sort_contours(cnts)
 
-            # กำหนดให้ pixelsPerMetric เป็น None ซึ่งใช้ในการคำนวณอัตราส่วนของรูปภาพอ้างอิง
-            # เพื่อใช้ค้นหาความยาวด้านของวัตถุเป้าหมาย
-            pixelsPerMetric = None
+            
             origin = input_image.copy()
 
             # loop เพื่อคำนวณความยาวด้านของแต่ละรูปทรงที่ค้นหาได้จากรูปภาพ
@@ -293,76 +338,6 @@ class ImageMeasurement:
                         "distance" : distance
                     })
                 distance_list_of_ml_obj.append(sorted(sub_list, key = lambda i: i['distance'])[0])
-
-            ##########################################
-            # หาตำแหน่งของจุดกึ่งกลางของวัตถุอ้างอิงที่ตรวจจับได้
-            ##########################################
-            distance_list_of_ref_obj = []
-            sub_list = []
-            for data in center_contour_list:
-                distance = dist.euclidean(ref_center_point, data['center_point'])
-                sub_list.append({
-                    "data" : data,
-                    "distance" : distance
-                })
-            distance_list_of_ref_obj.append(sorted(sub_list, key = lambda i: i['distance'])[0])
-            ##########################################
-            ##########################################
-
-            #############################################################
-            # เทียบจุดกึ่งกลางของวัตถุอ้างอิงกับกล่องปิดล้อมวัตถุทั้งหมดเพื่อหาจุดที่ใกล้ที่สุด
-            # แล้วทำการวาดกรอบปิดล้อมวัตถุอ้างอิง พร้อมบอกขนาด
-            #############################################################
-            for obj_list in distance_list_of_ref_obj:
-                (tl, tr, br, bl) = obj_list['data']['box']
-                (tltrX, tltrY) = self.find_midpoint(tl,tr)
-                (blbrX, blbrY) = self.find_midpoint(bl,br)
-                (tlblX, tlblY) = self.find_midpoint(tl,bl)
-                (trbrX, trbrY) = self.find_midpoint(tr,br)
-
-                cv2.line(origin,(int(tl[0]), int(tl[1])) ,(int(tr[0]), int(tr[1])) , (0, 255, 0), 2)
-                cv2.line(origin,(int(bl[0]), int(bl[1])) ,(int(br[0]), int(br[1])) , (0, 255, 0), 2)
-                cv2.line(origin,(int(tl[0]), int(tl[1])) ,(int(bl[0]), int(bl[1])) , (0, 255, 0), 2)
-                cv2.line(origin,(int(tr[0]), int(tr[1])) ,(int(br[0]), int(br[1])) , (0, 255, 0), 2)
-
-                dA = dist.euclidean((tltrX, tltrY), (blbrX, blbrY))
-                dB = dist.euclidean((tlblX, tlblY), (trbrX, trbrY))
-                pixelsPerMetric = dB / width_of_ref_obj
-
-                dimA = dA / pixelsPerMetric
-                dimB = dB / pixelsPerMetric
-                # logger.debug("self.ref_model_name : {}".format(self.ref_model_name))
-                font = ImageFont.truetype(thai_font_path, 40)
-                img_pil = Image.fromarray(origin)
-                draw = ImageDraw.Draw(img_pil)
-                draw.text( (int(tl[0]), int(tl[1] - 50)),"[{}]".format(self.ref_model_name), font = font, fill = (255, 255, 255 , 0))
-                origin = np.array(img_pil)
-
-                # cv2.putText(origin, "[{}]".format(self.ref_model_name),
-                #     (int(tl[0]), int(tl[1] - 30)), cv2.FONT_HERSHEY_SIMPLEX,
-                #     0.65, (255, 255, 255), 2)
-
-                # cv2.putText(
-                #     origin, 
-                #     "{:.2f}mm".format(dimB),
-                #     (int(tltrX - 15), int(tltrY - 10)), 
-                #     cv2.FONT_HERSHEY_SIMPLEX,
-                #     1, 
-                #     (255, 255, 255), 
-                #     2
-                # )
-
-                # cv2.putText(
-                #     origin, 
-                #     "{:.2f}mm".format(dimA),
-                #     (int(trbrX  + 10), int(trbrY)), 
-                #     cv2.FONT_HERSHEY_SIMPLEX,
-                #     1, 
-                #     (255, 255, 255), 
-                #     2
-                # )
-            #############################################################
-            #############################################################
             
             #############################################################
             # เทียบจุดกึ่งกลางของวัตถุกับกล่องปิดล้อมวัตถุทั้งหมดเพื่อหาจุดที่ใกล้ที่สุด
@@ -445,14 +420,6 @@ class ImageMeasurement:
             result = {'img' : origin ,'img_data' : result_object_list ,'status' : "success"}
             return result
         except Exception as identifier:
-            # try:
-            #     # ใช้เพื่อค้นหาว่าค่า identifier มีใน err_msg.msg หรือไม่ ถ้าไม่มีการทำงานจะ error และเข้าสู่ except
-            #     list(err_msg.msg.keys())[list(err_msg.msg.values()).index(identifier)]
-            # except:
-            #     logger.error("{}.".format(str(identifier)))
-            #     result = {'mes' : str(identifier), 'status' : "system_error"}
-            #     # result = {'mes' : err_msg.msg['other_err']}
-            # return result
             logger.error("{}.".format(str(identifier)))
             result = {'mes' : str(identifier), 'status' : "system_error"}
             return result
