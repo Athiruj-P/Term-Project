@@ -689,6 +689,7 @@ class RefManager(Manager):
                 if(not self.is_float(data.width) ):
                     self.logger.warning("[{}] {}".format(data.username,err_msg.msg['wrong_width']))
                     raise TypeError(err_msg.msg['wrong_width'])
+                data.width = float(data.width)
                 self.DPML_db[self.collection].update(
                     { db_config.item['fld_remo_id']:data.id },
                     { "$set":{ db_config.item['fld_remo_width']:data.width }}
@@ -700,6 +701,7 @@ class RefManager(Manager):
                 if(not self.is_float(data.height) ):
                     self.logger.warning("[{}] {}".format(data.username,err_msg.msg['wrong_height']))
                     raise TypeError(err_msg.msg['wrong_height'])
+                data.height = float(data.height)
                 self.DPML_db[self.collection].update(
                     { db_config.item['fld_remo_id']:data.id },
                     { "$set":{ db_config.item['fld_remo_height']:data.height }}
