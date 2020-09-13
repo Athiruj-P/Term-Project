@@ -41,7 +41,12 @@ def get_background_mask(image, color):
 
 def detect_object(image,path_img):
     height, width = image.shape[:2]
-    net = cv2.dnn.readNet("yolov3_training_last.weights", "yolov3_testing.cfg")
+    # net = cv2.dnn.readNet("‪Desktop/logo_training_final.weights", "../Docker/Flask/app/db_file/ref_model/ref_model_config.cfg")
+    net = cv2.dnn.readNet("../Docker/Flask/app/db_file/ref_model/logo_training_final.weights", "../Docker/Flask/app/db_file/ref_model/ref_model_config.cfg")
+    net.setPreferableBackend(cv2.dnn.DNN_BACKEND_OPENCV)
+    net.setPreferableTarget(cv2.dnn.DNN_TARGET_CPU)
+
+
     classes = ["Box"]
     images_path = glob.glob(r""+path_img)
     layer_names = net.getLayerNames()
@@ -56,7 +61,7 @@ def detect_object(image,path_img):
         # img = cv2.resize(img, None, fx=0.4, fy=0.4)
         height, width, channels = img.shape
         # Detecting objects
-        blob = cv2.dnn.blobFromImage(img, 0.00392, (416, 416), (0, 0, 0), True, crop=False)
+        blob = cv2.dnn.blobFromImage(img, 1/255, (416, 416), (0, 0, 0), True, crop=False)
         net.setInput(blob)
         outs = net.forward(output_layers)
         # loop over each of the layer outputs
@@ -70,16 +75,26 @@ def detect_object(image,path_img):
                 if confidence > 0.3:
                     center_x = int(detection[0] * width)
                     center_y = int(detection[1] * height)
+                    print("========================")
+                    print("center_x : {}".format(center_x))
+                    print("center_y : {}".format(center_y))
+                    w = int(detection[2] * width)
+                    h = int(detection[3] * height)
+                    print("width : {}".format(w))
+                    print("height : {}".format(h))
+                    print("========================")
                     arr_center_point.append([center_x,center_y])
                     pass
     return arr_center_point
 
 def main():
     try:
-        path_img = "../Photo/bg_red.JPG"
+        img_name = 'IMG_8110.JPG'
+        path_img = "C:/Users/First-AP/Desktop/test_img/{}".format(img_name)
         image = cv2.imread(path_img)
+        # image = ResizeWithAspectRatio(image,width=1080)
         hsv=cv2.cvtColor(cv2.GaussianBlur(image, (7, 7), 0), cv2.COLOR_BGR2HSV)
-        width_of_ref_obj = 10
+        width_of_ref_obj = 20
 
         arr_center_point = detect_object(image,path_img)
         ##############################
@@ -87,23 +102,23 @@ def main():
         ##############################
         center_contour = []
         gray = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)	
-        gray = cv2.GaussianBlur(gray, (5, 7), 0)
+        gray = cv2.GaussianBlur(gray, (7, 7), 0)
         edged = cv2.Canny(gray, 50, 200)
         edged = cv2.dilate(edged, None, iterations=1)
         edged = cv2.erode(edged, None, iterations=1)
 
         mask_r=get_background_mask(hsv, "red")
-        edged_r=cv2.Canny(mask_r, 10, 100)
+        edged_r=cv2.Canny(mask_r, 50, 200)
         edged_r=cv2.dilate(edged_r, None, iterations=1)
         edged_r=cv2.erode(edged_r, None, iterations=1)
         
         mask_g=get_background_mask(hsv, "green")
-        edged_g=cv2.Canny(mask_g, 10, 100)
+        edged_g=cv2.Canny(mask_g, 50, 200)
         edged_g=cv2.dilate(edged_g, None, iterations=1)
         edged_g=cv2.erode(edged_g, None, iterations=1)
 
         mask_b=get_background_mask(hsv, "blue")
-        edged_b=cv2.Canny(mask_b, 10, 100)
+        edged_b=cv2.Canny(mask_b, 50, 200)
         edged_b=cv2.dilate(edged_b, None, iterations=1)
         edged_b=cv2.erode(edged_b, None, iterations=1)
 
@@ -111,9 +126,28 @@ def main():
         merge_rgb = cv2.addWeighted(merge_rg, 1, edged_b, 1, 0)
         merge_rgb_edged = cv2.addWeighted(merge_rgb, 1, edged, 1, 0)
 
+        # temp = ResizeWithAspectRatio(edged,width=1080)
+        # cv2.imshow("edged", temp)
 
-        cnts = cv2.findContours(merge_rgb_edged.copy(), cv2.RETR_EXTERNAL,
-            cv2.CHAIN_APPROX_SIMPLE)
+        # temp = ResizeWithAspectRatio(edged_r,width=1080)
+        # cv2.imshow("edged_r", temp)
+
+        # temp = ResizeWithAspectRatio(edged_g,width=1080)
+        # cv2.imshow("edged_g", temp)
+
+        # temp = ResizeWithAspectRatio(edged_b,width=1080)
+        # cv2.imshow("edged_b", temp)
+
+        # temp = ResizeWithAspectRatio(merge_rgb_edged,width=1080)
+        # cv2.imshow("temp", temp)
+        gray = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)	
+        gray = cv2.GaussianBlur(gray, (7, 7), 0)
+        edged = cv2.Canny(gray, 50, 200)
+        _, binary = cv2.threshold(edged, 225, 255, cv2.THRESH_BINARY)
+        temp_b = ResizeWithAspectRatio(binary,width=1080)
+        cv2.imshow("binary", temp_b)
+
+        cnts = cv2.findContours(binary, cv2.RETR_EXTERNAL, cv2.CHAIN_APPROX_SIMPLE)
         cnts = imutils.grab_contours(cnts)
         (cnts, _) = contours.sort_contours(cnts)
 
@@ -156,7 +190,7 @@ def main():
             distance_list.append(sorted(sub_list, key = lambda i: i['distance'])[0])
         
         pp = pprint.PrettyPrinter(indent=4)
-        pp.pprint(distance_list)
+        pp.pprint(center_contour)
 
         for obj_list in distance_list:
             (tl, tr, br, bl) = obj_list['data']['box']
@@ -204,6 +238,7 @@ def main():
         cv2.waitKey(0)
         raise TypeError("")
     except Exception as srt_err:
+        print(str(srt_err))
         return 0
     finally:
         return 0
