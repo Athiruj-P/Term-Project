@@ -6,6 +6,7 @@ services:
       context: . #Build Dockerfile 
     container_name: "flask_api"
     volumes:
+      - db-file-volumn:/app/db_file
       - service-volumn:/app/log
     ports:
       - 5001:5001
@@ -14,6 +15,7 @@ services:
     restart: always
 volumes:
   service-volumn:
+  db-file-volumn:
 networks:
     my_network:
         external: true    
