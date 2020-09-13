@@ -37,11 +37,14 @@ def write_text_on_image(image,text):
 		(0, 0, 0, 255),  # font color
 		3)  # font stroke
 
-origin_image01 = cv.imread('Photo/golden_grahams.png')
-origin_image02 = cv.imread('Photo/products.png')
+# origin_image01 = cv.imread('Photo/golden_grahams.png')
+# origin_image02 = cv.imread('Photo/products.png')
+origin_image01 = cv.imread('C:/Users/First-AP/Desktop/test_img/template.png')
+origin_image02 = cv.imread('C:/Users/First-AP/Desktop/test_img/IMG_8110.JPG')
+origin_image02 = ResizeWithAspectRatio(origin_image02,width=1000)
 
 if origin_image01.shape[1] > 400:
-    origin_image01 = ResizeWithAspectRatio(origin_image01,width = 400)
+    origin_image01 = ResizeWithAspectRatio(origin_image01,width = 200)
 
 img1 = cv.cvtColor(origin_image01, cv.COLOR_BGR2GRAY)
 img2 = cv.cvtColor(origin_image02, cv.COLOR_BGR2GRAY)
