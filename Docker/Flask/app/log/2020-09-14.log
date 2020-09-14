@@ -1,0 +1,422 @@
+2020-09-14 12:30:22,956 [INFO:main] {<module>:29} [SYSTEM]:Created flask app.
+2020-09-14 12:30:22,958 [INFO:main] {<module>:31} [SYSTEM]:Registered image_processing_api blueprint 
+2020-09-14 12:30:22,959 [INFO:main] {<module>:33} [SYSTEM]:Registered user_api blueprint 
+2020-09-14 12:30:22,963 [INFO:main] {<module>:35} [SYSTEM]:Registered model_management_api blueprint 
+2020-09-14 12:30:22,964 [INFO:main] {<module>:37} [SYSTEM]:Registered log_management_api blueprint 
+2020-09-14 12:30:23,839 [INFO:main] {<module>:29} [SYSTEM]:Created flask app.
+2020-09-14 12:30:23,841 [INFO:main] {<module>:31} [SYSTEM]:Registered image_processing_api blueprint 
+2020-09-14 12:30:23,843 [INFO:main] {<module>:33} [SYSTEM]:Registered user_api blueprint 
+2020-09-14 12:30:23,847 [INFO:main] {<module>:35} [SYSTEM]:Registered model_management_api blueprint 
+2020-09-14 12:30:23,848 [INFO:main] {<module>:37} [SYSTEM]:Registered log_management_api blueprint 
+2020-09-14 13:25:28,893 [INFO:main] {<module>:29} [SYSTEM]:Created flask app.
+2020-09-14 13:25:28,895 [INFO:main] {<module>:31} [SYSTEM]:Registered image_processing_api blueprint 
+2020-09-14 13:25:28,897 [INFO:main] {<module>:33} [SYSTEM]:Registered user_api blueprint 
+2020-09-14 13:25:28,901 [INFO:main] {<module>:35} [SYSTEM]:Registered model_management_api blueprint 
+2020-09-14 13:25:28,902 [INFO:main] {<module>:37} [SYSTEM]:Registered log_management_api blueprint 
+2020-09-14 13:25:34,516 [INFO:main] {<module>:29} [SYSTEM]:Created flask app.
+2020-09-14 13:25:34,518 [INFO:main] {<module>:31} [SYSTEM]:Registered image_processing_api blueprint 
+2020-09-14 13:25:34,521 [INFO:main] {<module>:33} [SYSTEM]:Registered user_api blueprint 
+2020-09-14 13:25:34,525 [INFO:main] {<module>:35} [SYSTEM]:Registered model_management_api blueprint 
+2020-09-14 13:25:34,526 [INFO:main] {<module>:37} [SYSTEM]:Registered log_management_api blueprint 
+2020-09-14 13:25:41,180 [INFO:main] {<module>:29} [SYSTEM]:Created flask app.
+2020-09-14 13:25:41,182 [INFO:main] {<module>:31} [SYSTEM]:Registered image_processing_api blueprint 
+2020-09-14 13:25:41,184 [INFO:main] {<module>:33} [SYSTEM]:Registered user_api blueprint 
+2020-09-14 13:25:41,187 [INFO:main] {<module>:35} [SYSTEM]:Registered model_management_api blueprint 
+2020-09-14 13:25:41,189 [INFO:main] {<module>:37} [SYSTEM]:Registered log_management_api blueprint 
+2020-09-14 13:25:44,874 [INFO:main] {<module>:29} [SYSTEM]:Created flask app.
+2020-09-14 13:25:44,876 [INFO:main] {<module>:31} [SYSTEM]:Registered image_processing_api blueprint 
+2020-09-14 13:25:44,879 [INFO:main] {<module>:33} [SYSTEM]:Registered user_api blueprint 
+2020-09-14 13:25:44,884 [INFO:main] {<module>:35} [SYSTEM]:Registered model_management_api blueprint 
+2020-09-14 13:25:44,886 [INFO:main] {<module>:37} [SYSTEM]:Registered log_management_api blueprint 
+2020-09-14 13:25:50,449 [INFO:main] {<module>:29} [SYSTEM]:Created flask app.
+2020-09-14 13:25:50,451 [INFO:main] {<module>:31} [SYSTEM]:Registered image_processing_api blueprint 
+2020-09-14 13:25:50,453 [INFO:main] {<module>:33} [SYSTEM]:Registered user_api blueprint 
+2020-09-14 13:25:50,456 [INFO:main] {<module>:35} [SYSTEM]:Registered model_management_api blueprint 
+2020-09-14 13:25:50,459 [INFO:main] {<module>:37} [SYSTEM]:Registered log_management_api blueprint 
+2020-09-14 13:25:56,128 [INFO:main] {<module>:29} [SYSTEM]:Created flask app.
+2020-09-14 13:25:56,130 [INFO:main] {<module>:31} [SYSTEM]:Registered image_processing_api blueprint 
+2020-09-14 13:25:56,131 [INFO:main] {<module>:33} [SYSTEM]:Registered user_api blueprint 
+2020-09-14 13:25:56,135 [INFO:main] {<module>:35} [SYSTEM]:Registered model_management_api blueprint 
+2020-09-14 13:25:56,137 [INFO:main] {<module>:37} [SYSTEM]:Registered log_management_api blueprint 
+2020-09-14 13:25:58,504 [INFO:main] {<module>:29} [SYSTEM]:Created flask app.
+2020-09-14 13:25:58,507 [INFO:main] {<module>:31} [SYSTEM]:Registered image_processing_api blueprint 
+2020-09-14 13:25:58,509 [INFO:main] {<module>:33} [SYSTEM]:Registered user_api blueprint 
+2020-09-14 13:25:58,513 [INFO:main] {<module>:35} [SYSTEM]:Registered model_management_api blueprint 
+2020-09-14 13:25:58,514 [INFO:main] {<module>:37} [SYSTEM]:Registered log_management_api blueprint 
+2020-09-14 13:26:04,181 [INFO:main] {<module>:29} [SYSTEM]:Created flask app.
+2020-09-14 13:26:04,183 [INFO:main] {<module>:31} [SYSTEM]:Registered image_processing_api blueprint 
+2020-09-14 13:26:04,185 [INFO:main] {<module>:33} [SYSTEM]:Registered user_api blueprint 
+2020-09-14 13:26:04,189 [INFO:main] {<module>:35} [SYSTEM]:Registered model_management_api blueprint 
+2020-09-14 13:26:04,191 [INFO:main] {<module>:37} [SYSTEM]:Registered log_management_api blueprint 
+2020-09-14 13:26:07,827 [INFO:main] {<module>:29} [SYSTEM]:Created flask app.
+2020-09-14 13:26:07,829 [INFO:main] {<module>:31} [SYSTEM]:Registered image_processing_api blueprint 
+2020-09-14 13:26:07,831 [INFO:main] {<module>:33} [SYSTEM]:Registered user_api blueprint 
+2020-09-14 13:26:07,834 [INFO:main] {<module>:35} [SYSTEM]:Registered model_management_api blueprint 
+2020-09-14 13:26:07,836 [INFO:main] {<module>:37} [SYSTEM]:Registered log_management_api blueprint 
+2020-09-14 13:26:10,468 [INFO:main] {<module>:29} [SYSTEM]:Created flask app.
+2020-09-14 13:26:10,470 [INFO:main] {<module>:31} [SYSTEM]:Registered image_processing_api blueprint 
+2020-09-14 13:26:10,472 [INFO:main] {<module>:33} [SYSTEM]:Registered user_api blueprint 
+2020-09-14 13:26:10,475 [INFO:main] {<module>:35} [SYSTEM]:Registered model_management_api blueprint 
+2020-09-14 13:26:10,477 [INFO:main] {<module>:37} [SYSTEM]:Registered log_management_api blueprint 
+2020-09-14 13:26:12,899 [INFO:main] {<module>:29} [SYSTEM]:Created flask app.
+2020-09-14 13:26:12,901 [INFO:main] {<module>:31} [SYSTEM]:Registered image_processing_api blueprint 
+2020-09-14 13:26:12,902 [INFO:main] {<module>:33} [SYSTEM]:Registered user_api blueprint 
+2020-09-14 13:26:12,910 [INFO:main] {<module>:35} [SYSTEM]:Registered model_management_api blueprint 
+2020-09-14 13:26:12,912 [INFO:main] {<module>:37} [SYSTEM]:Registered log_management_api blueprint 
+2020-09-14 13:26:26,013 [INFO:main] {<module>:29} [SYSTEM]:Created flask app.
+2020-09-14 13:26:26,015 [INFO:main] {<module>:31} [SYSTEM]:Registered image_processing_api blueprint 
+2020-09-14 13:26:26,016 [INFO:main] {<module>:33} [SYSTEM]:Registered user_api blueprint 
+2020-09-14 13:26:26,021 [INFO:main] {<module>:35} [SYSTEM]:Registered model_management_api blueprint 
+2020-09-14 13:26:26,023 [INFO:main] {<module>:37} [SYSTEM]:Registered log_management_api blueprint 
+2020-09-14 13:26:30,661 [INFO:main] {<module>:29} [SYSTEM]:Created flask app.
+2020-09-14 13:26:30,663 [INFO:main] {<module>:31} [SYSTEM]:Registered image_processing_api blueprint 
+2020-09-14 13:26:30,665 [INFO:main] {<module>:33} [SYSTEM]:Registered user_api blueprint 
+2020-09-14 13:26:30,668 [INFO:main] {<module>:35} [SYSTEM]:Registered model_management_api blueprint 
+2020-09-14 13:26:30,671 [INFO:main] {<module>:37} [SYSTEM]:Registered log_management_api blueprint 
+2020-09-14 13:26:57,436 [INFO:main] {<module>:29} [SYSTEM]:Created flask app.
+2020-09-14 13:26:57,438 [INFO:main] {<module>:31} [SYSTEM]:Registered image_processing_api blueprint 
+2020-09-14 13:26:57,440 [INFO:main] {<module>:33} [SYSTEM]:Registered user_api blueprint 
+2020-09-14 13:26:57,444 [INFO:main] {<module>:35} [SYSTEM]:Registered model_management_api blueprint 
+2020-09-14 13:26:57,446 [INFO:main] {<module>:37} [SYSTEM]:Registered log_management_api blueprint 
+2020-09-14 13:27:09,719 [INFO:Login_api] {refresh:106} [SYSTEM]: Refreshing token.
+2020-09-14 13:27:09,720 [INFO:Login_api] {refresh:111} [SYSTEM]: Response new access token.
+2020-09-14 13:27:09,775 [INFO:Login_api] {refresh:106} [SYSTEM]: Refreshing token.
+2020-09-14 13:27:09,778 [INFO:Login_api] {refresh:111} [SYSTEM]: Response new access token.
+2020-09-14 13:27:10,031 [INFO:LogManager] {__init__:13} [SYSTEM]:Set log variable
+2020-09-14 13:27:10,031 [INFO:user_management] {add_log:215} [USER]:[admin] Click on today radio.
+2020-09-14 13:27:10,087 [INFO:LogManager] {__init__:13} [SYSTEM]:Set log variable
+2020-09-14 13:27:10,088 [INFO:LogManager] {get_today_log:53} [SYSTEM]:[admin] Prepair date data to query.
+2020-09-14 13:27:10,096 [INFO:LogManager] {get_today_log:69} [SYSTEM]:[admin] Read log 2020-09-14.log .
+2020-09-14 13:27:10,098 [INFO:LogManager] {get_today_log:89} [SYSTEM]:[admin] Close log file.
+2020-09-14 13:27:10,098 [INFO:LogManager] {get_today_log:90} [SYSTEM]:[admin] Got all today logs.
+2020-09-14 13:27:15,456 [INFO:LogManager] {__init__:13} [SYSTEM]:Set log variable
+2020-09-14 13:27:15,456 [INFO:user_management] {add_log:215} [USER]:[admin] Enter page /upload
+2020-09-14 13:27:20,865 [INFO:LogManager] {__init__:13} [SYSTEM]:Set log variable
+2020-09-14 13:27:20,866 [INFO:user_management] {add_log:215} [USER]:[admin] Choosen image file.
+2020-09-14 13:27:30,088 [INFO:LogManager] {__init__:13} [SYSTEM]:Set log variable
+2020-09-14 13:27:30,088 [INFO:user_management] {add_log:215} [USER]:[admin] Enter page /upload
+2020-09-14 13:27:33,470 [INFO:LogManager] {__init__:13} [SYSTEM]:Set log variable
+2020-09-14 13:27:33,471 [INFO:user_management] {add_log:215} [USER]:[admin] Choosen image file.
+2020-09-14 13:27:43,864 [INFO:LogManager] {__init__:13} [SYSTEM]:Set log variable
+2020-09-14 13:27:43,865 [INFO:user_management] {add_log:215} [USER]:[admin] Enter page /ml_management
+2020-09-14 13:27:43,868 [INFO:model_management_api] {get_all_model:281} [SYSTEM]:[admin] Use get all ML model API.
+2020-09-14 13:27:43,870 [INFO:MLManager_obj] {__init__:76} [SYSTEM]:Connecting to database
+2020-09-14 13:27:43,948 [INFO:MLManager_obj] {__init__:78} [SYSTEM]:Connected to database
+2020-09-14 13:27:43,949 [INFO:model_management_api] {get_all_model:283} [SYSTEM]:[admin] Created MLManagement object.
+2020-09-14 13:27:43,949 [INFO:model_management_api] {get_all_model:284} [SYSTEM]:[admin] Call get_all_model function.
+2020-09-14 13:27:43,950 [INFO:MLManager_obj] {get_all_model:122} [SYSTEM]:[admin] Getting all ML models.
+2020-09-14 13:27:45,874 [INFO:LogManager] {__init__:13} [SYSTEM]:Set log variable
+2020-09-14 13:27:45,875 [INFO:user_management] {add_log:215} [USER]:[admin] Enter page /upload
+2020-09-14 13:27:50,807 [INFO:Login_api] {login:33} [SYSTEM]:[admin] is logging in.
+2020-09-14 13:28:14,005 [INFO:model_management_api] {get_all_model:287} [SYSTEM]:[admin] Deleted MLManagement object.
+2020-09-14 13:28:14,005 [INFO:model_management_api] {get_all_model:301} [SYSTEM]:[admin] Response data from get_all_model API
+2020-09-14 13:28:21,241 [ERROR:Login_api] {login:76} [SYSTEM]:172.18.0.2:27017: timed out, Timeout: 30s, Topology Description: <TopologyDescription id: 5f5f0d31f57748ed2e2a0e42, topology_type: Single, servers: [<ServerDescription ('172.18.0.2', 27017) server_type: Unknown, rtt: None, error=NetworkTimeout('172.18.0.2:27017: timed out')>]>.
+2020-09-14 13:28:45,645 [INFO:main] {<module>:29} [SYSTEM]:Created flask app.
+2020-09-14 13:28:45,647 [INFO:main] {<module>:31} [SYSTEM]:Registered image_processing_api blueprint 
+2020-09-14 13:28:45,649 [INFO:main] {<module>:33} [SYSTEM]:Registered user_api blueprint 
+2020-09-14 13:28:45,652 [INFO:main] {<module>:35} [SYSTEM]:Registered model_management_api blueprint 
+2020-09-14 13:28:45,654 [INFO:main] {<module>:37} [SYSTEM]:Registered log_management_api blueprint 
+2020-09-14 13:28:48,282 [INFO:main] {<module>:29} [SYSTEM]:Created flask app.
+2020-09-14 13:28:48,284 [INFO:main] {<module>:31} [SYSTEM]:Registered image_processing_api blueprint 
+2020-09-14 13:28:48,285 [INFO:main] {<module>:33} [SYSTEM]:Registered user_api blueprint 
+2020-09-14 13:28:48,289 [INFO:main] {<module>:35} [SYSTEM]:Registered model_management_api blueprint 
+2020-09-14 13:28:48,291 [INFO:main] {<module>:37} [SYSTEM]:Registered log_management_api blueprint 
+2020-09-14 13:28:56,678 [INFO:Login_api] {login:33} [SYSTEM]:[admin] is logging in.
+2020-09-14 13:28:56,715 [INFO:Login_api] {login:72} [SYSTEM]:[admin] Response tokens to login.
+2020-09-14 13:28:57,440 [INFO:LogManager] {__init__:13} [SYSTEM]:Set log variable
+2020-09-14 13:28:57,440 [INFO:user_management] {add_log:215} [USER]:[admin] Enter page /upload
+2020-09-14 13:29:01,596 [INFO:LogManager] {__init__:13} [SYSTEM]:Set log variable
+2020-09-14 13:29:01,596 [INFO:user_management] {add_log:215} [USER]:[admin] Choosen image file.
+2020-09-14 13:29:04,144 [INFO:LogManager] {__init__:13} [SYSTEM]:Set log variable
+2020-09-14 13:29:04,145 [INFO:user_management] {add_log:215} [USER]:[admin] Selected measurement unit.
+2020-09-14 13:29:04,347 [INFO:LogManager] {__init__:13} [SYSTEM]:Set log variable
+2020-09-14 13:29:04,347 [INFO:user_management] {add_log:215} [USER]:[admin] Click upload image button.
+2020-09-14 13:29:04,396 [INFO:image_processing_api] {upload_image:59} [SYSTEM]:[admin] Prepair image data to be measure.
+2020-09-14 13:29:04,397 [INFO:image_processing_api] {upload_image:70} [SYSTEM]:[admin] Processing image...
+2020-09-14 13:29:04,447 [INFO:image_processing_api] {upload_image:77} [SYSTEM]:[admin] Got measurement result
+2020-09-14 13:29:04,488 [ERROR:image_measurement] {measure_obj_size:425} [SYSTEM]:OpenCV(4.3.0) C:\projects\opencv-python\opencv\modules\dnn\src\darknet\darknet_importer.cpp:214: error: (-212:Parsing error) Failed to parse NetParameter file: /app/db_file/ml_model/6b02100ac03e43428337f9daaad8d329.weights in function 'cv::dnn::dnn4_v20200310::readNetFromDarknet'
+.
+2020-09-14 13:29:04,492 [INFO:image_processing_api] {upload_image:80} [SYSTEM]:[admin] Prepair image date to be response.
+2020-09-14 13:29:04,493 [ERROR:image_processing_api] {upload_image:106} [SYSTEM]:'img'.
+2020-09-14 13:31:05,441 [INFO:LogManager] {__init__:13} [SYSTEM]:Set log variable
+2020-09-14 13:31:05,441 [INFO:user_management] {add_log:215} [USER]:[admin] Choosen image file.
+2020-09-14 13:31:07,364 [INFO:LogManager] {__init__:13} [SYSTEM]:Set log variable
+2020-09-14 13:31:07,365 [INFO:user_management] {add_log:215} [USER]:[admin] Selected measurement unit.
+2020-09-14 13:31:07,921 [INFO:LogManager] {__init__:13} [SYSTEM]:Set log variable
+2020-09-14 13:31:07,922 [INFO:user_management] {add_log:215} [USER]:[admin] Click upload image button.
+2020-09-14 13:31:08,176 [INFO:image_processing_api] {upload_image:59} [SYSTEM]:[admin] Prepair image data to be measure.
+2020-09-14 13:31:08,177 [INFO:image_processing_api] {upload_image:70} [SYSTEM]:[admin] Processing image...
+2020-09-14 13:31:08,213 [INFO:image_processing_api] {upload_image:77} [SYSTEM]:[admin] Got measurement result
+2020-09-14 13:31:08,221 [ERROR:image_measurement] {measure_obj_size:425} [SYSTEM]:OpenCV(4.3.0) C:\projects\opencv-python\opencv\modules\dnn\src\darknet\darknet_importer.cpp:214: error: (-212:Parsing error) Failed to parse NetParameter file: /app/db_file/ml_model/6b02100ac03e43428337f9daaad8d329.weights in function 'cv::dnn::dnn4_v20200310::readNetFromDarknet'
+.
+2020-09-14 13:31:08,245 [INFO:image_processing_api] {upload_image:80} [SYSTEM]:[admin] Prepair image date to be response.
+2020-09-14 13:31:08,246 [ERROR:image_processing_api] {upload_image:106} [SYSTEM]:'img'.
+2020-09-14 13:32:24,976 [INFO:LogManager] {__init__:13} [SYSTEM]:Set log variable
+2020-09-14 13:32:24,977 [INFO:user_management] {add_log:215} [USER]:[admin] Enter page /ml_management
+2020-09-14 13:32:25,030 [INFO:model_management_api] {get_all_model:281} [SYSTEM]:[admin] Use get all ML model API.
+2020-09-14 13:32:25,031 [INFO:MLManager_obj] {__init__:76} [SYSTEM]:Connecting to database
+2020-09-14 13:32:25,036 [INFO:MLManager_obj] {__init__:78} [SYSTEM]:Connected to database
+2020-09-14 13:32:25,037 [INFO:model_management_api] {get_all_model:283} [SYSTEM]:[admin] Created MLManagement object.
+2020-09-14 13:32:25,037 [INFO:model_management_api] {get_all_model:284} [SYSTEM]:[admin] Call get_all_model function.
+2020-09-14 13:32:25,038 [INFO:MLManager_obj] {get_all_model:122} [SYSTEM]:[admin] Getting all ML models.
+2020-09-14 13:32:25,064 [INFO:MLManager_obj] {get_all_model:144} [SYSTEM]:[admin] Got all ML models.
+2020-09-14 13:32:25,066 [INFO:model_management_api] {get_all_model:287} [SYSTEM]:[admin] Deleted MLManagement object.
+2020-09-14 13:32:25,067 [INFO:model_management_api] {get_all_model:301} [SYSTEM]:[admin] Response data from get_all_model API
+2020-09-14 13:32:26,218 [INFO:LogManager] {__init__:13} [SYSTEM]:Set log variable
+2020-09-14 13:32:26,219 [INFO:user_management] {add_log:215} [USER]:[admin] Click switch active machine learning model button.
+2020-09-14 13:32:27,341 [INFO:model_management_api] {change_active_model:185} [SYSTEM]:[admin] Use change active ML model API.
+2020-09-14 13:32:27,342 [INFO:MLManager_obj] {__init__:76} [SYSTEM]:Connecting to database
+2020-09-14 13:32:27,344 [INFO:MLManager_obj] {__init__:78} [SYSTEM]:Connected to database
+2020-09-14 13:32:27,346 [INFO:model_management_api] {change_active_model:187} [SYSTEM]:[admin] Created MLManagement object.
+2020-09-14 13:32:27,347 [INFO:model_management_api] {change_active_model:188} [SYSTEM]:[admin] Call change_active_model function.
+2020-09-14 13:32:27,347 [INFO:MLManager_obj] {change_active_model:303} [SYSTEM]:[admin] Prepair ML model data to be activate.
+2020-09-14 13:32:27,386 [INFO:MLManager_obj] {change_active_model:324} [SYSTEM]:[admin] Disable an active model.
+2020-09-14 13:32:27,390 [INFO:MLManager_obj] {change_active_model:330} [SYSTEM]:[admin] Activate a selected model.
+2020-09-14 13:32:27,393 [INFO:model_management_api] {change_active_model:197} [SYSTEM]:[admin] Deleted MLManagement object.
+2020-09-14 13:32:27,393 [INFO:model_management_api] {change_active_model:198} [SYSTEM]:[admin] Response data from change_active_model API
+2020-09-14 13:32:27,410 [INFO:model_management_api] {get_all_model:281} [SYSTEM]:[admin] Use get all ML model API.
+2020-09-14 13:32:27,450 [INFO:MLManager_obj] {__init__:76} [SYSTEM]:Connecting to database
+2020-09-14 13:32:27,453 [INFO:MLManager_obj] {__init__:78} [SYSTEM]:Connected to database
+2020-09-14 13:32:27,455 [INFO:model_management_api] {get_all_model:283} [SYSTEM]:[admin] Created MLManagement object.
+2020-09-14 13:32:27,456 [INFO:model_management_api] {get_all_model:284} [SYSTEM]:[admin] Call get_all_model function.
+2020-09-14 13:32:27,459 [INFO:MLManager_obj] {get_all_model:122} [SYSTEM]:[admin] Getting all ML models.
+2020-09-14 13:32:27,497 [INFO:MLManager_obj] {get_all_model:144} [SYSTEM]:[admin] Got all ML models.
+2020-09-14 13:32:27,528 [INFO:model_management_api] {get_all_model:287} [SYSTEM]:[admin] Deleted MLManagement object.
+2020-09-14 13:32:27,529 [INFO:model_management_api] {get_all_model:301} [SYSTEM]:[admin] Response data from get_all_model API
+2020-09-14 13:32:27,751 [INFO:LogManager] {__init__:13} [SYSTEM]:Set log variable
+2020-09-14 13:32:27,752 [INFO:model_management_api] {get_all_model:289} [SYSTEM]:[admin] Use get all ML model API.
+2020-09-14 13:32:27,753 [INFO:user_management] {add_log:215} [USER]:[admin] Enter page /ref_management
+2020-09-14 13:32:27,767 [INFO:model_management_api] {get_all_model:291} [SYSTEM]:[admin] Created RefManagement object.
+2020-09-14 13:32:27,768 [INFO:model_management_api] {get_all_model:292} [SYSTEM]:[admin] Call get_all_model function.
+2020-09-14 13:32:27,844 [INFO:model_management_api] {get_all_model:299} [SYSTEM]:[admin] Deleted RefManagement object.
+2020-09-14 13:32:27,845 [INFO:model_management_api] {get_all_model:301} [SYSTEM]:[admin] Response data from get_all_model API
+2020-09-14 13:32:28,066 [INFO:model_management_api] {get_all_unit:316} [SYSTEM]:[admin] Use get all units API.
+2020-09-14 13:32:28,070 [INFO:model_management_api] {get_all_unit:318} [SYSTEM]:[admin] Created RefManagement object.
+2020-09-14 13:32:28,071 [INFO:model_management_api] {get_all_unit:319} [SYSTEM]:[admin] Call get_all_model function.
+2020-09-14 13:32:28,131 [INFO:model_management_api] {get_all_unit:326} [SYSTEM]:[admin] Deleted RefManagement object.
+2020-09-14 13:32:28,132 [INFO:model_management_api] {get_all_unit:328} [SYSTEM]:[admin] Response data from get_all_model API
+2020-09-14 13:32:29,858 [INFO:LogManager] {__init__:13} [SYSTEM]:Set log variable
+2020-09-14 13:32:29,858 [INFO:user_management] {add_log:215} [USER]:[admin] Click switch active reference model button.
+2020-09-14 13:32:30,175 [INFO:model_management_api] {change_active_model:201} [SYSTEM]:[admin] Use change active Ref model API.
+2020-09-14 13:32:30,182 [INFO:model_management_api] {change_active_model:203} [SYSTEM]:[admin] Created RefManagement object.
+2020-09-14 13:32:30,183 [INFO:model_management_api] {change_active_model:204} [SYSTEM]:[admin] Call change_active_model function.
+2020-09-14 13:32:30,241 [INFO:model_management_api] {change_active_model:213} [SYSTEM]:[admin] Deleted RefManagement object.
+2020-09-14 13:32:30,243 [INFO:model_management_api] {change_active_model:214} [SYSTEM]:[admin] Response data from change_active_model API
+2020-09-14 13:32:30,820 [INFO:model_management_api] {get_all_model:289} [SYSTEM]:[admin] Use get all ML model API.
+2020-09-14 13:32:30,827 [INFO:model_management_api] {get_all_model:291} [SYSTEM]:[admin] Created RefManagement object.
+2020-09-14 13:32:30,828 [INFO:model_management_api] {get_all_model:292} [SYSTEM]:[admin] Call get_all_model function.
+2020-09-14 13:32:30,882 [INFO:model_management_api] {get_all_model:299} [SYSTEM]:[admin] Deleted RefManagement object.
+2020-09-14 13:32:30,882 [INFO:model_management_api] {get_all_model:301} [SYSTEM]:[admin] Response data from get_all_model API
+2020-09-14 13:32:31,650 [INFO:LogManager] {__init__:13} [SYSTEM]:Set log variable
+2020-09-14 13:32:31,651 [INFO:user_management] {add_log:215} [USER]:[admin] Enter page /upload
+2020-09-14 13:32:36,175 [INFO:LogManager] {__init__:13} [SYSTEM]:Set log variable
+2020-09-14 13:32:36,176 [INFO:user_management] {add_log:215} [USER]:[admin] Choosen image file.
+2020-09-14 13:32:38,470 [INFO:LogManager] {__init__:13} [SYSTEM]:Set log variable
+2020-09-14 13:32:38,471 [INFO:user_management] {add_log:215} [USER]:[admin] Choosen image file.
+2020-09-14 13:32:39,129 [INFO:LogManager] {__init__:13} [SYSTEM]:Set log variable
+2020-09-14 13:32:39,129 [INFO:user_management] {add_log:215} [USER]:[admin] Selected measurement unit.
+2020-09-14 13:32:39,972 [INFO:LogManager] {__init__:13} [SYSTEM]:Set log variable
+2020-09-14 13:32:39,974 [INFO:user_management] {add_log:215} [USER]:[admin] Click upload image button.
+2020-09-14 13:32:40,222 [INFO:image_processing_api] {upload_image:59} [SYSTEM]:[admin] Prepair image data to be measure.
+2020-09-14 13:32:40,223 [INFO:image_processing_api] {upload_image:70} [SYSTEM]:[admin] Processing image...
+2020-09-14 13:32:40,255 [INFO:image_processing_api] {upload_image:77} [SYSTEM]:[admin] Got measurement result
+2020-09-14 13:32:44,466 [ERROR:image_measurement] {measure_obj_size:425} [SYSTEM]:cannot unpack non-iterable NoneType object.
+2020-09-14 13:32:44,544 [INFO:image_processing_api] {upload_image:80} [SYSTEM]:[admin] Prepair image date to be response.
+2020-09-14 13:32:44,546 [ERROR:image_processing_api] {upload_image:106} [SYSTEM]:'img'.
+2020-09-14 13:33:52,481 [INFO:LogManager] {__init__:13} [SYSTEM]:Set log variable
+2020-09-14 13:33:52,482 [INFO:user_management] {add_log:215} [USER]:[admin] Choosen image file.
+2020-09-14 13:33:52,919 [INFO:LogManager] {__init__:13} [SYSTEM]:Set log variable
+2020-09-14 13:33:52,920 [INFO:user_management] {add_log:215} [USER]:[admin] Selected measurement unit.
+2020-09-14 13:33:53,833 [INFO:LogManager] {__init__:13} [SYSTEM]:Set log variable
+2020-09-14 13:33:53,833 [INFO:user_management] {add_log:215} [USER]:[admin] Click upload image button.
+2020-09-14 13:33:54,090 [INFO:image_processing_api] {upload_image:59} [SYSTEM]:[admin] Prepair image data to be measure.
+2020-09-14 13:33:54,091 [INFO:image_processing_api] {upload_image:70} [SYSTEM]:[admin] Processing image...
+2020-09-14 13:33:54,151 [INFO:image_processing_api] {upload_image:77} [SYSTEM]:[admin] Got measurement result
+2020-09-14 13:33:57,388 [ERROR:image_measurement] {measure_obj_size:425} [SYSTEM]:cannot unpack non-iterable NoneType object.
+2020-09-14 13:33:57,449 [INFO:image_processing_api] {upload_image:80} [SYSTEM]:[admin] Prepair image date to be response.
+2020-09-14 13:33:57,450 [ERROR:image_processing_api] {upload_image:106} [SYSTEM]:'img'.
+2020-09-14 13:34:05,307 [INFO:LogManager] {__init__:13} [SYSTEM]:Set log variable
+2020-09-14 13:34:05,308 [INFO:user_management] {add_log:215} [USER]:[admin] Choosen image file.
+2020-09-14 13:34:05,618 [INFO:LogManager] {__init__:13} [SYSTEM]:Set log variable
+2020-09-14 13:34:05,619 [INFO:user_management] {add_log:215} [USER]:[admin] Selected measurement unit.
+2020-09-14 13:34:06,241 [INFO:LogManager] {__init__:13} [SYSTEM]:Set log variable
+2020-09-14 13:34:06,242 [INFO:user_management] {add_log:215} [USER]:[admin] Click upload image button.
+2020-09-14 13:34:06,505 [INFO:image_processing_api] {upload_image:59} [SYSTEM]:[admin] Prepair image data to be measure.
+2020-09-14 13:34:06,506 [INFO:image_processing_api] {upload_image:70} [SYSTEM]:[admin] Processing image...
+2020-09-14 13:34:06,554 [INFO:image_processing_api] {upload_image:77} [SYSTEM]:[admin] Got measurement result
+2020-09-14 13:34:09,584 [ERROR:image_measurement] {measure_obj_size:425} [SYSTEM]:cannot unpack non-iterable NoneType object.
+2020-09-14 13:34:09,641 [INFO:image_processing_api] {upload_image:80} [SYSTEM]:[admin] Prepair image date to be response.
+2020-09-14 13:34:09,641 [ERROR:image_processing_api] {upload_image:106} [SYSTEM]:'img'.
+2020-09-14 13:34:18,794 [INFO:LogManager] {__init__:13} [SYSTEM]:Set log variable
+2020-09-14 13:34:18,794 [INFO:user_management] {add_log:215} [USER]:[admin] Choosen image file.
+2020-09-14 13:34:19,325 [INFO:LogManager] {__init__:13} [SYSTEM]:Set log variable
+2020-09-14 13:34:19,326 [INFO:user_management] {add_log:215} [USER]:[admin] Selected measurement unit.
+2020-09-14 13:34:20,305 [INFO:LogManager] {__init__:13} [SYSTEM]:Set log variable
+2020-09-14 13:34:20,305 [INFO:user_management] {add_log:215} [USER]:[admin] Click upload image button.
+2020-09-14 13:34:20,562 [INFO:image_processing_api] {upload_image:59} [SYSTEM]:[admin] Prepair image data to be measure.
+2020-09-14 13:34:20,562 [INFO:image_processing_api] {upload_image:70} [SYSTEM]:[admin] Processing image...
+2020-09-14 13:34:20,667 [INFO:image_processing_api] {upload_image:77} [SYSTEM]:[admin] Got measurement result
+2020-09-14 13:34:23,922 [DEBUG:image_measurement] {measure_obj_size:242} [SYSTEM]:IF => 242
+2020-09-14 13:34:23,923 [DEBUG:image_measurement] {measure_obj_size:252} [SYSTEM]:Line 252
+2020-09-14 13:34:23,988 [DEBUG:image_measurement] {measure_obj_size:305} [SYSTEM]:Line 305
+2020-09-14 13:34:24,046 [INFO:image_processing_api] {upload_image:80} [SYSTEM]:[admin] Prepair image date to be response.
+2020-09-14 13:34:24,121 [INFO:image_processing_api] {upload_image:98} [SYSTEM]:[admin] Responsed measurement result.
+2020-09-14 13:34:27,132 [INFO:LogManager] {__init__:13} [SYSTEM]:Set log variable
+2020-09-14 13:34:27,133 [INFO:user_management] {add_log:215} [USER]:[admin] Click "Upload another image" button
+2020-09-14 13:35:03,955 [INFO:main] {<module>:29} [SYSTEM]:Created flask app.
+2020-09-14 13:35:03,957 [INFO:main] {<module>:31} [SYSTEM]:Registered image_processing_api blueprint 
+2020-09-14 13:35:03,959 [INFO:main] {<module>:33} [SYSTEM]:Registered user_api blueprint 
+2020-09-14 13:35:03,962 [INFO:main] {<module>:35} [SYSTEM]:Registered model_management_api blueprint 
+2020-09-14 13:35:03,964 [INFO:main] {<module>:37} [SYSTEM]:Registered log_management_api blueprint 
+2020-09-14 13:35:08,491 [INFO:main] {<module>:29} [SYSTEM]:Created flask app.
+2020-09-14 13:35:08,492 [INFO:main] {<module>:31} [SYSTEM]:Registered image_processing_api blueprint 
+2020-09-14 13:35:08,494 [INFO:main] {<module>:33} [SYSTEM]:Registered user_api blueprint 
+2020-09-14 13:35:08,497 [INFO:main] {<module>:35} [SYSTEM]:Registered model_management_api blueprint 
+2020-09-14 13:35:08,499 [INFO:main] {<module>:37} [SYSTEM]:Registered log_management_api blueprint 
+2020-09-14 13:35:12,105 [INFO:main] {<module>:29} [SYSTEM]:Created flask app.
+2020-09-14 13:35:12,108 [INFO:main] {<module>:31} [SYSTEM]:Registered image_processing_api blueprint 
+2020-09-14 13:35:12,110 [INFO:main] {<module>:33} [SYSTEM]:Registered user_api blueprint 
+2020-09-14 13:35:12,116 [INFO:main] {<module>:35} [SYSTEM]:Registered model_management_api blueprint 
+2020-09-14 13:35:12,118 [INFO:main] {<module>:37} [SYSTEM]:Registered log_management_api blueprint 
+2020-09-14 13:35:16,753 [INFO:main] {<module>:29} [SYSTEM]:Created flask app.
+2020-09-14 13:35:16,756 [INFO:main] {<module>:31} [SYSTEM]:Registered image_processing_api blueprint 
+2020-09-14 13:35:16,758 [INFO:main] {<module>:33} [SYSTEM]:Registered user_api blueprint 
+2020-09-14 13:35:16,761 [INFO:main] {<module>:35} [SYSTEM]:Registered model_management_api blueprint 
+2020-09-14 13:35:16,763 [INFO:main] {<module>:37} [SYSTEM]:Registered log_management_api blueprint 
+2020-09-14 13:35:19,363 [INFO:main] {<module>:29} [SYSTEM]:Created flask app.
+2020-09-14 13:35:19,365 [INFO:main] {<module>:31} [SYSTEM]:Registered image_processing_api blueprint 
+2020-09-14 13:35:19,367 [INFO:main] {<module>:33} [SYSTEM]:Registered user_api blueprint 
+2020-09-14 13:35:19,370 [INFO:main] {<module>:35} [SYSTEM]:Registered model_management_api blueprint 
+2020-09-14 13:35:19,372 [INFO:main] {<module>:37} [SYSTEM]:Registered log_management_api blueprint 
+2020-09-14 13:35:22,141 [INFO:main] {<module>:29} [SYSTEM]:Created flask app.
+2020-09-14 13:35:22,143 [INFO:main] {<module>:31} [SYSTEM]:Registered image_processing_api blueprint 
+2020-09-14 13:35:22,145 [INFO:main] {<module>:33} [SYSTEM]:Registered user_api blueprint 
+2020-09-14 13:35:22,148 [INFO:main] {<module>:35} [SYSTEM]:Registered model_management_api blueprint 
+2020-09-14 13:35:22,150 [INFO:main] {<module>:37} [SYSTEM]:Registered log_management_api blueprint 
+2020-09-14 13:35:31,069 [INFO:LogManager] {__init__:13} [SYSTEM]:Set log variable
+2020-09-14 13:35:31,070 [INFO:user_management] {add_log:215} [USER]:[admin] Choosen image file.
+2020-09-14 13:35:31,803 [INFO:LogManager] {__init__:13} [SYSTEM]:Set log variable
+2020-09-14 13:35:31,803 [INFO:user_management] {add_log:215} [USER]:[admin] Selected measurement unit.
+2020-09-14 13:35:32,992 [INFO:LogManager] {__init__:13} [SYSTEM]:Set log variable
+2020-09-14 13:35:32,993 [INFO:user_management] {add_log:215} [USER]:[admin] Click upload image button.
+2020-09-14 13:35:33,248 [INFO:image_processing_api] {upload_image:59} [SYSTEM]:[admin] Prepair image data to be measure.
+2020-09-14 13:35:33,249 [INFO:image_processing_api] {upload_image:70} [SYSTEM]:[admin] Processing image...
+2020-09-14 13:35:33,291 [INFO:image_processing_api] {upload_image:77} [SYSTEM]:[admin] Got measurement result
+2020-09-14 13:35:33,292 [DEBUG:image_measurement] {measure_obj_size:232} [SYSTEM]:IF => 232
+2020-09-14 13:35:33,292 [DEBUG:image_measurement] {measure_obj_size:234} [SYSTEM]:IF => 234
+2020-09-14 13:35:33,295 [DEBUG:image_measurement] {measure_obj_size:236} [SYSTEM]:IF => 236
+2020-09-14 13:35:33,302 [DEBUG:image_measurement] {measure_obj_size:238} [SYSTEM]:IF => 238
+2020-09-14 13:35:36,901 [ERROR:image_measurement] {measure_obj_size:429} [SYSTEM]:cannot unpack non-iterable NoneType object.
+2020-09-14 13:35:36,961 [INFO:image_processing_api] {upload_image:80} [SYSTEM]:[admin] Prepair image date to be response.
+2020-09-14 13:35:36,961 [ERROR:image_processing_api] {upload_image:106} [SYSTEM]:'img'.
+2020-09-14 13:35:59,038 [INFO:main] {<module>:29} [SYSTEM]:Created flask app.
+2020-09-14 13:35:59,039 [INFO:main] {<module>:31} [SYSTEM]:Registered image_processing_api blueprint 
+2020-09-14 13:35:59,041 [INFO:main] {<module>:33} [SYSTEM]:Registered user_api blueprint 
+2020-09-14 13:35:59,045 [INFO:main] {<module>:35} [SYSTEM]:Registered model_management_api blueprint 
+2020-09-14 13:35:59,046 [INFO:main] {<module>:37} [SYSTEM]:Registered log_management_api blueprint 
+2020-09-14 13:36:01,513 [INFO:main] {<module>:29} [SYSTEM]:Created flask app.
+2020-09-14 13:36:01,515 [INFO:main] {<module>:31} [SYSTEM]:Registered image_processing_api blueprint 
+2020-09-14 13:36:01,516 [INFO:main] {<module>:33} [SYSTEM]:Registered user_api blueprint 
+2020-09-14 13:36:01,520 [INFO:main] {<module>:35} [SYSTEM]:Registered model_management_api blueprint 
+2020-09-14 13:36:01,521 [INFO:main] {<module>:37} [SYSTEM]:Registered log_management_api blueprint 
+2020-09-14 13:36:05,139 [INFO:main] {<module>:29} [SYSTEM]:Created flask app.
+2020-09-14 13:36:05,141 [INFO:main] {<module>:31} [SYSTEM]:Registered image_processing_api blueprint 
+2020-09-14 13:36:05,143 [INFO:main] {<module>:33} [SYSTEM]:Registered user_api blueprint 
+2020-09-14 13:36:05,146 [INFO:main] {<module>:35} [SYSTEM]:Registered model_management_api blueprint 
+2020-09-14 13:36:05,148 [INFO:main] {<module>:37} [SYSTEM]:Registered log_management_api blueprint 
+2020-09-14 13:36:07,586 [INFO:main] {<module>:29} [SYSTEM]:Created flask app.
+2020-09-14 13:36:07,589 [INFO:main] {<module>:31} [SYSTEM]:Registered image_processing_api blueprint 
+2020-09-14 13:36:07,590 [INFO:main] {<module>:33} [SYSTEM]:Registered user_api blueprint 
+2020-09-14 13:36:07,595 [INFO:main] {<module>:35} [SYSTEM]:Registered model_management_api blueprint 
+2020-09-14 13:36:07,597 [INFO:main] {<module>:37} [SYSTEM]:Registered log_management_api blueprint 
+2020-09-14 13:36:10,943 [INFO:main] {<module>:29} [SYSTEM]:Created flask app.
+2020-09-14 13:36:10,945 [INFO:main] {<module>:31} [SYSTEM]:Registered image_processing_api blueprint 
+2020-09-14 13:36:10,947 [INFO:main] {<module>:33} [SYSTEM]:Registered user_api blueprint 
+2020-09-14 13:36:10,950 [INFO:main] {<module>:35} [SYSTEM]:Registered model_management_api blueprint 
+2020-09-14 13:36:10,951 [INFO:main] {<module>:37} [SYSTEM]:Registered log_management_api blueprint 
+2020-09-14 13:36:13,473 [INFO:main] {<module>:29} [SYSTEM]:Created flask app.
+2020-09-14 13:36:13,475 [INFO:main] {<module>:31} [SYSTEM]:Registered image_processing_api blueprint 
+2020-09-14 13:36:13,477 [INFO:main] {<module>:33} [SYSTEM]:Registered user_api blueprint 
+2020-09-14 13:36:13,480 [INFO:main] {<module>:35} [SYSTEM]:Registered model_management_api blueprint 
+2020-09-14 13:36:13,482 [INFO:main] {<module>:37} [SYSTEM]:Registered log_management_api blueprint 
+2020-09-14 13:36:27,137 [INFO:LogManager] {__init__:13} [SYSTEM]:Set log variable
+2020-09-14 13:36:27,137 [INFO:user_management] {add_log:215} [USER]:[admin] Choosen image file.
+2020-09-14 13:36:28,042 [INFO:LogManager] {__init__:13} [SYSTEM]:Set log variable
+2020-09-14 13:36:28,043 [INFO:user_management] {add_log:215} [USER]:[admin] Selected measurement unit.
+2020-09-14 13:36:28,731 [INFO:LogManager] {__init__:13} [SYSTEM]:Set log variable
+2020-09-14 13:36:28,732 [INFO:user_management] {add_log:215} [USER]:[admin] Click upload image button.
+2020-09-14 13:36:28,986 [INFO:image_processing_api] {upload_image:59} [SYSTEM]:[admin] Prepair image data to be measure.
+2020-09-14 13:36:28,987 [INFO:image_processing_api] {upload_image:70} [SYSTEM]:[admin] Processing image...
+2020-09-14 13:36:29,014 [INFO:image_processing_api] {upload_image:77} [SYSTEM]:[admin] Got measurement result
+2020-09-14 13:36:29,033 [DEBUG:image_measurement] {measure_obj_size:240} [SYSTEM]:IF => 240
+2020-09-14 13:36:30,924 [DEBUG:image_measurement] {measure_obj_size:242} [SYSTEM]:IF => 242
+2020-09-14 13:36:32,661 [ERROR:image_measurement] {measure_obj_size:427} [SYSTEM]:cannot unpack non-iterable NoneType object.
+2020-09-14 13:36:32,718 [INFO:image_processing_api] {upload_image:80} [SYSTEM]:[admin] Prepair image date to be response.
+2020-09-14 13:36:32,718 [ERROR:image_processing_api] {upload_image:106} [SYSTEM]:'img'.
+2020-09-14 13:40:43,851 [INFO:main] {<module>:29} [SYSTEM]:Created flask app.
+2020-09-14 13:40:43,852 [INFO:main] {<module>:31} [SYSTEM]:Registered image_processing_api blueprint 
+2020-09-14 13:40:43,854 [INFO:main] {<module>:33} [SYSTEM]:Registered user_api blueprint 
+2020-09-14 13:40:43,858 [INFO:main] {<module>:35} [SYSTEM]:Registered model_management_api blueprint 
+2020-09-14 13:40:43,859 [INFO:main] {<module>:37} [SYSTEM]:Registered log_management_api blueprint 
+2020-09-14 13:41:21,957 [INFO:main] {<module>:29} [SYSTEM]:Created flask app.
+2020-09-14 13:41:21,959 [INFO:main] {<module>:31} [SYSTEM]:Registered image_processing_api blueprint 
+2020-09-14 13:41:21,961 [INFO:main] {<module>:33} [SYSTEM]:Registered user_api blueprint 
+2020-09-14 13:41:21,964 [INFO:main] {<module>:35} [SYSTEM]:Registered model_management_api blueprint 
+2020-09-14 13:41:21,966 [INFO:main] {<module>:37} [SYSTEM]:Registered log_management_api blueprint 
+2020-09-14 13:41:22,820 [INFO:main] {<module>:29} [SYSTEM]:Created flask app.
+2020-09-14 13:41:22,822 [INFO:main] {<module>:31} [SYSTEM]:Registered image_processing_api blueprint 
+2020-09-14 13:41:22,824 [INFO:main] {<module>:33} [SYSTEM]:Registered user_api blueprint 
+2020-09-14 13:41:22,827 [INFO:main] {<module>:35} [SYSTEM]:Registered model_management_api blueprint 
+2020-09-14 13:41:22,829 [INFO:main] {<module>:37} [SYSTEM]:Registered log_management_api blueprint 
+2020-09-14 13:41:34,035 [INFO:LogManager] {__init__:13} [SYSTEM]:Set log variable
+2020-09-14 13:41:34,035 [INFO:user_management] {add_log:215} [USER]:[admin] Choosen image file.
+2020-09-14 13:41:34,060 [INFO:LogManager] {__init__:13} [SYSTEM]:Set log variable
+2020-09-14 13:41:34,072 [INFO:user_management] {add_log:215} [USER]:[admin] Selected measurement unit.
+2020-09-14 13:41:34,089 [INFO:LogManager] {__init__:13} [SYSTEM]:Set log variable
+2020-09-14 13:41:34,090 [INFO:user_management] {add_log:215} [USER]:[admin] Click upload image button.
+2020-09-14 13:41:34,241 [INFO:image_processing_api] {upload_image:59} [SYSTEM]:[admin] Prepair image data to be measure.
+2020-09-14 13:41:34,241 [INFO:image_processing_api] {upload_image:70} [SYSTEM]:[admin] Processing image...
+2020-09-14 13:41:34,278 [INFO:image_processing_api] {upload_image:77} [SYSTEM]:[admin] Got measurement result
+2020-09-14 13:41:34,286 [DEBUG:image_measurement] {measure_obj_size:243} [SYSTEM]:IF => 240
+2020-09-14 13:41:36,165 [DEBUG:image_measurement] {measure_obj_size:245} [SYSTEM]:IF => 242
+2020-09-14 13:41:37,870 [DEBUG:image_measurement] {measure_obj_size:247} [SYSTEM]:IF => 244
+2020-09-14 13:41:37,871 [WARNING:image_measurement] {measure_obj_size:250} [SYSTEM]:Reference object not detected
+2020-09-14 13:41:37,872 [INFO:image_processing_api] {upload_image:80} [SYSTEM]:[admin] Prepair image date to be response.
+2020-09-14 13:42:01,071 [INFO:LogManager] {__init__:13} [SYSTEM]:Set log variable
+2020-09-14 13:42:01,072 [INFO:user_management] {add_log:215} [USER]:[admin] Click "Upload another image" button
+2020-09-14 13:42:04,406 [INFO:LogManager] {__init__:13} [SYSTEM]:Set log variable
+2020-09-14 13:42:04,407 [INFO:user_management] {add_log:215} [USER]:[admin] Choosen image file.
+2020-09-14 13:42:07,471 [INFO:LogManager] {__init__:13} [SYSTEM]:Set log variable
+2020-09-14 13:42:07,472 [INFO:user_management] {add_log:215} [USER]:[admin] Selected measurement unit.
+2020-09-14 13:42:07,522 [INFO:LogManager] {__init__:13} [SYSTEM]:Set log variable
+2020-09-14 13:42:07,534 [INFO:user_management] {add_log:215} [USER]:[admin] Click upload image button.
+2020-09-14 13:42:07,671 [INFO:image_processing_api] {upload_image:59} [SYSTEM]:[admin] Prepair image data to be measure.
+2020-09-14 13:42:07,672 [INFO:image_processing_api] {upload_image:70} [SYSTEM]:[admin] Processing image...
+2020-09-14 13:42:07,708 [INFO:image_processing_api] {upload_image:77} [SYSTEM]:[admin] Got measurement result
+2020-09-14 13:42:07,719 [DEBUG:image_measurement] {measure_obj_size:243} [SYSTEM]:IF => 240
+2020-09-14 13:42:09,312 [DEBUG:image_measurement] {measure_obj_size:245} [SYSTEM]:IF => 242
+2020-09-14 13:42:10,998 [DEBUG:image_measurement] {measure_obj_size:247} [SYSTEM]:IF => 244
+2020-09-14 13:42:10,998 [WARNING:image_measurement] {measure_obj_size:250} [SYSTEM]:Reference object not detected
+2020-09-14 13:42:11,000 [INFO:image_processing_api] {upload_image:80} [SYSTEM]:[admin] Prepair image date to be response.
+2020-09-14 13:42:25,283 [INFO:LogManager] {__init__:13} [SYSTEM]:Set log variable
+2020-09-14 13:42:25,283 [INFO:user_management] {add_log:215} [USER]:[admin] Click "Upload another image" button
+2020-09-14 13:42:53,335 [INFO:main] {<module>:29} [SYSTEM]:Created flask app.
+2020-09-14 13:42:53,337 [INFO:main] {<module>:31} [SYSTEM]:Registered image_processing_api blueprint 
+2020-09-14 13:42:53,339 [INFO:main] {<module>:33} [SYSTEM]:Registered user_api blueprint 
+2020-09-14 13:42:53,343 [INFO:main] {<module>:35} [SYSTEM]:Registered model_management_api blueprint 
+2020-09-14 13:42:53,345 [INFO:main] {<module>:37} [SYSTEM]:Registered log_management_api blueprint 
+2020-09-14 13:42:56,965 [INFO:main] {<module>:29} [SYSTEM]:Created flask app.
+2020-09-14 13:42:56,967 [INFO:main] {<module>:31} [SYSTEM]:Registered image_processing_api blueprint 
+2020-09-14 13:42:56,967 [INFO:main] {<module>:33} [SYSTEM]:Registered user_api blueprint 
+2020-09-14 13:42:56,971 [INFO:main] {<module>:35} [SYSTEM]:Registered model_management_api blueprint 
+2020-09-14 13:42:56,972 [INFO:main] {<module>:37} [SYSTEM]:Registered log_management_api blueprint 
+2020-09-14 13:43:01,683 [INFO:main] {<module>:29} [SYSTEM]:Created flask app.
+2020-09-14 13:43:01,685 [INFO:main] {<module>:31} [SYSTEM]:Registered image_processing_api blueprint 
+2020-09-14 13:43:01,687 [INFO:main] {<module>:33} [SYSTEM]:Registered user_api blueprint 
+2020-09-14 13:43:01,690 [INFO:main] {<module>:35} [SYSTEM]:Registered model_management_api blueprint 
+2020-09-14 13:43:01,692 [INFO:main] {<module>:37} [SYSTEM]:Registered log_management_api blueprint 
+2020-09-14 13:43:12,726 [INFO:main] {<module>:29} [SYSTEM]:Created flask app.
+2020-09-14 13:43:12,728 [INFO:main] {<module>:31} [SYSTEM]:Registered image_processing_api blueprint 
+2020-09-14 13:43:12,731 [INFO:main] {<module>:33} [SYSTEM]:Registered user_api blueprint 
+2020-09-14 13:43:12,734 [INFO:main] {<module>:35} [SYSTEM]:Registered model_management_api blueprint 
+2020-09-14 13:43:12,736 [INFO:main] {<module>:37} [SYSTEM]:Registered log_management_api blueprint 

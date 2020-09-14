@@ -57,8 +57,6 @@ class ImageMeasurement:
             db_config.item['fld_un_id']: query_remo[db_config.item['fld_remo_unit']]
         })
         query_unit.pop('_id')
-        # logger.debug("mlmo_name: {}".format(query_mlmo[db_config.item['fld_mlmo_name']]))
-        # logger.debug("mlmo_path: {}".format(query_mlmo[db_config.item['fld_mlmo_path']]))
 
         self.ml_model_path = query_mlmo[db_config.item['fld_mlmo_path']]
         self.ml_model_name = query_mlmo[db_config.item['fld_mlmo_name']]
@@ -136,52 +134,55 @@ class ImageMeasurement:
     # Description : ฟังก์ชันตรวจจับวัตถุอ้างอิงซึ่งใช้ Ref model โดยเป็นการหาตำแหน่งจุดกึ่งกลางของวัตถุอ้างอิง
     # Author : Athiruj Poositaporn
     def detect_ref_object(self,image):
-        height, width = image.shape[:2]
-        net = cv2.dnn.readNet(self.ref_model_path, self.ref_config_path)
-        layer_names = net.getLayerNames()
-        output_layers = [layer_names[i[0] - 1] for i in net.getUnconnectedOutLayers()]
-        # Store center point of detected object
-        arr_center_point = None
+        try:
+            height, width = image.shape[:2]
+            net = cv2.dnn.readNet(self.ref_model_path, self.ref_config_path)
+            layer_names = net.getLayerNames()
+            output_layers = [layer_names[i[0] - 1] for i in net.getUnconnectedOutLayers()]
+            # Store center point of detected object
+            arr_center_point = None
 
-        height, width, channels = image.shape
-        # Detecting objects
-        blob = cv2.dnn.blobFromImage(image, 1/255, (416, 416), (0, 0, 0), True, crop=False)
-        net.setInput(blob)
-        outs = net.forward(output_layers)
-        # store top-left pos width and height
-        box = None
-        # loop over each of the layer outputs
-        for out in outs:
-            # loop over each of the detections
-            for detection in out:
-                scores = detection[5:]
-                class_id = np.argmax(scores)
-                confidence = scores[class_id]
+            height, width, channels = image.shape
+            # Detecting objects
+            blob = cv2.dnn.blobFromImage(image, 1/255, (416, 416), (0, 0, 0), True, crop=False)
+            net.setInput(blob)
+            outs = net.forward(output_layers)
+            # store top-left pos width and height
+            box = None
+            # loop over each of the layer outputs
+            for out in outs:
+                # loop over each of the detections
+                for detection in out:
+                    scores = detection[5:]
+                    class_id = np.argmax(scores)
+                    confidence = scores[class_id]
 
-                if confidence > 0.3:
-                    center_x = int(detection[0] * width)
-                    center_y = int(detection[1] * height)
-                    w = int(detection[2] * width)
-                    h = int(detection[3] * height)
+                    if confidence > 0.3:
+                        center_x = int(detection[0] * width)
+                        center_y = int(detection[1] * height)
+                        w = int(detection[2] * width)
+                        h = int(detection[3] * height)
 
-                    # Top left (x,y)
-                    x = int(center_x - w / 2)
-                    y = int(center_y - h / 2)
-                    box = [x, y, w, h]
-                    arr_center_point = [center_x,center_y]
+                        # Top left (x,y)
+                        x = int(center_x - w / 2)
+                        y = int(center_y - h / 2)
+                        box = [x, y, w, h]
+                        arr_center_point = [center_x,center_y]
 
-        # Extend area by percent
-        ext_percent = 0.1
-        x, y, w, h = box
-        crop_img = image[y-int(h*ext_percent):y+h+int(h*ext_percent), x-int(w*ext_percent):x+w+int(w*ext_percent)]
-        gray = cv2.cvtColor(crop_img, cv2.COLOR_BGR2GRAY)	
-        gray = cv2.GaussianBlur(gray, (7, 7), 0)
-        edged = cv2.Canny(gray, 50, 200)
-        _, binary = cv2.threshold(edged, 225, 255, cv2.THRESH_BINARY)
-        cnts = cv2.findContours(binary, cv2.RETR_EXTERNAL, cv2.CHAIN_APPROX_SIMPLE)
-        cnts = imutils.grab_contours(cnts)  
-        max_cnt_area = self.max_area(cnts)
-        return max_cnt_area
+            # Extend area by percent
+            ext_percent = 0.1
+            x, y, w, h = box
+            crop_img = image[y-int(h*ext_percent):y+h+int(h*ext_percent), x-int(w*ext_percent):x+w+int(w*ext_percent)]
+            gray = cv2.cvtColor(crop_img, cv2.COLOR_BGR2GRAY)	
+            gray = cv2.GaussianBlur(gray, (7, 7), 0)
+            edged = cv2.Canny(gray, 50, 200)
+            _, binary = cv2.threshold(edged, 225, 255, cv2.THRESH_BINARY)
+            cnts = cv2.findContours(binary, cv2.RETR_EXTERNAL, cv2.CHAIN_APPROX_SIMPLE)
+            cnts = imutils.grab_contours(cnts)  
+            max_cnt_area = self.max_area(cnts)
+            return max_cnt_area
+        except Exception as identifier:
+            return None
 
     def max_area(self,cnts = None):
         max_cnt_area = -1.0
@@ -235,10 +236,10 @@ class ImageMeasurement:
 
         width_of_ref_obj = self.ref_model_width
 
-        arr_center_point = self.detect_object(input_image)
-        ref_cnt_box = self.detect_ref_object(input_image)
 
         try:
+            arr_center_point = self.detect_object(input_image)
+            ref_cnt_box = self.detect_ref_object(input_image)
             # หากไม่พบวัตถุอ้างอิงจะไม่วัดขนาด
             if(not ref_cnt_box):
                 logger.warning("Reference object not detected")
@@ -300,7 +301,6 @@ class ImageMeasurement:
             # หาค่าของ pixelsPerMetric จากวัตถุอ้างอิงดังกล่าว
             (cnts, _) = contours.sort_contours(cnts)
 
-            
             origin = input_image.copy()
 
             # loop เพื่อคำนวณความยาวด้านของแต่ละรูปทรงที่ค้นหาได้จากรูปภาพ
