@@ -39,7 +39,7 @@ Wait "${sec}"
 *** Test cases ***
 # เลือกหน่วยการวัดขนาดวัตถุ
 DPML-02-2-1
-    [Documentation]     เลือกไฟล์รูปภาพด้วยนามสกุลไฟล์ "*.jpg" และขนาดไฟล์รูปภาพน้อยกว่าเท่ากับ 10 MB
+    [Documentation]     เลือกหน่วยการวัดขนาดวัตถุ
     [Tags]    Positive
     GIVEN open web
     WHEN login "admin" "123123"
@@ -52,7 +52,7 @@ DPML-02-2-1
 
 # ไม่เลือกหน่วยการวัดขนาดวัตถุ
 DPML-02-2-2
-    [Documentation]     เลือกไฟล์รูปภาพด้วยนามสกุลไฟล์ "*.jpg" และขนาดไฟล์รูปภาพน้อยกว่าเท่ากับ 10 MB
+    [Documentation]     ไม่เลือกหน่วยการวัดขนาดวัตถุ
     [Tags]    Negative
     GIVEN open web
     WHEN login "admin" "123123"
