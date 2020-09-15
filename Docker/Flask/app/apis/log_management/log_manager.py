@@ -130,7 +130,7 @@ class LogManager():
             start_datetime_obj = datetime.strptime(str_start_datetime, '%Y-%m-%d %H:%M:%S')
             end_datetime_obj = datetime.strptime(str_end_datetime, '%Y-%m-%d %H:%M:%S')
 
-            for file in os.listdir(self.log_path):
+            for file in sorted(os.listdir(self.log_path)):
                 if not self.is_date_obj(file[:10]):
                     self.logger.warning("[{}] Wrong file format.".format(self.username))
                     continue

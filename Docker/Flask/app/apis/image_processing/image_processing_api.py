@@ -16,7 +16,7 @@ from .. import db_config
 from .. import err_msg
 
 image_processing_api = Blueprint('image_processing_api', __name__)
-extension = ["bmp","pbm","pgm","ppm","sr","ras","jpeg","jpg","jpe","jp2","tiff","tif","png"]
+extension = ["bmp","jpg","jpe","jp2","png"]
 logger = logging.getLogger("image_processing_api")
 
 
