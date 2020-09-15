@@ -7,6 +7,7 @@ ${input_password}   css:#root > div > div > div.card > div > div:nth-child(3) > 
 ${login_btn}    css:#root > div > div > div.card > div > div.row > div > button
 ${open_delete_modal}    css:#DataTables_Table_0 > tbody > tr:nth-child(2) > td.d-flex.justify-content-center > div > button.btn.btn-danger.btn-sm
 ${delete_model_btn}    css:body > div.swal2-container.swal2-center.swal2-backdrop-show > div > div.swal2-actions > button.swal2-confirm.swal2-styled
+${open_delete_modal_active}     css:#DataTables_Table_1 > tbody > tr:nth-child(1) > td.d-flex.justify-content-center > div > button.btn.btn-danger.btn-sm
 
 ** Keywords ***
 open web
@@ -22,6 +23,9 @@ Select menu
 
 Open modal 
     Click Element   ${open_delete_modal}
+
+Open modal button should be disabled
+    Element Should Be Disabled   ${open_delete_modal_active}
 
 Click delete button
     Click Element   ${delete_model_btn}    
@@ -49,5 +53,17 @@ DPML-04-3-1
     AND Wait "1"
     AND The alert must say "The model has been deleted."
     AND Click delete button
+    THEN Wait "1"
+    [Teardown]    Close Browser
+
+# กดปุ่มลบข้อมูลต้นแบบของวัตถุอ้างอิงที่มีสถานะเปิดใช้งาน
+DPML-04-3-2
+    GIVEN open web
+    WHEN login "admin" "123123"
+    AND The url must be "http://localhost/upload"
+    AND select menu
+    AND The url must be "http://localhost/ref_management"
+    AND Wait "1"
+    AND Open modal button should be disabled
     THEN Wait "1"
     [Teardown]    Close Browser

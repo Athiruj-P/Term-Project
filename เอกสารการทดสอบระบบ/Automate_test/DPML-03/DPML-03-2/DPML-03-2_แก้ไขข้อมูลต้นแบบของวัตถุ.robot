@@ -10,6 +10,7 @@ ${input_weight}    css:#input_model_file
 ${input_model_name}     css:#model_name
 ${edit_model_btn}    css:body > div.fade.fade.modal.show > div > div > div.d-flex.justify-content-between.modal-footer > button.btn.btn-warning
 ${progress_bar}     css:#root > div.content-wrapper.h-100 > section.content > div > div > div > div > div:nth-child(1) > div > div > div
+${open_edit_modal_active}     css:#DataTables_Table_0 > tbody > tr.odd > td.d-flex.justify-content-center > div > button.btn.btn-warning.btn-sm.mr-2
 
 ** Keywords ***
 open web
@@ -39,6 +40,9 @@ Select unit "${value}"
 Upload should be disabled
     Element Should Be Disabled   ${edit_model_btn}
 
+Open modal button should be disabled
+    Element Should Be Disabled   ${open_edit_modal_active}
+
 Click edit button
     Click Element   ${edit_model_btn}    
 
@@ -53,6 +57,9 @@ The alert must say "${text}"
 
 The error message must say "${text}"
     Wait Until Page Contains    ${text}     5
+
+Element should have class "${className}"
+    Wait until page contains element  ${element}.${className}
 
 Wait "${sec}"
     Sleep   ${sec}
@@ -151,5 +158,17 @@ DPML-03-2-6
     AND Wait "1"
     AND Choose file "C:/Users/First-AP/Desktop/Homework/4th Year/CSI_project/Photo/box_green_screen.jpg"
     AND The error message must say "File extension must be *.weights"
+    THEN Wait "1"
+    [Teardown]    Close Browser
+
+# แก้ไขข้อมูลต้นแบบของวัตถุที่มีสถานะเปิดใช้งาน
+DPML-03-2-7
+    GIVEN open web
+    WHEN login "admin" "123123"
+    AND The url must be "http://localhost/upload"
+    AND select menu
+    AND The url must be "http://localhost/ml_management"
+    AND Wait "1"
+    AND Open modal button should be disabled
     THEN Wait "1"
     [Teardown]    Close Browser

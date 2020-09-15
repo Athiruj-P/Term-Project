@@ -7,6 +7,7 @@ ${input_password}   css:#root > div > div > div.card > div > div:nth-child(3) > 
 ${login_btn}    css:#root > div > div > div.card > div > div.row > div > button
 ${open_switch_modal}    css:#DataTables_Table_0 > tbody > tr:nth-child(2) > td:nth-child(6) > label
 ${switch_model_btn}    css:body > div.swal2-container.swal2-center.swal2-backdrop-show > div > div.swal2-actions > button.swal2-confirm.swal2-styled
+${open_switch_modal_active}     css:#DataTables_Table_1 > tbody > tr:nth-child(1) > td:nth-child(6) > label > div
 
 ** Keywords ***
 open web
@@ -35,6 +36,9 @@ The alert must say "${text}"
 The error message must say "${text}"
     Wait Until Page Contains    ${text}     5
 
+Element should have class "${className}"
+    Wait until page contains element  ${open_switch_modal_active}.${className}
+
 Wait "${sec}"
     Sleep   ${sec}
 
@@ -52,5 +56,17 @@ DPML-03-4-1
     AND Click switch button
     AND Wait "1"
     AND The alert must say "Change active model successfully."
+    THEN Wait "1"
+    [Teardown]    Close Browser
+
+# ปิดการทำงานของข้อมูลต้นแบบของวัตถุที่มีสถานะเปิดใช้งาน
+DPML-03-4-2
+    GIVEN open web
+    WHEN login "admin" "123123"
+    AND The url must be "http://localhost/upload"
+    AND select menu
+    AND The url must be "http://localhost/ref_management"
+    AND Wait "1"
+    AND Element should have class "no-drop" 
     THEN Wait "1"
     [Teardown]    Close Browser

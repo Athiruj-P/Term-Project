@@ -15,6 +15,7 @@ ${input_weight}    css:#file
 
 ${edit_model_btn}    css:body > div.fade.fade.modal.show > div > div > div.d-flex.justify-content-between.modal-footer > button.btn.btn-warning
 ${progress_bar}     css:#root > div.content-wrapper.h-100 > section.content > div > div > div > div > div:nth-child(1) > div > div > div
+${open_edit_modal_active}     css:#DataTables_Table_1 > tbody > tr:nth-child(1) > td.d-flex.justify-content-center > div > button.btn.btn-warning.btn-sm.mr-2
 
 ** Keywords ***
 open web
@@ -30,6 +31,9 @@ Select menu
 
 Open modal 
     Click Element   ${open_edit_modal}
+
+Open modal button should be disabled
+    Element Should Be Disabled   ${open_edit_modal_active}
 
 Insert model name "${name}"
     Input Text  ${input_model_name}   ${name}
@@ -253,4 +257,16 @@ DPML-04-2-11
     AND Choose file "C:/Users/First-AP/Desktop/Homework/4th Year/CSI_project/Photo/box_green_screen.jpg"
     AND The error message must say "File extension must be *.weights"
     THEN Wait "1"
+    [Teardown]    Close Browser
+
+# เแก้ไขข้อมูลต้นแบบของวัตถุอ้างอิงที่มีสถานะเปิดใช้งาน
+DPML-04-2-12
+    GIVEN open web
+    WHEN login "admin" "123123"
+    AND The url must be "http://localhost/upload"
+    AND select menu
+    AND The url must be "http://localhost/ref_management"
+    AND Wait "1"
+    Open modal button should be disabled
+    AND Wait "1"
     [Teardown]    Close Browser
