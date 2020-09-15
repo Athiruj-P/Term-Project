@@ -44,6 +44,8 @@ Wait "${sec}"
 *** Test cases ***
 # เปิดการทำงานของข้อมูลต้นแบบของวัตถุ
 DPML-03-4-1
+    [Documentation]     เปิดการทำงานของข้อมูลต้นแบบของวัตถุที่มีสถานะปิดใช้งาน
+    [Tags]    Positive
     GIVEN open web
     WHEN login "admin" "123123"
     AND The url must be "http://localhost/upload"
@@ -60,6 +62,8 @@ DPML-03-4-1
 
 # ปิดการทำงานของข้อมูลต้นแบบของวัตถุที่มีสถานะเปิดใช้งาน
 DPML-03-4-2
+    [Documentation]     ปิดการทำงานของข้อมูลต้นแบบของวัตถุที่มีสถานะเปิดใช้งาน
+    [Tags]    Positive
     GIVEN open web
     WHEN login "admin" "123123"
     AND The url must be "http://localhost/upload"

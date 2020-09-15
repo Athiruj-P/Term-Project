@@ -45,6 +45,8 @@ Wait "${sec}"
 *** Test cases ***
 # เลือกประเภทการแสดงผลแบบตามวันที่
 DPML-05-1-1
+    [Documentation]     เลือกประเภทการแสดงผลตามวันที่ปัจจุบัน
+    [Tags]    Positive
     GIVEN open web
     WHEN login "admin" "123123"
     AND The url must be "http://localhost/upload"
@@ -58,6 +60,8 @@ DPML-05-1-1
 
 # เลือกประเภทการแสดงผลตามกล่องบันทึกข้อความประเภทเลือกช่วงวันที่และเวลา (Datetime range picker)
 DPML-05-1-2
+    [Documentation]     เลือกประเภทการแสดงผลตามกล่องบันทึกข้อความประเภทเลือกช่วงวันที่และเวลา (Datetime range picker)
+    [Tags]    Positive
     GIVEN open web
     WHEN login "admin" "123123"
     AND The url must be "http://localhost/upload"

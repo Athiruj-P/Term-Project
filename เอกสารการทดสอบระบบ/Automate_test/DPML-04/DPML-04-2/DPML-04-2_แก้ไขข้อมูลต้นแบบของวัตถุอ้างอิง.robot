@@ -15,7 +15,7 @@ ${input_weight}    css:#file
 
 ${edit_model_btn}    css:body > div.fade.fade.modal.show > div > div > div.d-flex.justify-content-between.modal-footer > button.btn.btn-warning
 ${progress_bar}     css:#root > div.content-wrapper.h-100 > section.content > div > div > div > div > div:nth-child(1) > div > div > div
-${open_edit_modal_active}     css:#DataTables_Table_1 > tbody > tr:nth-child(1) > td.d-flex.justify-content-center > div > button.btn.btn-warning.btn-sm.mr-2
+${open_edit_modal_active}     css:#DataTables_Table_0 > tbody > tr:nth-child(1) > td.d-flex.justify-content-center > div > button.btn.btn-warning.btn-sm.mr-2
 
 ** Keywords ***
 open web
@@ -73,6 +73,11 @@ Wait "${sec}"
 *** Test cases ***
 # กรอกชื่อข้อมูลต้นแบบของวัตถุอ้างอิงและเลือกไฟล์ข้อมูลต้นแบบของวัตถุอ้างอิงโดยนามสกุลไฟล์ถูกต้อง
 DPML-04-2-1
+    [Documentation]     แก้ไขข้อมูลต้นแบบของวัตถุอ้างอิงที่มีสถานะปิดใช้งานโดย
+    ...                 กรอกชื่อข้อมูลต้นแบบของวัตถุอ้างอิง ขนาดความกว้าง
+    ...                 ขนาดความยาว เลือกหน่วยในการวัดขนาดวัตถุ
+    ...                 และเลือกไฟล์ข้อมูลต้นแบบของวัตถุอ้างอิงโดยนามสกุลไฟล์ถูกต้อง
+    [Tags]    Positive
     GIVEN open web
     WHEN login "admin" "123123"
     AND The url must be "http://localhost/upload"
@@ -96,6 +101,8 @@ DPML-04-2-1
 
 # กรอกชื่อข้อมูลต้นแบบของวัตถุอ้างอิงถูกต้อง
 DPML-04-2-2
+    [Documentation]     แก้ไขข้อมูลต้นแบบของวัตถุอ้างอิงที่มีสถานะปิดใช้งานโดยแก้ไขเฉพาะชื่อข้อมูลต้นแบบของวัตถุอ้างอิงถูกต้อง
+    [Tags]    Positive
     GIVEN open web
     WHEN login "admin" "123123"
     AND The url must be "http://localhost/upload"
@@ -113,6 +120,9 @@ DPML-04-2-2
 
 # เลือกไฟล์ข้อมูลต้นแบบของวัตถุอ้างอิงโดยนามสกุลไฟล์ถูกต้อง
 DPML-04-2-3
+    [Documentation]     แก้ไขข้อมูลต้นแบบของวัตถุอ้างอิงที่มีสถานะปิดใช้งานโดยแก้ไขเฉพาะ
+    ...                 เลือกไฟล์ข้อมูลต้นแบบของวัตถุอ้างอิงโดยนามสกุลไฟล์ถูกต้อง
+    [Tags]    Positive
     GIVEN open web
     WHEN login "admin" "123123"
     AND The url must be "http://localhost/upload"
@@ -131,6 +141,8 @@ DPML-04-2-3
 
 # กรอกขนาดความกว้างถูกต้อง
 DPML-04-2-4
+    [Documentation]     แก้ไขข้อมูลต้นแบบของวัตถุอ้างอิงที่มีสถานะปิดใช้งานโดยแก้ไขเฉพาะขนาดความกว้างถูกต้อง
+    [Tags]    Negative
     GIVEN open web
     WHEN login "admin" "123123"
     AND The url must be "http://localhost/upload"
@@ -148,6 +160,8 @@ DPML-04-2-4
 
 # กรอกขนาดความยาวถูกต้อง 
 DPML-04-2-5
+    [Documentation]     แก้ไขข้อมูลต้นแบบของวัตถุอ้างอิงที่มีสถานะปิดใช้งานโดยแก้ไขเฉพาะขนาดความยาวถูกต้อง
+    [Tags]    Negative
     GIVEN open web
     WHEN login "admin" "123123"
     AND The url must be "http://localhost/upload"
@@ -165,6 +179,8 @@ DPML-04-2-5
 
 # เลือกหน่วยของขนาดวัตถุอ้างอิงถูกต้อง
 DPML-04-2-6
+    [Documentation]     แก้ไขข้อมูลต้นแบบของวัตถุอ้างอิงที่มีสถานะปิดใช้งานโดยแก้ไขเฉพาะหน่วยของขนาดวัตถุอ้างอิงถูกต้อง
+    [Tags]    Negative
     GIVEN open web
     WHEN login "admin" "123123"
     AND The url must be "http://localhost/upload"
@@ -181,6 +197,8 @@ DPML-04-2-6
 
 # กรอกชื่อข้อมูลต้นแบบของวัตถุอ้างอิงน้อยกว่า 3 ตัวอักษร
 DPML-04-2-7
+    [Documentation]     แก้ไขข้อมูลต้นแบบของวัตถุอ้างอิงที่มีสถานะปิดใช้งานโดยแก้ไขเฉพาะชื่อข้อมูลต้นแบบของวัตถุอ้างอิงน้อยกว่า 3 ตัวอักษร
+    [Tags]    Negative
     GIVEN open web
     WHEN login "admin" "123123"
     AND The url must be "http://localhost/upload"
@@ -197,6 +215,8 @@ DPML-04-2-7
 
 # กรอกชื่อข้อมูลต้นแบบของวัตถุอ้างอิงไม่ถูกต้อง
 DPML-04-2-8
+    [Documentation]     แก้ไขข้อมูลต้นแบบของวัตถุอ้างอิงที่มีสถานะปิดใช้งานโดยแก้ไขเฉพาะชื่อข้อมูลต้นแบบของวัตถุอ้างอิงไม่ถูกต้อง
+    [Tags]    Negative
     GIVEN open web
     WHEN login "admin" "123123"
     AND The url must be "http://localhost/upload"
@@ -213,6 +233,8 @@ DPML-04-2-8
 
 # กรอกขนาดความกว้างน้อยกว่าหรือเท่ากับ 0
 DPML-04-2-9
+    [Documentation]     แก้ไขข้อมูลต้นแบบของวัตถุอ้างอิงที่มีสถานะปิดใช้งานโดยแก้ไขเฉพาะขนาดความกว้างน้อยกว่าหรือเท่ากับ 0
+    [Tags]    Negative
     GIVEN open web
     WHEN login "admin" "123123"
     AND The url must be "http://localhost/upload"
@@ -229,6 +251,8 @@ DPML-04-2-9
 
 # กรอกขนาดความยาวน้อยกว่าหรือเท่ากับ 0
 DPML-04-2-10
+    [Documentation]     แก้ไขข้อมูลต้นแบบของวัตถุอ้างอิงที่มีสถานะปิดใช้งานโดยแก้ไขเฉพาะขนาดความยาวน้อยกว่าหรือเท่ากับ 0
+    [Tags]    Negative
     GIVEN open web
     WHEN login "admin" "123123"
     AND The url must be "http://localhost/upload"
@@ -245,6 +269,8 @@ DPML-04-2-10
 
 # เลือกไฟล์ข้อมูลต้นแบบของวัตถุอ้างอิงโดยนามสกุลไฟล์ไม่ถูกต้อง
 DPML-04-2-11
+    [Documentation]     แก้ไขข้อมูลต้นแบบของวัตถุอ้างอิงที่มีสถานะปิดใช้งานโดยแก้ไขเฉพาะไฟล์ข้อมูลต้นแบบของวัตถุอ้างอิงโดยนามสกุลไฟล์ไม่ถูกต้อง
+    [Tags]    Negative
     GIVEN open web
     WHEN login "admin" "123123"
     AND The url must be "http://localhost/upload"
@@ -261,6 +287,8 @@ DPML-04-2-11
 
 # เแก้ไขข้อมูลต้นแบบของวัตถุอ้างอิงที่มีสถานะเปิดใช้งาน
 DPML-04-2-12
+    [Documentation]     แก้ไขข้อมูลต้นแบบของวัตถุอ้างอิงที่มีสถานะเปิดใช้งาน
+    [Tags]    Negative
     GIVEN open web
     WHEN login "admin" "123123"
     AND The url must be "http://localhost/upload"

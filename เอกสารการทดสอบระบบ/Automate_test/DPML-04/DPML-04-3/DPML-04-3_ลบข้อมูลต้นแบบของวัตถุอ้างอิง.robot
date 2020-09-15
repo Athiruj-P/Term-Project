@@ -7,7 +7,7 @@ ${input_password}   css:#root > div > div > div.card > div > div:nth-child(3) > 
 ${login_btn}    css:#root > div > div > div.card > div > div.row > div > button
 ${open_delete_modal}    css:#DataTables_Table_0 > tbody > tr:nth-child(2) > td.d-flex.justify-content-center > div > button.btn.btn-danger.btn-sm
 ${delete_model_btn}    css:body > div.swal2-container.swal2-center.swal2-backdrop-show > div > div.swal2-actions > button.swal2-confirm.swal2-styled
-${open_delete_modal_active}     css:#DataTables_Table_1 > tbody > tr:nth-child(1) > td.d-flex.justify-content-center > div > button.btn.btn-danger.btn-sm
+${open_delete_modal_active}     css:#DataTables_Table_0 > tbody > tr:nth-child(1) > td.d-flex.justify-content-center > div > button.btn.btn-warning.btn-sm.mr-2
 
 ** Keywords ***
 open web
@@ -41,6 +41,8 @@ Wait "${sec}"
 *** Test cases ***
 # กรอกชื่อข้อมูลต้นแบบของวัตถุอ้างอิงและเลือกไฟล์ข้อมูลต้นแบบของวัตถุอ้างอิงโดยนามสกุลไฟล์ถูกต้อง
 DPML-04-3-1
+    [Documentation]     กดปุ่มลบข้อมูลต้นแบบของวัตถุอ้างอิง
+    [Tags]    Positive
     GIVEN open web
     WHEN login "admin" "123123"
     AND The url must be "http://localhost/upload"
@@ -58,6 +60,8 @@ DPML-04-3-1
 
 # กดปุ่มลบข้อมูลต้นแบบของวัตถุอ้างอิงที่มีสถานะเปิดใช้งาน
 DPML-04-3-2
+    [Documentation]     กดปุ่มลบข้อมูลต้นแบบของวัตถุอ้างอิงที่มีสถานะเปิดใช้งาน
+    [Tags]    Positive
     GIVEN open web
     WHEN login "admin" "123123"
     AND The url must be "http://localhost/upload"

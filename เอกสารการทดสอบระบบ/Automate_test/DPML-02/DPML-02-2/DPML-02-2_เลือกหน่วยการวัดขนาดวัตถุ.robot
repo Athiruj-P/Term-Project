@@ -39,6 +39,8 @@ Wait "${sec}"
 *** Test cases ***
 # เลือกหน่วยการวัดขนาดวัตถุ
 DPML-02-2-1
+    [Documentation]     เลือกไฟล์รูปภาพด้วยนามสกุลไฟล์ "*.jpg" และขนาดไฟล์รูปภาพน้อยกว่าเท่ากับ 10 MB
+    [Tags]    Positive
     GIVEN open web
     WHEN login "admin" "123123"
     AND The url must be "http://localhost/upload"
@@ -50,6 +52,8 @@ DPML-02-2-1
 
 # ไม่เลือกหน่วยการวัดขนาดวัตถุ
 DPML-02-2-2
+    [Documentation]     เลือกไฟล์รูปภาพด้วยนามสกุลไฟล์ "*.jpg" และขนาดไฟล์รูปภาพน้อยกว่าเท่ากับ 10 MB
+    [Tags]    Negative
     GIVEN open web
     WHEN login "admin" "123123"
     AND The url must be "http://localhost/upload"

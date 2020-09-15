@@ -7,7 +7,7 @@ ${input_password}   css:#root > div > div > div.card > div > div:nth-child(3) > 
 ${login_btn}    css:#root > div > div > div.card > div > div.row > div > button
 ${open_switch_modal}    css:#DataTables_Table_0 > tbody > tr:nth-child(2) > td:nth-child(6) > label
 ${switch_model_btn}    css:body > div.swal2-container.swal2-center.swal2-backdrop-show > div > div.swal2-actions > button.swal2-confirm.swal2-styled
-${open_switch_modal_active}     css:#DataTables_Table_1 > tbody > tr:nth-child(1) > td:nth-child(6) > label > div
+${open_switch_modal_active}     css:#DataTables_Table_0 > tbody > tr:nth-child(1) > td:nth-child(6) > label > div
 
 ** Keywords ***
 open web
@@ -45,6 +45,8 @@ Wait "${sec}"
 *** Test cases ***
 # เปิดการทำงานของข้อมูลต้นแบบของวัตถุ
 DPML-03-4-1
+    [Documentation]     เปิดการทำงานของข้อมูลต้นแบบของวัตถุอ้างอิง
+    [Tags]    Positive
     GIVEN open web
     WHEN login "admin" "123123"
     AND The url must be "http://localhost/upload"
@@ -61,6 +63,8 @@ DPML-03-4-1
 
 # ปิดการทำงานของข้อมูลต้นแบบของวัตถุที่มีสถานะเปิดใช้งาน
 DPML-03-4-2
+    [Documentation]     ปิดการทำงานของข้อมูลต้นแบบของวัตถุที่มีสถานะเปิดใช้งาน
+    [Tags]    Positive
     GIVEN open web
     WHEN login "admin" "123123"
     AND The url must be "http://localhost/upload"

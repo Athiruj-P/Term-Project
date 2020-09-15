@@ -45,6 +45,8 @@ Wait "${sec}"
 *** Test cases ***
 # เลือกประเภทการแสดงผลแบบผู้กระทำต่อระบบทั้งหมด
 DPML-05-2-1
+    [Documentation]     เลือกประเภทการแสดงผลแบบผู้กระทำต่อระบบทั้งหมด
+    [Tags]    Positive
     GIVEN open web
     WHEN login "admin" "123123"
     AND The url must be "http://localhost/upload"
@@ -58,6 +60,8 @@ DPML-05-2-1
 
 # เลือกประเภทการแสดงผลแบบเฉพาะการกระทำของระบบ
 DPML-05-2-2
+    [Documentation]     เลือกประเภทการแสดงผลแบบเฉพาะการกระทำของระบบ
+    [Tags]    Positive
     GIVEN open web
     WHEN login "admin" "123123"
     AND The url must be "http://localhost/upload"
@@ -71,6 +75,8 @@ DPML-05-2-2
 
 # เลือกประเภทการแสดงผลแบบเฉพาะการกระทำของผู้ใช้งาน
 DPML-05-2-3
+    [Documentation]     เลือกประเภทการแสดงผลแบบเฉพาะการกระทำของผู้ใช้งาน
+    [Tags]    Positive
     GIVEN open web
     WHEN login "admin" "123123"
     AND The url must be "http://localhost/upload"

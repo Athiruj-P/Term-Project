@@ -57,8 +57,10 @@ The error message must say "${text}"
 Wait "${sec}"
     Sleep   ${sec}
 *** Test cases ***
-# เลือกหน่วยการวัดขนาดวัตถุ
+# กรอกชื่อข้อมูลต้นแบบของวัตถุและเลือกไฟล์ข้อมูลต้นแบบของวัตถุโดยนามสกุลไฟล์ถูกต้อง
 DPML-03-1-1
+    [Documentation]     กรอกชื่อข้อมูลต้นแบบของวัตถุและเลือกไฟล์ข้อมูลต้นแบบของวัตถุโดยนามสกุลไฟล์ถูกต้อง
+    [Tags]    Positive
     GIVEN open web
     WHEN login "admin" "123123"
     AND The url must be "http://localhost/upload"
@@ -77,6 +79,8 @@ DPML-03-1-1
 
 # กรอกชื่อข้อมูลต้นแบบของวัตถุน้อยกว่า 3 ตัวอักษร
 DPML-03-1-2
+    [Documentation]     กรอกชื่อข้อมูลต้นแบบของวัตถุน้อยกว่า 3 ตัวอักษร
+    [Tags]    Negative
     GIVEN open web
     WHEN login "admin" "123123"
     AND The url must be "http://localhost/upload"
@@ -92,6 +96,8 @@ DPML-03-1-2
 
 # กรอกชื่อข้อมูลต้นแบบของวัตถุไม่ถูกต้อง
 DPML-03-1-3
+    [Documentation]     กรอกชื่อข้อมูลต้นแบบของวัตถุน้อยกว่า 3 ตัวอักษร
+    [Tags]    Negative
     GIVEN open web
     WHEN login "admin" "123123"
     AND The url must be "http://localhost/upload"
@@ -107,6 +113,8 @@ DPML-03-1-3
 
 # ไม่กรอกชื่อข้อมูลต้นแบบของวัตถุ
 DPML-03-1-4
+    [Documentation]     ไม่กรอกชื่อข้อมูลต้นแบบของวัตถุ
+    [Tags]    Negative
     GIVEN open web
     WHEN login "admin" "123123"
     AND The url must be "http://localhost/upload"
@@ -122,6 +130,8 @@ DPML-03-1-4
 
 # เลือกไฟล์ข้อมูลต้นแบบของวัตถุโดยนามสกุลไฟล์ไม่ถูกต้อง
 DPML-03-1-5
+    [Documentation]     เลือกไฟล์ข้อมูลต้นแบบของวัตถุโดยนามสกุลไฟล์ไม่ถูกต้อง
+    [Tags]    Negative
     GIVEN open web
     WHEN login "admin" "123123"
     AND The url must be "http://localhost/upload"

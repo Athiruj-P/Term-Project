@@ -27,6 +27,8 @@ Wait "${sec}"
 *** Test cases ***
 # กรอกข้อมูลชื่อผู้ใช้งานและรหัสผ่านถูกต้อง
 DPML-01-1-1
+    [Documentation]     กรอกข้อมูลชื่อผู้ใช้งานและรหัสผ่านถูกต้อง
+    [Tags]    Positive
     GIVEN open web
     WHEN input username and password "admin" "123123"
     AND Click login button
@@ -36,6 +38,8 @@ DPML-01-1-1
 
 # กรอกข้อมูลชื่อผู้ใช้งานหรือรหัสผ่านไม่ถูกต้อง
 DPML-01-1-2
+    [Documentation]     กรอกข้อมูลชื่อผู้ใช้งานหรือรหัสผ่านไม่ถูกต้อง
+    [Tags]    Negative
     GIVEN open web
     WHEN input username and password "admin" "qweasd"
     AND Click login button
@@ -44,7 +48,9 @@ DPML-01-1-2
     [Teardown]    Close Browser
 
 # ไม่กรอกข้อมูลชื่อผู้ใช้งานและกรอกรหัสผ่าน
-DPML-01-1-3
+DPML-01-1-3 
+    [Documentation]     ไม่กรอกข้อมูลชื่อผู้ใช้งานและกรอกรหัสผ่าน
+    [Tags]    Negative
     GIVEN open web
     WHEN input username and password "" "123123"
     AND Click login button
@@ -54,6 +60,8 @@ DPML-01-1-3
 
 # กรอกข้อมูลชื่อผู้ใช้งานและไม่กรอกรหัสผ่าน
 DPML-01-1-4
+    [Documentation]     กรอกข้อมูลชื่อผู้ใช้งานและไม่กรอกรหัสผ่าน
+    [Tags]    Negative
     GIVEN open web
     WHEN input username and password "admin" ""
     AND Click login button
@@ -63,6 +71,8 @@ DPML-01-1-4
 
 # ไม่กรอกข้อมูลชื่อผู้ใช้งานและไม่กรอกรหัสผ่าน
 DPML-01-1-5
+    [Documentation]     ไม่กรอกข้อมูลชื่อผู้ใช้งานและไม่กรอกรหัสผ่าน
+    [Tags]    Negative
     GIVEN open web
     WHEN input username and password "" ""
     AND Click login button

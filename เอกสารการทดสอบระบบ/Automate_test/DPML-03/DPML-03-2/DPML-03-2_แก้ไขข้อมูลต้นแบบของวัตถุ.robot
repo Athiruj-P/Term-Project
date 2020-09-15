@@ -67,6 +67,10 @@ Wait "${sec}"
 *** Test cases ***
 # กรอกชื่อข้อมูลต้นแบบของวัตถุ และเลือกไฟล์ข้อมูลต้นแบบของวัตถุโดยนามสกุลไฟล์ถูกต้อง
 DPML-03-2-1
+    [Documentation]     แก้ไขข้อมูลต้นแบบของวัตถุที่มีสถานะปิดใช้งานโดย
+    ...                 กรอกชื่อข้อมูลต้นแบบของวัตถุและเลือกไฟล์ข้อมูลต้นแบบของวัตถุ
+    ...                 โดยนามสกุลไฟล์ถูกต้อง
+    [Tags]    Positive
     GIVEN open web
     WHEN login "admin" "123123"
     AND The url must be "http://localhost/upload"
@@ -85,6 +89,9 @@ DPML-03-2-1
 
 # กรอกชื่อและข้อมูลต้นแบบของวัตถุถูกต้อง
 DPML-03-2-2
+    [Documentation]     แก้ไขข้อมูลต้นแบบของวัตถุที่มีสถานะปิดใช้งานโดยแก้ไขเฉพาะ
+    ...                 ชื่อข้อมูลต้นแบบของวัตถุถูกต้อง
+    [Tags]    Positive
     GIVEN open web
     WHEN login "admin" "123123"
     AND The url must be "http://localhost/upload"
@@ -101,6 +108,9 @@ DPML-03-2-2
 
 # เลือกไฟล์ข้อมูลต้นแบบของวัตถุโดยนามสกุลไฟล์ถูกต้อง
 DPML-03-2-3
+    [Documentation]     แก้ไขข้อมูลต้นแบบของวัตถุที่มีสถานะปิดใช้งานโดยแก้ไขเฉพาะ
+    ...                 เลือกไฟล์ข้อมูลต้นแบบของวัตถุโดยนามสกุลไฟล์ถูกต้อง
+    [Tags]    Positive
     GIVEN open web
     WHEN login "admin" "123123"
     AND The url must be "http://localhost/upload"
@@ -118,6 +128,9 @@ DPML-03-2-3
 
 # กรอกชื่อข้อมูลต้นแบบของวัตถุน้อยกว่า 3 ตัวอักษร
 DPML-03-2-4
+    [Documentation]     แก้ไขข้อมูลต้นแบบของวัตถุที่มีสถานะปิดใช้งานโดยแก้ไขเฉพาะ
+    ...                 ชื่อข้อมูลต้นแบบของวัตถุซึ่งน้อยกว่า 3 ตัวอักษร
+    [Tags]    Negative
     GIVEN open web
     WHEN login "admin" "123123"
     AND The url must be "http://localhost/upload"
@@ -133,6 +146,9 @@ DPML-03-2-4
 
 # กรอกชื่อข้อมูลต้นแบบของวัตถุไม่ถูกต้อง
 DPML-03-2-5
+    [Documentation]     แก้ไขข้อมูลต้นแบบของวัตถุที่มีสถานะปิดใช้งานโดยแก้ไขเฉพาะ
+    ...                 ชื่อข้อมูลต้นแบบของวัตถุซึ่งไม่ถูกต้อง
+    [Tags]    Negative
     GIVEN open web
     WHEN login "admin" "123123"
     AND The url must be "http://localhost/upload"
@@ -148,6 +164,9 @@ DPML-03-2-5
 
 # เลือกไฟล์ข้อมูลต้นแบบของวัตถุโดยนามสกุลไฟล์ไม่ถูกต้อง
 DPML-03-2-6
+    [Documentation]     แก้ไขข้อมูลต้นแบบของวัตถุที่มีสถานะปิดใช้งานโดยแก้ไขเฉพาะ
+    ...                 ไฟล์ข้อมูลต้นแบบของวัตถุโดยนามสกุลไฟล์ไม่ถูกต้อง
+    [Tags]    Negative
     GIVEN open web
     WHEN login "admin" "123123"
     AND The url must be "http://localhost/upload"
@@ -163,6 +182,8 @@ DPML-03-2-6
 
 # แก้ไขข้อมูลต้นแบบของวัตถุที่มีสถานะเปิดใช้งาน
 DPML-03-2-7
+    [Documentation]     แก้ไขข้อมูลต้นแบบของวัตถุที่มีสถานะเปิดใช้งาน
+    [Tags]    Negative
     GIVEN open web
     WHEN login "admin" "123123"
     AND The url must be "http://localhost/upload"

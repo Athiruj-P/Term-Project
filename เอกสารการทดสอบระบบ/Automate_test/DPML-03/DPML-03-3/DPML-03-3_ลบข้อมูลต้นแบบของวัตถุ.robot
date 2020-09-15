@@ -65,6 +65,8 @@ Wait "${sec}"
 *** Test cases ***
 # กดปุ่มลบข้อมูลต้นแบบของวัตถุที่มีสถานะปิดใช้งาน
 DPML-03-3-1
+    [Documentation]     กดปุ่มลบข้อมูลต้นแบบของวัตถุที่มีสถานะปิดใช้งาน
+    [Tags]    Positive
     GIVEN open web
     WHEN login "admin" "123123"
     AND The url must be "http://localhost/upload"
@@ -82,6 +84,8 @@ DPML-03-3-1
 
 # กดปุ่มลบข้อมูลต้นแบบของวัตถุที่มีสถานะเปิดใช้งาน
 DPML-03-3-2
+    [Documentation]     กดปุ่มลบข้อมูลต้นแบบของวัตถุที่มีสถานะเปิดใช้งาน
+    [Tags]    Positive
     GIVEN open web
     WHEN login "admin" "123123"
     AND The url must be "http://localhost/upload"

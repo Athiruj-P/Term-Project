@@ -48,8 +48,10 @@ The alert must say "${text}"
 Wait "${sec}"
     Sleep   ${sec}
 *** Test cases ***
-# เลือกหน่วยการวัดขนาดวัตถุ
+# กดปุ่มอัปโหลดไฟล์รูปภาพเพื่อวัดขนาดวัตถุ
 DPML-02-3-1
+    [Documentation]     กดปุ่มอัปโหลดไฟล์รูปภาพเพื่อวัดขนาดวัตถุ
+    [Tags]    Positive
     GIVEN open web
     WHEN login "admin" "123123"
     AND The url must be "http://localhost/upload"
@@ -63,6 +65,8 @@ DPML-02-3-1
 
 # อัปโหลดไฟล์รูปภาพที่ตรงตามเงื่อนไขที่กำหนด
 DPML-02-3-2
+    [Documentation]     อัปโหลดไฟล์รูปภาพที่ตรงตามเงื่อนไขที่กำหนด
+    [Tags]    Positive
     GIVEN open web
     WHEN login "admin" "123123"
     AND The url must be "http://localhost/upload"
@@ -76,8 +80,10 @@ DPML-02-3-2
     THEN Wait "1"
     [Teardown]    Close Browser
 
-# อัปโหลดไฟล์รูปภาพที่สนใจโดยไม่มีวัตถุที่ซึ่งผ่านการเรียนรู้ของเครื่อง
+# อัปโหลดไฟล์รูปภาพที่สนใจโดยไม่มีวัตถุที่ผ่านการเรียนรู้ของเครื่อง
 DPML-02-3-3
+    [Documentation]     อัปโหลดไฟล์รูปภาพที่สนใจโดยไม่มีวัตถุที่ผ่านการเรียนรู้ของเครื่อง
+    [Tags]    Negative
     GIVEN open web
     WHEN login "admin" "123123"
     AND The url must be "http://localhost/upload"
@@ -93,6 +99,8 @@ DPML-02-3-3
 
 # อัปโหลดไฟล์รูปภาพที่สนใจโดยไม่มีวัตถุอ้างอิงติดอยู่บนวัตถุที่สนใจวัดขนาด
 DPML-02-3-4
+    [Documentation]     อัปโหลดไฟล์รูปภาพที่สนใจโดยไม่มีวัตถุอ้างอิงติดอยู่บนวัตถุที่สนใจวัดขนาด
+    [Tags]    Negative
     GIVEN open web
     WHEN login "admin" "123123"
     AND The url must be "http://localhost/upload"

@@ -69,6 +69,10 @@ Wait "${sec}"
 *** Test cases ***
 # กรอกชื่อข้อมูลต้นแบบของวัตถุอ้างอิง ขนาดความกว้าง ขนาดความยาว เลือกหน่วยในการวัดขนาดวัตถุ และเลือกไฟล์ข้อมูลต้นแบบของวัตถุอ้างอิงโดยนามสกุลไฟล์ถูกต้อง
 DPML-04-1-1
+    [Documentation]     กรอกชื่อข้อมูลต้นแบบของวัตถุอ้างอิง ขนาดความกว้าง
+    ...                 ขนาดความยาว เลือกหน่วยในการวัดขนาดวัตถุ
+    ...                 และเลือกไฟล์ข้อมูลต้นแบบของวัตถุอ้างอิงโดยนามสกุลไฟล์ถูกต้อง
+    [Tags]    Positive
     GIVEN open web
     WHEN login "admin" "123123"
     AND The url must be "http://localhost/upload"
@@ -92,6 +96,8 @@ DPML-04-1-1
 
 # กรอกชื่อข้อมูลต้นแบบของวัตถุอ้างอิงน้อยกว่า 3 ตัวอักษร
 DPML-04-1-2
+    [Documentation]     กรอกชื่อข้อมูลต้นแบบของวัตถุอ้างอิงน้อยกว่า 3 ตัวอักษร
+    [Tags]    Negative
     GIVEN open web
     WHEN login "admin" "123123"
     AND The url must be "http://localhost/upload"
@@ -108,6 +114,8 @@ DPML-04-1-2
 
 # กรอกชื่อข้อมูลต้นแบบของวัตถุอ้างอิงไม่ถูกต้อง
 DPML-04-1-3
+    [Documentation]     กรอกชื่อข้อมูลต้นแบบของวัตถุอ้างอิงไม่ถูกต้อง
+    [Tags]    Negative
     GIVEN open web
     WHEN login "admin" "123123"
     AND The url must be "http://localhost/upload"
@@ -124,6 +132,8 @@ DPML-04-1-3
 
 # ไม่กรอกชื่อข้อมูลต้นแบบของวัตถุอ้างอิง
 DPML-04-1-4
+    [Documentation]     ไม่กรอกชื่อข้อมูลต้นแบบของวัตถุอ้างอิง
+    [Tags]    Negative
     GIVEN open web
     WHEN login "admin" "123123"
     AND The url must be "http://localhost/upload"
@@ -140,6 +150,8 @@ DPML-04-1-4
 
 # กรอกขนาดความกว้างน้อยกว่าหรือเท่ากับ 0
 DPML-04-1-5
+    [Documentation]     กรอกขนาดความกว้างน้อยกว่าหรือเท่ากับ 0
+    [Tags]    Negative
     GIVEN open web
     WHEN login "admin" "123123"
     AND The url must be "http://localhost/upload"
@@ -156,6 +168,8 @@ DPML-04-1-5
 
 # ไม่กรอกขนาดความกว้าง
 DPML-04-1-6
+    [Documentation]     ไม่กรอกขนาดความกว้าง
+    [Tags]    Negative
     GIVEN open web
     WHEN login "admin" "123123"
     AND The url must be "http://localhost/upload"
@@ -172,6 +186,8 @@ DPML-04-1-6
 
 # กรอกขนาดความยาวน้อยกว่าหรือเท่ากับ 0
 DPML-04-1-7
+    [Documentation]     กรอกขนาดความยาวน้อยกว่าหรือเท่ากับ 0
+    [Tags]    Negative
     GIVEN open web
     WHEN login "admin" "123123"
     AND The url must be "http://localhost/upload"
@@ -188,6 +204,8 @@ DPML-04-1-7
 
 # ไม่กรอกขนาดความยาว
 DPML-04-1-8
+    [Documentation]     ไม่กรอกขนาดความยาว
+    [Tags]    Negative
     GIVEN open web
     WHEN login "admin" "123123"
     AND The url must be "http://localhost/upload"
@@ -204,6 +222,8 @@ DPML-04-1-8
 
 # ไม่เลือกหน่วยในการวัดขนาดวัตถุ
 DPML-04-1-9
+    [Documentation]     ไม่เลือกหน่วยในการวัดขนาดวัตถุ
+    [Tags]    Negative
     GIVEN open web
     WHEN login "admin" "123123"
     AND The url must be "http://localhost/upload"
@@ -220,6 +240,8 @@ DPML-04-1-9
 
 # เลือกไฟล์ข้อมูลต้นแบบของวัตถุอ้างอิงโดยนามสกุลไฟล์ไม่ถูกต้อง
 DPML-04-1-10
+    [Documentation]     เลือกไฟล์ข้อมูลต้นแบบของวัตถุอ้างอิงโดยนามสกุลไฟล์ไม่ถูกต้อง
+    [Tags]    Negative
     GIVEN open web
     WHEN login "admin" "123123"
     AND The url must be "http://localhost/upload"

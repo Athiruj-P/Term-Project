@@ -18,6 +18,9 @@ Choose file "${path}"
 Dropdown should be enabled
     Element Should Be Enabled   css:#root > div.content-wrapper > section.content > div > div > div > div.row.d-flex.justify-content-center.align-content-center > div.col-md-3 > select
 
+The url must be "${text}"
+    Wait Until Location Is    ${text}     5 
+
 The alert must say "${text}"
     Wait Until Page Contains    ${text}     5 
 
@@ -26,6 +29,8 @@ Wait "${sec}"
 *** Test cases ***
 # เลือกไฟล์รูปภาพด้วยนามสกุลไฟล์ "*.bpm" และขนาดไฟล์รูปภาพน้อยกว่าเท่ากับ 10 MB
 DPML-02-1-1
+    [Documentation]     เลือกไฟล์รูปภาพด้วยนามสกุลไฟล์ "*.bpm" และขนาดไฟล์รูปภาพน้อยกว่าเท่ากับ 10 MB
+    [Tags]    Positive
     GIVEN open web
     WHEN login "admin" "123123"
     AND The url must be "http://localhost/upload"
@@ -36,6 +41,8 @@ DPML-02-1-1
 
 # เลือกไฟล์รูปภาพด้วยนามสกุลไฟล์ "*.jpg" และขนาดไฟล์รูปภาพน้อยกว่าเท่ากับ 10 MB
 DPML-02-1-2
+    [Documentation]     เลือกไฟล์รูปภาพด้วยนามสกุลไฟล์ "*.jpg" และขนาดไฟล์รูปภาพน้อยกว่าเท่ากับ 10 MB
+    [Tags]    Positive
     GIVEN open web
     WHEN login "admin" "123123"
     AND The url must be "http://localhost/upload"
@@ -46,6 +53,8 @@ DPML-02-1-2
 
 # เลือกไฟล์รูปภาพด้วยนามสกุลไฟล์ "*.jpe" และขนาดไฟล์รูปภาพน้อยกว่าเท่ากับ 10 MB
 DPML-02-1-3
+    [Documentation]     เลือกไฟล์รูปภาพด้วยนามสกุลไฟล์ "*.jpe" และขนาดไฟล์รูปภาพน้อยกว่าเท่ากับ 10 MB
+    [Tags]    Positive
     GIVEN open web
     WHEN login "admin" "123123"
     AND The url must be "http://localhost/upload"
@@ -56,6 +65,8 @@ DPML-02-1-3
 
 # เลือกไฟล์รูปภาพด้วยนามสกุลไฟล์ "*.png" และขนาดไฟล์รูปภาพน้อยกว่าเท่ากับ 10 MB
 DPML-02-1-4
+    [Documentation]     เลือกไฟล์รูปภาพด้วยนามสกุลไฟล์ "*.png" และขนาดไฟล์รูปภาพน้อยกว่าเท่ากับ 10 MB
+    [Tags]    Positive
     GIVEN open web
     WHEN login "admin" "123123"
     AND The url must be "http://localhost/upload"
@@ -66,6 +77,8 @@ DPML-02-1-4
 
 # เลือกไฟล์รูปภาพด้วยนามสกุลไฟล์ที่ไม่ถูกต้อง
 DPML-02-1-5
+    [Documentation]     เลือกไฟล์รูปภาพด้วยนามสกุลไฟล์ที่ไม่ถูกต้อง
+    [Tags]    Negative
     GIVEN open web
     WHEN login "admin" "123123"
     AND The url must be "http://localhost/upload"
@@ -76,6 +89,8 @@ DPML-02-1-5
 
 # ขนาดไฟล์รูปภาพมากกว่า 10 MB
 DPML-02-1-6
+    [Documentation]     ขนาดไฟล์รูปภาพมากกว่า 10 MB
+    [Tags]    Negative
     GIVEN open web
     WHEN login "admin" "123123"
     AND The url must be "http://localhost/upload"
