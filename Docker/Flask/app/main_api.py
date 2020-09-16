@@ -50,11 +50,6 @@ def invalid_token_loader(message):
         'msg': message
     }), 400
 
-@app.route("/")
-def hello():
-    app.logger.info('Processing default request')
-    return "Hello World!"
-
 @app.after_request
 def after_request(response):
   response.headers.add('Access-Control-Allow-Origin', '*')
