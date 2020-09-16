@@ -1,3 +1,6 @@
+# user_api
+# Description : จัดการการเข้าสู่ระบบ/ออกจากระบบของผู้ใช้งาน และการกำหนด token
+# Author : Athiruj Poositaporn
 from flask import Flask, request, jsonify ,Blueprint
 from flask_jwt_extended import (
     JWTManager, jwt_required, create_access_token,
@@ -12,22 +15,28 @@ from .. import db_config
 
 jwt = JWTManager()
 user_api = Blueprint('user_api', __name__)
+# กำหนดชื่อ logger
+logger = logging.getLogger("Login_api")\
 
-logger = logging.getLogger("Login_api")
+# เชื่อมต่อกับฐานข้อมูล
 URI = "mongodb://"+db_config.item["db_username"]+":" + \
 db_config.item["db_password"]+"@"+db_config.item["db_host"]
 logger.info("Connecting to database")
 db_connect = MongoClient(URI)
 logger.info("Connected to database")
+
+# กำหนดชื่อของ DB
 DPML_db = db_connect[db_config.item["db_name"]]
+# กำหนด collection ที่ใช้งาน
 collection = db_config.item["db_col_user"]
 role_collection = db_config.item["db_col_role"]
 
+# login
+# Description : ปรับสถานะการเข้าสู่ระบบของผู้ใช้งาน และกำหนด token
+# Author : Athiruj Poositaporn
 @user_api.route("/login", methods=['POST'])
 def login():
     try:
-            # if not request.is_json:
-        #     return jsonify({"mes": "Missing JSON in request"}), 400
         username = request.form.get('username', None)
         password = request.form.get('password', None)
         logger.info("[{}] is logging in.".format(username))
@@ -40,14 +49,10 @@ def login():
             result = {"mes": "Missing password parameter" , 'status' : 'error'}
             return result, 400
 
-        # sha_signature = hashlib.sha256(password.encode()).hexdigest()   
-        # logger.info("pass : {}".format(sha_signature))
-
         query_result = DPML_db[collection].find_one({
             db_config.item['fld_user_name']: username ,
             db_config.item['fld_user_password']: password
         })
-        # logger.debug("query_result : {}".format(query_result))
 
         if not query_result:
             logger.warning("[{}] Wrong username or password.".format(username))
@@ -77,6 +82,9 @@ def login():
         result = {'mes' : str(identifier), 'status' : "system_error"}
         return result , 400
 
+# logout
+# Description : ปรับสถานะการออกจากระบบของผู้ใช้งาน
+# Author : Athiruj Poositaporn
 @user_api.route('/logout', methods=['POST'])
 def logout():
     try:
@@ -99,6 +107,9 @@ def logout():
         result = {"mes": str(identifier) , 'status' : 'system_error'}
         return result , 400
 
+# refresh
+# Description : กำหนดค่าของ access token ใหม่
+# Author : Athiruj Poositaporn
 @user_api.route('/refresh', methods=['POST'])
 @jwt_refresh_token_required
 def refresh():
@@ -112,10 +123,3 @@ def refresh():
         return result, 200
     except Exception as identifier:
         logger.error(str(identifier))
-
-# Test function
-@user_api.route('/protected', methods=['POST'])
-@jwt_required
-def protected():
-    current_user = get_jwt_identity()
-    return jsonify(logged_in_as=current_user), 200

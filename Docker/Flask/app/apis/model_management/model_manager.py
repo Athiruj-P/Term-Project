@@ -83,6 +83,9 @@ class MLManager(Manager):
         self.storage_path = os.path.join(parent, db_config.item["db_file_path"], db_config.item["ml_path"])
         self.name_regex = "^([\wก-๙]+ )+[\wก-๙]+$|^[\wก-๙]+$"
 
+    # is_int
+    # Description : ตรวจสอบว่า number เป็น int ได้หรือไม่
+    # Author : Athiruj Poositaporn
     def is_int(self,number):
         try:
             temp = int(number)
@@ -92,6 +95,9 @@ class MLManager(Manager):
         except:
             return False
 
+    # is_duplicate_name
+    # Description : ตรวจสอบว่าชื่อของ model ซ้ำหรือไม่
+    # Author : Athiruj Poositaporn
     def is_duplicate_name(self,data):
         if(self.is_int(data.id)):
             query_result = self.DPML_db[self.collection].find_one({
@@ -117,6 +123,9 @@ class MLManager(Manager):
         else:
             return False
 
+    # get_all_model
+    # Description : ดึงข้อมูลของทุก ๆ model
+    # Author : Athiruj Poositaporn
     def get_all_model(self,username):
         try:
             self.logger.info("[{}] Getting all ML models.".format(username))
@@ -151,6 +160,9 @@ class MLManager(Manager):
             result = { 'mes' : str(identifier) , 'status' : "system_error"}
             return result
 
+    # get_model_by_id
+    # Description : ดึงข้อมูลของ model ตาม id
+    # Author : Athiruj Poositaporn
     def get_model_by_id(self , data = Model()):
         try:
             self.logger.info("[{}] Prepair ML model id to be query.".format(data.username))
@@ -174,6 +186,9 @@ class MLManager(Manager):
             error = { 'mes' : str(identifier) }
             return jsonify(error)
 
+    # add_mdoel
+    # Description : เพิ่มข้อมูลของ model
+    # Author : Athiruj Poositaporn    
     def add_model(self , data = Model()):
         try:
             self.logger.info("[{}] Prepair ML model data to be save.".format(data.username))
@@ -231,6 +246,9 @@ class MLManager(Manager):
                 result = {'mes' : str(identifier), 'status' : "system_error"}
             return result
 
+    # edit_model
+    # Description : แก้ไขข้อมูลของ model
+    # Author : Athiruj Poositaporn  
     def edit_model(self , data = Model()):
         try:
             self.logger.info("[{}] Prepair ML model data to be edit.".format(data.username))
@@ -298,6 +316,9 @@ class MLManager(Manager):
                 result = {'mes' : str(identifier), 'status' : "system_error"}
             return result
 
+    # change_active_model
+    # Description : เปลี่ยนสถานะการใช้งานของ model
+    # Author : Athiruj Poositaporn 
     def change_active_model(self , data = Model()):
         try:
             self.logger.info("[{}] Prepair ML model data to be activate.".format(data.username))
@@ -340,6 +361,9 @@ class MLManager(Manager):
                 result = {'mes' : str(identifier), 'status' : "system_error"}
             return result
 
+    # delete_model
+    # Description : เปลี่ยนสถานะของ model เป็นลบ
+    # Author : Athiruj Poositaporn 
     def delete_model(self , data = Model()):
         try:
             self.logger.info("[{}] Prepair ML model data to be delete.".format(data.username))
@@ -402,6 +426,9 @@ class RefManager(Manager):
         self.storage_path = os.path.join(parent, db_config.item["db_file_path"], db_config.item["ref_path"])
         self.name_regex = "^([\wก-๙]+ )+[\wก-๙]+$|^[\wก-๙]+$"
 
+    # is_duplicate_name
+    # Description : ตรวจสอบว่าชื่อของ model ซ้ำหรือไม่
+    # Author : Athiruj Poositaporn
     def is_duplicate_name(self,data):
         if(self.is_int(data.id)):
             query_result = self.DPML_db[self.collection].find_one({
@@ -437,6 +464,9 @@ class RefManager(Manager):
         except:
             return False
 
+    # is_int
+    # Description : ตรวจสอบว่า number เป็น int ได้หรือไม่
+    # Author : Athiruj Poositaporn
     def is_int(self,number):
         try:
             temp = int(number)
@@ -446,6 +476,9 @@ class RefManager(Manager):
         except:
             return False
 
+    # get_all_model
+    # Description : ดึงข้อมูลของทุก ๆ model
+    # Author : Athiruj Poositaporn
     def get_all_model(self,username):
         try:
             self.logger.info("[{}] Getting all Ref models.".format(username))
@@ -522,6 +555,9 @@ class RefManager(Manager):
             result = {'mes' : str(identifier) , 'status' : "system_error"}
             return result
 
+    # get_model_by_id
+    # Description : ดึงข้อมูลของ model ตาม id
+    # Author : Athiruj Poositaporn
     def get_model_by_id(self , data = Model()):
         try:
             self.logger.info("[{}] Prepair Ref model id to be query.".format(data.username))
@@ -545,6 +581,9 @@ class RefManager(Manager):
             error = { 'mes' : str(identifier) }
             return jsonify(error)
 
+    # add_mdoel
+    # Description : เพิ่มข้อมูลของ model
+    # Author : Athiruj Poositaporn    
     def add_model(self , data = Model()):
         try:
             self.logger.info("[{}] Prepair Ref model data to be save.".format(data.username))
@@ -629,7 +668,9 @@ class RefManager(Manager):
                 result = {'mes' : str(identifier), 'status' : "system_error"}
             return result
 
-    #ตอนเรียกใช้ต้องส่งค่าทุกอย่างกลับมา แต่เว้น file ได้ ถ้าไม่ได้อัปอันใหม่มาให้ 
+    # edit_model
+    # Description : แก้ไขข้อมูลของ model
+    # Author : Athiruj Poositaporn  
     def edit_model(self , data = Model()):
         try:
             self.logger.info("[{}] Prepair Ref model data to be edit.".format(data.username))
@@ -738,6 +779,9 @@ class RefManager(Manager):
                 result = {'mes' : str(identifier), 'status' : "system_error"}
             return result
 
+    # change_active_model
+    # Description : เปลี่ยนสถานะการใช้งานของ model
+    # Author : Athiruj Poositaporn 
     def change_active_model(self , data = Model()):
         try:
             self.logger.info("[{}] Prepair Ref model data to be activate.".format(data.username))
@@ -779,6 +823,9 @@ class RefManager(Manager):
                 result = {'mes' : str(identifier), 'status' : "system_error"}
             return result
 
+    # delete_model
+    # Description : เปลี่ยนสถานะของ model เป็นลบ
+    # Author : Athiruj Poositaporn 
     def delete_model(self , data = Model()):
         try:
             self.logger.info("[{}] Prepair Ref model data to be delete.".format(data.username))

@@ -1,3 +1,6 @@
+# image_measurement
+# Description : คลาส ImageMeasurement ใช้สำหรับดำเนินการวัดขนาดวัตถุที่อยู๋ในรูปภาพ
+# Author : Athiruj Poositaporn
 from scipy.spatial import distance as dist
 import logging.config
 import imutils
@@ -13,23 +16,30 @@ from pymongo import MongoClient
 import sys
 from .. import err_msg
 from .. import db_config
+# กำหนดชื่อของ obj สำหรับเก็บ log
 logger = logging.getLogger("image_measurement")
 
+# เชื่อมต่อกับฐานข้อมูล
 URI = "mongodb://"+db_config.item["db_username"]+":" + \
 db_config.item["db_password"]+"@"+db_config.item["db_host"]
 db_connect = MongoClient(URI)
 logger.info("Connected to database")
+
+# กำหนตัวแปรชื่อของ collection
 DPML_db = db_connect[db_config.item["db_name"]]
 unit_collection = db_config.item['db_col_unit']
 ml_model_collection = db_config.item['db_col_mlmo']
 ref_model_collection = db_config.item['db_col_remo']
 
+# กำหนด parent path และ path สำหรับเข้าถึง font
 parent = os.path.dirname(os.path.dirname(os.path.dirname(__file__)))
-thai_font_path = os.path.join(parent, db_config.item["db_file_path"], "thai_font","THSarabunNewBold.ttf")
+thai_font_path = os.path.join(parent, db_config.item["db_file_path"], db_config.item['thai_font_folder'],db_config.item['THSarabunNewBold'])
+
 class ImageMeasurement:
     def __init__(self):
         parent = os.path.dirname(os.path.dirname(os.path.dirname(__file__)))
 
+        # ดึงข้อมูล ml model ที่เปิดใช้งานอยู๋
         query_mlmo = DPML_db[ml_model_collection].find_one({
             db_config.item['fld_mlmo_status']: db_config.item['fld_mlmo_status_active']
         }, {
@@ -42,7 +52,8 @@ class ImageMeasurement:
             raise TypeError(err_msg.msg['no_active_ml_model'])
         else:
             query_mlmo.pop('_id')
-
+        
+        # ดึงข้อมูล ref model ที่เปิดใช้งานอยู๋
         query_remo = DPML_db[ref_model_collection].find_one({
             db_config.item['fld_remo_status']: db_config.item['fld_remo_status_active']
         })
@@ -53,19 +64,25 @@ class ImageMeasurement:
         else:
             query_remo.pop('_id')
         
+        # ดึงข้อมูล unit ทั้งหมด
         query_unit = DPML_db[unit_collection].find_one({
             db_config.item['fld_un_id']: query_remo[db_config.item['fld_remo_unit']]
         })
         query_unit.pop('_id')
 
+        # กำหนด ml_model_path ไปยังไฟล์ที่เปิดใช้งานอยู่
         self.ml_model_path = query_mlmo[db_config.item['fld_mlmo_path']]
+        # กำหนด ml_model_name ของไฟล์ที่เปิดใช้งานอยู่
         self.ml_model_name = query_mlmo[db_config.item['fld_mlmo_name']]
 
+        # กำหนด ref_model_path ไปยังไฟล์ที่เปิดใช้งานอยู่
         self.ref_model_path = query_remo[db_config.item['fld_remo_path']]
+        # ดึงข้อมูลของ ref model ที่เปิดใช้งานอยู่
         self.ref_model_name = query_remo[db_config.item['fld_remo_name']]
         self.ref_model_width = query_remo[db_config.item['fld_remo_width']]
         self.ref_model_unit = query_unit[db_config.item['fld_un_abb_name']]
 
+        # กำหนด path ไปหาไฟล์ config สำหรับ object detection
         self.ml_config_path = os.path.join(parent, db_config.item["db_file_path"], db_config.item["ml_path"],"ml_model_config.cfg")
         self.ref_config_path = os.path.join(parent, db_config.item["db_file_path"], db_config.item["ref_path"],"ref_model_config.cfg")
 
@@ -184,6 +201,9 @@ class ImageMeasurement:
         except Exception as identifier:
             return None
 
+    # max_area
+    # Description : ฟังก์ชันหาพื้นที่ภายในเส้นรอบรูปที่ใหญ่ที่สุด
+    # Author : Athiruj Poositaporn
     def max_area(self,cnts = None):
         max_cnt_area = -1.0
         max_cnt = None
@@ -230,16 +250,26 @@ class ImageMeasurement:
         # กำหนดให้ pixelsPerMetric เป็น None ซึ่งใช้ในการคำนวณอัตราส่วนของรูปภาพอ้างอิง
         # เพื่อใช้ค้นหาความยาวด้านของวัตถุเป้าหมาย
         pixelsPerMetric = None
+
+        # กำหนดรูปภาพที่ต้องการวัดขนาด
         input_image = image.image
+        
+        # ปรับขนาดของรูปภาพใหม่
         input_image = self.resize_with_aspect_ratio(image.image,width=1500)
+        
+        # เบลอรูปและกำหนดให้รูปเป็น hsv model 
         hsv=cv2.cvtColor(cv2.GaussianBlur(input_image, (7, 7), 0), cv2.COLOR_BGR2HSV)
 
+        # กำหนดขนาดความยาวจริงของวัตถุอ้างอิง
         width_of_ref_obj = self.ref_model_width
 
-
         try:
+            # เก็บจุดกึ่งกลางของพื้นที่ในเส้นรอบรูปที่พบทั้งหมด เพื่อเอาไปเปรียบเทียบเพื่อหาวัตถุที่สนใจในอนาคต
             arr_center_point = self.detect_object(input_image)
+
+            # ตรวจจับหาวัตถุอ้างอิงจากรูปภาพ โดยได้เป็นจุดกึงกลาง
             ref_cnt_box = self.detect_ref_object(input_image)
+
             # หากไม่พบวัตถุอ้างอิงจะไม่วัดขนาด
             if(not ref_cnt_box):
                 logger.warning("Reference object not detected")
@@ -249,8 +279,12 @@ class ImageMeasurement:
                 logger.warning("Object not detected")
                 return {'mes' : err_msg.msg['ml_model_not_found'],'img' : input_image , 'status' : "ml_not_found"}
             
+            # กำหนดค่า dimA dimB ซึ่งเป็นความยาวของวัตถุอ้างอิงในหน่วย px
             _ , dimA , dimB = ref_cnt_box
+            
+            # ค่าอัตราส่วนของ px ต่อความยาวใด ๆ 1 หน่วย
             pixelsPerMetric = dimB / width_of_ref_obj
+            
             ##############################
             # Image size measure section #
             ##############################
@@ -366,6 +400,15 @@ class ImageMeasurement:
                 cv2.circle(origin, (int(br[0]), int(br[1])), 5, (0, 0, 255), -1)
                 cv2.circle(origin, (int(bl[0]), int(bl[1])), 5, (0, 0, 255), -1)
 
+                #                   ความยาว dB
+                #       ###############@###############
+                #       #              @              #
+                #       #              @              #
+                #       @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ ความยาว dA
+                #       #              @              #
+                #       #              @              #
+                #       ###############@###############
+
                 dA = dist.euclidean((tltrX, tltrY), (blbrX, blbrY))
                 dB = dist.euclidean((tlblX, tlblY), (trbrX, trbrY))
 
@@ -387,9 +430,6 @@ class ImageMeasurement:
                 draw = ImageDraw.Draw(img_pil)
                 draw.text( (int(tl[0]), int(tl[1] - 50)),object_lable, font = font, fill = (255, 255, 255 , 0))
                 origin = np.array(img_pil)
-                # cv2.putText(origin, object_lable,
-                #     (int(tl[0]), int(tl[1] - 30)), cv2.FONT_HERSHEY_SIMPLEX,
-                #     0.65, (255, 255, 255), 2)
 
                 # Dimension A lable
                 cv2.circle(origin, (int(tltrX - 5), int(tltrY - 20)), 26, (0, 0, 0), -1)

@@ -1,3 +1,7 @@
+# Model
+# Description : คลาส Model ใช้สำหรับเห็บข้อมูลของ model
+# Author : Athiruj Poositaporn
+
 class Model:
     def __init__(self, id=0 , name='' ,path='',width=0,height=0,status=0,un_id=0 ,file = None , username=''):
         self.id = id

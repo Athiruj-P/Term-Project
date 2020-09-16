@@ -17,6 +17,7 @@ from .log_manager import LogManager
 from .. import err_msg
 
 log_management_api = Blueprint('log_management_api', __name__)
+# กำหนดชื่อ logger
 logger = logging.getLogger("log_management_api")
 
 # log_management_api

@@ -12,7 +12,6 @@ import logging.config
 from pymongo import MongoClient
 from bson.json_util import dumps
 from .. import db_config
-# from .. import logging_config
 
 from .model import Model
 from .model_manager import MLManagement, RefManagement
@@ -20,8 +19,10 @@ from .model_manager import MLManagement, RefManagement
 model_management_api = Blueprint('model_management_api', __name__)
 logger = logging.getLogger("model_management_api")
 logger_user = logging.getLogger("user_management")
-# logging.config.dictConfig(logging_config)
 
+# check_duplicate_name
+# Description : ตรวจสอบว่าการแก้ไขชื่อของ model ซ้ำหรือไม่
+# Author : Athiruj Poositaporn
 @model_management_api.route("/check_duplicate_name", methods=['post'])
 def check_duplicate_name():
     try:
@@ -47,7 +48,6 @@ def check_duplicate_name():
         logger.error("Error {}".format(identifier))
         error = { 'mes' : str(identifier) , 'status' : "system_error"}
         return jsonify(error) , 400
-
 
 # add_ml_model
 # Description : เพิ่มข้อมูลของชื่อและไฟล์ .weights ของข้อมูลต้นแบบของวัตถุ 
@@ -217,8 +217,6 @@ def change_active_model():
         logger.error("[{}] Error {}".format(username,str(identifier)))
         result = { 'mes' : str(identifier) , 'status' : "system_error"}
         return result , 400
-    
-
 
 # delete_model
 # Description : เปลี่ยนสถานะข้อมูลต้นแบบของวัตถุ หรือข้อมูลต้นแบบของวัตถุอ้างอิงเป็นถูกลบ
@@ -266,7 +264,6 @@ def delete_model():
         logger.error("[{}] Error {}".format(username,str(identifier)))
         result = { 'mes' : str(identifier) , 'status' : "system_error"}
         return result , 400
-
 
 # get_all_model
 # Description : เรียกข้อมูลต้นแบบของวัตถุ หรือ ข้อมูลต้นแบบของวัตถุอ้างอิงทั้งหมดที่ไม่มีสถานะถูกลบ

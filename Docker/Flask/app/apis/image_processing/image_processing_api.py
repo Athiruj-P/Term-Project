@@ -1,3 +1,7 @@
+# image_processing_api
+# Description : API ของการประมวลผลรูปภาพ
+# Author : Athiruj Poositaporn
+
 from flask import Flask, request, jsonify ,Blueprint ,make_response
 from flask_jwt_extended import (
     JWTManager, jwt_required, create_access_token,
@@ -16,22 +20,29 @@ from .. import db_config
 from .. import err_msg
 
 image_processing_api = Blueprint('image_processing_api', __name__)
-extension = ["bmp","jpg","jpe","jp2","png"]
+
+# นามสกุลไฟล์ที่ระบบรองระบ
+extension = ["bmp","jpg","jpe","png"]
+
+# กำหนดชื่อ logger
 logger = logging.getLogger("image_processing_api")
 
 
 logger.info("Connecting to database")
-# @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
-# ต้องแก้ไขให้ดึงข้อมูลจาก DB /
-# @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+# เชื่อมต่อกับฐานข้อมูล
 URI = "mongodb://"+db_config.item["db_username"]+":" + \
 db_config.item["db_password"]+"@"+db_config.item["db_host"]
 db_connect = MongoClient(URI)
 logger.info("Connected to database")
-DPML_db = db_connect[db_config.item["db_name"]]
-unit_collection = db_config.item['db_col_unit']
-# @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
 
+# กำหนดชื่อของ DB 
+DPML_db = db_connect[db_config.item["db_name"]]
+# กำหนด collection ที่ใช้งาน 
+unit_collection = db_config.item['db_col_unit']
+
+# is_int
+# Description : ตรวจสอบว่า number เป็น int ได้หรือไม่
+# Author : Athiruj Poositaporn
 def is_int(number):
         try:
             temp = int(number)
@@ -49,11 +60,7 @@ def is_int(number):
 def upload_image():
     try:
         file = request.files.get('file',None)
-        # @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
-        # ต้องแก้ไขให้ดึงข้อมูลการส่งค่าชื่อผู้ใช้งาน
-        # @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
         username = get_jwt_identity()
-        # @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
 
         query_unit = None
         logger.info("[{}] Prepair image data to be measure.".format(username))

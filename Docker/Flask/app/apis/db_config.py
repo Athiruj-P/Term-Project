@@ -53,4 +53,9 @@ item = {
     "db_file_path" : "db_file",
     "ml_path" : "ml_model",
     "ref_path" : "ref_model",
+
+    # Font
+    "thai_font_folder" : "thai_font",
+    "THSarabunNewBold" : "THSarabunNewBold.ttf",
+    
 }

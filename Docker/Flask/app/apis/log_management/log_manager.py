@@ -1,3 +1,7 @@
+# log_management
+# Description : คลาส LogManager ใช้จัดการเพิ่มและดึงข้อมูลของ log
+# Author : Athiruj Poositaporn
+
 from flask import jsonify
 from bson.json_util import dumps
 from datetime import date , datetime
@@ -23,7 +27,9 @@ class LogManager():
         self.action = action
 
         self.group_list = ['all' , 'USER' , 'SYSTEM']
-    
+    # is_date_obj
+    # Description : ตรวจสอบว่า str_date เป็น date ได้หรือไม่
+    # Author : Athiruj Poositaporn
     def is_date_obj(self,str_date):
         try:
             datetime.strptime(str_date, '%Y-%m-%d')
@@ -31,6 +37,9 @@ class LogManager():
         except:
             return False
 
+    # is_datetime_obj
+    # Description : ตรวจสอบว่า str_date_time เป็น datetime ได้หรือไม่
+    # Author : Athiruj Poositaporn
     def is_datetime_obj(self,str_date_time):
         try:
             datetime.strptime(str_date_time, '%Y-%m-%d %H:%M:%S')
@@ -38,6 +47,9 @@ class LogManager():
         except:
             return False
 
+    # is_file_exist
+    # Description : ตรวจสอบว่า str_file_path สามารถเข้าถึงไฟล์ได้หรือไม่
+    # Author : Athiruj Poositaporn
     def is_file_exist(self,str_file_path):
         try:
             file_read = open(str_file_path, "r")
@@ -47,7 +59,9 @@ class LogManager():
         finally:
             file_read.close()
 
-
+    # get_today_log
+    # Description : ดึงข้อมูล log ในวันที่ปัจจุบัน
+    # Author : Athiruj Poositaporn    
     def get_today_log(self):
         try:
             self.logger.info("[{}] Prepair date data to query.".format(self.username))
@@ -100,6 +114,9 @@ class LogManager():
                 result = {'mes' : str(identifier), 'status' : "system_error"}
             return result
 
+    # get_log_by_date
+    # Description : ดึงข้อมูล log ตามวันที่และเวลาที่กำหนด
+    # Author : Athiruj Poositaporn   
     def get_log_by_date(self):
         try:
             self.logger.info("[{}] Prepair date data to query.".format(self.username))
@@ -175,7 +192,10 @@ class LogManager():
                 self.logger.warning("{}.".format(str(identifier)))
                 result = {'mes' : str(identifier), 'status' : "system_error"}
             return result
-    
+
+    # get_min_max_date
+    # Description : ดึงข้อมูลวันที่ของ log ที่เคยบันทึกวันแรก และวันที่ของ log ที่บันทึกล่าสุด
+    # Author : Athiruj Poositaporn   
     def get_min_max_date(self):
         try:
             self.logger.info("[{}] Prepair date data to query.".format(self.username))
@@ -208,8 +228,11 @@ class LogManager():
                 result = {'mes' : str(identifier), 'status' : "system_error"}
             return result
 
-    def __del__(self):
-        pass
-    
+    # add_log
+    # Description : เพิ่มข้อมูลการกระทำของผู้ใช้งาน (Admin , User)
+    # Author : Athiruj Poositaporn   
     def add_log(self):
         self.logger_user.info("[{}] {}".format(self.username,self.action))
+
+    def __del__(self):
+        pass
