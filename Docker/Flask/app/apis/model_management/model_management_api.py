@@ -15,6 +15,10 @@ from .. import db_config
 
 from .model import Model
 from .model_manager import MLManagement, RefManagement
+from datetime import date , datetime
+import logging
+today = date.today()
+date_folder = today.strftime("%Y-%m-%d")
 
 model_management_api = Blueprint('model_management_api', __name__)
 logger = logging.getLogger("model_management_api")
@@ -25,6 +29,7 @@ logger_user = logging.getLogger("user_management")
 # Author : Athiruj Poositaporn
 @model_management_api.route("/check_duplicate_name", methods=['post'])
 def check_duplicate_name():
+    logging.basicConfig(filename=date_folder,level=logging.DEBUG)
     try:
         model_type = request.form.get('type',None)
         name = request.form.get('name',None)
@@ -55,6 +60,7 @@ def check_duplicate_name():
 @model_management_api.route("/add_model", methods=['put'])
 @jwt_required
 def add_model():
+    logging.basicConfig(filename=date_folder,level=logging.DEBUG)
     try:
         model_type = request.form.get('type',None)
         username = get_jwt_identity()
@@ -117,6 +123,7 @@ def add_model():
 @model_management_api.route("/edit_model", methods=['put'])
 @jwt_required
 def edit_model():
+    logging.basicConfig(filename=date_folder,level=logging.DEBUG)
     try:
         model_type = request.form.get('type',None)
         model_id = request.form.get('model_id',None)
@@ -176,6 +183,7 @@ def edit_model():
 @model_management_api.route("/change_active_model", methods=['post'])
 @jwt_required
 def change_active_model():
+    logging.basicConfig(filename=date_folder,level=logging.DEBUG)
     try:
         model_type = request.form.get('type',None)
         model_id = request.form.get('model_id',None)
@@ -224,6 +232,7 @@ def change_active_model():
 @model_management_api.route("/delete_model", methods=['post'])
 @jwt_required
 def delete_model():
+    logging.basicConfig(filename=date_folder,level=logging.DEBUG)
     try:
         model_type = request.form.get('type',None)
         model_id = request.form.get('model_id',None)
@@ -271,6 +280,7 @@ def delete_model():
 @model_management_api.route("/get_all_model", methods=['post'])
 @jwt_required
 def get_all_model():
+    logging.basicConfig(filename=date_folder,level=logging.DEBUG)
     try:
         model_type = request.form.get('type',None)
         username = get_jwt_identity()
@@ -307,6 +317,7 @@ def get_all_model():
 @model_management_api.route("/get_all_unit", methods=['post'])
 @jwt_required
 def get_all_unit():
+    logging.basicConfig(filename=date_folder,level=logging.DEBUG)
     try:
         username = get_jwt_identity()
 
@@ -335,6 +346,7 @@ def get_all_unit():
 @model_management_api.route("/get_model_by_id", methods=['post'])
 @jwt_required
 def get_model_by_id():
+    logging.basicConfig(filename=date_folder,level=logging.DEBUG)
     model_type = request.form.get('type')
     model_id = int(request.form.get('model_id'))
     username = get_jwt_identity()

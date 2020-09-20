@@ -12,6 +12,10 @@ import hashlib
 from bson.json_util import dumps
 import logging.config
 from .. import db_config
+from datetime import date , datetime
+import logging
+today = date.today()
+date_folder = today.strftime("%Y-%m-%d")
 
 jwt = JWTManager()
 user_api = Blueprint('user_api', __name__)
@@ -36,6 +40,7 @@ role_collection = db_config.item["db_col_role"]
 # Author : Athiruj Poositaporn
 @user_api.route("/login", methods=['POST'])
 def login():
+    logging.basicConfig(filename=date_folder,level=logging.DEBUG)
     try:
         username = request.form.get('username', None)
         password = request.form.get('password', None)
@@ -87,6 +92,7 @@ def login():
 # Author : Athiruj Poositaporn
 @user_api.route('/logout', methods=['POST'])
 def logout():
+    logging.basicConfig(filename=date_folder,level=logging.DEBUG)
     try:
         username = request.form.get('username', None)
         logger.info("[{}] Logging out.".format(username))
@@ -113,6 +119,7 @@ def logout():
 @user_api.route('/refresh', methods=['POST'])
 @jwt_refresh_token_required
 def refresh():
+    logging.basicConfig(filename=date_folder,level=logging.DEBUG)
     try:
         logger.info(" Refreshing token.")
         current_user = get_jwt_identity()

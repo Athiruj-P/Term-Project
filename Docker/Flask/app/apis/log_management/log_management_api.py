@@ -15,7 +15,10 @@ from bson.json_util import dumps
 from .. import db_config
 from .log_manager import LogManager
 from .. import err_msg
-
+from datetime import date , datetime
+import logging
+today = date.today()
+date_folder = today.strftime("%Y-%m-%d")
 log_management_api = Blueprint('log_management_api', __name__)
 # กำหนดชื่อ logger
 logger = logging.getLogger("log_management_api")
@@ -26,6 +29,7 @@ logger = logging.getLogger("log_management_api")
 @log_management_api.route("/get_log", methods=['post'])
 @jwt_required
 def get_log():
+    logging.basicConfig(filename=date_folder,level=logging.DEBUG)
     try:
         # logger.info("[{}] .".format(username))
         date_type = request.form.get('date_type')
@@ -73,6 +77,7 @@ def get_log():
 @log_management_api.route("/get_min_max_date", methods=['post'])
 @jwt_required
 def get_min_max_date():
+    logging.basicConfig(filename=date_folder,level=logging.DEBUG)
     try:
         # logger.info("[{}] .".format(username))
         username = get_jwt_identity()
@@ -97,6 +102,7 @@ def get_min_max_date():
 @log_management_api.route("/add_log", methods=['post'])
 @jwt_required
 def add_log():
+    logging.basicConfig(filename=date_folder,level=logging.DEBUG)
     try:
         username = get_jwt_identity()
         action = request.form.get('action' , None)

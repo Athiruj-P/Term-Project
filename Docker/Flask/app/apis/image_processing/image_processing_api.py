@@ -2,6 +2,7 @@
 # Description : API ของการประมวลผลรูปภาพ
 # Author : Athiruj Poositaporn
 
+from datetime import date , datetime
 from flask import Flask, request, jsonify ,Blueprint ,make_response
 from flask_jwt_extended import (
     JWTManager, jwt_required, create_access_token,
@@ -9,6 +10,7 @@ from flask_jwt_extended import (
     create_refresh_token
 )
 from pymongo import MongoClient
+import logging
 import logging.config
 import numpy as np
 from bson.json_util import dumps
@@ -18,7 +20,8 @@ from . import image_measurement
 from . import image
 from .. import db_config
 from .. import err_msg
-
+today = date.today()
+date_folder = today.strftime("%Y-%m-%d")
 image_processing_api = Blueprint('image_processing_api', __name__)
 
 # นามสกุลไฟล์ที่ระบบรองระบ
@@ -58,6 +61,7 @@ def is_int(number):
 @image_processing_api.route("/upload_image", methods=['put'])
 @jwt_required
 def upload_image():
+    logging.basicConfig(filename=date_folder,level=logging.DEBUG)
     try:
         file = request.files.get('file',None)
         username = get_jwt_identity()
@@ -123,6 +127,7 @@ def upload_image():
 @image_processing_api.route("/get_all_unit", methods=['get'])
 @jwt_required
 def get_all_unit():
+    logging.basicConfig(filename=date_folder,level=logging.DEBUG)
     try:
         query_unit = DPML_db[unit_collection].find()
         arr = []
