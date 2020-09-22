@@ -116,8 +116,10 @@ class ImageMeasurement:
     def detect_object(self,image):
         height, width = image.shape[:2]
         # อ่านไฟล์ weights และ config
-        net = cv2.dnn.readNet(self.ml_model_path, self.ml_config_path) 
-
+        net = cv2.dnn.readNet(self.ml_model_path, self.ml_config_path)
+        # net.setPreferableBackend(cv2.dnn.DNN_BACKEND_CUDA)
+        # net.setPreferableTarget(cv2.dnn.DNN_TARGET_CUDA)
+        
         #ค่าที่ได้จากฐานข้อมูลของ ML model เป็นชื่อของวัตถุที่สนใจวัดขนาด
         classes = [self.ml_model_name]
 
