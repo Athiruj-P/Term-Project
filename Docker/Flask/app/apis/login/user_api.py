@@ -2,6 +2,7 @@
 # Description : จัดการการเข้าสู่ระบบ/ออกจากระบบของผู้ใช้งาน และการกำหนด token
 # Author : Athiruj Poositaporn
 from flask import Flask, request, jsonify ,Blueprint
+from pytz import timezone
 from flask_jwt_extended import (
     JWTManager, jwt_required, create_access_token,
     get_jwt_identity,jwt_refresh_token_required,
@@ -14,8 +15,6 @@ import logging.config
 from .. import db_config
 from datetime import date , datetime
 import logging
-today = date.today()
-date_folder = today.strftime("%Y-%m-%d")
 
 jwt = JWTManager()
 user_api = Blueprint('user_api', __name__)
@@ -35,12 +34,21 @@ DPML_db = db_connect[db_config.item["db_name"]]
 collection = db_config.item["db_col_user"]
 role_collection = db_config.item["db_col_role"]
 
+def set_folder_name():
+    fmt = "%Y-%m-%d"
+    time_zone = "Asia/Bangkok"  
+    now_utc = datetime.now(timezone('UTC'))
+    now_pacific = now_utc.astimezone(timezone("Asia/Bangkok"))
+    date_folder = now_pacific.strftime(fmt)
+    logging.basicConfig(filename=date_folder,level=logging.DEBUG)
+
+
 # login
 # Description : ปรับสถานะการเข้าสู่ระบบของผู้ใช้งาน และกำหนด token
 # Author : Athiruj Poositaporn
 @user_api.route("/login", methods=['POST'])
 def login():
-    logging.basicConfig(filename=date_folder,level=logging.DEBUG)
+    set_folder_name()
     try:
         username = request.form.get('username', None)
         password = request.form.get('password', None)
@@ -92,7 +100,7 @@ def login():
 # Author : Athiruj Poositaporn
 @user_api.route('/logout', methods=['POST'])
 def logout():
-    logging.basicConfig(filename=date_folder,level=logging.DEBUG)
+    set_folder_name()
     try:
         username = request.form.get('username', None)
         logger.info("[{}] Logging out.".format(username))
@@ -119,7 +127,7 @@ def logout():
 @user_api.route('/refresh', methods=['POST'])
 @jwt_refresh_token_required
 def refresh():
-    logging.basicConfig(filename=date_folder,level=logging.DEBUG)
+    set_folder_name()
     try:
         logger.info(" Refreshing token.")
         current_user = get_jwt_identity()

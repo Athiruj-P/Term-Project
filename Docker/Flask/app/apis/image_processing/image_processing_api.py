@@ -3,6 +3,7 @@
 # Author : Athiruj Poositaporn
 
 from datetime import date , datetime
+from pytz import timezone
 from flask import Flask, request, jsonify ,Blueprint ,make_response
 from flask_jwt_extended import (
     JWTManager, jwt_required, create_access_token,
@@ -20,8 +21,7 @@ from . import image_measurement
 from . import image
 from .. import db_config
 from .. import err_msg
-today = date.today()
-date_folder = today.strftime("%Y-%m-%d")
+
 image_processing_api = Blueprint('image_processing_api', __name__)
 
 # นามสกุลไฟล์ที่ระบบรองระบ
@@ -43,6 +43,14 @@ DPML_db = db_connect[db_config.item["db_name"]]
 # กำหนด collection ที่ใช้งาน 
 unit_collection = db_config.item['db_col_unit']
 
+def set_folder_name():
+    fmt = "%Y-%m-%d"
+    time_zone = "Asia/Bangkok"  
+    now_utc = datetime.now(timezone('UTC'))
+    now_pacific = now_utc.astimezone(timezone("Asia/Bangkok"))
+    date_folder = now_pacific.strftime(fmt)
+    logging.basicConfig(filename=date_folder,level=logging.DEBUG)
+
 # is_int
 # Description : ตรวจสอบว่า number เป็น int ได้หรือไม่
 # Author : Athiruj Poositaporn
@@ -61,7 +69,7 @@ def is_int(number):
 @image_processing_api.route("/upload_image", methods=['put'])
 @jwt_required
 def upload_image():
-    logging.basicConfig(filename=date_folder,level=logging.DEBUG)
+    set_folder_name()
     try:
         file = request.files.get('file',None)
         username = get_jwt_identity()
@@ -127,7 +135,7 @@ def upload_image():
 @image_processing_api.route("/get_all_unit", methods=['get'])
 @jwt_required
 def get_all_unit():
-    logging.basicConfig(filename=date_folder,level=logging.DEBUG)
+    set_folder_name()
     try:
         query_unit = DPML_db[unit_collection].find()
         arr = []

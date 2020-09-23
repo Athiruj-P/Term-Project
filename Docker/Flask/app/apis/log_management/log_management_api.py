@@ -3,6 +3,7 @@
 # ข้อมูลต้นอบบของวัตถุ
 # Author : Athiruj Poositaporn
 from flask import Flask, request, Blueprint ,make_response,jsonify
+from pytz import timezone
 from flask_jwt_extended import (
     JWTManager, jwt_required, create_access_token,
     get_jwt_identity,jwt_refresh_token_required,
@@ -17,11 +18,18 @@ from .log_manager import LogManager
 from .. import err_msg
 from datetime import date , datetime
 import logging
-today = date.today()
-date_folder = today.strftime("%Y-%m-%d")
+
 log_management_api = Blueprint('log_management_api', __name__)
 # กำหนดชื่อ logger
 logger = logging.getLogger("log_management_api")
+
+def set_folder_name():
+    fmt = "%Y-%m-%d"
+    time_zone = "Asia/Bangkok"  
+    now_utc = datetime.now(timezone('UTC'))
+    now_pacific = now_utc.astimezone(timezone("Asia/Bangkok"))
+    date_folder = now_pacific.strftime(fmt)
+    logging.basicConfig(filename=date_folder,level=logging.DEBUG)
 
 # log_management_api
 # Description : เรียกข้อมูลประวัติการใช้งานระบบตามช่วงของวันที่และเวลาที่กำหนด
@@ -29,7 +37,7 @@ logger = logging.getLogger("log_management_api")
 @log_management_api.route("/get_log", methods=['post'])
 @jwt_required
 def get_log():
-    logging.basicConfig(filename=date_folder,level=logging.DEBUG)
+    set_folder_name()
     try:
         # logger.info("[{}] .".format(username))
         date_type = request.form.get('date_type')
@@ -77,7 +85,7 @@ def get_log():
 @log_management_api.route("/get_min_max_date", methods=['post'])
 @jwt_required
 def get_min_max_date():
-    logging.basicConfig(filename=date_folder,level=logging.DEBUG)
+    set_folder_name()
     try:
         # logger.info("[{}] .".format(username))
         username = get_jwt_identity()
@@ -102,7 +110,7 @@ def get_min_max_date():
 @log_management_api.route("/add_log", methods=['post'])
 @jwt_required
 def add_log():
-    logging.basicConfig(filename=date_folder,level=logging.DEBUG)
+    set_folder_name()
     try:
         username = get_jwt_identity()
         action = request.form.get('action' , None)
