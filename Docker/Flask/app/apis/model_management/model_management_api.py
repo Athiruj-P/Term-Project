@@ -47,11 +47,13 @@ def check_duplicate_name():
             ml_manager = MLManagement().create_manager()
             result = ml_manager.is_duplicate_name(data)
             result = {'is_duplicate':result}
+            del ml_manager
             return result
         elif(model_type == "ref"):
             ref_manager = RefManagement().create_manager()
             result = ref_manager.is_duplicate_name(data)
             result = {'is_duplicate':result}
+            del ref_manager
             return result
         else:
             result = { 'mes' : "wrong_type" , 'status' : "error"}

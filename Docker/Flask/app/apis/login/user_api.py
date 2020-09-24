@@ -115,6 +115,7 @@ def logout():
         )
         logger.info("[{}] Response logout.".format(username))
         result = {"mes": "Logout success" , 'status' : 'success'}
+        db_connect.close()
         return result , 200
     except Exception as identifier:
         logger.error("{}.".format(str(identifier)))
@@ -135,6 +136,7 @@ def refresh():
             'refresh_token': create_access_token(identity=current_user)
         }
         logger.info(" Response new access token.")
+        db_connect.close()
         return result, 200
     except Exception as identifier:
         logger.error(str(identifier))
