@@ -114,6 +114,12 @@ def upload_image():
             'img_data' : result_img['img_data'],
         }
         del image_processor
+        del data
+        del result_img
+        del input_image
+        del img
+        del retval
+        del buffer
         logger.info("[{}] Responsed measurement result.".format(username))
         return response , 200
     except Exception  as identifier:

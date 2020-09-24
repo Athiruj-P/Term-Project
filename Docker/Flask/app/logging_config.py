@@ -1,8 +1,14 @@
+from pytz import timezone
 from datetime import date , datetime
-today = date.today()
-date_folder = today.strftime("%Y-%m-%d")
 
-time_zone = "Asia/Bangkok"
+fmt = "%Y-%m-%d"
+time_zone = "Asia/Bangkok"  
+now_utc = datetime.now(timezone('UTC'))
+now_pacific = now_utc.astimezone(timezone("Asia/Bangkok"))
+date_folder = now_pacific.strftime(fmt)
+
+# today = date.today()
+# date_folder = today.strftime("%Y-%m-%d")
 
 dict_config = {
     'version': 1,
