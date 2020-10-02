@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 3.2.2 (Python 3.8.3 on win32)" generated="20201002 16:15:18.529" rpa="false">
+<suite id="s1" name="DPML-02-1 เลือกไฟล์รูปภาพสำหรับการวัดขนาดวัตถุ" source="C:\Users\First-AP\Desktop\Homework\4th Year\CSI_project\เอกสารการทดสอบระบบ\Automate_test\DPML-02\DPML-02-1 - Copy\DPML-02-1_เลือกไฟล์รูปภาพสำหรับการวัดขนาดวัตถุ.robot">
+<test id="s1-t1" name="DPML-02-1-1">
+<kw name="GIVEN open web">
+<kw name="Open Browser" library="Selenium2Library">
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<arguments>
+<arg>${dpml_url}</arg>
+<arg>chrome</arg>
+</arguments>
+<msg timestamp="20201002 16:15:18.750" level="INFO">Opening browser 'chrome' to base url 'http://localhost:3000'.</msg>
+<status status="PASS" starttime="20201002 16:15:18.750" endtime="20201002 16:15:22.785"></status>
+</kw>
+<status status="PASS" starttime="20201002 16:15:18.749" endtime="20201002 16:15:22.785"></status>
+</kw>
+<kw name="WHEN login &quot;admin&quot; &quot;123123&quot;">
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>css:#root &gt; div &gt; div &gt; div.card &gt; div &gt; div:nth-child(2) &gt; input</arg>
+<arg>${username}</arg>
+</arguments>
+<msg timestamp="20201002 16:15:22.787" level="INFO">Typing text 'admin' into text field 'css:#root &gt; div &gt; div &gt; div.card &gt; div &gt; div:nth-child(2) &gt; input'.</msg>
+<status status="PASS" starttime="20201002 16:15:22.787" endtime="20201002 16:15:22.915"></status>
+</kw>
+<kw name="Input Password" library="Selenium2Library">
+<doc>Types the given password into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>css:#root &gt; div &gt; div &gt; div.card &gt; div &gt; div:nth-child(3) &gt; input</arg>
+<arg>${password}</arg>
+</arguments>
+<msg timestamp="20201002 16:15:22.915" level="INFO">Typing password into text field 'css:#root &gt; div &gt; div &gt; div.card &gt; div &gt; div:nth-child(3) &gt; input'.</msg>
+<msg timestamp="20201002 16:15:22.952" level="INFO">Temporally setting log level to: NONE</msg>
+<msg timestamp="20201002 16:15:22.992" level="INFO">Log level changed from NONE to INFO.</msg>
+<status status="PASS" starttime="20201002 16:15:22.915" endtime="20201002 16:15:22.992"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>css:#root &gt; div &gt; div &gt; div.card &gt; div &gt; div.row &gt; div &gt; button</arg>
+</arguments>
+<msg timestamp="20201002 16:15:22.992" level="INFO">Clicking element 'css:#root &gt; div &gt; div &gt; div.card &gt; div &gt; div.row &gt; div &gt; button'.</msg>
+<status status="PASS" starttime="20201002 16:15:22.992" endtime="20201002 16:15:23.042"></status>
+</kw>
+<status status="PASS" starttime="20201002 16:15:22.786" endtime="20201002 16:15:23.043"></status>
+</kw>
+<kw name="AND The url must be &quot;http://localhost:3000/upload&quot;">
+<kw name="Wait Until Location Is" library="Selenium2Library">
+<doc>Waits until the current URL is ``expected``.</doc>
+<arguments>
+<arg>${text}</arg>
+<arg>5</arg>
+</arguments>
+<status status="PASS" starttime="20201002 16:15:23.044" endtime="20201002 16:15:23.379"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>css:#measurement-3d-tab</arg>
+</arguments>
+<msg timestamp="20201002 16:15:23.380" level="INFO">Clicking element 'css:#measurement-3d-tab'.</msg>
+<status status="PASS" starttime="20201002 16:15:23.379" endtime="20201002 16:15:23.434"></status>
+</kw>
+<status status="PASS" starttime="20201002 16:15:23.043" endtime="20201002 16:15:23.435"></status>
+</kw>
+<kw name="AND Choose file &quot;C:/Users/First-AP/Desktop/Homework/4th Year/CSI_project/Test data/DPML_test_img/all_extension/BMP.bmp&quot;">
+<kw name="Choose File" library="Selenium2Library">
+<doc>Inputs the ``file_path`` into the file input field ``locator``.</doc>
+<arguments>
+<arg>css:.file-3d .filepond--browser</arg>
+<arg>${path}</arg>
+</arguments>
+<msg timestamp="20201002 16:15:23.437" level="INFO">Sending C:\Users\First-AP\Desktop\Homework\4th Year\CSI_project\Test data\DPML_test_img\all_extension\BMP.bmp to browser.</msg>
+<status status="PASS" starttime="20201002 16:15:23.436" endtime="20201002 16:15:23.481"></status>
+</kw>
+<status status="PASS" starttime="20201002 16:15:23.435" endtime="20201002 16:15:23.481"></status>
+</kw>
+<kw name="AND Wait &quot;1&quot;">
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>${sec}</arg>
+</arguments>
+<msg timestamp="20201002 16:15:24.483" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20201002 16:15:23.482" endtime="20201002 16:15:24.483"></status>
+</kw>
+<status status="PASS" starttime="20201002 16:15:23.482" endtime="20201002 16:15:24.483"></status>
+</kw>
+<kw name="AND Choose file &quot;C:/Users/First-AP/Desktop/Homework/4th Year/CSI_project/Test data/DPML_test_img/all_extension/BMP.bmp&quot;">
+<kw name="Choose File" library="Selenium2Library">
+<doc>Inputs the ``file_path`` into the file input field ``locator``.</doc>
+<arguments>
+<arg>css:.file-3d .filepond--browser</arg>
+<arg>${path}</arg>
+</arguments>
+<msg timestamp="20201002 16:15:24.485" level="INFO">Sending C:\Users\First-AP\Desktop\Homework\4th Year\CSI_project\Test data\DPML_test_img\all_extension\BMP.bmp to browser.</msg>
+<status status="PASS" starttime="20201002 16:15:24.485" endtime="20201002 16:15:24.537"></status>
+</kw>
+<status status="PASS" starttime="20201002 16:15:24.484" endtime="20201002 16:15:24.537"></status>
+</kw>
+<kw name="AND Wait &quot;1&quot;">
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>${sec}</arg>
+</arguments>
+<msg timestamp="20201002 16:15:25.541" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20201002 16:15:24.541" endtime="20201002 16:15:25.541"></status>
+</kw>
+<status status="PASS" starttime="20201002 16:15:24.540" endtime="20201002 16:15:25.541"></status>
+</kw>
+<kw name="AND Dropdown should be enabled">
+<kw name="Element Should Be Enabled" library="Selenium2Library">
+<doc>Verifies that element identified by ``locator`` is enabled.</doc>
+<arguments>
+<arg>css:#measurement-3d &gt; div.row.d-flex.justify-content-center.align-content-center &gt; div.col-md-3 &gt; select</arg>
+</arguments>
+<status status="PASS" starttime="20201002 16:15:25.543" endtime="20201002 16:15:25.580"></status>
+</kw>
+<status status="PASS" starttime="20201002 16:15:25.542" endtime="20201002 16:15:25.580"></status>
+</kw>
+<kw name="THEN Wait &quot;1&quot;">
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>${sec}</arg>
+</arguments>
+<msg timestamp="20201002 16:15:26.583" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20201002 16:15:25.581" endtime="20201002 16:15:26.583"></status>
+</kw>
+<status status="PASS" starttime="20201002 16:15:25.581" endtime="20201002 16:15:26.583"></status>
+</kw>
+<kw name="Close Browser" library="Selenium2Library" type="teardown">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20201002 16:15:26.584" endtime="20201002 16:15:29.104"></status>
+</kw>
+<doc>เลือกไฟล์รูปภาพด้วยนามสกุลไฟล์ "*.bpm" และขนาดไฟล์รูปภาพน้อยกว่าเท่ากับ 10 MB</doc>
+<tags>
+<tag>Positive</tag>
+</tags>
+<status status="PASS" starttime="20201002 16:15:18.747" endtime="20201002 16:15:29.105" critical="yes"></status>
+</test>
+<status status="PASS" starttime="20201002 16:15:18.531" endtime="20201002 16:15:29.118"></status>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0">Critical Tests</stat>
+<stat pass="1" fail="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="1" fail="0">Positive</stat>
+</tag>
+<suite>
+<stat pass="1" fail="0" id="s1" name="DPML-02-1 เลือกไฟล์รูปภาพสำหรับการวัดขนาดวัตถุ">DPML-02-1 เลือกไฟล์รูปภาพสำหรับการวัดขนาดวัตถุ</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
