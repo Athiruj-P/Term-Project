@@ -1,0 +1,1986 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 3.2.2 (Python 3.8.3 on win32)" generated="20200915 16:56:48.140" rpa="false">
+<suite id="s1" name="DPML-04-2 แก้ไขข้อมูลต้นแบบของวัตถุอ้างอิง" source="C:\Users\First-AP\Desktop\Homework\4th Year\CSI_project\เอกสารการทดสอบระบบ\Automate_test\DPML-04\DPML-04-2\DPML-04-2_แก้ไขข้อมูลต้นแบบของวัตถุอ้างอิง.robot">
+<test id="s1-t1" name="DPML-04-2-1">
+<kw name="GIVEN open web">
+<kw name="Open Browser" library="Selenium2Library">
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<arguments>
+<arg>${dpml_url}</arg>
+<arg>chrome</arg>
+</arguments>
+<msg timestamp="20200915 16:56:48.331" level="INFO">Opening browser 'chrome' to base url 'http://localhost'.</msg>
+<status status="PASS" starttime="20200915 16:56:48.331" endtime="20200915 16:56:52.035"></status>
+</kw>
+<status status="PASS" starttime="20200915 16:56:48.330" endtime="20200915 16:56:52.035"></status>
+</kw>
+<kw name="WHEN login &quot;admin&quot; &quot;123123&quot;">
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>${input_username}</arg>
+<arg>${username}</arg>
+</arguments>
+<msg timestamp="20200915 16:56:52.037" level="INFO">Typing text 'admin' into text field 'css:#root &gt; div &gt; div &gt; div.card &gt; div &gt; div:nth-child(2) &gt; input'.</msg>
+<status status="PASS" starttime="20200915 16:56:52.036" endtime="20200915 16:56:52.126"></status>
+</kw>
+<kw name="Input Password" library="Selenium2Library">
+<doc>Types the given password into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>${input_password}</arg>
+<arg>${password}</arg>
+</arguments>
+<msg timestamp="20200915 16:56:52.126" level="INFO">Typing password into text field 'css:#root &gt; div &gt; div &gt; div.card &gt; div &gt; div:nth-child(3) &gt; input'.</msg>
+<msg timestamp="20200915 16:56:52.162" level="INFO">Temporally setting log level to: NONE</msg>
+<msg timestamp="20200915 16:56:52.200" level="INFO">Log level changed from NONE to INFO.</msg>
+<status status="PASS" starttime="20200915 16:56:52.126" endtime="20200915 16:56:52.200"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${login_btn}</arg>
+</arguments>
+<msg timestamp="20200915 16:56:52.200" level="INFO">Clicking element 'css:#root &gt; div &gt; div &gt; div.card &gt; div &gt; div.row &gt; div &gt; button'.</msg>
+<status status="PASS" starttime="20200915 16:56:52.200" endtime="20200915 16:56:52.242"></status>
+</kw>
+<status status="PASS" starttime="20200915 16:56:52.036" endtime="20200915 16:56:52.243"></status>
+</kw>
+<kw name="AND The url must be &quot;http://localhost/upload&quot;">
+<kw name="Wait Until Location Is" library="Selenium2Library">
+<doc>Waits until the current URL is ``expected``.</doc>
+<arguments>
+<arg>${text}</arg>
+<arg>5</arg>
+</arguments>
+<status status="PASS" starttime="20200915 16:56:52.244" endtime="20200915 16:56:52.455"></status>
+</kw>
+<status status="PASS" starttime="20200915 16:56:52.243" endtime="20200915 16:56:52.455"></status>
+</kw>
+<kw name="AND select menu">
+<kw name="Execute Javascript" library="Selenium2Library">
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<arguments>
+<arg>window.location.replace("/ref_management")</arg>
+</arguments>
+<msg timestamp="20200915 16:56:52.459" level="INFO">Executing JavaScript:
+window.location.replace("/ref_management")
+Without any arguments.</msg>
+<status status="PASS" starttime="20200915 16:56:52.457" endtime="20200915 16:56:52.564"></status>
+</kw>
+<status status="PASS" starttime="20200915 16:56:52.456" endtime="20200915 16:56:52.564"></status>
+</kw>
+<kw name="AND The url must be &quot;http://localhost/ref_management&quot;">
+<kw name="Wait Until Location Is" library="Selenium2Library">
+<doc>Waits until the current URL is ``expected``.</doc>
+<arguments>
+<arg>${text}</arg>
+<arg>5</arg>
+</arguments>
+<status status="PASS" starttime="20200915 16:56:52.566" endtime="20200915 16:56:52.572"></status>
+</kw>
+<status status="PASS" starttime="20200915 16:56:52.565" endtime="20200915 16:56:52.572"></status>
+</kw>
+<kw name="AND Wait &quot;1&quot;">
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>${sec}</arg>
+</arguments>
+<msg timestamp="20200915 16:56:53.574" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20200915 16:56:52.573" endtime="20200915 16:56:53.574"></status>
+</kw>
+<status status="PASS" starttime="20200915 16:56:52.572" endtime="20200915 16:56:53.574"></status>
+</kw>
+<kw name="AND Open modal">
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${open_edit_modal}</arg>
+</arguments>
+<msg timestamp="20200915 16:56:53.576" level="INFO">Clicking element 'css:#DataTables_Table_0 &gt; tbody &gt; tr:nth-child(2) &gt; td.d-flex.justify-content-center &gt; div &gt; button.btn.btn-warning.btn-sm.mr-2'.</msg>
+<status status="PASS" starttime="20200915 16:56:53.576" endtime="20200915 16:56:53.651"></status>
+</kw>
+<status status="PASS" starttime="20200915 16:56:53.575" endtime="20200915 16:56:53.651"></status>
+</kw>
+<kw name="AND Wait &quot;1&quot;">
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>${sec}</arg>
+</arguments>
+<msg timestamp="20200915 16:56:54.653" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20200915 16:56:53.652" endtime="20200915 16:56:54.653"></status>
+</kw>
+<status status="PASS" starttime="20200915 16:56:53.652" endtime="20200915 16:56:54.653"></status>
+</kw>
+<kw name="AND Insert model name &quot;robot_ref_1_edit&quot;">
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>${input_model_name}</arg>
+<arg>${name}</arg>
+</arguments>
+<msg timestamp="20200915 16:56:54.655" level="INFO">Typing text 'robot_ref_1_edit' into text field 'css:#model_name'.</msg>
+<status status="PASS" starttime="20200915 16:56:54.655" endtime="20200915 16:56:54.922"></status>
+</kw>
+<status status="PASS" starttime="20200915 16:56:54.653" endtime="20200915 16:56:54.922"></status>
+</kw>
+<kw name="AND Insert model width &quot;30&quot;">
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>${input_model_width}</arg>
+<arg>${width}</arg>
+</arguments>
+<msg timestamp="20200915 16:56:54.925" level="INFO">Typing text '30' into text field 'css:#width'.</msg>
+<status status="PASS" starttime="20200915 16:56:54.924" endtime="20200915 16:56:55.026"></status>
+</kw>
+<status status="PASS" starttime="20200915 16:56:54.924" endtime="20200915 16:56:55.026"></status>
+</kw>
+<kw name="AND Insert model height &quot;30&quot;">
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>${input_model_height}</arg>
+<arg>${height}</arg>
+</arguments>
+<msg timestamp="20200915 16:56:55.028" level="INFO">Typing text '30' into text field 'css:#height'.</msg>
+<status status="PASS" starttime="20200915 16:56:55.027" endtime="20200915 16:56:55.119"></status>
+</kw>
+<status status="PASS" starttime="20200915 16:56:55.027" endtime="20200915 16:56:55.119"></status>
+</kw>
+<kw name="AND Select unit &quot;2&quot;">
+<kw name="Select From List By Value" library="Selenium2Library">
+<doc>Selects options from selection list ``locator`` by ``values``.</doc>
+<arguments>
+<arg>${dropdown}</arg>
+<arg>${value}</arg>
+</arguments>
+<msg timestamp="20200915 16:56:55.120" level="INFO">Selecting options from selection list 'css:#unit' by value 2.</msg>
+<status status="PASS" starttime="20200915 16:56:55.120" endtime="20200915 16:56:55.180"></status>
+</kw>
+<status status="PASS" starttime="20200915 16:56:55.120" endtime="20200915 16:56:55.181"></status>
+</kw>
+<kw name="AND Choose file &quot;C:/Users/First-AP/Desktop/fake_model.weights&quot;">
+<kw name="Choose File" library="Selenium2Library">
+<doc>Inputs the ``file_path`` into the file input field ``locator``.</doc>
+<arguments>
+<arg>${input_weight}</arg>
+<arg>${path}</arg>
+</arguments>
+<msg timestamp="20200915 16:56:55.182" level="INFO">Sending C:\Users\First-AP\Desktop\fake_model.weights to browser.</msg>
+<status status="PASS" starttime="20200915 16:56:55.182" endtime="20200915 16:56:55.246"></status>
+</kw>
+<status status="PASS" starttime="20200915 16:56:55.181" endtime="20200915 16:56:55.246"></status>
+</kw>
+<kw name="AND Click edit button">
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${edit_model_btn}</arg>
+</arguments>
+<msg timestamp="20200915 16:56:55.248" level="INFO">Clicking element 'css:body &gt; div.fade.fade.modal.show &gt; div &gt; div &gt; div.d-flex.justify-content-between.modal-footer &gt; button.btn.btn-warning'.</msg>
+<status status="PASS" starttime="20200915 16:56:55.248" endtime="20200915 16:56:55.337"></status>
+</kw>
+<status status="PASS" starttime="20200915 16:56:55.247" endtime="20200915 16:56:55.337"></status>
+</kw>
+<kw name="AND Progress bar must show up">
+<kw name="Wait Until Element Is Visible" library="Selenium2Library">
+<doc>Waits until the element ``locator`` is visible.</doc>
+<arguments>
+<arg>${progress_bar}</arg>
+<arg>5</arg>
+</arguments>
+<status status="PASS" starttime="20200915 16:56:55.339" endtime="20200915 16:56:55.668"></status>
+</kw>
+<status status="PASS" starttime="20200915 16:56:55.338" endtime="20200915 16:56:55.668"></status>
+</kw>
+<kw name="AND The alert must say &quot;Edited a model data successfully.&quot;">
+<kw name="Wait Until Page Contains" library="Selenium2Library">
+<doc>Waits until ``text`` appears on the current page.</doc>
+<arguments>
+<arg>${text}</arg>
+<arg>30</arg>
+</arguments>
+<status status="PASS" starttime="20200915 16:56:55.671" endtime="20200915 16:56:56.939"></status>
+</kw>
+<status status="PASS" starttime="20200915 16:56:55.670" endtime="20200915 16:56:56.939"></status>
+</kw>
+<kw name="THEN Wait &quot;1&quot;">
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>${sec}</arg>
+</arguments>
+<msg timestamp="20200915 16:56:57.942" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20200915 16:56:56.940" endtime="20200915 16:56:57.942"></status>
+</kw>
+<status status="PASS" starttime="20200915 16:56:56.940" endtime="20200915 16:56:57.942"></status>
+</kw>
+<kw name="Close Browser" library="Selenium2Library" type="teardown">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20200915 16:56:57.943" endtime="20200915 16:57:00.087"></status>
+</kw>
+<doc>แก้ไขข้อมูลต้นแบบของวัตถุอ้างอิงที่มีสถานะปิดใช้งานโดย
+กรอกชื่อข้อมูลต้นแบบของวัตถุอ้างอิง ขนาดความกว้าง
+ขนาดความยาว เลือกหน่วยในการวัดขนาดวัตถุ
+และเลือกไฟล์ข้อมูลต้นแบบของวัตถุอ้างอิงโดยนามสกุลไฟล์ถูกต้อง</doc>
+<tags>
+<tag>Positive</tag>
+</tags>
+<status status="PASS" starttime="20200915 16:56:48.326" endtime="20200915 16:57:00.088" critical="yes"></status>
+</test>
+<test id="s1-t2" name="DPML-04-2-2">
+<kw name="GIVEN open web">
+<kw name="Open Browser" library="Selenium2Library">
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<arguments>
+<arg>${dpml_url}</arg>
+<arg>chrome</arg>
+</arguments>
+<msg timestamp="20200915 16:57:00.094" level="INFO">Opening browser 'chrome' to base url 'http://localhost'.</msg>
+<status status="PASS" starttime="20200915 16:57:00.094" endtime="20200915 16:57:03.598"></status>
+</kw>
+<status status="PASS" starttime="20200915 16:57:00.093" endtime="20200915 16:57:03.598"></status>
+</kw>
+<kw name="WHEN login &quot;admin&quot; &quot;123123&quot;">
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>${input_username}</arg>
+<arg>${username}</arg>
+</arguments>
+<msg timestamp="20200915 16:57:03.600" level="INFO">Typing text 'admin' into text field 'css:#root &gt; div &gt; div &gt; div.card &gt; div &gt; div:nth-child(2) &gt; input'.</msg>
+<status status="PASS" starttime="20200915 16:57:03.599" endtime="20200915 16:57:03.689"></status>
+</kw>
+<kw name="Input Password" library="Selenium2Library">
+<doc>Types the given password into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>${input_password}</arg>
+<arg>${password}</arg>
+</arguments>
+<msg timestamp="20200915 16:57:03.690" level="INFO">Typing password into text field 'css:#root &gt; div &gt; div &gt; div.card &gt; div &gt; div:nth-child(3) &gt; input'.</msg>
+<msg timestamp="20200915 16:57:03.724" level="INFO">Temporally setting log level to: NONE</msg>
+<msg timestamp="20200915 16:57:03.764" level="INFO">Log level changed from NONE to INFO.</msg>
+<status status="PASS" starttime="20200915 16:57:03.690" endtime="20200915 16:57:03.764"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${login_btn}</arg>
+</arguments>
+<msg timestamp="20200915 16:57:03.764" level="INFO">Clicking element 'css:#root &gt; div &gt; div &gt; div.card &gt; div &gt; div.row &gt; div &gt; button'.</msg>
+<status status="PASS" starttime="20200915 16:57:03.764" endtime="20200915 16:57:03.809"></status>
+</kw>
+<status status="PASS" starttime="20200915 16:57:03.599" endtime="20200915 16:57:03.809"></status>
+</kw>
+<kw name="AND The url must be &quot;http://localhost/upload&quot;">
+<kw name="Wait Until Location Is" library="Selenium2Library">
+<doc>Waits until the current URL is ``expected``.</doc>
+<arguments>
+<arg>${text}</arg>
+<arg>5</arg>
+</arguments>
+<status status="PASS" starttime="20200915 16:57:03.810" endtime="20200915 16:57:04.025"></status>
+</kw>
+<status status="PASS" starttime="20200915 16:57:03.810" endtime="20200915 16:57:04.026"></status>
+</kw>
+<kw name="AND select menu">
+<kw name="Execute Javascript" library="Selenium2Library">
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<arguments>
+<arg>window.location.replace("/ref_management")</arg>
+</arguments>
+<msg timestamp="20200915 16:57:04.027" level="INFO">Executing JavaScript:
+window.location.replace("/ref_management")
+Without any arguments.</msg>
+<status status="PASS" starttime="20200915 16:57:04.026" endtime="20200915 16:57:04.141"></status>
+</kw>
+<status status="PASS" starttime="20200915 16:57:04.026" endtime="20200915 16:57:04.141"></status>
+</kw>
+<kw name="AND The url must be &quot;http://localhost/ref_management&quot;">
+<kw name="Wait Until Location Is" library="Selenium2Library">
+<doc>Waits until the current URL is ``expected``.</doc>
+<arguments>
+<arg>${text}</arg>
+<arg>5</arg>
+</arguments>
+<status status="PASS" starttime="20200915 16:57:04.143" endtime="20200915 16:57:04.150"></status>
+</kw>
+<status status="PASS" starttime="20200915 16:57:04.142" endtime="20200915 16:57:04.150"></status>
+</kw>
+<kw name="AND Wait &quot;1&quot;">
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>${sec}</arg>
+</arguments>
+<msg timestamp="20200915 16:57:05.155" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20200915 16:57:04.152" endtime="20200915 16:57:05.155"></status>
+</kw>
+<status status="PASS" starttime="20200915 16:57:04.151" endtime="20200915 16:57:05.155"></status>
+</kw>
+<kw name="AND Open modal">
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${open_edit_modal}</arg>
+</arguments>
+<msg timestamp="20200915 16:57:05.157" level="INFO">Clicking element 'css:#DataTables_Table_0 &gt; tbody &gt; tr:nth-child(2) &gt; td.d-flex.justify-content-center &gt; div &gt; button.btn.btn-warning.btn-sm.mr-2'.</msg>
+<status status="PASS" starttime="20200915 16:57:05.157" endtime="20200915 16:57:05.235"></status>
+</kw>
+<status status="PASS" starttime="20200915 16:57:05.156" endtime="20200915 16:57:05.235"></status>
+</kw>
+<kw name="AND Wait &quot;1&quot;">
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>${sec}</arg>
+</arguments>
+<msg timestamp="20200915 16:57:06.237" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20200915 16:57:05.236" endtime="20200915 16:57:06.237"></status>
+</kw>
+<status status="PASS" starttime="20200915 16:57:05.235" endtime="20200915 16:57:06.237"></status>
+</kw>
+<kw name="AND Insert model name &quot;robot_rename&quot;">
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>${input_model_name}</arg>
+<arg>${name}</arg>
+</arguments>
+<msg timestamp="20200915 16:57:06.238" level="INFO">Typing text 'robot_rename' into text field 'css:#model_name'.</msg>
+<status status="PASS" starttime="20200915 16:57:06.238" endtime="20200915 16:57:06.459"></status>
+</kw>
+<status status="PASS" starttime="20200915 16:57:06.238" endtime="20200915 16:57:06.460"></status>
+</kw>
+<kw name="AND Click edit button">
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${edit_model_btn}</arg>
+</arguments>
+<msg timestamp="20200915 16:57:06.462" level="INFO">Clicking element 'css:body &gt; div.fade.fade.modal.show &gt; div &gt; div &gt; div.d-flex.justify-content-between.modal-footer &gt; button.btn.btn-warning'.</msg>
+<status status="PASS" starttime="20200915 16:57:06.462" endtime="20200915 16:57:06.526"></status>
+</kw>
+<status status="PASS" starttime="20200915 16:57:06.461" endtime="20200915 16:57:06.526"></status>
+</kw>
+<kw name="AND The alert must say &quot;Edited a model data successfully.&quot;">
+<kw name="Wait Until Page Contains" library="Selenium2Library">
+<doc>Waits until ``text`` appears on the current page.</doc>
+<arguments>
+<arg>${text}</arg>
+<arg>30</arg>
+</arguments>
+<status status="PASS" starttime="20200915 16:57:06.528" endtime="20200915 16:57:06.756"></status>
+</kw>
+<status status="PASS" starttime="20200915 16:57:06.527" endtime="20200915 16:57:06.756"></status>
+</kw>
+<kw name="THEN Wait &quot;1&quot;">
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>${sec}</arg>
+</arguments>
+<msg timestamp="20200915 16:57:07.758" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20200915 16:57:06.757" endtime="20200915 16:57:07.758"></status>
+</kw>
+<status status="PASS" starttime="20200915 16:57:06.757" endtime="20200915 16:57:07.758"></status>
+</kw>
+<kw name="Close Browser" library="Selenium2Library" type="teardown">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20200915 16:57:07.759" endtime="20200915 16:57:09.882"></status>
+</kw>
+<doc>แก้ไขข้อมูลต้นแบบของวัตถุอ้างอิงที่มีสถานะปิดใช้งานโดยแก้ไขเฉพาะชื่อข้อมูลต้นแบบของวัตถุอ้างอิงถูกต้อง</doc>
+<tags>
+<tag>Positive</tag>
+</tags>
+<status status="PASS" starttime="20200915 16:57:00.090" endtime="20200915 16:57:09.883" critical="yes"></status>
+</test>
+<test id="s1-t3" name="DPML-04-2-3">
+<kw name="GIVEN open web">
+<kw name="Open Browser" library="Selenium2Library">
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<arguments>
+<arg>${dpml_url}</arg>
+<arg>chrome</arg>
+</arguments>
+<msg timestamp="20200915 16:57:09.893" level="INFO">Opening browser 'chrome' to base url 'http://localhost'.</msg>
+<status status="PASS" starttime="20200915 16:57:09.893" endtime="20200915 16:57:13.364"></status>
+</kw>
+<status status="PASS" starttime="20200915 16:57:09.892" endtime="20200915 16:57:13.364"></status>
+</kw>
+<kw name="WHEN login &quot;admin&quot; &quot;123123&quot;">
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>${input_username}</arg>
+<arg>${username}</arg>
+</arguments>
+<msg timestamp="20200915 16:57:13.366" level="INFO">Typing text 'admin' into text field 'css:#root &gt; div &gt; div &gt; div.card &gt; div &gt; div:nth-child(2) &gt; input'.</msg>
+<status status="PASS" starttime="20200915 16:57:13.365" endtime="20200915 16:57:13.459"></status>
+</kw>
+<kw name="Input Password" library="Selenium2Library">
+<doc>Types the given password into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>${input_password}</arg>
+<arg>${password}</arg>
+</arguments>
+<msg timestamp="20200915 16:57:13.459" level="INFO">Typing password into text field 'css:#root &gt; div &gt; div &gt; div.card &gt; div &gt; div:nth-child(3) &gt; input'.</msg>
+<msg timestamp="20200915 16:57:13.493" level="INFO">Temporally setting log level to: NONE</msg>
+<msg timestamp="20200915 16:57:13.531" level="INFO">Log level changed from NONE to INFO.</msg>
+<status status="PASS" starttime="20200915 16:57:13.459" endtime="20200915 16:57:13.532"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${login_btn}</arg>
+</arguments>
+<msg timestamp="20200915 16:57:13.532" level="INFO">Clicking element 'css:#root &gt; div &gt; div &gt; div.card &gt; div &gt; div.row &gt; div &gt; button'.</msg>
+<status status="PASS" starttime="20200915 16:57:13.532" endtime="20200915 16:57:13.575"></status>
+</kw>
+<status status="PASS" starttime="20200915 16:57:13.365" endtime="20200915 16:57:13.576"></status>
+</kw>
+<kw name="AND The url must be &quot;http://localhost/upload&quot;">
+<kw name="Wait Until Location Is" library="Selenium2Library">
+<doc>Waits until the current URL is ``expected``.</doc>
+<arguments>
+<arg>${text}</arg>
+<arg>5</arg>
+</arguments>
+<status status="PASS" starttime="20200915 16:57:13.577" endtime="20200915 16:57:13.789"></status>
+</kw>
+<status status="PASS" starttime="20200915 16:57:13.576" endtime="20200915 16:57:13.789"></status>
+</kw>
+<kw name="AND select menu">
+<kw name="Execute Javascript" library="Selenium2Library">
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<arguments>
+<arg>window.location.replace("/ref_management")</arg>
+</arguments>
+<msg timestamp="20200915 16:57:13.792" level="INFO">Executing JavaScript:
+window.location.replace("/ref_management")
+Without any arguments.</msg>
+<status status="PASS" starttime="20200915 16:57:13.791" endtime="20200915 16:57:13.931"></status>
+</kw>
+<status status="PASS" starttime="20200915 16:57:13.790" endtime="20200915 16:57:13.932"></status>
+</kw>
+<kw name="AND The url must be &quot;http://localhost/ref_management&quot;">
+<kw name="Wait Until Location Is" library="Selenium2Library">
+<doc>Waits until the current URL is ``expected``.</doc>
+<arguments>
+<arg>${text}</arg>
+<arg>5</arg>
+</arguments>
+<status status="PASS" starttime="20200915 16:57:13.934" endtime="20200915 16:57:13.940"></status>
+</kw>
+<status status="PASS" starttime="20200915 16:57:13.933" endtime="20200915 16:57:13.940"></status>
+</kw>
+<kw name="AND Wait &quot;1&quot;">
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>${sec}</arg>
+</arguments>
+<msg timestamp="20200915 16:57:14.942" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20200915 16:57:13.941" endtime="20200915 16:57:14.942"></status>
+</kw>
+<status status="PASS" starttime="20200915 16:57:13.941" endtime="20200915 16:57:14.942"></status>
+</kw>
+<kw name="AND Open modal">
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${open_edit_modal}</arg>
+</arguments>
+<msg timestamp="20200915 16:57:14.943" level="INFO">Clicking element 'css:#DataTables_Table_0 &gt; tbody &gt; tr:nth-child(2) &gt; td.d-flex.justify-content-center &gt; div &gt; button.btn.btn-warning.btn-sm.mr-2'.</msg>
+<status status="PASS" starttime="20200915 16:57:14.942" endtime="20200915 16:57:15.028"></status>
+</kw>
+<status status="PASS" starttime="20200915 16:57:14.942" endtime="20200915 16:57:15.028"></status>
+</kw>
+<kw name="AND Wait &quot;1&quot;">
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>${sec}</arg>
+</arguments>
+<msg timestamp="20200915 16:57:16.033" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20200915 16:57:15.030" endtime="20200915 16:57:16.033"></status>
+</kw>
+<status status="PASS" starttime="20200915 16:57:15.030" endtime="20200915 16:57:16.033"></status>
+</kw>
+<kw name="AND Choose file &quot;C:/Users/First-AP/Desktop/fake_model.weights&quot;">
+<kw name="Choose File" library="Selenium2Library">
+<doc>Inputs the ``file_path`` into the file input field ``locator``.</doc>
+<arguments>
+<arg>${input_weight}</arg>
+<arg>${path}</arg>
+</arguments>
+<msg timestamp="20200915 16:57:16.034" level="INFO">Sending C:\Users\First-AP\Desktop\fake_model.weights to browser.</msg>
+<status status="PASS" starttime="20200915 16:57:16.033" endtime="20200915 16:57:16.085"></status>
+</kw>
+<status status="PASS" starttime="20200915 16:57:16.033" endtime="20200915 16:57:16.086"></status>
+</kw>
+<kw name="AND Click edit button">
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${edit_model_btn}</arg>
+</arguments>
+<msg timestamp="20200915 16:57:16.087" level="INFO">Clicking element 'css:body &gt; div.fade.fade.modal.show &gt; div &gt; div &gt; div.d-flex.justify-content-between.modal-footer &gt; button.btn.btn-warning'.</msg>
+<status status="PASS" starttime="20200915 16:57:16.087" endtime="20200915 16:57:16.150"></status>
+</kw>
+<status status="PASS" starttime="20200915 16:57:16.087" endtime="20200915 16:57:16.150"></status>
+</kw>
+<kw name="AND Progress bar must show up">
+<kw name="Wait Until Element Is Visible" library="Selenium2Library">
+<doc>Waits until the element ``locator`` is visible.</doc>
+<arguments>
+<arg>${progress_bar}</arg>
+<arg>5</arg>
+</arguments>
+<status status="PASS" starttime="20200915 16:57:16.152" endtime="20200915 16:57:16.420"></status>
+</kw>
+<status status="PASS" starttime="20200915 16:57:16.151" endtime="20200915 16:57:16.421"></status>
+</kw>
+<kw name="AND The alert must say &quot;Edited a model data successfully.&quot;">
+<kw name="Wait Until Page Contains" library="Selenium2Library">
+<doc>Waits until ``text`` appears on the current page.</doc>
+<arguments>
+<arg>${text}</arg>
+<arg>30</arg>
+</arguments>
+<status status="PASS" starttime="20200915 16:57:16.423" endtime="20200915 16:57:17.695"></status>
+</kw>
+<status status="PASS" starttime="20200915 16:57:16.422" endtime="20200915 16:57:17.695"></status>
+</kw>
+<kw name="THEN Wait &quot;1&quot;">
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>${sec}</arg>
+</arguments>
+<msg timestamp="20200915 16:57:18.698" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20200915 16:57:17.696" endtime="20200915 16:57:18.698"></status>
+</kw>
+<status status="PASS" starttime="20200915 16:57:17.696" endtime="20200915 16:57:18.698"></status>
+</kw>
+<kw name="Close Browser" library="Selenium2Library" type="teardown">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20200915 16:57:18.698" endtime="20200915 16:57:20.834"></status>
+</kw>
+<doc>แก้ไขข้อมูลต้นแบบของวัตถุอ้างอิงที่มีสถานะปิดใช้งานโดยแก้ไขเฉพาะ
+เลือกไฟล์ข้อมูลต้นแบบของวัตถุอ้างอิงโดยนามสกุลไฟล์ถูกต้อง</doc>
+<tags>
+<tag>Positive</tag>
+</tags>
+<status status="PASS" starttime="20200915 16:57:09.889" endtime="20200915 16:57:20.835" critical="yes"></status>
+</test>
+<test id="s1-t4" name="DPML-04-2-4">
+<kw name="GIVEN open web">
+<kw name="Open Browser" library="Selenium2Library">
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<arguments>
+<arg>${dpml_url}</arg>
+<arg>chrome</arg>
+</arguments>
+<msg timestamp="20200915 16:57:20.846" level="INFO">Opening browser 'chrome' to base url 'http://localhost'.</msg>
+<status status="PASS" starttime="20200915 16:57:20.845" endtime="20200915 16:57:24.351"></status>
+</kw>
+<status status="PASS" starttime="20200915 16:57:20.845" endtime="20200915 16:57:24.351"></status>
+</kw>
+<kw name="WHEN login &quot;admin&quot; &quot;123123&quot;">
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>${input_username}</arg>
+<arg>${username}</arg>
+</arguments>
+<msg timestamp="20200915 16:57:24.356" level="INFO">Typing text 'admin' into text field 'css:#root &gt; div &gt; div &gt; div.card &gt; div &gt; div:nth-child(2) &gt; input'.</msg>
+<status status="PASS" starttime="20200915 16:57:24.354" endtime="20200915 16:57:24.466"></status>
+</kw>
+<kw name="Input Password" library="Selenium2Library">
+<doc>Types the given password into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>${input_password}</arg>
+<arg>${password}</arg>
+</arguments>
+<msg timestamp="20200915 16:57:24.466" level="INFO">Typing password into text field 'css:#root &gt; div &gt; div &gt; div.card &gt; div &gt; div:nth-child(3) &gt; input'.</msg>
+<msg timestamp="20200915 16:57:24.510" level="INFO">Temporally setting log level to: NONE</msg>
+<msg timestamp="20200915 16:57:24.558" level="INFO">Log level changed from NONE to INFO.</msg>
+<status status="PASS" starttime="20200915 16:57:24.466" endtime="20200915 16:57:24.558"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${login_btn}</arg>
+</arguments>
+<msg timestamp="20200915 16:57:24.558" level="INFO">Clicking element 'css:#root &gt; div &gt; div &gt; div.card &gt; div &gt; div.row &gt; div &gt; button'.</msg>
+<status status="PASS" starttime="20200915 16:57:24.558" endtime="20200915 16:57:24.618"></status>
+</kw>
+<status status="PASS" starttime="20200915 16:57:24.353" endtime="20200915 16:57:24.618"></status>
+</kw>
+<kw name="AND The url must be &quot;http://localhost/upload&quot;">
+<kw name="Wait Until Location Is" library="Selenium2Library">
+<doc>Waits until the current URL is ``expected``.</doc>
+<arguments>
+<arg>${text}</arg>
+<arg>5</arg>
+</arguments>
+<status status="PASS" starttime="20200915 16:57:24.619" endtime="20200915 16:57:24.889"></status>
+</kw>
+<status status="PASS" starttime="20200915 16:57:24.619" endtime="20200915 16:57:24.889"></status>
+</kw>
+<kw name="AND select menu">
+<kw name="Execute Javascript" library="Selenium2Library">
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<arguments>
+<arg>window.location.replace("/ref_management")</arg>
+</arguments>
+<msg timestamp="20200915 16:57:24.894" level="INFO">Executing JavaScript:
+window.location.replace("/ref_management")
+Without any arguments.</msg>
+<status status="PASS" starttime="20200915 16:57:24.893" endtime="20200915 16:57:25.102"></status>
+</kw>
+<status status="PASS" starttime="20200915 16:57:24.892" endtime="20200915 16:57:25.103"></status>
+</kw>
+<kw name="AND The url must be &quot;http://localhost/ref_management&quot;">
+<kw name="Wait Until Location Is" library="Selenium2Library">
+<doc>Waits until the current URL is ``expected``.</doc>
+<arguments>
+<arg>${text}</arg>
+<arg>5</arg>
+</arguments>
+<status status="PASS" starttime="20200915 16:57:25.116" endtime="20200915 16:57:25.129"></status>
+</kw>
+<status status="PASS" starttime="20200915 16:57:25.115" endtime="20200915 16:57:25.129"></status>
+</kw>
+<kw name="AND Wait &quot;1&quot;">
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>${sec}</arg>
+</arguments>
+<msg timestamp="20200915 16:57:26.184" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20200915 16:57:25.182" endtime="20200915 16:57:26.184"></status>
+</kw>
+<status status="PASS" starttime="20200915 16:57:25.182" endtime="20200915 16:57:26.184"></status>
+</kw>
+<kw name="AND Open modal">
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${open_edit_modal}</arg>
+</arguments>
+<msg timestamp="20200915 16:57:26.185" level="INFO">Clicking element 'css:#DataTables_Table_0 &gt; tbody &gt; tr:nth-child(2) &gt; td.d-flex.justify-content-center &gt; div &gt; button.btn.btn-warning.btn-sm.mr-2'.</msg>
+<status status="PASS" starttime="20200915 16:57:26.185" endtime="20200915 16:57:26.279"></status>
+</kw>
+<status status="PASS" starttime="20200915 16:57:26.185" endtime="20200915 16:57:26.280"></status>
+</kw>
+<kw name="AND Wait &quot;1&quot;">
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>${sec}</arg>
+</arguments>
+<msg timestamp="20200915 16:57:27.282" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20200915 16:57:26.281" endtime="20200915 16:57:27.282"></status>
+</kw>
+<status status="PASS" starttime="20200915 16:57:26.281" endtime="20200915 16:57:27.282"></status>
+</kw>
+<kw name="AND Insert model height &quot;35&quot;">
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>${input_model_height}</arg>
+<arg>${height}</arg>
+</arguments>
+<msg timestamp="20200915 16:57:27.283" level="INFO">Typing text '35' into text field 'css:#height'.</msg>
+<status status="PASS" starttime="20200915 16:57:27.283" endtime="20200915 16:57:27.395"></status>
+</kw>
+<status status="PASS" starttime="20200915 16:57:27.283" endtime="20200915 16:57:27.395"></status>
+</kw>
+<kw name="AND Click edit button">
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${edit_model_btn}</arg>
+</arguments>
+<msg timestamp="20200915 16:57:27.397" level="INFO">Clicking element 'css:body &gt; div.fade.fade.modal.show &gt; div &gt; div &gt; div.d-flex.justify-content-between.modal-footer &gt; button.btn.btn-warning'.</msg>
+<status status="PASS" starttime="20200915 16:57:27.396" endtime="20200915 16:57:27.463"></status>
+</kw>
+<status status="PASS" starttime="20200915 16:57:27.396" endtime="20200915 16:57:27.464"></status>
+</kw>
+<kw name="AND The alert must say &quot;Edited a model data successfully.&quot;">
+<kw name="Wait Until Page Contains" library="Selenium2Library">
+<doc>Waits until ``text`` appears on the current page.</doc>
+<arguments>
+<arg>${text}</arg>
+<arg>30</arg>
+</arguments>
+<status status="PASS" starttime="20200915 16:57:27.466" endtime="20200915 16:57:27.702"></status>
+</kw>
+<status status="PASS" starttime="20200915 16:57:27.465" endtime="20200915 16:57:27.702"></status>
+</kw>
+<kw name="THEN Wait &quot;1&quot;">
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>${sec}</arg>
+</arguments>
+<msg timestamp="20200915 16:57:28.704" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20200915 16:57:27.703" endtime="20200915 16:57:28.704"></status>
+</kw>
+<status status="PASS" starttime="20200915 16:57:27.703" endtime="20200915 16:57:28.704"></status>
+</kw>
+<kw name="Close Browser" library="Selenium2Library" type="teardown">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20200915 16:57:28.704" endtime="20200915 16:57:30.810"></status>
+</kw>
+<doc>แก้ไขข้อมูลต้นแบบของวัตถุอ้างอิงที่มีสถานะปิดใช้งานโดยแก้ไขเฉพาะขนาดความกว้างถูกต้อง</doc>
+<tags>
+<tag>Negative</tag>
+</tags>
+<status status="PASS" starttime="20200915 16:57:20.842" endtime="20200915 16:57:30.810" critical="yes"></status>
+</test>
+<test id="s1-t5" name="DPML-04-2-5">
+<kw name="GIVEN open web">
+<kw name="Open Browser" library="Selenium2Library">
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<arguments>
+<arg>${dpml_url}</arg>
+<arg>chrome</arg>
+</arguments>
+<msg timestamp="20200915 16:57:30.825" level="INFO">Opening browser 'chrome' to base url 'http://localhost'.</msg>
+<status status="PASS" starttime="20200915 16:57:30.825" endtime="20200915 16:57:34.418"></status>
+</kw>
+<status status="PASS" starttime="20200915 16:57:30.825" endtime="20200915 16:57:34.419"></status>
+</kw>
+<kw name="WHEN login &quot;admin&quot; &quot;123123&quot;">
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>${input_username}</arg>
+<arg>${username}</arg>
+</arguments>
+<msg timestamp="20200915 16:57:34.423" level="INFO">Typing text 'admin' into text field 'css:#root &gt; div &gt; div &gt; div.card &gt; div &gt; div:nth-child(2) &gt; input'.</msg>
+<status status="PASS" starttime="20200915 16:57:34.422" endtime="20200915 16:57:34.516"></status>
+</kw>
+<kw name="Input Password" library="Selenium2Library">
+<doc>Types the given password into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>${input_password}</arg>
+<arg>${password}</arg>
+</arguments>
+<msg timestamp="20200915 16:57:34.517" level="INFO">Typing password into text field 'css:#root &gt; div &gt; div &gt; div.card &gt; div &gt; div:nth-child(3) &gt; input'.</msg>
+<msg timestamp="20200915 16:57:34.553" level="INFO">Temporally setting log level to: NONE</msg>
+<msg timestamp="20200915 16:57:34.594" level="INFO">Log level changed from NONE to INFO.</msg>
+<status status="PASS" starttime="20200915 16:57:34.516" endtime="20200915 16:57:34.594"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${login_btn}</arg>
+</arguments>
+<msg timestamp="20200915 16:57:34.594" level="INFO">Clicking element 'css:#root &gt; div &gt; div &gt; div.card &gt; div &gt; div.row &gt; div &gt; button'.</msg>
+<status status="PASS" starttime="20200915 16:57:34.594" endtime="20200915 16:57:34.641"></status>
+</kw>
+<status status="PASS" starttime="20200915 16:57:34.421" endtime="20200915 16:57:34.641"></status>
+</kw>
+<kw name="AND The url must be &quot;http://localhost/upload&quot;">
+<kw name="Wait Until Location Is" library="Selenium2Library">
+<doc>Waits until the current URL is ``expected``.</doc>
+<arguments>
+<arg>${text}</arg>
+<arg>5</arg>
+</arguments>
+<status status="PASS" starttime="20200915 16:57:34.643" endtime="20200915 16:57:34.891"></status>
+</kw>
+<status status="PASS" starttime="20200915 16:57:34.642" endtime="20200915 16:57:34.891"></status>
+</kw>
+<kw name="AND select menu">
+<kw name="Execute Javascript" library="Selenium2Library">
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<arguments>
+<arg>window.location.replace("/ref_management")</arg>
+</arguments>
+<msg timestamp="20200915 16:57:34.896" level="INFO">Executing JavaScript:
+window.location.replace("/ref_management")
+Without any arguments.</msg>
+<status status="PASS" starttime="20200915 16:57:34.894" endtime="20200915 16:57:35.073"></status>
+</kw>
+<status status="PASS" starttime="20200915 16:57:34.893" endtime="20200915 16:57:35.074"></status>
+</kw>
+<kw name="AND The url must be &quot;http://localhost/ref_management&quot;">
+<kw name="Wait Until Location Is" library="Selenium2Library">
+<doc>Waits until the current URL is ``expected``.</doc>
+<arguments>
+<arg>${text}</arg>
+<arg>5</arg>
+</arguments>
+<status status="PASS" starttime="20200915 16:57:35.076" endtime="20200915 16:57:35.083"></status>
+</kw>
+<status status="PASS" starttime="20200915 16:57:35.075" endtime="20200915 16:57:35.083"></status>
+</kw>
+<kw name="AND Wait &quot;1&quot;">
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>${sec}</arg>
+</arguments>
+<msg timestamp="20200915 16:57:36.088" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20200915 16:57:35.085" endtime="20200915 16:57:36.088"></status>
+</kw>
+<status status="PASS" starttime="20200915 16:57:35.083" endtime="20200915 16:57:36.088"></status>
+</kw>
+<kw name="AND Open modal">
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${open_edit_modal}</arg>
+</arguments>
+<msg timestamp="20200915 16:57:36.089" level="INFO">Clicking element 'css:#DataTables_Table_0 &gt; tbody &gt; tr:nth-child(2) &gt; td.d-flex.justify-content-center &gt; div &gt; button.btn.btn-warning.btn-sm.mr-2'.</msg>
+<status status="PASS" starttime="20200915 16:57:36.089" endtime="20200915 16:57:36.164"></status>
+</kw>
+<status status="PASS" starttime="20200915 16:57:36.089" endtime="20200915 16:57:36.165"></status>
+</kw>
+<kw name="AND Wait &quot;1&quot;">
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>${sec}</arg>
+</arguments>
+<msg timestamp="20200915 16:57:37.170" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20200915 16:57:36.167" endtime="20200915 16:57:37.170"></status>
+</kw>
+<status status="PASS" starttime="20200915 16:57:36.166" endtime="20200915 16:57:37.170"></status>
+</kw>
+<kw name="AND Insert model width &quot;35&quot;">
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>${input_model_width}</arg>
+<arg>${width}</arg>
+</arguments>
+<msg timestamp="20200915 16:57:37.171" level="INFO">Typing text '35' into text field 'css:#width'.</msg>
+<status status="PASS" starttime="20200915 16:57:37.171" endtime="20200915 16:57:37.291"></status>
+</kw>
+<status status="PASS" starttime="20200915 16:57:37.171" endtime="20200915 16:57:37.291"></status>
+</kw>
+<kw name="AND Click edit button">
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${edit_model_btn}</arg>
+</arguments>
+<msg timestamp="20200915 16:57:37.294" level="INFO">Clicking element 'css:body &gt; div.fade.fade.modal.show &gt; div &gt; div &gt; div.d-flex.justify-content-between.modal-footer &gt; button.btn.btn-warning'.</msg>
+<status status="PASS" starttime="20200915 16:57:37.293" endtime="20200915 16:57:37.372"></status>
+</kw>
+<status status="PASS" starttime="20200915 16:57:37.293" endtime="20200915 16:57:37.373"></status>
+</kw>
+<kw name="AND The alert must say &quot;Edited a model data successfully.&quot;">
+<kw name="Wait Until Page Contains" library="Selenium2Library">
+<doc>Waits until ``text`` appears on the current page.</doc>
+<arguments>
+<arg>${text}</arg>
+<arg>30</arg>
+</arguments>
+<status status="PASS" starttime="20200915 16:57:37.375" endtime="20200915 16:57:37.614"></status>
+</kw>
+<status status="PASS" starttime="20200915 16:57:37.374" endtime="20200915 16:57:37.614"></status>
+</kw>
+<kw name="THEN Wait &quot;1&quot;">
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>${sec}</arg>
+</arguments>
+<msg timestamp="20200915 16:57:38.630" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20200915 16:57:37.630" endtime="20200915 16:57:38.630"></status>
+</kw>
+<status status="PASS" starttime="20200915 16:57:37.630" endtime="20200915 16:57:38.630"></status>
+</kw>
+<kw name="Close Browser" library="Selenium2Library" type="teardown">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20200915 16:57:38.631" endtime="20200915 16:57:40.723"></status>
+</kw>
+<doc>แก้ไขข้อมูลต้นแบบของวัตถุอ้างอิงที่มีสถานะปิดใช้งานโดยแก้ไขเฉพาะขนาดความยาวถูกต้อง</doc>
+<tags>
+<tag>Negative</tag>
+</tags>
+<status status="PASS" starttime="20200915 16:57:30.816" endtime="20200915 16:57:40.724" critical="yes"></status>
+</test>
+<test id="s1-t6" name="DPML-04-2-6">
+<kw name="GIVEN open web">
+<kw name="Open Browser" library="Selenium2Library">
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<arguments>
+<arg>${dpml_url}</arg>
+<arg>chrome</arg>
+</arguments>
+<msg timestamp="20200915 16:57:40.729" level="INFO">Opening browser 'chrome' to base url 'http://localhost'.</msg>
+<status status="PASS" starttime="20200915 16:57:40.729" endtime="20200915 16:57:44.499"></status>
+</kw>
+<status status="PASS" starttime="20200915 16:57:40.728" endtime="20200915 16:57:44.499"></status>
+</kw>
+<kw name="WHEN login &quot;admin&quot; &quot;123123&quot;">
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>${input_username}</arg>
+<arg>${username}</arg>
+</arguments>
+<msg timestamp="20200915 16:57:44.503" level="INFO">Typing text 'admin' into text field 'css:#root &gt; div &gt; div &gt; div.card &gt; div &gt; div:nth-child(2) &gt; input'.</msg>
+<status status="PASS" starttime="20200915 16:57:44.503" endtime="20200915 16:57:44.586"></status>
+</kw>
+<kw name="Input Password" library="Selenium2Library">
+<doc>Types the given password into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>${input_password}</arg>
+<arg>${password}</arg>
+</arguments>
+<msg timestamp="20200915 16:57:44.586" level="INFO">Typing password into text field 'css:#root &gt; div &gt; div &gt; div.card &gt; div &gt; div:nth-child(3) &gt; input'.</msg>
+<msg timestamp="20200915 16:57:44.620" level="INFO">Temporally setting log level to: NONE</msg>
+<msg timestamp="20200915 16:57:44.657" level="INFO">Log level changed from NONE to INFO.</msg>
+<status status="PASS" starttime="20200915 16:57:44.586" endtime="20200915 16:57:44.657"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${login_btn}</arg>
+</arguments>
+<msg timestamp="20200915 16:57:44.657" level="INFO">Clicking element 'css:#root &gt; div &gt; div &gt; div.card &gt; div &gt; div.row &gt; div &gt; button'.</msg>
+<status status="PASS" starttime="20200915 16:57:44.657" endtime="20200915 16:57:44.705"></status>
+</kw>
+<status status="PASS" starttime="20200915 16:57:44.502" endtime="20200915 16:57:44.705"></status>
+</kw>
+<kw name="AND The url must be &quot;http://localhost/upload&quot;">
+<kw name="Wait Until Location Is" library="Selenium2Library">
+<doc>Waits until the current URL is ``expected``.</doc>
+<arguments>
+<arg>${text}</arg>
+<arg>5</arg>
+</arguments>
+<status status="PASS" starttime="20200915 16:57:44.707" endtime="20200915 16:57:44.920"></status>
+</kw>
+<status status="PASS" starttime="20200915 16:57:44.706" endtime="20200915 16:57:44.921"></status>
+</kw>
+<kw name="AND select menu">
+<kw name="Execute Javascript" library="Selenium2Library">
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<arguments>
+<arg>window.location.replace("/ref_management")</arg>
+</arguments>
+<msg timestamp="20200915 16:57:44.922" level="INFO">Executing JavaScript:
+window.location.replace("/ref_management")
+Without any arguments.</msg>
+<status status="PASS" starttime="20200915 16:57:44.922" endtime="20200915 16:57:45.058"></status>
+</kw>
+<status status="PASS" starttime="20200915 16:57:44.921" endtime="20200915 16:57:45.058"></status>
+</kw>
+<kw name="AND The url must be &quot;http://localhost/ref_management&quot;">
+<kw name="Wait Until Location Is" library="Selenium2Library">
+<doc>Waits until the current URL is ``expected``.</doc>
+<arguments>
+<arg>${text}</arg>
+<arg>5</arg>
+</arguments>
+<status status="PASS" starttime="20200915 16:57:45.060" endtime="20200915 16:57:45.070"></status>
+</kw>
+<status status="PASS" starttime="20200915 16:57:45.060" endtime="20200915 16:57:45.070"></status>
+</kw>
+<kw name="AND Wait &quot;1&quot;">
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>${sec}</arg>
+</arguments>
+<msg timestamp="20200915 16:57:46.075" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20200915 16:57:45.073" endtime="20200915 16:57:46.075"></status>
+</kw>
+<status status="PASS" starttime="20200915 16:57:45.073" endtime="20200915 16:57:46.075"></status>
+</kw>
+<kw name="AND Open modal">
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${open_edit_modal}</arg>
+</arguments>
+<msg timestamp="20200915 16:57:46.076" level="INFO">Clicking element 'css:#DataTables_Table_0 &gt; tbody &gt; tr:nth-child(2) &gt; td.d-flex.justify-content-center &gt; div &gt; button.btn.btn-warning.btn-sm.mr-2'.</msg>
+<status status="PASS" starttime="20200915 16:57:46.076" endtime="20200915 16:57:46.159"></status>
+</kw>
+<status status="PASS" starttime="20200915 16:57:46.076" endtime="20200915 16:57:46.159"></status>
+</kw>
+<kw name="AND Wait &quot;1&quot;">
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>${sec}</arg>
+</arguments>
+<msg timestamp="20200915 16:57:47.163" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20200915 16:57:46.161" endtime="20200915 16:57:47.163"></status>
+</kw>
+<status status="PASS" starttime="20200915 16:57:46.160" endtime="20200915 16:57:47.163"></status>
+</kw>
+<kw name="AND Insert model width &quot;&quot;">
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>${input_model_width}</arg>
+<arg>${width}</arg>
+</arguments>
+<msg timestamp="20200915 16:57:47.164" level="INFO">Typing text '' into text field 'css:#width'.</msg>
+<status status="PASS" starttime="20200915 16:57:47.164" endtime="20200915 16:57:47.255"></status>
+</kw>
+<status status="PASS" starttime="20200915 16:57:47.163" endtime="20200915 16:57:47.255"></status>
+</kw>
+<kw name="AND Upload should be disabled">
+<kw name="Element Should Be Disabled" library="Selenium2Library">
+<doc>Verifies that element identified by ``locator`` is disabled.</doc>
+<arguments>
+<arg>${edit_model_btn}</arg>
+</arguments>
+<status status="PASS" starttime="20200915 16:57:47.257" endtime="20200915 16:57:47.278"></status>
+</kw>
+<status status="PASS" starttime="20200915 16:57:47.256" endtime="20200915 16:57:47.278"></status>
+</kw>
+<kw name="THEN Wait &quot;1&quot;">
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>${sec}</arg>
+</arguments>
+<msg timestamp="20200915 16:57:48.280" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20200915 16:57:47.279" endtime="20200915 16:57:48.280"></status>
+</kw>
+<status status="PASS" starttime="20200915 16:57:47.279" endtime="20200915 16:57:48.280"></status>
+</kw>
+<kw name="Close Browser" library="Selenium2Library" type="teardown">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20200915 16:57:48.280" endtime="20200915 16:57:50.392"></status>
+</kw>
+<doc>แก้ไขข้อมูลต้นแบบของวัตถุอ้างอิงที่มีสถานะปิดใช้งานโดยแก้ไขเฉพาะหน่วยของขนาดวัตถุอ้างอิงถูกต้อง</doc>
+<tags>
+<tag>Negative</tag>
+</tags>
+<status status="PASS" starttime="20200915 16:57:40.726" endtime="20200915 16:57:50.392" critical="yes"></status>
+</test>
+<test id="s1-t7" name="DPML-04-2-7">
+<kw name="GIVEN open web">
+<kw name="Open Browser" library="Selenium2Library">
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<arguments>
+<arg>${dpml_url}</arg>
+<arg>chrome</arg>
+</arguments>
+<msg timestamp="20200915 16:57:50.397" level="INFO">Opening browser 'chrome' to base url 'http://localhost'.</msg>
+<status status="PASS" starttime="20200915 16:57:50.397" endtime="20200915 16:57:53.927"></status>
+</kw>
+<status status="PASS" starttime="20200915 16:57:50.397" endtime="20200915 16:57:53.927"></status>
+</kw>
+<kw name="WHEN login &quot;admin&quot; &quot;123123&quot;">
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>${input_username}</arg>
+<arg>${username}</arg>
+</arguments>
+<msg timestamp="20200915 16:57:53.929" level="INFO">Typing text 'admin' into text field 'css:#root &gt; div &gt; div &gt; div.card &gt; div &gt; div:nth-child(2) &gt; input'.</msg>
+<status status="PASS" starttime="20200915 16:57:53.929" endtime="20200915 16:57:54.022"></status>
+</kw>
+<kw name="Input Password" library="Selenium2Library">
+<doc>Types the given password into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>${input_password}</arg>
+<arg>${password}</arg>
+</arguments>
+<msg timestamp="20200915 16:57:54.022" level="INFO">Typing password into text field 'css:#root &gt; div &gt; div &gt; div.card &gt; div &gt; div:nth-child(3) &gt; input'.</msg>
+<msg timestamp="20200915 16:57:54.057" level="INFO">Temporally setting log level to: NONE</msg>
+<msg timestamp="20200915 16:57:54.092" level="INFO">Log level changed from NONE to INFO.</msg>
+<status status="PASS" starttime="20200915 16:57:54.022" endtime="20200915 16:57:54.092"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${login_btn}</arg>
+</arguments>
+<msg timestamp="20200915 16:57:54.092" level="INFO">Clicking element 'css:#root &gt; div &gt; div &gt; div.card &gt; div &gt; div.row &gt; div &gt; button'.</msg>
+<status status="PASS" starttime="20200915 16:57:54.092" endtime="20200915 16:57:54.131"></status>
+</kw>
+<status status="PASS" starttime="20200915 16:57:53.928" endtime="20200915 16:57:54.131"></status>
+</kw>
+<kw name="AND The url must be &quot;http://localhost/upload&quot;">
+<kw name="Wait Until Location Is" library="Selenium2Library">
+<doc>Waits until the current URL is ``expected``.</doc>
+<arguments>
+<arg>${text}</arg>
+<arg>5</arg>
+</arguments>
+<status status="PASS" starttime="20200915 16:57:54.132" endtime="20200915 16:57:54.350"></status>
+</kw>
+<status status="PASS" starttime="20200915 16:57:54.132" endtime="20200915 16:57:54.350"></status>
+</kw>
+<kw name="AND select menu">
+<kw name="Execute Javascript" library="Selenium2Library">
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<arguments>
+<arg>window.location.replace("/ref_management")</arg>
+</arguments>
+<msg timestamp="20200915 16:57:54.353" level="INFO">Executing JavaScript:
+window.location.replace("/ref_management")
+Without any arguments.</msg>
+<status status="PASS" starttime="20200915 16:57:54.352" endtime="20200915 16:57:54.486"></status>
+</kw>
+<status status="PASS" starttime="20200915 16:57:54.351" endtime="20200915 16:57:54.487"></status>
+</kw>
+<kw name="AND The url must be &quot;http://localhost/ref_management&quot;">
+<kw name="Wait Until Location Is" library="Selenium2Library">
+<doc>Waits until the current URL is ``expected``.</doc>
+<arguments>
+<arg>${text}</arg>
+<arg>5</arg>
+</arguments>
+<status status="PASS" starttime="20200915 16:57:54.489" endtime="20200915 16:57:54.495"></status>
+</kw>
+<status status="PASS" starttime="20200915 16:57:54.488" endtime="20200915 16:57:54.496"></status>
+</kw>
+<kw name="AND Wait &quot;1&quot;">
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>${sec}</arg>
+</arguments>
+<msg timestamp="20200915 16:57:55.499" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20200915 16:57:54.497" endtime="20200915 16:57:55.499"></status>
+</kw>
+<status status="PASS" starttime="20200915 16:57:54.496" endtime="20200915 16:57:55.499"></status>
+</kw>
+<kw name="AND Open modal">
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${open_edit_modal}</arg>
+</arguments>
+<msg timestamp="20200915 16:57:55.500" level="INFO">Clicking element 'css:#DataTables_Table_0 &gt; tbody &gt; tr:nth-child(2) &gt; td.d-flex.justify-content-center &gt; div &gt; button.btn.btn-warning.btn-sm.mr-2'.</msg>
+<status status="PASS" starttime="20200915 16:57:55.500" endtime="20200915 16:57:55.581"></status>
+</kw>
+<status status="PASS" starttime="20200915 16:57:55.500" endtime="20200915 16:57:55.581"></status>
+</kw>
+<kw name="AND Wait &quot;1&quot;">
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>${sec}</arg>
+</arguments>
+<msg timestamp="20200915 16:57:56.585" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20200915 16:57:55.583" endtime="20200915 16:57:56.585"></status>
+</kw>
+<status status="PASS" starttime="20200915 16:57:55.582" endtime="20200915 16:57:56.585"></status>
+</kw>
+<kw name="AND Insert model name &quot;qw&quot;">
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>${input_model_name}</arg>
+<arg>${name}</arg>
+</arguments>
+<msg timestamp="20200915 16:57:56.587" level="INFO">Typing text 'qw' into text field 'css:#model_name'.</msg>
+<status status="PASS" starttime="20200915 16:57:56.586" endtime="20200915 16:57:56.699"></status>
+</kw>
+<status status="PASS" starttime="20200915 16:57:56.586" endtime="20200915 16:57:56.699"></status>
+</kw>
+<kw name="AND The error message must say &quot;Model name must contain minimum 3 characters and maximum 30 characters.&quot;">
+<kw name="Wait Until Page Contains" library="Selenium2Library">
+<doc>Waits until ``text`` appears on the current page.</doc>
+<arguments>
+<arg>${text}</arg>
+<arg>5</arg>
+</arguments>
+<status status="PASS" starttime="20200915 16:57:56.700" endtime="20200915 16:57:56.712"></status>
+</kw>
+<status status="PASS" starttime="20200915 16:57:56.700" endtime="20200915 16:57:56.713"></status>
+</kw>
+<kw name="THEN Wait &quot;1&quot;">
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>${sec}</arg>
+</arguments>
+<msg timestamp="20200915 16:57:57.717" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20200915 16:57:56.715" endtime="20200915 16:57:57.717"></status>
+</kw>
+<status status="PASS" starttime="20200915 16:57:56.714" endtime="20200915 16:57:57.717"></status>
+</kw>
+<kw name="Close Browser" library="Selenium2Library" type="teardown">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20200915 16:57:57.717" endtime="20200915 16:57:59.800"></status>
+</kw>
+<doc>แก้ไขข้อมูลต้นแบบของวัตถุอ้างอิงที่มีสถานะปิดใช้งานโดยแก้ไขเฉพาะชื่อข้อมูลต้นแบบของวัตถุอ้างอิงน้อยกว่า 3 ตัวอักษร</doc>
+<tags>
+<tag>Negative</tag>
+</tags>
+<status status="PASS" starttime="20200915 16:57:50.394" endtime="20200915 16:57:59.801" critical="yes"></status>
+</test>
+<test id="s1-t8" name="DPML-04-2-8">
+<kw name="GIVEN open web">
+<kw name="Open Browser" library="Selenium2Library">
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<arguments>
+<arg>${dpml_url}</arg>
+<arg>chrome</arg>
+</arguments>
+<msg timestamp="20200915 16:57:59.806" level="INFO">Opening browser 'chrome' to base url 'http://localhost'.</msg>
+<status status="PASS" starttime="20200915 16:57:59.805" endtime="20200915 16:58:03.434"></status>
+</kw>
+<status status="PASS" starttime="20200915 16:57:59.805" endtime="20200915 16:58:03.434"></status>
+</kw>
+<kw name="WHEN login &quot;admin&quot; &quot;123123&quot;">
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>${input_username}</arg>
+<arg>${username}</arg>
+</arguments>
+<msg timestamp="20200915 16:58:03.436" level="INFO">Typing text 'admin' into text field 'css:#root &gt; div &gt; div &gt; div.card &gt; div &gt; div:nth-child(2) &gt; input'.</msg>
+<status status="PASS" starttime="20200915 16:58:03.435" endtime="20200915 16:58:03.522"></status>
+</kw>
+<kw name="Input Password" library="Selenium2Library">
+<doc>Types the given password into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>${input_password}</arg>
+<arg>${password}</arg>
+</arguments>
+<msg timestamp="20200915 16:58:03.522" level="INFO">Typing password into text field 'css:#root &gt; div &gt; div &gt; div.card &gt; div &gt; div:nth-child(3) &gt; input'.</msg>
+<msg timestamp="20200915 16:58:03.558" level="INFO">Temporally setting log level to: NONE</msg>
+<msg timestamp="20200915 16:58:03.598" level="INFO">Log level changed from NONE to INFO.</msg>
+<status status="PASS" starttime="20200915 16:58:03.522" endtime="20200915 16:58:03.598"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${login_btn}</arg>
+</arguments>
+<msg timestamp="20200915 16:58:03.598" level="INFO">Clicking element 'css:#root &gt; div &gt; div &gt; div.card &gt; div &gt; div.row &gt; div &gt; button'.</msg>
+<status status="PASS" starttime="20200915 16:58:03.598" endtime="20200915 16:58:03.640"></status>
+</kw>
+<status status="PASS" starttime="20200915 16:58:03.435" endtime="20200915 16:58:03.641"></status>
+</kw>
+<kw name="AND The url must be &quot;http://localhost/upload&quot;">
+<kw name="Wait Until Location Is" library="Selenium2Library">
+<doc>Waits until the current URL is ``expected``.</doc>
+<arguments>
+<arg>${text}</arg>
+<arg>5</arg>
+</arguments>
+<status status="PASS" starttime="20200915 16:58:03.642" endtime="20200915 16:58:03.860"></status>
+</kw>
+<status status="PASS" starttime="20200915 16:58:03.642" endtime="20200915 16:58:03.860"></status>
+</kw>
+<kw name="AND select menu">
+<kw name="Execute Javascript" library="Selenium2Library">
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<arguments>
+<arg>window.location.replace("/ref_management")</arg>
+</arguments>
+<msg timestamp="20200915 16:58:03.862" level="INFO">Executing JavaScript:
+window.location.replace("/ref_management")
+Without any arguments.</msg>
+<status status="PASS" starttime="20200915 16:58:03.861" endtime="20200915 16:58:03.976"></status>
+</kw>
+<status status="PASS" starttime="20200915 16:58:03.861" endtime="20200915 16:58:03.976"></status>
+</kw>
+<kw name="AND The url must be &quot;http://localhost/ref_management&quot;">
+<kw name="Wait Until Location Is" library="Selenium2Library">
+<doc>Waits until the current URL is ``expected``.</doc>
+<arguments>
+<arg>${text}</arg>
+<arg>5</arg>
+</arguments>
+<status status="PASS" starttime="20200915 16:58:03.978" endtime="20200915 16:58:03.985"></status>
+</kw>
+<status status="PASS" starttime="20200915 16:58:03.978" endtime="20200915 16:58:03.985"></status>
+</kw>
+<kw name="AND Wait &quot;1&quot;">
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>${sec}</arg>
+</arguments>
+<msg timestamp="20200915 16:58:04.990" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20200915 16:58:03.988" endtime="20200915 16:58:04.990"></status>
+</kw>
+<status status="PASS" starttime="20200915 16:58:03.987" endtime="20200915 16:58:04.990"></status>
+</kw>
+<kw name="AND Open modal">
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${open_edit_modal}</arg>
+</arguments>
+<msg timestamp="20200915 16:58:04.991" level="INFO">Clicking element 'css:#DataTables_Table_0 &gt; tbody &gt; tr:nth-child(2) &gt; td.d-flex.justify-content-center &gt; div &gt; button.btn.btn-warning.btn-sm.mr-2'.</msg>
+<status status="PASS" starttime="20200915 16:58:04.991" endtime="20200915 16:58:05.082"></status>
+</kw>
+<status status="PASS" starttime="20200915 16:58:04.991" endtime="20200915 16:58:05.084"></status>
+</kw>
+<kw name="AND Wait &quot;1&quot;">
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>${sec}</arg>
+</arguments>
+<msg timestamp="20200915 16:58:06.088" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20200915 16:58:05.087" endtime="20200915 16:58:06.088"></status>
+</kw>
+<status status="PASS" starttime="20200915 16:58:05.086" endtime="20200915 16:58:06.088"></status>
+</kw>
+<kw name="AND Insert model name &quot;qw$#@&quot;">
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>${input_model_name}</arg>
+<arg>${name}</arg>
+</arguments>
+<msg timestamp="20200915 16:58:06.089" level="INFO">Typing text 'qw$#@' into text field 'css:#model_name'.</msg>
+<status status="PASS" starttime="20200915 16:58:06.089" endtime="20200915 16:58:06.499"></status>
+</kw>
+<status status="PASS" starttime="20200915 16:58:06.089" endtime="20200915 16:58:06.499"></status>
+</kw>
+<kw name="AND The error message must say &quot;Model name must be English, Thai, number, a space ( ) and underscore (_) are allow.&quot;">
+<kw name="Wait Until Page Contains" library="Selenium2Library">
+<doc>Waits until ``text`` appears on the current page.</doc>
+<arguments>
+<arg>${text}</arg>
+<arg>5</arg>
+</arguments>
+<status status="PASS" starttime="20200915 16:58:06.506" endtime="20200915 16:58:06.528"></status>
+</kw>
+<status status="PASS" starttime="20200915 16:58:06.505" endtime="20200915 16:58:06.529"></status>
+</kw>
+<kw name="THEN Wait &quot;1&quot;">
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>${sec}</arg>
+</arguments>
+<msg timestamp="20200915 16:58:07.531" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20200915 16:58:06.529" endtime="20200915 16:58:07.531"></status>
+</kw>
+<status status="PASS" starttime="20200915 16:58:06.529" endtime="20200915 16:58:07.531"></status>
+</kw>
+<kw name="Close Browser" library="Selenium2Library" type="teardown">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20200915 16:58:07.532" endtime="20200915 16:58:09.624"></status>
+</kw>
+<doc>แก้ไขข้อมูลต้นแบบของวัตถุอ้างอิงที่มีสถานะปิดใช้งานโดยแก้ไขเฉพาะชื่อข้อมูลต้นแบบของวัตถุอ้างอิงไม่ถูกต้อง</doc>
+<tags>
+<tag>Negative</tag>
+</tags>
+<status status="PASS" starttime="20200915 16:57:59.802" endtime="20200915 16:58:09.625" critical="yes"></status>
+</test>
+<test id="s1-t9" name="DPML-04-2-9">
+<kw name="GIVEN open web">
+<kw name="Open Browser" library="Selenium2Library">
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<arguments>
+<arg>${dpml_url}</arg>
+<arg>chrome</arg>
+</arguments>
+<msg timestamp="20200915 16:58:09.629" level="INFO">Opening browser 'chrome' to base url 'http://localhost'.</msg>
+<status status="PASS" starttime="20200915 16:58:09.629" endtime="20200915 16:58:13.185"></status>
+</kw>
+<status status="PASS" starttime="20200915 16:58:09.629" endtime="20200915 16:58:13.186"></status>
+</kw>
+<kw name="WHEN login &quot;admin&quot; &quot;123123&quot;">
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>${input_username}</arg>
+<arg>${username}</arg>
+</arguments>
+<msg timestamp="20200915 16:58:13.197" level="INFO">Typing text 'admin' into text field 'css:#root &gt; div &gt; div &gt; div.card &gt; div &gt; div:nth-child(2) &gt; input'.</msg>
+<status status="PASS" starttime="20200915 16:58:13.196" endtime="20200915 16:58:13.311"></status>
+</kw>
+<kw name="Input Password" library="Selenium2Library">
+<doc>Types the given password into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>${input_password}</arg>
+<arg>${password}</arg>
+</arguments>
+<msg timestamp="20200915 16:58:13.311" level="INFO">Typing password into text field 'css:#root &gt; div &gt; div &gt; div.card &gt; div &gt; div:nth-child(3) &gt; input'.</msg>
+<msg timestamp="20200915 16:58:13.354" level="INFO">Temporally setting log level to: NONE</msg>
+<msg timestamp="20200915 16:58:13.392" level="INFO">Log level changed from NONE to INFO.</msg>
+<status status="PASS" starttime="20200915 16:58:13.311" endtime="20200915 16:58:13.392"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${login_btn}</arg>
+</arguments>
+<msg timestamp="20200915 16:58:13.392" level="INFO">Clicking element 'css:#root &gt; div &gt; div &gt; div.card &gt; div &gt; div.row &gt; div &gt; button'.</msg>
+<status status="PASS" starttime="20200915 16:58:13.392" endtime="20200915 16:58:13.434"></status>
+</kw>
+<status status="PASS" starttime="20200915 16:58:13.194" endtime="20200915 16:58:13.434"></status>
+</kw>
+<kw name="AND The url must be &quot;http://localhost/upload&quot;">
+<kw name="Wait Until Location Is" library="Selenium2Library">
+<doc>Waits until the current URL is ``expected``.</doc>
+<arguments>
+<arg>${text}</arg>
+<arg>5</arg>
+</arguments>
+<status status="PASS" starttime="20200915 16:58:13.436" endtime="20200915 16:58:13.651"></status>
+</kw>
+<status status="PASS" starttime="20200915 16:58:13.436" endtime="20200915 16:58:13.651"></status>
+</kw>
+<kw name="AND select menu">
+<kw name="Execute Javascript" library="Selenium2Library">
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<arguments>
+<arg>window.location.replace("/ref_management")</arg>
+</arguments>
+<msg timestamp="20200915 16:58:13.652" level="INFO">Executing JavaScript:
+window.location.replace("/ref_management")
+Without any arguments.</msg>
+<status status="PASS" starttime="20200915 16:58:13.652" endtime="20200915 16:58:13.779"></status>
+</kw>
+<status status="PASS" starttime="20200915 16:58:13.651" endtime="20200915 16:58:13.780"></status>
+</kw>
+<kw name="AND The url must be &quot;http://localhost/ref_management&quot;">
+<kw name="Wait Until Location Is" library="Selenium2Library">
+<doc>Waits until the current URL is ``expected``.</doc>
+<arguments>
+<arg>${text}</arg>
+<arg>5</arg>
+</arguments>
+<status status="PASS" starttime="20200915 16:58:13.781" endtime="20200915 16:58:13.786"></status>
+</kw>
+<status status="PASS" starttime="20200915 16:58:13.780" endtime="20200915 16:58:13.786"></status>
+</kw>
+<kw name="AND Wait &quot;1&quot;">
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>${sec}</arg>
+</arguments>
+<msg timestamp="20200915 16:58:14.789" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20200915 16:58:13.788" endtime="20200915 16:58:14.789"></status>
+</kw>
+<status status="PASS" starttime="20200915 16:58:13.787" endtime="20200915 16:58:14.789"></status>
+</kw>
+<kw name="AND Open modal">
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${open_edit_modal}</arg>
+</arguments>
+<msg timestamp="20200915 16:58:14.790" level="INFO">Clicking element 'css:#DataTables_Table_0 &gt; tbody &gt; tr:nth-child(2) &gt; td.d-flex.justify-content-center &gt; div &gt; button.btn.btn-warning.btn-sm.mr-2'.</msg>
+<status status="PASS" starttime="20200915 16:58:14.790" endtime="20200915 16:58:14.881"></status>
+</kw>
+<status status="PASS" starttime="20200915 16:58:14.790" endtime="20200915 16:58:14.882"></status>
+</kw>
+<kw name="AND Wait &quot;1&quot;">
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>${sec}</arg>
+</arguments>
+<msg timestamp="20200915 16:58:15.889" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20200915 16:58:14.888" endtime="20200915 16:58:15.889"></status>
+</kw>
+<status status="PASS" starttime="20200915 16:58:14.887" endtime="20200915 16:58:15.889"></status>
+</kw>
+<kw name="AND Insert model width &quot;-1&quot;">
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>${input_model_width}</arg>
+<arg>${width}</arg>
+</arguments>
+<msg timestamp="20200915 16:58:15.890" level="INFO">Typing text '-1' into text field 'css:#width'.</msg>
+<status status="PASS" starttime="20200915 16:58:15.890" endtime="20200915 16:58:16.012"></status>
+</kw>
+<status status="PASS" starttime="20200915 16:58:15.890" endtime="20200915 16:58:16.012"></status>
+</kw>
+<kw name="AND The error message must say &quot;Width must greater than 0.&quot;">
+<kw name="Wait Until Page Contains" library="Selenium2Library">
+<doc>Waits until ``text`` appears on the current page.</doc>
+<arguments>
+<arg>${text}</arg>
+<arg>5</arg>
+</arguments>
+<status status="PASS" starttime="20200915 16:58:16.014" endtime="20200915 16:58:16.028"></status>
+</kw>
+<status status="PASS" starttime="20200915 16:58:16.013" endtime="20200915 16:58:16.028"></status>
+</kw>
+<kw name="THEN Wait &quot;1&quot;">
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>${sec}</arg>
+</arguments>
+<msg timestamp="20200915 16:58:17.031" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20200915 16:58:16.029" endtime="20200915 16:58:17.031"></status>
+</kw>
+<status status="PASS" starttime="20200915 16:58:16.028" endtime="20200915 16:58:17.031"></status>
+</kw>
+<kw name="Close Browser" library="Selenium2Library" type="teardown">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20200915 16:58:17.039" endtime="20200915 16:58:19.144"></status>
+</kw>
+<doc>แก้ไขข้อมูลต้นแบบของวัตถุอ้างอิงที่มีสถานะปิดใช้งานโดยแก้ไขเฉพาะขนาดความกว้างน้อยกว่าหรือเท่ากับ 0</doc>
+<tags>
+<tag>Negative</tag>
+</tags>
+<status status="PASS" starttime="20200915 16:58:09.627" endtime="20200915 16:58:19.145" critical="yes"></status>
+</test>
+<test id="s1-t10" name="DPML-04-2-10">
+<kw name="GIVEN open web">
+<kw name="Open Browser" library="Selenium2Library">
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<arguments>
+<arg>${dpml_url}</arg>
+<arg>chrome</arg>
+</arguments>
+<msg timestamp="20200915 16:58:19.153" level="INFO">Opening browser 'chrome' to base url 'http://localhost'.</msg>
+<status status="PASS" starttime="20200915 16:58:19.153" endtime="20200915 16:58:22.618"></status>
+</kw>
+<status status="PASS" starttime="20200915 16:58:19.153" endtime="20200915 16:58:22.618"></status>
+</kw>
+<kw name="WHEN login &quot;admin&quot; &quot;123123&quot;">
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>${input_username}</arg>
+<arg>${username}</arg>
+</arguments>
+<msg timestamp="20200915 16:58:22.620" level="INFO">Typing text 'admin' into text field 'css:#root &gt; div &gt; div &gt; div.card &gt; div &gt; div:nth-child(2) &gt; input'.</msg>
+<status status="PASS" starttime="20200915 16:58:22.619" endtime="20200915 16:58:22.706"></status>
+</kw>
+<kw name="Input Password" library="Selenium2Library">
+<doc>Types the given password into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>${input_password}</arg>
+<arg>${password}</arg>
+</arguments>
+<msg timestamp="20200915 16:58:22.707" level="INFO">Typing password into text field 'css:#root &gt; div &gt; div &gt; div.card &gt; div &gt; div:nth-child(3) &gt; input'.</msg>
+<msg timestamp="20200915 16:58:22.741" level="INFO">Temporally setting log level to: NONE</msg>
+<msg timestamp="20200915 16:58:22.779" level="INFO">Log level changed from NONE to INFO.</msg>
+<status status="PASS" starttime="20200915 16:58:22.706" endtime="20200915 16:58:22.780"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${login_btn}</arg>
+</arguments>
+<msg timestamp="20200915 16:58:22.780" level="INFO">Clicking element 'css:#root &gt; div &gt; div &gt; div.card &gt; div &gt; div.row &gt; div &gt; button'.</msg>
+<status status="PASS" starttime="20200915 16:58:22.780" endtime="20200915 16:58:22.820"></status>
+</kw>
+<status status="PASS" starttime="20200915 16:58:22.619" endtime="20200915 16:58:22.820"></status>
+</kw>
+<kw name="AND The url must be &quot;http://localhost/upload&quot;">
+<kw name="Wait Until Location Is" library="Selenium2Library">
+<doc>Waits until the current URL is ``expected``.</doc>
+<arguments>
+<arg>${text}</arg>
+<arg>5</arg>
+</arguments>
+<status status="PASS" starttime="20200915 16:58:22.821" endtime="20200915 16:58:23.035"></status>
+</kw>
+<status status="PASS" starttime="20200915 16:58:22.821" endtime="20200915 16:58:23.036"></status>
+</kw>
+<kw name="AND select menu">
+<kw name="Execute Javascript" library="Selenium2Library">
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<arguments>
+<arg>window.location.replace("/ref_management")</arg>
+</arguments>
+<msg timestamp="20200915 16:58:23.037" level="INFO">Executing JavaScript:
+window.location.replace("/ref_management")
+Without any arguments.</msg>
+<status status="PASS" starttime="20200915 16:58:23.036" endtime="20200915 16:58:23.159"></status>
+</kw>
+<status status="PASS" starttime="20200915 16:58:23.036" endtime="20200915 16:58:23.160"></status>
+</kw>
+<kw name="AND The url must be &quot;http://localhost/ref_management&quot;">
+<kw name="Wait Until Location Is" library="Selenium2Library">
+<doc>Waits until the current URL is ``expected``.</doc>
+<arguments>
+<arg>${text}</arg>
+<arg>5</arg>
+</arguments>
+<status status="PASS" starttime="20200915 16:58:23.162" endtime="20200915 16:58:23.169"></status>
+</kw>
+<status status="PASS" starttime="20200915 16:58:23.161" endtime="20200915 16:58:23.170"></status>
+</kw>
+<kw name="AND Wait &quot;1&quot;">
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>${sec}</arg>
+</arguments>
+<msg timestamp="20200915 16:58:24.173" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20200915 16:58:23.172" endtime="20200915 16:58:24.173"></status>
+</kw>
+<status status="PASS" starttime="20200915 16:58:23.171" endtime="20200915 16:58:24.173"></status>
+</kw>
+<kw name="AND Open modal">
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${open_edit_modal}</arg>
+</arguments>
+<msg timestamp="20200915 16:58:24.174" level="INFO">Clicking element 'css:#DataTables_Table_0 &gt; tbody &gt; tr:nth-child(2) &gt; td.d-flex.justify-content-center &gt; div &gt; button.btn.btn-warning.btn-sm.mr-2'.</msg>
+<status status="PASS" starttime="20200915 16:58:24.174" endtime="20200915 16:58:24.280"></status>
+</kw>
+<status status="PASS" starttime="20200915 16:58:24.174" endtime="20200915 16:58:24.280"></status>
+</kw>
+<kw name="AND Wait &quot;1&quot;">
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>${sec}</arg>
+</arguments>
+<msg timestamp="20200915 16:58:25.284" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20200915 16:58:24.282" endtime="20200915 16:58:25.284"></status>
+</kw>
+<status status="PASS" starttime="20200915 16:58:24.281" endtime="20200915 16:58:25.284"></status>
+</kw>
+<kw name="AND Insert model height &quot;-1&quot;">
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>${input_model_height}</arg>
+<arg>${height}</arg>
+</arguments>
+<msg timestamp="20200915 16:58:25.285" level="INFO">Typing text '-1' into text field 'css:#height'.</msg>
+<status status="PASS" starttime="20200915 16:58:25.285" endtime="20200915 16:58:25.380"></status>
+</kw>
+<status status="PASS" starttime="20200915 16:58:25.285" endtime="20200915 16:58:25.380"></status>
+</kw>
+<kw name="AND The error message must say &quot;Height must greater than 0.&quot;">
+<kw name="Wait Until Page Contains" library="Selenium2Library">
+<doc>Waits until ``text`` appears on the current page.</doc>
+<arguments>
+<arg>${text}</arg>
+<arg>5</arg>
+</arguments>
+<status status="PASS" starttime="20200915 16:58:25.382" endtime="20200915 16:58:25.397"></status>
+</kw>
+<status status="PASS" starttime="20200915 16:58:25.382" endtime="20200915 16:58:25.397"></status>
+</kw>
+<kw name="THEN Wait &quot;1&quot;">
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>${sec}</arg>
+</arguments>
+<msg timestamp="20200915 16:58:26.401" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20200915 16:58:25.398" endtime="20200915 16:58:26.401"></status>
+</kw>
+<status status="PASS" starttime="20200915 16:58:25.398" endtime="20200915 16:58:26.401"></status>
+</kw>
+<kw name="Close Browser" library="Selenium2Library" type="teardown">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20200915 16:58:26.402" endtime="20200915 16:58:29.346"></status>
+</kw>
+<doc>แก้ไขข้อมูลต้นแบบของวัตถุอ้างอิงที่มีสถานะปิดใช้งานโดยแก้ไขเฉพาะขนาดความยาวน้อยกว่าหรือเท่ากับ 0</doc>
+<tags>
+<tag>Negative</tag>
+</tags>
+<status status="PASS" starttime="20200915 16:58:19.150" endtime="20200915 16:58:29.347" critical="yes"></status>
+</test>
+<test id="s1-t11" name="DPML-04-2-11">
+<kw name="GIVEN open web">
+<kw name="Open Browser" library="Selenium2Library">
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<arguments>
+<arg>${dpml_url}</arg>
+<arg>chrome</arg>
+</arguments>
+<msg timestamp="20200915 16:58:29.352" level="INFO">Opening browser 'chrome' to base url 'http://localhost'.</msg>
+<status status="PASS" starttime="20200915 16:58:29.352" endtime="20200915 16:58:32.851"></status>
+</kw>
+<status status="PASS" starttime="20200915 16:58:29.352" endtime="20200915 16:58:32.851"></status>
+</kw>
+<kw name="WHEN login &quot;admin&quot; &quot;123123&quot;">
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>${input_username}</arg>
+<arg>${username}</arg>
+</arguments>
+<msg timestamp="20200915 16:58:32.854" level="INFO">Typing text 'admin' into text field 'css:#root &gt; div &gt; div &gt; div.card &gt; div &gt; div:nth-child(2) &gt; input'.</msg>
+<status status="PASS" starttime="20200915 16:58:32.853" endtime="20200915 16:58:32.948"></status>
+</kw>
+<kw name="Input Password" library="Selenium2Library">
+<doc>Types the given password into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>${input_password}</arg>
+<arg>${password}</arg>
+</arguments>
+<msg timestamp="20200915 16:58:32.949" level="INFO">Typing password into text field 'css:#root &gt; div &gt; div &gt; div.card &gt; div &gt; div:nth-child(3) &gt; input'.</msg>
+<msg timestamp="20200915 16:58:32.984" level="INFO">Temporally setting log level to: NONE</msg>
+<msg timestamp="20200915 16:58:33.021" level="INFO">Log level changed from NONE to INFO.</msg>
+<status status="PASS" starttime="20200915 16:58:32.948" endtime="20200915 16:58:33.021"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${login_btn}</arg>
+</arguments>
+<msg timestamp="20200915 16:58:33.022" level="INFO">Clicking element 'css:#root &gt; div &gt; div &gt; div.card &gt; div &gt; div.row &gt; div &gt; button'.</msg>
+<status status="PASS" starttime="20200915 16:58:33.022" endtime="20200915 16:58:33.066"></status>
+</kw>
+<status status="PASS" starttime="20200915 16:58:32.852" endtime="20200915 16:58:33.067"></status>
+</kw>
+<kw name="AND The url must be &quot;http://localhost/upload&quot;">
+<kw name="Wait Until Location Is" library="Selenium2Library">
+<doc>Waits until the current URL is ``expected``.</doc>
+<arguments>
+<arg>${text}</arg>
+<arg>5</arg>
+</arguments>
+<status status="PASS" starttime="20200915 16:58:33.067" endtime="20200915 16:58:33.291"></status>
+</kw>
+<status status="PASS" starttime="20200915 16:58:33.067" endtime="20200915 16:58:33.291"></status>
+</kw>
+<kw name="AND select menu">
+<kw name="Execute Javascript" library="Selenium2Library">
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<arguments>
+<arg>window.location.replace("/ref_management")</arg>
+</arguments>
+<msg timestamp="20200915 16:58:33.293" level="INFO">Executing JavaScript:
+window.location.replace("/ref_management")
+Without any arguments.</msg>
+<status status="PASS" starttime="20200915 16:58:33.292" endtime="20200915 16:58:33.424"></status>
+</kw>
+<status status="PASS" starttime="20200915 16:58:33.292" endtime="20200915 16:58:33.424"></status>
+</kw>
+<kw name="AND The url must be &quot;http://localhost/ref_management&quot;">
+<kw name="Wait Until Location Is" library="Selenium2Library">
+<doc>Waits until the current URL is ``expected``.</doc>
+<arguments>
+<arg>${text}</arg>
+<arg>5</arg>
+</arguments>
+<status status="PASS" starttime="20200915 16:58:33.426" endtime="20200915 16:58:33.435"></status>
+</kw>
+<status status="PASS" starttime="20200915 16:58:33.425" endtime="20200915 16:58:33.435"></status>
+</kw>
+<kw name="AND Wait &quot;1&quot;">
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>${sec}</arg>
+</arguments>
+<msg timestamp="20200915 16:58:34.439" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20200915 16:58:33.439" endtime="20200915 16:58:34.439"></status>
+</kw>
+<status status="PASS" starttime="20200915 16:58:33.439" endtime="20200915 16:58:34.439"></status>
+</kw>
+<kw name="AND Open modal">
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${open_edit_modal}</arg>
+</arguments>
+<msg timestamp="20200915 16:58:34.441" level="INFO">Clicking element 'css:#DataTables_Table_0 &gt; tbody &gt; tr:nth-child(2) &gt; td.d-flex.justify-content-center &gt; div &gt; button.btn.btn-warning.btn-sm.mr-2'.</msg>
+<status status="PASS" starttime="20200915 16:58:34.440" endtime="20200915 16:58:34.523"></status>
+</kw>
+<status status="PASS" starttime="20200915 16:58:34.440" endtime="20200915 16:58:34.523"></status>
+</kw>
+<kw name="AND Wait &quot;1&quot;">
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>${sec}</arg>
+</arguments>
+<msg timestamp="20200915 16:58:35.526" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20200915 16:58:34.525" endtime="20200915 16:58:35.526"></status>
+</kw>
+<status status="PASS" starttime="20200915 16:58:34.524" endtime="20200915 16:58:35.526"></status>
+</kw>
+<kw name="AND Choose file &quot;C:/Users/First-AP/Desktop/Homework/4th Year/CSI_project/Photo/box_green_screen.jpg&quot;">
+<kw name="Choose File" library="Selenium2Library">
+<doc>Inputs the ``file_path`` into the file input field ``locator``.</doc>
+<arguments>
+<arg>${input_weight}</arg>
+<arg>${path}</arg>
+</arguments>
+<msg timestamp="20200915 16:58:35.532" level="INFO">Sending C:\Users\First-AP\Desktop\Homework\4th Year\CSI_project\Photo\box_green_screen.jpg to browser.</msg>
+<status status="PASS" starttime="20200915 16:58:35.532" endtime="20200915 16:58:35.588"></status>
+</kw>
+<status status="PASS" starttime="20200915 16:58:35.532" endtime="20200915 16:58:35.588"></status>
+</kw>
+<kw name="AND The error message must say &quot;File extension must be *.weights&quot;">
+<kw name="Wait Until Page Contains" library="Selenium2Library">
+<doc>Waits until ``text`` appears on the current page.</doc>
+<arguments>
+<arg>${text}</arg>
+<arg>5</arg>
+</arguments>
+<status status="PASS" starttime="20200915 16:58:35.592" endtime="20200915 16:58:35.605"></status>
+</kw>
+<status status="PASS" starttime="20200915 16:58:35.592" endtime="20200915 16:58:35.605"></status>
+</kw>
+<kw name="THEN Wait &quot;1&quot;">
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>${sec}</arg>
+</arguments>
+<msg timestamp="20200915 16:58:36.607" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20200915 16:58:35.606" endtime="20200915 16:58:36.607"></status>
+</kw>
+<status status="PASS" starttime="20200915 16:58:35.606" endtime="20200915 16:58:36.607"></status>
+</kw>
+<kw name="Close Browser" library="Selenium2Library" type="teardown">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20200915 16:58:36.608" endtime="20200915 16:58:38.708"></status>
+</kw>
+<doc>แก้ไขข้อมูลต้นแบบของวัตถุอ้างอิงที่มีสถานะปิดใช้งานโดยแก้ไขเฉพาะไฟล์ข้อมูลต้นแบบของวัตถุอ้างอิงโดยนามสกุลไฟล์ไม่ถูกต้อง</doc>
+<tags>
+<tag>Negative</tag>
+</tags>
+<status status="PASS" starttime="20200915 16:58:29.349" endtime="20200915 16:58:38.709" critical="yes"></status>
+</test>
+<test id="s1-t12" name="DPML-04-2-12">
+<kw name="GIVEN open web">
+<kw name="Open Browser" library="Selenium2Library">
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<arguments>
+<arg>${dpml_url}</arg>
+<arg>chrome</arg>
+</arguments>
+<msg timestamp="20200915 16:58:38.713" level="INFO">Opening browser 'chrome' to base url 'http://localhost'.</msg>
+<status status="PASS" starttime="20200915 16:58:38.713" endtime="20200915 16:58:42.232"></status>
+</kw>
+<status status="PASS" starttime="20200915 16:58:38.712" endtime="20200915 16:58:42.232"></status>
+</kw>
+<kw name="WHEN login &quot;admin&quot; &quot;123123&quot;">
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>${input_username}</arg>
+<arg>${username}</arg>
+</arguments>
+<msg timestamp="20200915 16:58:42.234" level="INFO">Typing text 'admin' into text field 'css:#root &gt; div &gt; div &gt; div.card &gt; div &gt; div:nth-child(2) &gt; input'.</msg>
+<status status="PASS" starttime="20200915 16:58:42.234" endtime="20200915 16:58:42.327"></status>
+</kw>
+<kw name="Input Password" library="Selenium2Library">
+<doc>Types the given password into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>${input_password}</arg>
+<arg>${password}</arg>
+</arguments>
+<msg timestamp="20200915 16:58:42.327" level="INFO">Typing password into text field 'css:#root &gt; div &gt; div &gt; div.card &gt; div &gt; div:nth-child(3) &gt; input'.</msg>
+<msg timestamp="20200915 16:58:42.367" level="INFO">Temporally setting log level to: NONE</msg>
+<msg timestamp="20200915 16:58:42.407" level="INFO">Log level changed from NONE to INFO.</msg>
+<status status="PASS" starttime="20200915 16:58:42.327" endtime="20200915 16:58:42.407"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${login_btn}</arg>
+</arguments>
+<msg timestamp="20200915 16:58:42.407" level="INFO">Clicking element 'css:#root &gt; div &gt; div &gt; div.card &gt; div &gt; div.row &gt; div &gt; button'.</msg>
+<status status="PASS" starttime="20200915 16:58:42.407" endtime="20200915 16:58:42.456"></status>
+</kw>
+<status status="PASS" starttime="20200915 16:58:42.233" endtime="20200915 16:58:42.456"></status>
+</kw>
+<kw name="AND The url must be &quot;http://localhost/upload&quot;">
+<kw name="Wait Until Location Is" library="Selenium2Library">
+<doc>Waits until the current URL is ``expected``.</doc>
+<arguments>
+<arg>${text}</arg>
+<arg>5</arg>
+</arguments>
+<status status="PASS" starttime="20200915 16:58:42.472" endtime="20200915 16:58:42.691"></status>
+</kw>
+<status status="PASS" starttime="20200915 16:58:42.471" endtime="20200915 16:58:42.691"></status>
+</kw>
+<kw name="AND select menu">
+<kw name="Execute Javascript" library="Selenium2Library">
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<arguments>
+<arg>window.location.replace("/ref_management")</arg>
+</arguments>
+<msg timestamp="20200915 16:58:42.694" level="INFO">Executing JavaScript:
+window.location.replace("/ref_management")
+Without any arguments.</msg>
+<status status="PASS" starttime="20200915 16:58:42.694" endtime="20200915 16:58:42.839"></status>
+</kw>
+<status status="PASS" starttime="20200915 16:58:42.693" endtime="20200915 16:58:42.840"></status>
+</kw>
+<kw name="AND The url must be &quot;http://localhost/ref_management&quot;">
+<kw name="Wait Until Location Is" library="Selenium2Library">
+<doc>Waits until the current URL is ``expected``.</doc>
+<arguments>
+<arg>${text}</arg>
+<arg>5</arg>
+</arguments>
+<status status="PASS" starttime="20200915 16:58:42.841" endtime="20200915 16:58:42.849"></status>
+</kw>
+<status status="PASS" starttime="20200915 16:58:42.841" endtime="20200915 16:58:42.850"></status>
+</kw>
+<kw name="AND Wait &quot;1&quot;">
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>${sec}</arg>
+</arguments>
+<msg timestamp="20200915 16:58:43.852" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20200915 16:58:42.851" endtime="20200915 16:58:43.852"></status>
+</kw>
+<status status="PASS" starttime="20200915 16:58:42.850" endtime="20200915 16:58:43.852"></status>
+</kw>
+<kw name="Open modal button should be disabled">
+<kw name="Element Should Be Disabled" library="Selenium2Library">
+<doc>Verifies that element identified by ``locator`` is disabled.</doc>
+<arguments>
+<arg>${open_edit_modal_active}</arg>
+</arguments>
+<status status="PASS" starttime="20200915 16:58:43.853" endtime="20200915 16:58:43.871"></status>
+</kw>
+<status status="PASS" starttime="20200915 16:58:43.853" endtime="20200915 16:58:43.871"></status>
+</kw>
+<kw name="AND Wait &quot;1&quot;">
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>${sec}</arg>
+</arguments>
+<msg timestamp="20200915 16:58:44.873" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20200915 16:58:43.872" endtime="20200915 16:58:44.873"></status>
+</kw>
+<status status="PASS" starttime="20200915 16:58:43.872" endtime="20200915 16:58:44.873"></status>
+</kw>
+<kw name="Close Browser" library="Selenium2Library" type="teardown">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20200915 16:58:44.874" endtime="20200915 16:58:46.950"></status>
+</kw>
+<doc>แก้ไขข้อมูลต้นแบบของวัตถุอ้างอิงที่มีสถานะเปิดใช้งาน</doc>
+<tags>
+<tag>Negative</tag>
+</tags>
+<status status="PASS" starttime="20200915 16:58:38.711" endtime="20200915 16:58:46.951" critical="yes"></status>
+</test>
+<status status="PASS" starttime="20200915 16:56:48.141" endtime="20200915 16:58:46.954"></status>
+</suite>
+<statistics>
+<total>
+<stat pass="12" fail="0">Critical Tests</stat>
+<stat pass="12" fail="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="9" fail="0">Negative</stat>
+<stat pass="3" fail="0">Positive</stat>
+</tag>
+<suite>
+<stat pass="12" fail="0" id="s1" name="DPML-04-2 แก้ไขข้อมูลต้นแบบของวัตถุอ้างอิง">DPML-04-2 แก้ไขข้อมูลต้นแบบของวัตถุอ้างอิง</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
