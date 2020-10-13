@@ -1,0 +1,91 @@
+<head>
+    <!-- Load plotly.js into the DOM -->
+    <script src='https://cdn.plot.ly/plotly-latest.min.js'></script>
+</head>
+
+<body>
+    <div style="margin: auto;" id='myDiv'>
+        <!-- Plotly chart will be drawn inside this DIV -->
+    </div>
+</body>
+
+<script>
+    Plotly.d3.csv('https://raw.githubusercontent.com/plotly/datasets/master/alpha_shape.csv', function (err, rows) {
+
+        function unpack(rows, key) {
+            return rows.map(function (row) { return row[key]; });
+        }
+
+        rows = [
+            { x: -5.933556483, y: -6.659581961, z: -2.337235019 },
+            { x: -5.699620807, y: -5.089488493, z: -2.206948738 },
+            { x: -5.650399316, y: -4.378679438, z: -2.672845545 },
+            { x: -5.526565548, y: -5.295157615, z: -1.849260083 },
+            { x: -6.368754051, y: -5.650204639, z: -1.165898125 },
+            { x: -6.140579977, y: -5.342582212, z: -0.778542368 },
+            { x: -4.452856335, y: -2.6593851, z: 0.170684722 },
+            { x: -6.590815842, y: -5.980447144, z: -0.893578141 },
+        ]
+
+        // console.log(rows);
+
+        var data = [{
+            x: unpack(rows, 'x'),
+            y: unpack(rows, 'y'),
+            z: unpack(rows, 'z'),
+            mode: 'markers',
+            type: 'scatter3d',
+            marker: {
+                color: 'rgb(23, 190, 207)',
+                size: 2
+            }
+        }];
+
+        var layout = {
+            autosize: true,
+            height: 700,
+            scene: {
+                aspectratio: {
+                    x: 1,
+                    y: 1,
+                    z: 1
+                },
+                camera: {
+                    center: {
+                        x: 0,
+                        y: 0,
+                        z: 0
+                    },
+                    eye: {
+                        x: 1.25,
+                        y: 1.25,
+                        z: 1.25
+                    },
+                    up: {
+                        x: 0,
+                        y: 0,
+                        z: 1
+                    }
+                },
+                xaxis: {
+                    type: 'linear',
+                    zeroline: false
+                },
+                yaxis: {
+                    type: 'linear',
+                    zeroline: false
+                },
+                zaxis: {
+                    type: 'linear',
+                    zeroline: false
+                }
+            },
+            title: '3d point clustering',
+            width: 1000
+        };
+
+        Plotly.newPlot('myDiv', data, layout);
+
+    });
+
+</script>
