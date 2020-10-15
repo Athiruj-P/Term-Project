@@ -1,5 +1,5 @@
 from decimal import Decimal
-from .constants import Axis
+from constants import Axis
 
 
 def rect_intersect(item1, item2, x, y):
@@ -30,6 +30,8 @@ def get_limit_number_of_decimals(number_of_decimals):
 
 
 def set_to_decimal(value, number_of_decimals):
-    number_of_decimals = get_limit_number_of_decimals(number_of_decimals)
+    # number_of_decimals = get_limit_number_of_decimals(number_of_decimals)
 
-    return Decimal(value).quantize(number_of_decimals)
+    # return Decimal(value).quantize(number_of_decimals)
+
+    return value
