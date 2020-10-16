@@ -9,6 +9,7 @@ with open("result.txt",'r') as f:
     data = f.readlines()
 
 
+# rx, ry, rz = [int(x) for x in data[0].split()]
 rx, ry, rz = [int(x) for x in data[0].split()]
 data.pop(0)
 fig = plt.figure()
@@ -23,12 +24,14 @@ type_3 = plt.Rectangle((0, 0), 1, 1, fc = colors[3])
 type_4 = plt.Rectangle((0, 0), 1, 1, fc = colors[4])
 ax.legend([type_0, type_1, type_2, type_3, type_4],['Type 0', 'Type 1', 'Type 2', 'Type 3', 'Type 4'])
 #Creating transparant container
-ax.bar3d(0, 0, 0, rx, ry, rz, color = (0, 0, 0, 0.1), shade = False)
+# ax.bar3d(0, 0, 0, rx, ry, rz, color = (0, 0, 0, 0.1), shade = False)
+ax.bar3d(0, 0, 0, rx, rz, ry, color = (0, 0, 0, 0.1), shade = False)
 for line in data:
     #Creating switch with appropiate colors
     item_type, dx, dy, dz, x, y, z = [int(x) for x in line.split()]
-    ax.bar3d(x, y, z, dx, dy, dz, color = colors[item_type], edgecolor = (0, 0, 0, 1), shade = False) 
-    
+    # ax.bar3d(x, y, z, dx, dy, dz, color = colors[item_type], edgecolor = (0, 0, 0, 1), shade = False) 
+    ax.bar3d(x, z, y, dx, dz, dy, color = colors[item_type], edgecolor = (0, 0, 0, 1), shade = False) 
+        
 ax.set_title('Visualization of placed switches')
 plt.show()
 

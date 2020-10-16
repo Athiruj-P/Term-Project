@@ -6,15 +6,17 @@ START_POSITION = [0, 0, 0]
 UNFITTED_ITEMS = []
 USED_VOLUME = 0
 FILE = open("result.txt", "w")
+FILE_html = open("result_html.txt", "w")
 # X Y Z W D H
-FILE.write("30 40 20\n")
+FILE.write("30 20 40\n")
+FILE_html.write("30 20 40\n")
 
 # Python program to for tree traversals 
   
 # A class that represents an individual node in a 
 # Binary Tree 
 class Node: 
-    def __init__(self, width, depth, height) : 
+    def __init__(self, width, height, depth) : 
         # Leaf
         self.left = None
         self.center = None
@@ -51,11 +53,15 @@ class Node:
 
             print("W: {}, H: {}, D: {}".format(dimension[0],dimension[1],dimension[2]))
 
+            box_w = dimension[0]
+            box_h = dimension[1]
+            box_d = dimension[2]
+
             # ถ้าขนาดของกล่องเทียบกับพื้นที่แล้วใส่ไม่ได้จะข้ามไปเพื่อหมุนกล่อง
             if (
-                self.width < dimension[0] or
-                self.height < dimension[1] or
-                self.depth < dimension[2]
+                self.width < box_w or
+                self.height < box_h or
+                self.depth < box_d
             ):
                 continue
             # กล่องใส่ในพื้นที่ได้
@@ -67,53 +73,54 @@ class Node:
                 global USED_VOLUME
                 USED_VOLUME += box.get_volume()
                 # ตรวจสอบพื้นที่ว่างด้านบนกล่อง (ด้าน height)
-                if(self.height - dimension[1] > 0):
-                    print("self.left => self.height - dimension[1]: {}".format(self.height - dimension[1]))
+                if(self.height - box_h > 0):
+                    print("self.left => self.height - box_h: {}".format(self.height - box_h))
                     # เพิ่ม node สำหรับพื้นทที่ว่างด้านบนกล่อง
-                    new_width = dimension[0] #width
-                    new_height = self.height - dimension[1]
-                    new_depth = dimension[2] #depth
+                    new_width = box_w #width
+                    new_height = self.height - box_h
+                    new_depth = box_d #depth
                     print("new_width: {}".format(new_width))
                     print("new_height: {}".format(new_height))
                     print("new_depth: {}".format(new_depth))
                     self.left = Node(new_width,new_height,new_depth)
+                    # (width)
                     x = self.position[0]
-                    y = self.position[1] + dimension[2]
+                    y = self.position[1] + box_h
                     z = self.position[2]
                     self.left.position = [x,y,z]                    
                     print("get_volume(): {}".format(self.left.get_volume()))
                 
                 # ตรวจสอบพื้นที่ว่างด้านกว้าง (ด้าน width)
-                if(self.width - dimension[0] > 0):
-                    print("self.center => self.width- dimension[0]: {}".format(self.width- dimension[0]))
+                if(self.width - box_w > 0):
+                    print("self.center => self.width- box_w: {}".format(self.width- box_w))
                     # เพิ่ม node สำหรับพื้นทที่ว่างด้านกว้าง
-                    new_width = self.width - dimension[0]
+                    new_width = self.width - box_w
                     new_height = self.height
-                    new_depth = dimension[2] #depth
+                    new_depth = box_d #depth
                     print("new_width: {}".format(new_width))
                     print("new_height: {}".format(new_height))
                     print("new_depth: {}".format(new_depth))
                     self.center = Node(new_width,new_height,new_depth)
-                    x = self.position[0] + dimension[0]
+                    x = self.position[0] + box_w
                     y = self.position[1]
                     z = self.position[2]
                     self.center.position = [x,y,z]  
                     print("get_volume(): {}".format(self.center.get_volume()))
                 
                 # ตรวจสอบพื้นที่ว่างด้านยาว (ด้าน depth)
-                if(self.depth - dimension[2] > 0):
-                    print("self.right => self.depth - dimension[2]: {}".format(self.depth - dimension[2]))
+                if(self.depth - box_d > 0):
+                    print("self.right => self.depth - box_d: {}".format(self.depth - box_d))
                     # เพิ่ม node สำหรับพื้นทที่ว่างด้านยาว
                     new_width = self.width
                     new_height = self.height
-                    new_depth = self.depth - dimension[2]
+                    new_depth = self.depth - box_d
                     print("new_width: {}".format(new_width))
                     print("new_height: {}".format(new_height))
                     print("new_depth: {}".format(new_depth))
                     self.right = Node(new_width,new_height,new_depth)
                     x = self.position[0]
                     y = self.position[1]
-                    z = self.position[2] + dimension[1]
+                    z = self.position[2] + box_d
                     self.right.position = [x,y,z] 
                     print("get_volume(): {}".format(self.right.get_volume()))
 
@@ -121,6 +128,7 @@ class Node:
             #     box.position = valid_box_position
             print(self.get_box_dimension_and_position())
             FILE.write("0 {}\n".format(self.get_box_dimension_and_position()))
+            FILE_html.write("{}\n".format(self.get_box_dimension()))
             return fit
 
         # if not fit:
@@ -134,8 +142,25 @@ class Node:
         z = self.position[2]
         return "{} {} {} {}".format(self.box.get_data(),int(x),int(y),int(z))
 
+    def get_box_dimension(self):
+        dim1, dim2, dim3 = self.box.get_data_2()
+        x1 = self.position[0] # width
+        y1 = self.position[2] # depth
+        z1 = self.position[1] # height
+
+        x2 = self.position[0] + dim1
+        y2 = self.position[2] + dim3
+        z2 = self.position[1] + dim2
+        temp = "data.push(new Box("
+        temp += "[{},{},{},{},{},{},{},{}],\n".format(x1,x1,x2,x2,x1,x1,x2,x2)
+        temp += "[{},{},{},{},{},{},{},{}],\n".format(y1,y2,y1,y2,y1,y2,y1,y2)
+        temp += "[{},{},{},{},{},{},{},{}],\n".format(z1,z1,z1,z1,z2,z2,z2,z2)
+        temp += ").data)\n"
+
+        return temp
+
 class Box:
-    def __init__(self, width, depth, height):
+    def __init__(self, width, height, depth):
         self.width = width
         self.height = height
         self.depth = depth
@@ -151,6 +176,10 @@ class Box:
     def get_data(self):
         dim = self.get_dimension()
         return "{} {} {}".format(int(dim[0]),int(dim[1]),int(dim[2]))
+    
+    def get_data_2(self):
+        dim = self.get_dimension()
+        return int(dim[0]),int(dim[1]),int(dim[2])
 
 
     def get_volume(self):
@@ -197,7 +226,7 @@ class Packer:
             # print("response: {}".format(response))
             global UNFITTED_ITEMS
             if not response:
-                UNFITTED_ITEMS.append(box)
+                # UNFITTED_ITEMS.append(box)
                 return not fitted
             else:
                 return fitted
@@ -237,8 +266,8 @@ class Packer:
         for node in self.root_nodes:
             for box in self.boxes:
                 fited = self.pack_to_node(node, box)
-                print("fited: {}\n".format(fited))
                 if(not fited):
+                    print("Not fited: {}\n".format(fited))
                     UNFITTED_ITEMS.append(box)
                     print(len(UNFITTED_ITEMS))
 
@@ -259,29 +288,79 @@ def printPreorder(root,file):
 
 packer = Packer()
 
-packer.add_root_node(Node(30, 40, 20))
+packer.add_root_node(Node(30, 20, 40))
+
+packer.add_box(Box(10, 13, 5))
+packer.add_box(Box(20, 13, 5))
+packer.add_box(Box(10, 13, 5))
+packer.add_box(Box(10, 13, 5))
+packer.add_box(Box(10, 13, 5))
 
 packer.add_box(Box(10, 13, 5))
 packer.add_box(Box(10, 13, 5))
-# packer.add_box(Box(5, 7, 8))
-# packer.add_box(Box(7, 8, 5))
-# packer.add_box(Box(3, 1, 5))
+packer.add_box(Box(5, 7, 8))
+packer.add_box(Box(7, 8, 5))
+packer.add_box(Box(3, 1, 5))
 
-# packer.add_box(Box(2, 1, 2))
-# packer.add_box(Box(2, 1, 2))
-# packer.add_box(Box(15, 5, 6))
-# packer.add_box(Box(4, 8, 2))
+packer.add_box(Box(2, 1, 2))
+packer.add_box(Box(2, 1, 2))
+packer.add_box(Box(15, 5, 6))
+packer.add_box(Box(4, 8, 2))
 packer.add_box(Box(20, 20, 20))
 
-# packer.add_box(Box(2, 1, 2))
-# packer.add_box(Box(2, 1, 2))
-# packer.add_box(Box(15, 5, 6))
-# packer.add_box(Box(4, 8, 2))
+packer.add_box(Box(2, 1, 2))
+packer.add_box(Box(2, 1, 2))
+packer.add_box(Box(15, 5, 6))
+packer.add_box(Box(4, 8, 2))
 # packer.add_box(Box(20, 20, 20))
+
+packer.add_box(Box(2, 1, 2))
+packer.add_box(Box(2, 1, 2))
+packer.add_box(Box(2, 1, 2))
+packer.add_box(Box(3, 1, 5))
+packer.add_box(Box(3, 1, 5))
+
+packer.add_box(Box(5, 7, 8))
+packer.add_box(Box(7, 8, 5))
+packer.add_box(Box(3, 1, 5))
+packer.add_box(Box(2, 1, 2))
+packer.add_box(Box(2, 1, 2))
+
+packer.add_box(Box(2, 1, 2))
+packer.add_box(Box(2, 1, 2))
+packer.add_box(Box(2, 1, 2))
+packer.add_box(Box(3, 1, 5))
+packer.add_box(Box(3, 1, 5))
+
+packer.add_box(Box(5, 7, 8))
+packer.add_box(Box(7, 8, 5))
+packer.add_box(Box(3, 1, 5))
+packer.add_box(Box(2, 1, 2))
+packer.add_box(Box(2, 1, 2))
+
+packer.add_box(Box(5, 7, 8))
+packer.add_box(Box(7, 8, 5))
+packer.add_box(Box(3, 1, 5))
+packer.add_box(Box(2, 1, 2))
+packer.add_box(Box(2, 1, 2))
+
+packer.add_box(Box(2, 1, 2))
+packer.add_box(Box(2, 1, 2))
+packer.add_box(Box(2, 1, 2))
+packer.add_box(Box(3, 1, 5))
+packer.add_box(Box(3, 1, 5))
+
+packer.add_box(Box(5, 7, 8))
+packer.add_box(Box(7, 8, 5))
+packer.add_box(Box(3, 1, 5))
+packer.add_box(Box(2, 1, 2))
+packer.add_box(Box(2, 1, 2))
+
 
 packer.pack(bigger_first=True)
 
 # printPreorder(packer.root_nodes[0],f)
 FILE.close()
+FILE_html.close()
 print("used: {}".format(USED_VOLUME))
 print("UNFITTED_ITEMS: {}".format(len(UNFITTED_ITEMS))) 
