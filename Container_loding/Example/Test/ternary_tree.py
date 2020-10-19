@@ -4,6 +4,7 @@ from auxiliary_methods import intersect, set_to_decimal
 DEFAULT_NUMBER_OF_DECIMALS = 3
 START_POSITION = [0, 0, 0]
 UNFITTED_ITEMS = []
+BASE_BOXES = []
 USED_VOLUME = 0
 FILE = open("result.txt", "w")
 FILE_html = open("result_html.txt", "w")
@@ -48,6 +49,11 @@ class Node:
         # Loop ตามการหมุนของกล่องเพื่อหาด้านที่ fit กับพื้นที่
         # เริ่มจากกล่องในมุมแบบเดิมก่อน แล้วถ้าใสไม่ได้ค่อยเปลี่ยนแนวกล่อง
         for i in range(0, len(RotationType.ALL)):
+            if(box.fixed_direction):
+                if(i == 0 or i == 3):
+                    box.rotation_type = i
+                else:
+                    continue
             box.rotation_type = i
             dimension = box.get_dimension()
 
@@ -160,11 +166,12 @@ class Node:
         return temp
 
 class Box:
-    def __init__(self, width, height, depth):
+    def __init__(self, width, height, depth, fixed_direction = False):
         self.width = width
         self.height = height
         self.depth = depth
         self.rotation_type = 0
+        self.fixed_direction = fixed_direction
         self.number_of_decimals = DEFAULT_NUMBER_OF_DECIMALS
     
     def format_numbers(self, number_of_decimals):
@@ -223,26 +230,27 @@ class Packer:
         # ใส่กล่องให้ Node
         if not node.box:            
             response = node.put_item(box)
-            # print("response: {}".format(response))
-            global UNFITTED_ITEMS
+            global BASE_BOXES
             if not response:
-                # UNFITTED_ITEMS.append(box)
                 return not fitted
             else:
+                z = node.position[1]
+                if(z == 0):
+                    BASE_BOXES.append(node)
                 return fitted
         # เปลี่ยน Node เพื่อหาที่ใส่กล่อง
         if node.left:
-            print("left")
+            # print("left")
             if self.pack_to_node(node.left, box):
                 return fitted
         
         if node.center:
-            print("center")
+            # print("center")
             if self.pack_to_node(node.center, box):
                 return fitted
         
         if node.right:
-            print("right")
+            # print("right")
             if self.pack_to_node(node.right, box):
                 return fitted
         return not fitted
@@ -286,81 +294,118 @@ def printPreorder(root,file):
         printPreorder(root.center,file) 
         printPreorder(root.right,file) 
 
+
+
 packer = Packer()
 
 packer.add_root_node(Node(30, 20, 40))
 
-packer.add_box(Box(10, 13, 5))
+packer.add_box(Box(10, 5, 13, True))
 packer.add_box(Box(20, 13, 5))
 packer.add_box(Box(10, 13, 5))
 packer.add_box(Box(10, 13, 5))
 packer.add_box(Box(10, 13, 5))
 
-packer.add_box(Box(10, 13, 5))
-packer.add_box(Box(10, 13, 5))
 packer.add_box(Box(5, 7, 8))
-packer.add_box(Box(7, 8, 5))
-packer.add_box(Box(3, 1, 5))
+packer.add_box(Box(5, 7, 8))
+packer.add_box(Box(5, 7, 8))
+packer.add_box(Box(5, 7, 8))
+packer.add_box(Box(5, 7, 8))
 
-packer.add_box(Box(2, 1, 2))
-packer.add_box(Box(2, 1, 2))
-packer.add_box(Box(15, 5, 6))
-packer.add_box(Box(4, 8, 2))
-packer.add_box(Box(20, 20, 20))
+packer.add_box(Box(5, 7, 8))
+packer.add_box(Box(5, 7, 8))
+packer.add_box(Box(5, 7, 8))
+packer.add_box(Box(5, 7, 8))
+packer.add_box(Box(5, 7, 8))
 
-packer.add_box(Box(2, 1, 2))
-packer.add_box(Box(2, 1, 2))
-packer.add_box(Box(15, 5, 6))
-packer.add_box(Box(4, 8, 2))
+# packer.add_box(Box(10, 13, 5))
+# packer.add_box(Box(10, 13, 5))
+# packer.add_box(Box(5, 7, 8))
+# packer.add_box(Box(7, 8, 5))
+# packer.add_box(Box(3, 1, 5))
+
+# packer.add_box(Box(2, 1, 2))
+# packer.add_box(Box(2, 1, 2))
+# packer.add_box(Box(15, 5, 6))
+# packer.add_box(Box(4, 8, 2))
 # packer.add_box(Box(20, 20, 20))
 
-packer.add_box(Box(2, 1, 2))
-packer.add_box(Box(2, 1, 2))
-packer.add_box(Box(2, 1, 2))
-packer.add_box(Box(3, 1, 5))
-packer.add_box(Box(3, 1, 5))
+# packer.add_box(Box(2, 1, 2))
+# packer.add_box(Box(2, 1, 2))
+# packer.add_box(Box(15, 5, 6))
+# packer.add_box(Box(15, 5, 6))
+# packer.add_box(Box(4, 8, 2))
 
-packer.add_box(Box(5, 7, 8))
-packer.add_box(Box(7, 8, 5))
-packer.add_box(Box(3, 1, 5))
-packer.add_box(Box(2, 1, 2))
-packer.add_box(Box(2, 1, 2))
+# packer.add_box(Box(2, 1, 2))
+# packer.add_box(Box(2, 1, 2))
+# packer.add_box(Box(2, 1, 2))
+# packer.add_box(Box(3, 1, 5))
+# packer.add_box(Box(3, 1, 5))
 
-packer.add_box(Box(2, 1, 2))
-packer.add_box(Box(2, 1, 2))
-packer.add_box(Box(2, 1, 2))
-packer.add_box(Box(3, 1, 5))
-packer.add_box(Box(3, 1, 5))
+# packer.add_box(Box(5, 7, 8))
+# packer.add_box(Box(7, 8, 5))
+# packer.add_box(Box(3, 1, 5))
+# packer.add_box(Box(2, 1, 2))
+# packer.add_box(Box(2, 1, 2))
 
-packer.add_box(Box(5, 7, 8))
-packer.add_box(Box(7, 8, 5))
-packer.add_box(Box(3, 1, 5))
-packer.add_box(Box(2, 1, 2))
-packer.add_box(Box(2, 1, 2))
+# packer.add_box(Box(2, 1, 2))
+# packer.add_box(Box(2, 1, 2))
+# packer.add_box(Box(2, 1, 2))
+# packer.add_box(Box(3, 1, 5))
+# packer.add_box(Box(3, 1, 5))
 
-packer.add_box(Box(5, 7, 8))
-packer.add_box(Box(7, 8, 5))
-packer.add_box(Box(3, 1, 5))
-packer.add_box(Box(2, 1, 2))
-packer.add_box(Box(2, 1, 2))
+# packer.add_box(Box(5, 7, 8))
+# packer.add_box(Box(7, 8, 5))
+# packer.add_box(Box(3, 1, 5))
+# packer.add_box(Box(2, 1, 2))
+# packer.add_box(Box(2, 1, 2))
 
-packer.add_box(Box(2, 1, 2))
-packer.add_box(Box(2, 1, 2))
-packer.add_box(Box(2, 1, 2))
-packer.add_box(Box(3, 1, 5))
-packer.add_box(Box(3, 1, 5))
+# packer.add_box(Box(5, 7, 8))
+# packer.add_box(Box(7, 8, 5))
+# packer.add_box(Box(3, 1, 5))
+# packer.add_box(Box(2, 1, 2))
+# packer.add_box(Box(2, 1, 2))
 
-packer.add_box(Box(5, 7, 8))
-packer.add_box(Box(7, 8, 5))
-packer.add_box(Box(3, 1, 5))
-packer.add_box(Box(2, 1, 2))
-packer.add_box(Box(2, 1, 2))
+# packer.add_box(Box(2, 1, 2))
+# packer.add_box(Box(2, 1, 2))
+# packer.add_box(Box(2, 1, 2))
+# packer.add_box(Box(3, 1, 5))
+# packer.add_box(Box(3, 1, 5))
+
+# packer.add_box(Box(5, 7, 8))
+# packer.add_box(Box(7, 8, 5))
+# packer.add_box(Box(3, 1, 5))
+# packer.add_box(Box(2, 1, 2))
+# packer.add_box(Box(2, 1, 2))
 
 
 packer.pack(bigger_first=True)
 
 # printPreorder(packer.root_nodes[0],f)
+
+            
 FILE.close()
 FILE_html.close()
 print("used: {}".format(USED_VOLUME))
 print("UNFITTED_ITEMS: {}".format(len(UNFITTED_ITEMS))) 
+
+print("##################")
+def get_stack(root,file,opt=True):
+        if(root.box):
+            # print("@@@@ root @@@@")
+            # print(type(root))
+            # print(type(root.box))
+            file.write(root.get_box_dimension()+"\n")
+            if(root.left != None):
+                get_stack(root.left,file)
+            if(root.center != None and opt):
+                get_stack(root.center,file)
+            if(root.right != None and opt):
+                get_stack(root.right,file)
+            
+for index in range(len(BASE_BOXES)):
+    print(BASE_BOXES[index].position)
+    file_ = open("result_{}.txt".format(index), "w")
+    file_.write("30 20 40\n")
+    get_stack(BASE_BOXES[index],file_,False)
+    file_.close()
