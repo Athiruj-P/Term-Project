@@ -157,16 +157,21 @@ class Node:
         x2 = self.position[0] + dim1
         y2 = self.position[2] + dim3
         z2 = self.position[1] + dim2
-        temp = "data.push(new Box("
-        temp += "[{},{},{},{},{},{},{},{}],\n".format(x1,x1,x2,x2,x1,x1,x2,x2)
-        temp += "[{},{},{},{},{},{},{},{}],\n".format(y1,y2,y1,y2,y1,y2,y1,y2)
-        temp += "[{},{},{},{},{},{},{},{}],\n".format(z1,z1,z1,z1,z2,z2,z2,z2)
-        temp += ").data)\n"
+        # temp = "data.push(new Box("
+        # temp += "[{},{},{},{},{},{},{},{}],\n".format(x1,x1,x2,x2,x1,x1,x2,x2)
+        # temp += "[{},{},{},{},{},{},{},{}],\n".format(y1,y2,y1,y2,y1,y2,y1,y2)
+        # temp += "[{},{},{},{},{},{},{},{}],\n".format(z1,z1,z1,z1,z2,z2,z2,z2)
+        # temp += ").data)\n"
 
+        temp = "{\n"
+        temp += '"x" : [{},{},{},{},{},{},{},{}],\n'.format(x1,x1,x2,x2,x1,x1,x2,x2)
+        temp += '"y" : [{},{},{},{},{},{},{},{}],\n'.format(y1,y2,y1,y2,y1,y2,y1,y2)
+        temp += '"z" : [{},{},{},{},{},{},{},{}],\n'.format(z1,z1,z1,z1,z2,z2,z2,z2)
+        temp += '},\n'
         return temp
 
 class Box:
-    def __init__(self, width, height, depth, fixed_direction = False):
+    def __init__(self, width, height, depth, fixed_direction = True):
         self.width = width
         self.height = height
         self.depth = depth
@@ -299,84 +304,72 @@ def printPreorder(root,file):
 packer = Packer()
 
 packer.add_root_node(Node(30, 20, 40))
-
-packer.add_box(Box(10, 5, 13, True))
+# add_box(Box(W, H, D, fixed_direction {default is "True"}))
+packer.add_box(Box(10, 5, 13))
 packer.add_box(Box(20, 13, 5))
 packer.add_box(Box(10, 13, 5))
 packer.add_box(Box(10, 13, 5))
 packer.add_box(Box(10, 13, 5))
 
+packer.add_box(Box(10, 13, 5))
+packer.add_box(Box(10, 13, 5))
 packer.add_box(Box(5, 7, 8))
-packer.add_box(Box(5, 7, 8))
-packer.add_box(Box(5, 7, 8))
-packer.add_box(Box(5, 7, 8))
-packer.add_box(Box(5, 7, 8))
+packer.add_box(Box(7, 8, 5))
+packer.add_box(Box(3, 1, 5))
+
+packer.add_box(Box(2, 1, 2))
+packer.add_box(Box(2, 1, 2))
+packer.add_box(Box(15, 5, 6))
+packer.add_box(Box(4, 8, 2))
+packer.add_box(Box(20, 20, 20))
+
+packer.add_box(Box(2, 1, 2))
+packer.add_box(Box(2, 1, 2))
+packer.add_box(Box(15, 5, 6))
+packer.add_box(Box(15, 5, 6))
+packer.add_box(Box(4, 8, 2))
+
+packer.add_box(Box(2, 1, 2))
+packer.add_box(Box(2, 1, 2))
+packer.add_box(Box(2, 1, 2))
+packer.add_box(Box(3, 1, 5))
+packer.add_box(Box(3, 1, 5))
 
 packer.add_box(Box(5, 7, 8))
+packer.add_box(Box(7, 8, 5))
+packer.add_box(Box(3, 1, 5))
+packer.add_box(Box(2, 1, 2))
+packer.add_box(Box(2, 1, 2))
+
+packer.add_box(Box(2, 1, 2))
+packer.add_box(Box(2, 1, 2))
+packer.add_box(Box(2, 1, 2))
+packer.add_box(Box(3, 1, 5))
+packer.add_box(Box(3, 1, 5))
+
 packer.add_box(Box(5, 7, 8))
+packer.add_box(Box(7, 8, 5))
+packer.add_box(Box(3, 1, 5))
+packer.add_box(Box(2, 1, 2))
+packer.add_box(Box(2, 1, 2))
+
 packer.add_box(Box(5, 7, 8))
+packer.add_box(Box(7, 8, 5))
+packer.add_box(Box(3, 1, 5))
+packer.add_box(Box(2, 1, 2))
+packer.add_box(Box(2, 1, 2))
+
+packer.add_box(Box(2, 1, 2))
+packer.add_box(Box(2, 1, 2))
+packer.add_box(Box(2, 1, 2))
+packer.add_box(Box(3, 1, 5))
+packer.add_box(Box(3, 1, 5))
+
 packer.add_box(Box(5, 7, 8))
-packer.add_box(Box(5, 7, 8))
-
-# packer.add_box(Box(10, 13, 5))
-# packer.add_box(Box(10, 13, 5))
-# packer.add_box(Box(5, 7, 8))
-# packer.add_box(Box(7, 8, 5))
-# packer.add_box(Box(3, 1, 5))
-
-# packer.add_box(Box(2, 1, 2))
-# packer.add_box(Box(2, 1, 2))
-# packer.add_box(Box(15, 5, 6))
-# packer.add_box(Box(4, 8, 2))
-# packer.add_box(Box(20, 20, 20))
-
-# packer.add_box(Box(2, 1, 2))
-# packer.add_box(Box(2, 1, 2))
-# packer.add_box(Box(15, 5, 6))
-# packer.add_box(Box(15, 5, 6))
-# packer.add_box(Box(4, 8, 2))
-
-# packer.add_box(Box(2, 1, 2))
-# packer.add_box(Box(2, 1, 2))
-# packer.add_box(Box(2, 1, 2))
-# packer.add_box(Box(3, 1, 5))
-# packer.add_box(Box(3, 1, 5))
-
-# packer.add_box(Box(5, 7, 8))
-# packer.add_box(Box(7, 8, 5))
-# packer.add_box(Box(3, 1, 5))
-# packer.add_box(Box(2, 1, 2))
-# packer.add_box(Box(2, 1, 2))
-
-# packer.add_box(Box(2, 1, 2))
-# packer.add_box(Box(2, 1, 2))
-# packer.add_box(Box(2, 1, 2))
-# packer.add_box(Box(3, 1, 5))
-# packer.add_box(Box(3, 1, 5))
-
-# packer.add_box(Box(5, 7, 8))
-# packer.add_box(Box(7, 8, 5))
-# packer.add_box(Box(3, 1, 5))
-# packer.add_box(Box(2, 1, 2))
-# packer.add_box(Box(2, 1, 2))
-
-# packer.add_box(Box(5, 7, 8))
-# packer.add_box(Box(7, 8, 5))
-# packer.add_box(Box(3, 1, 5))
-# packer.add_box(Box(2, 1, 2))
-# packer.add_box(Box(2, 1, 2))
-
-# packer.add_box(Box(2, 1, 2))
-# packer.add_box(Box(2, 1, 2))
-# packer.add_box(Box(2, 1, 2))
-# packer.add_box(Box(3, 1, 5))
-# packer.add_box(Box(3, 1, 5))
-
-# packer.add_box(Box(5, 7, 8))
-# packer.add_box(Box(7, 8, 5))
-# packer.add_box(Box(3, 1, 5))
-# packer.add_box(Box(2, 1, 2))
-# packer.add_box(Box(2, 1, 2))
+packer.add_box(Box(7, 8, 5))
+packer.add_box(Box(3, 1, 5))
+packer.add_box(Box(2, 1, 2))
+packer.add_box(Box(2, 1, 2))
 
 
 packer.pack(bigger_first=True)
@@ -403,9 +396,13 @@ def get_stack(root,file,opt=True):
             if(root.right != None and opt):
                 get_stack(root.right,file)
             
+file_ = open("json/result.js", "w")
+file_.write('"total_result" : {\n')
 for index in range(len(BASE_BOXES)):
-    print(BASE_BOXES[index].position)
-    file_ = open("result_{}.txt".format(index), "w")
-    file_.write("30 20 40\n")
+
+    file_.write('"result_{}" : [\n'.format(index))
+    # print(BASE_BOXES[index].position)
     get_stack(BASE_BOXES[index],file_,False)
-    file_.close()
+    file_.write("],\n")
+file_.write("}\n")
+file_.close()
