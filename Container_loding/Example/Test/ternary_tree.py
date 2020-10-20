@@ -171,7 +171,7 @@ class Node:
         return temp
 
 class Box:
-    def __init__(self, width, height, depth, fixed_direction = True):
+    def __init__(self, width, height, depth, fixed_direction = False):
         self.width = width
         self.height = height
         self.depth = depth
@@ -317,6 +317,48 @@ packer.add_box(Box(5, 7, 8))
 packer.add_box(Box(7, 8, 5))
 packer.add_box(Box(3, 1, 5))
 
+packer.add_box(Box(10, 13, 5))
+packer.add_box(Box(10, 13, 5))
+packer.add_box(Box(5, 7, 8))
+packer.add_box(Box(7, 8, 5))
+packer.add_box(Box(3, 1, 5))
+
+packer.add_box(Box(10, 13, 5))
+packer.add_box(Box(10, 13, 5))
+packer.add_box(Box(5, 7, 8))
+packer.add_box(Box(7, 8, 5))
+packer.add_box(Box(3, 1, 5))
+
+packer.add_box(Box(10, 13, 5))
+packer.add_box(Box(10, 13, 5))
+packer.add_box(Box(5, 7, 8))
+packer.add_box(Box(7, 8, 5))
+packer.add_box(Box(3, 1, 5))
+
+packer.add_box(Box(10, 13, 5))
+packer.add_box(Box(10, 13, 5))
+packer.add_box(Box(5, 7, 8))
+packer.add_box(Box(7, 8, 5))
+packer.add_box(Box(3, 1, 5))
+
+packer.add_box(Box(10, 13, 5))
+packer.add_box(Box(10, 13, 5))
+packer.add_box(Box(5, 7, 8))
+packer.add_box(Box(7, 8, 5))
+packer.add_box(Box(3, 1, 5))
+
+packer.add_box(Box(10, 13, 5))
+packer.add_box(Box(10, 13, 5))
+packer.add_box(Box(5, 7, 8))
+packer.add_box(Box(7, 8, 5))
+packer.add_box(Box(3, 1, 5))
+
+packer.add_box(Box(10, 13, 5))
+packer.add_box(Box(10, 13, 5))
+packer.add_box(Box(5, 7, 8))
+packer.add_box(Box(7, 8, 5))
+packer.add_box(Box(3, 1, 5))
+
 packer.add_box(Box(2, 1, 2))
 packer.add_box(Box(2, 1, 2))
 packer.add_box(Box(15, 5, 6))
@@ -329,47 +371,47 @@ packer.add_box(Box(15, 5, 6))
 packer.add_box(Box(15, 5, 6))
 packer.add_box(Box(4, 8, 2))
 
-packer.add_box(Box(2, 1, 2))
-packer.add_box(Box(2, 1, 2))
-packer.add_box(Box(2, 1, 2))
-packer.add_box(Box(3, 1, 5))
-packer.add_box(Box(3, 1, 5))
+# packer.add_box(Box(2, 1, 2))
+# packer.add_box(Box(2, 1, 2))
+# packer.add_box(Box(2, 1, 2))
+# packer.add_box(Box(3, 1, 5))
+# packer.add_box(Box(3, 1, 5))
 
-packer.add_box(Box(5, 7, 8))
-packer.add_box(Box(7, 8, 5))
-packer.add_box(Box(3, 1, 5))
-packer.add_box(Box(2, 1, 2))
-packer.add_box(Box(2, 1, 2))
+# packer.add_box(Box(5, 7, 8))
+# packer.add_box(Box(7, 8, 5))
+# packer.add_box(Box(3, 1, 5))
+# packer.add_box(Box(2, 1, 2))
+# packer.add_box(Box(2, 1, 2))
 
-packer.add_box(Box(2, 1, 2))
-packer.add_box(Box(2, 1, 2))
-packer.add_box(Box(2, 1, 2))
-packer.add_box(Box(3, 1, 5))
-packer.add_box(Box(3, 1, 5))
+# packer.add_box(Box(2, 1, 2))
+# packer.add_box(Box(2, 1, 2))
+# packer.add_box(Box(2, 1, 2))
+# packer.add_box(Box(3, 1, 5))
+# packer.add_box(Box(3, 1, 5))
 
-packer.add_box(Box(5, 7, 8))
-packer.add_box(Box(7, 8, 5))
-packer.add_box(Box(3, 1, 5))
-packer.add_box(Box(2, 1, 2))
-packer.add_box(Box(2, 1, 2))
+# packer.add_box(Box(5, 7, 8))
+# packer.add_box(Box(7, 8, 5))
+# packer.add_box(Box(3, 1, 5))
+# packer.add_box(Box(2, 1, 2))
+# packer.add_box(Box(2, 1, 2))
 
-packer.add_box(Box(5, 7, 8))
-packer.add_box(Box(7, 8, 5))
-packer.add_box(Box(3, 1, 5))
-packer.add_box(Box(2, 1, 2))
-packer.add_box(Box(2, 1, 2))
+# packer.add_box(Box(5, 7, 8))
+# packer.add_box(Box(7, 8, 5))
+# packer.add_box(Box(3, 1, 5))
+# packer.add_box(Box(2, 1, 2))
+# packer.add_box(Box(2, 1, 2))
 
-packer.add_box(Box(2, 1, 2))
-packer.add_box(Box(2, 1, 2))
-packer.add_box(Box(2, 1, 2))
-packer.add_box(Box(3, 1, 5))
-packer.add_box(Box(3, 1, 5))
+# packer.add_box(Box(2, 1, 2))
+# packer.add_box(Box(2, 1, 2))
+# packer.add_box(Box(2, 1, 2))
+# packer.add_box(Box(3, 1, 5))
+# packer.add_box(Box(3, 1, 5))
 
-packer.add_box(Box(5, 7, 8))
-packer.add_box(Box(7, 8, 5))
-packer.add_box(Box(3, 1, 5))
-packer.add_box(Box(2, 1, 2))
-packer.add_box(Box(2, 1, 2))
+# packer.add_box(Box(5, 7, 8))
+# packer.add_box(Box(7, 8, 5))
+# packer.add_box(Box(3, 1, 5))
+# packer.add_box(Box(2, 1, 2))
+# packer.add_box(Box(2, 1, 2))
 
 
 packer.pack(bigger_first=True)
@@ -397,7 +439,11 @@ def get_stack(root,file,opt=True):
                 get_stack(root.right,file)
             
 file_ = open("json/result.js", "w")
-file_.write('"total_result" : {\n')
+file_.write('total_result = {\n')
+
+# Sorting by position[2] or Y axis
+BASE_BOXES.sort(key=lambda x: (x.position[2]), reverse=False)
+
 for index in range(len(BASE_BOXES)):
 
     file_.write('"result_{}" : [\n'.format(index))
